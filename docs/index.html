@@ -2104,12 +2104,9 @@ r2d3(data=c(0.3, 0.6, 0.8, 0.95, 0.40, 0.20), script = &quot;barchart.js&quot;)<
 hey
 </div>
 <pre class="r"><code>library(r2d3)
-#r2d3(script = &quot;iq_scene.js&quot;, d3_version=&quot;4&quot;)
 r2d3(script = &quot;iq_scene.js&quot;, d3_version=&quot;5&quot;)</code></pre>
-<div id="htmlwidget-b474ffec8bf286cdebfa" style="width:672px;height:480px;" class="r2d3 html-widget"></div>
-<script type="application/json" data-for="htmlwidget-b474ffec8bf286cdebfa">{"x":{"data":null,"type":"NULL","container":"svg","options":null,"script":"var d3Script = function(d3, r2d3, data, svg, width, height, options, theme, console) {\nthis.d3 = d3;\n\nsvg = d3.select(svg.node());\n/* R2D3 Source File:  iq_scene.js */\n// !preview r2d3 data=c(0.3, 0.6, 0.8, 0.95, 0.40, 0.20)\n\n// https://bl.ocks.org/mbostock/1014829\n//d3.xml(\"./img/1b Overview CINMS 2018.svg\").mimeType(\"image/svg+xml\").get(function(error, xml) {\n/*d3.svg(\"./img/1b Overview CINMS 2018.svg\").mimeType(\"image/svg+xml\").get(function(error, xml) {\n  if (error) throw error;\n  //svg.appendChild(xml.documentElement);\n  document.getElementById(\"test\").appendChild(xml.documentElement);\n  //svg.node().appendChild(xml.documentElement);\n});*/\n\nd3.svg('./img/1b Overview CINMS 2018.svg').then((el) => {\n            //the external svg looks like this: [...]<svg><g>[...]<\/g><\/svg> so I select the g element and inject it into my svg\n            //const gElement = d3.select(svg).select('g'); \n            //d3.select('#mysvg').node().appendChild(gElement.node());\n            svg.appendChild(el);\n});\n\n/*d3.xml(\"./img/1b Overview CINMS 2018.svg\", \"image/svg+xml\", function(xml) {\n  svg.node().appendChild(xml.documentElement);\n});*/\n};","style":null,"version":5,"theme":{"default":{"background":"#FFFFFF","foreground":"#000000"},"runtime":null},"useShadow":true},"evals":[],"jsHooks":[]}</script>
-<pre class="r"><code>#r2d3(script = &quot;r2d3_issue_31_append_g.js&quot;) # , d3_version=&quot;3&quot;)</code></pre>
-<p>end</p>
+<p><div id="htmlwidget-1ba437430f030580e400" style="width:672px;height:480px;" class="r2d3 html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1ba437430f030580e400">{"x":{"data":null,"type":"NULL","container":"svg","options":null,"script":"var d3Script = function(d3, r2d3, data, svg, width, height, options, theme, console) {\nthis.d3 = d3;\n\nsvg = d3.select(svg.node());\n/* R2D3 Source File:  iq_scene.js */\n// !preview r2d3 data=c(0.3, 0.6, 0.8, 0.95, 0.40, 0.20)\n\nd3.svg('./img/1b Overview CINMS 2018.svg').then((el) => {\n  // https://gist.github.com/mbostock/1014829#gistcomment-2692594\n  svg.node().appendChild(el.documentElement);\n});\n};","style":null,"version":5,"theme":{"default":{"background":"#FFFFFF","foreground":"#000000"},"runtime":null},"useShadow":true},"evals":[],"jsHooks":[]}</script> end</p>
 </div>
 
 
