@@ -1,0 +1,36 @@
+---
+title: "index"
+author: "Ben Best"
+date: "12/11/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## barchart
+
+```{r, eval=F}
+library(r2d3)
+r2d3(data=c(0.3, 0.6, 0.8, 0.95, 0.40, 0.20), script = "barchart.js")
+```
+
+## d3
+
+```{r}
+library(r2d3)
+r2d3(script = "iq_scene.js", d3_version="4")
+#r2d3(script = "r2d3_issue_31_append_g.js") # , d3_version="3")
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
