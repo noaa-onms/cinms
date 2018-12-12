@@ -1,4 +1,4 @@
-// !preview r2d3 data=read.csv("svg_habitats.csv")
+// !preview r2d3 data=read.csv("svg_habitats.csv", strip.white=T)
 
 d3.svg('./img/1b Overview CINMS 2018.svg').then((f) => {
   // https://gist.github.com/mbostock/1014829#gistcomment-2692594
@@ -7,42 +7,45 @@ d3.svg('./img/1b Overview CINMS 2018.svg').then((f) => {
   var h = d3.select(f_child);
   
   // resize
-  h
-    .attr('width', '100%')
-    .attr('height', '100%');
+  h.attr('width', '100%')
+   .attr('height', '100%');
     
   // assign links
   data.forEach(function(d) {
-      var group_selector      = '#' + d.id;
-      //var g_children_selector = '#' + d.id + ' path,' + group_selector;
-      //var d_link = './modals/' + d.svg_id + '.html';
-      //var d_link = d.link;
+    //console.log('forEach d.id: ' + d.id);
+    
+    // reset fill in group id and children
+    h.selectAll('#' + d.id)
+      .style("fill", "black")
+      .selectAll("g")
+        .style("fill", null)
+        .selectAll("path")
+          .style("fill", null);
+    h.selectAll('#' + d.id + " > path")
+      .style("fill", null);
 
-        if (debug_mode){
-          console.log('forEach d...' + d);
-          console.log(d);
-        }
-
-        // color
-        /*d3.selectAll(g_children_selector)
-          .style("fill", d.color);
-
-        function highlight(){
-          d3.selectAll(g_children_selector).style("stroke", "white");
-          d3.selectAll(g_children_selector).style("stroke-width", 1);
-        }
-        function unhighlight(){
-          d3.selectAll(g_children_selector).style("stroke-width", 0);
-        }
-        function mark_as_visited(){
-          d3.selectAll(g_children_selector).style("fill", CLICKED_FILL);
-        }*/
-
-        // link each group in svg to modals
-        h.selectAll(group_selector)
-          //.html(d.link);
-          .attr('href', d.link);
-          
-      }); // end: data.forEach()
+    // handle events
+    h.selectAll('#' + d.id)
+     .on("click", function() { window.location = d.link;})
+     .on("mouseover", handleMouseOver)
+     .on("mouseout", handleMouseOut);
+     
+  }); // end: data.forEach()
 
 });
+
+// handle event functions
+function handleMouseOver(d, i) {
+  d3.select(this)
+    .style("fill", "yellow")
+    .style("stroke", "yellow")
+    .style("stroke-width", 1);
+}
+function handleMouseOut(d, i) {
+  d3.select(this)
+    .style("fill", "black")
+    .style("stroke-width", 0);
+}
+
+
+
