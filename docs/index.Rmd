@@ -1,24 +1,20 @@
 ---
-title: "index"
-author: "Ben Best"
-date: "12/11/2018"
-output: html_document
+title: "CINMS Ecosystems"
+output:
+  html_document:
+    code_folding: hide
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## barchart
-
-```{r, eval=F}
+```{r barchart test, eval=F, echo=F}
 library(r2d3)
 r2d3(data=c(0.3, 0.6, 0.8, 0.95, 0.40, 0.20), script = "barchart.js")
 ```
 
-## d3
-
-<div id="test">hey</div>
+## Habitat Overview
 
 ```{r}
 library(r2d3)
@@ -26,4 +22,3 @@ r2d3(
   script = "iq_scene.js", d3_version="5", 
   data=read.csv("svg_habitats.csv"))
 ```
-end
