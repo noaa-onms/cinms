@@ -15,7 +15,7 @@ library(r2d3)
 r2d3(data=c(0.3, 0.6, 0.8, 0.95, 0.40, 0.20), script = "barchart.js")
 ```
 
-Example of using [r2d3](https://rstudio.github.io/r2d3/) over previous custom [marinebon/infographiq](https://github.com/marinebon/infographiq) for creating interactivity in scalable vector graphic (svg) files. So far, only linking **pelagic** or **sandy beach** habitats.
+Example of using [r2d3](https://rstudio.github.io/r2d3/) over previous custom [infographiq](https://github.com/marinebon/infographiq) (and [info-mb](https://github.com/marinebon/info-mb)) for creating interactivity in scalable vector graphic (svg) files. So far, only linking **pelagic** or **sandy beach** habitats.
 
 ```{r}
 library(tidyverse)
