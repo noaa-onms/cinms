@@ -1,0 +1,26 @@
+---
+title: "Sandy Beach"
+output:
+  html_document:
+    code_folding: hide
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = F)
+```
+
+```{r}
+library(tidyverse)
+library(r2d3)
+
+d <- read_csv("svg/svg_elements.csv") %>% 
+  filter(svg == "sandy-beach.svg")
+
+r2d3(
+  script = "js/infographiq.js", 
+  data=d, 
+  options = list(
+    svg           = "svg/sandy-beach.svg",
+    color_default = "black",
+    color_hover   = "yellow"))
+```

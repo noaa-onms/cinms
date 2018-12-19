@@ -1,5 +1,5 @@
 ---
-title: "CINMS Ecosystems"
+title: "Pelagic"
 output:
   html_document:
     code_folding: hide
@@ -9,19 +9,18 @@ output:
 knitr::opts_chunk$set(echo = TRUE, message = F)
 ```
 
-```{r barchart test, eval=F, echo=F}
-library(r2d3)
-r2d3(data=c(0.3, 0.6, 0.8, 0.95, 0.40, 0.20), script = "barchart.js")
-```
-
-## Habitat Overview
-
 ```{r}
 library(tidyverse)
 library(r2d3)
 
-d <- read_csv("svg_elements.csv") %>% 
-  filter(svg == "overview.svg")
+d <- read_csv("svg/svg_elements.csv") %>% 
+  filter(svg == "pelagic.svg")
 
-r2d3(script = "iq_scene.js", data=d)
+r2d3(
+  script = "js/infographiq.js", 
+  data=d, 
+  options = list(
+    svg           = "svg/pelagic.svg",
+    color_default = "black",
+    color_hover   = "yellow"))
 ```
