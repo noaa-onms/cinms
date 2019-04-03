@@ -1,0 +1,26 @@
+.modal-content {
+    /* 90% of window height */
+    height: 90%;
+}
+.modal-body {
+    /*
+    max-height: calc(100vh - 20px);
+    overflow-y: auto;
+    */
+    /* 100% = dialog height, 120px = header + footer */
+    max-height: calc(100% - 120px);
+    overflow-y: scroll;
+}
+
+div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 60px;					
+    height: 28px;					
+    padding: 2px;				
+    font: 12px sans-serif;		
+    background: lightsteelblue;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}

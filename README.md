@@ -19,3 +19,9 @@ Because of CORS, need local web server to debug:
 setwd(here::here("docs"))
 servr::httw()
 ```
+
+or
+
+```bash
+python -m SimpleHTTPServer 8000
+```

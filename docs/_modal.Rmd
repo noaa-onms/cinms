@@ -1,0 +1,40 @@
+---
+title: "_modal"
+output:
+  html_document:
+    self_contained: false
+    lib_dir: "libs"
+params:
+  modal_id: "phytoplankton"
+  modal_plots_csv: "modal_plots.csv"
+---
+
+```{r, echo=F, message=F, warning=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F)
+```
+
+```{r}
+library(tidyverse)
+library(knitr)
+#library(infographiq)
+devtools::load_all("~/github/infographiq")
+```
+
+```{r}
+# params <- list(
+#   modal_id = "phytoplankton",
+#   modal_plots_csv ="modal_plots.csv")
+stopifnot(file.exists(params$modal_plots_csv))
+
+d_plots <- read_csv(params$modal_plots_csv) %>% 
+  filter(modal_id == params$modal_id)
+
+for (i in seq_len(nrow(d_plots))){
+  knit_child()
+  cat(i)
+}
+
+```
+
+
+

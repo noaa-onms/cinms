@@ -1,0 +1,62 @@
+---
+output:
+html_document:
+self_contained: false
+lib_dir: "libs"
+fig_height: 2
+fig_width: 4
+params:
+element: "jellies"
+---
+
+```{r, echo=FALSE, message=F, warning=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F)
+library(infographiq)
+```
+
+<base target="_parent">
+
+
+```{r out.width='100%'}
+tryCatch(
+    plot_dygraph_timeseries(
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/forage_inverts/FED_Gelatinous_catch.csv",
+        title   = "Gelatinous Catch",
+        y_label = "Catch (number of species)",
+        col_t   = "yr",
+        col_y   = "catch"
+        #skip_lines
+        #group_by  
+        #std_err   
+        #filter
+    ),
+    error = function(e) e
+)
+```
+Gelatinous species: Pyrosoma, Salp, Thetys Salp, Heteropd<br>
+Jelly species: Fried Egg Jelly, Sea Nettle, Purple-striped Jelly, Moon Jelly.
+
+
+```{r out.width='100%'}
+tryCatch(
+    plot_dygraph_timeseries(
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/forage_inverts/FED_Jellies_catch..csv",
+        title   = "Jellies Catch",
+        y_label = "Catch (number of species)",
+        col_t   = "yr",
+        col_y   = "catch"
+        #skip_lines
+        #group_by  
+        #std_err   
+        #filter
+    ),
+    error = function(e) e
+)
+```
+The Fisheries Ecology Division (FED, https://swfsc.noaa.gov/GroundfishAnalysis/) of the Southwest Fisheries Science Center (SWFSC)  midwater trawl survey off central California. The data may be used and redistributed for free but is not intended
+for legal use, since it may contain inaccuracies. Neither the data
+Contributor, ERD, NOAA, nor the United States Government, nor any
+of their employees or contractors, makes any warranty, express or
+implied, including warranties of merchantability and fitness for a
+particular purpose, or assumes any legal liability for the accuracy,
+completeness, or usefulness, of this information. Fisheries Ecology Division/SWFSC/NOAA

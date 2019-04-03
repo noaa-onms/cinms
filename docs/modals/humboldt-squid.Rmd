@@ -1,0 +1,36 @@
+---
+output:
+html_document:
+self_contained: false
+lib_dir: "libs"
+fig_height: 2
+fig_width: 4
+params:
+element: "humboldt_squid"
+---
+
+```{r, echo=FALSE, message=F, warning=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F)
+library(infographiq)
+```
+
+<base target="_parent">
+
+
+```{r out.width='100%'}
+tryCatch(
+    plot_dygraph_timeseries(
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/dosidicus/MBARI_ROV_dosid.csv",
+        title   = "Humboldt Squid (<i>Dosidicus gigas</i>) Video Transect Sightings in Monterey Bay",
+        y_label = "Squid Sightings (number of species)",
+        col_t   = "year",
+        col_y   = "count"
+        #skip_lines
+        #group_by  
+        #std_err   
+        #filter
+    ),
+    error = function(e) e
+)
+```
+Humboldt squid, <i>Dosidicus gigas</i>, sightings from MBARI's remotely operated underwater vehicle, ROV, video surveys in Monterey Bay. Video transects occur on a monthly basis. MBARI provides data "as is", with no warranty, express or implied, of the quality or consistency. Data are provided without support and without obligation on the part of the Monterey Bay Aquarium Research Institute to assist in its use, correction, modification, or enhancement. Monterey Bay Aquarium Research Institute http://www.mbari.org/

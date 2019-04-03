@@ -1,0 +1,78 @@
+---
+output:
+html_document:
+self_contained: false
+lib_dir: "libs"
+fig_height: 2
+fig_width: 4
+params:
+element: "eDNA"
+---
+
+```{r, echo=FALSE, message=F, warning=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F)
+library(infographiq)
+```
+
+<base target="_parent">
+Using seawater collected in the Monterey Bay National Marine Sanctuary (MBNMS), DNA associated with the environment is used to evaluate biodiversity. Environmental DNA (eDNA) is DNA suspended in seawater originating from tissue, cells, or extracellular DNA and can be sequenced to get a qualitative proxy for marine assemblages. Metabarcoding is a method of DNA barcoding that uses sections of DNA sequences as targets to identify DNA from a mixture of organisms.
+<p></p>
+The most number of organisms observed with eDNA were in 2015 for all (loci) "metabarcodes". This corresponds with other independent biodiversity assessments and with the long El Ni&ntilde;o event. 
+The metabarcode 12S is used in the identification of vertebrates, such as fish, birds, whales, and other marine mammals.
+
+
+```{r out.width='100%'}
+tryCatch(
+    plot_dygraph_timeseries(
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/eDNA/eDNA_richness_12S.csv",
+        title   = "Vertebrate 12S Observed Richness",
+        y_label = "Observed Richness (number of unique genetic sequences)",
+        col_t   = "d_year",
+        col_y   = "x"
+        #skip_lines
+        #group_by  
+        #std_err   
+        , filter="d_year > 2006"
+    ),
+    error = function(e) e
+)
+```
+The metabarcode 18S is used primarily to identify phytoplankton, such as centric diatoms or toxic species of pseudo nitzschia.
+
+
+```{r out.width='100%'}
+tryCatch(
+    plot_dygraph_timeseries(
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/eDNA/eDNA_richness_18S.csv",
+        title   = "Phytoplankton 18S Observed Richness",
+        y_label = "Observed Richness (number of unique genetic sequences)",
+        col_t   = "b_year",
+        col_y   = "x"
+        #skip_lines
+        #group_by  
+        #std_err   
+        , filter="b_year > 2006"
+    ),
+    error = function(e) e
+)
+```
+The metabarcode COI identifies both phytoplankton and zooplankton, such as diatoms, krill, and copepods.
+
+
+```{r out.width='100%'}
+tryCatch(
+    plot_dygraph_timeseries(
+        csv_tv  = "https://raw.githubusercontent.com/marinebon/info-mb/master/prep/data/eDNA/eDNA_richness_COI.csv",
+        title   = "Vertebrate and Invertebrate COI Observed Richness",
+        y_label = "Observed Richness (number of unique genetic sequences)",
+        col_t   = "c_year",
+        col_y   = "x"
+        #skip_lines
+        #group_by  
+        #std_err   
+        , filter="c_year > 2006"
+    ),
+    error = function(e) e
+)
+```
+Under the auspices of the Marine Biodiversity Observation Network (MBON), Monterey Bay Aquarium Research Institute (MBARI), Stanford University and University of South Florida researchers are using eDNA to assess biodiversity in the MBNMS. The U.S. MBON projects are funded under the National Ocean Partnership Program (NOPP RFP NOAA-NOS-IOOS-2014-2003803) in partnership between NOAA, BOEM, and NASA, with the U.S. Integrated Ocean Observing System (U.S. IOOS) program pioneering the implementation. Seawater is collect from CTD bottles at various locations and depths. http://www.marinebon.org/genomics.html

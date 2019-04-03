@@ -1,0 +1,40 @@
+---
+title: '`r params$title`'
+output:
+  html_document:
+    self_contained: false
+    lib_dir: "libs"
+params:
+  # title: "CINMS Ecosystems"
+  # csv: "svg/svg_elements.csv"
+  # svg: "svg/cinms_pelagic.svg"
+  title: "rocky-shore"
+  csv: "svg-links.csv"
+  svg: "svg/cinms_rocky-shore.svg"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, message = F)
+
+#file.exists("svg/pelagic.svg")
+```
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="ckbox_questions" data-toggle="toggle"> <!--onclick="hideSVG('SVGid')"-->
+  <label class="form-check-label" for="ckbox_questions">
+  questions
+  </label>
+</div>
+
+```{r}
+library(tidyverse)
+#devtools::install_github("marinebon/infographiq")
+devtools::load_all("~/github/infographiq")
+#library(infographiq) 
+
+d <- read_csv(params$csv) %>% 
+  filter(svg == params$svg)
+svg <- params$svg
+
+info_svg(d, svg)
+```

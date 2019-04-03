@@ -1,0 +1,39 @@
+---
+output:
+html_document:
+self_contained: false
+lib_dir: "libs"
+fig_height: 2
+fig_width: 4
+params:
+element: "shrimp"
+---
+
+```{r, echo=FALSE, message=F, warning=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F)
+library(infographiq)
+```
+
+<base target="_parent">
+Pacific Fisheries Information Network (PacFIN;
+http://pacfin.psmfc.org/), additional calculations: Shrimp landings (1000's
+of metric tons) on the U.S. West Coast. Shrimp landings consist primarily of
+Pacific pink shrimp (Pandalus jordani).
+
+
+```{r out.width='100%'}
+tryCatch(
+    plot_dygraph_timeseries(
+        csv_tv  = "http://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_AC.csvp?time%2Cshrimp_coastwide&time%3E=1980-01-01&time%3C=2014-01-01",
+        title   = "Shrimp Landings (coastwide)",
+        y_label = "(1000s metric tons)",
+        col_t   = "time (UTC)",
+        col_y   = "shrimp_coastwide (1000s metric tons)"
+        #skip_lines
+        #group_by  
+        #std_err   
+        #filter
+    ),
+    error = function(e) e
+)
+```
