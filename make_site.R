@@ -3,6 +3,7 @@ library(tidyverse)
 library(glue)
 library(here)
 library(infographiq)
+here = here::here
 
 setwd(here())
 svg_overview <- "svg/cinms_overview.svg"
@@ -23,7 +24,7 @@ scenes <- read_csv(here("docs/svg-links.csv")) %>%
 #View(scenes)
 # afer rocky-shore
 
-scenes <- filter(scenes, svg == "svg/cinms_overview.svg")
+#scenes <- filter(scenes, svg == "svg/cinms_overview.svg")
 
 make_scene <- function(i){ # i=1
   s <- scenes[i,]
