@@ -20,9 +20,12 @@ d3.svg(options.svg).then((f) => {
     .attr("display", "none");
 
     
+  console.log('test before data.forEach');
+  
   // assign links
   data.forEach(function(d) {
-    //console.log('forEach d.id: ' + d.id);
+    console.log('test in data.forEach');
+    console.log('forEach d.id: ' + d.id);
     
     // reset fill in group id and children
     h.selectAll('#' + d.id)
@@ -42,6 +45,8 @@ d3.svg(options.svg).then((f) => {
         if (d.link_nonmodal > ''){
           window.location = d.link_nonmodal;
         } else {
+          console.log('  link_modal:' + d.id);
+          
           $('#'+ options.modal_id).find('iframe')
             .prop('src', function(){ return d.link_modal })
             .prop('src', function(){ return d.link_modal });
@@ -59,6 +64,8 @@ d3.svg(options.svg).then((f) => {
      //.on('mouseover', handleMouseOver)
      //.on('mouseout', handleMouseOut);
      .on('mouseover', function() {
+       console.log('  mouseover():' + d.id);
+       
        d3.select(this)
         .style("fill", options.color_hover)
         .style("stroke", options.color_hover)
@@ -73,6 +80,8 @@ d3.svg(options.svg).then((f) => {
        //highlight();
      })
      .on('mouseout', function() {
+       console.log('  mouseout():' + d.id);
+       
        d3.select(this)
         .style("fill", options.color_default)
         .style("stroke-width", 0);

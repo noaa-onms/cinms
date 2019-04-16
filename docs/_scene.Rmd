@@ -5,12 +5,17 @@ output:
     self_contained: false
     lib_dir: "libs"
 params:
-  # title: "CINMS Ecosystems"
-  # csv: "svg/svg_elements.csv"
-  # svg: "svg/cinms_pelagic.svg"
-  title: "rocky-shore"
-  csv: "svg-links.csv"
-  svg: "svg/cinms_rocky-shore.svg"
+  title: "CINMS Ecosystems"
+  csv: "/Users/bbest/github/cinms/docs/svg-links.csv"
+  svg: "svg/cinms_overview.svg"
+  #title: "pelagic"
+  #csv: "/Users/bbest/github/cinms/docs/svg-links.csv"
+  #svg: "svg/cinms_pelagic.svg"
+  #title: "rocky-shore"
+  #csv: "svg-links.csv"
+  #svg: "svg/cinms_rocky-shore.svg"
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -28,13 +33,25 @@ knitr::opts_chunk$set(echo = F, message = F)
 
 ```{r}
 library(tidyverse)
+library(glue)
 #devtools::install_github("marinebon/infographiq")
 devtools::load_all("~/github/infographiq")
 #library(infographiq) 
+stopifnot(file.exists(params$csv))
 
-d <- read_csv(params$csv) %>% 
-  filter(svg == params$svg)
+message(glue("csv: {params$csv}"))
+message(glue("svg: {params$svg}"))
+# params <- list(
+#   csv = "/Users/bbest/github/cinms/docs/svg-links.csv",
+#   svg = "svg/cinms_overview.svg")
+
 svg <- params$svg
+d <- read_csv(params$csv) %>% 
+  #View()
+  filter(svg == !!svg) # %>% 
+  #View()
+
+message(glue("nrow(d): {nrow(d)}"))
 
 info_svg(d, svg)
 ```

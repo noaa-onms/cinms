@@ -1,31 +1,31 @@
 ﻿svg,id,title,link_nonmodal,link_modal,modal_before,modal_after,status_text,status_color
-svg/pelagic.svg,SST,sea surface temperature,,modals/sst.html,prep/captions/SST_intro.md,prep/captions/SST_attribute.md,,#2b2b2b
-svg/pelagic.svg,seascape,seascapes,,modals/seascape.html,prep/captions/seascapes_intro.md,,,#2b2b2b
-svg/pelagic.svg,phytoplankton,phytoplankton,,modals/phytoplankton.html,prep/captions/phytoplankton.md,prep/captions/phytoplankton_bottom.md,,#1e3b1a
-svg/pelagic.svg,forage-fish,forage fish,,modals/forage-fish.html,prep/captions/forage_fish_intro.md,prep/plot_caption/forage_biomass.md,,#2b2b2b
-svg/pelagic.svg,forage-invertss,forage invertebrates,,modals/forage-invertss.html,,prep/plot_caption/forage_biomass.md,,#2b2b2b
-svg/pelagic.svg,biodiversity,biodiversity of forage fish,,modals/biodiversity.html,prep/captions/biodiversity_forage.md,prep/plot_caption/FED_ack.md,,#2b2b2b
-svg/pelagic.svg,pinnipeds,sea lions,,modals/pinnipeds.html,prep/captions/sealion_intro.md,prep/captions/pnniped_data_attrb.md,,#2b2b2b
-svg/pelagic.svg,whales,whales,,modals/whales.html,prep/captions/whale_intro.md,,,#2b2b2b
-svg/pelagic.svg,eDNA,environmental dna,,modals/edna.html,prep/captions/edna_intro.md,prep/captions/eDNA_attribute.md,,#2b2b2b
-svg/pelagic.svg,copepods,copepods,,modals/copepods.html,,,,#2b2b2b
-svg/pelagic.svg,jellies,gelatinous zooplankton,,modals/jellies.html,,prep/plot_caption/FED_ack.md,,#2b2b2b
-svg/pelagic.svg,midwater-larval-fish,midwater larval fish,,modals/midwater-larval-fish.html,,,,#2b2b2b
-svg/pelagic.svg,humboldt-squid,humboldt squid,,modals/humboldt-squid.html,,prep/plot_caption/ROV_ack.md,,#2b2b2b
-svg/pelagic.svg,salmon,salmon,,modals/salmon.html,,prep/captions/salmon_attribute.md,,#2b2b2b
-svg/pelagic.svg,leatherbacks,leatherback turtles,,modals/leatherbacks.html,,,,#2b2b2b
-svg/pelagic.svg,seabirds,nesting seabirds,,modals/seabirds.html,,,,#2b2b2b
-svg/kelp-forest.svg,otter,sea otters,,modals/sea-otters.html,,,,#2b2b2b
-svg/kelp-forest.svg,crabs,crabs,,modals/crabs.html,,,,#2b2b2b
-svg/kelp-forest.svg,shrimp,shrimp,,modals/shrimp.html,,,,#2b2b2b
-svg/kelp-forest.svg,kelp-canopy,kelp canopy,,modals/kelp-canopy.html,prep/plot_caption/kelp_canopy.Rmd,,,#575511
+svg/cinms_pelagic.svg,SST,sea surface temperature,,modals/sst.html,prep/captions/SST_intro.md,prep/captions/SST_attribute.md,,#2b2b2b
+svg/cinms_pelagic.svg,seascape,seascapes,,modals/seascape.html,prep/captions/seascapes_intro.md,,,#2b2b2b
+svg/cinms_pelagic.svg,phytoplankton,phytoplankton,,modals/phytoplankton.html,prep/captions/phytoplankton.md,prep/captions/phytoplankton_bottom.md,,#1e3b1a
+svg/cinms_pelagic.svg,forage-fish,forage fish,,modals/forage-fish.html,prep/captions/forage_fish_intro.md,prep/plot_caption/forage_biomass.md,,#2b2b2b
+svg/cinms_pelagic.svg,forage-invertss,forage invertebrates,,modals/forage-invertss.html,,prep/plot_caption/forage_biomass.md,,#2b2b2b
+svg/cinms_pelagic.svg,biodiversity,biodiversity of forage fish,,modals/biodiversity.html,prep/captions/biodiversity_forage.md,prep/plot_caption/FED_ack.md,,#2b2b2b
+svg/cinms_pelagic.svg,pinnipeds,sea lions,,modals/pinnipeds.html,prep/captions/sealion_intro.md,prep/captions/pnniped_data_attrb.md,,#2b2b2b
+svg/cinms_pelagic.svg,whales,whales,,modals/whales.html,prep/captions/whale_intro.md,,,#2b2b2b
+svg/cinms_pelagic.svg,eDNA,environmental dna,,modals/edna.html,prep/captions/edna_intro.md,prep/captions/eDNA_attribute.md,,#2b2b2b
+svg/cinms_pelagic.svg,copepods,copepods,,modals/copepods.html,,,,#2b2b2b
+svg/cinms_pelagic.svg,jellies,gelatinous zooplankton,,modals/jellies.html,,prep/plot_caption/FED_ack.md,,#2b2b2b
+svg/cinms_pelagic.svg,midwater-larval-fish,midwater larval fish,,modals/midwater-larval-fish.html,,,,#2b2b2b
+svg/cinms_pelagic.svg,humboldt-squid,humboldt squid,,modals/humboldt-squid.html,,prep/plot_caption/ROV_ack.md,,#2b2b2b
+svg/cinms_pelagic.svg,salmon,salmon,,modals/salmon.html,,prep/captions/salmon_attribute.md,,#2b2b2b
+svg/cinms_pelagic.svg,leatherbacks,leatherback turtles,,modals/leatherbacks.html,,,,#2b2b2b
+svg/cinms_pelagic.svg,seabirds,nesting seabirds,,modals/seabirds.html,,,,#2b2b2b
+svg/cinms_kelp-forest.svg,otter,sea otters,,modals/sea-otters.html,,,,#2b2b2b
+svg/cinms_kelp-forest.svg,crabs,crabs,,modals/crabs.html,,,,#2b2b2b
+svg/cinms_kelp-forest.svg,shrimp,shrimp,,modals/shrimp.html,,,,#2b2b2b
+svg/cinms_kelp-forest.svg,kelp-canopy,kelp canopy,,modals/kelp-canopy.html,prep/plot_caption/kelp_canopy.Rmd,,,#575511
 svg/cinms_overview.svg,pelagic,pelagic,pelagic.html,,,,,
 svg/cinms_overview.svg,sandy-beach,sandy beach,sandy-beach.html,,,,,
 svg/cinms_overview.svg,deep-seafloor,deep seafloor,deep-seafloor.html,,,,,
 svg/cinms_overview.svg,kelp-forest,kelp forest,kelp-forest.html,,,,,
 svg/cinms_overview.svg,rocky-shore,rocky shore,rocky-shore.html,,,,,
 svg/cinms_overview.svg,sandy-seafloor,sandy seafloor,sandy-seafloor.html,,,,,
-,key-climate-ocean-drivers,key climate & ocean drivers,,modals/na.html,,,,
+svg/cinms_overview.svg,key-climate-ocean-drivers,key climate & ocean drivers,,modals/na.html,,,,
 svg/cinms_deep-seafloor.svg,demersal-fishes,demersal fishes,,modals/na.html,,,,
 svg/cinms_deep-seafloor.svg,mobile-invertebrates,mobile invertebrates,,modals/na.html,,,,
 svg/cinms_deep-seafloor.svg,mobile-crustaceans,mobile crustaceans,,modals/na.html,,,,

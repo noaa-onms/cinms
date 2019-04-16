@@ -92,5 +92,7 @@ tryCatch(
     error = function(e) e
 )
 ```
-<p>During spring upwelling, centric diatoms dominate under high nutrients and external energy input. As upwelling weakens in late summer and nutrients decrease, pennate diatoms become prevalent. In the fall, dinoflagellates are more abundant in stratified waters where turbulence is weak. Under unusual conditions of high nutrient availability and strong stratification toxic red tides can develop.</p><br><img src="http://www3.mbari.org/bog/mbon/images/mb_seasonal_taxonomic_structure2.png"/>
+<p>During spring upwelling, centric diatoms dominate under high nutrients and external energy input. As upwelling weakens in late summer and nutrients decrease, pennate diatoms become prevalent. In the fall, dinoflagellates are more abundant in stratified waters where turbulence is weak. Under unusual conditions of high nutrient availability and strong stratification toxic red tides can develop.</p><br>
+
+
 <p>The phytoplankton time series is from Monterey Bay Station M1, 36.75N, -122.02W. Phytoplankton counts using an epifluorescent microscope, a compound microscope equipped with a high-intensity light source which emits light in a broad spectrum from visible through ultraviolet. Units have been converted to mg Carbon/m3. MBARI provides data "as is", with no warranty, express or implied, of the quality or consistency. Data are provided without support and without obligation on the part of the Monterey Bay Aquarium Research Institute to assist in its use, correction, modification, or enhancement. Monterey Bay Aquarium Research Institute (MBARI) Biological Oceanography Group, Francisco Chavez.  http://www.mbari.org
