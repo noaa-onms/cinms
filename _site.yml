@@ -6,8 +6,6 @@ navbar:
   title: "CINMS"
   icon: fa-info
   left:
-    - text: "Overview"
-      href: index.html
     - text: "Deep Seafloor"
       href: deep-seafloor.html
     - text: "Kelp Forest"
