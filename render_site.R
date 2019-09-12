@@ -41,5 +41,7 @@ walk(
   function(x) file.copy(x, file.path("docs", x)))
 render_site()
 
-# file.copy("svg", "docs/svg", recursive=T)
+# shortcuts w/out full render:
+# file.copy("libs", "docs", recursive=T)
+# file.copy("svg", "docs", recursive=T)
 
