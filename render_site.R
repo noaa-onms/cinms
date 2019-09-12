@@ -11,6 +11,13 @@ redo_modals <- F
 # read in links for svg
 d <- read_csv(csv)
 
+iq_render <- function(input){
+  render(input, html_document(
+    theme = site_config()$output$html_document$theme, 
+    self_contained=F, lib_dir = here("modals/modal_libs"), 
+    mathjax = NULL))
+}
+
 # create/render modals by iterating over svg links in csv ----
 for (i in 1:nrow(d)){ # i=1
   # paths
@@ -27,15 +34,12 @@ for (i in 1:nrow(d)){ # i=1
     rmd_newer <- T
   }
   if (rmd_newer | redo_modals){
-    render(rmd, html_document(
-      theme = site_config()$output$html_document$theme, 
-      self_contained=F, lib_dir = here("modals/modal_libs"), 
-      mathjax = NULL))
+    iq_render(rmd)
   }
 }
 
 # render website, ie Rmds in root ----
-walk(list.files(".", "*\\.md$"), render)
+walk(list.files(".", "*\\.md$"), iq_render)
 walk(
   list.files(".", "*\\.html$"), 
   function(x) file.copy(x, file.path("docs", x)))
