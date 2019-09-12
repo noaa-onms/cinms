@@ -46,6 +46,20 @@ The modal popup windows are rendered by [Bootstrap modals](https://getbootstrap.
 
 This website is constructed using [Rmarkdown website](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html) for enabling easy construction of site-wide navigation (see [`_site.yml`](https://github.com/marinebon/iea-ak-info/blob/master/_site.yml)) and embedding of [htmlwidgets](https://www.htmlwidgets.org), which provide interactive maps, time series plots, etc into the html pages to populate the modal window content in [`modals/`](https://github.com/marinebon/iea-ak-info/tree/master/modals). To build the website and view it, here are the commands to run in R:
 
+## develop
+
+### content editing workflow
+
+1. edit .Rmd files in `./docs/modals/`
+2. run `make_site.R`
+
+NOTE: The `.html` files *can* be edited but by default `.html` files are overwritten by content knit from the `Rmd` files of the same name.
+To use html directly set `redo_modals <- T`, but you will need to clear `.html` files manually with this setting.
+
+### testing
+
+Because of [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) restrictions, need local web server to debug:
+
 ```r
 # build website
 source("render_site.R")
@@ -60,8 +74,6 @@ or using Python:
 cd ~/github/cinms/docs; python -m SimpleHTTPServer
 ```
 
-
 The [`render_site.R`](https://github.com/marinebon/iea-ak-info/blob/master/render_site.R) script renders the modal and website pages.
 
 Note the actual html content served at [marinebon.github.io/cinms](https://marinebon.github.io/cinms) via [Github Pages](https://pages.github.com/) is all the html/jss/csss files copied into the `docs/` folder of this repository.
-

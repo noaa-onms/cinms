@@ -36,6 +36,9 @@ for (i in 1:nrow(d)){ # i=1
 
 # render website, ie Rmds in root ----
 walk(list.files(".", "*\\.md$"), render)
+walk(
+  list.files(".", "*\\.html$"), 
+  function(x) file.copy(x, file.path("docs", x)))
 render_site()
 
 # file.copy("svg", "docs/svg", recursive=T)
