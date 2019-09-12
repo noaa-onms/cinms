@@ -2,7 +2,7 @@
 title: "Kelp Forest"
 params:
   svg: "svg/cinms_kelp-forest.svg"
-  csv: "svg/svg_links.csv"
+  csv: "svg/svg_links_cinms.csv"
 ---
 
 ```{r svg, child = '_svg-html_child.Rmd'}

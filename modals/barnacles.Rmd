@@ -1,0 +1,17 @@
+---
+output:
+  html_document:
+    theme: "cosmo"
+---
+
+```{r, echo=F, message=F, warning=F, error=F}
+source(here::here("scripts/rocky.R"))
+
+plot_intertidal_nms(d_csv, "CINMS", "CHTBAL", "Acorn Barnacles")
+```
+
+
+
+
+
+
