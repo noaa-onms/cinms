@@ -1,0 +1,12 @@
+---
+title: "Overview"
+params:
+  csv: "svg/svg_links.csv"
+  svg: "svg/cinms_overview.svg"
+---
+
+Please explore the interactive infographics for Channel Islands National Marine Sanctuary (CINMS) to learn more about elements in each habitat.
+
+```{r svg, child = '_svg-html_child.Rmd'}
+```
+

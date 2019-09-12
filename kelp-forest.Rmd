@@ -1,0 +1,10 @@
+---
+title: "Kelp Forest"
+params:
+  svg: "svg/cinms_kelp-forest.svg"
+  csv: "svg/svg_links.csv"
+---
+
+```{r svg, child = '_svg-html_child.Rmd'}
+```
+

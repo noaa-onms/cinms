@@ -7,27 +7,22 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
-<title>kelp forest</title>
+<title>Kelp Forest</title>
 
-<script src="libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
-<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="libs/navigation-1.1/tabsets.js"></script>
-<link href="libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
-<script src="libs/highlightjs-9.12.0/highlight.js"></script>
-<script src="libs/htmlwidgets-1.3/htmlwidgets.js"></script>
-<script src="libs/r2d3-render-0.1.0/r2d3-render.js"></script>
-<script src="libs/webcomponents-2.0.0/webcomponents.js"></script>
-<script src="libs/r2d3-binding-0.2.3/r2d3.js"></script>
-<script src="libs/d3v5-5.0.0/d3.min.js"></script>
-<link href="libs/infographiq-css-0.1/infographiq.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/darkly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -74,6 +69,7 @@ h6 {
 }
 </style>
 
+<link rel="stylesheet" href="libs/styles.css" type="text/css" />
 
 
 
@@ -89,7 +85,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -106,6 +101,93 @@ summary {
 </style>
 
 
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
 
 <!-- tabsets -->
 
@@ -163,18 +245,6 @@ summary {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
@@ -190,36 +260,86 @@ $(document).ready(function () {
 
 
 
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">CINMS</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Overview</a>
+</li>
+<li>
+  <a href="deep-seafloor.html">Deep Seafloor</a>
+</li>
+<li>
+  <a href="kelp-forest.html">Kelp Forest</a>
+</li>
+<li>
+  <a href="pelagic.html">Pelagic</a>
+</li>
+<li>
+  <a href="rocky-shore.html">Rocky Shore</a>
+</li>
+<li>
+  <a href="sandy-beach.html">Sandy Beach</a>
+</li>
+<li>
+  <a href="sandy-seafloor.html">Sandy Seafloor</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="readme.html">About</a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
 <div class="fluid-row" id="header">
 
 
 
-<h1 class="title toc-ignore">kelp forest</h1>
+<h1 class="title toc-ignore">Kelp Forest</h1>
 
 </div>
 
 
-<div class="form-check">
-<p><input class="form-check-input" type="checkbox" value="" id="ckbox_questions" data-toggle="toggle"> <!--onclick="hideSVG('SVGid')"--> <label class="form-check-label" for="ckbox_questions"> questions </label></p>
-</div>
-<div aria-labelledby="modal-title" class="modal fade bs-example-modal-lg" id="modal" role="dialog" tabindex="-1">
-<div class="modal-dialog modal-lg" role="document">
-<div class="modal-content">
-<div class="modal-header">
-<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-<span aria-hidden="true">&times;</span>
-</button>
-<h4 class="modal-title" id="modal-title">title</h4>
-</div>
-<div class="modal-body"><iframe data-src="modal.html" height="100%" width="100%" frameborder="0"></iframe></div>
-<div class="modal-footer">
-<button class="btn btn-default" data-dismiss="modal">Close</button>
+<script src="libs/d3.v5.min.js"></script>
+<script src="libs/infographiq.js"></script>
+<link href="libs/bootstrap-toggle.min.css" rel="stylesheet">
+<script src="libs/bootstrap-toggle.min.js"></script>
+<div class="col-md-9">
+<div id="svg">
+
 </div>
 </div>
+<div class="col-md-3">
+Text: <input id="toggle-text" type="checkbox" data-toggle="toggle" data-size="mini">
+<div id="toggle-text-event">
+
 </div>
+<ul id="svg_list">
+</ul>
 </div>
-<div id="htmlwidget-dc46494af522697fdf15" style="width:960px;height:500px;" class="r2d3 html-widget"></div>
-<script type="application/json" data-for="htmlwidget-dc46494af522697fdf15">{"x":{"data":{"svg":["svg/cinms_kelp-forest.svg","svg/cinms_kelp-forest.svg","svg/cinms_kelp-forest.svg","svg/cinms_kelp-forest.svg"],"id":["otter","crabs","shrimp","kelp-canopy"],"title":["sea otters","crabs","shrimp","kelp canopy"],"link_nonmodal":[null,null,null,null],"link_modal":["modals/sea-otters.html","modals/crabs.html","modals/shrimp.html","modals/kelp-canopy.html"],"modal_before":[null,null,null,"prep/plot_caption/kelp_canopy.Rmd"],"modal_after":[null,null,null,null],"status_text":[null,null,null,null],"status_color":["#2b2b2b","#2b2b2b","#2b2b2b","#575511"]},"type":"data.frame","container":"svg","options":{"svg":"svg/cinms_kelp-forest.svg","color_default":"black","color_hover":"yellow","modal_id":"modal","width":null,"height":null},"script":"var d3Script = function(d3, r2d3, data, svg, width, height, options, theme, console) {\nthis.d3 = d3;\n\nsvg = d3.select(svg.node());\n/* R2D3 Source File:  /Users/bbest/github/infographiq/inst/infographiq.js */\n// !preview r2d3 data=read.csv(\"svg/svg_elements.csv\", strip.white=T), svg = \"svg/overview.svg\"\n\n// define div for tooltip\nvar tooltip_div = d3.select(\"body\").append(\"div\")\n  .attr(\"class\", \"tooltip\")\n  .style(\"opacity\", 0);\n\nd3.svg(options.svg).then((f) => {\n  // https://gist.github.com/mbostock/1014829#gistcomment-2692594\n  \n  var f_child = svg.node().appendChild(f.documentElement);\n  var h = d3.select(f_child);\n  \n  // resize\n  h.attr('width', '100%')\n   .attr('height', '100%');\n   \n  // default questions to hide\n  svg.select(\"#questions\")\n    .attr(\"display\", \"none\");\n\n    \n  console.log('test before data.forEach');\n  \n  // assign links\n  data.forEach(function(d) {\n    console.log('test in data.forEach');\n    console.log('forEach d.id: ' + d.id);\n    \n    // reset fill in group id and children\n    h.selectAll('#' + d.id)\n      .style('fill', options.color_default)\n      .selectAll('g')\n        .style('fill', null)\n        .selectAll('path')\n          .style('fill', null); \n    h.selectAll('#' + d.id + ' > path')\n      .style('fill', null);\n    \n    // handle events\n    h.selectAll('#' + d.id)\n      .on(\"click\", function() {\n        //debugger;\n        \n        if (d.link_nonmodal > ''){\n          window.location = d.link_nonmodal;\n        } else {\n          console.log('  link_modal:' + d.id);\n          \n          $('#'+ options.modal_id).find('iframe')\n            .prop('src', function(){ return d.link_modal })\n            .prop('src', function(){ return d.link_modal });\n          \n          $('#'+ options.modal_id + '-title').html( d.title );\n          \n          $('#'+ options.modal_id).on('show.bs.modal', function () {\n            $('.modal-content').css('height',$( window ).height()*0.9);\n            $('.modal-body').css('height','calc(100% - 65px - 55.33px)');\n          });\n          \n          $('#'+ options.modal_id).modal();\n        }\n      })\n     //.on('mouseover', handleMouseOver)\n     //.on('mouseout', handleMouseOut);\n     .on('mouseover', function() {\n       console.log('  mouseover():' + d.id);\n       \n       d3.select(this)\n        .style(\"fill\", options.color_hover)\n        .style(\"stroke\", options.color_hover)\n        .style(\"stroke-width\", 1);\n    \n       tooltip_div.transition()\n        .duration(200)\n        .style(\"opacity\", 0.9);\n       tooltip_div.html(d.title + \"<br/>\") //  + d.status_text)\n        .style(\"left\", (d3.event.pageX) + \"px\")\n        .style(\"top\", (d3.event.pageY - 28) + \"px\");\n       //highlight();\n     })\n     .on('mouseout', function() {\n       console.log('  mouseout():' + d.id);\n       \n       d3.select(this)\n        .style(\"fill\", options.color_default)\n        .style(\"stroke-width\", 0);\n        \n       tooltip_div.transition()\n        .duration(500);\n       tooltip_div.style(\"opacity\", 0);\n       //unhighlight();\n     });\n\n  }); // end: data.forEach()\n});\n\n\n// show/hide questions\nd3.select(\"#ckbox_questions\").on(\"change\", function() {\n  display = this.checked ? \"inline\" : \"none\";\n  \n  svg.select(\"#questions\")\n    .attr(\"display\", display);\n    \n});\n\n/*\nd3.selectAll(\"[name=ckbox_questions]\").on(\"change\", function() {\n  var selected = this.value;\n  //opacity = this.checked ? 1 : 0;\n\n  svg.selectAll(\".dot\")\n    .filter(function(d) {return selected == d.holWkend;})\n    .style(\"opacity\", opacity);\n}); \n*/\n\n// handle event functions\n/*\nfunction handleMouseOver(d, i) {\n  d3.select(this)\n    .style(\"fill\", options.color_hover)\n    .style(\"stroke\", options.color_hover)\n    .style(\"stroke-width\", 1);\n    \n  tooltip_div.transition()\n    .duration(200)\n    .style(\"opacity\", 0.9);\n  tooltip_div.html(d.title + \"<br/>\") //  + d.status_text)\n    .style(\"left\", (d3.event.pageX) + \"px\")\n    .style(\"top\", (d3.event.pageY - 28) + \"px\");\n  //highlight();\n}\nfunction handleMouseOut(d, i) {\n  d3.select(this)\n    .style(\"fill\", options.color_default)\n    .style(\"stroke-width\", 0);\n    \n  tooltip_div.transition()\n    .duration(500);\n  tooltip_div.style(\"opacity\", 0);\n  unhighlight();\n}\n*/\n\n/*\nfunction highlight(){\n  d3.selectAll(g_children_selector).style(\"stroke\", \"white\");\n  d3.selectAll(g_children_selector).style(\"stroke-width\", 1);\n}\nfunction unhighlight(){\n  d3.selectAll(g_children_selector).style(\"stroke-width\", 0);\n}\n*/\n     \n\n\n\n\n};","style":"/* R2D3 Source File:  /Users/bbest/github/infographiq/inst/infographiq.css */\ndiv.tooltip {\t\n    position: absolute;\t\t\t\n    text-align: center;\t\t\t\n    width: 60px;\t\t\t\t\t\n    height: 28px;\t\t\t\t\t\n    padding: 2px;\t\t\t\t\n    font: 12px sans-serif;\t\t\n    background: lightsteelblue;\t\n    border: 0px;\t\t\n    border-radius: 8px;\t\t\t\n    pointer-events: none;\t\t\t\n}","version":5,"theme":{"default":{"background":"#FFFFFF","foreground":"#000000"},"runtime":{"background":"#FFFFFF","foreground":"#000000"}},"useShadow":true},"evals":[],"jsHooks":[]}</script>
+<script>
+link_svg(svg = "svg/cinms_kelp-forest.svg", csv = "svg/svg_links.csv", debug = true);
+</script>
+<script>
+$(function() {
+$('#toggle-text').change(function() {
+  display = this.checked ? "inline" : "none";
+  d3.select("#text").attr("display", display);
+})
+})
+</script>
 
 
 
@@ -239,15 +359,23 @@ $(document).ready(function () {
 
 </script>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
+<!-- tabsets -->
+
 <script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
+
+<!-- code folding -->
+
+
 
 </body>
 </html>

@@ -1,0 +1,32 @@
+name: "CINMS info"
+output_dir: "docs"
+description: |
+  CINMS info
+navbar:
+  title: "CINMS"
+  icon: fa-info
+  left:
+    - text: "Overview"
+      href: index.html
+    - text: "Deep Seafloor"
+      href: deep-seafloor.html
+    - text: "Kelp Forest"
+      href: kelp-forest.html
+    - text: "Pelagic"
+      href: pelagic.html
+    - text: "Rocky Shore"
+      href: rocky-shore.html
+    - text: "Sandy Beach"
+      href: sandy-beach.html
+    - text: "Sandy Seafloor"
+      href: sandy-seafloor.html
+  right:
+    - text: "About"
+      href: readme.html
+output:
+  html_document:
+    theme: darkly # https://bootswatch.com
+    self_contained: no
+    css: libs/styles.css
+    mathjax: null
+    
