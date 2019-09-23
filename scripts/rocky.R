@@ -15,9 +15,29 @@ library(xts)
 #library(rerddap)
 # cannot use rerddap b/c login presently required
 
-raw_csv   <- "~/github/info-intertidal/MARINe_raw_4c1e_9218_7d13.csv"
-sites_csv <- "~/github/info-intertidal/data/MARINe_sites.csv"
-d_csv     <- "~/github/info-intertidal/data/sanctuary_species_percentcover.csv"
+sanctuaries <- c("cinms", "mbnms", "ocnms")
+
+dir_pfx   <- "~/github/info-intertidal"
+raw_csv   <- file.path(dir_pfx, "data/MARINe_raw_4c1e_9218_7d13.csv")
+sites_csv <- file.path(dir_pfx, "data/MARINe_sites.csv")
+d_csv     <- file.path(dir_pfx, "data/sanctuary_species_percentcover.csv")
+raw_n_csv <- file.path(dir_pfx, "data/raw_summary_n.csv")
+spp_csv   <- file.path(dir_pfx, "data/spp_targets.csv")
+sanctuaries_spp_csv <- file.path(dir_pfx, "data/nms_spp_targets.csv")
+
+# https://www.eeb.ucsc.edu/pacificrockyintertidal/target/index.html
+spp <- read_csv(spp_csv)
+# TODO: MARINe_sscount_2c08_916b_1ec6.csv: MARINe seastarkat_count_totals
+#  species_code: KATTUN 
+# later: MARINe_sssize_971e_f4b1_6017.csv: MARINe seastarkat_size_count_totals 
+#
+# black-abalone
+# black-oystercatcher
+# inverts
+# key-climate-ocean
+# key-human-activities
+# ochre-stars
+# owl-limpets
 
 get_nms_ply <- function(nms){
   # get polygon for National Marine Sanctuary
@@ -42,9 +62,10 @@ get_nms_ply <- function(nms){
 }
 
 plot_intertidal_nms <- function(d_csv, NMS, spp, sp_name){
-  
+  # NMS = "OCNMS"; spp = "CHTBAL"; sp_name = "Acorn Barnacles"
+
   # read in csv with fields site, date, pct_cover
-  d <- read_csv(d_csv) %>%
+  d <- read_csv(d_csv) %>% # table(d$nms)
     filter(nms==NMS, sp==spp) %>%
     select(-nms, -sp) %>%
     spread(site, pct_cover) # View(d_sites)
@@ -76,6 +97,11 @@ map_nms_sites <- function(nms){
   nms_ply <- get_nms_ply(nms)
   
   if (!file.exists(sites_nms_shp)){
+    if (!file.exists(sites_csv)) make_sites_csv(raw_csv, sites_csv)
+    
+    sites_pts <- read_csv(sites_csv) %>%
+      st_as_sf(coords = c("lon", "lat"), crs = 4326, remove = F)
+    
     sites_nms_pts <- sites_pts %>%
       st_intersection(nms_ply)
     write_sf(sites_nms_pts, sites_nms_shp)
@@ -109,4 +135,167 @@ get_sites <- function(raw_csv, sites_csv){
   }
   
   read_csv(sites_csv)
+}
+
+make_sites_csv <- function(raw_csv, sites_csv){
+  raw <- read_csv(raw_csv)
+  
+  sites_pts <- raw %>%
+    rename(
+      site = marine_site_name) %>%
+    group_by(site) %>%
+    summarize(
+      lat = first(`latitude (degrees_north)`),
+      lon = first(`longitude (degrees_east)`)) %>%
+    st_as_sf(coords = c("lon", "lat"), crs = 4326, remove = F)
+  
+  sites_pts %>%
+    st_set_geometry(NULL) %>%
+    write_csv(sites_csv)
+}
+
+make_nms_spp_pctcover <- function(sanctuaries, spp, raw_csv, d_csv){
+  
+  raw     <- read_csv(raw_csv)
+  
+  if (!file.exists(raw_n_csv)){
+    #head(raw, 1000) %>% View()
+    #table(raw$lumping_code)
+    #table(raw$target_assemblage)
+    raw %>% 
+      group_by(lumping_code, target_assemblage) %>% 
+      summarize(n = n()) %>% 
+      write_csv(raw_n_csv)
+  }
+  
+  for (i in 1:length(sanctuaries)){ # i = 2
+    
+    # set sanctuary variables
+    nms <- sanctuaries[i] # nms <- "mbnms"
+    NMS <- str_to_upper(nms)
+    
+    # get sites in nms
+    sites_nms_shp <- file.path(dir_pfx, glue("data/shp/{NMS}_sites.shp"))
+    if (!file.exists(sites_nms_shp)){
+      nms_ply <- get_nms_ply(nms)
+      sites_nms_pts <- sites_pts %>%
+        st_intersection(nms_ply)
+      write_sf(sites_nms_pts, sites_nms_shp)
+    }
+    sites_nms_pts <- read_sf(sites_nms_shp)
+    
+    # plot map of sanctuary and sites
+    # nms_ply <- get_nms_ply(nms)
+    # m <- mapview(nms_ply) + sites_nms_pts
+    # print(m)
+    
+    nms_spp_csv <- file.path(dir_pfx, glue("data/{NMS}_species_targets.csv"))
+    if (!file.exists(nms_spp_csv)){
+      raw %>%
+        filter(
+          marine_site_name %in% sites_nms_pts$site) %>% 
+        group_by(target_assemblage) %>% 
+        summarize(n=n()) %>% 
+        write_csv(nms_spp_csv)
+    }
+    
+    # iterate over species
+    for (j in 1:nrow(spp)){ # j = 1
+      
+      # set species variables
+      sp         <- spp$sp[j]
+      sp_targets <- str_split(spp$sp_target[j], "\\|", simplify = T)[1,]
+      sp_name    <- spp$sp_name[j]
+    
+      # filter for nms-sp
+      d_sites <- raw %>%
+        rename(
+          site = marine_site_name) %>%
+        filter(
+          site %in% sites_nms_pts$site,
+          lumping_code      == sp,
+          target_assemblage %in% sp_targets)
+      
+      # next sp if empty
+      if (nrow(d_sites) == 0) next()
+      
+      # average across plots for each site-species-date
+      d_sites <- d_sites %>%
+        mutate(
+          date = ymd(`time (UTC)`)) %>%
+        group_by(site, date) %>%
+        summarize(
+          pct_cover = mean(percent_cover)) # View(d_sites)
+      
+      # average across sites to nms-year
+      d_nms <- d_sites %>%
+        mutate(
+          date = date(glue("{year(date)}-06-15"))) %>%
+        group_by(date) %>%
+        summarize(
+          pct_cover = mean(pct_cover)) %>%
+        ungroup() %>%
+        mutate(
+          site = NMS) # View(d_nms)
+      
+      # combine sites and sanctuary annual average
+      d <- bind_rows(
+        d_sites,
+        d_nms) %>%
+        mutate(
+          nms = NMS,
+          sp  = sp) # View(d)
+      
+      # write data to csv
+      if (i == 1 & j == 1){
+        write_csv(d, d_csv)
+      } else {
+        write_csv(d, d_csv, append=T)
+      }
+      
+      # generate timeseries plot
+      #p <- plot_intertidal_nms(d_csv, NMS, sp_name)
+      #print(p)
+    }
+  }
+}
+
+#ocnms <- get_nms_ply("ocnms")
+#map_nms_sites("ocnms")
+
+if (!file.exists(d_csv)){
+  # NOTE: remake d_csv if adding a sanctuary or species
+  make_nms_spp_pctcover(sanctuaries, spp, raw_csv, d_csv)
+}
+
+if (!file.exists(sanctuaries_spp_csv)){
+  
+  # redo
+  if (file.exists(sanctuaries_spp_csv)) file.remove(sanctuaries_spp_csv)
+  
+  spp <- read_csv(spp_csv)
+  for (i in 1:length(sanctuaries)){ # nms = sanctuaries[1]
+    nms <- sanctuaries[i]
+    nms_spp_csv <- glue("~/github/info-intertidal/data/{toupper(nms)}_species_targets.csv")
+    
+    nms_spp <- spp %>% 
+      inner_join(
+        read_csv(nms_spp_csv) %>% 
+          mutate(
+            nms = !!nms,
+            sp_target = recode(
+              target_assemblage, 
+              balanus            = "chthamalus_balanus|balanus",
+              chthamalus_balanus = "chthamalus_balanus|balanus")),
+        by="sp_target") %>% 
+      select(nms, info_id, sp_name, sp, sp_target, n) %>% 
+      arrange(nms, info_id, sp_name)
+    
+    if (i == 1){
+      write_csv(nms_spp, sanctuaries_spp_csv)  
+    } else {
+      write_csv(nms_spp, sanctuaries_spp_csv, append = T)
+    }
+    
+  }
 }

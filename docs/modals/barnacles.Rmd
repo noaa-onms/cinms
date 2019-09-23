@@ -1,14 +1,43 @@
----
-output:
-  html_document:
-    theme: "cosmo"
----
 
-```{r, echo=F, message=F, warning=F, error=F}
-source(here::here("scripts/rocky.R"))
+```{r, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("../cinms/scripts/rocky.R"))
+```
 
+## {.tabset}
+
+### Acorn Barnacles
+
+```{r}
 plot_intertidal_nms(d_csv, "CINMS", "CHTBAL", "Acorn Barnacles")
 ```
+
+### Goose Barnacle
+
+```{r}
+plot_intertidal_nms(d_csv, "CINMS", "POLPOL", "Goose Barnacle")
+```
+
+### Pink Barnacle
+
+```{r}
+plot_intertidal_nms(d_csv, "CINMS", "TETRUB", "Pink Barnacle")
+```
+
+## Map of Sites
+
+```{r}
+map_nms_sites("cinms")
+```
+
+
+
+
+
+
+
+
+
 
 
 

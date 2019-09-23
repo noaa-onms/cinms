@@ -1,11 +1,15 @@
----
-output:
-  html_document:
-    theme: "cosmo"
----
 
-```{r, echo=F, message=F, warning=F, error=F}
-source(here::here("scripts/rocky.R"))
+```{r, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("../cinms/scripts/rocky.R"))
+```
 
+```{r}
 plot_intertidal_nms(d_csv, "CINMS", "MYTCAL", "California Mussels")
+```
+
+## Map of Sites
+
+```{r}
+map_nms_sites("cinms")
 ```

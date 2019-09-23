@@ -1,0 +1,42 @@
+
+```{r, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("../cinms/scripts/rocky.R"))
+```
+
+## {.tabset}
+
+### Golden Rockweed
+
+```{r}
+plot_intertidal_nms(d_csv, "CINMS", "SILCOM", "Golden Rockweed")
+```
+
+### Olive Rockweed
+
+```{r}
+plot_intertidal_nms(d_csv, "CINMS", "HESCAL", "Olive Rockweed")
+```
+
+### Turfweed
+
+```{r}
+# TODO: inspect Surfgrass in CINMS; n=1100; Error in seq.int(0, 1, length.out = n)
+#plot_intertidal_nms(d_csv, "CINMS", "PHYOVR", "Surfgrass"):
+
+plot_intertidal_nms(d_csv, "CINMS", "ENDMUR", "Turfweed")
+```
+
+## Map of Sites
+
+```{r}
+map_nms_sites("cinms")
+```
+
+
+
+
+
+
+
+

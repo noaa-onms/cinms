@@ -8,10 +8,9 @@ library(leaflet)
 library(leafem)
 library(dygraphs) # install.packages("dygraphs")
 library(xts)
-
-source(here::here("scripts/rocky.R")) # for: nms_ply <- get_nms_ply("cinms")
-
 here = here::here
+
+source(here::here("../cinms/scripts/rocky.R")) # for: nms_ply <- get_nms_ply("cinms")
 
 #library(readxl)
 #library(fs)

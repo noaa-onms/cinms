@@ -6,7 +6,7 @@ library(purrr)
 here = here::here
 
 # parameters
-csv         <- "svg/svg_links_cinms.csv"
+csv         <- here("svg/svg_links_cinms.csv")
 redo_modals <- T
 
 # read in links for svg
