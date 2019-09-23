@@ -7,7 +7,7 @@ here = here::here
 
 # parameters
 csv         <- here("svg/svg_links_cinms.csv")
-redo_modals <- T
+redo_modals <- F
 
 # read in links for svg
 d <- read_csv(csv)
