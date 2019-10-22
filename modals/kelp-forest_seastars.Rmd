@@ -1,13 +1,5 @@
 ##  {.tabset} 
 
-### NPS: Ochre Stars in Sanctuary
-
-![**Figure App.F.12.2.** Mean number (+/- standard error) of ochre stars _Pisaster ochraceus_ observed during 30-minute searches pooled across all sites at each of the five islands in Channel Islands National Marine Sanctuary from 1999–2014. In the past decade, most locations had more than 100 sea stars counted during 30-minute searches. In 2014, abundances ranged from 0–23 individuals per site with the majority of sites having less than ten. Figure: Channel Islands National Park](../img/cinms_cr/App.F.12.2.Pochraceus_abundance.jpg)
-
-### NPS: Ochre Stars in Individual Islands
-
-![**Figure App.F.12.3.** Box plots for annual size frequency distributions of ochre star _P. ochraceus_ at each island. Black lines represent mean sizes of ochre stars at each island pooled across sites. Red lines represent the mean of all years. Note that data for 2014 are not presented due to insufficient numbers of ochre stars encountered to estimate population size frequency. Figure: Channel Islands National Park](../img/cinms_cr/App.F.12.3.Pochraceus_size.jpg)
-
 ### PISCO: Sea Stars on Islands
 
 ![**Figure App.F.12.7.** Average density (+/- standard error) of giant spined star Pisaster giganteus (top), ochre star P. ochraceus (middle) and sunflower star Pycnopodia helianthoides (bottom) at 14 sites across four islands in Channel Islands National Marine Sanctuary monitored by the PISCO kelp forest monitoring program from 2003–2016. Sea stars are counted by SCUBA divers swimming along transect lines. Sea star density was averaged across all monitoring sites at each island, including sites located inside and outside of marine reserves and conservation areas, to examine course-scale trends by island. Giant, ochre, and sunflower stars suffered severe declines from 2013 to 2014 at all four islands due to sea star wasting syndrome. Data source: PISCO; Figure: R. Freedman/NOAA](../img/cinms_cr/App.F.12.7.seastars_PISCO.jpg)
@@ -23,5 +15,3 @@
 ### LTER: Sea stars
 
 ![**Figure App.F.12.9.** Average density (+/- standard error) of sea stars (_Pisaster_ and _Pycnopodia_ combined) at two island (dark blue) and nine mainland (light blue) kelp forest sites monitored by the Santa Barbara Channel Long-term Ecological Research (SBC LTER) program. Sea star density had drastically declined all sites prior to 2014 monitoring and remained very low through 2015. Data source: SBC LTER; Figure: R. Freedman/NOAA](../img/cinms_cr/App.F.12.9.seastar_LTER.jpg)
-
-
