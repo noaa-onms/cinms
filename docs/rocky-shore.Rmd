@@ -1,0 +1,10 @@
+---
+title: "Rocky Shore"
+params:
+  svg: "svg/cinms_rocky-shore.svg"
+  csv: "svg/svg_links_cinms.csv"
+---
+
+```{r svg, child = '_svg-html_child.Rmd'}
+```
+

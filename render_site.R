@@ -4,6 +4,7 @@ library(readr)
 library(fs)
 library(glue)
 library(purrr)
+library(dplyr)
 here = here::here
 
 # parameters
@@ -11,7 +12,11 @@ csv         <- here("svg/svg_links_cinms.csv")
 redo_modals <- F
 
 # read in links for svg
-d <- read_csv(csv)
+d <- read_csv(csv) %>% 
+  mutate(dir = dirname(link))
+
+d_modals <- d %>% 
+  filter(dir != ".")
 
 render_page <- function(rmd){
   render(rmd, html_document(
@@ -49,9 +54,9 @@ render_modal <- function(rmd){
 # render_modal("modals/key-climate-ocean.Rmd")
 
 # create/render modals by iterating over svg links in csv ----
-for (i in 1:nrow(d)){ # i=1
+for (i in 1:nrow(d_modals)){ # i=1
   # paths
-  htm <- d$link[i]
+  htm <- d_modals$link[i]
   rmd <- path_ext_set(htm, "Rmd")
   
   # create Rmd, if doesn't exist
