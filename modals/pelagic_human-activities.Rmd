@@ -1,0 +1,25 @@
+## {.tabset}
+
+```{r svg, child = '_contaminants.Rmd'}
+```
+
+```{r svg, child = '_fishing.Rmd'}
+```
+
+```{r svg, child = '_marine-debris.Rmd'}
+```
+
+```{r svg, child = '_noise.Rmd'}
+```
+
+```{r svg, child = '_oil-gas.Rmd'}
+```
+
+```{r svg, child = '_seabird-disturbance.Rmd'}
+```
+
+```{r svg, child = '_ship-traffic.Rmd'}
+```
+
+```{r svg, child = '_whale-entanglement.Rmd'}
+```

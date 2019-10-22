@@ -1,0 +1,3 @@
+### Ship Traffic
+
+![**Figure App.C.4.12.** Traffic patterns of large commercial vessels (cargo and tanker vessels) in the Santa Barbara Channel region for 2008, 2010, and 2014. The number of commercial ship transits is shown, using Automatic Identification System (AIS) data transmitted from ships. Vessels transiting to and from the Ports of Los Angeles/Long Beach that pass by the northern Channel Islands use either the Santa Barbara Channel Traffic Separation Scheme around the north side of the islands, or take routes south of the islands. Data source: USCG AIS data, processed by NMFS; Figure: MSWGSS 2016](../img/cinms_cr/App.C.4.12.MSWGSS_2016.jpg)

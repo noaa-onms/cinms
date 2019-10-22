@@ -1,0 +1,16 @@
+## {.tabset}
+
+```{r svg, child = '_contaminants.Rmd'}
+```
+
+```{r svg, child = '_marine-debris.Rmd'}
+```
+
+```{r svg, child = '_oil-gas.Rmd'}
+```
+
+```{r svg, child = '_seabird-disturbance.Rmd'}
+```
+
+```{r svg, child = '_visitors.Rmd'}
+```

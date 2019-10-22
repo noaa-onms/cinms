@@ -1,0 +1,14 @@
+### Oil & Gas
+
+![**Figure App.C.4.17.** The status and trends of offshore oil and gas activity in southern California was measured using a normalized index of oil and gas production from offshore wells in state and federal waters in California. Activity has been stable over the last five years, but the short-term average was well below the long-term average (dashed green line). A rather steady decrease in oil and gas production has occurred since the mid-1990s. Data source: Annual reports of the California State Department of Conservation’s Division of Oil, Gas, and Geothermal Resources; Figure: K. Andrews/NOAA](../img/cinms_cr/App.C.4.17.Oil_gas_activity_CCIEA.jpg)
+
+
+#### Oil & Gas Maps {.tabset}
+
+##### Offshore Oil Platforms
+
+![**Figure App.C.2.1.** Map of offshore oil platforms within the Santa Barbara Channel, from west to east: Hondo, Harmony, Heritage, Holly, C, B, A, Hillhouse, Habitat, Henry, Houchin, Hogan, Rincon Island, Grace, Gilda, Gail, and Gina. Data source: State of California GeoPortal; Map: M. Cajandig/NOAA](../img/cinms_cr/App.C.2.1 Oil platforms_Mari Cajandig.jpg)
+
+##### 2015 Refugio Oil Spill
+
+![**Figure App.C.2.3.** Diagonal black lines cover the area where oil sheen was observed after the 2015 Refugio Oil Spill. The dark black line indicates the short-term fishery closures. See Figures C2.4 and C13.5 for the modeled oil transport, which predicts crude oil reaching sanctuary waters, Santa Rosa, and Santa Cruz islands north-facing beaches days after the spill. Data source: Shoreline Cleanup and Assessment Technique (SCAT) Shoreline Oiling Map: http://response.restoration.noaa.gov/oil-and-chemical-spills/oil-spills/resources/shoreline-cleanup-and-assessment-technique-scat.html. Map: M. Cajandig/NOAA](../img/cinms_cr/App.C.2.3 Refugio Spill_Mari Cajandig.jpg)

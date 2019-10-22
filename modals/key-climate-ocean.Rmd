@@ -152,3 +152,8 @@ plot_timeseries(d_2, title="CHL", color="green")
 ```
 
 Download data: [`r basename(csv)`](https://raw.githubusercontent.com/marinebon/`r nms`/master/data/oceano/`r basename(csv))
+
+### Temp & N Anomalies (7-10m)
+
+![**Figure App.D.6.7.** Monthly anomalies in (top panel) observed bottom temperature (°C) at 7–10 meters depth and (bottom panel) modeled bottom nitrate concentrations (μmol/L) at 7–10 meters depth along the Santa Barbara Channel mainland nearshore (nine sampling sites roughly spanning from Gaviota east to Ventura). The anomalously warm years of 2014–2015 are shown in red. Similar trends were seen at the islands. Figure: Reed et al. 2016/Santa Barbara Coastal Long-term Ecological Research
+](../img/cinms_cr/App.D.6.7_SST and nitrate anomalies 2001-2015_Reed et al._2016.jpg)
