@@ -12,32 +12,39 @@ redo_modals <- F
 # read in links for svg
 d <- read_csv(csv)
 
-render_page <- function(input){
-  render(input, html_document(
+render_page <- function(rmd){
+  render(rmd, html_document(
     theme = site_config()$output$html_document$theme, 
     self_contained=F, lib_dir = here("modals/modal_libs"), 
     mathjax = NULL))
 }
 
-render_modal <- function(input){
+render_modal <- function(rmd){
   rmds_theme_white <- c(
     "modals/barnacles.Rmd",
     "modals/mussels.Rmd")
   
   site_theme <- site_config()$output$html_document$theme
-  rmd_theme  <- ifelse(input %in% rmds_theme_white, "cosmo", site_theme)
+  rmd_theme  <- ifelse(rmd %in% rmds_theme_white, "cosmo", site_theme)
   
-  render(input, html_document(
+  render(rmd, html_document(
     theme = rmd_theme, 
     self_contained=F, lib_dir = here("modals/modal_libs"), 
     # toc=T, toc_depth=3, toc_float=T,
     mathjax = NULL))
+  
+  htm <- fs::path_ext_set(rmd, "html")
+  docs_htm <- glue("docs/{htm}")
+  docs_rmd <- glue("docs/{rmd}")
+  file.copy(rmd, docs_rmd, overwrite = T)
+  file.copy(htm, docs_htm, overwrite = T)
 }
 
 # render_modal("modals/key-human-activities.Rmd")
 # render_modal("modals/rocky-map.Rmd")
 # render_modal("modals/barnacles.Rmd")
 # render_modal("modals/mussels.Rmd")
+# render_modal("modals/halibut.Rmd")
 # render_modal("modals/key-climate-ocean.Rmd")
 
 # create/render modals by iterating over svg links in csv ----
