@@ -1,0 +1,9 @@
+---
+title: "Sandy Beach"
+params:
+  svg: "svg/cinms_sandy-beach.svg"
+  csv: "svg/svg_links_cinms.csv"
+---
+
+```{r svg, child = '_svg-html_child.Rmd'}
+```

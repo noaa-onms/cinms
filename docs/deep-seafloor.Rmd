@@ -1,0 +1,10 @@
+---
+title: "Deep Seafloor"
+params:
+  csv: "svg/svg_links_cinms.csv"
+  svg: "svg/cinms_deep-seafloor.svg"
+---
+
+```{r svg, child = '_svg-html_child.Rmd'}
+```
+
