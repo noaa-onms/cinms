@@ -28,6 +28,7 @@ get_path_from <- function(path){
   # return one with biggest file size
   paths[which.max(file_info(paths)$size)]
 }
+# TODO: consolidate suffix repeats: *-0.* + *-1.* -> *.*
 
 get_path_to <- function(path){
   if (is.na(path)) return(NA)
@@ -44,7 +45,7 @@ img_convert <- function(path_from, path_to, width=6.5, dpi=150){
   system(glue('
   in="{path_from}"
   out_jpg="{path_to}"
-  convert "$in" -resize {width} -units pixelsperinch -density {dpi} -trim "$out_jpg"'))
+  convert "$in" -trim -units pixelsperinch -density {dpi} -resize {width} "$out_jpg"'))
 }
 
 imgs <- imgs %>% 
