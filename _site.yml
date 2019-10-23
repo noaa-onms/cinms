@@ -23,7 +23,7 @@ navbar:
       href: readme.html
 output:
   html_document:
-    theme: darkly # cosmo # https://bootswatch.com
+    theme: lumen # darkly # cosmo # https://bootswatch.com
     self_contained: no
     css: libs/styles.css
     mathjax: null

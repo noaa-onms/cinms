@@ -9,7 +9,7 @@ here = here::here
 
 # parameters
 csv         <- here("svg/svg_links_cinms.csv")
-redo_modals <- F
+redo_modals <- T
 
 # read in links for svg
 d <- read_csv(csv) %>% 
@@ -78,7 +78,7 @@ walk(list.files(".", "*\\.md$"), render_page)
 walk(
   list.files(".", "*\\.html$"), 
   function(x) file.copy(x, file.path("docs", x)))
-render_site()
+rmarkdown::render_site()
 
 # shortcuts w/out full render:
 # file.copy("libs", "docs", recursive=T)
