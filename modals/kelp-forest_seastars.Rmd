@@ -15,3 +15,7 @@
 ### LTER: Sea stars
 
 ![**Figure App.F.12.9.** Average density (+/- standard error) of sea stars (_Pisaster_ and _Pycnopodia_ combined) at two island (dark blue) and nine mainland (light blue) kelp forest sites monitored by the Santa Barbara Channel Long-term Ecological Research (SBC LTER) program. Sea star density had drastically declined all sites prior to 2014 monitoring and remained very low through 2015. Data source: SBC LTER; Figure: R. Freedman/NOAA](../img/cinms_cr/App.F.12.9.seastar_LTER.jpg)
+
+### MARE: Sunflower star
+
+![**Figure App.F.12.15.** Marine Applied Research and Exploration (MARE) data on abundance of sunflower star Pycnopodia helianthoides along seafloor transects. Source: MARE](../img/cinms_cr/App.F.12.15.Pycnopodia_MARE.jpg)

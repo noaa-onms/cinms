@@ -61,3 +61,8 @@ imgs <- imgs %>%
 imgs %>%
   select(path_from, path_to) %>% 
   pwalk(img_convert)
+
+# manual
+path_from="/Volumes/GoogleDrive/My Drive/projects/nms-web/cinms/Images/App F: LR (AppF.Q#.#)/AppendixF_Q15/App.F.15.5.CalCOFI_water_associated.tiff"
+path_to="/Users/bbest/github/cinms/img/cinms_cr/App.F.15.5.CalCOFI_water_associated.jpg"
+img_convert(path_from, path_to)

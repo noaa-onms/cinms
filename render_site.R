@@ -9,7 +9,7 @@ here = here::here
 
 # parameters
 csv         <- here("svg/svg_links_cinms.csv")
-redo_modals <- T
+redo_modals <- F
 
 # read in links for svg
 d <- read_csv(csv) %>% 
@@ -58,6 +58,8 @@ for (i in 1:nrow(d_modals)){ # i=1
   # paths
   htm <- d_modals$link[i]
   rmd <- path_ext_set(htm, "Rmd")
+  
+  #if (htm == "modals/ca-sheephead.html") browser()
   
   # create Rmd, if doesn't exist
   if (!file.exists(rmd)) file.create(rmd)
