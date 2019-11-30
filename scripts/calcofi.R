@@ -29,8 +29,9 @@ calcofi_plot <- function(
   library(scales)
   library(stringr)
   
+  #browser()
   d <- csv %>% 
-    stringr::str_replace(" ", "%20") %>% 
+    stringr::str_replace_all(" ", "%20") %>% 
     readr::read_csv()
   
   if (nrow(d) == 0) return(NULL)
@@ -83,4 +84,28 @@ calcofi_plot <- function(
   } else {
     print(g)
   }
+}
+
+
+calcofi_map <- function(
+  geo    = "https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/plys_cinms.geojson",
+  filter_str = 'ply_code != "SoCal"'
+){
+  library(sf)
+  library(dplyr)
+  library(rlang)
+  library(mapview)
+  
+  plys <- read_sf(geo)
+  
+  if (!any(is.na(filter_str), is.null(filter_str), nchar(filter_str)==0)){
+    # https://edwinth.github.io/blog/dplyr-recipes/
+    expr <- rlang::parse_expr(filter_str)
+    plys <- dplyr::filter(plys, !! expr)
+  }
+  
+  mapviewOptions(
+    basemaps = c("Esri.OceanBasemap", "Stamen.TonerLite"))
+  
+  mapview(plys)
 }

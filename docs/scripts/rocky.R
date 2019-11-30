@@ -18,13 +18,15 @@ library(xts)
 sanctuaries <- c("cinms", "mbnms", "ocnms")
 
 dir_pfx   <- "~/github/info-intertidal"
-raw_csv   <- file.path(dir_pfx, "data/MARINe_raw_4c1e_9218_7d13.csv")
+#raw_csv   <- file.path(dir_pfx, "data/MARINe_raw_4c1e_9218_7d13.csv")
+raw_csv   <- file.path(dir_pfx, "data/MARINe_raw_1c3b_9486_c22d.csv")
 sites_csv <- file.path(dir_pfx, "data/MARINe_sites.csv")
 d_csv     <- file.path(dir_pfx, "data/sanctuary_species_percentcover.csv")
 raw_n_csv <- file.path(dir_pfx, "data/raw_summary_n.csv")
 spp_csv   <- file.path(dir_pfx, "data/spp_targets.csv")
 #sanctuaries_spp_csv <- file.path(dir_pfx, "data/nms_spp_targets.csv")
 sanctuaries_spp_csv <- file.path(dir_pfx, "data/nms_spp.csv")
+redo <- T
 
 # https://www.eeb.ucsc.edu/pacificrockyintertidal/target/index.html
 spp <- read_csv(spp_csv)
@@ -43,7 +45,7 @@ spp <- read_csv(spp_csv)
 get_nms_ply <- function(nms){
   # get polygon for National Marine Sanctuary
   
-  nms_shp <- glue("~/github/info-intertidal/data/shp/{nms}_py.shp")
+  nms_shp <- glue("{dir_pfx}/data/shp/{nms}_py.shp")
   
   if (!file.exists(nms_shp)){
     # download if needed
@@ -65,6 +67,7 @@ get_nms_ply <- function(nms){
 plot_intertidal_nms <- function(d_csv, NMS, spp, sp_name){
   # NMS = "OCNMS"; spp = "CHTBAL"; sp_name = "Acorn Barnacles"
   # NMS="OCNMS"; spp = c("BARNAC","CHTBAL"); sp_name = "Acorn Barnacles"
+  # NMS="CINMS"; spp="CHTBAL"; sp_name="Acorn Barnacles"
 
   # read in csv with fields site, date, pct_cover
   d <- read_csv(d_csv) %>% # table(d$nms)
@@ -159,11 +162,11 @@ make_sites_csv <- function(raw_csv, sites_csv){
     write_csv(sites_csv)
 }
 
-make_nms_spp_pctcover <- function(sanctuaries, spp, raw_csv, d_csv){
+make_nms_spp_pctcover <- function(sanctuaries, spp, raw_csv, d_csv, redo = F){
   
   raw <- read_csv(raw_csv)
   
-  if (!file.exists(raw_n_csv)){
+  if (!file.exists(raw_n_csv) | redo){
     #head(raw, 1000) %>% View()
     #table(raw$lumping_code)
     #table(raw$target_assemblage)
@@ -197,7 +200,7 @@ make_nms_spp_pctcover <- function(sanctuaries, spp, raw_csv, d_csv){
     # print(m)
     
     nms_spp_csv <- file.path(dir_pfx, glue("data/{NMS}_species.csv"))
-    if (!file.exists(nms_spp_csv)){
+    if (!file.exists(nms_spp_csv) | redo){
       nms_spp <- raw %>%
         rename(
           site    = marine_site_name,
@@ -277,9 +280,9 @@ make_nms_spp_pctcover <- function(sanctuaries, spp, raw_csv, d_csv){
 #ocnms <- get_nms_ply("ocnms")
 #map_nms_sites("ocnms")
 
-if (!file.exists(d_csv)){
+if (!file.exists(d_csv) | redo){
   # NOTE: remake d_csv if adding a sanctuary or species
-  make_nms_spp_pctcover(sanctuaries, spp, raw_csv, d_csv)
+  make_nms_spp_pctcover(sanctuaries, spp, raw_csv, d_csv, redo = redo)
 }
 
 if (!file.exists(sanctuaries_spp_csv)){

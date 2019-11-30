@@ -1,0 +1,97 @@
+```{r, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+
+library(glue)
+source(here::here("scripts/calcofi.R"))
+```
+
+## {.tabset}
+
+### Map of Regions
+
+```{r}
+calcofi_map()
+```
+
+### Cool-water associated ichthyoplankton (larval fish) {.active}
+
+#### CINMS Region
+
+```{r}
+grp   <- "Cool-water associated ichthyoplankton"
+rgn   <- "CINMS"
+
+title <- glue("{grp} - {rgn} Region")
+csv   <- glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/{grp}_{rgn}.csv")
+
+calcofi_plot(csv = csv, title = title)
+```
+
+#### SoCal Shelf Region
+
+```{r}
+grp   <- "Cool-water associated ichthyoplankton"
+rgn   <- "SoCal Shelf"
+
+title <- glue("{grp} - {rgn} Region")
+csv   <- glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/{grp}_{rgn}.csv")
+
+#download.file(csv, "_tmp.csv")
+calcofi_plot(csv = csv, title = title)
+```
+
+
+
+
+### Warm-water associated ichthyoplankton (larval fish)
+
+#### CINMS Region
+
+```{r}
+grp   <- "Warm-water associated ichthyoplankton"
+rgn   <- "CINMS"
+
+title <- glue("{grp} - {rgn} Region")
+csv   <- glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/{grp}_{rgn}.csv")
+
+calcofi_plot(csv = csv, title = title)
+```
+
+#### SoCal Shelf Region
+
+```{r}
+grp   <- "Warm-water associated ichthyoplankton"
+rgn   <- "SoCal Shelf"
+
+title <- glue("{grp} - {rgn} Region")
+csv   <- glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/{grp}_{rgn}.csv")
+
+#download.file(csv, "_tmp.csv")
+calcofi_plot(csv = csv, title = title)
+```
+
+
+
+
+
+
+### Larval fish - Mean Species Richness
+
+#### CINMS Region
+
+![](../img/cinms_cr/App.F.15.6.a.CalCOFI_diversity_richness-cinms.jpg)
+
+#### SoCal Shelf Region
+
+![**Figure App.F.15.6.a-b** Mean species richness of fish larvae (ichthyoplankton) collected in net samples during spring CalCOFI cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) region and over the Southern California Shelf from 1978 to 2015. Species richness is the number of species present in a net sample. Species richness tends to increase in El Niño years due to influx of central Pacific species to the shelf. Sampling sites are shown on Figure App.F.12.17. Symbols on the graph are explained in the caption for Figure App.F.12.18. Data source: CalCOFI; Figure: A. Thompson/NOAA](../img/cinms_cr/App.F.15.6.b.CalCOFI_diversity_richness-socal.jpg)
+
+
+### Larval fish - Mean Simpson Diversity
+
+#### CINMS Region
+
+![](../img/cinms_cr/App.F.15.6.c.CalCOFI_diversity_diversity-cinms.jpg)
+
+#### SoCal Shelf Region
+
+![**Figure App.F.15.6.c-d** Relative abundance of cool-water (top panels) and warm-water (bottom panels) associated ichthyoplankton (fish larvae) groups collected in net samples during spring CalCOFI cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) region (left panels) and over the Southern California Shelf (right panels) from 1978 to 2015. Sampling sites are shown on Figure App.F.12.17. Symbols on the graph are explained in the caption for Figure App.F.12.18. Data source: CalCOFI; Figure: A. Thompson/NOAA](../img/cinms_cr/App.F.15.6.d.CalCOFI_diversity_diversity-socal.jpg)
