@@ -24,12 +24,23 @@ sites_csv <- file.path(dir_pfx, "data/MARINe_sites.csv")
 d_csv     <- file.path(dir_pfx, "data/sanctuary_species_percentcover.csv")
 raw_n_csv <- file.path(dir_pfx, "data/raw_summary_n.csv")
 spp_csv   <- file.path(dir_pfx, "data/spp_targets.csv")
-#sanctuaries_spp_csv <- file.path(dir_pfx, "data/nms_spp_targets.csv")
-sanctuaries_spp_csv <- file.path(dir_pfx, "data/nms_spp.csv")
+#nms_spp_csv <- file.path(dir_pfx, "data/nms_spp_targets.csv")
+nms_spp_csv     <- file.path(dir_pfx, "data/nms_spp.csv")
+nms_spp_rgn_csv <- file.path(dir_pfx, "data/nms_spp_rgn.csv")
+nms_rgns_csv    <- "https://docs.google.com/spreadsheets/d/1Prm_NxhnRvGTIG7bqw4st8tt0NYnQWZ3/export?format=csv&gid=178828096"
+
 redo <- F
 
 # https://www.eeb.ucsc.edu/pacificrockyintertidal/target/index.html
 spp <- read_csv(spp_csv)
+
+nms_rgns <- read_csv(nms_rgns_csv) %>% 
+  fill(nms) %>% 
+  group_by(nms) %>% 
+  fill(bioregion, island) %>% 
+  mutate(
+    rgn = ifelse(!is.na(island), glue("{bioregion}: {island}"), bioregion)) # View(nms_rgns)
+
 # TODO: MARINe_sscount_2c08_916b_1ec6.csv: MARINe seastarkat_count_totals
 #  species_code: KATTUN 
 # later: MARINe_sssize_971e_f4b1_6017.csv: MARINe seastarkat_size_count_totals 
@@ -68,20 +79,61 @@ plot_intertidal_nms <- function(d_csv, NMS, spp, sp_name){
   # NMS = "OCNMS"; spp = "CHTBAL"; sp_name = "Acorn Barnacles"
   # NMS="OCNMS"; spp = c("BARNAC","CHTBAL"); sp_name = "Acorn Barnacles"
   # NMS="CINMS"; spp="CHTBAL"; sp_name="Acorn Barnacles"
+  # NMS="MBNMS"; "PELLIM"; "Dwarf Rockweed"
 
   # read in csv with fields site, date, pct_cover
   d <- read_csv(d_csv) %>% # table(d$nms)
     filter(nms == NMS, sp %in% spp) %>%
     group_by(site, date) %>%
-    summarize(pct_cover = sum(pct_cover)) %>% 
-    spread(site, pct_cover) # View(d_sites)
+    summarize(
+      pct_cover = sum(pct_cover)) %>% 
+    ungroup()
+  
+  sites_no_rgn <- d %>% filter(site != NMS) %>% anti_join(nms_rgns, by="site") %>% pull(site) %>% unique()
+  stopifnot(length(sites_no_rgn) == 0)
+  
+  # View(nms_rgns) # View(d) # NMS = "CINMS"
+  rgns <- nms_rgns %>% filter(nms == NMS) %>% pull(rgn) %>% unique()
+  if (length(rgns) > 0 ){
+    # avg by region
+    d_sites <- d %>% 
+      filter(site != NMS) %>% 
+      left_join(nms_rgns, by="site") %>% 
+      group_by(rgn, date) %>%
+      summarize(
+        pct_cover = mean(pct_cover)) %>% 
+      ungroup()
+
+    d_allsites <- d %>% 
+      filter(site == NMS) %>% 
+      mutate(
+        rgn = site) %>% 
+      select(rgn, date, pct_cover)
+    
+    d <- bind_rows(d_sites, d_allsites)
+  } else {
+    d <- d %>% 
+      mutate(
+        rgn = site) %>% 
+      select(rgn, date, pct_cover)
+  }
+  
+  
+  # avg by year and spread
+  d <- d %>% 
+    mutate(
+      yr = year(date)) %>% 
+    group_by(rgn, yr) %>% 
+    summarize(
+      pct_cover = mean(pct_cover)) %>% 
+    spread(rgn, pct_cover) # View(d)
   
   # line colors
   ln_colors <- c(colorRampPalette(brewer.pal(11, "Set3"))(ncol(d)-2), "black")
   
   # convert to xts time object
-  x <- select(d, -date) %>%
-    as.xts(order.by=d$date)
+  x <- select(d, -yr) %>%
+    as.xts(order.by = ymd(glue("{d$yr}-06-15")))
   
   # plot dygraph
   #browser()
@@ -93,6 +145,10 @@ plot_intertidal_nms <- function(d_csv, NMS, spp, sp_name){
     dyHighlight(highlightSeriesOpts = list(strokeWidth = 2)) %>%
     dyRangeSelector()
 }
+
+# TODO: read gsheet and lump by island
+# MARINe_graphs:sites in CINMS
+# https://docs.google.com/spreadsheets/d/1Prm_NxhnRvGTIG7bqw4st8tt0NYnQWZ3/edit#gid=178828096
 
 map_nms_sites <- function(nms){
   # nms <- "cinms" # mbnms" # "ocnms"
@@ -285,12 +341,12 @@ if (!file.exists(d_csv) | redo){
   make_nms_spp_pctcover(sanctuaries, spp, raw_csv, d_csv, redo = redo)
 }
 
-if (!file.exists(sanctuaries_spp_csv)){
+if (!file.exists(nms_spp_csv)){
   
   # redo
-  if (file.exists(sanctuaries_spp_csv)) file.remove(sanctuaries_spp_csv)
+  if (file.exists(nms_spp_csv)) file.remove(nms_spp_csv)
   
-  sanctuaries_spp <- map(sanctuaries, function(nms){
+  nms_spp <- map(sanctuaries, function(nms){
     nms_spp_csv <- glue("~/github/info-intertidal/data/{toupper(nms)}_species.csv")
     read_csv(nms_spp_csv) %>% 
       mutate(nms = !!nms)}) %>% 
@@ -300,7 +356,8 @@ if (!file.exists(sanctuaries_spp_csv)){
       n = sum(n)) %>% 
     tidyr::spread(nms, n)
   
-  stopifnot(length(unique(sanctuaries_spp$sp)) == nrow(sanctuaries_spp))
+  stopifnot(length(unique(nms_spp$sp)) == nrow(nms_spp))
   
-  write_csv(sanctuaries_spp, sanctuaries_spp_csv)  
+  write_csv(nms_spp, nms_spp_csv)  
 }
+

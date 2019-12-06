@@ -9,61 +9,20 @@ knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 
 library(glue)
 source(here::here("scripts/calcofi.R"))
+source(here::here("scripts/utility.R"))
 ```
 
 ## {.tabset}
 
 ### Map of Regions
 
-```{r}
-md_caption <- function(title = NULL, md = here::here("modals/_captions.md")){
-  #title = "Figure App.F.12.17.new"
-  #md_caption("Figure App.F.12.17.new")
-  
-  library(dplyr)
-  library(tidyr)
-  library(stringr)
-  
-  stopifnot(file.exists(md))
-  
-  caption <- tibble(
-    # read lines of markdown in _captions.md
-    ln = readLines(md) %>% str_trim()) %>%
-    # detect header with title, set rest to NA
-    mutate(
-      hdr = str_detect(ln, glue("^## {title}")) %>% na_if(FALSE)) %>% 
-    # fill down so capturing all starting with title header
-    fill(hdr) %>% 
-    # filter for title header down, removing previous lines
-    filter(hdr) %>% 
-    # remove title header
-    slice(-1) %>% 
-    # detect subsequent headers
-    mutate(
-      hdr = str_detect(ln, "^##") %>% na_if(F)) %>% 
-    # fill down
-    fill(hdr) %>%
-    mutate(
-      hdr = replace_na(hdr, FALSE)) %>% 
-    # filter for not header down, removing subsequent lines outside caption
-    filter(!hdr) %>% 
-    # extract lines and collapse
-    pull(ln) %>% paste0(collapse = "\n") %>% 
-    # trim space and newlines
-    str_trim()
-  
-  # prepend with title
-  glue("**{title}**. {caption}")
-}
-```
-
 ```{r, fig.cap=md_caption("Figure App.F.12.17.new")}
 calcofi_map()
 ```
 
-### Larval fish, cool-water associated ichthyoplankton {.active}
+### Larval fish, cool-water species {.active}
 
-#### CINMS Region
+##### CINMS Region
 
 ```{r}
 grp   <- "Cool-water associated ichthyoplankton"
@@ -75,7 +34,7 @@ csv   <- glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/mast
 calcofi_plot(csv = csv, title = title)
 ```
 
-#### SoCal Shelf Region
+##### SoCal Shelf Region
 
 ```{r}
 grp   <- "Cool-water associated ichthyoplankton"
@@ -88,12 +47,11 @@ csv   <- glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/mast
 calcofi_plot(csv = csv, title = title)
 ```
 
+`r md_caption("Figure App.F.15.5")`
 
+### Larval fish, warm-water species
 
-
-### Larval fish, warm-water associated ichthyoplankton (larval fish)
-
-#### CINMS Region
+##### CINMS Region
 
 ```{r}
 grp   <- "Warm-water associated ichthyoplankton"
@@ -105,7 +63,7 @@ csv   <- glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/mast
 calcofi_plot(csv = csv, title = title)
 ```
 
-#### SoCal Shelf Region
+##### SoCal Shelf Region
 
 ```{r}
 grp   <- "Warm-water associated ichthyoplankton"
@@ -122,6 +80,10 @@ calcofi_plot(csv = csv, title = title)
 
 
 
+
+####
+
+`r md_caption("Figure App.F.15.5")`
 
 ### Larval fish - Mean Species Richness
 
@@ -131,15 +93,18 @@ calcofi_plot(csv = csv, title = title)
 
 #### SoCal Shelf Region
 
-![`r md_caption("Figure App.F.15.6.a-b")`](../img/cinms_cr/App.F.15.6.b.CalCOFI_diversity_richness-socal.jpg)
+![](../img/cinms_cr/App.F.15.6.b.CalCOFI_diversity_richness-socal.jpg)
 
+`r md_caption("Figure App.F.15.6.a-b")`
 
 ### Larval fish - Mean Simpson Diversity
 
 #### CINMS Region
 
-![`r md_caption("Figure App.F.15.6.c-d")`](../img/cinms_cr/App.F.15.6.c.CalCOFI_diversity_diversity-cinms.jpg)
+![](../img/cinms_cr/App.F.15.6.c.CalCOFI_diversity_diversity-cinms.jpg)
 
 #### SoCal Shelf Region
 
 ![](../img/cinms_cr/App.F.15.6.d.CalCOFI_diversity_diversity-socal.jpg)
+
+`r md_caption("Figure App.F.15.6.c-d")`
