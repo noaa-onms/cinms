@@ -26,7 +26,7 @@ raw_n_csv <- file.path(dir_pfx, "data/raw_summary_n.csv")
 spp_csv   <- file.path(dir_pfx, "data/spp_targets.csv")
 #sanctuaries_spp_csv <- file.path(dir_pfx, "data/nms_spp_targets.csv")
 sanctuaries_spp_csv <- file.path(dir_pfx, "data/nms_spp.csv")
-redo <- T
+redo <- F
 
 # https://www.eeb.ucsc.edu/pacificrockyintertidal/target/index.html
 spp <- read_csv(spp_csv)

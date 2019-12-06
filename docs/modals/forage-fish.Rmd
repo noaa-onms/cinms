@@ -43,6 +43,8 @@ calcofi_plot(csv = csv, title = title)
 
 ### Hake
 
+![](../img/cinms_cr/App.F.12.19hake.CalCOFI_Med_ichthy.jpg)
+
 #### CINMS Region
 
 #### SoCal Shelf Region
@@ -126,7 +128,7 @@ csv   <- glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/mast
 calcofi_plot(csv = csv, title = title)
 ```
 
-### Sardine
+### Sardines
 
 #### CINMS Region
 
@@ -154,3 +156,8 @@ calcofi_plot(csv = csv, title = title)
 
 
 
+
+
+##
+
+**Figure App.F.12.19**. Relative abundance of key forage groups collected in net samples during spring CalCOFI cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) and Southern California Shelf regions from 1978 to 2015. High energy taxa are Pacific sardines, northern anchovies, and and Myctophids. Medium-energy taxa are Pacific hake, shortbelly rockfish, and sanddabs. Although sardine were completely absent in net samples from 2011 to 2014 in the CINMS region, comparison with samples collected in the larger Southern California Shelf region reveal that sardine were at very low abundance but not completely absent from the region. Data source: CalCOFI; Figure: A. Thompson/NOAA; Ben Best/EcoQuants

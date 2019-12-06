@@ -1,3 +1,9 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 
@@ -10,10 +16,52 @@ source(here::here("scripts/calcofi.R"))
 ### Map of Regions
 
 ```{r}
+md_caption <- function(title = NULL, md = here::here("modals/_captions.md")){
+  #title = "Figure App.F.12.17.new"
+  #md_caption("Figure App.F.12.17.new")
+  
+  library(dplyr)
+  library(tidyr)
+  library(stringr)
+  
+  stopifnot(file.exists(md))
+  
+  caption <- tibble(
+    # read lines of markdown in _captions.md
+    ln = readLines(md) %>% str_trim()) %>%
+    # detect header with title, set rest to NA
+    mutate(
+      hdr = str_detect(ln, glue("^## {title}")) %>% na_if(FALSE)) %>% 
+    # fill down so capturing all starting with title header
+    fill(hdr) %>% 
+    # filter for title header down, removing previous lines
+    filter(hdr) %>% 
+    # remove title header
+    slice(-1) %>% 
+    # detect subsequent headers
+    mutate(
+      hdr = str_detect(ln, "^##") %>% na_if(F)) %>% 
+    # fill down
+    fill(hdr) %>%
+    mutate(
+      hdr = replace_na(hdr, FALSE)) %>% 
+    # filter for not header down, removing subsequent lines outside caption
+    filter(!hdr) %>% 
+    # extract lines and collapse
+    pull(ln) %>% paste0(collapse = "\n") %>% 
+    # trim space and newlines
+    str_trim()
+  
+  # prepend with title
+  glue("**{title}**. {caption}")
+}
+```
+
+```{r, fig.cap=md_caption("Figure App.F.12.17.new")}
 calcofi_map()
 ```
 
-### Cool-water associated ichthyoplankton (larval fish) {.active}
+### Larval fish, cool-water associated ichthyoplankton {.active}
 
 #### CINMS Region
 
@@ -43,7 +91,7 @@ calcofi_plot(csv = csv, title = title)
 
 
 
-### Warm-water associated ichthyoplankton (larval fish)
+### Larval fish, warm-water associated ichthyoplankton (larval fish)
 
 #### CINMS Region
 
@@ -83,15 +131,15 @@ calcofi_plot(csv = csv, title = title)
 
 #### SoCal Shelf Region
 
-![**Figure App.F.15.6.a-b** Mean species richness of fish larvae (ichthyoplankton) collected in net samples during spring CalCOFI cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) region and over the Southern California Shelf from 1978 to 2015. Species richness is the number of species present in a net sample. Species richness tends to increase in El Niño years due to influx of central Pacific species to the shelf. Sampling sites are shown on Figure App.F.12.17. Symbols on the graph are explained in the caption for Figure App.F.12.18. Data source: CalCOFI; Figure: A. Thompson/NOAA](../img/cinms_cr/App.F.15.6.b.CalCOFI_diversity_richness-socal.jpg)
+![`r md_caption("Figure App.F.15.6.a-b")`](../img/cinms_cr/App.F.15.6.b.CalCOFI_diversity_richness-socal.jpg)
 
 
 ### Larval fish - Mean Simpson Diversity
 
 #### CINMS Region
 
-![](../img/cinms_cr/App.F.15.6.c.CalCOFI_diversity_diversity-cinms.jpg)
+![`r md_caption("Figure App.F.15.6.c-d")`](../img/cinms_cr/App.F.15.6.c.CalCOFI_diversity_diversity-cinms.jpg)
 
 #### SoCal Shelf Region
 
-![**Figure App.F.15.6.c-d** Relative abundance of cool-water (top panels) and warm-water (bottom panels) associated ichthyoplankton (fish larvae) groups collected in net samples during spring CalCOFI cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) region (left panels) and over the Southern California Shelf (right panels) from 1978 to 2015. Sampling sites are shown on Figure App.F.12.17. Symbols on the graph are explained in the caption for Figure App.F.12.18. Data source: CalCOFI; Figure: A. Thompson/NOAA](../img/cinms_cr/App.F.15.6.d.CalCOFI_diversity_diversity-socal.jpg)
+![](../img/cinms_cr/App.F.15.6.d.CalCOFI_diversity_diversity-socal.jpg)

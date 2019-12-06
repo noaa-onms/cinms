@@ -1,0 +1,35 @@
+```{r, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+
+library(glue)
+source(here::here("scripts/calcofi.R"))
+```
+
+
+## {.tabset}
+
+### Map of Regions
+
+```{r, fig.cap=calcofi_map_caption()}
+calcofi_map()
+```
+
+**Figure App.F.12.17.new**. Location of regions from spring season net samples by the California Cooperative Oceanic Fisheries Investigations (CalCOFI) used in analyses of abundance and trends in pelagic resources: Channel Islands National Marine Sanctuary region (purple) includes CalCOFI stations inside and adjacent to CINMS; and Southern California Shelf (yellow) includes all CalCOFI stations over the shelf. Figure: A. Thompson/NOAA, Ben Best/EcoQuants
+
+### Krill {.active}
+
+#### CINMS Region
+
+Not Available (yet)
+
+#### SoCal Shelf Region
+
+Not Available (yet)
+
+### Market Squid
+
+App.F.12.20 market squid in CINMS/SoCal
+
+#### CINMS Region
+
+#### SoCal Shelf Region

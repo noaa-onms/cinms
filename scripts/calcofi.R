@@ -88,13 +88,15 @@ calcofi_plot <- function(
 
 
 calcofi_map <- function(
-  geo    = "https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/plys_cinms.geojson",
-  filter_str = 'ply_code != "SoCal"'
+  geo        = "https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/plys_cinms.geojson",
+  filter_str = 'ply_code != "SoCal"',
+  colors     = c("red", "yellow")
 ){
   library(sf)
   library(dplyr)
   library(rlang)
-  library(mapview)
+  #library(mapview)
+  library(leaflet)
   
   plys <- read_sf(geo)
   
@@ -102,10 +104,33 @@ calcofi_map <- function(
     # https://edwinth.github.io/blog/dplyr-recipes/
     expr <- rlang::parse_expr(filter_str)
     plys <- dplyr::filter(plys, !! expr)
+    plys <- plys %>% 
+      mutate(
+        area_km2 = st_area(geometry) %>% units::set_units(km^2),
+        color    = !!colors) %>% 
+      arrange(desc(area_km2))
+    # plys %>% st_drop_geometry()
   }
   
-  mapviewOptions(
-    basemaps = c("Esri.OceanBasemap", "Stamen.TonerLite"))
+  #mapviewOptions(
+  #  basemaps = c("Esri.OceanBasemap", "Stamen.TonerLite"))
   
-  mapview(plys)
+  #mapview(plys, zcol="ply_code")
+  leaflet(
+    data = plys,
+    options = leafletOptions(
+      attributionControl = F)) %>% 
+    addProviderTiles(providers$Esri.OceanBasemap) %>% 
+    addPolygons(
+      label = ~ply_code,
+      color = ~color, fillColor = ~color,
+      fillOpacity = 0.4, weight = 2) %>% 
+    addLegend(
+      colors = ~color,
+      labels = ~ply_code)
+}
+
+calcofi_map_caption <- function(){
+  '**Figure App.F.12.17.new**. Location of regions from spring season net samples by the California Cooperative Oceanic Fisheries Investigations (CalCOFI) used in analyses of abundance and trends in pelagic resources: Channel Islands National Marine Sanctuary region (purple) includes CalCOFI stations inside and adjacent to CINMS; and Southern California Shelf (yellow) includes all CalCOFI stations over the shelf. Figure: A. Thompson/NOAA, Ben Best/EcoQuants'
+  # TODO: move to captions.md and read
 }
