@@ -4,12 +4,17 @@ knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 source(here::here("../cinms/scripts/rocky.R"))
 ```
 
-```{r}
-plot_intertidal_nms(d_csv, "CINMS", "MYTCAL", "California Mussels")
-```
+## {.tabset}
 
-## Map of Sites
+### Map of Sites
 
 ```{r}
 map_nms_sites("cinms")
 ```
+
+### California Mussels (_Mytilus californianus_) {.active}
+
+```{r}
+plot_intertidal_nms(d_csv, "CINMS", "MYTCAL", "California Mussels")
+```
+

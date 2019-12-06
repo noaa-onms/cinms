@@ -75,7 +75,7 @@ get_nms_ply <- function(nms){
     st_transform(4326)
 }
 
-plot_intertidal_nms <- function(d_csv, NMS, spp, sp_name){
+plot_intertidal_nms <- function(d_csv, NMS, spp, sp_name, nms_skip_regions = c("MBNMS")){
   # NMS = "OCNMS"; spp = "CHTBAL"; sp_name = "Acorn Barnacles"
   # NMS="OCNMS"; spp = c("BARNAC","CHTBAL"); sp_name = "Acorn Barnacles"
   # NMS="CINMS"; spp="CHTBAL"; sp_name="Acorn Barnacles"
@@ -89,12 +89,15 @@ plot_intertidal_nms <- function(d_csv, NMS, spp, sp_name){
       pct_cover = sum(pct_cover)) %>% 
     ungroup()
   
-  sites_no_rgn <- d %>% filter(site != NMS) %>% anti_join(nms_rgns, by="site") %>% pull(site) %>% unique()
-  stopifnot(length(sites_no_rgn) == 0)
+  if (!NMS %in% nms_skip_regions){
+    sites_no_rgn <- d %>% filter(site != NMS) %>% anti_join(nms_rgns, by="site") %>% pull(site) %>% unique()
+    stopifnot(length(sites_no_rgn) == 0)
+    rgns <- nms_rgns %>% filter(nms == NMS) %>% pull(rgn) %>% unique()
+  } else {
+    rgns = character(0)
+  }
   
-  # View(nms_rgns) # View(d) # NMS = "CINMS"
-  rgns <- nms_rgns %>% filter(nms == NMS) %>% pull(rgn) %>% unique()
-  if (length(rgns) > 0 ){
+  if (length(rgns) > 0){
     # avg by region
     d_sites <- d %>% 
       filter(site != NMS) %>% 

@@ -6,28 +6,28 @@ source(here::here("../cinms/scripts/rocky.R"))
 
 ## {.tabset}
 
-### Acorn Barnacles
+### Map of Sites
+
+```{r}
+map_nms_sites("cinms")
+```
+
+### Acorn Barnacles (_Chthamalus dalli/fissus/Balanus glandula_) {.active}
 
 ```{r}
 plot_intertidal_nms(d_csv, "CINMS", "CHTBAL", "Acorn Barnacles")
 ```
 
-### Goose Barnacle
+### Goose Barnacle (_Pollicipes polymerus_)
 
 ```{r}
 plot_intertidal_nms(d_csv, "CINMS", "POLPOL", "Goose Barnacle")
 ```
 
-### Pink Barnacle
+### Pink Barnacle (_Tetraclita rubescens_)
 
 ```{r}
 plot_intertidal_nms(d_csv, "CINMS", "TETRUB", "Pink Barnacle")
-```
-
-## Map of Sites
-
-```{r}
-map_nms_sites("cinms")
 ```
 
 

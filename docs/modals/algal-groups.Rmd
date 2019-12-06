@@ -6,19 +6,25 @@ source(here::here("../cinms/scripts/rocky.R"))
 
 ## {.tabset}
 
-### Golden Rockweed
+### Map of Sites
+
+```{r}
+map_nms_sites("cinms")
+```
+
+### Golden Rockweed (_Silvetia compressa_) {.active}
 
 ```{r}
 plot_intertidal_nms(d_csv, "CINMS", "SILCOM", "Golden Rockweed")
 ```
 
-### Olive Rockweed
+### Olive Rockweed (_Hesperophycus californicus_)
 
 ```{r}
 plot_intertidal_nms(d_csv, "CINMS", "HESCAL", "Olive Rockweed")
 ```
 
-### Turfweed
+### Turfweed (_Endocladia muricata_)
 
 ```{r}
 # TODO: inspect Surfgrass in CINMS; n=1100; Error in seq.int(0, 1, length.out = n)
@@ -27,11 +33,6 @@ plot_intertidal_nms(d_csv, "CINMS", "HESCAL", "Olive Rockweed")
 plot_intertidal_nms(d_csv, "CINMS", "ENDMUR", "Turfweed")
 ```
 
-## Map of Sites
-
-```{r}
-map_nms_sites("cinms")
-```
 
 
 
