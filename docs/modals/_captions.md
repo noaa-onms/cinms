@@ -1,6 +1,6 @@
 ## Figure App.F.12.17.new
 
-Location of regions from spring season net samples by the (CalCOFI) used in analyses of abundance and trends in pelagic resources: Channel Islands National Marine Sanctuary region (red) includes CalCOFI stations inside and adjacent to CINMS; and Southern California Shelf (yellow) includes all CalCOFI stations over the shelf. Figure: A. Thompson/NOAA, Ben Best/EcoQuants
+Location of regions from spring season net samples by the (**CalCOFI**; _Genus species_) used in analyses of abundance and trends in pelagic resources: Channel Islands National Marine Sanctuary region (red) includes CalCOFI stations inside and adjacent to CINMS; and Southern California Shelf (yellow) includes all CalCOFI stations over the shelf. Figure: A. Thompson/NOAA, Ben Best/EcoQuants
 
 ## Figure App.F.12.19
 
