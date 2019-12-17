@@ -33,13 +33,15 @@ spp_csv   <- file.path(dir_pfx, "data/spp_targets.csv")
 nms_spp_csv     <- file.path(dir_pfx, "data/nms_spp.csv")
 nms_spp_rgn_csv <- file.path(dir_pfx, "data/nms_spp_rgn.csv")
 nms_rgns_csv    <- "https://docs.google.com/spreadsheets/d/1Prm_NxhnRvGTIG7bqw4st8tt0NYnQWZ3/export?format=csv&gid=178828096"
+nms_rgns_cache_csv <- file.path(dir_pfx, "data/MARINe_graphs.xlsx - sites in regions.csv")
 
 redo <- F
 
 # https://www.eeb.ucsc.edu/pacificrockyintertidal/target/index.html
 spp <- read_csv(spp_csv)
 
-nms_rgns <- read_csv(nms_rgns_csv) %>% 
+#nms_rgns <- read_csv(nms_rgns_csv) %>% 
+nms_rgns <- read_csv(nms_rgns_cache_csv) %>% 
   fill(nms) %>% 
   group_by(nms) %>% 
   fill(bioregion, island) %>% 
@@ -132,9 +134,14 @@ get_nms_ply <- function(nms){
     st_transform(4326)
 }
 
-plot_intertidal_nms <- function(d_csv, NMS, spp, sp_name, nms_skip_regions = c("MBNMS")){
+plot_intertidal_nms <- function(
+  d_csv, NMS, spp, sp_name, 
+  label_y = "Annual Mean Percent Cover (%)",
+  label_x = "Date",
+  nms_skip_regions = c("OCNMS","MBNMS")){
   # NMS = "OCNMS"; spp = "CHTBAL"; sp_name = "Acorn Barnacles"
   # NMS="OCNMS"; spp = c("BARNAC","CHTBAL"); sp_name = "Acorn Barnacles"
+  # NMS="OCNMS"; spp = "PELLIM"; sp_name = "Dwarf Rockweed"; nms_skip_regions = c("MBNMS")
   # NMS="CINMS"; spp="CHTBAL"; sp_name="Acorn Barnacles"
   # NMS="MBNMS"; "PELLIM"; "Dwarf Rockweed"
 
@@ -197,7 +204,11 @@ plot_intertidal_nms <- function(d_csv, NMS, spp, sp_name, nms_skip_regions = c("
   
   # plot dygraph
   #browser()
-  dygraph(x, main=glue("{sp_name} in {NMS}")) %>%
+  dygraph(
+    x, 
+    main = glue("{sp_name} in {NMS}"),
+    xlab = label_x,
+    ylab = label_y) %>%
     dyOptions(
       connectSeparatedPoints = TRUE,
       colors = ln_colors) %>%
