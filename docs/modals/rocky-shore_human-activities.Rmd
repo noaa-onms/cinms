@@ -12,5 +12,8 @@
 ```{r svg, child = '_seabird-disturbance.Rmd'}
 ```
 
+```{r svg, child = '_ship-traffic.Rmd'}
+```
+
 ```{r svg, child = '_visitors.Rmd'}
 ```

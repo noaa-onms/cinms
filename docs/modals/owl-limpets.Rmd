@@ -1,0 +1,20 @@
+```{r, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("scripts/utility.R"))
+```
+
+## Owl limpets (_Lottia gigantea_)
+
+## {.tabset}
+
+### Mean number by island
+
+![](../img/cinms_cr/App.F.13.3a.jpg)
+
+### Size frequency by island
+
+![](../img/cinms_cr/App.F.13.3b.jpg)
+
+##
+
+`r md_caption("Figure App.F.13.3.")`

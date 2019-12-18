@@ -1,3 +1,14 @@
-### Noise
+```{r, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("scripts/utility.R"))
+```
 
-![**Figure App.C.4.13.** Ambient noise levels in the Santa Barbara Channel represented as monthly averages for 40 Hz (red) and 90 Hz (blue) bands. The decline in ambient noise levels observed between 2007 and 2010 reflects decreased regional shipping activity during that time. While ambient noise has increased since 2010, it has not returned to the higher levels observed in 2007 to 2008. Data sources: McKenna et al. 2012, J. Hildebrand/ UCSD unpub. data; Figure: J. Hildebrand/SIO UCSD](../img/cinms_cr/App.C.4.13.CINMS_Noise.jpg)
+## {.tabset}
+
+### Ambient Levels
+
+![`r md_caption("Figure App.C.4.13.")`](../img/cinms_cr/App.C.4.13.CINMS_Noise.jpg)
+
+### Monitoring Stations
+
+![`r md_caption("Figure App.C.2.8.")`](../img/cinms_cr/App.C.2.8.jpg)

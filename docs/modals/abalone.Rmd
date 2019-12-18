@@ -1,14 +1,19 @@
+```{r, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("scripts/utility.R"))
+```
+
 ## {.tabset}
 
-### Red
+### Red (PISCO)
 
-![](../img/cinms_cr/App.F.13.10a.Haliotis_rufescens_CINP.jpg)
+![`r md_caption("Figure App.F.13.9.")`](../img/cinms_cr/App.F.13.9.jpg)
 
-### Pink
+### Red (CINP)
 
-![](../img/cinms_cr/App.F.13.10b.Haliotis_corrugata_CINP.jpg)
+![`r md_caption("Figure App.F.13.10.")`](../img/cinms_cr/App.F.13.10a.Haliotis_rufescens_CINP.jpg)
 
-##
+### Pink (CINP)
 
-**Figure App.F.13.10.** Average density of red abalone _Haliotis rufescens_ (left) and pink abalone _H. corrugata_ (right) at Channel Islands National Park kelp forest monitoring sites at the five islands in Channel Islands National Marine Sanctuary. Abundance of both species was greatly reduced by harvest at all islands prior to the fishery closure in 1997. A gradual increasing trend in abundance of red abalone has been observed since the fishery closure at San Miguel (blue) and more recently at Santa Rosa (red) islands. Abalone are counted by SCUBA divers and observed density was averaged across all monitoring sites at each island, including sites located inside and outside of marine reserves and conservation areas, to examine course-scale trends by island. Figure: Channel Islands National Park.
+![`r md_caption("Figure App.F.13.10.")`](../img/cinms_cr/App.F.13.10b.Haliotis_corrugata_CINP.jpg)
 

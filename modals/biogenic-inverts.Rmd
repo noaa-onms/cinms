@@ -1,0 +1,14 @@
+```{r, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("scripts/utility.R"))
+```
+
+## {.tabset}
+
+### Relative abundance Deep-water Corals
+
+![`r md_caption("Figure App.E.10.26.")`](../img/cinms_cr/App.E.10.26.jpg)
+
+### Condition of Gorgonian Corals
+
+![`r md_caption("Figure App.E.10.28.")`](../img/cinms_cr/App.E.10.28.jpg)

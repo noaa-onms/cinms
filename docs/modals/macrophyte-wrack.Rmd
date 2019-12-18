@@ -1,0 +1,14 @@
+```{r, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("scripts/utility.R"))
+```
+
+## {.tabset}
+
+### Santa Rosa Island - total
+
+![`r md_caption("Figure App.E.10.11.")`](../img/cinms_cr/App.E.10.11.jpg)
+
+### Santa Rosa Island - per site
+
+![`r md_caption("Figure App.E.10.12.")`](../img/cinms_cr/App.E.10.12.jpg)

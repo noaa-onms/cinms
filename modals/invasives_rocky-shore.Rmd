@@ -1,0 +1,6 @@
+```{r, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("scripts/utility.R"))
+```
+
+![`r md_caption("Figure App.F.14.1.")`](../img/cinms_cr/App.F.14.1.NIS_PISCO.jpg)

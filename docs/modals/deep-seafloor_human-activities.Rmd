@@ -1,5 +1,8 @@
 ## {.tabset}
 
+```{r svg, child = '_acidification.Rmd'}
+```
+
 ```{r svg, child = '_contaminants.Rmd'}
 ```
 

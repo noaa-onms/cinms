@@ -6,5 +6,8 @@
 ```{r svg, child = '_marine-debris.Rmd'}
 ```
 
+```{r svg, child = '_ship-traffic.Rmd'}
+```
+
 ```{r svg, child = '_visitors.Rmd'}
 ```

@@ -1,0 +1,24 @@
+```{r, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("scripts/utility.R"))
+```
+
+## {.tabset}
+
+### California sea lion pups
+
+![`r md_caption("Figure App.F.13.23.")`](../img/cinms_cr/App.F.13.23.jpg)
+
+![`r md_caption("Figure App.F.13.24.")`](../img/cinms_cr/App.F.13.24.jpg)
+
+### Harbor seals (_Phoca vitulina_)
+
+![`r md_caption("Figure App.F.13.25.")`](../img/cinms_cr/App.F.13.25.jpg)
+
+### Northern elephant seals (_Mirounga angustirostris_)
+
+![`r md_caption("Figure App.F.13.26.")`](../img/cinms_cr/App.F.13.26.jpg)
+
+### Northern fur seals (_Callorhinus ursinus_)
+
+![`r md_caption("Figure App.F.13.27.")`](../img/cinms_cr/App.F.13.27.jpg)

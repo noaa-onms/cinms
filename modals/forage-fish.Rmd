@@ -2,7 +2,6 @@
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 
-library(glue)
 source(here::here("scripts/calcofi.R"))
 source(here::here("scripts/utility.R"))
 ```

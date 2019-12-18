@@ -1,3 +1,4 @@
+
 md_caption <- function(title = NULL, md = here::here("modals/_captions.md")){
   #title = "Figure App.F.12.17.new"
   #md_caption("Figure App.F.12.17.new")
@@ -5,6 +6,7 @@ md_caption <- function(title = NULL, md = here::here("modals/_captions.md")){
   library(dplyr)
   library(tidyr)
   library(stringr)
+  library(glue)
   
   stopifnot(file.exists(md))
   

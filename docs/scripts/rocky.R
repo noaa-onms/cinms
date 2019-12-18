@@ -2,34 +2,52 @@ library(tidyverse)
 library(lubridate)
 library(readxl)
 library(here)
-here = here::here
 library(glue)
 library(fs)
 library(sf)
 library(mapview)
 library(RColorBrewer)
-
 library(dygraphs) # devtools::install_github("rstudio/dygraphs")
 library(xts)
+here = here::here
 
 #library(rerddap)
 # cannot use rerddap b/c login presently required
 
 sanctuaries <- c("cinms", "mbnms", "ocnms")
 
+# data from [ERDDAP](https://coastwatch.pfeg.noaa.gov/erddap/login.html),
+#   logged in as ben@ecoquants.com,
+#   search for "MARINe_ -cciea"
+
 dir_pfx   <- "~/github/info-intertidal"
-#raw_csv   <- file.path(dir_pfx, "data/MARINe_raw_4c1e_9218_7d13.csv")
-raw_csv   <- file.path(dir_pfx, "data/MARINe_raw_1c3b_9486_c22d.csv")
+#raw1_csv   <- file.path(dir_pfx, "data/MARINe_raw_4c1e_9218_7d13.csv")
+#raw2_csv   <- file.path(dir_pfx, "data/MARINe_raw_1c3b_9486_c22d.csv")
+raw_csv   <- file.path(dir_pfx, "data/MARINe_raw_84af_263b_1183.csv")
+raw_fmt   <- "csv" # or "csvp"
 sites_csv <- file.path(dir_pfx, "data/MARINe_sites.csv")
 d_csv     <- file.path(dir_pfx, "data/sanctuary_species_percentcover.csv")
 raw_n_csv <- file.path(dir_pfx, "data/raw_summary_n.csv")
 spp_csv   <- file.path(dir_pfx, "data/spp_targets.csv")
-#sanctuaries_spp_csv <- file.path(dir_pfx, "data/nms_spp_targets.csv")
-sanctuaries_spp_csv <- file.path(dir_pfx, "data/nms_spp.csv")
+#nms_spp_csv <- file.path(dir_pfx, "data/nms_spp_targets.csv")
+nms_spp_csv     <- file.path(dir_pfx, "data/nms_spp.csv")
+nms_spp_rgn_csv <- file.path(dir_pfx, "data/nms_spp_rgn.csv")
+nms_rgns_csv    <- "https://docs.google.com/spreadsheets/d/1Prm_NxhnRvGTIG7bqw4st8tt0NYnQWZ3/export?format=csv&gid=178828096"
+nms_rgns_cache_csv <- file.path(dir_pfx, "data/MARINe_graphs.xlsx - sites in regions.csv")
+
 redo <- F
 
 # https://www.eeb.ucsc.edu/pacificrockyintertidal/target/index.html
 spp <- read_csv(spp_csv)
+
+#nms_rgns <- read_csv(nms_rgns_csv) %>% 
+nms_rgns <- read_csv(nms_rgns_cache_csv) %>% 
+  fill(nms) %>% 
+  group_by(nms) %>% 
+  fill(bioregion, island) %>% 
+  mutate(
+    rgn = ifelse(!is.na(island), glue("{bioregion}: {island}"), bioregion)) # View(nms_rgns)
+
 # TODO: MARINe_sscount_2c08_916b_1ec6.csv: MARINe seastarkat_count_totals
 #  species_code: KATTUN 
 # later: MARINe_sssize_971e_f4b1_6017.csv: MARINe seastarkat_size_count_totals 
@@ -41,6 +59,58 @@ spp <- read_csv(spp_csv)
 # key-human-activities
 # ochre-stars
 # owl-limpets
+
+# # old vs new data comparisons (2019-12-14) ----
+# raw0        <- read_csv(raw0_csv)                              # 1,722,219 x 25
+# names(raw0) <- names(raw0) %>% str_replace(" \\(.*\\)", "")
+# hdr         <- read_csv(raw_csv, n_max=1)
+# raw         <- read_csv(raw_csv, skip = 2, col_names = names(hdr)) # 1,354 x 25
+# range(raw0$time) # "2002-10-18 UTC" "2017-08-21 UTC"
+# range(raw$time)  # "2019-08-30 UTC" "2019-08-31 UTC"
+# 
+# sscount1_csv <- file.path(dir_pfx, "data/MARINe_sscount_2c08_916b_1ec6.csv")
+# sscount2_csv <- file.path(dir_pfx, "data/MARINe_sscount_1147_c85f_673a.csv")
+# sssize1_csv  <- file.path(dir_pfx, "data/MARINe_sssize_438a_fbe9_efa6.csv")
+# sssize2_csv  <- file.path(dir_pfx, "data/MARINe_sssize_18aa_9665_ac05.csv")
+# 
+# sscount1 <- read_csv(sscount1_csv)
+# names(sscount1) <- names(sscount1) %>% str_replace(" \\(.*\\)", "")
+# sscount2_hdr <- read_csv(sscount2_csv, n_max=1)
+# sscount2 <- read_csv(sscount2_csv, skip = 2, col_names = names(sscount2_hdr))
+# fs::file_info(sscount1_csv)$modification_time # 2019-09-11
+# fs::file_info(sscount2_csv)$modification_time # 2019-11-19
+# dim(sscount1) # 273 x 22
+# dim(sscount2) # 273 x 22
+# range(sscount1$time) # 2017-01-01 to 2017-01-01
+# range(sscount2$time) # 2019-01-01 to 2019-01-01
+# 
+# sssize1 <- read_csv(sssize1_csv)
+# names(sssize1) <- names(sssize1) %>% str_replace(" \\(.*\\)", "")
+# sssize2_hdr <- read_csv(sssize2_csv, n_max=1)
+# sssize2 <- read_csv(sssize2_csv, skip = 2, col_names = names(sssize2_hdr))
+# fs::file_info(sssize1_csv)$modification_time # 2019-09-11
+# fs::file_info(sssize2_csv)$modification_time # 2019-11-19
+# dim(sssize1) # 402 x 24
+# dim(sssize2) # 434 x 24
+# range(sssize1$time) # 2017-01-01 to 2017-01-01
+# range(sssize2$time) # 2019-01-01 to 2019-01-01
+# 
+# sum1_csv <- file.path(dir_pfx, "data/MARINe_sum_dc16_720d_a67b.csv")
+# sum2_csv <- file.path(dir_pfx, "data/MARINe_sum_4395_f3d7_4b15.csv")
+# 
+# sum1 <- read_csv(sum1_csv)
+# names(sum1) <- names(sum1) %>% str_replace(" \\(.*\\)", "")
+# sum2_hdr <- read_csv(sum2_csv, n_max=1)
+# sum2 <- read_csv(sum2_csv, skip = 2, col_names = names(sum2_hdr))
+# fs::file_info(sum1_csv)$modification_time # 2019-09-11
+# fs::file_info(sum2_csv)$modification_time # 2019-11-19
+# dim(sum1) # 4543 x 25
+# dim(sum2) # 6197 x 25
+# range(sum1$time) # 2017-01-01 to 2017-01-01
+# range(sum2$time) # 2019-01-01 to 2019-01-01
+
+
+# functions ----
 
 get_nms_ply <- function(nms){
   # get polygon for National Marine Sanctuary
@@ -64,28 +134,81 @@ get_nms_ply <- function(nms){
     st_transform(4326)
 }
 
-plot_intertidal_nms <- function(d_csv, NMS, spp, sp_name){
+plot_intertidal_nms <- function(
+  d_csv, NMS, spp, sp_name, 
+  label_y = "Annual Mean Percent Cover (%)",
+  label_x = "Date",
+  nms_skip_regions = c("OCNMS","MBNMS")){
   # NMS = "OCNMS"; spp = "CHTBAL"; sp_name = "Acorn Barnacles"
   # NMS="OCNMS"; spp = c("BARNAC","CHTBAL"); sp_name = "Acorn Barnacles"
+  # NMS="OCNMS"; spp = "PELLIM"; sp_name = "Dwarf Rockweed"; nms_skip_regions = c("MBNMS")
   # NMS="CINMS"; spp="CHTBAL"; sp_name="Acorn Barnacles"
+  # NMS="MBNMS"; "PELLIM"; "Dwarf Rockweed"
 
   # read in csv with fields site, date, pct_cover
   d <- read_csv(d_csv) %>% # table(d$nms)
     filter(nms == NMS, sp %in% spp) %>%
     group_by(site, date) %>%
-    summarize(pct_cover = sum(pct_cover)) %>% 
-    spread(site, pct_cover) # View(d_sites)
+    summarize(
+      pct_cover = sum(pct_cover)) %>% 
+    ungroup()
+  
+  if (!NMS %in% nms_skip_regions){
+    sites_no_rgn <- d %>% filter(site != NMS) %>% anti_join(nms_rgns, by="site") %>% pull(site) %>% unique()
+    stopifnot(length(sites_no_rgn) == 0)
+    rgns <- nms_rgns %>% filter(nms == NMS) %>% pull(rgn) %>% unique()
+  } else {
+    rgns = character(0)
+  }
+  
+  if (length(rgns) > 0){
+    # avg by region
+    d_sites <- d %>% 
+      filter(site != NMS) %>% 
+      left_join(nms_rgns, by="site") %>% 
+      group_by(rgn, date) %>%
+      summarize(
+        pct_cover = mean(pct_cover)) %>% 
+      ungroup()
+
+    d_allsites <- d %>% 
+      filter(site == NMS) %>% 
+      mutate(
+        rgn = site) %>% 
+      select(rgn, date, pct_cover)
+    
+    d <- bind_rows(d_sites, d_allsites)
+  } else {
+    d <- d %>% 
+      mutate(
+        rgn = site) %>% 
+      select(rgn, date, pct_cover)
+  }
+  
+  
+  # avg by year and spread
+  d <- d %>% 
+    mutate(
+      yr = year(date)) %>% 
+    group_by(rgn, yr) %>% 
+    summarize(
+      pct_cover = mean(pct_cover)) %>% 
+    spread(rgn, pct_cover) # View(d)
   
   # line colors
   ln_colors <- c(colorRampPalette(brewer.pal(11, "Set3"))(ncol(d)-2), "black")
   
   # convert to xts time object
-  x <- select(d, -date) %>%
-    as.xts(order.by=d$date)
+  x <- select(d, -yr) %>%
+    as.xts(order.by = ymd(glue("{d$yr}-06-15")))
   
   # plot dygraph
   #browser()
-  dygraph(x, main=glue("{sp_name} in {NMS}")) %>%
+  dygraph(
+    x, 
+    main = glue("{sp_name} in {NMS}"),
+    xlab = label_x,
+    ylab = label_y) %>%
     dyOptions(
       connectSeparatedPoints = TRUE,
       colors = ln_colors) %>%
@@ -93,6 +216,10 @@ plot_intertidal_nms <- function(d_csv, NMS, spp, sp_name){
     dyHighlight(highlightSeriesOpts = list(strokeWidth = 2)) %>%
     dyRangeSelector()
 }
+
+# TODO: read gsheet and lump by island
+# MARINe_graphs:sites in CINMS
+# https://docs.google.com/spreadsheets/d/1Prm_NxhnRvGTIG7bqw4st8tt0NYnQWZ3/edit#gid=178828096
 
 map_nms_sites <- function(nms){
   # nms <- "cinms" # mbnms" # "ocnms"
@@ -123,18 +250,38 @@ map_nms_sites <- function(nms){
       zcol = "site", col.regions = colorRampPalette(brewer.pal(11, "Set3")))
 }
 
+read_csv_fmt <- function(csv, erddap_format = "csv"){
+  raw_fmt   <- "csv" # or "csvp"
+  
+  stopifnot(erddap_format %in% c("csv", "csvp"))
+  
+  if (erddap_format == "csv"){
+    # ERDDAP: csv format, remove units from 2nd row
+    hdr <- read_csv(raw_csv, n_max=1)
+    raw <- read_csv(raw_csv, skip = 2, col_names = names(hdr))
+  }
+  
+  if (erddap_format == "csvp"){
+    # ERDDAP: csvp format; remove ' (units)' suffix
+    raw <- read_csv(raw_csv)
+    names(raw) <- names(raw) %>% str_replace(" \\(.*\\)", "")
+  }
+  raw
+}
+
 get_sites <- function(raw_csv, sites_csv){
   
   if (!file.exists(sites_csv)){
-    raw     <- read_csv(raw_csv)
+    
+    raw <- read_csv_fmt(raw_csv, raw_fmt)
     
     sites_pts <- raw %>%
       rename(
         site = marine_site_name) %>%
       group_by(site) %>%
       summarize(
-        lat = first(`latitude (degrees_north)`),
-        lon = first(`longitude (degrees_east)`)) %>%
+        lat = first(latitude),
+        lon = first(longitude)) %>%
       st_as_sf(coords = c("lon", "lat"), crs = 4326, remove=F)
     
     sites_pts %>%
@@ -146,15 +293,15 @@ get_sites <- function(raw_csv, sites_csv){
 }
 
 make_sites_csv <- function(raw_csv, sites_csv){
-  raw <- read_csv(raw_csv)
+  raw <- read_csv_fmt(raw_csv, raw_fmt)
   
   sites_pts <- raw %>%
     rename(
       site = marine_site_name) %>%
     group_by(site) %>%
     summarize(
-      lat = first(`latitude (degrees_north)`),
-      lon = first(`longitude (degrees_east)`)) %>%
+      lat = first(latitude),
+      lon = first(longitude)) %>%
     st_as_sf(coords = c("lon", "lat"), crs = 4326, remove = F)
   
   sites_pts %>%
@@ -164,12 +311,13 @@ make_sites_csv <- function(raw_csv, sites_csv){
 
 make_nms_spp_pctcover <- function(sanctuaries, spp, raw_csv, d_csv, redo = F){
   
-  raw <- read_csv(raw_csv)
-  
   if (!file.exists(raw_n_csv) | redo){
     #head(raw, 1000) %>% View()
     #table(raw$lumping_code)
     #table(raw$target_assemblage)
+    
+    raw <- read_csv_fmt(raw_csv, raw_fmt)
+    
     raw %>% 
       group_by(lumping_code, target_assemblage) %>% 
       summarize(n = n()) %>% 
@@ -181,6 +329,8 @@ make_nms_spp_pctcover <- function(sanctuaries, spp, raw_csv, d_csv, redo = F){
     # set sanctuary variables
     nms <- sanctuaries[i] # nms <- "cinms" # "mbnms" # "ocnms"
     NMS <- str_to_upper(nms)
+    
+    message(glue("{i} of {length(sanctuaries)} nms: {NMS}"))
     
     # get sites in nms
     sites_nms_shp <- file.path(dir_pfx, glue("data/shp/{NMS}_sites.shp"))
@@ -224,6 +374,8 @@ make_nms_spp_pctcover <- function(sanctuaries, spp, raw_csv, d_csv, redo = F){
       sp         <- nms_spp$sp[j]
       #sp_targets <- str_split(spp$sp_target[j], "\\|", simplify = T)[1,]
       sp_name    <- nms_spp$sp_name[j]
+      
+      message(glue("  {j} of {nrow(nms_spp)} spp: {sp_name} ({sp})"))
     
       # filter for nms-sp
       d_sites <- raw %>%
@@ -239,7 +391,7 @@ make_nms_spp_pctcover <- function(sanctuaries, spp, raw_csv, d_csv, redo = F){
       # average across plots for each site-species-date
       d_sites <- d_sites %>%
         mutate(
-          date = ymd(`time (UTC)`)) %>%
+          date = ymd(time)) %>%
         group_by(site, date) %>%
         summarize(
           pct_cover = mean(percent_cover)) # View(d_sites)
@@ -285,12 +437,12 @@ if (!file.exists(d_csv) | redo){
   make_nms_spp_pctcover(sanctuaries, spp, raw_csv, d_csv, redo = redo)
 }
 
-if (!file.exists(sanctuaries_spp_csv)){
+if (!file.exists(nms_spp_csv) | redo){
   
   # redo
-  if (file.exists(sanctuaries_spp_csv)) file.remove(sanctuaries_spp_csv)
+  if (file.exists(nms_spp_csv)) file.remove(nms_spp_csv)
   
-  sanctuaries_spp <- map(sanctuaries, function(nms){
+  nms_spp <- map(sanctuaries, function(nms){
     nms_spp_csv <- glue("~/github/info-intertidal/data/{toupper(nms)}_species.csv")
     read_csv(nms_spp_csv) %>% 
       mutate(nms = !!nms)}) %>% 
@@ -300,7 +452,8 @@ if (!file.exists(sanctuaries_spp_csv)){
       n = sum(n)) %>% 
     tidyr::spread(nms, n)
   
-  stopifnot(length(unique(sanctuaries_spp$sp)) == nrow(sanctuaries_spp))
+  stopifnot(length(unique(nms_spp$sp)) == nrow(nms_spp))
   
-  write_csv(sanctuaries_spp, sanctuaries_spp_csv)  
+  write_csv(nms_spp, nms_spp_csv)  
 }
+
