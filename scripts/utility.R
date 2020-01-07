@@ -39,3 +39,5 @@ md_caption <- function(title = NULL, md = here::here("modals/_captions.md")){
   # prepend with title
   glue("**{title}**. {caption}")
 }
+
+
