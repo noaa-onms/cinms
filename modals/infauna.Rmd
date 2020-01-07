@@ -1,0 +1,18 @@
+```{r, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("scripts/utility.R"))
+```
+
+## {.tabset}
+
+### Benthic Response Index - Trend by region
+
+![`r md_caption("Figure App.E.11.10.")`](../img/cinms_cr/App.E.11.10.jpg)
+
+### Benthic Response Index - Trend by site
+
+![`r md_caption("Figure App.E.11.9.")`](../img/cinms_cr/App.E.11.9.jpg)
+
+### Benthic Response Index - Condition by site
+
+![`r md_caption("Figure App.E.11.11.")`](../img/cinms_cr/App.E.11.11.jpg)
