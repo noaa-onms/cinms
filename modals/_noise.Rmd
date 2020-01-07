@@ -3,12 +3,14 @@ knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 source(here::here("scripts/utility.R"))
 ```
 
-## {.tabset}
+#### Noise
 
-### Ambient Levels
+##### {.tabset}
+
+###### Ambient Levels
 
 ![`r md_caption("Figure App.C.4.13.")`](../img/cinms_cr/App.C.4.13.CINMS_Noise.jpg)
 
-### Monitoring Stations
+###### Monitoring Stations
 
 ![`r md_caption("Figure App.C.2.8.")`](../img/cinms_cr/App.C.2.8.jpg)

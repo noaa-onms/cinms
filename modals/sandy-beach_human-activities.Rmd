@@ -1,13 +1,21 @@
-## {.tabset}
+# {.tabset}
 
-```{r svg, child = '_contaminants.Rmd'}
-```
+## Human Activities
 
-```{r svg, child = '_marine-debris.Rmd'}
-```
+### {.tabset}
 
 ```{r svg, child = '_ship-traffic.Rmd'}
 ```
 
 ```{r svg, child = '_visitors.Rmd'}
+```
+
+## Human Impacts
+
+### {.tabset}
+
+```{r svg, child = '_contaminants.Rmd'}
+```
+
+```{r svg, child = '_marine-debris.Rmd'}
 ```

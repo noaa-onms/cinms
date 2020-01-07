@@ -3,13 +3,15 @@ knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 source(here::here("scripts/utility.R"))
 ```
 
-## {.tabset}
+#### Ship Traffic
 
-### Traffic Patterns
+##### {.tabset}
+
+###### Traffic Patterns
 
 ![`r md_caption("Figure App.C.4.12.")`](../img/cinms_cr/App.C.4.12.MSWGSS_2016.jpg)
 
-### Vessel Groundings
+###### Vessel Groundings
 
 ![`r md_caption("Figure App.C.3.1.")`](../img/cinms_cr/App.C.3.1_VesselGroundingsMap.jpg)
 
