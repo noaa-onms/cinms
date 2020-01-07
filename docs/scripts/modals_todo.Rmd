@@ -1,0 +1,66 @@
+---
+title: "modals_todo"
+output:
+  html_document:
+    code_folding: hide
+    toc: true
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = T, warning = F, message = F)
+```
+
+## Empty modals in svg_links
+
+svg_links: `svg/svg_links_cinms.csv`
+
+```{r}
+library(knitr)
+library(dplyr)
+library(stringr)
+library(snakecase)
+library(fs)
+library(here)
+library(glue)
+library(readr)
+
+modals <- dir_info(
+  here("modals"), glob = "*.Rmd") %>% 
+  mutate(
+    link = glue("modals/{path_ext_remove(basename(path))}.html"))
+
+modals_size0 <- modals %>% 
+  filter(size == 0)
+
+svg_links <- read_csv(here("svg/svg_links_cinms.csv")) %>% 
+  mutate(
+    habitat = str_replace(svg, "cinms_(.*).svg", "\\1") %>%
+      str_replace("-", " ") %>% 
+      to_title_case()) %>% 
+  select(-not_modal)
+
+svg_modals_size0 <- svg_links %>% 
+  semi_join(
+    modals_size0,
+    by = "link")
+
+svg_modals_size0 %>% 
+  select(habitat, title) %>% 
+  kable()
+```
+
+## Modals not in svg_links
+
+```{r pressure, echo=FALSE}
+modals_no_svg <- modals %>% 
+  anti_join(
+    svg_links,
+    by = "link")
+
+modals_no_svg %>% 
+  select(link, size) %>% 
+  filter(!str_detect(link, "^modals/_.*")) %>% 
+  kable()
+```
+
