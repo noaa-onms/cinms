@@ -12,9 +12,15 @@ source(here::here("../cinms/scripts/rocky.R"))
 map_nms_sites("cinms")
 ```
 
-### California Mussels (_Mytilus californianus_) {.active}
+### California Mussels (_Mytilus californianus_), target = ANY {.active}
 
 ```{r}
 plot_intertidal_nms(d_csv, "CINMS", "MYTCAL", "California Mussels")
+```
+
+### California Mussels (_Mytilus californianus_), target = mytilus
+
+```{r}
+plot_intertidal_nms(d_csv, "CINMS", "MYTCAL", "California Mussels [target = mytilus]", "mytilus")
 ```
 

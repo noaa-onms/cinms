@@ -33,20 +33,21 @@ spp_csv   <- file.path(dir_pfx, "data/spp_targets.csv")
 nms_spp_csv     <- file.path(dir_pfx, "data/nms_spp.csv")
 nms_spp_rgn_csv <- file.path(dir_pfx, "data/nms_spp_rgn.csv")
 nms_rgns_csv    <- "https://docs.google.com/spreadsheets/d/1Prm_NxhnRvGTIG7bqw4st8tt0NYnQWZ3/export?format=csv&gid=178828096"
-nms_rgns_cache_csv <- file.path(dir_pfx, "data/MARINe_graphs.xlsx - sites in regions.csv")
+#nms_rgns_cache_csv <- file.path(dir_pfx, "data/MARINe_graphs.xlsx - sites in regions.csv")
 
-redo <- F
+redo <- F # redo <- T
 
 # https://www.eeb.ucsc.edu/pacificrockyintertidal/target/index.html
 spp <- read_csv(spp_csv)
 
-#nms_rgns <- read_csv(nms_rgns_csv) %>% 
-nms_rgns <- read_csv(nms_rgns_cache_csv) %>% 
+nms_rgns <- read_csv(nms_rgns_csv) %>% 
+#nms_rgns <- read_csv(nms_rgns_cache_csv) %>% 
   fill(nms) %>% 
   group_by(nms) %>% 
-  fill(bioregion, island) %>% 
+  #fill(bioregion, island) %>% 
+  fill(region) %>% 
   mutate(
-    rgn = ifelse(!is.na(island), glue("{bioregion}: {island}"), bioregion)) # View(nms_rgns)
+    rgn = region) # View(nms_rgns)
 
 # TODO: MARINe_sscount_2c08_916b_1ec6.csv: MARINe seastarkat_count_totals
 #  species_code: KATTUN 
@@ -135,9 +136,9 @@ get_nms_ply <- function(nms){
 }
 
 plot_intertidal_nms <- function(
-  d_csv, NMS, spp, sp_name, 
+  d_csv, NMS, spp, sp_name, spp_targets = NA,
   label_y = "Annual Mean Percent Cover (%)",
-  label_x = "Date",
+  label_x = "Year",
   nms_skip_regions = c("OCNMS","MBNMS")){
   # NMS = "OCNMS"; spp = "CHTBAL"; sp_name = "Acorn Barnacles"
   # NMS="OCNMS"; spp = c("BARNAC","CHTBAL"); sp_name = "Acorn Barnacles"
@@ -147,10 +148,19 @@ plot_intertidal_nms <- function(
 
   # read in csv with fields site, date, pct_cover
   d <- read_csv(d_csv) %>% # table(d$nms)
-    filter(nms == NMS, sp %in% spp) %>%
+    filter(nms == NMS, sp %in% spp)
+    
+  if (!is.na(spp_targets)){
+    #browser()
+    d <- d %>%
+      filter(sp_target %in% spp_targets)
+  }
+  
+  d <- d %>%
     group_by(site, date) %>%
     summarize(
-      pct_cover = sum(pct_cover)) %>% 
+      #pct_cover = sum(pct_cover)) %>% 
+      pct_cover = mean(pct_cover)) %>% 
     ungroup()
   
   if (!NMS %in% nms_skip_regions){
@@ -196,16 +206,21 @@ plot_intertidal_nms <- function(
     spread(rgn, pct_cover) # View(d)
   
   # line colors
-  ln_colors <- c(colorRampPalette(brewer.pal(11, "Set3"))(ncol(d)-2), "black")
+  #display.brewer.all()
+  #display.brewer.pal(ncol(d) - 1, "Set3")
+  #ln_colors <- colorRampPalette(brewer.pal(11, "Set3"))(ncol(d) - 1)
+  ln_colors <- brewer.pal(ncol(d) - 1, "Set3")
+  #filled.contour(volcano, col=ln_colors)
+  ln_colors[which(names(d) == NMS) - 1] <- "black"
   
   # convert to xts time object
-  x <- select(d, -yr) %>%
-    as.xts(order.by = ymd(glue("{d$yr}-06-15")))
+  # x <- select(d, -yr) %>%
+  #   as.xts(order.by = ymd(glue("{d$yr}-06-15")))
   
   # plot dygraph
-  #browser()
   dygraph(
-    x, 
+    #x,
+    d, 
     main = glue("{sp_name} in {NMS}"),
     xlab = label_x,
     ylab = label_y) %>%
@@ -216,10 +231,6 @@ plot_intertidal_nms <- function(
     dyHighlight(highlightSeriesOpts = list(strokeWidth = 2)) %>%
     dyRangeSelector()
 }
-
-# TODO: read gsheet and lump by island
-# MARINe_graphs:sites in CINMS
-# https://docs.google.com/spreadsheets/d/1Prm_NxhnRvGTIG7bqw4st8tt0NYnQWZ3/edit#gid=178828096
 
 map_nms_sites <- function(nms){
   # nms <- "cinms" # mbnms" # "ocnms"
@@ -351,44 +362,52 @@ make_nms_spp_pctcover <- function(sanctuaries, spp, raw_csv, d_csv, redo = F){
     
     nms_spp_csv <- file.path(dir_pfx, glue("data/{NMS}_species.csv"))
     if (!file.exists(nms_spp_csv) | redo){
+      
+      #browser()
+      
       nms_spp <- raw %>%
         rename(
-          site    = marine_site_name,
-          sp      = lumping_code,
-          sp_name = lumping_name) %>% 
+          site      = marine_site_name,
+          sp        = lumping_code,
+          sp_name   = lumping_name,
+          sp_target = target_assemblage) %>% 
         filter(
           site %in% sites_nms_pts$site) %>% 
-        group_by(sp, sp_name) %>% 
-        summarize(n=n())
+        group_by(sp, sp_name, sp_target) %>% 
+        summarize(n = n())
       
-      stopifnot(length(unique(nms_spp$sp)) == nrow(nms_spp))
+      #stopifnot(length(unique(nms_spp$sp)) == nrow(nms_spp))
       
       write_csv(nms_spp, nms_spp_csv)
     }
     nms_spp <- read_csv(nms_spp_csv)
     
-    # iterate over species
+    # iterate over species-targets
     for (j in 1:nrow(nms_spp)){ # j = 1
       
-      # set species variables
-      sp         <- nms_spp$sp[j]
-      #sp_targets <- str_split(spp$sp_target[j], "\\|", simplify = T)[1,]
-      sp_name    <- nms_spp$sp_name[j]
+      #browser()
       
-      message(glue("  {j} of {nrow(nms_spp)} spp: {sp_name} ({sp})"))
+      # set species variables
+      sp        <- nms_spp$sp[j]
+      #sp_targets <- str_split(spp$sp_target[j], "\\|", simplify = T)[1,]
+      sp_target <- nms_spp$sp_target[j]
+      sp_name   <- nms_spp$sp_name[j]
+      
+      message(glue("  {j} of {nrow(nms_spp)} spp: {sp_name} ({sp}), target = {sp_target}"))
     
-      # filter for nms-sp
+      # filter for nms-sp-target
       d_sites <- raw %>%
         rename(site = marine_site_name) %>%
         filter(
           site %in% sites_nms_pts$site,
+          lumping_code == sp,
           #target_assemblage %in% sp_targets,
-          lumping_code == sp)
+          target_assemblage == sp_target)
       
       # next sp if empty
       if (nrow(d_sites) == 0) next()
       
-      # average across plots for each site-species-date
+      # average across plots for each site-sp-target-date
       d_sites <- d_sites %>%
         mutate(
           date = ymd(time)) %>%
@@ -412,8 +431,9 @@ make_nms_spp_pctcover <- function(sanctuaries, spp, raw_csv, d_csv, redo = F){
         d_sites,
         d_nms) %>%
         mutate(
-          nms = NMS,
-          sp  = sp) # View(d)
+          nms       = NMS,
+          sp        = sp,
+          sp_target = sp_target) # View(d)
       
       # write data to csv
       if (i == 1 & j == 1){
@@ -447,12 +467,12 @@ if (!file.exists(nms_spp_csv) | redo){
     read_csv(nms_spp_csv) %>% 
       mutate(nms = !!nms)}) %>% 
     bind_rows() %>% 
-    group_by(sp, sp_name, nms) %>% 
+    group_by(sp, sp_name, sp_target, nms) %>% 
     summarize(
       n = sum(n)) %>% 
     tidyr::spread(nms, n)
   
-  stopifnot(length(unique(nms_spp$sp)) == nrow(nms_spp))
+  #stopifnot(length(unique(nms_spp$sp)) == nrow(nms_spp))
   
   write_csv(nms_spp, nms_spp_csv)  
 }

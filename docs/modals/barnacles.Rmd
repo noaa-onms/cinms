@@ -18,6 +18,12 @@ map_nms_sites("cinms")
 plot_intertidal_nms(d_csv, "CINMS", "CHTBAL", "Acorn Barnacles")
 ```
 
+### Acorn Barnacles (_Chthamalus dalli/fissus/Balanus glandula_), target = balanus | chthamalus_balanus
+
+```{r}
+plot_intertidal_nms(d_csv, "CINMS", "CHTBAL", "Acorn Barnacles [target = balanus | chthamalus_balanus]", c("balanus", "chthamalus_balanus"))
+```
+
 ### Goose Barnacle (_Pollicipes polymerus_)
 
 ```{r}
