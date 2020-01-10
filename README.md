@@ -42,6 +42,26 @@ The modal popup windows are rendered by [Bootstrap modals](https://getbootstrap.
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 ```
 
+### Use with Rmarkdown
+
+The most common use of this is with an [Rmd website](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html). Then you can easily generate navigation throughout the website and then implement the infographics using a combination of [Rmd parameters](https://rmarkdown.rstudio.com/developer_parameterized_reports.html%23parameter_types%2F) and an [Rmd child document](https://yihui.org/knitr/demo/child/).
+
+For example:
+
+    ```
+    ---
+    title: "Pelagic"
+    params:
+      svg: "svg/cinms_pelagic.svg"
+      csv: "svg/svg_links_cinms.csv"
+    ---
+    
+    ```{r svg, child = '_svg-html_child.Rmd'}
+    ```
+
+So the infographic rendering is handled by the child doc [`_svg-html_child.Rmd`](https://github.com/marinebon/cinms/blob/master/_svg-html_child.Rmd) using the parameters `svg` and `csv`.
+
+
 ## build and view website in R
 
 This website is constructed using [Rmarkdown website](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html) for enabling easy construction of site-wide navigation (see [`_site.yml`](https://github.com/marinebon/iea-ak-info/blob/master/_site.yml)) and embedding of [htmlwidgets](https://www.htmlwidgets.org), which provide interactive maps, time series plots, etc into the html pages to populate the modal window content in [`modals/`](https://github.com/marinebon/iea-ak-info/tree/master/modals). To build the website and view it, here are the commands to run in R:
