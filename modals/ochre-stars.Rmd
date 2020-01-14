@@ -1,4 +1,28 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("../cinms/scripts/rocky.R"))
+```
+
 ##  {.tabset} 
+
+### MARINe: Map of Sites
+
+```{r}
+map_nms_sites("cinms")
+```
+
+### MARINe: Ochre Seastar (_Pisaster ochraceus_) {.active}
+
+```{r}
+plot_intertidal_nms(nms_spp_sscount_csv, "CINMS", "PISOCH", "Ochre Seastar", fld_val = "count", label_y = "Count (annual avg)")
+```
+
 
 ### NPS: Sanctuary
 
