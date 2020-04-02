@@ -6,7 +6,7 @@ output:
 
 ## Figure S.Hab.10.3.
 
-A figure showing the cover of eelgrass (*Zostera marina*) in Frenchy's Cove, Anacapa Island, from 2004 - 2016. 
+A figure showing the cover of eelgrass (*Zostera marina*) in Frenchy's Cove, Anacapa Island, from 2004 - 2016. delete
 
 - [monitoring_program](http://test.org)
 - [data]()
