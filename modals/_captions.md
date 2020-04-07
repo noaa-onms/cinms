@@ -4,14 +4,36 @@ output:
   pdf_document: default
 ---
 
+## Figure ochre-stars_MARINe.
+
+The average number of ochre stars counted each year during 30-minute searches at monitoring sites at each of the five islands in Channel Islands National Marine Sanctuary.
+
+### `details`
+
+Use map tab above to see the islands and the location of sites monitored by the Channel Islands National Park (CHIS) rocky intertidal community monitoring program which is part of the Multi-agency Rocky Intertidal Network (MARINe)
+
+### `natural-history`
+
+https://sanctuarysimon.org/dbtools/species-database/id/55
+
+### `photos`
+
+![https://sanctuarysimon.org/regional_images/photo_database/species/55_full.jpg](https://sanctuarysimon.org/dbtools/species-database/id/55)
+
+### `monitoring-program`
+
+https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100508
+
+### `data`
+
+https://github.com/marinebon/info-intertidal/blob/master/data/sanctuary_species_sscount.csv
+
+
 ## Figure S.Hab.10.3.
 
 A figure showing the cover of eelgrass (*Zostera marina*) in Frenchy's Cove, Anacapa Island, from 2004 - 2016. delete
 
-- [monitoring_program](http://test.org)
-- [data]()
-
-### Details
+### `details`
 
 Eelgrass cover at Frenchy’s Cove from 2004 to 2016 after 2003 transplant. Data are collected from diver surveys along a 30 meter fixed transect with points scored every 10 centimeters. The transect lies within the transplant area at Frenchy's Cove are at approximately 24 feet in depth. Declines in eelgrass cover are thought to be potentially due to seafloor disturbance from anchoring and trap fishing. Figure: [J. Altstatt/UCSB and NOAA](http://msi.ucsb.edu/people/project-staff/jessie%C2%A0altstatt)
 
