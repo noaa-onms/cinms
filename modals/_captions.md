@@ -472,13 +472,13 @@ There has been an increasing trend over the entire time series for Channel Islan
 
 ## Figure App.F.13.27.
 
-A figure showing the number of Northern fur seal pups counted (at two sites) on San Miguel Island from 1972 - 2014. 
+A figure showing the number of Northern fur seal pups counted at two locations on San Miguel Island from 1972 - 2014. 
 
 Total production of Northern fur seal _Callorhinus ursinus_ pups counted on San Miguel Island, including the mainland (Adam’s Cove) and the offshore islet (Castle Rock), from 1972–2014. The total production of northern fur seals exceeded the 1997 levels during 2010, 2012, and 2013. The island’s population has recovered from the 1997–1998 El Niño event. Figure: Carretta et al. 2016
 
 ## Figure App.F.13.28.
 
-A figure showing the density of the six most frequently seen  whales and dolphins in Southern California from 2004 - 2013. 
+A figure showing the density of the six most frequently seen whales and dolphins in Southern California from 2004 - 2013. 
 
 Trend in density from 2004–2013, based on sightings from [CalCOFI](https://calcofi.org/) cruises, for the six most frequently sighted species of cetaceans off southern California. Blue and humpback whales, short-beaked common dolphins, and Dall’s porpoises appear to be stable. Fin whale sightings have decreased while Pacific white-sided dolphin sightings have increased. Figure: Campbell et al. 2015
 
