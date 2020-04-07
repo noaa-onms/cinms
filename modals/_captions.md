@@ -456,7 +456,7 @@ Total production of Northern fur seal _Callorhinus ursinus_ pups counted on San 
 
 ## Figure App.F.13.28.
 
-A figure showing the density of the six most frequently sighted whales and dolphins in Southern California from 2004 - 2013. 
+A figure showing the density of the six most frequently seen  whales and dolphins in Southern California from 2004 - 2013. 
 
 Trend in density from 2004–2013, based on sightings from [CalCOFI](https://calcofi.org/) cruises, for the six most frequently sighted species of cetaceans off southern California. Blue and humpback whales, short-beaked common dolphins, and Dall’s porpoises appear to be stable. Fin whale sightings have decreased while Pacific white-sided dolphin sightings have increased. Figure: Campbell et al. 2015
 
