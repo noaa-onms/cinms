@@ -31,7 +31,7 @@ https://github.com/marinebon/info-intertidal/blob/master/data/sanctuary_species_
 
 ## Figure S.Hab.10.3.
 
-A figure showing the cover of eelgrass in Frenchy's Cove, Anacapa Island, from 2004 - 2016. 
+A figure showing the amount of eelgrass in Frenchy's Cove, Anacapa Island, from 2004 - 2016. 
 
 ### `details`
 
@@ -41,13 +41,13 @@ Eelgrass cover at Frenchy’s Cove from 2004 to 2016 after 2003 transplant. Data
 
 A map of offshore oil platforms within the Santa Barbara Channel, from west to east: Hondo, Harmony, Heritage, Holly, C, B, A, Hillhouse, Habitat, Henry, Houchin, Hogan, Rincon Island, Grace, Gilda, Gail, and Gina. 
 
-Data source: State of California GeoPortal; [Map: M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
+Data source: [State of California GeoPortal](https://gis.data.ca.gov/); Map: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
 
 ## Figure App.C.2.3.
 
-A map showing the area affected by the 2015 Refugio Oil Spill.
+A map showing the area around the Santa Barbara Coast affected by the 2015 Refugio Oil Spill.
 
-Diagonal black lines cover the area where oil sheen was observed after the 2015 Refugio Oil Spill. The dark black line indicates the short-term fishery closures. See Figures C2.4 and C13.5 for the modeled oil transport, which predicts crude oil reaching sanctuary waters, Santa Rosa, and Santa Cruz islands north-facing beaches days after the spill. Data source: Shoreline Cleanup and Assessment Technique (SCAT) Shoreline Oiling Map: http://response.restoration.noaa.gov/oil-and-chemical-spills/oil-spills/resources/shoreline-cleanup-and-assessment-technique-scat.html. [Map: M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
+Diagonal black lines cover the area where oil sheen was observed after the 2015 Refugio Oil Spill. The dark black line indicates the short-term fishery closures. See Figures C2.4 and C13.5 for the modeled oil transport, which predicts crude oil reaching sanctuary waters, Santa Rosa, and Santa Cruz islands north-facing beaches days after the spill. Data source: [Shoreline Cleanup and Assessment Technique (SCAT) Shoreline Oiling Map](http://response.restoration.noaa.gov/oil-and-chemical-spills/oil-spills/resources/shoreline-cleanup-and-assessment-technique-scat.html). Map: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
 
 ## Figure App.C.2.4.
 
@@ -59,20 +59,20 @@ Modeled oil trajectories based on high frequency (HF) radar and averaged sea sur
 
 An image of modeled sea surface current directions used to predict oil movement from May 20 to May 25, immediately following the Refugio Oil Spill (2015). 
 
-Daily snapshots of oil transport simulations (blue dots) based on near-real time sea surface current direction and speeds (black arrows) from May 20 to 25, 2015, the days just after the Refugio oil spill. Yellow triangles represent SCCOOS high frequency radar (HFR) observation stations. PTC = Point Conception; RFG = Refugio State Beach; COP = Coal Oil Point. Not pictured is a HFR station at Gaviota, which was temporarily installed for one and half months following the spill (currently no longer active, see http://washburnlab.msi.ucsb.edu/mtu1) to address local data gaps. Not labeled is the yellow triangle/HFR station on Santa Cruz Island. Pink lines indicated commercial shipping lanes. The full oil transport model simulation can be viewed online: http://sccoos.org/about/news/2015-refugio-state-beach-oil-spill/. Source: [SCCOOS](http://sccoos.org/about/news/2015-refugio-state-beach-oil-spill/); Figure: B. Emery and [L. Washburn/UCSB](https://msi.ucsb.edu/people/faculty/libe-washburn)
+Daily snapshots of oil transport simulations (blue dots) based on near-real time sea surface current direction and speeds (black arrows) from May 20 to 25, 2015, the days just after the Refugio oil spill. Yellow triangles represent SCCOOS high frequency radar (HFR) observation stations. PTC = Point Conception; RFG = Refugio State Beach; COP = Coal Oil Point. Not pictured is a HFR station at Gaviota, which was temporarily installed for one and half months following the spill (currently no longer active, see http://washburnlab.msi.ucsb.edu/mtu1) to address local data gaps. Not labeled is the yellow triangle/HFR station on Santa Cruz Island. Pink lines indicated commercial shipping lanes. [The full oil transport model simulation can be viewed online](http://sccoos.org/about/news/2015-refugio-state-beach-oil-spill/). Source: [SCCOOS](http://sccoos.org/); Figure: B. Emery and [L. Washburn/UCSB](https://msi.ucsb.edu/people/faculty/libe-washburn)
 
 ## Figure App.C.2.8.
 
 A map showing the location of historic (green dots) and current (yellow dots) passive acoustic monitoring stations around the Sanctuary and Santa Barbara Channel.
 
-Previous (green dots) and current (yellow dots) passive acoustic monitoring stations in and around CINMS are shown along with several sources of anthropogenic noise: ports and harbors, oil platforms, shipping lanes, and military testing zones. SIO = Scripps Institution of Oceanography; NOAA NRS = Noise Reference Station. [Map: M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
+Previous (green dots) and current (yellow dots) passive acoustic monitoring stations in and around CINMS are shown along with several sources of anthropogenic noise: ports and harbors, oil platforms, shipping lanes, and military testing zones. SIO = Scripps Institution of Oceanography; NOAA NRS = Noise Reference Station. Map: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
 
 
 ## Figure App.C.3.1.
 
 A map showing vessel grounding locations from 1999 to 2016.
 
-Reported vessel grounding locations from 1999 to 2016 are shown in the map above. Not all groundings in the CINMS database are included as coordinates are unavailable for some grounding events. Data source: Vessel Assist; [Map: M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
+Reported vessel grounding locations from 1999 to 2016 are shown in the map above. Not all groundings in the CINMS database are included as coordinates are unavailable for some grounding events. Data source: Vessel Assist; Map: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
 
 ## Figure App.C.3.2.
 
@@ -84,17 +84,17 @@ Landings (in pounds) and the relative contribution of gear types has changed ove
 
 A map showing commercial fishing catch (fish caught by trawling) across the Southern California Bight (2007-2011). Locations of known deep-water corals, which are very vulnerable to trawling, are indicated on the map. 
 
-Trawling landings across the Southern California Bight, as illustrated by CDFW 10 square kilometer blocks and shown along with known locations of stony deep-water corals. Trawling is known to disturb bottom habitats and deep-sea corals. Even though trawling effort has decreased in recent years, the impacts of this gear type can be long lived. Data source: CDFW, Perry et al 2010; Map: [P. Etnoyer/NOAA](https://oceanexplorer.noaa.gov/edu/oceanage/03etnoyer/welcome.html), Etnoyer et al. 2015
+[Trawling](https://github.com/marinebon/cinms/blob/master/modals/_glossary.md) landings across the Southern California Bight, as illustrated by CDFW 10 square kilometer blocks and shown along with known locations of stony deep-water corals. Trawling is known to disturb bottom habitats and deep-sea corals. Even though trawling effort has decreased in recent years, the impacts of this gear type can be long lived. Data source: CDFW, Perry et al 2010; Map: [P. Etnoyer/NOAA](https://oceanexplorer.noaa.gov/edu/oceanage/03etnoyer/welcome.html), Etnoyer et al. 2015
 
 ## Figure App.C.3.4.
 
 A map showing historical fishing catch using fixed gear (a method of fishing) across the Southern California Bight (2007-2011). Locations of known deep-water gorgonians, which are very vulnerable to trawling, are indicated on the map. 
 
-Historical landings of fixed gear that could impact benthic habitats are shown along with the locations of deep-sea gorgonians in the map above. Fixed gear usage is moderate around the Channel Islands and likely impacts gorgonians in CINMS habitats. Data is from 2007 to 2011. Data source: CDFW, Perry et al 2010; Map: [P. Etnoyer/NOAA](https://oceanexplorer.noaa.gov/edu/oceanage/03etnoyer/welcome.html), Etnoyer et al. 2015
+Historical landings of [fixed gear](https://github.com/marinebon/cinms/blob/master/modals/_glossary.md) that could impact benthic habitats are shown along with the locations of deep-sea gorgonians in the map above. Fixed gear usage is moderate around the Channel Islands and likely impacts gorgonians in CINMS habitats. Data is from 2007 to 2011. Data source: CDFW, Perry et al 2010; Map: [P. Etnoyer/NOAA](https://oceanexplorer.noaa.gov/edu/oceanage/03etnoyer/welcome.html), Etnoyer et al. 2015
 
 ## Figure App.C.3.5.
 
-A map showing the locations of both trawling and fixed gear fishing in relation to protected areas (2007-2011) within the Southern California Bight.
+A map showing the locations of both trawling and fixed gear fishing in relation to protected areas (2007-2011) within the [Southern California Bight](https://github.com/marinebon/cinms/blob/master/modals/_glossary.md).
 
 Overlay of trawl and fixed gear fishing activity from 2007 to 2011 and protected areas is shown in the map above. Much of the landings is off the Santa Barbara mainland coast; however, fixed gear usage regularly occurs in sanctuary waters. Data source: CDFW; Map: [P. Etnoyer/NOAA](https://oceanexplorer.noaa.gov/edu/oceanage/03etnoyer/welcome.html)
 
@@ -130,13 +130,13 @@ The status and trends of offshore oil and gas activity in southern California wa
 
 ## Figure App.D.7.1.
 
-A figure showing domoic acid levels in commercially-important crustaceans (triangles) and bivalves (circles) collected from the Santa Barbara Channel (2012 - 2013). Red coloration indiciates that the domic acid levels measured above the California Department of Public Health and U.S. Food and Drug Administration action limits.
+A figure showing [domoic acid](https://github.com/marinebon/cinms/blob/master/modals/_glossary.md) levels in commercially-important crustaceans (triangles) and bivalves (circles) collected from the Santa Barbara Channel (2012 - 2013). Red coloration indiciates that the domic acid levels measured above the California Department of Public Health and U.S. Food and Drug Administration action limits.
 
 Domoic acid levels in parts per million (ppm) in commercially-important crustaceans (triangles) and bivalves (circles) collected from the Santa Barbara Channel between 2012 and 2013 are shown on the y-axis for (A) animals collected near the shore of the mainland coast, and (B) animals collected offshore the mainland coast or near the northern Channel Islands. In the cases that are colored red, domoic acid levels measured above the California Department of Public Health and U.S. Food and Drug Administration action limits: 20 ppm for meat and 30 ppm for viscera. Figure: [C. Culver/CA Sea Grant](https://caseagrant.ucsd.edu/profile/carolynn-culver), unpublished data
 
 ## Figure App.D.7.3.
 
-A map showing an unprecedented West Coast-wide harmful algal bloom (HAB) that extended from the Gulf of Alaska to southern California. March 2015 (left, before the HAB) as compared to May (right, during the HAB). 
+A map showing an unprecedented West Coast-wide [harmful algal bloom (HAB)](https://github.com/marinebon/cinms/blob/master/modals/_glossary.md) that extended from the Gulf of Alaska to southern California. March 2015 (left, before the HAB) as compared to May (right, during the HAB). 
 
 In May 2015, an unprecedented West Coast-wide harmful algal bloom (HAB) extended from the Gulf of Alaska to southern California. The bloom was composed of _Pseudo-nitzschia_, a toxigenic diatom that has the ability to produce domoic acid, a potent neurotoxin that can cause amnesic shellfish poisoning (ASP) and threaten human health if affected shellfish are consumed. These satellite images show chlorophyll-a estimates averaged over the periods of March 27–31, 2015 (left panel), and May, 6–8, 2015 (right panel). Data source: Satellite data were obtained from the National Aeronautics and Space Administration Ocean Biology Processing Group (OBPG) using a combination of the MODerate resolution Imaging Spectroradiometer (MODIS) on Aqua and Visible Infrared Imaging Radiometer Suite (VIIRS) chlorophyll products. Data were processed using standard OBPG processing with 4 kilometer imagery. Figure: McCabe et al. 2016
 
@@ -144,7 +144,7 @@ In May 2015, an unprecedented West Coast-wide harmful algal bloom (HAB) extended
 
 A figure showing the composition of "beach wrack" (decaying large marine plants washed up on shore) on Santa Rosa Island from 1995 - 2015.
 
-Macrophyte beach wrack percent cover at Santa Rosa Island is shown by species. Wrack primarily consists of _Macrocystis_ (Giant kelp) or _Phyllospadix_ (surf grass); however these two key types of wrack show recent decreases in percent cover. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+[Macrophyte](https://github.com/marinebon/cinms/blob/master/modals/_glossary.md) beach wrack percent cover at Santa Rosa Island is shown by species. Wrack primarily consists of _Macrocystis_ (Giant kelp) or _Phyllospadix_ (surf grass); however these two key types of wrack show recent decreases in percent cover. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
 
 ## Figure App.E.10.12.
 
@@ -208,9 +208,9 @@ Percent of gorgonians showing different levels damage at Anacapa Island during R
 
 ## Figure App.E.10.29.
 
-A figure showing the concentration of the mineral aragonite (calcium carbonate) at different depths at Anacapa Island from 2007 - 2014. CHECK
+A figure showing the concentration of the mineral [aragonite](https://github.com/marinebon/cinms/blob/master/modals/_glossary.md) (a form of calcium carbonate) at different depths at Anacapa Island from 2007 - 2014. 
 
-Aragonite saturations are shown at 75 meters (m) (green), 150 m (blue) and 300 m (red) at Anacapa Island. As pH of seawater decreases (e.g., from the deposition of atmospheric CO2), the saturation state of aragonite (Ωarg) decreases. Aragonite undersaturation (Ωarg < 1) favors dissolution over calcification, making it harder for organisms to make and maintain their shells or skeletons in the case of corals. In coastal upwelling zones, such as the California Current, the aragonite saturation state and depth are variable and shallow, respectively. With ocean acidification, aragonite saturation depths have shoaled over the past three decades and are now typically around 200 m in the California Current (Turi et al. 2016). At the local scale at Anacapa Island, the aragonite saturation depth has hovered around 130 m over the past eight years. As strong of a shoaling trend as at the California Current scale has not been seen. Instead, he usual seasonal variation but relatively stable aragonite saturation states over time (no trend), particularly in deep water, have been seen. Figure: Etnoyer et al. 2015
+[Aragonite saturations](https://github.com/marinebon/cinms/blob/master/modals/_glossary.md) are shown at 75 meters (m) (green), 150 m (blue) and 300 m (red) at Anacapa Island. As pH of seawater decreases (e.g., from the deposition of atmospheric CO2), the saturation state of aragonite (Ωarg) decreases. Aragonite undersaturation (Ωarg < 1) favors dissolution over calcification, making it harder for organisms to make and maintain their shells or skeletons in the case of corals. In coastal upwelling zones, such as the California Current, the aragonite saturation state and depth are variable and shallow, respectively. With ocean acidification, aragonite saturation depths have shoaled over the past three decades and are now typically around 200 m in the California Current (Turi et al. 2016). At the local scale at Anacapa Island, the aragonite saturation depth has hovered around 130 m over the past eight years. As strong of a shoaling trend as at the California Current scale has not been seen. Instead, he usual seasonal variation but relatively stable aragonite saturation states over time (no trend), particularly in deep water, have been seen. Figure: Etnoyer et al. 2015
 
 ## Figure App.E.11.1.
 
@@ -246,7 +246,7 @@ This graph is a California coastwide comparison of total extractables (TE) from 
 
 A figure showing levels of cancer-causing petroleum-linked chemicals found in the Channel Islands (blue) and offshore sites (red).
 
-Mean Total Extractables (TE) for individual Polycyclic Aromatic Hydrocarbons or PAHs are compared between Channel Islands (blue) and other offshore sites (red). PAHs are organic contaminants that are carcinogenic. Invertebrate species typically have limited ability to metabolize PAHs; however, they typically do not biomagnify because vertebrates can metabolize them more easily. Concentrations of PAHs are variable, but concentrations at CINMS are usually equivalent, if not lower than other offshore locations. There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more through research and data collection is required to confirm this trend. Figure: D. Apeti/[NOAA, Mussel Watch](https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html)
+Mean Total Extractables (TE) for individual Polycyclic Aromatic Hydrocarbons or PAHs are compared between Channel Islands (blue) and other offshore sites (red). PAHs are organic contaminants that are carcinogenic. [Invertebrate](https://github.com/marinebon/cinms/blob/master/modals/_glossary.md) species typically have limited ability to metabolize PAHs; however, they typically do not biomagnify because vertebrates can metabolize them more easily. Concentrations of PAHs are variable, but concentrations at CINMS are usually equivalent, if not lower than other offshore locations. There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more through research and data collection is required to confirm this trend. Figure: D. Apeti/[NOAA, Mussel Watch](https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html)
 
 ## Figure App.E.11.7.
 
@@ -262,12 +262,13 @@ Tar deposition percent cover at Fraser Cove, Santa Cruz Island. The park only mo
 
 ## Figure App.E.11.9.
 
-A map showing the impact of humans on the seafloor of the Sanctuary in 2013, using the Benthic Response Index as an indicator of that impact. CHECK
+A map showing the relative impact of human activity on the seafloor across different regions of the Southern California Bight, using the Benthic Response Index as an indicator. 
 
-jkjkjkjkj
+The Southern California Water Research Project uses a diversity index of tolerant and sensitive [infauna](https://github.com/marinebon/cinms/blob/master/modals/_glossary.md), also known as the Benthic Response Index (BRI), to gauge the ecosystem impact from anthropogenic contamination. The map above shows the 2013 locations of samples and the BRI trends at each location. Previously, island sites were all considered 100 percent pristine (reference), but now roughly 70 percent of samples are considered degraded from that status. Decline in BRI was particularly prevalent around Santa Cruz Island. This decline in BRI was not mirrored in other regions in southern California. The most recent samples, collected in 2013, found that ten of the 15 sites in Channel Island National Marine Sanctuary had infaunal community compositions that were shifting towards species more tolerant of degraded conditions (red) compared to the samples collected previously. Data Source: K. Schiff/ [SCCWRP](https://www.sccwrp.org/); Map: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
+
 ## Figure App.E.11.10.
 
-A figure showing the relative impact of humans on the seafloor across different regions of the Southern California Bight, using the Benthic Response Index as an indicator. 
+A figure showing the relative impact of human activity on the seafloor across different regions of the Southern California Bight, using the Benthic Response Index as an indicator. 
 
 Comparisons of the Benthic Response Index (BRI), a diversity index of contaminant tolerant and sensitive infauna, among different regions of the Southern California Bight is shown. Island shelf sites (upper right) had been at reference levels (highest ranking) until 2013, when approximately 30 percent of sites were reclassified as low impact. Other regions in the bight did not experience such a large BRI decline as the island shelf, which indicates potential new impacts to sediments around southern California Islands. Figure: K. Schiff/[SCCWRP](https://www.sccwrp.org/)
 
@@ -339,7 +340,7 @@ Left: a figure showing the average numer of owl limpets across the Northern Chan
 
 ## Figure App.F.13.4.
 
-A map showing a 2011 survey of suitable black ostercatcher habitat (orange) along the coast of the Channel Islands and Southern to Central California. 
+A map showing a 2011 survey of suitable black oystercatcher habitat (orange) along the coast of the Channel Islands and Southern to Central California. 
 
 In 2011, approximately 20 percent of the suitable habitat (orange) for black oystercatchers _Haematopus bachmani_ was surveyed. A total of 176 adult or sub-adult black oystercatchers were detected at the five islands in Channel Islands National Marine Sanctuary. Density at different locations is shown by the diameter of the purple circles. The northern Channel Islands population was conservatively estimated to be between 779–854, which is 14 to 16 percent of the estimated total population in California. Figure: Modified from Weinstein et al. 2014
 
@@ -363,7 +364,7 @@ Left: a figure showing counts of of western snowy plovers across 11 beaches on S
 
 ## Figure App.F.13.8.
 
-A figure showing the averaage density of two important sandy beach-dwelling invertebrates (shown in red and blue) from eight surveyed beaches on Santa Rosa Island from 1994 - 2015. CHECK
+A figure showing the averaage density of two important sandy beach-dwelling [invertebrates](https://github.com/marinebon/cinms/blob/master/modals/_glossary.md) (shown in red and blue) from eight surveyed beaches on Santa Rosa Island from 1994 - 2015. CHECK
 
 Mean density of two important members of the upper beach macrofaunal community — California beach hopper _Megalorchestia californiana_ (red) and _Alloniscus perconvexus_ (blue )— from surveys of eight beaches on Santa Rosa Island from 1994–2015. Curved lines represent statistically smoothed means. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
 
@@ -507,12 +508,6 @@ A figure showing the amount of non-native invertebrates and algae found in rocky
 
 Percent cover of non-indigenous taxa in [PISCO](http://www.piscoweb.org/) biodiversity surveys at rocky intertidal sites in southern California; the eight sites in Channel Islands National Marine Sanctuary are highlighted by the black box. PISCO found the turfy red alga _Caulacanthus okamurae_ (formerly _C. ustulatus_) at six sites, _Lomentaria hakodatensis_ at one site, the mussel _Mytilus galloprovincialis_ at two sites, the brown algae _Sargassum horneri_ at 1 site, and _Sargassum muticum_ at five sites. Additionally, the report noted that _Annalipus japonicus_, a brown alga, was found at Crook Point (San Miguel Island) south of its published southern range limit of Point Conception. Shallow subtidal _Sargassum muticum_ was densely abundant in many areas in 1970s and 1980s, but has become relatively less common and more interspersed with native species in recent years (J. Engle, pers. comm.). Figure: Blanchette et al. 2015.
 
-## Figure App.F.14.1. *** redundant, cut? 
-
-CHECK
-
-Percent cover of non-indigenous taxa in [PISCO](http://www.piscoweb.org/) biodiversity surveys at rocky intertidal sites in southern California; the eight sites in Channel Islands National Marine Sanctuary are highlighted by the black box. PISCO found the turfy red alga _Caulacanthus okamurae_ (formerly _C. ustulatus_) at six sites, _Lomentaria hakodatensis_ at one site, the mussel _Mytilus galloprovincialis_ at two sites, the brown algae _Sargassum horneri_ at 1 site, and _Sargassum muticum_ at five sites. Additionally, the report noted that _Annalipus japonicus_, a brown alga, was found at Crook Point (San Miguel Island) south of its published southern range limit of Point Conception. Shallow subtidal _Sargassum muticum_ was densely abundant in many areas in 1970s and 1980s, but has become relatively less common and more interspersed with native species in recent years (J. Engle, pers. comm.). Figure: Blanchette et al. 2015.
-
 ## Figure App.F.14.2. 
 
 A map showing the expansion of the non-native alga *Sargassum horneri* in the Southern California Bight from 2003 - 2015. 
@@ -543,7 +538,7 @@ A series of figures showing the equally-common species for kelp forest fishes (t
 
 Mean annual effective number of species for three taxonomic groups: kelp forest fishes (top), mobile demersal invertebrates (middle), and deeper water fishes (bottom). Shannon-Weiner diversity was converted to effective numbers of species, which allows for a more direct and intuitive comparison of community diversity over time. Kelp forest fish were surveyed across 86 shallow reef sites (3 to 16 meters depth) around the four northern Channel Islands from 2005 to 2014. Mobile invertebrates were surveyed across 63 shallow reef sites (3 to 16 meters depth) around the four northern Channel Islands from 1982 to 2016. Deep-water fish were surveyed at three reefs off the Channel Islands (Piggy Bank, Footprint, and Anacapa passage) at depths ranging from 40 to 407 meters in 1995 and annually between 1998 and 2011. Error bars indicate the 95 percent confidence interval in a given year. The horizontal line is the mean across sites over time. Data source: Amalgamated dataset of [SBC LTER](https://sbclter.msi.ucsb.edu/), [CINP Kelp Forest Monitoring Program](https://www.nps.gov/im/medn/kelp-forest-communities.htm), and [PISCO](http://www.piscoweb.org/); Figure: [SBC MBON](http://sbc.marinebon.org/)
 
-## Figure App.F.15.2.**
+## Figure App.F.15.2.
 
 A figure showing the temperature preferences for kelp-forest fish species across the four Northern Channel Islands. Anacapa and Santa Cruz Islands show a more southern (warmer) collection of fish species while Santa Rosa and San Miguel Islands have a more northern (cooler) collection of fish species. 
 
@@ -558,25 +553,25 @@ Diversity of deep-sea corals at the eight study sites in southern California wit
 
 ## Figure App.F.15.4.
 
-Left: a map showing the results of sediment contamination on invertebrate communities that live within the sediment. Right: a map showing a shift in sediment-dwelling invetebrate communites towards being more tolerant of sediment impacts based on a 2013 study. CHECK
+Left: a map showing the results of sediment contamination on invertebrate communities that live within the sediment. Right: a map showing a shift in sediment-dwelling invetebrate communites towards being more tolerant of sediment impacts based on a 2013 study
 
 (Left) Infaunal invertebrate communities are characterized based on the proportion of a sediment sample with taxa that are sensitive (green, reference) as opposed to tolerant (red, high disturbance) of contaminant levels. (Right) In the most recent samples collected in 2013, ten of the 15 sites in Channel Islands National Marine Sanctuary had an infaunal community composition that was shifting to that which is more tolerant of degraded conditions (red) compared to the samples collected previously. Figure: K. Schiff/[SCCWRP](https://www.sccwrp.org/)
 
 ## Table App.F.13.2.
 
-A table displaying the common and scientific names of species used to identify trends in fishing effort (with one type of fishing, known as fixed gear fishing) in the Southern California Bight from 2009 - 2016. CHECK
+A table displaying the common and scientific names of species used to identify trends in fishing effort (with one type of fishing, known as fixed gear fishing) in the Southern California Bight from 2009 - 2016.
 
 Common and scientific names of species selected for calculation of recent trends in CPUE from NMFS NWFSC Hook and Line surveys in the Southern California Bight. Of the more than 50 different species encountered in surveys from 2004—2015, the 15 species that were encountered most often (top 15 ranked species) were selected with the exception of sanddabs and squarespot rockfish, which are not well sampled by this survey method. The trend in annual CPUE was determined for the period 2009—2015 and is shown as increasing (↗), decreasing (↘), or no trend (↔) at the three spatial scales shown in Figure App.F.13.20. Three targeted or protected species were also included: cowcod, canary, and yelloweye rockfish (Note: These species were rarely encountered so observed trends may be misleading). Most strong regional trends (Southern California Bight and Channel Islands National Marine Sanctuary region) are reflected at the CINMS-level. Regional recovery or recruitment-driven population increases appears to be occurring for several species, including lingcod and bank rockfish. Trends were not strong for some rare species (e.g., cowcod and yelloweye). The CINMS trend was different than the larger sampling area for some species (e.g., bocaccio, chilipepper, and greenspotted rockfish) possibly influenced by depth segregation, effects of the Channel Islands network of MPAs, or regional/site level-effects amplified by low sample sizes. Data source: [NMFS NWFSC](https://www.nwfsc.noaa.gov/); Table: NOAA
 
 ## Table App.F.13.3.
 
-A table dsplaying the common and scientific names of species used to identify trends in fishing effort (with one type of fishing, known as trawl fishing) in the Southern California Bight from 2009 - 2016. CHECK
+A table displaying the common and scientific names of species used to identify trends in fishing effort (with one type of fishing, known as trawl fishing) in the Southern California Bight from 2009 - 2016. 
 
 Common and scientific names of species selected for calculation of recent trends in CPUE from NMFS NWFSC West Coast Groundfish Bottom Trawl Surveys in the Southern California Bight. Of the more than 247 different species encountered in surveys from 2003 to 2014, the 23 species that were encountered most often were selected. The trend in annual CPUE was determined for the period 2009–2014 and is shown as increasing (↗), decreasing (↘), or no trend (↔) at the three spatial scales shown in Figure App.F.13.21. Yellow highlights the 11 species that appear to be well sampled in trawls at the shallower depths most commonly surveyed inside Channel Islands National Marine Sanctuary (67 percent of sites in CINMS < 200 meters). These shallower species appear to be stable or increasing in CINMS and the surrounding region. Most species with different short-term trends at the smaller and larger spatial scales are deepwater species not sampled well in shallow water stations in CINMS. Data source: [NMFS NWFSC](https://www.nwfsc.noaa.gov/); Table: NOAA
 
 ## Table App.F.15.2.
 
-A table showing trends in four indicators of biodiversity as they relate to the Southern California Bight, the area around Channel Islands National Marine Sanctuary, and in the Sanctuary itself. CHECK
+A table showing trends in four indicators of [biodiversity](https://github.com/marinebon/cinms/blob/master/modals/_glossary.md) as they relate to the Southern California Bight, the area around Channel Islands National Marine Sanctuary, and in the Sanctuary itself. 
 
 Short-term trend in annual mean species richness, species density, Simpson diversity, and mean trophic level (MTL) for West Coast demersal fishes collected during the NMFS U.S. West Coast Groundfish Bottom Trawl Survey from 2008 to 2014 at three spatial scales (see map Figure App.F.13.21). Species richness is the count of the number of species present in a net sample. Species density is the number of species per unit area. Simpson diversity takes into account the number of species present, as well as the relative abundance of each species. Mean trophic level is the biomass-weighted average trophic level of all species in a net sample. Short-term trends are consistent across all three spatial scales. Most diversity measures show declines in the near term, whereas MTL shows near-term increases. More Information about how these indicators were calculated are available at https://www.integratedecosystemassessment.noaa.gov/Assets/iea/california/Report/pdf/3.Ecological%20Integrity_2013.pdf.
 Data source: [NMFS NWFSC](https://www.nwfsc.noaa.gov/); Table: NOAA
