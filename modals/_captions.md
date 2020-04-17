@@ -528,7 +528,7 @@ Mean (+/- SE) percent cover of _Sargassum horneri_ at sites monitored by Channel
 
 ## Figure App.F.14.5.
 
-A map showing the presence (red) and absence (green) of a non-native encrusting invertebrate on oil platforms in the Santa Barbara Channel and around the Northern Channel Islands. 
+A map showing the presence (red) and absence (green) of a non-native encrusting invertebrate on oil platforms in the Santa Barbara Channel and around the Northern Channel Islands. CHECK
 
 Presence (red) and absence (green) of _Watersipora spp._ on recently surveyed oil platforms, other artificial surfaces, and natural reefs in the Santa Barbara Channel. This non-indigenous bryozoan was found to occur on only two of 15 natural reefs surveyed in the northern Channel Islands. Figure: Page et al. 2016
 
