@@ -142,7 +142,7 @@ In May 2015, an unprecedented West Coast-wide harmful algal bloom (HAB) extended
 
 ## Figure App.E.10.11.
 
-A figure showing the composition of "beach wrack" (decaying large marine plants washed up on shore) on Santa Rosa Island from 1995 - 2015.
+A figure showing the composition of "beach wrack" (decaying large seaweed washed up on shore) on Santa Rosa Island from 1995 - 2015.
 
 [Macrophyte](https://github.com/marinebon/cinms/blob/master/modals/_glossary.md) beach wrack percent cover at Santa Rosa Island is shown by species. Wrack primarily consists of _Macrocystis_ (Giant kelp) or _Phyllospadix_ (surf grass); however these two key types of wrack show recent decreases in percent cover. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
 
@@ -196,7 +196,7 @@ National Marine Fisheries Service surveys in 2015 for eelgrass using interferome
 
 ## Figure App.E.10.26.
 
-A pie chart showing the numer of deep-water soft corals observed in the Southern California Bight. Organisms are grouped by genus.
+A pie chart showing the number of deep-water soft corals observed in the Southern California Bight. Organisms are grouped by genus.
 
 The breakdown for the number of deep-water soft corals colonies observed in each genus for the Southern California Bight. Among the 34,792 images collected by the SWFSC Sebastes ROV between 2003 and 2011 throughout the entire Southern California Bight, researchers observed a total of 5,419 colonies. Adelogorgia was most common with 1,832 colonies in 535 observations. _Eugorgia_ was second most common with 792 colonies in 436 observations. Figure: Etnoyer et al. 2015
 
