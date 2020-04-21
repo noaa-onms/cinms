@@ -364,7 +364,7 @@ Left: a figure showing counts of of western snowy plovers across 11 beaches on S
 
 ## Figure App.F.13.8.
 
-A figure showing the averaage density of two important sandy beach-dwelling [invertebrates](https://github.com/marinebon/cinms/blob/master/modals/_glossary.md) (shown in red and blue) from eight surveyed beaches on Santa Rosa Island from 1994 - 2015. CHECK
+A figure showing the averaage density of two important sandy beach-dwelling [invertebrates](https://github.com/marinebon/cinms/blob/master/modals/_glossary.md) (shown in red and blue) from eight surveyed beaches on Santa Rosa Island from 1994 - 2015.
 
 Mean density of two important members of the upper beach macrofaunal community — California beach hopper _Megalorchestia californiana_ (red) and _Alloniscus perconvexus_ (blue )— from surveys of eight beaches on Santa Rosa Island from 1994–2015. Curved lines represent statistically smoothed means. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
 
@@ -485,7 +485,7 @@ Trend in density from 2004–2013, based on sightings from [CalCOFI](https://cal
 
 ## Figure App.F.15.5
 
-A figure showing the relative abundance (how common or rare a species is) of cool-water associated (top) and warm-water associated (bottom) fish larve around the Channel Islands and the Southern California Shelf from 1974 to 2015. CHECK
+A figure showing the relative abundance (how common or rare a species is) of cool-water associated (top) and warm-water associated (bottom) fish larve around the Channel Islands and the Southern California Shelf from 1974 to 2015.
 
 Relative abundance of cool-water and warm-water associated ichthyoplankton (fish larvae) groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS)  and over the Southern California Shelf from 1978 to 2015. Sampling sites are shown on Figure App.F.12.17. Symbols on the graph are explained in the caption for Figure App.F.12.18. Data source: [CalCOFI](https://calcofi.org/); Figure: A. Thompson/NOAA
 
@@ -498,7 +498,7 @@ Mean species richness of fish larvae (ichthyoplankton) collected in net samples 
 
 ## Figure App.F.15.6.c-d **same as figure App.F.15.5?
 
-A figure showing the relative abundance (how common or rare a species is) of cool-water associated (top) and warm-water associated (bottom) fish larve around the Channel Islands and the Southern California Shelf from 1974 to 2015. CHECK
+A figure showing the relative abundance (how common or rare a species is) of cool-water associated (top) and warm-water associated (bottom) fish larve around the Channel Islands and the Southern California Shelf from 1974 to 2015.
 
 Relative abundance of cool-water (top panels) and warm-water (bottom panels) associated ichthyoplankton (fish larvae) groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) region (left panels) and over the Southern California Shelf (right panels) from 1978 to 2015. Sampling sites are shown on Figure App.F.12.17. Symbols on the graph are explained in the caption for Figure App.F.12.18. Data source: [CalCOFI](https://calcofi.org/); Figure: A. Thompson/NOAA
 
@@ -528,13 +528,13 @@ Mean (+/- SE) percent cover of _Sargassum horneri_ at sites monitored by Channel
 
 ## Figure App.F.14.5.
 
-A map showing the presence (red) and absence (green) of a non-native encrusting invertebrate on oil platforms in the Santa Barbara Channel and around the Northern Channel Islands. CHECK
+A map showing the presence (red) and absence (green) of a non-native encrusting invertebrate on oil platforms in the Santa Barbara Channel and around the Northern Channel Islands.
 
 Presence (red) and absence (green) of _Watersipora spp._ on recently surveyed oil platforms, other artificial surfaces, and natural reefs in the Santa Barbara Channel. This non-indigenous bryozoan was found to occur on only two of 15 natural reefs surveyed in the northern Channel Islands. Figure: Page et al. 2016
 
 ## Figure App.F.15.1.
 
-A series of figures showing the equally-common species for kelp forest fishes (top), mobile bottom-associated invetebrates (middle) and deep water fishes (bottom) around the four Northern Channel Islands from 2005 - 2014. CHECK
+A series of figures showing the equally-common species for kelp forest fishes (top), mobile bottom-associated invetebrates (middle) and deep water fishes (bottom) around the four Northern Channel Islands from 2005 - 2014.
 
 Mean annual effective number of species for three taxonomic groups: kelp forest fishes (top), mobile demersal invertebrates (middle), and deeper water fishes (bottom). Shannon-Weiner diversity was converted to effective numbers of species, which allows for a more direct and intuitive comparison of community diversity over time. Kelp forest fish were surveyed across 86 shallow reef sites (3 to 16 meters depth) around the four northern Channel Islands from 2005 to 2014. Mobile invertebrates were surveyed across 63 shallow reef sites (3 to 16 meters depth) around the four northern Channel Islands from 1982 to 2016. Deep-water fish were surveyed at three reefs off the Channel Islands (Piggy Bank, Footprint, and Anacapa passage) at depths ranging from 40 to 407 meters in 1995 and annually between 1998 and 2011. Error bars indicate the 95 percent confidence interval in a given year. The horizontal line is the mean across sites over time. Data source: Amalgamated dataset of [SBC LTER](https://sbclter.msi.ucsb.edu/), [CINP Kelp Forest Monitoring Program](https://www.nps.gov/im/medn/kelp-forest-communities.htm), and [PISCO](http://www.piscoweb.org/); Figure: [SBC MBON](http://sbc.marinebon.org/)
 
