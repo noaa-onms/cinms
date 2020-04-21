@@ -108,11 +108,15 @@ Fishing activity landings for Commercial Passenger Fishing Vessels (CPFVs) opera
 
 A figure showing trends in fishing catch (lbs, left y-axis) and economic value (dollars, right y-axis) for seven major fisheries around the Channel Islands (2000 - 2012). 
 
+### Details
+
 Trends over time in commercial fishing activity in Channel Islands National Marine Sanctuary (CINMS) based on landings pounds (blue bars) and value (dark blue line) for seven fisheries from 2000 to 2012. Landings were combined for twenty-two blocks that overlap substantially with the sanctuary (see Figure App.C4.3. for map). Landings for market squid, sardine, and anchovy declined recently while landings of crabs increased. Landings of sea urchin, spiny lobster, and prawn and shrimp were relatively stable. Figure: Leeworthy et al. 2014a
 
 ## Figure App.C.4.12.
 
-A map showing traffic patterns of large commercial shipping vessels through the Sanctuary (2008, 2010, 2014). 
+A map showing traffic patterns of large commercial shipping vessels through the Sanctuary (2008, 2010, 2014).
+
+### Details
 
 Traffic patterns of large commercial vessels (cargo and tanker vessels) in the Santa Barbara Channel region for 2008, 2010, and 2014. The number of commercial ship transits is shown, using Automatic Identification System (AIS) data transmitted from ships. Vessels transiting to and from the Ports of Los Angeles/Long Beach that pass by the northern Channel Islands use either the Santa Barbara Channel Traffic Separation Scheme around the north side of the islands, or take routes south of the islands. Data source: USCG AIS data, processed by NMFS; Figure: MSWGSS 2016
 

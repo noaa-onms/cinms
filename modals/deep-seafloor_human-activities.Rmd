@@ -3,6 +3,8 @@ output:
   html_document:
     toc: true
     toc_depth: 5
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r, include=F}
@@ -21,8 +23,10 @@ source(here::here("scripts/utility.R"))
 ##### Landings {.tabset}
 
 ###### Commercial
- 
+
 ![`r md_caption("Figure App.C.4.4.")`](../img/cinms_cr/App.C.4.4.Leeworthy_landings.jpg)
+
+`r md_caption("Figure App.C.4.4.", get_details=T)`
 
 ###### Recreational
 
@@ -31,6 +35,7 @@ source(here::here("scripts/utility.R"))
 ###### Deep-water
 
 ![`r md_caption("Figure App.C.3.2.")`](../img/cinms_cr/App.C.3.2_CINMSLandings.jpg)
+
 
 ##### Maps of Fishing  {.tabset}
 

@@ -3,10 +3,13 @@ library(readr)
 library(dplyr)
 library(htmltools)
 
-md_caption <- function(title = NULL, md = here::here("modals/_captions.md")){
+md_caption <- function(title = NULL, md = here::here("modals/_captions.md"), get_details = F){
   #title = "Figure S.Hab.10.3."
   #title = "Figure App.F.12.17.new"
   #md_caption("Figure App.F.12.17.new")
+  # title = "Figure App.C.4.4."
+  
+  #browser()
   
   library(dplyr)
   library(tidyr)
@@ -15,40 +18,56 @@ md_caption <- function(title = NULL, md = here::here("modals/_captions.md")){
   
   stopifnot(file.exists(md))
   
-  caption <- tibble(
+  tbl <- tibble(
     # read lines of markdown in _captions.md
     ln = readLines(md) %>% str_trim()) %>%
     # detect header with title, set rest to NA
     mutate(
-      hdr = str_detect(ln, glue("^## {title}")) %>% na_if(FALSE)) %>% 
+      is_hdr = str_detect(ln, glue("^## {title}")) %>% na_if(FALSE)) %>% 
     # fill down so capturing all starting with title header
-    fill(hdr) %>% 
+    fill(is_hdr) %>% 
     # filter for title header down, removing previous lines
-    filter(hdr) %>% 
+    filter(is_hdr) %>% 
     # remove title header
     slice(-1) %>% 
     # detect subsequent headers
     mutate(
-      hdr = str_detect(ln, "^## ") %>% na_if(F)) %>% 
+      is_hdr = str_detect(ln, "^## ") %>% na_if(F)) %>% 
     # fill down
-    fill(hdr) %>%
+    fill(is_hdr) %>%
     mutate(
-      hdr = replace_na(hdr, FALSE)) %>% 
+      is_hdr = replace_na(is_hdr, FALSE)) %>% 
     # filter for not header down, removing subsequent lines outside caption
-    filter(!hdr) %>% 
-    # extract lines and collapse
-    pull(ln) %>% paste0(collapse = "\n") %>% 
-    # trim space and newlines
+    filter(!is_hdr) %>% 
+    # details
+    mutate(
+      is_details = str_detect(ln, "^### Details") %>% na_if(F)) %>% 
+    # fill down
+    fill(is_details)
+  
+  simple_md <- tbl %>% 
+    filter(is.na(is_details)) %>% 
+    filter(ln != "") %>% 
+    pull(ln) %>% 
+    paste0(collapse = "\n") %>% 
+    str_trim()
+    
+  details_md <- tbl %>%
+    filter(is_details) %>% 
+    filter(ln != "") %>% 
+    pull(ln) %>% 
+    paste0(collapse = "\n") %>% 
+    str_replace(
+      "### Details\n(.*)", 
+      "<details>\n  <summary>Click for Details</summary>\n\\1</details>") %>% 
     str_trim()
   
-  # handle details
-  caption <- str_replace(
-    caption,
-    "### Details\n\n(.*)", 
-    "<details><summary>\\1</summary></details>") 
-  
-  # prepend with title
-  glue("**{title}**. {caption}")
+  if (get_details == T){
+    return(details_md)
+  } else {
+    return(glue("**{title}**. {simple_md}"))  
+  }
+
 }
 
 add_icons <- function(info_url = NULL, photo_url = NULL){
