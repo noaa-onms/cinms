@@ -39,13 +39,14 @@ render_modal <- function(rmd){
     # toc=T, toc_depth=3, toc_float=T,
     mathjax = NULL))
   
-  htm <- fs::path_ext_set(rmd, "html")
-  docs_htm <- glue("docs/{htm}")
-  docs_rmd <- glue("docs/{rmd}")
-  file.copy(rmd, docs_rmd, overwrite = T)
-  file.copy(htm, docs_htm, overwrite = T)
+  # htm <- fs::path_ext_set(rmd, "html")
+  # docs_htm <- glue("docs/{htm}")
+  # docs_rmd <- glue("docs/{rmd}")
+  # file.copy(rmd, docs_rmd, overwrite = T)
+  # file.copy(htm, docs_htm, overwrite = T)
 }
 
+# render_modal("modals/deep-seafloor_human-activities.Rmd")
 # render_modal("modals/key-human-activities.Rmd")
 # render_modal("modals/rocky-map.Rmd")
 # render_modal("modals/barnacles.Rmd")
@@ -77,12 +78,12 @@ for (i in 1:nrow(d_modals)){ # i=1
 
 # render website, ie Rmds in root ----
 walk(list.files(".", "*\\.md$"), render_page)
-walk(
-  list.files(".", "*\\.html$"), 
-  function(x) file.copy(x, file.path("docs", x)))
+# walk(
+#   list.files(".", "*\\.html$"), 
+#   function(x) file.copy(x, file.path("docs", x)))
 rmarkdown::render_site()
 
-fs::file_touch("docs/.nojekyll")
+#fs::file_touch("docs/.nojekyll")
 
 # shortcuts w/out full render:
 # file.copy("libs", "docs", recursive=T)

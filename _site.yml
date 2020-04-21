@@ -1,5 +1,5 @@
 name: "CINMS info"
-output_dir: "docs"
+output_dir: "."
 description: |
   CINMS info
 navbar:
