@@ -28,6 +28,8 @@ Not Available (yet)
 
 ![`r md_caption("Figure App.F.12.20.squid")`](../img/cinms_cr/App.F.12.20.CalCOFI_squid.jpg)
 
+`r md_caption("Figure App.F.12.20.", get_details=T)`
+
 #### CINMS Region
 
 #### SoCal Shelf Region

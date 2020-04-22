@@ -9,11 +9,16 @@ source(here::here("scripts/utility.R"))
 
 ![`r md_caption("Figure App.F.13.9.")`](../img/cinms_cr/App.F.13.9.jpg)
 
+`r md_caption("Figure App.F.13.9.", get_details=T)`
+
 ### Red (CINP)
 
-![`r md_caption("Figure App.F.13.10.")`](../img/cinms_cr/App.F.13.10a.Haliotis_rufescens_CINP.jpg)
+![`r md_caption("Figure App.F.13.10a.")`](../img/cinms_cr/App.F.13.10a.Haliotis_rufescens_CINP.jpg)
+
+`r md_caption("Figure App.F.13.10a.", get_details=T)`
 
 ### Pink (CINP)
 
-![`r md_caption("Figure App.F.13.10.")`](../img/cinms_cr/App.F.13.10b.Haliotis_corrugata_CINP.jpg)
+![`r md_caption("Figure App.F.13.10b.")`](../img/cinms_cr/App.F.13.10b.Haliotis_corrugata_CINP.jpg)
 
+`r md_caption("Figure App.F.13.10b.", get_details=T)`

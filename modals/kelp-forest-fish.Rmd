@@ -9,16 +9,23 @@ source(here::here("scripts/utility.R"))
 
 ![`r md_caption("Figure App.F.13.15.")`](../img/cinms_cr/App.F.13.15.jpg)
 
+`r md_caption("Figure App.F.13.15.", get_details=T)`
+
 ### Fish by island (CINP data)
 
 ![`r md_caption("Figure App.F.13.16.")`](../img/cinms_cr/App.F.13.16.jpg)
+
+`r md_caption("Figure App.F.13.16.", get_details=T)`
 
 ### Fish island vs. mainland (SBC-LTER data)
 
 ![`r md_caption("Figure App.F.13.17.")`](../img/cinms_cr/App.F.13.17.jpg)
 
+`r md_caption("Figure App.F.13.17.", get_details=T)`
 
 ### Giant sea bass (_Stereolepis gigas_) (PISCO data)
 
 ![`r md_caption("Figure App.F.13.14.")`](../img/cinms_cr/App.F.13.14.jpg)
+
+`r md_caption("Figure App.F.13.14.", get_details=T)`
 

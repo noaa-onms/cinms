@@ -9,14 +9,22 @@ source(here::here("scripts/utility.R"))
 
 ![`r md_caption("Figure App.F.14.2.")`](../img/cinms_cr/App.F.14.2.Sargassum_expansion.jpg)
 
+`r md_caption("Figure App.F.14.2.", get_details=T)`
+
 ### _Sargassum horneri_ occurence - CINMS
 
 ![`r md_caption("Figure App.F.14.3.")`](../img/cinms_cr/App.F.14.3_S.horneri_PresenceAbsence.jpg)
+
+`r md_caption("Figure App.F.14.3.", get_details=T)`
 
 ### _Sargassum horneri_ percent cover by island
 
 ![`r md_caption("Figure App.F.14.4.")`](../img/cinms_cr/App.F.14.4.Sargassum_graph.jpg)
 
+`r md_caption("Figure App.F.14.4.", get_details=T)`
+
 ### _Watersipora_ occurence - Southern California Bight
 
 ![`r md_caption("Figure App.F.14.5.")`](../img/cinms_cr/App.F.14.5.Watersipora_map_Page.jpg)
+
+`r md_caption("Figure App.F.14.5.", get_details=T)`

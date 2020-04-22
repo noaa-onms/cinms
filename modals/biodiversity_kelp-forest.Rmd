@@ -9,16 +9,24 @@ source(here::here("scripts/utility.R"))
 
 ![`r md_caption("Figure App.F.15.1.")`](../img/cinms_cr/App.F.15.1a.MBON_kelp_forest_fish.jpg)
 
+`r md_caption("Figure App.F.15.1.", get_details=T)`
+
 ### Bottom mobile invertebrates - effective number of species
 
 ![`r md_caption("Figure App.F.15.1.")`](../img/cinms_cr/App.F.15.1b.MBON_mobile_invertebrate.jpg)
+
+`r md_caption("Figure App.F.15.1.", get_details=T)`
 
 ### Deeper water fish - effective number of species
 
 ![`r md_caption("Figure App.F.15.1.")`](../img/cinms_cr/App.F.15.1c.MBON_deep_water_fish.jpg)
 
+`r md_caption("Figure App.F.15.1.", get_details=T)`
+
 ### Kelp forest fish - thermal affinity ratio
 
 ![`r md_caption("Figure App.F.15.2.")`](../img/cinms_cr/App.F.15.2.Thermal_LogRatio.jpg)
+
+`r md_caption("Figure App.F.15.2.", get_details=T)`
 
 

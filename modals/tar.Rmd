@@ -5,4 +5,8 @@ source(here::here("scripts/utility.R"))
 
 ![`r md_caption("Figure App.E.11.7.")`](../img/cinms_cr/App.E.11.7_TarColorgraph.jpg)
 
+`r md_caption("Figure App.E.11.7.", get_details=T)`
+
 ![`r md_caption("Figure App.E.11.8.")`](../img/cinms_cr/App.E.11.8.jpg)
+
+`r md_caption("Figure App.E.11.8.", get_details=T)`

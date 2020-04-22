@@ -4,3 +4,5 @@ source(here::here("scripts/utility.R"))
 ```
 
 ![`r md_caption("Figure App.F.13.28.")`](../img/cinms_cr/App.F.13.28.jpg)
+
+`r md_caption("Figure App.F.13.28.", get_details=T)`

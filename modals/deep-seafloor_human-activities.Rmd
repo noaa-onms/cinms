@@ -32,10 +32,13 @@ source(here::here("scripts/utility.R"))
 
 ![`r md_caption("Figure App.C.4.2.")`](../img/cinms_cr/App.C.4.2b.CPFV_landings.jpg)
 
+`r md_caption("Figure App.C.4.2.", get_details=T)`
+
 ###### Deep-water
 
 ![`r md_caption("Figure App.C.3.2.")`](../img/cinms_cr/App.C.3.2_CINMSLandings.jpg)
 
+`r md_caption("Figure App.C.3.2.", get_details=T)`
 
 ##### Maps of Fishing  {.tabset}
 
@@ -43,13 +46,20 @@ source(here::here("scripts/utility.R"))
 
 ![`r md_caption("Figure App.C.3.3.")`](../img/cinms_cr/App.C.3.3_SWFSC_Trawls2007-2011_HBCoralsRS.jpg)
 
+`r md_caption("Figure App.C.3.3.", get_details=T)`
+
 ###### Fixed Gear
 
 ![`r md_caption("Figure App.C.3.4.")`](../img/cinms_cr/App.C.3.4_SWFSC_Fixed2007-2011_Gorgonians.jpg)
 
+`r md_caption("Figure App.C.3.4.", get_details=T)`
+
 ###### Trawl & Fixed Gear with MPAs 
 
 ![`r md_caption("Figure App.C.3.5.")`](../img/cinms_cr/App.C.3.5_SoCalDeepBotFishingMPAs_Etnoyer.jpg)
+
+`r md_caption("Figure App.C.3.5.", get_details=T)`
+
 ## Human Impacts
 
 ### {.tabset}
@@ -65,45 +75,67 @@ source(here::here("scripts/utility.R"))
 
 ![`r md_caption("Figure App.D.7.1.")`](../img/cinms_cr/App.D.7.1_DA levels in crustaceans and bivalves in 2012 and 2013_C. Culver CA Sea Grant copy.jpg)
 
+`r md_caption("Figure App.D.7.1.", get_details=T)`
+
 ###### Harmful Algal Bloom (May 2015)
 
 ![`r md_caption("Figure App.D.7.3.")`](../img/cinms_cr/App.D.7.3_2015 HAB_McCabe et al. 2016.jpg)
+
+`r md_caption("Figure App.D.7.3.", get_details=T)`
 
 ###### Benthic Response Index - Trend by region
 
 ![`r md_caption("Figure App.E.11.10.")`](../img/cinms_cr/App.E.11.10.jpg)
 
+`r md_caption("Figure App.E.11.10.", get_details=T)`
+
 ###### Benthic Response Index - Trend by site
 
 ![`r md_caption("Figure App.E.11.9.")`](../img/cinms_cr/App.E.11.9.jpg)
+
+`r md_caption("Figure App.E.11.9.", get_details=T)`
 
 ###### Benthic Response Index - Condition by site
 
 ![`r md_caption("Figure App.E.11.11.")`](../img/cinms_cr/App.E.11.11.jpg)
 
+`r md_caption("Figure App.E.11.11.", get_details=T)`
+
 ###### DDT in sediments
 
 ![`r md_caption("Figure App.E.11.12.")`](../img/cinms_cr/App.E.11.12.jpg)
+
+`r md_caption("Figure App.E.11.12.", get_details=T)`
 
 ###### Copper in sediments
 
 ![`r md_caption("Figure App.E11.13.")`](../img/cinms_cr/App.E.11.13.jpg)
 
+`r md_caption("Figure App.E.11.13.", get_details=T)`
+
 ###### Silver in sediments
 
 ![`r md_caption("Figure App.E11.14.")`](../img/cinms_cr/App.E.11.14.jpg)
+
+`r md_caption("Figure App.E.11.14.", get_details=T)`
 
 ###### PBDEs in sediments
 
 ![`r md_caption("Figure App.E.11.15.")`](../img/cinms_cr/App.E.11.15.jpg)
 
+`r md_caption("Figure App.E.11.15.", get_details=T)`
+
 ###### Pyrethroids in sediments
 
 ![`r md_caption("Figure App.E.11.16.")`](../img/cinms_cr/App.E.11.16.jpg)
 
+`r md_caption("Figure App.E.11.16.", get_details=T)`
+
 ###### Contaminants in sediments - Trends by region
 
 ![`r md_caption("Figure App.E.11.17.")`](../img/cinms_cr/App.E.11.17.jpg)
+
+`r md_caption("Figure App.E.11.17.", get_details=T)`
 
 ```{r svg, child = '_marine-debris.Rmd'}
 ```

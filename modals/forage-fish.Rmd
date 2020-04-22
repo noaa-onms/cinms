@@ -44,6 +44,8 @@ calcofi_plot(csv = csv, title = title)
 
 `r md_caption("Figure App.F.12.19")`
 
+`r md_caption("Figure App.F.12.19.", get_details=T)`
+
 ### Hake
 
 #### CINMS Region
@@ -55,6 +57,8 @@ calcofi_plot(csv = csv, title = title)
 ![](../img/cinms_cr/App.F.12.19.hake.SoCAShelf.jpg)
 
 `r md_caption("Figure App.F.12.19")`
+
+`r md_caption("Figure App.F.12.19.", get_details=T)`
 
 ### Myctophids
 
@@ -84,6 +88,8 @@ calcofi_plot(csv = csv, title = title)
 
 
 `r md_caption("Figure App.F.12.19")`
+
+`r md_caption("Figure App.F.12.19.", get_details=T)`
 
 ### Rockfish
 
@@ -115,6 +121,8 @@ calcofi_plot(csv = csv, title = title)
 
 `r md_caption("Figure App.F.12.19")`
 
+`r md_caption("Figure App.F.12.19.", get_details=T)`
+
 ### Sanddab
 
 #### CINMS Region
@@ -143,6 +151,8 @@ calcofi_plot(csv = csv, title = title)
 
 
 `r md_caption("Figure App.F.12.19")`
+
+`r md_caption("Figure App.F.12.19.", get_details=T)`
 
 ### Sardines
 
@@ -175,4 +185,6 @@ calcofi_plot(csv = csv, title = title)
 
 
 `r md_caption("Figure App.F.12.19")`
+
+`r md_caption("Figure App.F.12.19.", get_details=T)`
 

@@ -9,6 +9,10 @@ source(here::here("scripts/utility.R"))
 
 ![`r md_caption("Figure App.E.10.11.")`](../img/cinms_cr/App.E.10.11.jpg)
 
+`r md_caption("Figure App.E.10.11.", get_details=T)`
+
 ### Santa Rosa Island - per site
 
 ![`r md_caption("Figure App.E.10.12.")`](../img/cinms_cr/App.E.10.12.jpg)
+
+`r md_caption("Figure App.E.10.12.", get_details=T)`

@@ -9,8 +9,12 @@ source(here::here("scripts/utility.R"))
 
 ![`r md_caption("Figure App.F.13.12.")`](../img/cinms_cr/App.F.13.12.jpg)
 
+`r md_caption("Figure App.F.13.12.", get_details=T)`
+
 ### Sea cucumber island vs. mainland (SBC-LTER data)
 
 ![`r md_caption("Figure App.F.13.13.")`](../img/cinms_cr/App.F.13.13.jpg)
+
+`r md_caption("Figure App.F.13.13.", get_details=T)`
 
 

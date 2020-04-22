@@ -9,18 +9,30 @@ source(here::here("scripts/utility.R"))
 
 ![`r md_caption("Figure App.F.13.18.")`](../img/cinms_cr/App.F.13.18.jpg)
 
+`r md_caption("Figure App.F.13.18.", get_details=T)`
+
 ![`r md_caption("Figure App.F.13.19.")`](../img/cinms_cr/App.F.13.19.jpg)
+
+`r md_caption("Figure App.F.13.19.", get_details=T)`
 
 ### Demersal fishes recent trends (NMFS hook & line survey data)
 
 ![`r md_caption("Table App.F.13.2.")`](../img/cinms_cr/tbl.App.F.13.2.jpg)
 
+`r md_caption("Figure App.F.13.2.", get_details=T)`
+
 ![`r md_caption("Figure App.F.13.20.")`](../img/cinms_cr/App.F.13.20.jpg)
+
+`r md_caption("Figure App.F.13.20.", get_details=T)`
 
 ### Demersal fishes recent trends (NMFS trawl survey data)
 
 ![`r md_caption("Table App.F.13.3.")`](../img/cinms_cr/tbl.App.F.13.3.jpg)
 
+`r md_caption("Figure App.F.13.3.", get_details=T)`
+
 ### 
 
 ![`r md_caption("Figure App.F.13.21.")`](../img/cinms_cr/App.F.13.21.jpg)
+
+`r md_caption("Figure App.F.13.21.", get_details=T)`

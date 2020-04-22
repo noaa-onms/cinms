@@ -11,7 +11,11 @@ source(here::here("scripts/utility.R"))
 
 ![`r md_caption("Figure App.C.4.12.")`](../img/cinms_cr/App.C.4.12.MSWGSS_2016.jpg)
 
+`r md_caption("Figure App.C.4.12.", get_details=T)`
+
 ###### Vessel Groundings
 
 ![`r md_caption("Figure App.C.3.1.")`](../img/cinms_cr/App.C.3.1_VesselGroundingsMap.jpg)
+
+`r md_caption("Figure App.C.3.1.", get_details=T)`
 

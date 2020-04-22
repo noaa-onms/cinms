@@ -9,12 +9,12 @@ source(here::here("scripts/utility.R"))
 
 ### Abundance adults
 
-![](../img/cinms_cr/App.F.13.7a.jpg)
+![`r md_caption("Figure App.F.13.7a.")`](../img/cinms_cr/App.F.13.7a.jpg)
+
+`r md_caption("Figure App.F.13.7a.", get_details=T)`
 
 ### Abundance chicks
 
-![](../img/cinms_cr/App.F.13.7b.jpg)
+![`r md_caption("Figure App.F.13.7b.")`](../img/cinms_cr/App.F.13.7b.jpg)
 
-##
-
-`r md_caption("Figure App.F.13.7.")`
+`r md_caption("Figure App.F.13.7b.", get_details=T)`

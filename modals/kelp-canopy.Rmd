@@ -9,6 +9,10 @@ source(here::here("scripts/utility.R"))
 
 ![`r md_caption("Figure App.E.10.13.")`](../img/cinms_cr/App.E.10.13.jpg)
 
+`r md_caption("Figure App.E.10.13.", get_details=T)`
+
 ### Kelp density by island (CINP data)
 
 ![`r md_caption("Figure App.E.10.14.")`](../img/cinms_cr/App.E.10.14.jpg)
+
+`r md_caption("Figure App.E.10.14.", get_details=T)`
