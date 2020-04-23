@@ -17,5 +17,8 @@
 ```{r svg, child = '_contaminants.Rmd'}
 ```
 
-```{r svg, child = '_marine-debris.Rmd'}
-```
+#### Marine Debris
+
+![`r md_caption("Figure App.C.4.14.")`](../img/cinms_cr/App.C.4.14.Marine debris_CCIEA.jpg)
+
+`r md_caption("Figure App.C.4.14.", get_details=T)`
