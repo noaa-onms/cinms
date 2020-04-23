@@ -428,6 +428,10 @@ A figure showing the average abundance of market squid collected  around the Nor
 
 Mean abundance of market squid (_Doryteuthis opalescens_) collected in net samples during CalCOFI cruises at only sites in the Channel Islands National Marine Sanctuary region (top) and all sites over the Southern California Shelf (bottom) from 1997 to 2015 (sampling locations shown in Figure App.F12.17). Symbols on graph explained in the caption of Figure App.F12.18. Data source: CalCOFI; Figure: A. Thompson/NOAA
 
+## Figure App.F.13.2. 
+
+Box plots for annual size frequency distributions of black abalone Haliotis cracherodii at each island. Blue lines represent mean sizes of H. cracherodii at each island pooled across and sites. Red lines represent the cumulative mean. Figure: Channel Islands National Park
+
 ## Figure App.F.13.3.
 
 Left: a figure showing the average numer of owl limpets across the Northern Channel Islands from 2000 - 2014. Right: a figure showing the annunal size distribution of owl limpets across the Northern Channel Islands from 2000 - 2014. 
