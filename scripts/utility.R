@@ -8,6 +8,7 @@ md_caption <- function(title, md = here::here("modals/_captions.md"), get_detail
   #title = "Figure App.F.12.17.new"
   #md_caption("Figure App.F.12.17.new")
   # title = "Figure App.C.4.4."
+  # title = "Figure App.F.13.2."
   
   #browser()
   
@@ -23,7 +24,10 @@ md_caption <- function(title, md = here::here("modals/_captions.md"), get_detail
     ln = readLines(md) %>% str_trim()) %>%
     # detect header with title, set rest to NA
     mutate(
-      is_hdr = str_detect(ln, glue("^## {title}")) %>% na_if(FALSE)) %>% 
+      is_hdr = str_detect(
+        ln, 
+        glue('^## {str_replace_all(title, fixed("."), "\\\\.")}')) 
+      %>% na_if(FALSE)) %>% 
     # fill down so capturing all starting with title header
     fill(is_hdr) %>% 
     # filter for title header down, removing previous lines
