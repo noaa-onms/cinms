@@ -1,6 +1,15 @@
+```{r, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("scripts/utility.R"))
+```
+
 #### Marine Debris
 
 ![**Figure App.C.4.14.** Marine debris estimates modeled along the mainland southern California coast based on debris measured by the National Marine Debris Monitoring Program. Marine debris was relatively constant across the last five years of this time series (1999-2007) and within historic levels. Data source: Ribic et al. 2012; Figure: K. Andrews/NOAA](../img/cinms_cr/App.C.4.14.Marine debris_CCIEA.jpg)
+
+`r md_caption("Figure App.C.4.14.", get_details=T)`
+
+#### header
 
 ![**Figure App.C.4.15.** Variation over time in percentage of stations from winter CalCOFI cruises with plastic micro-debris. Micro-debris was present in more than 50 percent of samples at each time period. Figure: Gilfillan et al. 2009](../img/cinms_cr/App.C.4.15.Gilfillan_graph.png)
 

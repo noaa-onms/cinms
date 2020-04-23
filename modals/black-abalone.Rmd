@@ -1,8 +1,15 @@
+```{r, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("scripts/utility.R"))
+```
+
 ## {.tabset}
 
 ### Size frequency on islands
 
-![**Figure App.F.13.2.** Box plots for annual size frequency distributions of black abalone Haliotis cracherodii at each island. Blue lines represent mean sizes of H. cracherodii at each island pooled across and sites. Red lines represent the cumulative mean. Figure: Channel Islands National Park](../img/cinms_cr/App.F.13.2_blackabs_size.jpg)
+![`r md_caption("Figure App.F.13.2.")`](../img/cinms_cr/App.F.13.2_blackabs_size.jpg)
+
+`r md_caption("Figure App.F.13.2.", get_details=T)`
 
 ### Density & counts on islands
 

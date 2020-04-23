@@ -3,7 +3,7 @@ library(readr)
 library(dplyr)
 library(htmltools)
 
-md_caption <- function(title = NULL, md = here::here("modals/_captions.md"), get_details = F){
+md_caption <- function(title, md = here::here("modals/_captions.md"), get_details = F){
   #title = "Figure S.Hab.10.3."
   #title = "Figure App.F.12.17.new"
   #md_caption("Figure App.F.12.17.new")
