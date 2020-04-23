@@ -150,6 +150,18 @@ A graph showing noise levels in the Santa Barbara Channel from 2007 - 2016. 40Hz
 
 Ambient noise levels in the Santa Barbara Channel represented as monthly averages for 40 Hz (red) and 90 Hz (blue) bands. The decline in ambient noise levels observed between 2007 and 2010 reflects decreased regional shipping activity during that time. While ambient noise has increased since 2010, it has not returned to the higher levels observed in 2007 to 2008. Data sources: McKenna et al. 2012, J. Hildebrand/ UCSD unpub. data; Figure: [J. Hildebrand/SIO UCSD](http://cetus.ucsd.edu/profile_JohnHildebrand.html)
 
+## Figure App.C.4.14.
+
+Marine debris estimates modeled along the mainland southern California coast based on debris measured by the National Marine Debris Monitoring Program. Marine debris was relatively constant across the last five years of this time series (1999-2007) and within historic levels. Data source: Ribic et al. 2012; Figure: K. Andrews/NOAA
+
+## Figure App.C.4.15.
+
+Variation over time in percentage of stations from winter CalCOFI cruises with plastic micro-debris. Micro-debris was present in more than 50 percent of samples at each time period. Figure: Gilfillan et al. 2009
+
+## Figure App.C.4.16.
+
+Spatial distribution, concentration, and characteristics of plastic micro-debris in net samples from the CalCOFI region from winter cruises in (A) 1984, (B) 1994, and (C) 2007. Open circles indicate no plastic debris detected and filled circle diameter are proportional to particle concentrations (number per cubic meter). There was no relationship between the numerical concentration of particles and distance from shore, the presumed source of the majority of debris. Figure: Gilfillan et al. 2009
+
 ## Figure App.C.4.17.
 
 A figure showing trends in offshore oil and gas activity in Southern California from 1975 - 2014. 

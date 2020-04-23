@@ -5,12 +5,15 @@ source(here::here("scripts/utility.R"))
 
 #### Marine Debris
 
-![**Figure App.C.4.14.** Marine debris estimates modeled along the mainland southern California coast based on debris measured by the National Marine Debris Monitoring Program. Marine debris was relatively constant across the last five years of this time series (1999-2007) and within historic levels. Data source: Ribic et al. 2012; Figure: K. Andrews/NOAA](../img/cinms_cr/App.C.4.14.Marine debris_CCIEA.jpg)
+![`r md_caption("Figure App.C.4.14.")`](../img/cinms_cr/App.C.4.14.Marine debris_CCIEA.jpg)
 
 `r md_caption("Figure App.C.4.14.", get_details=T)`
 
-#### header
+![`r md_caption("Figure App.C.4.15.")`](../img/cinms_cr/App.C.4.15.Gilfillan_graph.png)
 
-![**Figure App.C.4.15.** Variation over time in percentage of stations from winter CalCOFI cruises with plastic micro-debris. Micro-debris was present in more than 50 percent of samples at each time period. Figure: Gilfillan et al. 2009](../img/cinms_cr/App.C.4.15.Gilfillan_graph.png)
+`r md_caption("Figure App.C.4.15.", get_details=T)`
 
-![**Figure App.C.4.16.** Spatial distribution, concentration, and characteristics of plastic micro-debris in net samples from the CalCOFI region from winter cruises in (A) 1984, (B) 1994, and (C) 2007. Open circles indicate no plastic debris detected and filled circle diameter are proportional to particle concentrations (number per cubic meter). There was no relationship between the numerical concentration of particles and distance from shore, the presumed source of the majority of debris. Figure: Gilfillan et al. 2009](../img/cinms_cr/App.C.4.16.Gilfillan_map.png)
+![`r md_caption("Figure App.C.4.16.")`](../img/cinms_cr/App.C.4.16.Gilfillan_map.png)
+
+`r md_caption("Figure App.C.4.16.", get_details=T)`
+
