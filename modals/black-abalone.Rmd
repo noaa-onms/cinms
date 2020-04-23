@@ -13,6 +13,6 @@ source(here::here("scripts/utility.R"))
 
 ### Density & counts on islands
 
-![**Figure App.F.13.1.** Black abalone _Haliotis cracherodii_ mean density from fixed plots from 1985–2014 (left) and mean counts from site-wide searches from 1995–2014 (inset) at four islands in Channel Islands National Marine Sanctuary. Site wide search counts began in 1995 due to the severe declines in abundance that occurred from 1985–1995. Generally, increasing abundances began approximately in the 2007–2009 timeframe. Error bars were constructed using one standard error from the mean. Figure: Channel Islands National Park](../img/cinms_cr/App.F.13.1_BlackAbalone_CINP.jpg)
+![`r md_caption("Figure App.F.13.1")`](../img/cinms_cr/App.F.13.1_BlackAbalone_CINP.jpg)
 
- 
+`r md_caption("Figure App.F.13.1.", get_details=T)`

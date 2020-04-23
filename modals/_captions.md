@@ -418,6 +418,38 @@ A figure showing the amount of impacted sediment in varying categories of exposu
 
 Percent area of impacted sediments by stratum and survey year in varying categories of exposure to sediment contamination are shown in the bar plot. Category 1 is minimal exposure; Category 2 is low exposure; Category 3 is moderate exposure; and Category 4 is high exposure. Categories are determined by two prominent chemistry indices determined by analyzing a suite of chemical concentrations present in sediment samples. Missing bars represent no data. In minimal exposure, sediment-associated contamination may be present, but exposure is unlikely to result in effects. In low exposure, small increase in contaminant exposure may be associated with increased effects, but magnitude or frequency of occurrence of biological impacts is low. In moderate exposure, there is clear evidence of sediment contaminant exposure at concentrations that are likely to result in biological effects. For high exposure, contaminant exposure is highly likely to result in substantial biological effects. The Channel Islands have no sediments in Category 4 and the large majority of sediments are in Category 1 or 2, thus indicating limited contamination impact in sanctuary sediments. At this time, the suites of chemical indices have not yet been completed for the 2008 bight-wide survey. Figure: Schiff et al. 2011
 
+## Figure App.F.12.12.
+
+A figure showing the density of California sheephead around the four Northern Channel Islands from 2003 - 2016.
+
+### Details
+
+Average density (+/- standard error) of California sheephead _Semicossyphus pulcher_ at 14 sites across four islands in Channel Islands National Marine Sanctuary monitored by the PISCO kelp forest monitoring program from 2003 to 2016. Sheephead are counted by SCUBA divers swimming along transect lines. Observed density was averaged across all monitoring sites at each island, including sites located inside and outside of marine reserves and conservation areas, to examine course-scale trends by island. At a finer scale, sheephead density is responding differently inside and outside of some marine protected areas (MPAs) in CINMS. A discussion of MPA effects in CINMS is available in MPA Effects. Data source: PISCO; Figure: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html)
+
+## Figure App.F.12.13.
+
+A figure showing the average density of California Sheephead across the five Northern Channel Islands from 2005 - 2016.
+
+### Details
+
+Average density (+/- standard error) of California sheephead _Semicossyphus pulcher_ at Channel Islands National Park kelp forest monitoring sites at the five islands in CINMS. Recent increases in average density of sheephead were observed at every island except for San Miguel (blue). Sheephead density was averaged across all monitoring sites at each island, including sites located inside and outside of marine reserves and conservation areas, to examine course-scale trends by island. At a finer scale, sheephead density is responding differently inside and outside of some marine protected areas (MPAs) in CINMS. A discussion of MPA effects in CINMS is available in MPA Effects. Note that juveniles (< 10 centimeters) were excluded from analysis. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+
+## Figure App.F.12.14. 
+
+A figure showing the average number of California sheephead around two of the Channel Islands (dark blue) and on the mainland (light blue) from 2000 - 2015.
+
+### Details
+
+Average number (+/- standard error) of California sheephead _Semicossyphus pulcher_ at two island (dark blue) and nine mainland (light blue) sites monitored by the Santa Barbara Channel Long-term Ecological Research (SBC LTER) program. Abundance appears to be increasing at the island sites compared to the mainland sites. Data source: SBC LTER; Figure: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html)
+
+## Figure App.F.12.16.
+
+A figure showing the density of California sheephead inside fished (blue) and unfished (red) marine reserves around the Channel Islands.
+
+### Details
+
+Average density (per 100 m2 +/- SE) of California sheephead (_Semicossyphus pulcher_) at fished (blue) and unfished marine reserves (red) surveyed annually in two time periods 2005–2009 and 2014–2015. Density has increased since the baseline period, and the increase was more pronounced inside reserves as compared to fished sites. Figure: [MARE](https://www.maregroup.org/)
+
 ## Figure App.F.12.17.new
 
 ### **cannot find file *"App.F.12.17.new"***
@@ -440,9 +472,21 @@ A figure showing the average abundance of market squid collected  around the Nor
 
 Mean abundance of market squid (_Doryteuthis opalescens_) collected in net samples during CalCOFI cruises at only sites in the Channel Islands National Marine Sanctuary region (top) and all sites over the Southern California Shelf (bottom) from 1997 to 2015 (sampling locations shown in Figure App.F12.17). Symbols on graph explained in the caption of Figure App.F12.18. Data source: CalCOFI; Figure: A. Thompson/NOAA
 
+## Figure App.F.13.1.
+
+A figure showing the density of of black abalone across the Channel Islands from 1985 - 2014 in fixed plots in the rocky intertidal. The inset figure shows actual counts from site-wide searches (1995 - 2014).
+
+### Details
+
+Black abalone _Haliotis cracherodii_ mean density from fixed plots from 1985–2014 (left) and mean counts from site-wide searches from 1995–2014 (inset) at four islands in Channel Islands National Marine Sanctuary. Site wide search counts began in 1995 due to the severe declines in abundance that occurred from 1985–1995. Generally, increasing abundances began approximately in the 2007–2009 timeframe. Error bars were constructed using one standard error from the mean. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+
 ## Figure App.F.13.2. 
 
-Box plots for annual size frequency distributions of black abalone Haliotis cracherodii at each island. Blue lines represent mean sizes of H. cracherodii at each island pooled across and sites. Red lines represent the cumulative mean. Figure: Channel Islands National Park
+A figure  showing the sizes of black abalone across the Channel Islands from th 1985 - 2014.
+
+### Details
+
+Box plots for annual size frequency distributions of black abalone _Haliotis cracherodii_ at each island. Blue lines represent mean sizes of H. cracherodii at each island pooled across and sites. Red lines represent the cumulative mean. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
 
 ## Figure App.F.13.3.
 
