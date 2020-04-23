@@ -14,22 +14,18 @@ source(here::here("scripts/utility.R"))
 calcofi_map()
 ```
 
-### Krill {.active}
-
-#### CINMS Region
-
-Not Available (yet)
-
-#### SoCal Shelf Region
-
-Not Available (yet)
-
-### Market Squid
+### Market Squid {.active}
 
 ![`r md_caption("Figure App.F.12.20.squid")`](../img/cinms_cr/App.F.12.20.CalCOFI_squid.jpg)
 
 `r md_caption("Figure App.F.12.20.", get_details=T)`
 
+### Krill
+
 #### CINMS Region
 
+Not data vailable (yet)
+
 #### SoCal Shelf Region
+
+Not data vailable (yet)

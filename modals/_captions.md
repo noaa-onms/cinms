@@ -104,7 +104,7 @@ A map showing commercial fishing catch (fish caught by trawling) across the Sout
 
 ## Figure App.C.3.4.
 
-A map showing historical fishing catch using fixed gear (a method of fishing) across the Southern California Bight (2007-2011). Locations of known deep-water gorgonians, which are very vulnerable to trawling, are indicated on the map. 
+A map showing historical fishing activity using fixed gear (a method of fishing) across the Southern California Bight (2007-2011). Locations of known deep-water gorgonians, which are very vulnerable to trawling, are indicated on the map. 
 
 ### Details
 
@@ -134,6 +134,54 @@ A figure showing trends in fishing catch (lbs, left y-axis) and economic value (
 
 Trends over time in commercial fishing activity in Channel Islands National Marine Sanctuary (CINMS) based on landings pounds (blue bars) and value (dark blue line) for seven fisheries from 2000 to 2012. Landings were combined for twenty-two blocks that overlap substantially with the sanctuary (see Figure App.C4.3. for map). Landings for market squid, sardine, and anchovy declined recently while landings of crabs increased. Landings of sea urchin, spiny lobster, and prawn and shrimp were relatively stable. Figure: Leeworthy et al. 2014a
 
+## Figure App.C.4.5a. 
+
+A figure showing the pounds of California halibut landed by gear type in the commercial fleet from 2005 - 2014.
+
+### Details
+
+Landings of California halibut (*Paralichthys californicus*) in blocks around Channel Islands National Marine Sanctuary by hook/line (blue), gillnet (green), and trawl (teal) fishing gear. Landings data from the Santa Barbara port complex (Santa Barbara, Ventura, Oxnard, and Port Hueneme) and reflect take from the Fish and Game blocks 683–691, 706-714, 744, 745, 764, and 765 (see Figure App.C4.3 for map of blocks). Data source: CDFW; Figure: NOAA
+
+## Figure App.C.4.5b.
+
+A figure showing the number of fishing vessels (and gear types used) in the California halibut fishing fleet from 2005 - 2014.
+
+### Details
+
+The number of vessels fishing for California halibut (*Paralichthys californicus*) in blocks around Channel Islands National Marine Sanctuary by hook/line (blue), gillnet (green), and trawl (teal) fishing gear. Landings data from the Santa Barbara port complex (Santa Barbara, Ventura, Oxnard, and Port Hueneme) and reflect take from the Fish and Game blocks 683–691, 706-714, 744, 745, 764, and 765 (see Figure App.C4.3 for map of blocks). Data source: CDFW; Figure: NOAA
+
+## Figure App.C.4.6a.
+
+A figure showing the increase in rock crab fishing from 2007 - 2015. 
+
+### Details
+
+Commercial fishing activity for rock crabs has increased recently in blocks around Channel Islands National Marine Sanctuary. Landings of rock crabs have increased since 2010. Commercial rock crab data from blocks 683–691, 706–714, 744–745, and 764–765 (see Figure App.C4.3 for map of blocks). Data source: CDFW; Figure: NOAA
+
+## Figure App.C.4.6b.
+
+A figure showing the increase in the number of crabbers (those who fish for crabs) 2007 - 2015.
+
+### Details
+
+Commercial fishing activity for rock crabs has increased recently in blocks around Channel Islands National Marine Sanctuary. The number of fishers landing crab has increased since 2008. Commercial rock crab data from blocks 683–691, 706–714, 744–745, and 764–765 (see Figure App.C4.3 for map of blocks). Data source: CDFW; Figure: NOAA
+
+## Figure App.C.4.7. 
+
+A map of the Santa Barbar Channel showing patterns in coastal recreational activity.
+
+### Details
+
+Spatial patterns in coastal recreational activity levels in southern California (all activity types combined). Based on a standing internet panel designed to be demographically representative and surveyed 4,492 individuals in select south coast region counties. Activities at Channel Islands National Marine Sanctuary (CINMS) included: beach-going (SRI), scenic enjoyment (SRI, SCI, Anacapa, SBI), photography (SRI, SCI, Anacapa), birdwatching (SRI, SCI, SBI), and hiking (SRI, SCI). Figure: Chen et al. 2015c
+
+## Figure App.C.4.8. 
+
+A graph showing the number of visitors brought to Frenchy's Cove on Anacapa ISland by the Island Packers Company from 1993 - 2014.
+
+### Details
+
+Annual number of visitors brought to Frenchy’s Cove, Anacapa Island, by the Island Packers Company. At south Frenchy’s Cove and adjacent reefs, Island Packers Company conducts classroom programs for school groups typically during winter and spring months. No records are available for the number of private boaters that went ashore at any of the Channel Islands in the park. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+
 ## Figure App.C.4.12.
 
 A map showing traffic patterns of large commercial shipping vessels through the Sanctuary (2008, 2010, 2014).
@@ -152,13 +200,25 @@ Ambient noise levels in the Santa Barbara Channel represented as monthly average
 
 ## Figure App.C.4.14.
 
+A graph showing the likelihood of encountering marine debris from 1999 - 2007.
+
+### Details
+
 Marine debris estimates modeled along the mainland southern California coast based on debris measured by the National Marine Debris Monitoring Program. Marine debris was relatively constant across the last five years of this time series (1999-2007) and within historic levels. Data source: Ribic et al. 2012; Figure: K. Andrews/NOAA
 
 ## Figure App.C.4.15.
 
+A figure showing the percentage of sampling stations with plastic debris across three sampling years.
+
+### Details
+
 Variation over time in percentage of stations from winter CalCOFI cruises with plastic micro-debris. Micro-debris was present in more than 50 percent of samples at each time period. Figure: Gilfillan et al. 2009
 
 ## Figure App.C.4.16.
+
+A map showing the  distribution, concentration, and characteristics of plastic micro-debris in net samples from the CalCOFI region from winter cruises across three sampling years.
+
+### Details
 
 Spatial distribution, concentration, and characteristics of plastic micro-debris in net samples from the CalCOFI region from winter cruises in (A) 1984, (B) 1994, and (C) 2007. Open circles indicate no plastic debris detected and filled circle diameter are proportional to particle concentrations (number per cubic meter). There was no relationship between the numerical concentration of particles and distance from shore, the presumed source of the majority of debris. Figure: Gilfillan et al. 2009
 
@@ -418,6 +478,38 @@ A figure showing the amount of impacted sediment in varying categories of exposu
 
 Percent area of impacted sediments by stratum and survey year in varying categories of exposure to sediment contamination are shown in the bar plot. Category 1 is minimal exposure; Category 2 is low exposure; Category 3 is moderate exposure; and Category 4 is high exposure. Categories are determined by two prominent chemistry indices determined by analyzing a suite of chemical concentrations present in sediment samples. Missing bars represent no data. In minimal exposure, sediment-associated contamination may be present, but exposure is unlikely to result in effects. In low exposure, small increase in contaminant exposure may be associated with increased effects, but magnitude or frequency of occurrence of biological impacts is low. In moderate exposure, there is clear evidence of sediment contaminant exposure at concentrations that are likely to result in biological effects. For high exposure, contaminant exposure is highly likely to result in substantial biological effects. The Channel Islands have no sediments in Category 4 and the large majority of sediments are in Category 1 or 2, thus indicating limited contamination impact in sanctuary sediments. At this time, the suites of chemical indices have not yet been completed for the 2008 bight-wide survey. Figure: Schiff et al. 2011
 
+## Figure App.F.12.7.
+
+A figure showing the amount of three important sea stars at 14 different sites acros the four northern Channel Islands from 2003 - 2016.
+
+### Details
+
+Average density (+/- standard error) of giant spined star (*Pisaster giganteus*) (top), ochre star (*P. ochraceus*) (middle) and sunflower star (*Pycnopodia helianthoides*) (bottom) at 14 sites across four islands in Channel Islands National Marine Sanctuary monitored by the PISCO kelp forest monitoring program from 2003–2016. Sea stars are counted by SCUBA divers swimming along transect lines. Sea star density was averaged across all monitoring sites at each island, including sites located inside and outside of marine reserves and conservation areas, to examine course-scale trends by island. Giant, ochre, and sunflower stars suffered severe declines from 2013 to 2014 at all four islands due to sea star wasting syndrome. Data source: PISCO; Figure: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html)
+
+## Figure App.F.12.8a.
+
+A figure showing the amount of giant-spined sea stars across all of the northern Channel Islands from 2005 - 2016. 
+
+### Details
+
+Average density (+/- standard error) of the giant-spined star (*Pisaster giganteus*) at Channel Islands National Park kelp forest monitoring sites at the five islands in CINMS. Sea stars are counted by SCUBA divers. Sea star density was averaged across all monitoring sites at each island, including sites located inside and outside of marine reserves and conservation areas, to examine course-scale trends by island. Sea star abundance drastically declined at all islands prior to 2014 monitoring and have remained very low through 2016. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+
+## Figure App.F.12.8b.
+
+A figure showing the amount of sunflower stars across all of the northern Channel Islands from 2005 - 2016. 
+
+### Details
+
+Average density (+/- standard error) of the sunflower star (*Pycnopodia helianthoides*) at Channel Islands National Park kelp forest monitoring sites at the five islands in CINMS. Sea stars are counted by SCUBA divers. Sea star density was averaged across all monitoring sites at each island, including sites located inside and outside of marine reserves and conservation areas, to examine course-scale trends by island. Sea star abundance drastically declined at all islands prior to 2014 monitoring and have remained very low through 2016. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+
+## Figure App.F.12.9.
+
+A figure showing the mount of ochre and sunflower stars on two of the Channel Islands (dark blue) and at nine mainland (light blue) kelp forests sites from 2000- 2015. 
+
+### Details
+
+Average density (+/- standard error) of sea stars (_Pisaster_ and _Pycnopodia_ combined) at two island (dark blue) and nine mainland (light blue) kelp forest sites monitored by the Santa Barbara Channel Long-term Ecological Research (SBC LTER) program. Sea star density had drastically declined all sites prior to 2014 monitoring and remained very low through 2015. Data source: SBC LTER; Figure: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html)
+
 ## Figure App.F.12.12.
 
 A figure showing the density of California sheephead around the four Northern Channel Islands from 2003 - 2016.
@@ -442,6 +534,10 @@ A figure showing the average number of California sheephead around two of the Ch
 
 Average number (+/- standard error) of California sheephead _Semicossyphus pulcher_ at two island (dark blue) and nine mainland (light blue) sites monitored by the Santa Barbara Channel Long-term Ecological Research (SBC LTER) program. Abundance appears to be increasing at the island sites compared to the mainland sites. Data source: SBC LTER; Figure: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html)
 
+## Figure App.F.12.15.
+
+An image from Marine Applied Research and Exploration ([MARE](https://www.maregroup.org/)) about the abundance of sunflower star Pycnopodia helianthoides along seafloor transects. Source: [MARE](https://www.maregroup.org/)
+
 ## Figure App.F.12.16.
 
 A figure showing the density of California sheephead inside fished (blue) and unfished (red) marine reserves around the Channel Islands.
@@ -452,9 +548,7 @@ Average density (per 100 m2 +/- SE) of California sheephead (_Semicossyphus pulc
 
 ## Figure App.F.12.17.new
 
-### **cannot find file *"App.F.12.17.new"***
-
-Location of regions from spring season net samples by the (**CalCOFI**; _Genus species_) used in analyses of abundance and trends in pelagic resources: Channel Islands National Marine Sanctuary region (red) includes CalCOFI stations inside and adjacent to CINMS; and Southern California Shelf (yellow) includes all CalCOFI stations over the shelf. Figure: A. Thompson/NOAA, [Ben Best/EcoQuants](https://ecoquants.com/)
+A map showing the locations of spring season net samples by [CalCOFI](https://calcofi.org/) for use in analyses of abundance and trends in pelagic resources. Channel Islands National Marine Sanctuary region (red) includes CalCOFI stations inside and adjacent to CINMS; and Southern California Shelf (yellow) includes all CalCOFI stations over the shelf. Figure: A. Thompson/NOAA, [Ben Best/EcoQuants](https://ecoquants.com/)
 
 ## Figure App.F.12.19
 
@@ -704,7 +798,7 @@ A figure showing the density of the six most frequently seen whales and dolphins
 
 Trend in density from 2004–2013, based on sightings from [CalCOFI](https://calcofi.org/) cruises, for the six most frequently sighted species of cetaceans off southern California. Blue and humpback whales, short-beaked common dolphins, and Dall’s porpoises appear to be stable. Fin whale sightings have decreased while Pacific white-sided dolphin sightings have increased. Figure: Campbell et al. 2015
 
-## Figure App.F.15.5
+## Figure App.F.15.5.
 
 A figure showing the relative abundance (how common or rare a species is) of cool-water associated (top) and warm-water associated (bottom) fish larve around the Channel Islands and the Southern California Shelf from 1974 to 2015.
 
@@ -712,7 +806,7 @@ A figure showing the relative abundance (how common or rare a species is) of coo
 
 Relative abundance of cool-water and warm-water associated ichthyoplankton (fish larvae) groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS)  and over the Southern California Shelf from 1978 to 2015. Sampling sites are shown on Figure App.F.12.17. Symbols on the graph are explained in the caption for Figure App.F.12.18. Data source: [CalCOFI](https://calcofi.org/); Figure: A. Thompson/NOAA
 
-## Figure App.F.15.6.a-b
+## Figure App.F.15.6.a-b.
 
 A figure showing the average number of different species of fish larvae collected in around the Channel Islands and the Southern California Shelf from 1978 - 2015. 
 
@@ -720,7 +814,7 @@ A figure showing the average number of different species of fish larvae collecte
 
 Mean species richness of fish larvae (ichthyoplankton) collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) region and over the Southern California Shelf from 1978 to 2015. Species richness is the number of species present in a net sample. Species richness tends to increase in El Niño years due to influx of central Pacific species to the shelf. Sampling sites are shown on Figure App.F.12.17. Symbols on the graph are explained in the caption for Figure App.F.12.18. Data source: [CalCOFI](https://calcofi.org/); Figure: A. Thompson/NOAA
 
-## Figure App.F.15.6.c-d **same as figure App.F.15.5?
+## Figure App.F.15.6.c-d. 
 
 A figure showing the relative abundance (how common or rare a species is) of cool-water associated (top) and warm-water associated (bottom) fish larve around the Channel Islands and the Southern California Shelf from 1974 to 2015.
 
