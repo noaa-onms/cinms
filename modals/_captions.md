@@ -516,7 +516,15 @@ A figure showing the number of ochre stars found at five of the Channel Islands 
 
 ### Details
 
-Mean number (+/- standard error) of ochre stars _Pisaster ochraceus_ observed during 30-minute searches pooled across all sites at each of the five islands in Channel Islands National Marine Sanctuary from 1999–2014. In the past decade, most locations had more than 100 sea stars counted during 30-minute searches. In 2014, abundances ranged from 0–23 individuals per site with the majority of sites having less than ten. Figure: Channel Islands National Park](../img/cinms_cr/App.F.12.2.Pochraceus_abundance.jpg)
+Mean number (+/- standard error) of ochre stars _Pisaster ochraceus_ observed during 30-minute searches pooled across all sites at each of the five islands in Channel Islands National Marine Sanctuary from 1999–2014. In the past decade, most locations had more than 100 sea stars counted during 30-minute searches. In 2014, abundances ranged from 0–23 individuals per site with the majority of sites having less than ten. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+
+## Figure App.F.12.2.
+
+A figure showing how the size of ochre stars differs across across several of the Channel Islands. 
+
+### Details
+
+Box plots for annual size frequency distributions of ochre star _P. ochraceus_ at each island. Black lines represent mean sizes of ochre stars at each island pooled across sites. Red lines represent the mean of all years. Note that data for 2014 are not presented due to insufficient numbers of ochre stars encountered to estimate population size frequency. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
 
 ## Figure App.F.12.7.
 
