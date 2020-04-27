@@ -510,6 +510,14 @@ A figure showing the amount of impacted sediment in varying categories of exposu
 
 Percent area of impacted sediments by stratum and survey year in varying categories of exposure to sediment contamination are shown in the bar plot. Category 1 is minimal exposure; Category 2 is low exposure; Category 3 is moderate exposure; and Category 4 is high exposure. Categories are determined by two prominent chemistry indices determined by analyzing a suite of chemical concentrations present in sediment samples. Missing bars represent no data. In minimal exposure, sediment-associated contamination may be present, but exposure is unlikely to result in effects. In low exposure, small increase in contaminant exposure may be associated with increased effects, but magnitude or frequency of occurrence of biological impacts is low. In moderate exposure, there is clear evidence of sediment contaminant exposure at concentrations that are likely to result in biological effects. For high exposure, contaminant exposure is highly likely to result in substantial biological effects. The Channel Islands have no sediments in Category 4 and the large majority of sediments are in Category 1 or 2, thus indicating limited contamination impact in sanctuary sediments. At this time, the suites of chemical indices have not yet been completed for the 2008 bight-wide survey. Figure: Schiff et al. 2011
 
+## Figure App.F.12.2.
+
+A figure showing the number of ochre stars found at five of the Channel Islands from 1999-2014.
+
+### Details
+
+Mean number (+/- standard error) of ochre stars _Pisaster ochraceus_ observed during 30-minute searches pooled across all sites at each of the five islands in Channel Islands National Marine Sanctuary from 1999–2014. In the past decade, most locations had more than 100 sea stars counted during 30-minute searches. In 2014, abundances ranged from 0–23 individuals per site with the majority of sites having less than ten. Figure: Channel Islands National Park](../img/cinms_cr/App.F.12.2.Pochraceus_abundance.jpg)
+
 ## Figure App.F.12.7.
 
 A figure showing the amount of three important sea stars at 14 different sites acros the four northern Channel Islands from 2003 - 2016.
