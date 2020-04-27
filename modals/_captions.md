@@ -574,6 +574,22 @@ A figure showing the mount of ochre and sunflower stars on two of the Channel Is
 
 Average density (+/- standard error) of sea stars (_Pisaster_ and _Pycnopodia_ combined) at two island (dark blue) and nine mainland (light blue) kelp forest sites monitored by the Santa Barbara Channel Long-term Ecological Research (SBC LTER) program. Sea star density had drastically declined all sites prior to 2014 monitoring and remained very low through 2015. Data source: SBC LTER; Figure: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html)
 
+## Figure App.F.12.10.
+
+A figure showing the average density of California spiny lobster near four of the Channel Islands from 2003-2006.
+
+### Details
+
+Average density (+/- standard error) of California spiny lobster (Panulirus interruptus) at 14 sites across four islands in Channel Islands National Marine Sanctuary monitored by the PISCO kelp forest monitoring program from 2003–2016. Lobster abundance is low at San Miguel (blue) and Santa Rosa (purple) islands and appears to be slowly increasing recently at Anacapa (red) and Santa Cruz (orange) islands. Lobster are counted by SCUBA divers swimming along transect lines. Lobster density was averaged across all monitoring sites at each island, including sites located inside and outside of marine reserves and conservation areas, to examine course-scale trends by island. At a finer scale, lobster density is responding differently inside and outside of some marine protected areas (MPAs) in CINMS. A discussion of MPA effects in CINMS is available in MPA Effects. Data source: PISCO; Figure: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html)
+
+## Figure App.F.12.11.
+
+A figure showing the average density of California spiny lobster near the five Channel Islands of the Channel Island National Marine Sanctuary. 
+
+### Details
+
+Average density (+/- standard error) of California spiny lobster _Panulirus interruptus_ at Channel Islands National Park kelp forest monitoring sites at the five islands in CINMS. Recent increases in average density of lobster were observed at Anacapa (purple), Santa Cruz (green), and Santa Barbara (orange) islands. Lobster are counted by SCUBA divers. Lobster density was averaged across all monitoring sites at each island, including sites located inside and outside of marine reserves and conservation areas, to examine course-scale trends by island. At a finer scale, lobster density is responding differently inside and outside of some marine protected areas (MPAs) in CINMS. A discussion of MPA effects in CINMS is available in MPA Effects. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+
 ## Figure App.F.12.12.
 
 A figure showing the density of California sheephead around the four Northern Channel Islands from 2003 - 2016.
