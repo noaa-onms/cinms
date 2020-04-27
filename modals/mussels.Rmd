@@ -1,7 +1,8 @@
 
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-source(here::here("../cinms/scripts/rocky.R"))
+source(here::here("scripts/rocky.R"))
+source(here::here("scripts/utility.R"))
 ```
 
 ## {.tabset}
@@ -12,15 +13,25 @@ source(here::here("../cinms/scripts/rocky.R"))
 map_nms_sites("cinms")
 ```
 
+`r md_caption("Figure rocky.map.")`
+
+`r md_caption("Figure rocky.map.", get_details=T)`
+
 ### California Mussels (_Mytilus californianus_), target = ANY {.active}
 
 ```{r}
 plot_intertidal_nms(d_csv, "CINMS", "MYTCAL", "California Mussels")
 ```
 
+`r md_caption("Figure rocky.mussels.any.")`
+
+`r md_caption("Figure rocky.mussels.any.", get_details=T)`
+
+<!--
 ### California Mussels (_Mytilus californianus_), target = mytilus
 
-```{r}
+```{r, eval =F}
+#BB TODO: fix plot_intertidal_nms() in rocky.r to accomodate target species
 plot_intertidal_nms(d_csv, "CINMS", "MYTCAL", "California Mussels [target = mytilus]", "mytilus")
 ```
-
+-->
