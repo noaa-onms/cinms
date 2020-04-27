@@ -1,2 +1,12 @@
+```{r, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("scripts/utility.R"))
+```
 
-![**Figure App.F.12.4.** Mean density of sand crabs _Emerita analoga_ from surveys of eight beaches on Santa Rosa Island from 1994–2015. Curved blue line represents the statistically smoothed mean. Figure: Channel Islands National Park](../img/cinms_cr/App.F.12.4.Emerita_CINP.jpg)
+##  {.tabset} 
+
+### NPS: Sand Crabs on Santa Rosa Island
+
+![`r md_caption("Figure App.F.12.4.")`](../img/cinms_cr/App.F.12.4.Emerita_CINP.jpg)
+
+`r md_caption("Figure App.F.12.4.", get_details=T)`
