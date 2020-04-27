@@ -598,6 +598,14 @@ Average density (per 100 m2 +/- SE) of California sheephead (_Semicossyphus pulc
 
 A map showing the locations of spring season net samples by [CalCOFI](https://calcofi.org/) for use in analyses of abundance and trends in pelagic resources. Channel Islands National Marine Sanctuary region (red) includes CalCOFI stations inside and adjacent to CINMS; and Southern California Shelf (yellow) includes all CalCOFI stations over the shelf. Figure: A. Thompson/NOAA, [Ben Best/EcoQuants](https://ecoquants.com/)
 
+## Figure App.F.12.18
+
+A figure showing the trends in the average volume of small plankton (tiny, often microscopic creatures floating in the water) collected in the ocean off of Southern California from 1978 to 2015.
+
+### Details
+
+Mean volume of small plankton collected in net samples during CalCOFI cruises at only sites in the Channel Islands National Marine Sanctuary region (top) and all sites over the Southern California Shelf (bottom) from 1978 to 2015 (sampling locations shown in Figure App.F.12.17). Horizontal lines show the mean (dashed line) ± 1.0 standard deviation (solid lines) over the full time series. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (–), or within 1 standard deviation (●) of the mean of the full time series.. Data source: CalCOFI; Figure: A. Thompson/NOAA]
+
 ## Figure App.F.12.19
 
 A figure showing the relative abundance of important fish groups collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 - 2015. 
@@ -848,7 +856,7 @@ Trend in density from 2004–2013, based on sightings from [CalCOFI](https://cal
 
 ## Figure App.F.15.5.
 
-A figure showing the relative abundance (how common or rare a species is) of cool-water associated (top) and warm-water associated (bottom) fish larve around the Channel Islands and the Southern California Shelf from 1974 to 2015.
+A figure showing the relative abundance (how common or rare a species is) of cool-water associated (top) and warm-water associated (bottom) fish larvae around the Channel Islands and the Southern California Shelf from 1974 to 2015.
 
 ### Details
 

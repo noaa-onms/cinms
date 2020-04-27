@@ -1,13 +1,21 @@
+```{r, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("scripts/utility.R"))
+```
+
 ## {.tabset}
 
 ### Small plankton volume
 
-![**Figure App.F.12.18.** Mean volume of small plankton collected in net samples during CalCOFI cruises at only sites in the Channel Islands National Marine Sanctuary region (top) and all sites over the Southern California Shelf (bottom) from 1978 to 2015 (sampling locations shown in Figure App.F.12.17). Horizontal lines show the mean (dashed line) ± 1.0 standard deviation (solid lines) over the full time series. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (–), or within 1 standard deviation (●) of the mean of the full time series.. Data source: CalCOFI; Figure: A. Thompson/NOAA](../img/cinms_cr/App.F.12.18_CalCOFI_SPV.jpg)
+![`r md_caption("Figure App.F.12.18.")`](../img/cinms_cr/App.F.12.18_CalCOFI_SPV.jpg)
+
+`r md_caption("Figure App.F.12.18.", get_details=T)`
 
 ### Fish larvae abundance
 
-![**Figure App.F.15.5.** Relative abundance of cool-water (top panels) and warm-water (bottom panels) associated ichthyoplankton (fish larvae) groups collected in net samples during spring CalCOFI cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) region (left panels) and over the Southern California Shelf (right panels) from 1978 to 2015. Sampling sites are shown on Figure App.F.12.17. Symbols on the graph are explained in the caption for Figure App.F.12.18. Data source: CalCOFI; Figure: A. Thompson/NOAA](../img/cinms_cr/App.F.15.5.CalCOFI_water_associated.jpg)
+![`r md_caption("Figure App.F.12.18.")`](../img/cinms_cr/App.F.15.5.CalCOFI_water_associated.jpg)
 
+`r md_caption("Figure App.F.12.18.", get_details=T)`
 
 ### Fish larvae diversity
 
