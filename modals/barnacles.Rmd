@@ -2,6 +2,7 @@
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 source(here::here("../cinms/scripts/rocky.R"))
+# Error in sp_target %in% spp_targets : object 'sp_target' not found
 ```
 
 ## {.tabset}

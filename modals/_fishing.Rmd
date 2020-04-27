@@ -1,2 +1,46 @@
+```{r, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("scripts/utility.R"))
+```
 
+#### Fishing
 
+##### Landings {.tabset}
+
+###### Commercial
+
+![`r md_caption("Figure App.C.4.4.")`](../img/cinms_cr/App.C.4.4.Leeworthy_landings.jpg)
+
+`r md_caption("Figure App.C.4.4.", get_details=T)`
+
+###### Recreational
+
+![`r md_caption("Figure App.C.4.2.")`](../img/cinms_cr/App.C.4.2b.CPFV_landings.jpg)
+
+`r md_caption("Figure App.C.4.2.", get_details=T)`
+
+###### Deep-water
+
+![`r md_caption("Figure App.C.3.2.")`](../img/cinms_cr/App.C.3.2_CINMSLandings.jpg)
+
+`r md_caption("Figure App.C.3.2.", get_details=T)`
+
+##### Maps of Fishing  {.tabset}
+
+###### Trawling
+
+![`r md_caption("Figure App.C.3.3.")`](../img/cinms_cr/App.C.3.3_SWFSC_Trawls2007-2011_HBCoralsRS.jpg)
+
+`r md_caption("Figure App.C.3.3.", get_details=T)`
+
+###### Fixed Gear
+
+![`r md_caption("Figure App.C.3.4.")`](../img/cinms_cr/App.C.3.4_SWFSC_Fixed2007-2011_Gorgonians.jpg)
+
+`r md_caption("Figure App.C.3.4.", get_details=T)`
+
+###### Trawl & Fixed Gear with MPAs 
+
+![`r md_caption("Figure App.C.3.5.")`](../img/cinms_cr/App.C.3.5_SoCalDeepBotFishingMPAs_Etnoyer.jpg)
+
+`r md_caption("Figure App.C.3.5.", get_details=T)`

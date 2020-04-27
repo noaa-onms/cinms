@@ -2,20 +2,19 @@ library(shiny)
 library(readr)
 library(dplyr)
 library(htmltools)
+library(glue)
+library(dplyr)
+library(tidyr)
+library(stringr)
 
 md_caption <- function(title, md = here::here("modals/_captions.md"), get_details = F){
   #title = "Figure S.Hab.10.3."
   #title = "Figure App.F.12.17.new"
   #md_caption("Figure App.F.12.17.new")
   # title = "Figure App.C.4.4."
-  # title = "Figure App.F.13.2."
+  # title = "Figure App.F.13.9."
   
   #browser()
-  
-  library(dplyr)
-  library(tidyr)
-  library(stringr)
-  library(glue)
   
   stopifnot(file.exists(md))
   
@@ -43,6 +42,9 @@ md_caption <- function(title, md = here::here("modals/_captions.md"), get_detail
       is_hdr = replace_na(is_hdr, FALSE)) %>% 
     # filter for not header down, removing subsequent lines outside caption
     filter(!is_hdr) %>% 
+    # replace links in markdown with html to open in new tab
+    mutate(
+      ln = str_replace_all(ln, "\\[(.*?)\\]\\((.*?)\\)", "<a href='\\2' target='_blank'>\\1</a>")) %>% 
     # details
     mutate(
       is_details = str_detect(ln, "^### Details") %>% na_if(F)) %>% 
