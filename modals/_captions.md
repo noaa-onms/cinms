@@ -526,6 +526,21 @@ A figure showing the trends in the density of sand crabs on Santa Rosa Island fr
 
 Mean density of sand crabs _Emerita analoga_ from surveys of eight beaches on Santa Rosa Island from 1994–2015. Curved blue line represents the statistically smoothed mean. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
 
+## Figure App.F.12.5.
+
+A figure showing the density of red and purple sea urchins near four of the Channel Islands.
+
+### Details
+
+Mean density (+/- standard error) of red sea urchin _Mesocentrotus franciscanus_ (top) and purple sea urchin _Strongylocentrotus purpuratus_ (bottom) at 14 sites across four islands in Channel Islands National Marine Sanctuary monitored by the PISCO kelp forest monitoring program from 2003–2016. Recently, density of both species has declined at eastern islands (Anacapa and Santa Cruz) and increased at western islands (Santa Rosa and San Miguel). Sea urchins are counted by SCUBA divers swimming along transect lines. Sea urchin density was averaged across all monitoring sites at each island, including sites located inside and outside of marine reserves and conservation areas, to examine course-scale trends by island. At a finer scale, sea urchin density is responding differently inside and outside of some marine protected areas (MPAs) in CINMS. A discussion of MPA effects in CINMS is available in MPA Effects. Data source: PISCO; Figure: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html)
+
+## Figure App.F.12.6.
+
+The average amount of red and purple sea urchins at several measuring locations on the Channel Islands and the mainland.
+
+### Details
+
+Average abundance (+/- standard error) of sea urchins (red sea urchin _Mesocentrotus franciscanus_ and purple sea urchin _Strongylocentrotus purpuratus_ combined) at two island (dark blue) and nine mainland (light blue) kelp forest sites monitored by the Santa Barbara Channel Long-term Ecological Research (SBC LTER) program. Overall abundance of sea urchins appears stable at island sites over the available time series. Data source: SBC LTER; Figure: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html)
 
 ## Figure App.F.12.7.
 
