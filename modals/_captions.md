@@ -182,6 +182,38 @@ A graph showing the number of visitors brought to Frenchy's Cove on Anacapa ISla
 
 Annual number of visitors brought to Frenchy’s Cove, Anacapa Island, by the Island Packers Company. At south Frenchy’s Cove and adjacent reefs, Island Packers Company conducts classroom programs for school groups typically during winter and spring months. No records are available for the number of private boaters that went ashore at any of the Channel Islands in the park. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
 
+## Figure App.C.4.10b. 
+
+A figure showing confirmed entanglement reports of humpback (blue), gray (green), blue (dark blue), and unidentified (orange) whales along the West Coast from 2000 - 2019.
+
+### Details
+
+Annual number of large whale entanglements reported along the U.S. West Coast. Reports of entanglements have increased in recent years. Factors contributing to this trend likely include an increasing overlap of whale activities (e.g., migrating, feeding) with human activities that have the potential to entangle whales (e.g., fishing, buoy installation) and an increase in on-the-water observers likely to report entangled individuals (e.g., whale watching, recreational boating). Confirmed entanglements from 2000 to 2019 of gray and humpback whales include 11 from Santa Barbara and two from Ventura counties. Figure: D. Lawson/NMFS WCRO PRD
+
+## Figure App.C.4.11a.
+
+A map showing the risk posed to blue whales from 11 fixed gear fisheries (a type of commercial fishing) in the Southern California Bight.
+
+### Details
+
+Co-occurrence score (risk) based on multi-year average whale density and fishing effort for 11 fisheries is shown for quarters three (Q3) and four (Q4) for blue whales (*Balaenoptera musculus*). In Santa Barbara from July to December, there is an elevated risk area for multiple whale species with the California halibut/white seabass set gillnet, hagfish trap, rock crab trap, sablefish, spiny lobster trap, and spot prawn trap fisheries. Figure: Saez et al. 2013
+
+## Figure App.C.4.11b.
+
+A map showing the risk posed to fin whales from 11 fixed gear fisheries (a type of commercial fishing) in the Southern California Bight.
+
+### Details
+
+Co-occurrence score (risk) based on multi-year average whale density and fishing effort for 11 fisheries is shown for quarters three (Q3) and four (Q4) fin whales (*Balaenoptera physalus*). In Santa Barbara from July to December, there is an elevated risk area for multiple whale species with the California halibut/white seabass set gillnet, hagfish trap, rock crab trap, sablefish, spiny lobster trap, and spot prawn trap fisheries. Figure: Saez et al. 2013
+
+## Figure App.C.4.11c.
+
+A map showing the risk posed to humpback whales from 11 fixed gear fisheries (a type of commercial fishing) in the Southern California Bight.
+
+### Details
+
+Co-occurrence score (risk) based on multi-year average whale density and fishing effort for 11 fisheries is shown for quarters three (Q3) and four (Q4) and humpback whales (*Megaptera novaeangliae*). In Santa Barbara from July to December, there is an elevated risk area for multiple whale species with the California halibut/white seabass set gillnet, hagfish trap, rock crab trap, sablefish, spiny lobster trap, and spot prawn trap fisheries. Figure: Saez et al. 2013
+
 ## Figure App.C.4.12.
 
 A map showing traffic patterns of large commercial shipping vessels through the Sanctuary (2008, 2010, 2014).
