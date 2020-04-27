@@ -159,6 +159,8 @@ plot_intertidal_nms <- function(
   # label_x = "Year"; nms_skip_regions = c("OCNMS","MBNMS")
   # spp_targets = NA; fld = "pct_cover"
   # fld_val = "count"; label_y = "Count (annual avg)"
+  
+  #d_csv; NMS="CINMS"; spp="MYTCAL"; sp_name="California Mussels [target = mytilus]"; spp_targets="mytilus"
 
   # read in csv with fields site, date, pct_cover|count
   flds_rename <- list(v = sym(fld_val))

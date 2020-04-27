@@ -1022,3 +1022,20 @@ A table showing trends in four indicators of [biodiversity](https://github.com/m
 
 Short-term trend in annual mean species richness, species density, Simpson diversity, and mean trophic level (MTL) for West Coast demersal fishes collected during the NMFS U.S. West Coast Groundfish Bottom Trawl Survey from 2008 to 2014 at three spatial scales (see map Figure App.F.13.21). Species richness is the count of the number of species present in a net sample. Species density is the number of species per unit area. Simpson diversity takes into account the number of species present, as well as the relative abundance of each species. Mean trophic level is the biomass-weighted average trophic level of all species in a net sample. Short-term trends are consistent across all three spatial scales. Most diversity measures show declines in the near term, whereas MTL shows near-term increases. More Information about how these indicators were calculated are available at https://www.integratedecosystemassessment.noaa.gov/Assets/iea/california/Report/pdf/3.Ecological%20Integrity_2013.pdf.
 Data source: [NMFS NWFSC](https://www.nwfsc.noaa.gov/); Table: NOAA
+
+## Figure rocky.map.
+
+A map of sites where rocky intertidal data were collected. CHECK.
+
+### Details
+
+Data collection was done by a consortium of partners through the [Multi-Agency Rocky Intertidal Network](https://marine.ucsc.edu/overview/index.html) (MARINe).
+
+## Figure rocky.mussels.any.
+
+Percent of mussels over time. CHECK
+
+### Details
+
+Data collection was done by a consortium of partners through the [Multi-Agency Rocky Intertidal Network](https://marine.ucsc.edu/overview/index.html) (MARINe). CHECK
+
