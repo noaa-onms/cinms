@@ -1,9 +1,8 @@
-```{r, include=F}
-knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-source(here::here("scripts/utility.R"))
-```
-
-
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
 ```{r setup, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 source(here::here("../cinms/scripts/utility.R"))
@@ -25,19 +24,19 @@ add_icons(
 
 ###### Blue
 
-![`r md_caption("Figure App.C.4.11a."](../img/cinms_cr/App.C.4.11a.blue_risk.jpg)
+![`r md_caption("Figure App.C.4.11a.")`](../img/cinms_cr/App.C.4.11a.blue_risk.jpg)
 
 `r md_caption("Figure App.C.4.11a.", get_details=T)`
 
 ###### Fin
 
-![`r md_caption("Figure App.C.4.11b.](../img/cinms_cr/App.C.4.11b.fin_risk.jpg)
+![`r md_caption("Figure App.C.4.11b.")`](../img/cinms_cr/App.C.4.11b.fin_risk.jpg)
 
 `r md_caption("Figure App.C.4.11b.", get_details=T)`
 
 ###### Humpback
 
-![`r md_caption("Figure App.C.4.11c.](../img/cinms_cr/App.C.4.11c.humpback_risk.jpg)
+![`r md_caption("Figure App.C.4.11c.")`](../img/cinms_cr/App.C.4.11c.humpback_risk.jpg)
 
 `r md_caption("Figure App.C.4.11c.", get_details=T)`
 
