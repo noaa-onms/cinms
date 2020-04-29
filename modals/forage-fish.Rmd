@@ -8,6 +8,10 @@ source(here::here("scripts/utility.R"))
 
 ## {.tabset}
 
+```{r modal_info}
+get_modal_info()
+```
+
 ### Map of Regions
 
 ```{r, fig.cap=md_caption("Figure App.F.12.17.new")}

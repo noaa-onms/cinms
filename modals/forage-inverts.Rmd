@@ -6,6 +6,10 @@ source(here::here("scripts/calcofi.R"))
 source(here::here("scripts/utility.R"))
 ```
 
+```{r modal_info}
+get_modal_info()
+```
+
 ## {.tabset}
 
 ### Map of Regions
