@@ -5,6 +5,10 @@ source(here::here("../cinms/scripts/rocky.R"))
 # Error in sp_target %in% spp_targets : object 'sp_target' not found
 ```
 
+```{r modal_info}
+get_modal_info()
+```
+
 ## {.tabset}
 
 ### Map of Sites
