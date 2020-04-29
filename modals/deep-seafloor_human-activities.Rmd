@@ -20,60 +20,6 @@ source(here::here("scripts/utility.R"))
 
 #### Fishing
 
-##### Landings {.tabset}
-
-##### Commercial
-
-![`r md_caption("Figure App.C.4.4.")`](../img/cinms_cr/App.C.4.4.Leeworthy_landings.jpg)
-
-`r md_caption("Figure App.C.4.4.", get_details=T)`
-
-###### Halibut Landings and Fishers
-
-![`r md_caption("Figure App.C.4.5a.")`](../img/cinms_cr/App.C.4.5a.Halibut_landings_CDFW.jpg)
-
-`r md_caption("Figure App.C.4.5a.", get_details=T)`
-
-![`r md_caption("Figure App.C.4.5b.")`](../img/cinms_cr/App.C.4.5b.CDFW_halibut_vessels.jpg)
-
-`r md_caption("Figure App.C.4.5b.", get_details=T)`
-
-###### Rock Crab Landings and Fishers
-
-![`r md_caption("Figure App.C.4.6a.")`](../img/cinms_cr/App.C.4.6a.crab_landings_CDFW.jpg)
-
-`r md_caption("Figure App.C.4.6a.", get_details=T)`
-
-![`r md_caption("Figure App.C.4.6b.")`](../img/cinms_cr/App.C.4.6b.crab_fishers_CDFW.jpg)
-
-`r md_caption("Figure App.C.4.6b.", get_details=T)`
-
-###### Deep-water
-
-![`r md_caption("Figure App.C.3.2.")`](../img/cinms_cr/App.C.3.2_CINMSLandings.jpg)
-
-`r md_caption("Figure App.C.3.2.", get_details=T)`
-
-##### Maps of Fishing  {.tabset}
-
-###### Trawling
-
-![`r md_caption("Figure App.C.3.3.")`](../img/cinms_cr/App.C.3.3_SWFSC_Trawls2007-2011_HBCoralsRS.jpg)
-
-`r md_caption("Figure App.C.3.3.", get_details=T)`
-
-###### Fixed Gear
-
-![`r md_caption("Figure App.C.3.4.")`](../img/cinms_cr/App.C.3.4_SWFSC_Fixed2007-2011_Gorgonians.jpg)
-
-`r md_caption("Figure App.C.3.4.", get_details=T)`
-
-###### Trawl & Fixed Gear with MPAs 
-
-![`r md_caption("Figure App.C.3.5.")`](../img/cinms_cr/App.C.3.5_SoCalDeepBotFishingMPAs_Etnoyer.jpg)
-
-`r md_caption("Figure App.C.3.5.", get_details=T)`
-
 ###### Recreational
 ![`r md_caption("Figure App.C.4.2a.")`](../img/cinms_cr/App.C.4.2a.CPFV_trips.jpg)
 
@@ -85,9 +31,6 @@ source(here::here("scripts/utility.R"))
 ## Human Impacts
 
 ### {.tabset}
-
-```{r svg, child = '_acidification.Rmd'}
-```
 
 #### Contaminants
 

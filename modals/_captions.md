@@ -100,7 +100,7 @@ Landings (in pounds) and the relative contribution of gear types has changed ove
 
 ## Figure App.C.3.3.
 
-A map showing commercial fishing catch (fish caught by trawling) across the Southern California Bight (2007-2011). Locations of known deep-water corals, which are very vulnerable to trawling, are indicated on the map. 
+A map showing landings of fish caught by trawling (a method of commercial fishing) across the Southern California Bight (2007-2011). Locations of known deep-water corals, which are very vulnerable to trawling, are indicated on the map. 
 
 ### Details
 
@@ -108,7 +108,7 @@ A map showing commercial fishing catch (fish caught by trawling) across the Sout
 
 ## Figure App.C.3.4.
 
-A map showing historical fishing activity using fixed gear (a method of fishing) across the Southern California Bight (2007-2011). Locations of known deep-water gorgonians, which are very vulnerable to trawling, are indicated on the map. 
+A map showing landings of fish caught by fixed gear (a method of commercial fishing) across the Southern California Bight (2007-2011). Locations of known deep-water gorgonians, which are very vulnerable to trawling, are indicated on the map. 
 
 ### Details
 
