@@ -20,7 +20,7 @@ navbar:
       href: sandy-seafloor.html
   right:
     - text: "About"
-      href: readme.html
+      href: https://marinebon.org/sanctuaries/
 output:
   html_document:
     theme: lumen # darkly # cosmo # https://bootswatch.com
