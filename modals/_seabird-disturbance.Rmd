@@ -1,5 +1,14 @@
+```{r, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("scripts/utility.R"))
+```
+
+```{r modal_info}
+get_modal_info()
+```
+
 #### Seabird disturbance
 
-![**Figure App.C.4.9.** Rates of human-caused disturbance to seabird breeding and roosting sites were low on Santa Cruz Island (SC) compared to other sites across the south coast (SCSR), central coast (CCSR), and north central coast (NCCSR) study regions. Activities noted as causing disturbance at SC in 2012 to 2013 were human power boats, recreational fishing boats, recreational power boats, commercial fishing boats, airplanes, and helicopters. SD = San Diego, PV = Palos Verdes Peninsula, SB = Shell Beach, MD = Montaña de Oro, EB = Estero Bluffs, MO = Montara, PR = Point Reyes, BO = Bodega. Figure: Robinette et al. 2015](../img/cinms_cr/App.C.4.9.Seabird_disturbance_rates_Robinette.jpg)
+![`r md_caption("Figure App.C.4.9.")`](../img/cinms_cr/App.C.4.9.Seabird_disturbance_rates_Robinette.jpg)
 
 `r md_caption("Figure App.C.4.9.", get_details=T)`

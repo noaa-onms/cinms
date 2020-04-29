@@ -37,6 +37,10 @@ A figure showing the amount of eelgrass in Frenchy's Cove, Anacapa Island, from 
 
 Eelgrass cover at Frenchy’s Cove from 2004 to 2016 after 2003 transplant. Data are collected from diver surveys along a 30 meter fixed transect with points scored every 10 centimeters. The transect lies within the transplant area at Frenchy's Cove are at approximately 24 feet in depth. Declines in eelgrass cover are thought to be potentially due to seafloor disturbance from anchoring and trap fishing. Figure: [J. Altstatt/UCSB and NOAA](http://msi.ucsb.edu/people/project-staff/jessie%C2%A0altstatt)
 
+## Figure App.C.1.4. 
+
+NEED TO ADD TO REPO
+
 ## Figure App.C.2.1.
 
 A map of offshore oil platforms within the Santa Barbara Channel, from west to east: Hondo, Harmony, Heritage, Holly, C, B, A, Hillhouse, Habitat, Henry, Houchin, Hogan, Rincon Island, Grace, Gilda, Gail, and Gina. 
@@ -118,7 +122,11 @@ A map showing the locations of both trawling and fixed gear fishing in relation 
 
 Overlay of trawl and fixed gear fishing activity from 2007 to 2011 and protected areas is shown in the map above. Much of the landings is off the Santa Barbara mainland coast; however, fixed gear usage regularly occurs in sanctuary waters. Data source: CDFW; Map: [P. Etnoyer/NOAA](https://oceanexplorer.noaa.gov/edu/oceanage/03etnoyer/welcome.html)
 
-## Figure App.C.4.2.
+## Figure App.C.4.2a.
+
+Fishing activity (number of trip and number of anglers per trip) for Commercial Passenger Fishing Vessels (CPFVs) operating out of ports in Santa Barbara and Ventura from 2000 to 2012. Figure: Chen et al. 2015b
+
+## Figure App.C.4.2b.
 
 A figure of Commercial Passenger Fishing Vessel (CPFV) trips and anglers per trip accross years (2000 - 2012). 
 
@@ -176,11 +184,20 @@ Spatial patterns in coastal recreational activity levels in southern California 
 
 ## Figure App.C.4.8. 
 
-A graph showing the number of visitors brought to Frenchy's Cove on Anacapa ISland by the Island Packers Company from 1993 - 2014.
+A graph showing the number of visitors brought to Frenchy's Cove on Anacapa Island by the Island Packers Company from 1993 - 2014.
 
 ### Details
 
 Annual number of visitors brought to Frenchy’s Cove, Anacapa Island, by the Island Packers Company. At south Frenchy’s Cove and adjacent reefs, Island Packers Company conducts classroom programs for school groups typically during winter and spring months. No records are available for the number of private boaters that went ashore at any of the Channel Islands in the park. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+
+
+## Figure App.C.4.9.
+
+A figure showing rates of human-caused distubance to seabird breeding and nesting sites across three regions: the south coast (SCSR), central coast (CCSR), and north central coast (NCCSR)
+
+### Details
+
+Rates of human-caused disturbance to seabird breeding and roosting sites were low on Santa Cruz Island (SC) compared to other sites across the south coast (SCSR), central coast (CCSR), and north central coast (NCCSR) study regions. Activities noted as causing disturbance at SC in 2012 to 2013 were human power boats, recreational fishing boats, recreational power boats, commercial fishing boats, airplanes, and helicopters. SD = San Diego, PV = Palos Verdes Peninsula, SB = Shell Beach, MD = Montaña de Oro, EB = Estero Bluffs, MO = Montara, PR = Point Reyes, BO = Bodega. Figure: Robinette et al. 2015
 
 ## Figure App.C.4.10b. 
 
@@ -261,6 +278,10 @@ A figure showing trends in offshore oil and gas activity in Southern California 
 ### Details
 
 The status and trends of offshore oil and gas activity in southern California was measured using a normalized index of oil and gas production from offshore wells in state and federal waters in California. Activity has been stable over the last five years, but the short-term average was well below the long-term average (dashed green line). A rather steady decrease in oil and gas production has occurred since the mid-1990s. Data source: Annual reports of the California State Department of Conservation’s Division of Oil, Gas, and Geothermal Resources; Figure: K. Andrews/NOAA
+
+## Figure C.4.18a
+
+## Figure C.4.18b.
 
 ## Figure App.D.7.1.
 
@@ -470,7 +491,7 @@ A map showing DDT contaminant levels in sediments collected across the Southern 
 
 Dichlorodiphenyltrichloroethane (DDT) contaminant levels in sediment sampling locations during SCCRWP’s 2008 bight-wide survey are shown in the map. DDT is most prominent around the Ports of Long Beach, Los Angeles, and Santa Monica Bay. DDT is a legacy contaminant, which means it persists in the environment long after introduction. A large amount of DDT in the bight came from the dumping of the contaminant by the Montrose Chemical Company off Palos Verdes until the early 1980s, which is why the surrounding areas have high DDT levels. CINMS is relatively far from the spill site and thus, has limited DDT concentrations in sediments. Figure: Schiff et al. 2011
 
-## Figure App.E11.13.
+## Figure App.E.11.13.
 
 A map showing copper contaminant levels in sediments collected across the Southern California Bight in 2008. 
 
@@ -486,7 +507,7 @@ A map showing silver contaminant levels in sediments collected across the Southe
 
 Silver contaminant levels in sediment sampling locations during SCCRWP’s 2008 bight-wide survey are shown in the map. Silver is a heavy metal contaminant that in high concentrations can be toxic to living marine resources. Concentrations in CINMS and the Santa Barbara Channel are consistently low compared other regions in the Southern California Bight. High concentrations of silver appear to be clustered off the two largest population centers: Los Angeles and San Diego. Figure: Schiff et al. 2011
 
-## Figure App.E11.15.
+## Figure App.E.11.15.
 
 A map showing the contaminent levels of Polybrominated diphenyl ethers (which are used as flame retardants) in sediments collected across the Southern California Bight in 2008. 
 
