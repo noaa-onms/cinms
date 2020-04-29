@@ -94,16 +94,28 @@ add_icons <- function(info_url = NULL, photo_url = NULL){
 }
 
 get_modal_info <- function(
-  modal_id,
+  rmd = knitr::current_input(),
   info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=0"){
+  
+  # rmd = "abalone.Rmd"
+  modal_id <- fs::path_ext_remove(rmd)
   
   # modal_id = "ochre-stars"
   row <- read_csv(info_modal_links_csv) %>% 
     filter(modal == modal_id)
-    
+
+  icons_html = NULL
+  if (!is.na(row$url_info)){
+    icons_html = 
+      a(icon("info-circle"), href=row$url_info, target='_blank')
+  }
+  if (!is.na(row$url_photo)){
+    icons_html = tagList(
+      icons_html, 
+      a(icon("camera"), href=row$url_photo, target='_blank'))
+  }
+  
   div(
-    tagList(
-      a(icon("info-circle"), href=row$url_info), 
-      a(icon("camera")     , href=row$url_photo)),
-    align = "right")
+    row$tagline, style="font-style: italic",
+    div(tagList(icons_html), align = "right"))
 }
