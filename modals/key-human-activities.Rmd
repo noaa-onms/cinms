@@ -22,9 +22,6 @@ get_modal_info()
 
 `r md_caption("Figure App.C.4.4.", get_details=T)`
 
-![`r md_caption("Figure App.C.3.2.")`](../img/cinms_cr/App.C.3.2_CINMSLandings.jpg)
-
-`r md_caption("Figure App.C.3.2.", get_details=T)`
 ###### Trends: Halibut Fishery
 
 ![`r md_caption("Figure App.C.4.5a.")`](../img/cinms_cr/App.C.4.5a.Halibut_landings_CDFW.jpg)
@@ -49,6 +46,11 @@ get_modal_info()
 
 
 
+###### Trends: By Gear Type
+
+![`r md_caption("Figure App.C.3.2.")`](../img/cinms_cr/App.C.3.2_CINMSLandings.jpg)
+
+`r md_caption("Figure App.C.3.2.", get_details=T)`
 ###### Map: Trawling and Deep Sea Corals
 
 ![`r md_caption("Figure App.C.3.3.")`](../img/cinms_cr/App.C.3.3_SWFSC_Trawls2007-2011_HBCoralsRS.jpg)
