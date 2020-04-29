@@ -10,10 +10,8 @@ source(here::here("../cinms/scripts/utility.R"))
 
 #### Whale entanglement
 
-```{r}
-add_icons(
-  info_url = "https://sanctuarysimon.org/2017/04/whale-entanglements-a-summary-as-of-april-2017/",
-  photo_url = "https://sanctuaries.noaa.gov/news/nov15/whale-disentanglement.html")
+```{r modal_info}
+get_modal_info()
 ```
 
 ![`r md_caption("Figure App.C.4.10b.")`](../img/cinms_cr/App.C.4.10b.Whale_entanglements.png)
