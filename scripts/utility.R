@@ -71,6 +71,7 @@ md_caption <- function(title, md = here::here("modals/_captions.md"), get_detail
   if (get_details == T){
     return(details_md)
   } else {
+    #return(glue("**{title}**. {simple_md}"))  
     return(glue("**{title}**. {simple_md}"))  
   }
 
@@ -98,6 +99,7 @@ get_modal_info <- function(
   info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=0"){
   
   # rmd = "abalone.Rmd"
+  # rmd = "key-human-activities.Rmd"
   modal_id <- fs::path_ext_remove(rmd)
   
   # modal_id = "ochre-stars"
@@ -116,6 +118,7 @@ get_modal_info <- function(
   }
   
   div(
-    row$tagline, style="font-style: italic",
+    ifelse(!is.na(row$tagline), row$tagline, ""), 
+    style="font-style: italic",
     div(tagList(icons_html), align = "right"))
 }
