@@ -140,8 +140,15 @@ get_modal_info()
 
 ###### Trends: Visitors (CHIS)
 
+![`r md_caption("Figure App.C.1.4.")`](../img/cinms_cr/App.C.1.4.Vistors_CINP.png)
+
+
 #### Research
 ###### Trends: Active Permits
+
+![`r md_caption("Figure App.C.4.18a.")`](../img/cinms_cr/App.C.4.18a.Projects_Permits.png) 
+
+![`r md_caption("Figure App.C.4.18b.")`](../img/cinms_cr/App.C.4.18b.CDFW_Permits.png) 
 
 ## Human Impacts
 

@@ -39,7 +39,7 @@ Eelgrass cover at Frenchy’s Cove from 2004 to 2016 after 2003 transplant. Data
 
 ## Figure App.C.1.4. 
 
-NEED TO ADD TO REPO
+Visitors ashore and by boat in Channel Islands National Park from 2000 to 2016. Data source: National Park Service (NPS 2017)
 
 ## Figure App.C.2.1.
 
@@ -279,9 +279,13 @@ A figure showing trends in offshore oil and gas activity in Southern California 
 
 The status and trends of offshore oil and gas activity in southern California was measured using a normalized index of oil and gas production from offshore wells in state and federal waters in California. Activity has been stable over the last five years, but the short-term average was well below the long-term average (dashed green line). A rather steady decrease in oil and gas production has occurred since the mid-1990s. Data source: Annual reports of the California State Department of Conservation’s Division of Oil, Gas, and Geothermal Resources; Figure: K. Andrews/NOAA
 
-## Figure C.4.18a
+## Figure App.C.4.18a.
 
-## Figure C.4.18b.
+Annual number of unique research projects (green) and active research permits (red) in the California Department of Fish and Wildlife (CDFW) database for research permits in Channel Islands National Marine Sanctuary (CINMS) from 2010 to 2016. One permit could contain multiple projects.Data source: B. Owens/CDFW; Figure: NOAA
+
+## Figure App.C.4.18b.
+
+Number of projects with active CDFW research permits in CINMS by habitat type. Active permits only include those that are currently in use; non-student permits are issued for three years and student permits are issued for only one year. Student permits issued before June 6, 2015 were not included in this summary. Data source: B. Owens/ CDFW; Figure: NOAA
 
 ## Figure App.D.7.1.
 
