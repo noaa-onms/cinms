@@ -249,7 +249,7 @@ Ambient noise levels in the Santa Barbara Channel represented as monthly average
 
 ## Figure App.C.4.14.
 
-A graph showing the likelihood of encountering marine debris from 1999 - 2007.
+A graph showing the likelihood of encountering marine debris on beaches in Southern California from 1999 - 2007.
 
 ### Details
 
