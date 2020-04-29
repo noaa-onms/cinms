@@ -10,8 +10,8 @@ source(here::here("../cinms/scripts/rocky.R"))
 source(here::here("../cinms/scripts/utility.R"))
 ```
 
-```{r, render="asis"}
-get_modal_info("ochre-stars")
+```{r}
+get_modal_info()
 ```
 
 ##  {.tabset} 
