@@ -5,6 +5,10 @@ source(here::here("scripts/utility.R"))
 
 #### Oil & Gas
 
+```{r modal_info}
+get_modal_info()
+```
+
 ![`r md_caption("Figure App.C.4.17.")`](../img/cinms_cr/App.C.4.17.Oil_gas_activity_CCIEA.jpg)
 
 `r md_caption("Figure App.C.4.17.", get_details=T)`

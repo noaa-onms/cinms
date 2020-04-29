@@ -5,6 +5,10 @@ source(here::here("scripts/utility.R"))
 
 #### Acidification
 
+```{r modal_info}
+get_modal_info()
+```
+
 ##### Aragonite saturation
 
 ![`r md_caption("Figure App.E.10.29.")`](../img/cinms_cr/App.E.10.29.jpg)

@@ -3,11 +3,11 @@ knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 source(here::here("scripts/utility.R"))
 ```
 
+#### Seabird disturbance
+
 ```{r modal_info}
 get_modal_info()
 ```
-
-#### Seabird disturbance
 
 ![`r md_caption("Figure App.C.4.9.")`](../img/cinms_cr/App.C.4.9.Seabird_disturbance_rates_Robinette.jpg)
 

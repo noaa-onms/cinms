@@ -5,6 +5,10 @@ source(here::here("scripts/utility.R"))
 
 #### Fishing
 
+```{r modal_info}
+get_modal_info()
+```
+
 ##### Landings {.tabset}
 
 ###### Commercial

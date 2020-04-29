@@ -3,11 +3,11 @@ knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 source(here::here("scripts/utility.R"))
 ```
 
+#### Visitors
+
 ```{r modal_info}
 get_modal_info()
 ```
-
-#### Visitors
 
 ![`r md_caption("Figure App.C.4.8.")`](../img/cinms_cr/App.C.4.8.Visitation_Frenchys.jpg)
 
