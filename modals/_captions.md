@@ -4,6 +4,47 @@ output:
   pdf_document: default
 ---
 
+## Figure Ux.Ocean.Chl.ERD.map.
+
+Map of the most recent Chlorophyll-a that indicates productivity by phytoplankton, the plant base of the food chain in the ocean.
+
+
+### Details
+
+The Chlorophyll-a dataset collected via satellite is the [Chlorophyll, NOAA VIIRS, Science Quality, Global, Level 3, 2012-present, Monthly](https://coastwatch.pfeg.noaa.gov/erddap/info/nesdisVHNSQchlaMonthly/index.html) curated by NOAA's [Environmental Research Division](https://oceanview.pfeg.noaa.gov/projects) (ERD) and served to this website live as a web map service (WMS) from the [CoastWatch ERDDAP](https://coastwatch.pfeg.noaa.gov/erddap/index.html) server. These data were provided by NOAA's [Center for Satellite Applications & Research](https://www.star.nesdis.noaa.gov/) (STAR) and the CoastWatch program and distributed by NOAA/NMFS/SWFSC/ERD.
+
+## Figure Ux.Ocean.Chl.ERD.timeseries.
+
+Plot of Chlorophyll values over time within the sanctuary. Chlorophyll-a indicates productivity by phytoplankton, the plant base of the food chain in the ocean.
+
+### Details
+
+The Chlorophyll-a dataset collected via satellite is the [Chlorophyll, NOAA VIIRS, Science Quality, Global, Level 3, 2012-present, Monthly](https://coastwatch.pfeg.noaa.gov/erddap/info/nesdisVHNSQchlaMonthly/index.html) curated by NOAA's [Environmental Research Division](https://oceanview.pfeg.noaa.gov/projects) (ERD) and served to this website live as a web map service (WMS) from the [CoastWatch ERDDAP](https://coastwatch.pfeg.noaa.gov/erddap/index.html) server. These data were provided by NOAA's [Center for Satellite Applications & Research](https://www.star.nesdis.noaa.gov/) (STAR) and the CoastWatch program and distributed by NOAA/NMFS/SWFSC/ERD.
+
+## Figure Ux.Ocean.Seascape.ERD.map.
+
+Map of the most recent seascapes around the sanctuary. Seascapes are dynamic categories of ocean water based on temperature and ocean color.
+
+### Details
+
+The sea-surface temperature dataset collected via satellite is the [Monthly Global Seascapes](https://cwcgom.aoml.noaa.gov/erddap/info/noaa_aoml_4729_9ee6_ab54/index.html) and served by NOAA's [Caribbean/Gulf of Mexico Node Physical Oceanography Division Ocean Chemistry and Ecosystems Division](https://cwcgom.aoml.noaa.gov/) (CWCGOM) and served to this website live as a web map service (WMS) via their ERDDAP server. For more on this product, please see Kavanaugh et al. (2016) [Seascapes as a new vernacular for pelagic ocean monitoring, management and conservation](https://doi.org/10.1093/icesjms/fsw086) _ICES Journal of Marine Science_.
+
+## Figure Ux.Ocean.SST.ERD.map.
+
+Map of the most recent sea-surface temperature around the sanctuary. 
+
+### Details
+
+The sea-surface temperature dataset collected via satellite is the [Multi-scale Ultra-high Resolution (MUR) SST Analysis fv04.1, Global, 0.01°, 2002-present, Monthly](https://coastwatch.pfeg.noaa.gov/erddap/info/jplMURSST41mday/index.html) curated by NOAA's [Environmental Research Division](https://oceanview.pfeg.noaa.gov/projects) (ERD) and served to this website live as a web map service (WMS) from the [CoastWatch ERDDAP](https://coastwatch.pfeg.noaa.gov/erddap/index.html) server.
+
+## Figure Ux.Ocean.SST.ERD.timeseries.
+
+Plot of sea-surface temperature values over time within the sanctuary.
+
+### Details
+
+The sea-surface temperature dataset collected via satellite is the [Multi-scale Ultra-high Resolution (MUR) SST Analysis fv04.1, Global, 0.01°, 2002-present, Monthly](https://coastwatch.pfeg.noaa.gov/erddap/info/jplMURSST41mday/index.html) curated by NOAA's [Environmental Research Division](https://oceanview.pfeg.noaa.gov/projects) (ERD) and served to this website live as a web map service (WMS) from the [CoastWatch ERDDAP](https://coastwatch.pfeg.noaa.gov/erddap/index.html) server.
+
 ## Figure ochre-stars_MARINe.
 
 The average number of ochre stars counted each year during 30-minute searches at monitoring sites at each of the five islands in Channel Islands National Marine Sanctuary.
