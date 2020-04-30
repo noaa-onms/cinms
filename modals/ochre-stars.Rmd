@@ -17,20 +17,27 @@ get_modal_info()
 ##  {.tabset} 
 
 ### MARINe: Map of Sites
-An interactive map of the Channel Islands showing field sites were data were collected
+
 ```{r}
 map_nms_sites("cinms")
 ```
 
+`r md_caption("Figure Ux.Rocky.MARINe.map.")`
+
+`r md_caption("Figure Ux.Rocky.MARINe.map.", get_details=T)`
+
 ### MARINe: Ochre Seastar (_Pisaster ochraceus_) {.active}
-An interactive figure of ochre seastars. 
+
 ```{r}
 plot_intertidal_nms(nms_spp_sscount_csv, "CINMS", "PISOCH", "Ochre Seastar", fld_val = "count", label_y = "Count (annual avg)")
 ```
 
-`r md_caption("ochre-stars_MARINe")`
+`r md_caption("Figure Ux.Rocky.MARINe.Ochre-Stars.")`
+
+`r md_caption("Figure Ux.Rocky.MARINe.Ochre-Stars.", get_details=T)`
 
 ### NPS: Sanctuary
+
 [More information about Channel Islands National Park can be found here](https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100505)
 
 [CINP data can be requested here](https://www.nps.gov/chis/index.htm)
@@ -40,6 +47,7 @@ plot_intertidal_nms(nms_spp_sscount_csv, "CINMS", "PISOCH", "Ochre Seastar", fld
 `r md_caption("Figure App.F.12.2.", get_details=T)`
 
 ### NPS: Individual Islands
+
 [More information about Channel Islands National Park can be found here](https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100505)
 
 [CINP data can be requested here](https://www.nps.gov/chis/index.htm)

@@ -45,30 +45,21 @@ Plot of sea-surface temperature values over time within the sanctuary.
 
 The sea-surface temperature dataset collected via satellite is the [Multi-scale Ultra-high Resolution (MUR) SST Analysis fv04.1, Global, 0.01°, 2002-present, Monthly](https://coastwatch.pfeg.noaa.gov/erddap/info/jplMURSST41mday/index.html) curated by NOAA's [Environmental Research Division](https://oceanview.pfeg.noaa.gov/projects) (ERD) and served to this website live as a web map service (WMS) from the [CoastWatch ERDDAP](https://coastwatch.pfeg.noaa.gov/erddap/index.html) server.
 
-## Figure ochre-stars_MARINe.
+## Figure Ux.Rocky.MARINe.map.
 
-The average number of ochre stars counted each year during 30-minute searches at monitoring sites at each of the five islands in Channel Islands National Marine Sanctuary.
+Interactive map of the Channel Islands showing field sites where data were collected.
 
-### `details`
+### Details
 
-Use map tab above to see the islands and the location of sites monitored by the Channel Islands National Park (CHIS) rocky intertidal community monitoring program which is part of the Multi-agency Rocky Intertidal Network (MARINe)
+These sites are where a consortium of contributors collected rocky intertidal data as part of the [Multi-Agency Rocky Intertidal Network](http://pacificrockyintertidal.org) (MARINe).
 
-### `natural-history`
+## Figure Ux.Rocky.MARINe.Ochre-Stars.
 
-https://sanctuarysimon.org/dbtools/species-database/id/55
+The average number of ochre stars counted each year during 30-minute searches at monitoring sites at each of the five islands in Channel Islands National Marine Sanctuary by the [Multi-Agency Rocky Intertidal Network](http://pacificrockyintertidal.org) (MARINe).
 
-### `photos`
+### Details
 
-![https://sanctuarysimon.org/regional_images/photo_database/species/55_full.jpg](https://sanctuarysimon.org/dbtools/species-database/id/55)
-
-### `monitoring-program`
-
-https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100508
-
-### `data`
-
-https://github.com/marinebon/info-intertidal/blob/master/data/sanctuary_species_sscount.csv
-
+These data were collected by a consortium of contributors as part of the [Multi-Agency Rocky Intertidal Network](http://pacificrockyintertidal.org) (MARINe).
 
 ## Figure S.Hab.10.3.
 
