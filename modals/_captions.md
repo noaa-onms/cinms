@@ -699,6 +699,7 @@ Mean volume of small plankton collected in net samples during CalCOFI cruises at
 
 ## Figure App.F.12.19.anchovy
 
+<<<<<<< HEAD
 A figure showing the relative abundance of northern anchovy (*Engraulis mordax*) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 - 2018. 
 
 ### Details
@@ -741,6 +742,9 @@ Relative abundance of key forage fish groups collected in net samples during spr
 ## Figure App.F.12.19.sardine
 
 A figure showing the relative abundance of Pacific sardine (*Sardinops sagax*) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 - 2018. 
+=======
+A figure showing the relative abundance of important fish groups collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 - 2018. 
+>>>>>>> 9ab0fdd2fceced09efb02e4d6c79e0dc610d2062
 
 ### Details
 
