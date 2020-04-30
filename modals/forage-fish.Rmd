@@ -10,7 +10,7 @@ get_modal_info()
 ```
 [More information about CalCOFI can be found here](https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100476)
 
-[CalCOFI data can be accessed here](https://calcofi.org/ccpublications/ccreports.html)
+[CalCOFI data can be accessed here](https://coastwatch.pfeg.noaa.gov/erddap/tabledap/erdCalCOFIstns.html)
 
 ## {.tabset}
 

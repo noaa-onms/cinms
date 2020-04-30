@@ -292,7 +292,11 @@ get_modal_info()
 
 #### Whale entanglement {.tabset}
 
-##### Comparison: By Regions
+##### Trends: By Species
+[NOAA Entanglement Repsonse Program](https://www.fisheries.noaa.gov/west-coast/marine-mammal-protection/west-coast-large-whale-entanglement-response-program)
+
+[Entanglement Data/Summary Reports](https://www.fisheries.noaa.gov/west-coast/marine-mammal-protection/west-coast-large-whale-entanglement-response-program#resources)
+
 ![`r md_caption("Figure App.C.4.10b.")`](../img/cinms_cr/App.C.4.10b.Whale_entanglements.png)
  
 `r md_caption("Figure App.C.4.10b.", get_details=T)`

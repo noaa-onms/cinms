@@ -242,9 +242,10 @@ Rates of human-caused disturbance to seabird breeding and roosting sites were lo
 
 ## Figure App.C.4.10b. 
 
-A figure showing confirmed entanglement reports of humpback (blue), gray (green), blue (dark blue), and unidentified (orange) whales along the West Coast from 2000 - 2019.
+Number of confirmed reports of large whales, including humpback, gray, and blue whales entangled in fishing gear, ropes and other sources along the U.S. West Coast from 2000–19. Graph from NOAA Fisheries 2019 West Coast Whale Entanglement Summary Report. Last updated April 2020 
 
 ### Details
+In the legend, color represents the different species of whales and “n” represents the total number of that species confirmed entangled in the study period. Of the 46 confirmed whale entanglements, 30 were reported off California, 6 of which originated from southern California (Santa Barbara, Los Angeles, Orange, and San Diego counties). However, the location where entangled animals are observed and reported does not necessarily reflect where and when the entanglement originated. 
 
 Annual number of large whale entanglements reported along the U.S. West Coast. Reports of entanglements have increased in recent years. Factors contributing to this trend likely include an increasing overlap of whale activities (e.g., migrating, feeding) with human activities that have the potential to entangle whales (e.g., fishing, buoy installation) and an increase in on-the-water observers likely to report entangled individuals (e.g., whale watching, recreational boating). Confirmed entanglements from 2000 to 2019 of gray and humpback whales include 11 from Santa Barbara and two from Ventura counties. Figure: D. Lawson/NMFS WCRO PRD
 
