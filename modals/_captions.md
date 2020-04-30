@@ -697,7 +697,7 @@ A figure showing the trends in the average volume of small plankton (tiny, often
 
 Mean volume of small plankton collected in net samples during CalCOFI cruises at only sites in the Channel Islands National Marine Sanctuary region (top) and all sites over the Southern California Shelf (bottom) from 1978 to 2015 (sampling locations shown in Figure App.F.12.17). Horizontal lines show the mean (dashed line) ± 1.0 standard deviation (solid lines) over the full time series. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (–), or within 1 standard deviation (●) of the mean of the full time series.. Data source: CalCOFI; Figure: A. Thompson/NOAA]
 
-## Figure App.F.12.19
+## Figure App.F.12.19.
 
 A figure showing the relative abundance of important fish groups collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 - 2015. 
 

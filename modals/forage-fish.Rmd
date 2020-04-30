@@ -48,7 +48,7 @@ calcofi_plot(csv = csv, title = title)
 ```
 
 
-`r md_caption("Figure App.F.12.19")`
+`r md_caption("Figure App.F.12.19.")`
 
 `r md_caption("Figure App.F.12.19.", get_details=T)`
 
@@ -56,13 +56,13 @@ calcofi_plot(csv = csv, title = title)
 
 #### CINMS Region
 
-![`r md_caption("Figure App.F.12.19")`](../img/cinms_cr/App.F.12.19hake.CalCOFI_Med_ichthy.jpg)
+![`r md_caption("Figure App.F.12.19.")`](../img/cinms_cr/App.F.12.19hake.CalCOFI_Med_ichthy.jpg)
 
 `r md_caption("Figure App.F.12.19.", get_details=T)`
 
 #### SoCal Shelf Region
 
-![`r md_caption("Figure App.F.12.19")`](../img/cinms_cr/App.F.12.19.hake.SoCAShelf.jpg)
+![`r md_caption("Figure App.F.12.19.")`](../img/cinms_cr/App.F.12.19.hake.SoCAShelf.jpg)
 
 `r md_caption("Figure App.F.12.19.", get_details=T)`
 
@@ -93,7 +93,7 @@ calcofi_plot(csv = csv, title = title)
 ```
 
 
-`r md_caption("Figure App.F.12.19")`
+`r md_caption("Figure App.F.12.19.")`
 
 `r md_caption("Figure App.F.12.19.", get_details=T)`
 
@@ -125,7 +125,7 @@ calcofi_plot(csv = csv, title = title)
 
 
 
-`r md_caption("Figure App.F.12.19")`
+`r md_caption("Figure App.F.12.19.")`
 
 `r md_caption("Figure App.F.12.19.", get_details=T)`
 
@@ -156,7 +156,7 @@ calcofi_plot(csv = csv, title = title)
 ```
 
 
-`r md_caption("Figure App.F.12.19")`
+`r md_caption("Figure App.F.12.19.")`
 
 `r md_caption("Figure App.F.12.19.", get_details=T)`
 
@@ -187,7 +187,7 @@ calcofi_plot(csv = csv, title = title)
 ```
 
 
-`r md_caption("Figure App.F.12.19")`
+`r md_caption("Figure App.F.12.19.")`
 
 `r md_caption("Figure App.F.12.19.", get_details=T)`
 
