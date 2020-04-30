@@ -3,6 +3,10 @@ knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 source(here::here("scripts/utility.R"))
 ```
 
+```{r}
+get_modal_info()
+```
+
 ## {.tabset}
 
 ### Trends in seabird abundance

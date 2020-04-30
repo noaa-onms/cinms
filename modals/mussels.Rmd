@@ -5,6 +5,10 @@ source(here::here("scripts/rocky.R"))
 source(here::here("scripts/utility.R"))
 ```
 
+```{r}
+get_modal_info()
+```
+
 ## {.tabset}
 
 ### Map of Sites

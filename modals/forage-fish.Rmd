@@ -5,12 +5,11 @@ knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 source(here::here("scripts/calcofi.R"))
 source(here::here("scripts/utility.R"))
 ```
-
-## {.tabset}
-
 ```{r modal_info}
 get_modal_info()
 ```
+
+## {.tabset}
 
 ### Map of Regions
 

@@ -30,6 +30,9 @@ sst   <- info('jplMURSST41mday')
 chl   <- info("nesdisVHNSQchlaMonthly")
 scape <- info("noaa_aoml_4729_9ee6_ab54", url = "https://cwcgom.aoml.noaa.gov/erddap/")
 ```
+```{r modal_info}
+get_modal_info()
+```
 
 ## Maps {.tabset}
 
