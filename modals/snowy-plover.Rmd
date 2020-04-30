@@ -5,6 +5,10 @@ source(here::here("scripts/utility.R"))
 
 ## Western Snowy Plover (_Charadrius nivosus nivosus_)
 
+```{r}
+get_modal_info()
+```
+
 ## {.tabset}
 
 ### Abundance adults
