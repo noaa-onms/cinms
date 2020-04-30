@@ -699,7 +699,7 @@ Mean volume of small plankton collected in net samples during CalCOFI cruises at
 
 ## Figure App.F.12.19.
 
-A figure showing the relative abundance of important fish groups collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 - 2015. 
+A figure showing the relative abundance of important fish groups collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 - 2018. 
 
 ### Details
 
