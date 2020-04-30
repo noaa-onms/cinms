@@ -697,9 +697,50 @@ A figure showing the trends in the average volume of small plankton (tiny, often
 
 Mean volume of small plankton collected in net samples during CalCOFI cruises at only sites in the Channel Islands National Marine Sanctuary region (top) and all sites over the Southern California Shelf (bottom) from 1978 to 2015 (sampling locations shown in Figure App.F.12.17). Horizontal lines show the mean (dashed line) ± 1.0 standard deviation (solid lines) over the full time series. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (–), or within 1 standard deviation (●) of the mean of the full time series.. Data source: CalCOFI; Figure: A. Thompson/NOAA]
 
-## Figure App.F.12.19.
+## Figure App.F.12.19.anchovy
 
-A figure showing the relative abundance of important fish groups collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 - 2015. 
+A figure showing the relative abundance of northern anchovy (*Engraulis mordax*) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 - 2018. 
+
+### Details
+
+Relative abundance of key forage fish groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) and Southern California Shelf regions from 1978 to 2015. High energy taxa are Pacific sardines, northern anchovies, and  Myctophids. Medium-energy taxa are Pacific hake, shortbelly rockfish, and sanddabs. Although sardine were completely absent in net samples from 2011 to 2014 in the CINMS region, comparison with samples collected in the larger Southern California Shelf region reveal that sardine were at very low abundance but not completely absent from the region. Data source: CalCOFI; Figure: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/)
+
+## Figure App.F.12.19.hake
+
+A figure showing the relative abundance of Pacific hake (*Merluccius productus*) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 - 2018. 
+
+### Details
+
+Relative abundance of key forage fish groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) and Southern California Shelf regions from 1978 to 2015. High energy taxa are Pacific sardines, northern anchovies, and  Myctophids. Medium-energy taxa are Pacific hake, shortbelly rockfish, and sanddabs. Although sardine were completely absent in net samples from 2011 to 2014 in the CINMS region, comparison with samples collected in the larger Southern California Shelf region reveal that sardine were at very low abundance but not completely absent from the region. Data source: CalCOFI; Figure: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/)
+
+## Figure App.F.12.19.myctophids
+
+A figure showing the relative abundance of myctophids (Myctophidae) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 - 2018. 
+
+### Details
+
+Relative abundance of key forage fish groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) and Southern California Shelf regions from 1978 to 2015. High energy taxa are Pacific sardines, northern anchovies, and  Myctophids. Medium-energy taxa are Pacific hake, shortbelly rockfish, and sanddabs. Although sardine were completely absent in net samples from 2011 to 2014 in the CINMS region, comparison with samples collected in the larger Southern California Shelf region reveal that sardine were at very low abundance but not completely absent from the region. Data source: CalCOFI; Figure: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/)
+
+## Figure App.F.12.19.rockfish
+
+A figure showing the relative abundance of shortbelly rockfish (*Sebastes jordani*) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 - 2018. 
+
+### Details
+
+Relative abundance of key forage fish groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) and Southern California Shelf regions from 1978 to 2015. High energy taxa are Pacific sardines, northern anchovies, and  Myctophids. Medium-energy taxa are Pacific hake, shortbelly rockfish, and sanddabs. Although sardine were completely absent in net samples from 2011 to 2014 in the CINMS region, comparison with samples collected in the larger Southern California Shelf region reveal that sardine were at very low abundance but not completely absent from the region. Data source: CalCOFI; Figure: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/)
+
+
+## Figure App.F.12.19.sanddab
+
+A figure showing the relative abundance of Pacific sanddab (*Citharichthys sordidus*) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 - 2018. 
+
+### Details
+
+Relative abundance of key forage fish groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) and Southern California Shelf regions from 1978 to 2015. High energy taxa are Pacific sardines, northern anchovies, and  Myctophids. Medium-energy taxa are Pacific hake, shortbelly rockfish, and sanddabs. Although sardine were completely absent in net samples from 2011 to 2014 in the CINMS region, comparison with samples collected in the larger Southern California Shelf region reveal that sardine were at very low abundance but not completely absent from the region. Data source: CalCOFI; Figure: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/)
+
+## Figure App.F.12.19.sardine
+
+A figure showing the relative abundance of Pacific sardine (*Sardinops sagax*) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 - 2018. 
 
 ### Details
 

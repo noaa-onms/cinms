@@ -48,23 +48,23 @@ calcofi_plot(csv = csv, title = title)
 ```
 
 
-`r md_caption("Figure App.F.12.19.")`
+`r md_caption("Figure App.F.12.19.anchovy")`
 
-`r md_caption("Figure App.F.12.19.", get_details=T)`
+`r md_caption("Figure App.F.12.19.anchovy", get_details=T)`
 
 ### Hake
 
 #### CINMS Region
 
-![`r md_caption("Figure App.F.12.19.")`](../img/cinms_cr/App.F.12.19hake.CalCOFI_Med_ichthy.jpg)
+![`r md_caption("Figure App.F.12.19.hake")`](../img/cinms_cr/App.F.12.19hake.CalCOFI_Med_ichthy.jpg)
 
-`r md_caption("Figure App.F.12.19.", get_details=T)`
+`r md_caption("Figure App.F.12.19.hake", get_details=T)`
 
 #### SoCal Shelf Region
 
-![`r md_caption("Figure App.F.12.19.")`](../img/cinms_cr/App.F.12.19.hake.SoCAShelf.jpg)
+![`r md_caption("Figure App.F.12.19.hake")`](../img/cinms_cr/App.F.12.19.hake.SoCAShelf.jpg)
 
-`r md_caption("Figure App.F.12.19.", get_details=T)`
+`r md_caption("Figure App.F.12.19.hake", get_details=T)`
 
 ### Myctophids
 
@@ -93,9 +93,9 @@ calcofi_plot(csv = csv, title = title)
 ```
 
 
-`r md_caption("Figure App.F.12.19.")`
+`r md_caption("Figure App.F.12.19.myctophids")`
 
-`r md_caption("Figure App.F.12.19.", get_details=T)`
+`r md_caption("Figure App.F.12.19.myctophids", get_details=T)`
 
 ### Rockfish
 
@@ -125,9 +125,9 @@ calcofi_plot(csv = csv, title = title)
 
 
 
-`r md_caption("Figure App.F.12.19.")`
+`r md_caption("Figure App.F.12.19.rockfish")`
 
-`r md_caption("Figure App.F.12.19.", get_details=T)`
+`r md_caption("Figure App.F.12.19.rockfish", get_details=T)`
 
 ### Sanddab
 
@@ -156,9 +156,9 @@ calcofi_plot(csv = csv, title = title)
 ```
 
 
-`r md_caption("Figure App.F.12.19.")`
+`r md_caption("Figure App.F.12.19.sanddab")`
 
-`r md_caption("Figure App.F.12.19.", get_details=T)`
+`r md_caption("Figure App.F.12.19.sanddab", get_details=T)`
 
 ### Sardines
 
@@ -187,7 +187,7 @@ calcofi_plot(csv = csv, title = title)
 ```
 
 
-`r md_caption("Figure App.F.12.19.")`
+`r md_caption("Figure App.F.12.19.sardine")`
 
-`r md_caption("Figure App.F.12.19.", get_details=T)`
+`r md_caption("Figure App.F.12.19.sardine", get_details=T)`
 
