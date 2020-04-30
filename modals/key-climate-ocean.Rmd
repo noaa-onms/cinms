@@ -165,32 +165,36 @@ leaflet(
 ### Temperature
 
 ```{r}
-csv <- here(glue("data/oceano/sst_{nms}.csv"))
+csv  <- here(glue("data/oceano/sst_{nms}.csv"))
+url  <- glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv)}")
+html <- a(basename(csv), href=url, target='_blank')
+
 d   <- get_timeseries(sst, lon=site$lon, lat=site$lat, csv=csv, field="sst")
 plot_timeseries(d, title="SST", color="red")
 ```
 
-Download timeseries data for sanctuary: [`r basename(csv)`](https://github.com/marinebon/`r nms`/raw/master/data/oceano/`r basename(csv)`)
+`r md_caption("Figure Ux.Ocean.SST.ERD.timeseries.")`
 
-`r md_caption("Figure Ux.Ocean.SST.timeseries.")`
+`r md_caption("Figure Ux.Ocean.SST.ERD.timeseries.", get_details = T)`
 
-`r md_caption("Figure Ux.Ocean.SST.timeseries.", get_details = T)`
-
+Download timeseries data for sanctuary: `r html`
 
 ### Chlorophyll
 
 ```{r}
-csv <- here(glue("data/oceano/chl_{nms}.csv"))
+csv  <- here(glue("data/oceano/chl_{nms}.csv"))
+url  <- glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv)}")
+html <- a(basename(csv), href=url, target='_blank')
+
 d_2   <- get_timeseries(chl, lon=site$lon, lat=site$lat, csv=csv, field="chlor_a")
 plot_timeseries(d_2, title="CHL", color="green")
 ```
-
-Download timeseries data for sanctuary: [`r basename(csv)`](https://github.com/marinebon/`r nms`/raw/master/data/oceano/`r basename(csv)`)
 
 `r md_caption("Figure Ux.Ocean.Chl.ERD.timeseries.")`
 
 `r md_caption("Figure Ux.Ocean.Chl.ERD.timeseries.", get_details = T)`
 
+Download timeseries data for sanctuary: `r html`
 
 ### Temp & N Anomalies (7-10m)
 
