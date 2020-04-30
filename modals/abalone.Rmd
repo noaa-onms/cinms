@@ -13,6 +13,7 @@ get_modal_info()
 [More information about PISCO can be found here](https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100465)
 
 [PISCO data can be accessed here](http://www.piscoweb.org/access-data)
+
 ![`r md_caption("Figure App.F.13.9.")`](../img/cinms_cr/App.F.13.9.jpg)
 
 `r md_caption("Figure App.F.13.9.", get_details=T)`
