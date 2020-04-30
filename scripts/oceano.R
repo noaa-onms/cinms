@@ -8,10 +8,11 @@ library(leaflet)
 library(leafem)
 library(dygraphs) # install.packages("dygraphs")
 library(xts)
+addMouseCoordinates = leafem::addMouseCoordinates
 here = here::here
 
-#source(here::here("./scripts/rocky.R"))
-source("~/github/cinms/scripts/rocky.R") # for: nms_ply <- get_nms_ply("cinms")
+source(here::here("./scripts/rocky.R"))
+#source("~/github/cinms/scripts/rocky.R") # for: nms_ply <- get_nms_ply("cinms")
 
 #library(readxl)
 #library(fs)

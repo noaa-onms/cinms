@@ -11,12 +11,20 @@ here = here::here
 csv         <- here("svg/svg_links_cinms.csv")
 redo_modals <- F
 
+# skip modals that Ben has to process independently
+skip_modals <- c(
+  "key-climate-ocean.Rmd",
+  "barnacles.Rmd","mussels.Rmd","ochre-stars.Rmd")
+
 # read in links for svg
 d <- read_csv(csv) %>% 
   mutate(dir = dirname(link))
 
 d_modals <- d %>% 
-  filter(dir != ".")
+  filter(dir != ".") %>% 
+  group_by(link) %>% 
+  summarize(n_habitats = n()) %>% 
+  ungroup()
 
 render_page <- function(rmd){
   render(rmd, html_document(
@@ -62,6 +70,12 @@ for (i in 1:nrow(d_modals)){ # i=1
   
   #if (htm == "modals/ca-sheephead.html") browser()
   
+  # skip modals that Ben has to process independently
+  if (basename(rmd) %in% skip_modals){
+    message(glue("SKIPPING: {basename(rmd)} in skip_modals"))
+    next()
+  } 
+  
   # create Rmd, if doesn't exist
   if (!file.exists(rmd)) file.create(rmd)
   
@@ -72,16 +86,19 @@ for (i in 1:nrow(d_modals)){ # i=1
     rmd_newer <- T
   }
   if (rmd_newer | redo_modals){
+    message(glue("KNITTING: {basename(rmd)}"))
     render_modal(rmd)
   }
 }
 
 # render website, ie Rmds in root ----
-walk(list.files(".", "*\\.md$"), render_page)
+#walk(list.files(".", "*\\.md$"), render_page)
+
 # walk(
 #   list.files(".", "*\\.html$"), 
 #   function(x) file.copy(x, file.path("docs", x)))
-rmarkdown::render_site()
+
+#rmarkdown::render_site()
 
 #fs::file_touch("docs/.nojekyll")
 

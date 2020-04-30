@@ -20,7 +20,8 @@ sanctuaries <- c("cinms", "mbnms", "ocnms")
 #   logged in as ben@ecoquants.com,
 #   search for "MARINe_ -cciea"
 
-dir_pfx     <- "~/github/info-intertidal"
+dir_pfx     <- here("../info-intertidal")
+dir_shp     <- file.path(dir_pfx, "data/shp")
 #raw1_csv   <- file.path(dir_pfx, "data/MARINe_raw_4c1e_9218_7d13.csv")
 #raw2_csv   <- file.path(dir_pfx, "data/MARINe_raw_1c3b_9486_c22d.csv")
 raw_csv     <- file.path(dir_pfx, "data/MARINe_raw_84af_263b_1183.csv")
@@ -39,7 +40,7 @@ nms_spp_csv     <- file.path(dir_pfx, "data/nms_spp.csv")
 nms_spp_rgn_csv <- file.path(dir_pfx, "data/nms_spp_rgn.csv")
 #nms_rgns_csv    <- "https://docs.google.com/spreadsheets/d/1Prm_NxhnRvGTIG7bqw4st8tt0NYnQWZ3/export?format=csv&gid=178828096"
 #nms_rgns_cache_csv <- file.path(dir_pfx, "data/MARINe_graphs.xlsx - sites in regions.csv")
-nms_rgns_csv <- file.path(dir_pfx, "data/MARINe_graphs.xlsx - sites in regions.csv")
+nms_rgns_csv    <- file.path(dir_pfx, "data/MARINe_graphs.xlsx - sites in regions.csv")
 
 redo <- F # redo <- T
 
@@ -263,7 +264,7 @@ map_nms_sites <- function(nms){
   NMS <- str_to_upper(nms)
   
   # get sites in nms
-  sites_nms_shp <- glue("~/github/info-intertidal/data/shp/{NMS}_sites.shp")
+  sites_nms_shp <- glue("{dir_shp}/{NMS}_sites.shp")
   nms_ply <- get_nms_ply(nms)
   
   if (!file.exists(sites_nms_shp)){
@@ -622,7 +623,7 @@ if (!file.exists(nms_spp_csv) | redo){
   if (file.exists(nms_spp_csv)) file.remove(nms_spp_csv)
   
   nms_spp <- map(sanctuaries, function(nms){
-    nms_spp_csv <- glue("~/github/info-intertidal/data/{toupper(nms)}_species.csv")
+    nms_spp_csv <- glue("{dir_pfx}/data/{toupper(nms)}_species.csv")
     read_csv(nms_spp_csv) %>% 
       mutate(nms = !!nms)}) %>% 
     bind_rows() %>% 
