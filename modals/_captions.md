@@ -63,11 +63,11 @@ These data were collected by a consortium of contributors as part of the [Multi-
 
 ## Figure S.Hab.10.3.
 
-A figure showing the amount of eelgrass in Frenchy's Cove, Anacapa Island, from 2004 - 2016. 
+A figure showing the amount of eelgrass in Frenchy's Cove, Anacapa Island, from 2004 - 2016. Figure: [J. Altstatt/UCSB and NOAA](http://msi.ucsb.edu/people/project-staff/jessie%C2%A0altstatt)
 
 ### Details
 
-Eelgrass cover at Frenchy’s Cove from 2004 to 2016 after 2003 transplant. Data are collected from diver surveys along a 30 meter fixed transect with points scored every 10 centimeters. The transect lies within the transplant area at Frenchy's Cove are at approximately 24 feet in depth. Declines in eelgrass cover are thought to be potentially due to seafloor disturbance from anchoring and trap fishing. Figure: [J. Altstatt/UCSB and NOAA](http://msi.ucsb.edu/people/project-staff/jessie%C2%A0altstatt)
+Eelgrass cover at Frenchy’s Cove from 2004 to 2016 after 2003 transplant. Data are collected from diver surveys along a 30 meter fixed transect with points scored every 10 centimeters. The transect lies within the transplant area at Frenchy's Cove are at approximately 24 feet in depth. Declines in eelgrass cover are thought to be potentially due to seafloor disturbance from anchoring and trap fishing.
 
 ## Figure App.C.1.4. 
 
@@ -75,60 +75,57 @@ Visitors ashore and by boat in Channel Islands National Park from 2000 to 2016. 
 
 ## Figure App.C.2.1.
 
-A map of offshore oil platforms within the Santa Barbara Channel, from west to east: Hondo, Harmony, Heritage, Holly, C, B, A, Hillhouse, Habitat, Henry, Houchin, Hogan, Rincon Island, Grace, Gilda, Gail, and Gina. 
-
-### Details
-
-Data source: [State of California GeoPortal](https://gis.data.ca.gov/); Map: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
+A map of offshore oil platforms within the Santa Barbara Channel, from west to east: Hondo, Harmony, Heritage, Holly, C, B, A, Hillhouse, Habitat, Henry, Houchin, Hogan, Rincon Island, Grace, Gilda, Gail, and Gina. Data source: [State of California GeoPortal](https://gis.data.ca.gov/); Map: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
 
 ## Figure App.C.2.3.
 
-A map showing the area around the Santa Barbara Coast affected by the 2015 Refugio Oil Spill.
+A map showing the area around the Santa Barbara Coast affected by the 2015 Refugio Oil Spill. Data source: [Shoreline Cleanup and Assessment Technique (SCAT) Shoreline Oiling Map](http://response.restoration.noaa.gov/oil-and-chemical-spills/oil-spills/resources/shoreline-cleanup-and-assessment-technique-scat.html). Map: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
 
 ### Details
 
-Diagonal black lines cover the area where oil sheen was observed after the 2015 Refugio Oil Spill. The dark black line indicates the short-term fishery closures. See Figures C2.4 and C13.5 for the modeled oil transport, which predicts crude oil reaching sanctuary waters, Santa Rosa, and Santa Cruz islands north-facing beaches days after the spill. Data source: [Shoreline Cleanup and Assessment Technique (SCAT) Shoreline Oiling Map](http://response.restoration.noaa.gov/oil-and-chemical-spills/oil-spills/resources/shoreline-cleanup-and-assessment-technique-scat.html). Map: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
+Diagonal black lines cover the area where oil sheen was observed after the 2015 Refugio Oil Spill. The dark black line indicates the short-term fishery closures. See Figures C2.4 and C13.5 for the modeled oil transport, which predicts crude oil reaching sanctuary waters, Santa Rosa, and Santa Cruz islands north-facing beaches days after the spill. 
 
 ## Figure App.C.2.4.
 
-A map showing projected oil movement following the Refugio Oil Spill in May 2015.
+A map showing projected oil movement following the Refugio Oil Spill in May 2015. Figure: B. Emery and [L. Washburn/UCSB](https://msi.ucsb.edu/people/faculty/libe-washburn)
 
 ### Details
 
-Modeled oil trajectories based on high frequency (HF) radar and averaged sea surface current vectors during the month of May 2015 (green and blue lines). Yellow triangles represent SCCOOS HF Radar stations, and oil platforms are shown as small gray dots. The HF station at Gaviota was installed immediately after the spill to avoid local data gaps during this critical monitoring time period. It was only active for one and a half months. PTC = Point Conception; RFG = Refugio State Beach; COP = Coal Oil Point; SSD = Summerland Sanitary District; MGS = Mandalay Generating Station; SCI = Santa Cruz Island. Pink lines indicate commercial shipping lanes. The black line encircles the region of interest. Figure: B. Emery and [L. Washburn/UCSB](https://msi.ucsb.edu/people/faculty/libe-washburn)
+Modeled oil trajectories based on high frequency (HF) radar and averaged sea surface current vectors during the month of May 2015 (green and blue lines). Yellow triangles represent SCCOOS HF Radar stations, and oil platforms are shown as small gray dots. The HF station at Gaviota was installed immediately after the spill to avoid local data gaps during this critical monitoring time period. It was only active for one and a half months. PTC = Point Conception; RFG = Refugio State Beach; COP = Coal Oil Point; SSD = Summerland Sanitary District; MGS = Mandalay Generating Station; SCI = Santa Cruz Island. Pink lines indicate commercial shipping lanes. The black line encircles the region of interest.
 
 ## Figure App.C.2.5.
 
-An image of modeled sea surface current directions used to predict oil movement from May 20 to May 25, immediately following the Refugio Oil Spill (2015). 
+An image of modeled sea surface current directions used to predict oil movement from May 20 to May 25, immediately following the Refugio Oil Spill (2015). Source: [SCCOOS](http://sccoos.org/); Figure: B. Emery and [L. Washburn/UCSB](https://msi.ucsb.edu/people/faculty/libe-washburn)
 
 ### Details
 
-Daily snapshots of oil transport simulations (blue dots) based on near-real time sea surface current direction and speeds (black arrows) from May 20 to 25, 2015, the days just after the Refugio oil spill. Yellow triangles represent SCCOOS high frequency radar (HFR) observation stations. PTC = Point Conception; RFG = Refugio State Beach; COP = Coal Oil Point. Not pictured is a HFR station at Gaviota, which was temporarily installed for one and half months following the spill (currently no longer active, see http://washburnlab.msi.ucsb.edu/mtu1) to address local data gaps. Not labeled is the yellow triangle/HFR station on Santa Cruz Island. Pink lines indicated commercial shipping lanes. [The full oil transport model simulation can be viewed online](http://sccoos.org/about/news/2015-refugio-state-beach-oil-spill/). Source: [SCCOOS](http://sccoos.org/); Figure: B. Emery and [L. Washburn/UCSB](https://msi.ucsb.edu/people/faculty/libe-washburn)
+Daily snapshots of oil transport simulations (blue dots) based on near-real time sea surface current direction and speeds (black arrows) from May 20 to 25, 2015, the days just after the Refugio oil spill. Yellow triangles represent SCCOOS high frequency radar (HFR) observation stations. PTC = Point Conception; RFG = Refugio State Beach; COP = Coal Oil Point. Not pictured is a HFR station at Gaviota, which was temporarily installed for one and half months following the spill (currently no longer active, see http://washburnlab.msi.ucsb.edu/mtu1) to address local data gaps. Not labeled is the yellow triangle/HFR station on Santa Cruz Island. Pink lines indicated commercial shipping lanes. [The full oil transport model simulation can be viewed online](http://sccoos.org/about/news/2015-refugio-state-beach-oil-spill/).
 
 ## Figure App.C.2.8.
 
-A map showing the location of historic (green dots) and current (yellow dots) passive acoustic monitoring stations around the Sanctuary and Santa Barbara Channel.
+A map showing the location of historic (green dots) and current (yellow dots) passive acoustic monitoring stations around the Sanctuary and Santa Barbara Channel. Map: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
 
 ### Details
 
-Previous (green dots) and current (yellow dots) passive acoustic monitoring stations in and around CINMS are shown along with several sources of anthropogenic noise: ports and harbors, oil platforms, shipping lanes, and military testing zones. SIO = Scripps Institution of Oceanography; NOAA NRS = Noise Reference Station. Map: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
+Previous (green dots) and current (yellow dots) passive acoustic monitoring stations in and around CINMS are shown along with several sources of anthropogenic noise: ports and harbors, oil platforms, shipping lanes, and military testing zones. SIO = Scripps Institution of Oceanography; NOAA NRS = Noise Reference Station.
 
 
 ## Figure App.C.3.1.
 
-A map showing vessel grounding locations from 1999 to 2016.
+A map showing vessel grounding locations from 1999 to 2016.Data source: Vessel Assist; Map: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
 
 ### Details
 
-Reported vessel grounding locations from 1999 to 2016 are shown in the map above. Not all groundings in the CINMS database are included as coordinates are unavailable for some grounding events. Data source: Vessel Assist; Map: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
+Reported vessel grounding locations from 1999 to 2016 are shown in the map above. Not all groundings in the CINMS database are included as coordinates are unavailable for some grounding events. 
 
 ## Figure App.C.3.2.
 
-A figure showing fish catch of bottom-dwelling fish, reported from within the Sanctuary from 1985 - 2015. 
+A figure showing fish catch of bottom-dwelling fish, reported from within the Sanctuary from 1985 - 2015. Data source: CDFW; Figure: [P. Etnoyer/NOAA](https://oceanexplorer.noaa.gov/edu/oceanage/03etnoyer/welcome.html)
+
 
 ### Details
 
-Landings (in pounds) and the relative contribution of gear types has changed over time due to changing regulations, economics, and consumer demand. Since 2002, there is zero to minimal set net and trawl landings, and reduced landings for bottom longlines and traps until 2008, followed by a dramatic increase in bottom longline and trap landings to peak levels. Data source: CDFW; Figure: [P. Etnoyer/NOAA](https://oceanexplorer.noaa.gov/edu/oceanage/03etnoyer/welcome.html)
+Landings (in pounds) and the relative contribution of gear types has changed over time due to changing regulations, economics, and consumer demand. Since 2002, there is zero to minimal set net and trawl landings, and reduced landings for bottom longlines and traps until 2008, followed by a dramatic increase in bottom longline and trap landings to peak levels.
 
 ## Figure App.C.3.3.
 
