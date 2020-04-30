@@ -72,7 +72,7 @@ md_caption <- function(title, md = here::here("modals/_captions.md"), get_detail
     return(details_md)
   } else {
     #return(glue("**{title}**. {simple_md}"))  
-    return(glue("**{title}**. {simple_md}"))  
+    return(glue("**{title}** {simple_md}"))  
   }
 
 }

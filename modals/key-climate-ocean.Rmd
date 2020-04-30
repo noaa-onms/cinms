@@ -44,11 +44,7 @@ get_modal_info()
 ```{r}
 # get most recent date
 date_end <- get_dates(sst)[2]
-```
 
-Map of the most recent (`r format(date_end,"%Y-%m-%d")`) sea-surface temperature around the site. Data source: PFEG CoastWatch via ERDDAP.
-
-```{r}
 leaflet(
   nms_ply,
   options = leafletOptions(
@@ -71,16 +67,16 @@ leaflet(
     colorNumeric("Spectral", c(0,32), reverse=T), seq(0,32))
 ```
 
+`r md_caption("Figure Ux.Ocean.SST.ERD.map.")`
+
+`r md_caption("Figure Ux.Ocean.SST.ERD.map.", get_details = T)`
+
 ### Chlorophyll
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
+```{r}
 # get most recent date
 d_2 <- get_dates(chl)[2]
-```
 
-Map of the most recent (`r format(d_2, "%Y-%m-%d")`) Chlorophyll-a around the site. Data Source: PFEG CoastWatch via ERDDAP.
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
 leaflet(
   nms_ply,
   options = leafletOptions(
@@ -103,16 +99,16 @@ leaflet(
     colorNumeric("Spectral", c(0,4), reverse=T), seq(0,4))
 ```
 
+`r md_caption("Figure Ux.Ocean.Chl.ERD.map.")`
+
+`r md_caption("Figure Ux.Ocean.Chl.ERD.map.", get_details = T)`
+
 ### Seascape
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
+```{r}
 # get most recent date
 d_2 <- get_dates(scape)[2]
-```
 
-Map of the most recent (`r format(d_2, "%Y-%m-%d")`) seascapes around the site. Data Source: AOML CWCGOM via ERDDAP.
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
 leaflet(
   nms_ply,
   options = leafletOptions(
@@ -135,8 +131,9 @@ leaflet(
     colorNumeric("Spectral", c(1,33), reverse=T), seq(1,33))
 ```
 
-Read more about seascapes [here](http://www.marinebon.org/seascapes.html). 
+`r md_caption("Figure Ux.Ocean.Seascape.ERD.map.")`
 
+`r md_caption("Figure Ux.Ocean.Seascape.ERD.map.", get_details = T)`
 
 ## Trends {.tabset}
 
@@ -167,23 +164,33 @@ Read more about seascapes [here](http://www.marinebon.org/seascapes.html).
 
 ### Temperature
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
+```{r}
 csv <- here(glue("data/oceano/sst_{nms}.csv"))
 d   <- get_timeseries(sst, lon=site$lon, lat=site$lat, csv=csv, field="sst")
 plot_timeseries(d, title="SST", color="red")
 ```
 
-Download data: [`r basename(csv)`](https://raw.githubusercontent.com/marinebon/`r nms`/master/data/oceano/`r basename(csv)`)
+Download timeseries data for sanctuary: [`r basename(csv)`](https://github.com/marinebon/`r nms`/raw/master/data/oceano/`r basename(csv)`)
+
+`r md_caption("Figure Ux.Ocean.SST.timeseries.")`
+
+`r md_caption("Figure Ux.Ocean.SST.timeseries.", get_details = T)`
+
 
 ### Chlorophyll
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
+```{r}
 csv <- here(glue("data/oceano/chl_{nms}.csv"))
 d_2   <- get_timeseries(chl, lon=site$lon, lat=site$lat, csv=csv, field="chlor_a")
 plot_timeseries(d_2, title="CHL", color="green")
 ```
 
-Download data: [`r basename(csv)`](https://raw.githubusercontent.com/marinebon/`r nms`/master/data/oceano/`r basename(csv))
+Download timeseries data for sanctuary: [`r basename(csv)`](https://github.com/marinebon/`r nms`/raw/master/data/oceano/`r basename(csv)`)
+
+`r md_caption("Figure Ux.Ocean.Chl.ERD.timeseries.")`
+
+`r md_caption("Figure Ux.Ocean.Chl.ERD.timeseries.", get_details = T)`
+
 
 ### Temp & N Anomalies (7-10m)
 
