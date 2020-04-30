@@ -7,6 +7,10 @@ source(here::here("scripts/utility.R"))
 get_modal_info()
 ```
 
+[More information about the Santa Barbara Channel Marine Biodiversity Network can be found here](https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100466)
+
+[SBC MBON data can be accessed here](http://sbc.marinebon.org/data/catalog/)
+
 ## {.tabset}
 
 ### Kelp forest fish - effective number of species
