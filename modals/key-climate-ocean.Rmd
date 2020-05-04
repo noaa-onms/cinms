@@ -39,6 +39,48 @@ get_modal_info()
 
 # {.tabset}
 
+## Timeseries {.tabset}
+
+### Temperature
+
+```{r}
+csv  <- here(glue("data/oceano/sst_{nms}.csv"))
+url  <- glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv)}")
+html <- a(basename(csv), href=url, target='_blank')
+
+d   <- get_timeseries(sst, lon=site$lon, lat=site$lat, csv=csv, field="sst")
+plot_timeseries(d, title="SST", color="red")
+```
+
+`r md_caption("Figure Ux.Ocean.SST.ERD.timeseries.")`
+
+`r md_caption("Figure Ux.Ocean.SST.ERD.timeseries.", get_details = T)`
+
+Download timeseries data for sanctuary: `r html`
+
+### Chlorophyll
+
+```{r}
+csv  <- here(glue("data/oceano/chl_{nms}.csv"))
+url  <- glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv)}")
+html <- a(basename(csv), href=url, target='_blank')
+
+d_2   <- get_timeseries(chl, lon=site$lon, lat=site$lat, csv=csv, field="chlor_a")
+plot_timeseries(d_2, title="CHL", color="green")
+```
+
+`r md_caption("Figure Ux.Ocean.Chl.ERD.timeseries.")`
+
+`r md_caption("Figure Ux.Ocean.Chl.ERD.timeseries.", get_details = T)`
+
+Download timeseries data for sanctuary: `r html`
+
+### Temp & N Anomalies (7-10m)
+
+![**Figure App.D.6.7.** Monthly anomalies in (top panel) observed bottom temperature (°C) at 7–10 meters depth and (bottom panel) modeled bottom nitrate concentrations (μmol/L) at 7–10 meters depth along the Santa Barbara Channel mainland nearshore (nine sampling sites roughly spanning from Gaviota east to Ventura). The anomalously warm years of 2014–2015 are shown in red. Similar trends were seen at the islands. Figure: Reed et al. 2016/Santa Barbara Coastal Long-term Ecological Research
+](../img/cinms_cr/App.D.6.7_SST and nitrate anomalies 2001-2015_Reed et al._2016.jpg)
+
+
 ## Maps {.tabset}
 
 ### Temperature
@@ -137,47 +179,6 @@ leaflet(
 
 `r md_caption("Figure Ux.Ocean.Seascape.ERD.map.", get_details = T)`
 
-
-## Timeseries {.tabset}
-
-### Temperature
-
-```{r}
-csv  <- here(glue("data/oceano/sst_{nms}.csv"))
-url  <- glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv)}")
-html <- a(basename(csv), href=url, target='_blank')
-
-d   <- get_timeseries(sst, lon=site$lon, lat=site$lat, csv=csv, field="sst")
-plot_timeseries(d, title="SST", color="red")
-```
-
-`r md_caption("Figure Ux.Ocean.SST.ERD.timeseries.")`
-
-`r md_caption("Figure Ux.Ocean.SST.ERD.timeseries.", get_details = T)`
-
-Download timeseries data for sanctuary: `r html`
-
-### Chlorophyll
-
-```{r}
-csv  <- here(glue("data/oceano/chl_{nms}.csv"))
-url  <- glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv)}")
-html <- a(basename(csv), href=url, target='_blank')
-
-d_2   <- get_timeseries(chl, lon=site$lon, lat=site$lat, csv=csv, field="chlor_a")
-plot_timeseries(d_2, title="CHL", color="green")
-```
-
-`r md_caption("Figure Ux.Ocean.Chl.ERD.timeseries.")`
-
-`r md_caption("Figure Ux.Ocean.Chl.ERD.timeseries.", get_details = T)`
-
-Download timeseries data for sanctuary: `r html`
-
-### Temp & N Anomalies (7-10m)
-
-![**Figure App.D.6.7.** Monthly anomalies in (top panel) observed bottom temperature (°C) at 7–10 meters depth and (bottom panel) modeled bottom nitrate concentrations (μmol/L) at 7–10 meters depth along the Santa Barbara Channel mainland nearshore (nine sampling sites roughly spanning from Gaviota east to Ventura). The anomalously warm years of 2014–2015 are shown in red. Similar trends were seen at the islands. Figure: Reed et al. 2016/Santa Barbara Coastal Long-term Ecological Research
-](../img/cinms_cr/App.D.6.7_SST and nitrate anomalies 2001-2015_Reed et al._2016.jpg)
 
 ## Trends {.tabset}
 
