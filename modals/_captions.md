@@ -940,7 +940,7 @@ Trends in seabird abundance and the relative abundance of krill and forage fish,
 
 ## Figure App.F.13.23.
 
-A figure showing counts of California sea lion pups from 2075-2011. Figure: Carretta et al. 2016
+A figure showing counts of California sea lion pups from 1975-2011. Figure: Carretta et al. 2016
 
 ### Details
 
