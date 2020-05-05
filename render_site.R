@@ -9,12 +9,16 @@ here = here::here
 
 # parameters
 csv         <- here("svg/svg_links_cinms.csv")
-redo_modals <- F
+redo_modals <- T
 
 # skip modals that Ben has to process independently
 skip_modals <- c(
   "key-climate-ocean.Rmd",
-  "barnacles.Rmd","mussels.Rmd","ochre-stars.Rmd")
+  "barnacles.Rmd","mussels.Rmd","ochre-stars.Rmd",
+  # BB TODO: 
+  # Quitting from lines 28-29 (forage-assemblage.Rmd) 
+  # Error in get(".xts_chob", .plotxtsEnv) : object '.xts_chob' not found
+  "forage-assemblage.Rmd", "forage-fish.Rmd", "forage-inverts.Rmd")
 
 # read in links for svg
 d <- read_csv(csv) %>% 
@@ -25,6 +29,11 @@ d_modals <- d %>%
   group_by(link) %>% 
   summarize(n_habitats = n()) %>% 
   ungroup()
+
+# quick hack to move beyond problem forage-assemblage.Rmd
+idx_next <- which(d_modals$link ==  "modals/forage-inverts.html") + 1
+d_modals %>% 
+  slice(idx_next:nrow(d_modals))
 
 render_page <- function(rmd){
   render(rmd, html_document(
