@@ -676,7 +676,7 @@ An image from Marine Applied Research and Exploration ([MARE](https://www.maregr
 
 ## Figure App.F.12.16.
 
-A figure showing the density of California sheephead inside fished (blue) and unfished (red) marine reserves around the Channel Islands. Figure: [MARE](https://www.maregroup.org/)
+A figure showing the density of California sheephead inside fished (blue) and unfished (red) marine reserves around the Channel Islands. Source: [MARE](https://www.maregroup.org/)
 
 
 ### Details
