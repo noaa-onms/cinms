@@ -741,8 +741,6 @@ Relative abundance of key forage fish groups collected in net samples during spr
 ## Figure App.F.12.19.sardine
 
 A figure showing the relative abundance of Pacific sardine (*Sardinops sagax*) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 - 2018. Data source: CalCOFI; Figure: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/)
-=======
->>>>>>> 9ab0fdd2fceced09efb02e4d6c79e0dc610d2062
 
 ### Details
 
