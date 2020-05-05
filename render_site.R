@@ -9,7 +9,7 @@ here = here::here
 
 # parameters
 csv         <- here("svg/svg_links_cinms.csv")
-redo_modals <- F
+redo_modals <- T
 
 # skip modals that Ben has to process independently
 skip_modals <- c(
