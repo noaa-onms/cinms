@@ -697,7 +697,6 @@ Mean volume of small plankton collected in net samples during CalCOFI cruises at
 
 ## Figure App.F.12.19.anchovy
 
-<<<<<<< HEAD
 A figure showing the relative abundance of northern anchovy (*Engraulis mordax*) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 - 2018. Data source: CalCOFI; Figure: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/)
 
 
