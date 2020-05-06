@@ -14,9 +14,3 @@ get_modal_info()
 ![`r md_caption("Figure App.C.4.6a.")`](../img/cinms_cr/App.C.4.6a.crab_landings_CDFW.jpg)
 
 `r md_caption("Figure App.C.4.6a.", get_details=T)`
-
-#### Fishers
-
-![`r md_caption("Figure App.C.4.6b.")`](../img/cinms_cr/App.C.4.6b.crab_fishers_CDFW.jpg)
-
-`r md_caption("Figure App.C.4.6b.", get_details=T)`

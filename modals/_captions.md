@@ -946,13 +946,13 @@ A figure showing counts of California sea lion pups from 1975-2011. Figure: Carr
 
 U.S. pup count index for California sea lions _Zalophus californianus_ (1975–2011). Trends in pup counts from 1975–2011 are shown for four rookeries in southern California and for haulouts in central and northern California. 
 
-## Figure App.F.13.24.
+## Figure App.F.13.24_new.
 
-A figure showing live pup counts (top) and average pup growth (bottom) for California sea lion pups on San Miguel Island from 1997 - 2014. Figure: NMFS 2016a
+A figure showing live pup counts (top) and female sea lion pup growth (bottom) for California sea lion pups on San Miguel Island from 1997 - 2019. Figure: [NOAA](https://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.html?time,live_pup_count)
 
 ### Details
 
-Live pup count (top) and mean pup growth index for California sea lions _Zalophus californianus_ (1997–2014). Recent trends in pup counts have been stable, but declining for pup growth likely due to low availability of prey resources in central and southern California, which is the foraging range of nursing females. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (–), or within 1 standard deviation (●) of the mean of the full time series.
+Live pup count (top) and female pup growth index for California sea lions _Zalophus californianus_ (1997–2019). Recent trends in pup counts have been stable, but declining for pup growth likely due to low availability of prey resources in central and southern California, which is the foraging range of nursing females. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (–), or within 1 standard deviation (●) of the mean of the full time series.
 
 ## Figure App.F.13.25.
 

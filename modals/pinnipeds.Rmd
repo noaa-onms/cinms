@@ -8,15 +8,17 @@ get_modal_info()
 
 ## {.tabset}
 
-### California sea lion pups
+### California sea lion (_Zalophus californianus_)
 
 ![`r md_caption("Figure App.F.13.23.")`](../img/cinms_cr/App.F.13.23.jpg)
 
 `r md_caption("Figure App.F.13.23.", get_details=T)`
 
-![`r md_caption("Figure App.F.13.24.")`](../img/cinms_cr/App.F.13.24.jpg)
+### California sea lion pup indicators 
 
-`r md_caption("Figure App.F.13.24.", get_details=T)`
+![`r md_caption("Figure App.F.13.24_new.")`](../img/cinms_cr/App.F.13.24_new.png)
+
+`r md_caption("Figure App.F.13.24_new.", get_details=T)`
 
 ### Harbor seals (_Phoca vitulina_)
 

@@ -14,9 +14,3 @@ get_modal_info()
 ![`r md_caption("Figure App.C.4.5a.")`](../img/cinms_cr/App.C.4.5a.Halibut_landings_CDFW.jpg)
 
 `r md_caption("Figure App.C.4.5a.", get_details=T)`
-
-### Vessels
-
-![`r md_caption("Figure App.C.4.5b.")`](../img/cinms_cr/App.C.4.5b.CDFW_halibut_vessels.jpg)
-
-`r md_caption("Figure App.C.4.5b.", get_details=T)`
