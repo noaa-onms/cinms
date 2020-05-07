@@ -31,10 +31,3 @@ get_modal_info()
 ![`r md_caption("Figure App.F.12.8b.")`](../img/cinms_cr/App.F.12.8b.Pycnopodia_helianthoides_CINP.jpg)
 
 `r md_caption("Figure App.F.12.8b.", get_details=T)`
-
-### MARE: Sunflower star
-
-![`r md_caption("Figure App.F.12.15.")`](../img/cinms_cr/App.F.12.15.Pycnopodia_MARE.jpg)
-
-`r md_caption("Figure App.F.12.15.", get_details=T)`
-

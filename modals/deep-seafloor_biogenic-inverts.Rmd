@@ -7,8 +7,22 @@ source(here::here("scripts/utility.R"))
 get_modal_info()
 ```
 
+## {.tabset}
+
 ### Gorgonian Corals
 
 ![`r md_caption("Figure App.C.3.4.")`](../img/cinms_cr/App.C.3.4_SWFSC_Fixed2007-2011_Gorgonians.jpg)
 
 `r md_caption("Figure App.C.3.4.", get_details=T)`
+
+### Relative abundance Deep-water Corals
+
+![`r md_caption("Figure App.E.10.26.")`](../img/cinms_cr/App.E.10.26.jpg)
+
+`r md_caption("Figure App.E.10.26.", get_details=T)`
+
+### Condition of Gorgonian Corals
+
+![`r md_caption("Figure App.E.10.28.")`](../img/cinms_cr/App.E.10.28.jpg)
+
+`r md_caption("Figure App.E.10.28.", get_details=T)`

@@ -37,11 +37,5 @@ get_modal_info()
 `r md_caption("Figure App.F.12.14.", get_details=T)`
 
 
-### MARE: Density In/Out MPAs
-
-![`r md_caption("Figure App.F.12.16.")`](../img/cinms_cr/App.F.12.16.sheephead_MARE.jpg)
-
-`r md_caption("Figure App.F.12.16.", get_details=T)`
-
 
  
