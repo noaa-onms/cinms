@@ -17,13 +17,13 @@ get_modal_info()
 map_nms_sites("cinms")
 ```
 
-### Acorn Barnacles (_Chthamalus dalli/fissus/Balanus glandula_) {.active}
+### Acorn Barnacles (_Chthamalus dalli / fissus / Balanus glandula_) {.active}
 
 ```{r}
 plot_intertidal_nms(d_csv, "CINMS", "CHTBAL", "Acorn Barnacles")
 ```
 
-### Acorn Barnacles (_Chthamalus dalli/fissus/Balanus glandula_), target = balanus | chthamalus_balanus
+### Acorn Barnacles (_Chthamalus dalli/fissus/Balanus glandula_)
 
 ```{r}
 plot_intertidal_nms(d_csv, "CINMS", "CHTBAL", "Acorn Barnacles [target = balanus | chthamalus_balanus]", c("balanus", "chthamalus_balanus"))
