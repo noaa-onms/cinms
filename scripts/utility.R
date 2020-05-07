@@ -8,14 +8,7 @@ library(tidyr)
 library(stringr)
 
 md_caption <- function(title, md = here::here("modals/_captions.md"), get_details = F){
-  #title = "Figure S.Hab.10.3."
-  #title = "Figure App.F.12.17.new"
-  #md_caption("Figure App.F.12.17.new")
-  # title = "Figure App.C.4.4."
-  # title = "Figure App.F.13.9."
-  
-  #browser()
-  
+
   stopifnot(file.exists(md))
   
   tbl <- tibble(
@@ -51,6 +44,7 @@ md_caption <- function(title, md = here::here("modals/_captions.md"), get_detail
     # fill down
     fill(is_details)
   
+  
   simple_md <- tbl %>% 
     filter(is.na(is_details)) %>% 
     filter(ln != "") %>% 
@@ -58,21 +52,33 @@ md_caption <- function(title, md = here::here("modals/_captions.md"), get_detail
     paste0(collapse = "\n") %>% 
     str_trim()
     
+  # Remove spaces around figure title.
+  
+  title <- str_trim(title)
+  
+  # If the last character of the figure title is a period, delete it. This will improve how the title looks when embedded into the text.
+  
+  if (substring(title, nchar(title))=="."){
+      title<- substring(title,0,nchar(title)-1)
+  }
+      
+  # Append figure title (like App.F.13.2) to the end of expanded figure caption and add link to condition report    
+  
+  expanded_caption = paste('<details>\n  <summary>Click for Details</summary>\n\\1 For more information, consult', title, 
+    'in the [CINMS 2016 Condition Report](https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf){target="_blank"}.</details>')
+  
   details_md <- tbl %>%
     filter(is_details) %>% 
     filter(ln != "") %>% 
     pull(ln) %>% 
     paste0(collapse = "\n") %>% 
-    str_replace(
-      "### Details\n(.*)", 
-      "<details>\n  <summary>Click for Details</summary>\n\\1</details>") %>% 
+    str_replace("### Details\n(.*)", expanded_caption) %>% 
     str_trim()
   
   if (get_details == T){
     return(details_md)
   } else {
-    #return(glue("**{title}**. {simple_md}"))  
-    return(glue("**{title}** {simple_md}"))  
+    return(simple_md) 
   }
 
 }

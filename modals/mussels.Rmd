@@ -21,7 +21,7 @@ map_nms_sites("cinms")
 
 `r md_caption("Figure rocky.map.", get_details=T)`
 
-### California Mussels (_Mytilus californianus_), target = ANY {.active}
+### California Mussels (_Mytilus californianus_){.active}
 
 ```{r}
 plot_intertidal_nms(d_csv, "CINMS", "MYTCAL", "California Mussels")
