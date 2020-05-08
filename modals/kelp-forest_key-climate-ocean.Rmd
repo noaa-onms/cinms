@@ -1,0 +1,87 @@
+---
+output:
+  html_document:
+    toc: true
+    toc_depth: 5
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("scripts/utility.R"))
+```
+
+# {.tabset}
+## Temperature {.tabset}
+### Map: Satellite-based SST (CoastWatch)
+
+```{r}
+# get most recent date
+date_end <- get_dates(sst)[2]
+
+leaflet(
+  nms_ply,
+  options = leafletOptions(
+    crs = leafletCRS(crsClass = "L.CRS.EPSG4326"))) %>%
+  # basemap from GBIF in 4326
+  addTiles("//tile.gbif.org/4326/omt/{z}/{x}/{y}@1x.png?style=gbif-geyser") %>%
+  # sst
+  addWMSTiles(
+    baseUrl = 'https://coastwatch.pfeg.noaa.gov/erddap/wms/jplMURSST41mday/request?',
+    layers = "jplMURSST41mday:sst",
+    options = WMSTileOptions(
+      version = "1.3.0", format = "image/png", transparent = T, opacity = 0.7,
+      time = format(date_end,"%Y-%m-%dT00:00:00Z")))  %>%
+  addPolygons() %>% 
+  addMarkers(lng = ~lon, lat = ~lat, label = ~id, data=site) %>%
+  addMouseCoordinates() %>%
+  addLegend(
+    position="bottomright",
+    title = paste0("SST (°C)<br>", format(date_end,"%Y-%m-%d")),
+    colorNumeric("Spectral", c(0,32), reverse=T), seq(0,32))
+```
+
+`r md_caption("Figure Ux.Ocean.SST.ERD.map.")`
+
+`r md_caption("Figure Ux.Ocean.SST.ERD.map.", get_details = T)`
+
+
+
+### Trend: Satellite-based SST (CoastWatch)
+
+```{r}
+csv  <- here(glue("data/oceano/sst_{nms}.csv"))
+url  <- glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv)}")
+html <- a(basename(csv), href=url, target='_blank')
+
+d   <- get_timeseries(sst, lon=site$lon, lat=site$lat, csv=csv, field="sst")
+plot_timeseries(d, title="SST", color="red")
+```
+
+`r md_caption("Figure Ux.Ocean.SST.ERD.timeseries.")`
+
+`r md_caption("Figure Ux.Ocean.SST.ERD.timeseries.", get_details = T)`
+
+Download timeseries data for sanctuary: `r html`
+
+
+## Nutrients {.tabset}
+
+### Trend: Nitrate profile (PnB)
+
+![`r md_caption("Figure App.D.6.5.")`](../img/cinms_cr/App.D.6.5.png)
+
+`r md_caption("Figure App.D.6.5.", get_details=T)`
+
+### Trend: Phosphate profile (PnB)
+![`r md_caption("Figure App.D.6.6.")`](../img/cinms_cr/App.D.6.6.png)
+
+`r md_caption("Figure App.D.6.6.", get_details=T)`
+
+### Trend: Nitrate anomaly
+
+![`r md_caption("Figure App.D.6.7.")`](../img/cinms_cr/App.D.6.7_SST and nitrate anomalies 2001-2015_Reed et al._2016.jpg)
+
+`r md_caption("Figure App.D.6.7.", get_details=T)`
+

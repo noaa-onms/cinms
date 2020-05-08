@@ -316,6 +316,31 @@ Annual number of unique research projects (green) and active research permits (r
 
 Number of projects with active CDFW research permits in CINMS by habitat type. Active permits only include those that are currently in use; non-student permits are issued for three years and student permits are issued for only one year. Student permits issued before June 6, 2015 were not included in this summary. 
 
+## Figure App.D.6.5.
+
+A figure showing nitrate concentrations (a form of organic nitrogen) at a Plumes and Blooms sampling station from 1997 - 2015 (top) and 2009 - 2015 (bottom). Figure: Siegel et al. submitted. [Plumes and Blooms] (http://www.oceancolor.ucsb.edu/plumes_and_blooms)
+
+### Details
+
+Nitrate concentrations (NO3 μmol/L) at Plumes and Blooms sampling station #4 (34°15.01’N, 119°54.38’W, see Figure D6.2) for (a) 1997–2015; and (b) 2009–2015, a subset of Figure D6.6a of the years since the last condition report. While station #4 is outside the sanctuary boundary and there are other sampling sites within the sanctuary, it is the only sampling site that collects measurements throughout the water column, versus from just surface waters. This time-depth contour plot was generated via ordinary krigging with a generalized exponential-Bessel fitting model (GLOBEC Kriging Software Package v3.0), with interpolation length scales of 30 days (time axis) and ten meters (depth axis). The time and location of each actual sample are shown as black dots, allowing the observation of periods where data gaps exist.
+
+## Figure App.D.6.6.
+
+A figure showing phosphate concentrations (a form of organic phosophorous) at a Plumes and Blooms sampling station from 1997 - 2015 (top) and 2009 - 2015 (bottom). Figure: Siegel et al. submitted. [Plumes and Blooms] (http://www.oceancolor.ucsb.edu/plumes_and_blooms)
+
+### Details
+
+Phosphate concentration (PO4 μg/L) at Plumes and Blooms sampling station #4 (34°15.01’N, 119°54.38’W, see Figure D6.2) for (a) 1997–2015; and (b) 2009–2015 a subset of Figure D6.7a of the years since the last condition report. While station #4 is outside the sanctuary boundary and there are other sampling sites within the sanctuary, it is the only sampling site that collects measurements throughout the water column, versus from just surface waters. This time-depth contour plot was generated via ordinary krigging with a generalized exponential-Bessel fitting model (GLOBEC Kriging Software Package v3.0), with interpolation length scales of 30 days (time axis) and ten meters (depth axis). The time and location of each actual sample are shown as black dots, allowing the observation of periods where data gaps exist. Figure: Siegel et al. submitted. Plumes and Blooms: http://www.oceancolor.ucsb.edu/plumes_and_blooms
+Note: This is variant of a similar figure shown during the expert workshop.
+
+## Figure App.D.6.7.
+
+A figure showing unexpected monthly temperature differences (top) and corresponding nitrate concentrations (bottom) from 2001 - 2015. Data were collected at 7-10 meters depth. Figure: Reed et al. 2016
+
+### Details
+
+Monthly anomalies in (top panel) observed bottom temperature (°C) at 7–10 meters depth and (bottom panel) modeled bottom nitrate concentrations (μmol/L) at 7–10 meters depth along the Santa Barbara Channel mainland nearshore (nine sampling sites roughly spanning from Gaviota east to Ventura). The anomalously warm years of 2014–2015 are shown in red. Similar trends were seen at the islands.
+
 ## Figure App.D.7.1.
 
 A figure showing [domoic acid](https://marinebon.org/cinms/glossary) levels in commercially-important crustaceans (triangles) and bivalves (circles) collected from the Santa Barbara Channel (2012 - 2013). Red coloration indiciates that the domic acid levels measured above the California Department of Public Health and U.S. Food and Drug Administration action limits. Figure credit: [C. Culver/CA Sea Grant](https://caseagrant.ucsd.edu/profile/carolynn-culver), unpublished data.
@@ -331,6 +356,22 @@ A map showing an unprecedented West Coast-wide [harmful algal bloom (HAB)](https
 ### Details
 
 In May 2015, an unprecedented West Coast-wide harmful algal bloom (HAB) extended from the Gulf of Alaska to southern California. The bloom was composed of _Pseudo-nitzschia_, a toxigenic diatom that has the ability to produce domoic acid, a potent neurotoxin that can cause amnesic shellfish poisoning (ASP) and threaten human health if affected shellfish are consumed. These satellite images show chlorophyll-a estimates averaged over the periods of March 27–31, 2015 (left panel), and May, 6–8, 2015 (right panel). 
+
+## Figure App.D.8.3.
+
+A figure showing three metrics of climate and ocean conidtions in the North Pacific Basin from 1999 to 2018. Data source: [NPGO](http://www.o3d.org/npgo/), [PDO](http://jisao.washington.edu/pdo/), [ONI](http://origin.cpc.ncep.noaa.gov/products/analysis_monitoring/ensostuff/ONI_v5.php). Figure: I. Schroeder/NOAA
+
+### Details
+
+Three indices of climate and ocean conditions in the North Pacific Basin shifted in 2014 from conditions promoting high primary productivity to less productive conditions. The Oceanic Niño Index (ONI) indicates the presence/absence of El Niño conditions with positive anomaly values (red) denoting El Niño conditions and negative values denoting La Niña conditions. The Pacific Decadal Oscillation (PDO) index is related to North Pacific sea surface temperature with cold regimes (blue) associated with higher productivity and warmer regimes (red) associated with lower productivity. The North Pacific Gyre Oscillation (NPGO) is influenced by sea level and circulation patterns. Positive values of the NPGO (red) are linked to stronger currents and higher productivity while negative values (blue) are linked to weaker currents and lower productivity. The graphs show the long-term mean (0) ± 3.0 standard deviations based on the full time series. 
+
+## Figure App.D.8.4. 
+
+A figure showing a time-series of temperature profiles (ºC) sampled in the Channel Islands for 1997-2015 (top) and 2009 - 2015 (bottom). Figure: Siegel et al. submitted. [Plumes and Blooms](http://www.oceancolor.ucsb.edu/plumes_and_blooms)
+
+### Details
+
+Time-series of temperature (°C) profiles at Plumes and Blooms sampling station #4 (34°15.01’N, 119°54.38’W, see Figure D6.2) for (a) 1997–2015 and (b) 2009–2015. While station #4 is outside the sanctuary boundary and there are other sampling sites within the sanctuary, it is the only sampling site that collects measurements throughout the water column, versus from just surface waters. This time-depth contour plot was generated via ordinary krigging with a generalized exponential-Bessel fitting model (GLOBEC Kriging Software Package v3.0), with interpolation length scales of 30 days (time axis) and ten meters (depth axis). The time and location of each actual sample are shown as black dots, allowing the observation of periods where data gaps exist. Note: This is variant of a similar figure shown during the expert workshop.
 
 ## Figure App.E.10.11.
 
