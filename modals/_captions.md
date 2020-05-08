@@ -176,7 +176,7 @@ A figure showing the pounds of California halibut landed by gear type in the com
 
 ### Details
 
-Landings of California halibut (*Paralichthys californicus*) in blocks around Channel Islands National Marine Sanctuary by hook/line (blue), gillnet (green), and trawl (teal) fishing gear. Landings data from the Santa Barbara port complex (Santa Barbara, Ventura, Oxnard, and Port Hueneme) and reflect take from the Fish and Game blocks 683–691, 706-714, 744, 745, 764, and 765 (see Figure App.C4.3 for map of blocks). 
+Landings of California halibut (*Paralichthys californicus*) in blocks around Channel Islands National Marine Sanctuary by hook/line (blue), gillnet (green), and trawl (teal) fishing gear. Landings data from the Santa Barbara port complex (Santa Barbara, Ventura, Oxnard, and Port Hueneme) and reflect take from the Fish and Game blocks 683-691, 706-714, 744, 745, 764, and 765 (see Figure App.C4.3 for map of blocks). 
 
 ## Figure App.C.4.5b.
 
@@ -184,7 +184,7 @@ A figure showing the number of fishing vessels (and gear types used) in the Cali
 
 ### Details
 
-The number of vessels fishing for California halibut (*Paralichthys californicus*) in blocks around Channel Islands National Marine Sanctuary by hook/line (blue), gillnet (green), and trawl (teal) fishing gear. Landings data from the Santa Barbara port complex (Santa Barbara, Ventura, Oxnard, and Port Hueneme) and reflect take from the Fish and Game blocks 683–691, 706-714, 744, 745, 764, and 765 (see Figure App.C4.3 for map of blocks).
+The number of vessels fishing for California halibut (*Paralichthys californicus*) in blocks around Channel Islands National Marine Sanctuary by hook/line (blue), gillnet (green), and trawl (teal) fishing gear. Landings data from the Santa Barbara port complex (Santa Barbara, Ventura, Oxnard, and Port Hueneme) and reflect take from the Fish and Game blocks 683-691, 706-714, 744, 745, 764, and 765 (see Figure App.C4.3 for map of blocks).
 
 ## Figure App.C.4.6a.
 
@@ -192,7 +192,7 @@ A figure showing the increase in rock crab fishing from 2007 - 2015.Data source:
 
 ### Details
 
-Commercial fishing activity for rock crabs has increased recently in blocks around Channel Islands National Marine Sanctuary. Landings of rock crabs have increased since 2010. Commercial rock crab data from blocks 683–691, 706–714, 744–745, and 764–765 (see Figure App.C4.3 for map of blocks). 
+Commercial fishing activity for rock crabs has increased recently in blocks around Channel Islands National Marine Sanctuary. Landings of rock crabs have increased since 2010. Commercial rock crab data from blocks 683-691, 706-714, 744-745, and 764-765 (see Figure App.C4.3 for map of blocks). 
 
 ## Figure App.C.4.6b.
 
@@ -200,7 +200,7 @@ A figure showing the increase in the number of crabbers (those who fish for crab
 
 ### Details
 
-Commercial fishing activity for rock crabs has increased recently in blocks around Channel Islands National Marine Sanctuary. The number of fishers landing crab has increased since 2008. Commercial rock crab data from blocks 683–691, 706–714, 744–745, and 764–765 (see Figure App.C4.3 for map of blocks). 
+Commercial fishing activity for rock crabs has increased recently in blocks around Channel Islands National Marine Sanctuary. The number of fishers landing crab has increased since 2008. Commercial rock crab data from blocks 683-691, 706-714, 744-745, and 764-765 (see Figure App.C4.3 for map of blocks). 
 
 ## Figure App.C.4.7. 
 
@@ -322,7 +322,7 @@ A figure showing nitrate concentrations (a form of organic nitrogen) at a Plumes
 
 ### Details
 
-Nitrate concentrations (NO3 μmol/L) at Plumes and Blooms sampling station #4 (34°15.01’N, 119°54.38’W, see Figure D6.2) for (a) 1997–2015; and (b) 2009–2015, a subset of Figure D6.6a of the years since the last condition report. While station #4 is outside the sanctuary boundary and there are other sampling sites within the sanctuary, it is the only sampling site that collects measurements throughout the water column, versus from just surface waters. This time-depth contour plot was generated via ordinary krigging with a generalized exponential-Bessel fitting model (GLOBEC Kriging Software Package v3.0), with interpolation length scales of 30 days (time axis) and ten meters (depth axis). The time and location of each actual sample are shown as black dots, allowing the observation of periods where data gaps exist.
+Nitrate concentrations (NO3 μmol/L) at Plumes and Blooms sampling station #4 (34°15.01’N, 119°54.38’W, see Figure D6.2) for (a) 1997-2015; and (b) 2009-2015, a subset of Figure D6.6a of the years since the last condition report. While station #4 is outside the sanctuary boundary and there are other sampling sites within the sanctuary, it is the only sampling site that collects measurements throughout the water column, versus from just surface waters. This time-depth contour plot was generated via ordinary krigging with a generalized exponential-Bessel fitting model (GLOBEC Kriging Software Package v3.0), with interpolation length scales of 30 days (time axis) and ten meters (depth axis). The time and location of each actual sample are shown as black dots, allowing the observation of periods where data gaps exist.
 
 ## Figure App.D.6.6.
 
@@ -330,7 +330,7 @@ A figure showing phosphate concentrations (a form of organic phosophorous) at a 
 
 ### Details
 
-Phosphate concentration (PO4 μg/L) at Plumes and Blooms sampling station #4 (34°15.01’N, 119°54.38’W, see Figure D6.2) for (a) 1997–2015; and (b) 2009–2015 a subset of Figure D6.7a of the years since the last condition report. While station #4 is outside the sanctuary boundary and there are other sampling sites within the sanctuary, it is the only sampling site that collects measurements throughout the water column, versus from just surface waters. This time-depth contour plot was generated via ordinary krigging with a generalized exponential-Bessel fitting model (GLOBEC Kriging Software Package v3.0), with interpolation length scales of 30 days (time axis) and ten meters (depth axis). The time and location of each actual sample are shown as black dots, allowing the observation of periods where data gaps exist. Figure: Siegel et al. submitted. Plumes and Blooms: http://www.oceancolor.ucsb.edu/plumes_and_blooms
+Phosphate concentration (PO4 μg/L) at Plumes and Blooms sampling station #4 (34°15.01’N, 119°54.38’W, see Figure D6.2) for (a) 1997-2015; and (b) 2009-2015 a subset of Figure D6.7a of the years since the last condition report. While station #4 is outside the sanctuary boundary and there are other sampling sites within the sanctuary, it is the only sampling site that collects measurements throughout the water column, versus from just surface waters. This time-depth contour plot was generated via ordinary krigging with a generalized exponential-Bessel fitting model (GLOBEC Kriging Software Package v3.0), with interpolation length scales of 30 days (time axis) and ten meters (depth axis). The time and location of each actual sample are shown as black dots, allowing the observation of periods where data gaps exist. Figure: Siegel et al. submitted. Plumes and Blooms: http://www.oceancolor.ucsb.edu/plumes_and_blooms
 Note: This is variant of a similar figure shown during the expert workshop.
 
 ## Figure App.D.6.7.
@@ -339,7 +339,7 @@ A figure showing unexpected monthly temperature differences (top) and correspond
 
 ### Details
 
-Monthly anomalies in (top panel) observed bottom temperature (°C) at 7–10 meters depth and (bottom panel) modeled bottom nitrate concentrations (μmol/L) at 7–10 meters depth along the Santa Barbara Channel mainland nearshore (nine sampling sites roughly spanning from Gaviota east to Ventura). The anomalously warm years of 2014–2015 are shown in red. Similar trends were seen at the islands.
+Monthly anomalies in (top panel) observed bottom temperature (°C) at 7-10 meters depth and (bottom panel) modeled bottom nitrate concentrations (μmol/L) at 7-10 meters depth along the Santa Barbara Channel mainland nearshore (nine sampling sites roughly spanning from Gaviota east to Ventura). The anomalously warm years of 2014-2015 are shown in red. Similar trends were seen at the islands.
 
 ## Figure App.D.7.1.
 
@@ -355,7 +355,7 @@ A map showing an unprecedented West Coast-wide [harmful algal bloom (HAB)](https
 
 ### Details
 
-In May 2015, an unprecedented West Coast-wide harmful algal bloom (HAB) extended from the Gulf of Alaska to southern California. The bloom was composed of _Pseudo-nitzschia_, a toxigenic diatom that has the ability to produce domoic acid, a potent neurotoxin that can cause amnesic shellfish poisoning (ASP) and threaten human health if affected shellfish are consumed. These satellite images show chlorophyll-a estimates averaged over the periods of March 27–31, 2015 (left panel), and May, 6–8, 2015 (right panel). 
+In May 2015, an unprecedented West Coast-wide harmful algal bloom (HAB) extended from the Gulf of Alaska to southern California. The bloom was composed of _Pseudo-nitzschia_, a toxigenic diatom that has the ability to produce domoic acid, a potent neurotoxin that can cause amnesic shellfish poisoning (ASP) and threaten human health if affected shellfish are consumed. These satellite images show chlorophyll-a estimates averaged over the periods of March 27-31, 2015 (left panel), and May, 6-8, 2015 (right panel). 
 
 ## Figure App.D.8.3.
 
@@ -371,7 +371,7 @@ A figure showing a time-series of temperature profiles (ºC) sampled in the Chan
 
 ### Details
 
-Time-series of temperature (°C) profiles at Plumes and Blooms sampling station #4 (34°15.01’N, 119°54.38’W, see Figure D6.2) for (a) 1997–2015 and (b) 2009–2015. While station #4 is outside the sanctuary boundary and there are other sampling sites within the sanctuary, it is the only sampling site that collects measurements throughout the water column, versus from just surface waters. This time-depth contour plot was generated via ordinary krigging with a generalized exponential-Bessel fitting model (GLOBEC Kriging Software Package v3.0), with interpolation length scales of 30 days (time axis) and ten meters (depth axis). The time and location of each actual sample are shown as black dots, allowing the observation of periods where data gaps exist. Note: This is variant of a similar figure shown during the expert workshop.
+Time-series of temperature (°C) profiles at Plumes and Blooms sampling station #4 (34°15.01’N, 119°54.38’W, see Figure D6.2) for (a) 1997-2015 and (b) 2009-2015. While station #4 is outside the sanctuary boundary and there are other sampling sites within the sanctuary, it is the only sampling site that collects measurements throughout the water column, versus from just surface waters. This time-depth contour plot was generated via ordinary krigging with a generalized exponential-Bessel fitting model (GLOBEC Kriging Software Package v3.0), with interpolation length scales of 30 days (time axis) and ten meters (depth axis). The time and location of each actual sample are shown as black dots, allowing the observation of periods where data gaps exist. Note: This is variant of a similar figure shown during the expert workshop.
 
 ## Figure App.E.10.11.
 
@@ -474,7 +474,7 @@ A map showing contaminant monitoring sites for mussels in Southern California (t
 
 ### Details
 
-Mussel tissue contaminant monitoring sites from NOAA’s Mussel Watch Program are shown in southern California (top) and around CINMS (bottom). Only one site within CINMS has been monitored consistently over time: Fraser Point, SCI (1986–2010), Other monitoring sites include: Anacapa (2008 only); Tyler Bight, south SMI (1988 only); and Otter Harbor, north SMI (2008-2010). 
+Mussel tissue contaminant monitoring sites from NOAA’s Mussel Watch Program are shown in southern California (top) and around CINMS (bottom). Only one site within CINMS has been monitored consistently over time: Fraser Point, SCI (1986-2010), Other monitoring sites include: Anacapa (2008 only); Tyler Bight, south SMI (1988 only); and Otter Harbor, north SMI (2008-2010). 
 
 ## Figure App.E.11.2.
 
@@ -490,7 +490,7 @@ A figure showing the trends over time of iron found in mussel tissue from Santa 
 
 ### Details
 
-Time series of iron (as μg/g dry weight) in _Mytilus_ spp. at Fraser Point, Santa Cruz Island is shown above. Data is from NOAA’s Mussel Watch Program (monitored 1986–2010). Iron values have been slowly declining in _Mytilus_ spp. tissue. There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more through research and data collection is required to confirm this trend. 
+Time series of iron (as μg/g dry weight) in _Mytilus_ spp. at Fraser Point, Santa Cruz Island is shown above. Data is from NOAA’s Mussel Watch Program (monitored 1986-2010). Iron values have been slowly declining in _Mytilus_ spp. tissue. There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more through research and data collection is required to confirm this trend. 
 
 ## Figure App.E.11.4.
 
@@ -498,7 +498,7 @@ A figure showing the trends over time of silver found in mussel tissue from Sant
 
 ### Details
 
-Time series of silver (as μg/g dry weight) in _Mytilus_ spp. at Fraser Point, Santa Cruz Island is shown above. Data is from NOAA’s Mussel Watch Program (monitored 1986–2010). Silver values have been slowly declining in _Mytilus_ spp. tissue. There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more through research and data collection is required to confirm this trend. 
+Time series of silver (as μg/g dry weight) in _Mytilus_ spp. at Fraser Point, Santa Cruz Island is shown above. Data is from NOAA’s Mussel Watch Program (monitored 1986-2010). Silver values have been slowly declining in _Mytilus_ spp. tissue. There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more through research and data collection is required to confirm this trend. 
 
 ## Figure App.E.11.5.
 
@@ -506,7 +506,7 @@ A figure showing a coastwide comparison of heavy metals found in mussel tissue f
 
 ### Details
 
-This graph is a California coastwide comparison of total extractables (TE) from _Mytilus_ spp. tissue for heavy metals. Data is from NOAA’s Mussel Watch Program (monitored 1986–2010). The horizontal lines of the red box illustrate the 25th, median, and 75th percentiles, while the top and bottom whiskers represent the 10th and 90th percentiles. Black dots are data points from collection sites and the green ellipsoids represent mean concentration values for metals from sites within CINMS (n = 3). There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more through research and data collection is required to confirm this trend. 
+This graph is a California coastwide comparison of total extractables (TE) from _Mytilus_ spp. tissue for heavy metals. Data is from NOAA’s Mussel Watch Program (monitored 1986-2010). The horizontal lines of the red box illustrate the 25th, median, and 75th percentiles, while the top and bottom whiskers represent the 10th and 90th percentiles. Black dots are data points from collection sites and the green ellipsoids represent mean concentration values for metals from sites within CINMS (n = 3). There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more through research and data collection is required to confirm this trend. 
 
 ## Figure App.E.11.6.
 
@@ -619,7 +619,7 @@ A figure showing the trends in the density of sand crabs on Santa Rosa Island fr
 
 ### Details
 
-Mean density of sand crabs _Emerita analoga_ from surveys of eight beaches on Santa Rosa Island from 1994–2015. Curved blue line represents the statistically smoothed mean. 
+Mean density of sand crabs _Emerita analoga_ from surveys of eight beaches on Santa Rosa Island from 1994-2015. Curved blue line represents the statistically smoothed mean. 
 
 ## Figure App.F.12.5.
 
@@ -627,7 +627,7 @@ A figure showing the density of red and purple sea urchins near four of the Chan
 
 ### Details
 
-Mean density (+/- standard error) of red sea urchin _Mesocentrotus franciscanus_ (top) and purple sea urchin _Strongylocentrotus purpuratus_ (bottom) at 14 sites across four islands in Channel Islands National Marine Sanctuary monitored by the PISCO kelp forest monitoring program from 2003–2016. Recently, density of both species has declined at eastern islands (Anacapa and Santa Cruz) and increased at western islands (Santa Rosa and San Miguel). Sea urchins are counted by SCUBA divers swimming along transect lines. Sea urchin density was averaged across all monitoring sites at each island, including sites located inside and outside of marine reserves and conservation areas, to examine course-scale trends by island. At a finer scale, sea urchin density is responding differently inside and outside of some marine protected areas (MPAs) in CINMS. A discussion of MPA effects in CINMS is available in MPA Effects. 
+Mean density (+/- standard error) of red sea urchin _Mesocentrotus franciscanus_ (top) and purple sea urchin _Strongylocentrotus purpuratus_ (bottom) at 14 sites across four islands in Channel Islands National Marine Sanctuary monitored by the PISCO kelp forest monitoring program from 2003-2016. Recently, density of both species has declined at eastern islands (Anacapa and Santa Cruz) and increased at western islands (Santa Rosa and San Miguel). Sea urchins are counted by SCUBA divers swimming along transect lines. Sea urchin density was averaged across all monitoring sites at each island, including sites located inside and outside of marine reserves and conservation areas, to examine course-scale trends by island. At a finer scale, sea urchin density is responding differently inside and outside of some marine protected areas (MPAs) in CINMS. A discussion of MPA effects in CINMS is available in MPA Effects. 
 
 ## Figure App.F.12.6.
 
@@ -643,7 +643,7 @@ A figure showing the amount of three important sea stars at 14 different sites a
 
 ### Details
 
-Average density (+/- standard error) of giant spined star (*Pisaster giganteus*) (top), ochre star (*P. ochraceus*) (middle) and sunflower star (*Pycnopodia helianthoides*) (bottom) at 14 sites across four islands in Channel Islands National Marine Sanctuary monitored by the PISCO kelp forest monitoring program from 2003–2016. Sea stars are counted by SCUBA divers swimming along transect lines. Sea star density was averaged across all monitoring sites at each island, including sites located inside and outside of marine reserves and conservation areas, to examine course-scale trends by island. Giant, ochre, and sunflower stars suffered severe declines from 2013 to 2014 at all four islands due to sea star wasting syndrome.
+Average density (+/- standard error) of giant spined star (*Pisaster giganteus*) (top), ochre star (*P. ochraceus*) (middle) and sunflower star (*Pycnopodia helianthoides*) (bottom) at 14 sites across four islands in Channel Islands National Marine Sanctuary monitored by the PISCO kelp forest monitoring program from 2003-2016. Sea stars are counted by SCUBA divers swimming along transect lines. Sea star density was averaged across all monitoring sites at each island, including sites located inside and outside of marine reserves and conservation areas, to examine course-scale trends by island. Giant, ochre, and sunflower stars suffered severe declines from 2013 to 2014 at all four islands due to sea star wasting syndrome.
 
 ## Figure App.F.12.8a.
 
@@ -675,7 +675,7 @@ A figure showing the average density of California spiny lobster near four of th
 
 ### Details
 
-Average density (+/- standard error) of California spiny lobster (Panulirus interruptus) at 14 sites across four islands in Channel Islands National Marine Sanctuary monitored by the PISCO kelp forest monitoring program from 2003–2016. Lobster abundance is low at San Miguel (blue) and Santa Rosa (purple) islands and appears to be slowly increasing recently at Anacapa (red) and Santa Cruz (orange) islands. Lobster are counted by SCUBA divers swimming along transect lines. Lobster density was averaged across all monitoring sites at each island, including sites located inside and outside of marine reserves and conservation areas, to examine course-scale trends by island. At a finer scale, lobster density is responding differently inside and outside of some marine protected areas (MPAs) in CINMS. A discussion of MPA effects in CINMS is available in MPA Effects. 
+Average density (+/- standard error) of California spiny lobster (Panulirus interruptus) at 14 sites across four islands in Channel Islands National Marine Sanctuary monitored by the PISCO kelp forest monitoring program from 2003-2016. Lobster abundance is low at San Miguel (blue) and Santa Rosa (purple) islands and appears to be slowly increasing recently at Anacapa (red) and Santa Cruz (orange) islands. Lobster are counted by SCUBA divers swimming along transect lines. Lobster density was averaged across all monitoring sites at each island, including sites located inside and outside of marine reserves and conservation areas, to examine course-scale trends by island. At a finer scale, lobster density is responding differently inside and outside of some marine protected areas (MPAs) in CINMS. A discussion of MPA effects in CINMS is available in MPA Effects. 
 
 ## Figure App.F.12.11.
 
@@ -719,7 +719,7 @@ A figure showing the density of California sheephead inside fished (blue) and un
 
 ### Details
 
-Average density (per 100 m2 +/- SE) of California sheephead (*Semicossyphus pulcher*) at fished (blue) and unfished marine reserves (red) surveyed annually in two time periods 2005–2009 and 2014–2015. Density has increased since the baseline period, and the increase was more pronounced inside reserves as compared to fished sites. 
+Average density (per 100 m2 +/- SE) of California sheephead (*Semicossyphus pulcher*) at fished (blue) and unfished marine reserves (red) surveyed annually in two time periods 2005-2009 and 2014-2015. Density has increased since the baseline period, and the increase was more pronounced inside reserves as compared to fished sites. 
 
 ## Figure App.F.12.17.new
 
@@ -731,7 +731,7 @@ A figure showing the trends in the average volume of small plankton (tiny, often
 
 ### Details
 
-Mean volume of small plankton collected in net samples during CalCOFI cruises at only sites in the Channel Islands National Marine Sanctuary region (top) and all sites over the Southern California Shelf (bottom) from 1978 to 2015 (sampling locations shown in Figure App.F.12.17). Horizontal lines show the mean (dashed line) ± 1.0 standard deviation (solid lines) over the full time series. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (–), or within 1 standard deviation (●) of the mean of the full time series.
+Mean volume of small plankton collected in net samples during CalCOFI cruises at only sites in the Channel Islands National Marine Sanctuary region (top) and all sites over the Southern California Shelf (bottom) from 1978 to 2015 (sampling locations shown in Figure App.F.12.17). Horizontal lines show the mean (dashed line) ± 1.0 standard deviation (solid lines) over the full time series. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (-), or within 1 standard deviation (●) of the mean of the full time series.
 
 ## Figure App.F.12.19.anchovy
 
@@ -789,7 +789,7 @@ A figure showing the average abundance of market squid collected around the Nort
 
 ### Details
 
-Mean abundance of market squid (*Doryteuthis opalescens*) collected in net samples during CalCOFI cruises at only sites in the Channel Islands National Marine Sanctuary region (top) and all sites over the Southern California Shelf (bottom) from 1997 to 2015 (sampling locations shown in Figure App.F12.17). Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (–), or within 1 standard deviation (●) of the mean of the full time series.
+Mean abundance of market squid (*Doryteuthis opalescens*) collected in net samples during CalCOFI cruises at only sites in the Channel Islands National Marine Sanctuary region (top) and all sites over the Southern California Shelf (bottom) from 1997 to 2015 (sampling locations shown in Figure App.F12.17). Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (-), or within 1 standard deviation (●) of the mean of the full time series.
 
 ## Figure App.F.13.1.
 
@@ -797,7 +797,7 @@ A figure showing the density of of black abalone across the Channel Islands from
 
 ### Details
 
-Black abalone (*Haliotis cracherodii*) mean density from fixed plots from 1985–2014 (left) and mean counts from site-wide searches from 1995–2014 (inset) at four islands in Channel Islands National Marine Sanctuary. Site wide search counts began in 1995 due to the severe declines in abundance that occurred from 1985–1995. Generally, increasing abundances began approximately in the 2007–2009 timeframe. Error bars were constructed using one standard error from the mean. 
+Black abalone (*Haliotis cracherodii*) mean density from fixed plots from 1985-2014 (left) and mean counts from site-wide searches from 1995-2014 (inset) at four islands in Channel Islands National Marine Sanctuary. Site wide search counts began in 1995 due to the severe declines in abundance that occurred from 1985-1995. Generally, increasing abundances began approximately in the 2007-2009 timeframe. Error bars were constructed using one standard error from the mean. 
 
 ## Figure App.F.13.2. 
 
@@ -813,7 +813,7 @@ Left: a figure showing the average numer of owl limpets across the Northern Chan
 
 ### Details
 
-(left) Mean number of owl limpets (*Lottia gigantea*) at each island from 2000–2014. Blue lines represent mean number at each island pooled across fixed plots and error bars were constructed using one standard error from the mean. (right) Box plots for annual size frequency distributions of owl limpets at each island. Black lines represent mean sizes at each island pooled across fixed plots and sites. Red lines represent the cumulative mean. 
+(left) Mean number of owl limpets (*Lottia gigantea*) at each island from 2000-2014. Blue lines represent mean number at each island pooled across fixed plots and error bars were constructed using one standard error from the mean. (right) Box plots for annual size frequency distributions of owl limpets at each island. Black lines represent mean sizes at each island pooled across fixed plots and sites. Red lines represent the cumulative mean. 
 
 ## Figure App.F.13.4.
 
@@ -821,7 +821,7 @@ A map showing a 2011 survey of suitable black oystercatcher habitat (orange) alo
 
 ### Details
 
-In 2011, approximately 20 percent of the suitable habitat (orange) for black oystercatchers (*Haematopus bachmani*) was surveyed. A total of 176 adult or sub-adult black oystercatchers were detected at the five islands in Channel Islands National Marine Sanctuary. Density at different locations is shown by the diameter of the purple circles. The northern Channel Islands population was conservatively estimated to be between 779–854, which is 14 to 16 percent of the estimated total population in California. 
+In 2011, approximately 20 percent of the suitable habitat (orange) for black oystercatchers (*Haematopus bachmani*) was surveyed. A total of 176 adult or sub-adult black oystercatchers were detected at the five islands in Channel Islands National Marine Sanctuary. Density at different locations is shown by the diameter of the purple circles. The northern Channel Islands population was conservatively estimated to be between 779-854, which is 14 to 16 percent of the estimated total population in California. 
 
 ## Figure App.F.13.5.
 
@@ -869,7 +869,7 @@ A figure showing the average density of red abalone across the Northern Channel 
 
 ### Details
 
-Average density (+/- standard error) of red abalone (*Haliotis rufescens*) at 14 sites across four islands in Channel Islands National Marine Sanctuary monitored by the [PISCO](http://www.piscoweb.org/kelp-forest-sampling-protocols) kelp forest monitoring program from 2003–2016. Abalone are counted by SCUBA divers swimming along transect lines. Observed density was averaged across all monitoring sites at each island, including sites located inside and outside of marine reserves and conservation areas, to examine course-scale trends by island. Observed density was higher at San Miguel Island (blue). 
+Average density (+/- standard error) of red abalone (*Haliotis rufescens*) at 14 sites across four islands in Channel Islands National Marine Sanctuary monitored by the [PISCO](http://www.piscoweb.org/kelp-forest-sampling-protocols) kelp forest monitoring program from 2003-2016. Abalone are counted by SCUBA divers swimming along transect lines. Observed density was averaged across all monitoring sites at each island, including sites located inside and outside of marine reserves and conservation areas, to examine course-scale trends by island. Observed density was higher at San Miguel Island (blue). 
 
 ## Figure App.F.13.10a.
 
@@ -949,7 +949,7 @@ A figure showing the abundance of near-bottom dwelling fishes (lingcod, sheephea
 
 ### Details
 
-[Marine Applied Research and Exploration (MARE)](https://www.maregroup.org/) data along seafloor transects on abundance of five species of demersal fish, lingcod, sheephead, gopher rockfish, copper rockfish, and vermillion rockfish. Fish density was averaged across all monitoring sites, including sites located inside and outside of marine reserves and conservation areas, to examine course-scale trends. From 2005–2009, the total counts for these five species combined annually averaged 15 total fish per kilometer of surveyed transect. In 2014–2015, average counts per transect rose to 38 and 44 fish, respectively. At a finer scale, fish density may be responding differently inside and outside of some marine protected areas (MPAs) in CINMS. 
+[Marine Applied Research and Exploration (MARE)](https://www.maregroup.org/) data along seafloor transects on abundance of five species of demersal fish, lingcod, sheephead, gopher rockfish, copper rockfish, and vermillion rockfish. Fish density was averaged across all monitoring sites, including sites located inside and outside of marine reserves and conservation areas, to examine course-scale trends. From 2005-2009, the total counts for these five species combined annually averaged 15 total fish per kilometer of surveyed transect. In 2014-2015, average counts per transect rose to 38 and 44 fish, respectively. At a finer scale, fish density may be responding differently inside and outside of some marine protected areas (MPAs) in CINMS. 
 
 ## Figure App.F.13.20.
 
@@ -965,7 +965,7 @@ A map showing the locations of West Coast Groundfish Bottom Trawl surveys in the
 
 ### Details
 
-Locations sampled by the West Coast Groundfish Bottom Trawl Surveys for demersal fish inhabiting trawlable habitat along the upper continental slope and shelf. Annual surveys have occurred along the entire U.S. West Coast from May to October each year at depths from 55 meters to 1,280 meters. Catch per unit effort (CPUE) per year was calculated for three spatial scales relative to Channel Islands National Marine Sanctuary: CINMS included sites within the CINMS boundary (light blue shading, n = 130, 2008–2014, 116 species); CINMS region includes sites inside the red box (n = 639, 2003-–2014, 192 species); Southern California Bight included sites inside the blue box (n = 1,353, 2003–2014, 247 species). 
+Locations sampled by the West Coast Groundfish Bottom Trawl Surveys for demersal fish inhabiting trawlable habitat along the upper continental slope and shelf. Annual surveys have occurred along the entire U.S. West Coast from May to October each year at depths from 55 meters to 1,280 meters. Catch per unit effort (CPUE) per year was calculated for three spatial scales relative to Channel Islands National Marine Sanctuary: CINMS included sites within the CINMS boundary (light blue shading, n = 130, 2008-2014, 116 species); CINMS region includes sites inside the red box (n = 639, 2003--2014, 192 species); Southern California Bight included sites inside the blue box (n = 1,353, 2003-2014, 247 species). 
 
 ## Figure App.F.13.22.
 
@@ -973,7 +973,7 @@ A figure showing trends in seabird abundance and the relative abundace of krill 
 
 ### Details
 
-Trends in seabird abundance and the relative abundance of krill and forage fish, based on CalCOFI/CCE LTER program data (1987–2011). Spring and summer seabird density declined by 2 percent per year, mostly in the northern sector of the study region. Krill showed variable trends. Nearshore forage fish, dominated by northern anchovy, and offshore mesopelagic species show declines in relative abundance over this period. 
+Trends in seabird abundance and the relative abundance of krill and forage fish, based on CalCOFI/CCE LTER program data (1987-2011). Spring and summer seabird density declined by 2 percent per year, mostly in the northern sector of the study region. Krill showed variable trends. Nearshore forage fish, dominated by northern anchovy, and offshore mesopelagic species show declines in relative abundance over this period. 
 
 ## Figure App.F.13.23.
 
@@ -981,7 +981,7 @@ A figure showing counts of California sea lion pups from 1975 to 2011. Figure cr
 
 ### Details
 
-U.S. pup count index for California sea lions (*Zalophus californianus*) from 1975 to 2011. Trends in pup counts from 1975–2011 are shown for four rookeries in southern California and for haulouts in central and northern California. 
+U.S. pup count index for California sea lions (*Zalophus californianus*) from 1975 to 2011. Trends in pup counts from 1975-2011 are shown for four rookeries in southern California and for haulouts in central and northern California. 
 
 ## Figure App.F.13.24_new.
 
@@ -989,7 +989,7 @@ A figure showing live pup counts (top) and female sea lion pup growth (bottom) f
 
 ### Details
 
-Live pup count (top) and female pup growth index for California sea lions (*Zalophus californianus*) from 1997 to 2019. Recent trends in pup counts have been stable, but declining for pup growth likely due to low availability of prey resources in central and southern California, which is the foraging range of nursing females. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (–), or within 1 standard deviation (●) of the mean of the full time series.
+Live pup count (top) and female pup growth index for California sea lions (*Zalophus californianus*) from 1997 to 2019. Recent trends in pup counts have been stable, but declining for pup growth likely due to low availability of prey resources in central and southern California, which is the foraging range of nursing females. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (-), or within 1 standard deviation (●) of the mean of the full time series.
 
 ## Figure App.F.13.25.
 
@@ -1013,7 +1013,7 @@ A figure showing the number of Northern fur seal pups counted at two locations o
 
 ### Details
 
-Total production of Northern fur seal (*Callorhinus ursinus*) pups counted on San Miguel Island, including the mainland (Adam’s Cove) and the offshore islet (Castle Rock), from 1972–2014. The total production of northern fur seals exceeded the 1997 levels during 2010, 2012, and 2013. The island’s population has recovered from the 1997–1998 El Niño event. 
+Total production of Northern fur seal (*Callorhinus ursinus*) pups counted on San Miguel Island, including the mainland (Adam’s Cove) and the offshore islet (Castle Rock), from 1972-2014. The total production of northern fur seals exceeded the 1997 levels during 2010, 2012, and 2013. The island’s population has recovered from the 1997-1998 El Niño event. 
 
 ## Figure App.F.13.28.
 
@@ -1021,7 +1021,7 @@ A figure showing the density of the six most frequently seen whales and dolphins
 
 ### Details
 
-Trend in density from 2004–2013, based on sightings from [CalCOFI](https://calcofi.org/) cruises, for the six most frequently sighted species of cetaceans off southern California. Blue and humpback whales, short-beaked common dolphins, and Dall's porpoises appear to be stable. Fin whale sightings have decreased while Pacific white-sided dolphin sightings have increased. 
+Trend in density from 2004-2013, based on sightings from [CalCOFI](https://calcofi.org/) cruises, for the six most frequently sighted species of cetaceans off southern California. Blue and humpback whales, short-beaked common dolphins, and Dall's porpoises appear to be stable. Fin whale sightings have decreased while Pacific white-sided dolphin sightings have increased. 
 
 ## Figure App.F.15.5.
 
@@ -1029,7 +1029,7 @@ A figure showing the relative abundance (how common or rare a species is) of coo
 
 ### Details
 
-Relative abundance of cool-water and warm-water associated ichthyoplankton (fish larvae) groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS)  and over the Southern California Shelf from 1978 to 2015. Sampling sites are shown on Figure App.F.12.17. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (–), or within 1 standard deviation (●) of the mean of the full time series. 
+Relative abundance of cool-water and warm-water associated ichthyoplankton (fish larvae) groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS)  and over the Southern California Shelf from 1978 to 2015. Sampling sites are shown on Figure App.F.12.17. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (-), or within 1 standard deviation (●) of the mean of the full time series. 
 
 ## Figure App.F.15.6.a-b.
 
@@ -1037,7 +1037,7 @@ A figure showing the average number of different species of fish larvae collecte
 
 ### Details
 
-Mean species richness of fish larvae (ichthyoplankton) collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) region and over the Southern California Shelf from 1978 to 2015. Species richness is the number of species present in a net sample. Species richness tends to increase in El Niño years due to influx of central Pacific species to the shelf. Sampling sites are shown on Figure App.F.12.17. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (–), or within 1 standard deviation (●) of the mean of the full time series.
+Mean species richness of fish larvae (ichthyoplankton) collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) region and over the Southern California Shelf from 1978 to 2015. Species richness is the number of species present in a net sample. Species richness tends to increase in El Niño years due to influx of central Pacific species to the shelf. Sampling sites are shown on Figure App.F.12.17. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (-), or within 1 standard deviation (●) of the mean of the full time series.
 
 ## Figure App.F.15.6.c-d. 
 
@@ -1045,7 +1045,7 @@ A figure showing the relative abundance (how common or rare a species is) of coo
 
 ### Details
 
-Relative abundance of cool-water (top panels) and warm-water (bottom panels) associated ichthyoplankton (fish larvae) groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) region (left panels) and over the Southern California Shelf (right panels) from 1978 to 2015. Sampling sites are shown on Figure App.F.12.17. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (–), or within 1 standard deviation (●) of the mean of the full time series. 
+Relative abundance of cool-water (top panels) and warm-water (bottom panels) associated ichthyoplankton (fish larvae) groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) region (left panels) and over the Southern California Shelf (right panels) from 1978 to 2015. Sampling sites are shown on Figure App.F.12.17. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (-), or within 1 standard deviation (●) of the mean of the full time series. 
 
 ## Figure App.F.15.7.
 
@@ -1149,7 +1149,7 @@ A table displaying the common and scientific names of species used to identify t
 
 ### Details
 
-Common and scientific names of species selected for calculation of recent trends in CPUE from NMFS NWFSC West Coast Groundfish Bottom Trawl Surveys in the Southern California Bight. Of the more than 247 different species encountered in surveys from 2003 to 2014, the 23 species that were encountered most often were selected. The trend in annual CPUE was determined for the period 2009–2014 and is shown as increasing (↗), decreasing (↘), or no trend (↔) at the three spatial scales shown in Figure App.F.13.21. Yellow highlights the 11 species that appear to be well sampled in trawls at the shallower depths most commonly surveyed inside Channel Islands National Marine Sanctuary (67 percent of sites in CINMS < 200 meters). These shallower species appear to be stable or increasing in CINMS and the surrounding region. Most species with different short-term trends at the smaller and larger spatial scales are deepwater species not sampled well in shallow water stations in CINMS. 
+Common and scientific names of species selected for calculation of recent trends in CPUE from NMFS NWFSC West Coast Groundfish Bottom Trawl Surveys in the Southern California Bight. Of the more than 247 different species encountered in surveys from 2003 to 2014, the 23 species that were encountered most often were selected. The trend in annual CPUE was determined for the period 2009-2014 and is shown as increasing (↗), decreasing (↘), or no trend (↔) at the three spatial scales shown in Figure App.F.13.21. Yellow highlights the 11 species that appear to be well sampled in trawls at the shallower depths most commonly surveyed inside Channel Islands National Marine Sanctuary (67 percent of sites in CINMS < 200 meters). These shallower species appear to be stable or increasing in CINMS and the surrounding region. Most species with different short-term trends at the smaller and larger spatial scales are deepwater species not sampled well in shallow water stations in CINMS. 
 
 ## Table App.F.15.2.
 
