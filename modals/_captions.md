@@ -15,7 +15,7 @@ The Chlorophyll-a dataset collected via satellite is the [Chlorophyll, NOAA VIIR
 
 ## Figure Ux.Ocean.Chl.ERD.timeseries.
 
-Plot of Chlorophyll values over time within the sanctuary. Chlorophyll-a indicates productivity by phytoplankton, the plant base of the food chain in the ocean.
+Plot of Chlorophyll values over time within the Sanctuary. Chlorophyll-a indicates productivity by phytoplankton, the plant base of the food chain in the ocean.
 
 ### Details
 
@@ -23,7 +23,7 @@ The Chlorophyll-a dataset collected via satellite is the [Chlorophyll, NOAA VIIR
 
 ## Figure Ux.Ocean.Seascape.ERD.map.
 
-Map of the most recent seascapes around the sanctuary. Seascapes are dynamic categories of ocean water based on temperature and ocean color.
+Map of the most recent seascapes around the Sanctuary. Seascapes are dynamic categories of ocean water based on temperature and ocean color.
 
 ### Details
 
@@ -31,7 +31,7 @@ The sea-surface temperature dataset collected via satellite is the [Monthly Glob
 
 ## Figure Ux.Ocean.SST.ERD.map.
 
-Map of the most recent sea-surface temperature around the sanctuary. 
+Map of the most recent sea-surface temperature around the Sanctuary. 
 
 ### Details
 
@@ -39,7 +39,7 @@ The sea-surface temperature dataset collected via satellite is the [Multi-scale 
 
 ## Figure Ux.Ocean.SST.ERD.timeseries.
 
-Plot of sea-surface temperature values over time within the sanctuary.
+Plot of sea-surface temperature values over time within the Sanctuary.
 
 ### Details
 
@@ -63,7 +63,7 @@ These data were collected by a consortium of contributors as part of the [Multi-
 
 ## Figure S.Hab.10.3.
 
-A figure showing the amount of eelgrass in Frenchy's Cove, Anacapa Island, from 2004 - 2016. Figure: [J. Altstatt/UCSB and NOAA](http://msi.ucsb.edu/people/project-staff/jessie%C2%A0altstatt)
+A figure showing the amount of eelgrass in Frenchy's Cove, Anacapa Island, from 2004 - 2016. Figure credit: [J. Altstatt/UCSB and NOAA](http://msi.ucsb.edu/people/project-staff/jessie%C2%A0altstatt).
 
 ### Details
 
@@ -71,7 +71,7 @@ Eelgrass cover at Frenchy’s Cove from 2004 to 2016 after 2003 transplant. Data
 
 ## Figure App.C.1.4. 
 
-Visitors ashore and by boat in Channel Islands National Park from 2000 to 2016. Data source: National Park Service (NPS 2017)
+Visitors ashore and by boat in Channel Islands National Park from 2000 to 2016. Data source: National Park Service (NPS 2017).
 
 ## Figure App.C.2.1.
 
@@ -79,7 +79,7 @@ A map of offshore oil platforms within the Santa Barbara Channel, from west to e
 
 ## Figure App.C.2.3.
 
-A map showing the area around the Santa Barbara Coast affected by the 2015 Refugio Oil Spill. Data source: [Shoreline Cleanup and Assessment Technique (SCAT) Shoreline Oiling Map](http://response.restoration.noaa.gov/oil-and-chemical-spills/oil-spills/resources/shoreline-cleanup-and-assessment-technique-scat.html). Map: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
+A map showing the area around the Santa Barbara Coast affected by the 2015 Refugio Oil Spill. Data source: [Shoreline Cleanup and Assessment Technique (SCAT) Shoreline Oiling. Map](http://response.restoration.noaa.gov/oil-and-chemical-spills/oil-spills/resources/shoreline-cleanup-and-assessment-technique-scat.html). Map: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
 
 ### Details
 
@@ -87,7 +87,7 @@ Diagonal black lines cover the area where oil sheen was observed after the 2015 
 
 ## Figure App.C.2.4.
 
-A map showing projected oil movement following the Refugio Oil Spill in May 2015. Figure: B. Emery and [L. Washburn/UCSB](https://msi.ucsb.edu/people/faculty/libe-washburn)
+A map showing projected oil movement following the Refugio Oil Spill in May 2015. Figure credit: B. Emery and [L. Washburn/UCSB](https://msi.ucsb.edu/people/faculty/libe-washburn).
 
 ### Details
 
@@ -95,7 +95,7 @@ Modeled oil trajectories based on high frequency (HF) radar and averaged sea sur
 
 ## Figure App.C.2.5.
 
-An image of modeled sea surface current directions used to predict oil movement from May 20 to May 25, immediately following the Refugio Oil Spill (2015). Source: [SCCOOS](http://sccoos.org/); Figure: B. Emery and [L. Washburn/UCSB](https://msi.ucsb.edu/people/faculty/libe-washburn)
+An image of modeled sea surface current directions used to predict oil movement from May 20 to May 25, immediately following the Refugio Oil Spill (2015). Source: [SCCOOS](http://sccoos.org/); Figure credit: B. Emery and [L. Washburn/UCSB](https://msi.ucsb.edu/people/faculty/libe-washburn).
 
 ### Details
 
@@ -103,7 +103,7 @@ Daily snapshots of oil transport simulations (blue dots) based on near-real time
 
 ## Figure App.C.2.8.
 
-A map showing the location of historic (green dots) and current (yellow dots) passive acoustic monitoring stations around the Sanctuary and Santa Barbara Channel. Map: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
+A map showing the location of historic (green dots) and current (yellow dots) passive acoustic monitoring stations around the Sanctuary and Santa Barbara Channel. Map credit: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html).
 
 ### Details
 
@@ -112,7 +112,7 @@ Previous (green dots) and current (yellow dots) passive acoustic monitoring stat
 
 ## Figure App.C.3.1.
 
-A map showing vessel grounding locations from 1999 to 2016.Data source: Vessel Assist; Map: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
+A map showing vessel grounding locations from 1999 to 2016.Data source: Vessel Assist; Map credit: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html).
 
 ### Details
 
@@ -120,8 +120,7 @@ Reported vessel grounding locations from 1999 to 2016 are shown in the map above
 
 ## Figure App.C.3.2.
 
-A figure showing fish catch of bottom-dwelling fish, reported from within the Sanctuary from 1985 - 2015. Data source: CDFW; Figure: [P. Etnoyer/NOAA](https://oceanexplorer.noaa.gov/edu/oceanage/03etnoyer/welcome.html)
-
+A figure showing fish catch of bottom-dwelling fish, reported from within the Sanctuary from 1985 - 2015. Data source: CDFW; Figure: [P. Etnoyer/NOAA](https://oceanexplorer.noaa.gov/edu/oceanage/03etnoyer/welcome.html).
 
 ### Details
 
@@ -129,7 +128,7 @@ Landings (in pounds) and the relative contribution of gear types has changed ove
 
 ## Figure App.C.3.3.
 
-A map showing landings of fish caught by trawling (a method of commercial fishing) across the Southern California Bight (2007-2011). Locations of known deep-water corals, which are very vulnerable to trawling, are indicated on the map. Data source: CDFW, Perry et al 2010; Map: [P. Etnoyer/NOAA](https://oceanexplorer.noaa.gov/edu/oceanage/03etnoyer/welcome.html), Etnoyer et al. 2015
+A map showing landings of fish caught by trawling (a method of commercial fishing) across the Southern California Bight (2007-2011). Locations of known deep-water corals, which are very vulnerable to trawling, are indicated on the map. Data source: CDFW, Perry et al 2010; Map credit: [P. Etnoyer/NOAA](https://oceanexplorer.noaa.gov/edu/oceanage/03etnoyer/welcome.html), Etnoyer et al. 2015.
 
 ### Details
 
@@ -137,7 +136,7 @@ A map showing landings of fish caught by trawling (a method of commercial fishin
 
 ## Figure App.C.3.4.
 
-A map showing landings of fish caught by fixed gear (a method of commercial fishing) across the Southern California Bight (2007-2011). Locations of known deep-water gorgonians, which are very vulnerable to trawling, are indicated on the map. Data source: CDFW, Perry et al 2010; Map: [P. Etnoyer/NOAA](https://oceanexplorer.noaa.gov/edu/oceanage/03etnoyer/welcome.html), Etnoyer et al. 2015
+A map showing landings of fish caught by fixed gear (a method of commercial fishing) across the Southern California Bight (2007-2011). Locations of known deep-water gorgonians, which are very vulnerable to trawling, are indicated on the map. Data source: CDFW, Perry et al 2010; Map credit: [P. Etnoyer/NOAA](https://oceanexplorer.noaa.gov/edu/oceanage/03etnoyer/welcome.html), Etnoyer et al. 2015.
 
 ### Details
 
@@ -145,19 +144,19 @@ Historical landings of [fixed gear](https://marinebon.org/cinms/glossary) that c
 
 ## Figure App.C.3.5.
 
-A map showing the locations of both trawling and fixed gear fishing in relation to protected areas (2007-2011) within the [Southern California Bight](https://marinebon.org/cinms/glossary). Data source: CDFW; Map: [P. Etnoyer/NOAA](https://oceanexplorer.noaa.gov/edu/oceanage/03etnoyer/welcome.html)
+A map showing the locations of both trawling and fixed gear fishing in relation to protected areas (2007-2011) within the [Southern California Bight](https://marinebon.org/cinms/glossary). Data source: CDFW; Map credit: [P. Etnoyer/NOAA](https://oceanexplorer.noaa.gov/edu/oceanage/03etnoyer/welcome.html)
 
 ### Details
 
-Overlay of trawl and fixed gear fishing activity from 2007 to 2011 and protected areas is shown in the map above. Much of the landings is off the Santa Barbara mainland coast; however, fixed gear usage regularly occurs in sanctuary waters. 
+Overlay of trawl and fixed gear fishing activity from 2007 to 2011 and protected areas is shown in the map above. Much of the landings is off the Santa Barbara mainland coast; however, fixed gear usage regularly occurs in Sanctuary waters. 
 
 ## Figure App.C.4.2a.
 
-Fishing activity (number of trip and number of anglers per trip) for Commercial Passenger Fishing Vessels (CPFVs) operating out of ports in Santa Barbara and Ventura from 2000 to 2012. Figure: Chen et al. 2015b
+Fishing activity (number of trip and number of anglers per trip) for Commercial Passenger Fishing Vessels (CPFVs) operating out of ports in Santa Barbara and Ventura from 2000 to 2012. Figure credit: Chen et al. 2015b.
 
 ## Figure App.C.4.2b.
 
-A figure of Commercial Passenger Fishing Vessel (CPFV) trips and anglers per trip accross years (2000 - 2012). Figure: Chen et al. 2015b
+A figure of Commercial Passenger Fishing Vessel (CPFV) trips and anglers per trip accross years (2000 to 2012). Figure credit: Chen et al. 2015b.
 
 ### Details
 
@@ -165,7 +164,7 @@ Fishing activity landings for Commercial Passenger Fishing Vessels (CPFVs) opera
 
 ## Figure App.C.4.4.
 
-A figure showing trends in fishing catch (lbs, left y-axis) and economic value (dollars, right y-axis) for seven major fisheries around the Channel Islands (2000 - 2012). Figure: Leeworthy et al. 2014a
+A figure showing trends in fishing catch (pounds, left y-axis) and economic value (dollars, right y-axis) for seven major fisheries around the Channel Islands (2000 to 2012). Figure credit: Leeworthy et al. 2014a.
 
 ### Details
 
@@ -173,7 +172,7 @@ Trends over time in commercial fishing activity in Channel Islands National Mari
 
 ## Figure App.C.4.5a. 
 
-A figure showing the pounds of California halibut landed by gear type in the commercial fleet from 2005 - 2014. Data source: CDFW; Figure: NOAA
+A figure showing the pounds of California halibut landed by gear type in the commercial fleet from 2005 - 2014. Data source: CDFW; Figure credit: NOAA.
 
 ### Details
 
@@ -181,7 +180,7 @@ Landings of California halibut (*Paralichthys californicus*) in blocks around Ch
 
 ## Figure App.C.4.5b.
 
-A figure showing the number of fishing vessels (and gear types used) in the California halibut fishing fleet from 2005 - 2014. Data source: CDFW; Figure: NOAA
+A figure showing the number of fishing vessels (and gear types used) in the California halibut fishing fleet from 2005 - 2014. Data source: CDFW; Figure credit: NOAA.
 
 ### Details
 
@@ -189,7 +188,7 @@ The number of vessels fishing for California halibut (*Paralichthys californicus
 
 ## Figure App.C.4.6a.
 
-A figure showing the increase in rock crab fishing from 2007 - 2015.Data source: CDFW; Figure: NOAA
+A figure showing the increase in rock crab fishing from 2007 - 2015.Data source: CDFW; Figure credit: NOAA.
 
 ### Details
 
@@ -197,7 +196,7 @@ Commercial fishing activity for rock crabs has increased recently in blocks arou
 
 ## Figure App.C.4.6b.
 
-A figure showing the increase in the number of crabbers (those who fish for crabs) 2007 - 2015. Data source: CDFW; Figure: NOAA
+A figure showing the increase in the number of crabbers (those who fish for crabs) from 2007 to 2015. Data source: CDFW; Figure credit: NOAA.
 
 ### Details
 
@@ -205,7 +204,7 @@ Commercial fishing activity for rock crabs has increased recently in blocks arou
 
 ## Figure App.C.4.7. 
 
-A map of the Santa Barbar Channel showing patterns in coastal recreational activity. Figure: Chen et al. 2015c
+A map of the Santa Barbar Channel showing patterns in coastal recreational activity. Figure credit: Chen et al. 2015c.
 
 ### Details
 
@@ -213,7 +212,7 @@ Spatial patterns in coastal recreational activity levels in southern California 
 
 ## Figure App.C.4.8. 
 
-A graph showing the number of visitors brought to Frenchy's Cove on Anacapa Island by the Island Packers Company from 1993 - 2014.Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+A graph showing the number of visitors brought to Frenchy's Cove on Anacapa Island by the Island Packers Company from 1993 - 2014. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 ### Details
 
@@ -221,7 +220,7 @@ Annual number of visitors brought to Frenchy’s Cove, Anacapa Island, by the Is
 
 ## Figure App.C.4.9.
 
-A figure showing rates of human-caused distubance to seabird breeding and nesting sites across three regions: the south coast (SCSR), central coast (CCSR), and north central coast (NCCSR). Figure: Robinette et al. 2015
+A figure showing rates of human-caused distubance to seabird breeding and nesting sites across three regions: the south coast (SCSR), central coast (CCSR), and north central coast (NCCSR). Figure credit: Robinette et al. 2015.
 
 ### Details
 
@@ -229,9 +228,9 @@ Rates of human-caused disturbance to seabird breeding and roosting sites were lo
 
 ## Figure App.C.4.10b. 
 
-Number of confirmed reports of large whales, including humpback, gray, and blue whales entangled in fishing gear, ropes and other sources along the U.S. West Coast from 2000–19. Graph from NOAA Fisheries 2019 West Coast Whale Entanglement Summary Report. Last updated April 2020.
+Number of confirmed reports of large whales, including humpback, gray, and blue whales entangled in fishing gear, ropes and other sources along the U.S. West Coast from 2000 to 2019. Graph from NOAA Fisheries 2019 West Coast Whale Entanglement Summary Report. Last updated April 2020.
 
-In the legend, color represents the different species of whales and “n” represents the total number of that species confirmed entangled in the study period. Of the 46 confirmed whale entanglements, 30 were reported off California, 6 of which originated from southern California (Santa Barbara, Los Angeles, Orange, and San Diego counties). However, the location where entangled animals are observed and reported does not necessarily reflect where and when the entanglement originated. Figure: D. Lawson/NMFS WCRO PRD
+In the legend, color represents the different species of whales and “n” represents the total number of that species confirmed entangled in the study period. Of the 46 confirmed whale entanglements, 30 were reported off California, 6 of which originated from southern California (Santa Barbara, Los Angeles, Orange, and San Diego counties). However, the location where entangled animals are observed and reported does not necessarily reflect where and when the entanglement originated. Figure credit: D. Lawson/NMFS WCRO PRD.
 
 ### Details
 
@@ -239,7 +238,7 @@ Annual number of large whale entanglements reported along the U.S. West Coast. R
 
 ## Figure App.C.4.11a.
 
-A map showing the risk posed to blue whales from 11 fixed gear fisheries (a type of commercial fishing) in the Southern California Bight. Figure: Saez et al. 2013
+A map showing the risk posed to blue whales from 11 fixed gear fisheries (a type of commercial fishing) in the Southern California Bight. Figure credit: Saez et al. 2013.
 
 ### Details
 
@@ -247,7 +246,7 @@ Co-occurrence score (risk) based on multi-year average whale density and fishing
 
 ## Figure App.C.4.11b.
 
-A map showing the risk posed to fin whales from 11 fixed gear fisheries (a type of commercial fishing) in the Southern California Bight. Figure: Saez et al. 2013
+A map showing the risk posed to fin whales from 11 fixed gear fisheries (a type of commercial fishing) in the Southern California Bight. Figure credit: Saez et al. 2013.
 
 ### Details
 
@@ -255,7 +254,7 @@ Co-occurrence score (risk) based on multi-year average whale density and fishing
 
 ## Figure App.C.4.11c.
 
-A map showing the risk posed to humpback whales from 11 fixed gear fisheries (a type of commercial fishing) in the Southern California Bight. Figure: Saez et al. 2013
+A map showing the risk posed to humpback whales from 11 fixed gear fisheries (a type of commercial fishing) in the Southern California Bight. Figure credit: Saez et al. 2013.
 
 ### Details
 
@@ -263,7 +262,7 @@ Co-occurrence score (risk) based on multi-year average whale density and fishing
 
 ## Figure App.C.4.12.
 
-A map showing traffic patterns of large commercial shipping vessels through the Sanctuary (2008, 2010, 2014). Data source: USCG AIS data, processed by NMFS; Figure: MSWGSS 2016
+A map showing traffic patterns of large commercial shipping vessels through the Sanctuary (2008, 2010, 2014). Data source: USCG AIS data, processed by NMFS; Figure credit: MSWGSS 2016.
 
 ### Details
 
@@ -271,7 +270,7 @@ Traffic patterns of large commercial vessels (cargo and tanker vessels) in the S
 
 ## Figure App.C.4.13.
 
-A graph showing noise levels in the Santa Barbara Channel from 2007 - 2016. 40Hz bands are shown in red, 90Hz bands are shown in blue. Data sources: McKenna et al. 2012, J. Hildebrand/ UCSD unpub. data; Figure: [J. Hildebrand/SIO UCSD](http://cetus.ucsd.edu/profile_JohnHildebrand.html)
+A graph showing noise levels in the Santa Barbara Channel from 2007 to 2016. 40Hz bands are shown in red, 90Hz bands are shown in blue. Data sources: McKenna et al. 2012, J. Hildebrand/ UCSD unpub. data; Figure credit: [J. Hildebrand/SIO UCSD](http://cetus.ucsd.edu/profile_JohnHildebrand.html).
 
 ### Details
 
@@ -279,7 +278,7 @@ Ambient noise levels in the Santa Barbara Channel represented as monthly average
 
 ## Figure App.C.4.14.
 
-A graph showing the likelihood of encountering marine debris on beaches in Southern California from 1999 - 2007. Data source: Ribic et al. 2012; Figure: K. Andrews/NOAA
+A graph showing the likelihood of encountering marine debris on beaches in Southern California from 1999 to 2007. Data source: Ribic et al. 2012; Figure credit: K. Andrews/NOAA.
 
 ### Details
 
@@ -287,7 +286,7 @@ Marine debris estimates modeled along the mainland southern California coast bas
 
 ## Figure App.C.4.15.
 
-A figure showing the percentage of sampling stations with plastic debris across three sampling years. Figure: Gilfillan et al. 2009
+A figure showing the percentage of sampling stations with plastic debris across three sampling years. Figure credit: Gilfillan et al. 2009.
 
 ### Details
 
@@ -295,7 +294,7 @@ Variation over time in percentage of stations from winter CalCOFI cruises with p
 
 ## Figure App.C.4.16.
 
-A map showing the  distribution, concentration, and characteristics of plastic micro-debris in net samples from the CalCOFI region from winter cruises across three sampling years. Figure: Gilfillan et al. 2009
+A map showing the  distribution, concentration, and characteristics of plastic micro-debris in net samples from the CalCOFI region from winter cruises across three sampling years. Figure credit: Gilfillan et al. 2009.
 
 ### Details
 
@@ -303,15 +302,15 @@ Spatial distribution, concentration, and characteristics of plastic micro-debris
 
 ## Figure App.C.4.17.
 
-A figure showing trends in offshore oil and gas activity in Southern California from 1975 - 2014. Data source: Annual reports of the California State Department of Conservation’s Division of Oil, Gas, and Geothermal Resources; Figure: K. Andrews/NOAA
+A figure showing trends in offshore oil and gas activity in Southern California from 1975 to 2014. Data source: Annual reports of the California State Department of Conservation’s Division of Oil, Gas, and Geothermal Resources; Figure credit: K. Andrews/NOAA.
 
 ### Details
 
-The status and trends of offshore oil and gas activity in southern California was measured using a normalized index of oil and gas production from offshore wells in state and federal waters in California. Activity has been stable over the last five years, but the short-term average was well below the long-term average (dashed green line). A rather steady decrease in oil and gas production has occurred since the mid-1990s. Data source: B. Owens/CDFW; Figure: NOAA
+The status and trends of offshore oil and gas activity in southern California was measured using a normalized index of oil and gas production from offshore wells in state and federal waters in California. Activity has been stable over the last five years, but the short-term average was well below the long-term average (dashed green line). A rather steady decrease in oil and gas production has occurred since the mid-1990s. Data source: B. Owens/CDFW; Figure credit: NOAA.
 
 ## Figure App.C.4.18a.
 
-Annual number of unique research projects (green) and active research permits (red) in the California Department of Fish and Wildlife (CDFW) database for research permits in Channel Islands National Marine Sanctuary (CINMS) from 2010 to 2016. One permit could contain multiple projects. Data source: B. Owens/ CDFW; Figure: NOAA
+Annual number of unique research projects (green) and active research permits (red) in the California Department of Fish and Wildlife (CDFW) database for research permits in Channel Islands National Marine Sanctuary (CINMS) from 2010 to 2016. One permit could contain multiple projects. Data source: B. Owens/ CDFW; Figure credit: NOAA.
 
 ## Figure App.C.4.18b.
 
@@ -319,7 +318,7 @@ Number of projects with active CDFW research permits in CINMS by habitat type. A
 
 ## Figure App.D.7.1.
 
-A figure showing [domoic acid](https://marinebon.org/cinms/glossary) levels in commercially-important crustaceans (triangles) and bivalves (circles) collected from the Santa Barbara Channel (2012 - 2013). Red coloration indiciates that the domic acid levels measured above the California Department of Public Health and U.S. Food and Drug Administration action limits. Figure: [C. Culver/CA Sea Grant](https://caseagrant.ucsd.edu/profile/carolynn-culver), unpublished data
+A figure showing [domoic acid](https://marinebon.org/cinms/glossary) levels in commercially-important crustaceans (triangles) and bivalves (circles) collected from the Santa Barbara Channel (2012 - 2013). Red coloration indiciates that the domic acid levels measured above the California Department of Public Health and U.S. Food and Drug Administration action limits. Figure credit: [C. Culver/CA Sea Grant](https://caseagrant.ucsd.edu/profile/carolynn-culver), unpublished data.
 
 ### Details
 
@@ -327,7 +326,7 @@ Domoic acid levels in parts per million (ppm) in commercially-important crustace
 
 ## Figure App.D.7.3.
 
-A map showing an unprecedented West Coast-wide [harmful algal bloom (HAB)](https://marinebon.org/cinms/glossary) that extended from the Gulf of Alaska to southern California. March 2015 (left, before the HAB) as compared to May (right, during the HAB). Data source: Satellite data were obtained from the National Aeronautics and Space Administration Ocean Biology Processing Group (OBPG) using a combination of the MODerate resolution Imaging Spectroradiometer (MODIS) on Aqua and Visible Infrared Imaging Radiometer Suite (VIIRS) chlorophyll products. Data were processed using standard OBPG processing with 4 kilometer imagery. Figure: McCabe et al. 2016
+A map showing an unprecedented West Coast-wide [harmful algal bloom (HAB)](https://marinebon.org/cinms/glossary) that extended from the Gulf of Alaska to southern California. March 2015 (left, before the HAB) as compared to May (right, during the HAB). Data source: Satellite data were obtained from the National Aeronautics and Space Administration Ocean Biology Processing Group (OBPG) using a combination of the MODerate resolution Imaging Spectroradiometer (MODIS) on Aqua and Visible Infrared Imaging Radiometer Suite (VIIRS) chlorophyll products. Data were processed using standard OBPG processing with 4 kilometer imagery. Figure credit: McCabe et al. 2016.
 
 ### Details
 
@@ -335,7 +334,7 @@ In May 2015, an unprecedented West Coast-wide harmful algal bloom (HAB) extended
 
 ## Figure App.E.10.11.
 
-A figure showing the composition of "beach wrack" (decaying large seaweed washed up on shore) on Santa Rosa Island from 1995 - 2015. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+A figure showing the composition of "beach wrack" (decaying large seaweed washed up on shore) on Santa Rosa Island from 1995 to 2015. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 ### Details
 
@@ -343,7 +342,7 @@ A figure showing the composition of "beach wrack" (decaying large seaweed washed
 
 ## Figure App.E.10.12.
 
-A figure showing the composition of "beach wrack" (decaying large marine plants washed up on shore) across nine beaches on Santa Rosa Island from 1995 - 2015. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+A figure showing the composition of "beach wrack" (decaying large marine plants washed up on shore) across nine beaches on Santa Rosa Island from 1995 to 2015. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 ### Details
 
@@ -351,7 +350,7 @@ Macrophyte wrack species composition at eight sites on Santa Rosa Island. Wrack 
 
 ## Figure App.E.10.13.
 
-A figure showing trends in the total mass of giant kelp from 1984 - 2015, using the sea surface area covered by kelp as an indicator of kelp mass. Figure: [R. Miller/UCSB](https://msi.ucsb.edu/people/research-scientists/robert-miller)
+A figure showing trends in the total mass of giant kelp from 1984 - 2015, using the sea surface area covered by kelp as an indicator of kelp mass. Figure credit: [R. Miller/UCSB](https://msi.ucsb.edu/people/research-scientists/robert-miller).
 
 ### Details
 
@@ -359,7 +358,7 @@ A figure showing trends in the total mass of giant kelp from 1984 - 2015, using 
 
 ## Figure App.E.10.14.
 
-A figure showing the density of giant kelp across all five Sanctuary islands from 2005 to 2016. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+A figure showing the density of giant kelp across all five Sanctuary islands from 2005 to 2016. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 ### Details
 
@@ -367,15 +366,14 @@ Giant kelp (*Macrocystis pyrifera*) density from 2005 to 2016 at all five sanctu
 
 ## Figure App.E.10.20.
 
-A figure showing the area covered by brown algae at two sites on Santa Cruz Island from 2000 to 2015. Data source: SBC LTER; Figure: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html)
+A figure showing the area covered by brown algae at two sites on Santa Cruz Island from 2000 to 2015. Data source: SBC LTER; Figure credit: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html).
 
 ### Details
 
-Brown algae percent cover from [LTER](https://sbclter.msi.ucsb.edu/) subtidal surveys at Santa Cruz Island (two sites, dark blue) and the mainland (nine sites, light blue) are shown in the trendlines above. Brown algae has been in decline since 2010 and is near record lows in the Santa Barbara Channel both at the mainland and in the sanctuary. 
-
+Brown algae percent cover from [LTER](https://sbclter.msi.ucsb.edu/) subtidal surveys at Santa Cruz Island (two sites, dark blue) and the mainland (nine sites, light blue) are shown in the trendlines above. Brown algae has been in decline since 2010 and is near record lows in the Santa Barbara Channel both at the mainland and in the Sanctuary. 
 ## Figure App.E.10.21.
 
-A figure showing the area covered by foliose red algae on Santa Cruz Island (dark line) and from the mainland coast (light line) from 2000 to 2015. Data source: SBC LTER; Figure: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html)
+A figure showing the area covered by foliose red algae on Santa Cruz Island (dark line) and from the mainland coast (light line) from 2000 to 2015. Data source: SBC LTER; Figure credit: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html).
 
 ### Details
 
@@ -383,7 +381,7 @@ Foliose red algae percent cover from LTER subtidal surveys at Santa Cruz Island 
 
 ## Figure App.E.10.22.
 
-A map showing eelgrass bed locations around the Northern Channel Islands. Data source: NMFS, UCSB, and CINMS; Map: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
+A map showing eelgrass bed locations around the Northern Channel Islands. Data source: NMFS, UCSB, and CINMS; Map credit: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html).
 
 ### Details
 
@@ -391,7 +389,7 @@ CINMS eelgrass bed locations in the map above are a compilation from UCSB, NMFS,
 
 ## Figure App.E.10.24.
 
-A map showing eelgrass beds mapped by diver surveys on Anacapa Island in 2009 (light blue) and 2012 (dark red). Data source: J. Altstatt/ UCSB and CINMS; [Map: M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
+A map showing eelgrass beds mapped by diver surveys on Anacapa Island in 2009 (light blue) and 2012 (dark red). Data source: J. Altstatt/ UCSB and CINMS; Map credit: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html).
 
 ### Details
 
@@ -399,7 +397,7 @@ Eelgrass bed extent from diver surveys at Anacapa Island in 2009 (light blue) an
 
 ## Figure App.E.10.25.
 
-A map showing eelgrass beds on Santa Cruz Island from a 2015 survey using sidescan sonar. Data source: NMFS; Map: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
+A map showing eelgrass beds on Santa Cruz Island from a 2015 survey using sidescan sonar. Data source: NMFS; Map credit: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html).
 
 ### Details
 
@@ -407,7 +405,7 @@ National Marine Fisheries Service surveys in 2015 for eelgrass using interferome
 
 ## Figure App.E.10.26.
 
-A pie chart showing the number of deep-water soft corals observed in the Southern California Bight. Organisms are grouped by genus. Figure: Etnoyer et al. 2015
+A pie chart showing the number of deep-water soft corals observed in the Southern California Bight. Organisms are grouped by genus. Figure credit: Etnoyer et al. 2015.
 
 ### Details
 
@@ -415,7 +413,7 @@ The breakdown for the number of deep-water soft corals colonies observed in each
 
 ## Figure App.E.10.28.
 
-A figure showing different levels of damage on gorgonians on Anacapa Island as seen during remotely-operated-vehicle surveys (2005, 2009, and 2014). Figure: [MARE](https://www.maregroup.org/)
+A figure showing different levels of damage on gorgonians on Anacapa Island as seen during remotely-operated-vehicle surveys (2005, 2009, and 2014). Figure credit: [MARE](https://www.maregroup.org/).
 
 ### Details
 
@@ -423,7 +421,7 @@ Percent of gorgonians showing different levels damage at Anacapa Island during R
 
 ## Figure App.E.10.29.
 
-A figure showing the concentration of the mineral [aragonite](https://marinebon.org/cinms/glossary) (a form of calcium carbonate) at different depths at Anacapa Island from 2007 - 2014. Figure: Etnoyer et al. 2015
+A figure showing the concentration of the mineral [aragonite](https://marinebon.org/cinms/glossary) (a form of calcium carbonate) at different depths at Anacapa Island from 2007 to 2014. Figure credit: Etnoyer et al. 2015.
 
 ### Details
 
@@ -431,7 +429,7 @@ A figure showing the concentration of the mineral [aragonite](https://marinebon.
 
 ## Figure App.E.11.1.
 
-A map showing contaminant monitoring sites for mussels in Southern California (top) and around the Northern Channel Islands (bottom).Data source: D. Whitall/[NOS NCCOS Mussel Watch](https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html)
+A map showing contaminant monitoring sites for mussels in Southern California (top) and around the Northern Channel Islands (bottom).Data source: D. Whitall/[NOS NCCOS Mussel Watch](https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html).
 
 ### Details
 
@@ -439,7 +437,7 @@ Mussel tissue contaminant monitoring sites from NOAA’s Mussel Watch Program ar
 
 ## Figure App.E.11.2.
 
-A figure showing a time series of arsenic found in mussel tissue from Santa Cruz Island from 1986 - 2010. Figure: D. Whitall/[NOAA, Mussel Watch](https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html)
+A figure showing a time series of arsenic found in mussel tissue from Santa Cruz Island from 1986 to 2010. Figure credit: D. Whitall/[NOAA, Mussel Watch](https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html).
 
 ### Details
 
@@ -447,7 +445,7 @@ Time series of arsenic (as μg/g dry weight) in _Mytilus_ spp. at Fraser Point, 
 
 ## Figure App.E.11.3.
 
-A figure showing the trends over time of iron found in mussel tissue from Santa Cruz Island from 1986 - 2010. Figure: D. Whitall/[NOAA, Mussel Watch](https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html)
+A figure showing the trends over time of iron found in mussel tissue from Santa Cruz Island from 1986 to 2010. Figure credit: D. Whitall/[NOAA, Mussel Watch](https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html).
 
 ### Details
 
@@ -455,7 +453,7 @@ Time series of iron (as μg/g dry weight) in _Mytilus_ spp. at Fraser Point, San
 
 ## Figure App.E.11.4.
 
-A figure showing the trends over time of silver found in mussel tissue from Santa Cruz Island from 1986 - 2010. Figure: D. Whitall/[NOAA, Mussel Watch](https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html)
+A figure showing the trends over time of silver found in mussel tissue from Santa Cruz Island from 1986 to 2010. Figure credit: D. Whitall/[NOAA, Mussel Watch](https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html).
 
 ### Details
 
@@ -463,7 +461,7 @@ Time series of silver (as μg/g dry weight) in _Mytilus_ spp. at Fraser Point, S
 
 ## Figure App.E.11.5.
 
-A figure showing a coastwide comparison of heavy metals found in mussel tissue from 1986-2010. Figure: D. Apeti/[NOAA, Mussel Watch](https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html) 
+A figure showing a coastwide comparison of heavy metals found in mussel tissue from 1986 to 2010. Figure credit: D. Apeti/[NOAA, Mussel Watch](https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html).
 
 ### Details
 
@@ -471,7 +469,7 @@ This graph is a California coastwide comparison of total extractables (TE) from 
 
 ## Figure App.E.11.6.
 
-A figure showing levels of cancer-causing petroleum-linked chemicals found in the Channel Islands (blue) and offshore sites (red). Figure: D. Apeti/[NOAA, Mussel Watch](https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html)
+A figure showing levels of cancer-causing petroleum-linked chemicals found in the Channel Islands (blue) and offshore sites (red). Figure credit: D. Apeti/[NOAA, Mussel Watch](https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html).
 
 ### Details
 
@@ -479,15 +477,15 @@ Mean Total Extractables (TE) for individual Polycyclic Aromatic Hydrocarbons or 
 
 ## Figure App.E.11.7.
 
-A figure showing  the deposition of tar (green) at Fraser Cove, Santa Cruz Island, compared to bare rock (red) and barnacle cover (grey) from 1994 - 2014. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+A figure showing  the deposition of tar (green) at Fraser Cove, Santa Cruz Island, compared to bare rock (red) and barnacle cover (grey) from 1994 to 2014. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 ### Details
 
-Tar deposition percent cover (green) at Fraser Cove, Santa Cruz Island is compared to bare rock (red) and a barnacle complex (_Balanus/Chtamalus_, grey). The park only monitors tar at Fraser Cove and it is believed that tar at this location is from natural seeps. There was a slight decline (< 10 percent) in tar cover in 2014 from long-term mean, but tar still covered approximately 50 percent of plots. 
+Tar deposition percent cover (green) at Fraser Cove, Santa Cruz Island is compared to bare rock (red) and a barnacle complex (*Balanus/Chtamalus*, grey). The park only monitors tar at Fraser Cove and it is believed that tar at this location is from natural seeps. There was a slight decline (< 10 percent) in tar cover in 2014 from long-term mean, but tar still covered approximately 50 percent of plots. 
 
 ## Figure App.E.11.8.
 
-A figure showing tar deposition at Fraser Cove, Santa Cruz Island from 1994 - 2014. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+A figure showing tar deposition at Fraser Cove, Santa Cruz Island from 1994 to 2014. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 
 ### Details
@@ -496,7 +494,7 @@ Tar deposition percent cover at Fraser Cove, Santa Cruz Island. The park only mo
 
 ## Figure App.E.11.9.
 
-A map showing the relative impact of human activity on the seafloor across different regions of the Southern California Bight, using the Benthic Response Index as an indicator. Data Source: K. Schiff/ [SCCWRP](https://www.sccwrp.org/); Map: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
+A map showing the relative impact of human activity on the seafloor across different regions of the Southern California Bight, using the Benthic Response Index as an indicator. Data Source: K. Schiff/ [SCCWRP](https://www.sccwrp.org/); Map credit: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html).
 
 ### Details
 
@@ -504,7 +502,7 @@ The Southern California Water Research Project uses a diversity index of toleran
 
 ## Figure App.E.11.10.
 
-A figure showing the relative impact of human activity on the seafloor across different regions of the Southern California Bight, using the Benthic Response Index as an indicator. Figure: K. Schiff/[SCCWRP](https://www.sccwrp.org/)
+A figure showing the relative impact of human activity on the seafloor across different regions of the Southern California Bight, using the Benthic Response Index as an indicator. Figure credit: K. Schiff/[SCCWRP](https://www.sccwrp.org/)
 
 ### Details
 
@@ -512,7 +510,7 @@ Comparisons of the Benthic Response Index (BRI), a diversity index of contaminan
 
 ## Figure App.E.11.11.
 
-A map showing sediment sample locations and their respective Benthic Reponse Index sites from a 2013 Southern California Bight-wide survey. The Benthic Response Index is a measure of the impact of humans on the seafloor. Figure: K. Schiff/[SCCWRP](https://www.sccwrp.org/)
+A map showing sediment sample locations and their respective Benthic Reponse Index sites from a 2013 Southern California Bight-wide survey. The Benthic Response Index is a measure of the impact of humans on the seafloor. Figure credit: K. Schiff/[SCCWRP](https://www.sccwrp.org/).
 
 ### Details
 
@@ -520,7 +518,7 @@ SCCWRP sediment sample locations and their respective Benthic Response Index (BR
 
 ## Figure App.E.11.12.
 
-A map showing DDT contaminant levels in sediments collected across the Southern California Bight in 2008. Figure: Schiff et al. 2011
+A map showing DDT contaminant levels in sediments collected across the Southern California Bight in 2008. Figure credit: Schiff et al. 2011.
 
 ### Details
 
@@ -528,7 +526,7 @@ Dichlorodiphenyltrichloroethane (DDT) contaminant levels in sediment sampling lo
 
 ## Figure App.E.11.13.
 
-A map showing copper contaminant levels in sediments collected across the Southern California Bight in 2008. Figure: Schiff et al. 2011.
+A map showing copper contaminant levels in sediments collected across the Southern California Bight in 2008. Figure credit: Schiff et al. 2011.
 
 ### Details
 
@@ -536,7 +534,7 @@ Copper contaminant levels at sediment sampling locations during SCCRWP’s 2008 
 
 ## Figure App.E.11.14.
 
-A map showing silver contaminant levels in sediments collected across the Southern California Bight in 2008. Figure: Schiff et al. 2011
+A map showing silver contaminant levels in sediments collected across the Southern California Bight in 2008. Figure credit: Schiff et al. 2011.
 
 ### Details
 
@@ -544,7 +542,7 @@ Silver contaminant levels in sediment sampling locations during SCCRWP’s 2008 
 
 ## Figure App.E.11.15.
 
-A map showing the contaminent levels of Polybrominated diphenyl ethers (which are used as flame retardants) in sediments collected across the Southern California Bight in 2008. Figure: Schiff et al. 2011
+A map showing the contaminent levels of Polybrominated diphenyl ethers (which are used as flame retardants) in sediments collected across the Southern California Bight in 2008. Figure credit: Schiff et al. 2011.
 
 ### Details
 
@@ -552,7 +550,7 @@ Sediment contaminant levels for Polybrominated diphenyl ethers (PBDEs) in the So
 
 ## Figure App.E.11.16.
 
-A map showing pyrethroid (insecticide) contaminant levels in sediments collected across the Southern California Bight in 2008. Figure: Schiff et al. 2011
+A map showing pyrethroid (insecticide) contaminant levels in sediments collected across the Southern California Bight in 2008. Figure credit: Schiff et al. 2011.
 
 ### Details
 
@@ -560,7 +558,7 @@ Pyrethroids contaminant levels in sediment sampling locations during SCCRWP’s 
 
 ## Figure App.E.11.17.
 
-A figure showing the amount of impacted sediment in varying categories of exposure to sediment contamination ("Cat") across five sites and three years. Figure: Schiff et al. 2011
+A figure showing the amount of impacted sediment in varying categories of exposure to sediment contamination ("Cat") across five sites and three years. Figure credit: Schiff et al. 2011.
 
 ### Details
 
@@ -568,7 +566,7 @@ Percent area of impacted sediments by stratum and survey year in varying categor
 
 ## Figure App.F.12.2.
 
-A figure showing how the size of ochre stars differs across across several of the Channel Islands. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+A figure showing how the size of ochre stars differs across across several of the Channel Islands. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 ### Details
 
@@ -576,7 +574,7 @@ Box plots for annual size frequency distributions of ochre star _P. ochraceus_ a
 
 ## Figure App.F.12.4.
 
-A figure showing the trends in the density of sand crabs on Santa Rosa Island from 1994 to 2015. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+A figure showing the trends in the density of sand crabs on Santa Rosa Island from 1994 to 2015. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 ### Details
 
@@ -584,7 +582,7 @@ Mean density of sand crabs _Emerita analoga_ from surveys of eight beaches on Sa
 
 ## Figure App.F.12.5.
 
-A figure showing the density of red and purple sea urchins near four of the Channel Islands. Data source: PISCO; Figure: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html)
+A figure showing the density of red and purple sea urchins near four of the Channel Islands. Data source: PISCO; Figure credit: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html).
 
 ### Details
 
@@ -592,7 +590,7 @@ Mean density (+/- standard error) of red sea urchin _Mesocentrotus franciscanus_
 
 ## Figure App.F.12.6.
 
-The average amount of red and purple sea urchins at several measuring locations on the Channel Islands and the mainland. Data source: SBC LTER; Figure: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html)
+The average amount of red and purple sea urchins at several measuring locations on the Channel Islands and the mainland. Data source: SBC LTER; Figure credit: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html).
 
 ### Details
 
@@ -600,7 +598,7 @@ Average abundance (+/- standard error) of sea urchins (red sea urchin _Mesocentr
 
 ## Figure App.F.12.7.
 
-A figure showing the amount of three important sea stars at 14 different sites acros the four northern Channel Islands from 2003 - 2016. Data source: PISCO; Figure: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html)
+A figure showing the amount of three important sea stars at 14 different sites acros the four northern Channel Islands from 2003 to 2016. Data source: PISCO; Figure credit: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html).
 
 ### Details
 
@@ -608,7 +606,7 @@ Average density (+/- standard error) of giant spined star (*Pisaster giganteus*)
 
 ## Figure App.F.12.8a.
 
-A figure showing the amount of giant-spined sea stars across all of the northern Channel Islands from 2005 - 2016. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+A figure showing the amount of giant-spined sea stars across all of the northern Channel Islands from 2005 to 2016. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 ### Details
 
@@ -616,7 +614,7 @@ Average density (+/- standard error) of the giant-spined star (*Pisaster gigante
 
 ## Figure App.F.12.8b.
 
-A figure showing the amount of sunflower stars across all of the northern Channel Islands from 2005 - 2016. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+A figure showing the amount of sunflower stars across all of the northern Channel Islands from 2005 to 2016. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 ### Details
 
@@ -624,15 +622,15 @@ Average density (+/- standard error) of the sunflower star (*Pycnopodia helianth
 
 ## Figure App.F.12.9.
 
-A figure showing the mount of ochre and sunflower stars on two of the Channel Islands (dark blue) and at nine mainland (light blue) kelp forests sites from 2000- 2015. Data source: SBC LTER; Figure: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html)
+A figure showing the mount of ochre and sunflower stars on two of the Channel Islands (dark blue) and at nine mainland (light blue) kelp forests sites from 2000 to 2015. Data source: SBC LTER; Figure credit: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html).
 
 ### Details
 
-Average density (+/- standard error) of sea stars (_Pisaster_ and _Pycnopodia_ combined) at two island (dark blue) and nine mainland (light blue) kelp forest sites monitored by the Santa Barbara Channel Long-term Ecological Research (SBC LTER) program. Sea star density had drastically declined all sites prior to 2014 monitoring and remained very low through 2015. 
+Average density (+/- standard error) of sea stars (*Pisaster* and _Pycnopodia_ combined) at two island (dark blue) and nine mainland (light blue) kelp forest sites monitored by the Santa Barbara Channel Long-term Ecological Research (SBC LTER) program. Sea star density had drastically declined all sites prior to 2014 monitoring and remained very low through 2015. 
 
 ## Figure App.F.12.10.
 
-A figure showing the average density of California spiny lobster near four of the Channel Islands from 2003-2006. Data source: PISCO; Figure: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html)
+A figure showing the average density of California spiny lobster near four of the Channel Islands from 2003 to 2006. Data source: PISCO; Figure credit: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html).
 
 ### Details
 
@@ -640,7 +638,7 @@ Average density (+/- standard error) of California spiny lobster (Panulirus inte
 
 ## Figure App.F.12.11.
 
-A figure showing the average density of California spiny lobster near the five Channel Islands of the Channel Island National Marine Sanctuary. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+A figure showing the average density of California spiny lobster near the five Channel Islands of the Channel Island National Marine Sanctuary. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 ### Details
 
@@ -648,7 +646,7 @@ Average density (+/- standard error) of California spiny lobster _Panulirus inte
 
 ## Figure App.F.12.12.
 
-A figure showing the density of California sheephead around the four Northern Channel Islands from 2003 - 2016. Data source: PISCO; Figure: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html)
+A figure showing the density of California sheephead around the four Northern Channel Islands from 2003 to 2016. Data source: PISCO; Figure credit: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html).
 
 ### Details
 
@@ -656,7 +654,7 @@ Average density (+/- standard error) of California sheephead _Semicossyphus pulc
 
 ## Figure App.F.12.13.
 
-A figure showing the average density of California Sheephead across the five Northern Channel Islands from 2005 - 2016. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+A figure showing the average density of California Sheephead across the five Northern Channel Islands from 2005 to 2016. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 ### Details
 
@@ -664,7 +662,7 @@ Average density (+/- standard error) of California sheephead _Semicossyphus pulc
 
 ## Figure App.F.12.14. 
 
-A figure showing the average number of California sheephead around two of the Channel Islands (dark blue) and on the mainland (light blue) from 2000 - 2015. Data source: SBC LTER; Figure: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html)
+A figure showing the average number of California sheephead around two of the Channel Islands (dark blue) and on the mainland (light blue) from 2000 to 2015. Data source: SBC LTER; Figure credit: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html).
 
 ### Details
 
@@ -672,24 +670,23 @@ Average number (+/- standard error) of California sheephead _Semicossyphus pulch
 
 ## Figure App.F.12.15.
 
-An image from Marine Applied Research and Exploration ([MARE](https://www.maregroup.org/)) about the abundance of sunflower star Pycnopodia helianthoides along seafloor transects. Source: [MARE](https://www.maregroup.org/)
+An image from Marine Applied Research and Exploration ([MARE](https://www.maregroup.org/)) about the abundance of sunflower star Pycnopodia helianthoides along seafloor transects. Source: [MARE](https://www.maregroup.org/).
 
 ## Figure App.F.12.16.
 
-A figure showing the density of California sheephead inside fished (blue) and unfished (red) marine reserves around the Channel Islands. Source: [MARE](https://www.maregroup.org/)
-
+A figure showing the density of California sheephead inside fished (blue) and unfished (red) marine reserves around the Channel Islands. Source: [MARE](https://www.maregroup.org/).
 
 ### Details
 
-Average density (per 100 m2 +/- SE) of California sheephead (_Semicossyphus pulcher_) at fished (blue) and unfished marine reserves (red) surveyed annually in two time periods 2005–2009 and 2014–2015. Density has increased since the baseline period, and the increase was more pronounced inside reserves as compared to fished sites. 
+Average density (per 100 m2 +/- SE) of California sheephead (*Semicossyphus pulcher*) at fished (blue) and unfished marine reserves (red) surveyed annually in two time periods 2005–2009 and 2014–2015. Density has increased since the baseline period, and the increase was more pronounced inside reserves as compared to fished sites. 
 
 ## Figure App.F.12.17.new
 
-A map showing the locations of spring season net samples by [CalCOFI](https://calcofi.org/) for use in analyses of abundance and trends in pelagic resources. Channel Islands National Marine Sanctuary region (red) includes CalCOFI stations inside and adjacent to CINMS; and Southern California Shelf (yellow) includes all CalCOFI stations over the shelf. Figure: A. Thompson/NOAA, [Ben Best/EcoQuants](https://ecoquants.com/)
+A map showing the locations of spring season net samples by [CalCOFI](https://calcofi.org/) for use in analyses of abundance and trends in pelagic resources. Channel Islands National Marine Sanctuary region (red) includes CalCOFI stations inside and adjacent to CINMS; and Southern California Shelf (yellow) includes all CalCOFI stations over the shelf. Figure credit: A. Thompson/NOAA, [Ben Best/EcoQuants](https://ecoquants.com/).
 
 ## Figure App.F.12.18
 
-A figure showing the trends in the average volume of small plankton (tiny, often microscopic creatures floating in the water) collected in the ocean off of Southern California from 1978 to 2015. Data source: CalCOFI; Figure: A. Thompson/NOAA
+A figure showing the trends in the average volume of small plankton (tiny, often microscopic creatures floating in the water) collected in the ocean off of Southern California from 1978 to 2015. Data source: CalCOFI; Figure credit: A. Thompson/NOAA.
 
 ### Details
 
@@ -697,7 +694,7 @@ Mean volume of small plankton collected in net samples during CalCOFI cruises at
 
 ## Figure App.F.12.19.anchovy
 
-A figure showing the relative abundance of northern anchovy (*Engraulis mordax*) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 - 2018. Data source: CalCOFI; Figure: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/)
+A figure showing the relative abundance of northern anchovy (*Engraulis mordax*) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 to 2018. Data source: CalCOFI; Figure credit: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/).
 
 
 ### Details
@@ -706,7 +703,7 @@ Relative abundance of key forage fish groups collected in net samples during spr
 
 ## Figure App.F.12.19.hake
 
-A figure showing the relative abundance of Pacific hake (*Merluccius productus*) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 - 2018. Data source: CalCOFI; Figure: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/)
+A figure showing the relative abundance of Pacific hake (*Merluccius productus*) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 to 2018. Data source: CalCOFI; Figure credit: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/).
 
 ### Details
 
@@ -714,7 +711,7 @@ Relative abundance of key forage fish groups collected in net samples during spr
 
 ## Figure App.F.12.19.myctophids
 
-A figure showing the relative abundance of myctophids (Myctophidae) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 - 2018. Data source: CalCOFI; Figure: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/)
+A figure showing the relative abundance of myctophids (Myctophidae) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 to 2018. Data source: CalCOFI; Figure credit: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/).
 
 ### Details
 
@@ -722,7 +719,7 @@ Relative abundance of key forage fish groups collected in net samples during spr
 
 ## Figure App.F.12.19.rockfish
 
-A figure showing the relative abundance of shortbelly rockfish (*Sebastes jordani*) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 - 2018. Data source: CalCOFI; Figure: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/)
+A figure showing the relative abundance of shortbelly rockfish (*Sebastes jordani*) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 to 2018. Data source: CalCOFI; Figure credit: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/).
 
 ### Details
 
@@ -731,7 +728,7 @@ Relative abundance of key forage fish groups collected in net samples during spr
 
 ## Figure App.F.12.19.sanddab
 
-A figure showing the relative abundance of Pacific sanddab (*Citharichthys sordidus*) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 - 2018. Data source: CalCOFI; Figure: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/)
+A figure showing the relative abundance of Pacific sanddab (*Citharichthys sordidus*) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 - 2018. Data source: CalCOFI; Figure credit: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/).
 
 ### Details
 
@@ -739,7 +736,7 @@ Relative abundance of key forage fish groups collected in net samples during spr
 
 ## Figure App.F.12.19.sardine
 
-A figure showing the relative abundance of Pacific sardine (*Sardinops sagax*) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 - 2018. Data source: CalCOFI; Figure: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/)
+A figure showing the relative abundance of Pacific sardine (*Sardinops sagax*) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 to 2018. Data source: CalCOFI; Figure credit: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/).
 
 ### Details
 
@@ -747,135 +744,135 @@ Relative abundance of key forage fish groups collected in net samples during spr
 
 ## Figure App.F.12.20.squid
 
-A figure showing the average abundance of market squid collected  around the Northern Channel Islands (top) and the Southern California Shelf (bottom) from 1997 - 2015. Data source: CalCOFI; Figure: A. Thompson/NOAA
+A figure showing the average abundance of market squid collected around the Northern Channel Islands (top) and the Southern California Shelf (bottom) from 1997 to 2015. Data source: CalCOFI; Figure credit: A. Thompson/NOAA.
 
 ### Details
 
-Mean abundance of market squid (_Doryteuthis opalescens_) collected in net samples during CalCOFI cruises at only sites in the Channel Islands National Marine Sanctuary region (top) and all sites over the Southern California Shelf (bottom) from 1997 to 2015 (sampling locations shown in Figure App.F12.17). Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (–), or within 1 standard deviation (●) of the mean of the full time series.
+Mean abundance of market squid (*Doryteuthis opalescens*) collected in net samples during CalCOFI cruises at only sites in the Channel Islands National Marine Sanctuary region (top) and all sites over the Southern California Shelf (bottom) from 1997 to 2015 (sampling locations shown in Figure App.F12.17). Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (–), or within 1 standard deviation (●) of the mean of the full time series.
 
 ## Figure App.F.13.1.
 
-A figure showing the density of of black abalone across the Channel Islands from 1985 - 2014 in fixed plots in the rocky intertidal. The inset figure shows actual counts from site-wide searches (1995 - 2014). Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+A figure showing the density of of black abalone across the Channel Islands from 1985 to 2014 in fixed plots in the rocky intertidal. The inset figure shows actual counts from site-wide searches (1995 to 2014). Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 ### Details
 
-Black abalone _Haliotis cracherodii_ mean density from fixed plots from 1985–2014 (left) and mean counts from site-wide searches from 1995–2014 (inset) at four islands in Channel Islands National Marine Sanctuary. Site wide search counts began in 1995 due to the severe declines in abundance that occurred from 1985–1995. Generally, increasing abundances began approximately in the 2007–2009 timeframe. Error bars were constructed using one standard error from the mean. 
+Black abalone (*Haliotis cracherodii*) mean density from fixed plots from 1985–2014 (left) and mean counts from site-wide searches from 1995–2014 (inset) at four islands in Channel Islands National Marine Sanctuary. Site wide search counts began in 1995 due to the severe declines in abundance that occurred from 1985–1995. Generally, increasing abundances began approximately in the 2007–2009 timeframe. Error bars were constructed using one standard error from the mean. 
 
 ## Figure App.F.13.2. 
 
-A figure  showing the sizes of black abalone across the Channel Islands from th 1985 - 2014. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+A figure  showing the sizes of black abalone across the Channel Islands from 1985 to 2014. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 ### Details
 
-Box plots for annual size frequency distributions of black abalone _Haliotis cracherodii_ at each island. Blue lines represent mean sizes of H. cracherodii at each island pooled across and sites. Red lines represent the cumulative mean. 
+Box plots for annual size frequency distributions of black abalone (*Haliotis cracherodii*) at each island. Blue lines represent mean sizes of H. cracherodii at each island pooled across and sites. Red lines represent the cumulative mean. 
 
 ## Figure App.F.13.3.
 
-Left: a figure showing the average numer of owl limpets across the Northern Channel Islands from 2000 - 2014. Right: a figure showing the annunal size distribution of owl limpets across the Northern Channel Islands from 2000 - 2014. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+Left: a figure showing the average numer of owl limpets across the Northern Channel Islands from 2000 to 2014. Right: a figure showing the annunal size distribution of owl limpets across the Northern Channel Islands from 2000 to 2014. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 ### Details
 
-(left) Mean number of owl limpets _Lottia gigantea_ at each island from 2000–2014. Blue lines represent mean number at each island pooled across fixed plots and error bars were constructed using one standard error from the mean. (right) Box plots for annual size frequency distributions of _L. gigantea_ at each island. Black lines represent mean sizes at each island pooled across fixed plots and sites. Red lines represent the cumulative mean. 
+(left) Mean number of owl limpets (*Lottia gigantea*) at each island from 2000–2014. Blue lines represent mean number at each island pooled across fixed plots and error bars were constructed using one standard error from the mean. (right) Box plots for annual size frequency distributions of owl limpets at each island. Black lines represent mean sizes at each island pooled across fixed plots and sites. Red lines represent the cumulative mean. 
 
 ## Figure App.F.13.4.
 
-A map showing a 2011 survey of suitable black oystercatcher habitat (orange) along the coast of the Channel Islands and Southern to Central California. Figure: Modified from Weinstein et al. 2014
+A map showing a 2011 survey of suitable black oystercatcher habitat (orange) along the coast of the Channel Islands and Southern to Central California. Figure credit: Modified from Weinstein et al. 2014.
 
 ### Details
 
-In 2011, approximately 20 percent of the suitable habitat (orange) for black oystercatchers _Haematopus bachmani_ was surveyed. A total of 176 adult or sub-adult black oystercatchers were detected at the five islands in Channel Islands National Marine Sanctuary. Density at different locations is shown by the diameter of the purple circles. The northern Channel Islands population was conservatively estimated to be between 779–854, which is 14 to 16 percent of the estimated total population in California. 
+In 2011, approximately 20 percent of the suitable habitat (orange) for black oystercatchers (*Haematopus bachmani*) was surveyed. A total of 176 adult or sub-adult black oystercatchers were detected at the five islands in Channel Islands National Marine Sanctuary. Density at different locations is shown by the diameter of the purple circles. The northern Channel Islands population was conservatively estimated to be between 779–854, which is 14 to 16 percent of the estimated total population in California. 
 
 ## Figure App.F.13.5.
 
-A figure showing the number of black oystercatchers observed at 20 sites across the Channel Islands from 1990 - 2015. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+A figure showing the number of black oystercatchers observed at 20 sites across the Channel Islands from 1990 - 2015. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 ### Details
 
-Number of black oystercatchers _Haematopus bachmani_ observed during surveys at 20 rocky shore sites by Channel Islands National Park. Data are collected opportunistically. Curved lines represent statistically smoothed means. 
+Number of black oystercatchers (*Haematopus bachmani*) observed during surveys at 20 rocky shore sites by Channel Islands National Park. Data are collected opportunistically. Curved lines represent statistically smoothed means. 
 
 ## Figure App.F.13.6.
 
-A figure showing the number of black oystercatchers observed on Santa Cruz Island during the Audubon Christmas Bird Count from 2007 - 2013. Data source: Audubon Christmas Bird Count; Figure: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html)
+A figure showing the number of black oystercatchers observed on Santa Cruz Island during the Audubon Christmas Bird Count from 2007 to 2013. Data source: Audubon Christmas Bird Count; Figure credit: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html).
 
 ### Details
 
-Number of black oystercatchers _Haematopus bachmani_ observed at Santa Cruz Island during the Audubon Christmas Bird Count from 2007 to 2013.; no data were available for 2010.
+Number of black oystercatchers (*Haematopus bachmani*) observed at Santa Cruz Island during the Audubon Christmas Bird Count from 2007 to 2013; no data were available for 2010.
 
 ## Figure App.F.13.7a.
 
-A figure showing counts of of western snowy plovers across 11 beaches on Santa Rosa Island in winter (red) and the summer breeding season (blue) from 1993 - 2015. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+A figure showing counts of of western snowy plovers across 11 beaches on Santa Rosa Island in winter (red) and the summer breeding season (blue) from 1993 to 2015. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 ### Details
 
-Counts of western snowy plover *Charadrius nivosus nivosus* at 11 beaches on Santa Rosa Island in winter (red) and summer breeding season (blue). Surveys are conducted as time and conditions allow. Winter and breeding surveys show relatively stable population sizes over the last decade. Curved lines represent statistically smoothed means. 
+Counts of western snowy plover (*Charadrius nivosus nivosus*) at 11 beaches on Santa Rosa Island in winter (red) and summer breeding season (blue). Surveys are conducted as time and conditions allow. Winter and breeding surveys show relatively stable population sizes over the last decade. Curved lines represent statistically smoothed means. 
 
 ## Figure App.F.13.7b.
 
-A figure showing the number of western snowy plover chicks on Santa Rosa Island from 1993 - 2015. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+A figure showing the number of western snowy plover chicks on Santa Rosa Island from 1993 to 2015. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 ### Details
 
-Counts of western snowy plover *Charadrius nivosus nivosus* chicks at 11 beaches on Santa Rosa Island in winter (red) and summer breeding season (blue). Surveys are conducted as time and conditions allow. Winter and breeding surveys show relatively stable population sizes over the last decade. Curved lines represent statistically smoothed means. Chicks were observed five of last eight years. 
+Counts of western snowy plover (*Charadrius nivosus nivosus*) chicks at 11 beaches on Santa Rosa Island in winter (red) and summer breeding season (blue). Surveys are conducted as time and conditions allow. Winter and breeding surveys show relatively stable population sizes over the last decade. Curved lines represent statistically smoothed means. Chicks were observed five of last eight years. 
 
 ## Figure App.F.13.8.
 
-A figure showing the averaage density of two important sandy beach-dwelling [invertebrates](https://marinebon.org/cinms/glossary) (shown in red and blue) from eight surveyed beaches on Santa Rosa Island from 1994 - 2015. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+A figure showing the averaage density of two important sandy beach-dwelling [invertebrates](https://marinebon.org/cinms/glossary) (shown in red and blue) from eight surveyed beaches on Santa Rosa Island from 1994 to 2015. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 ### Details
 
-Mean density of two important members of the upper beach macrofaunal community — California beach hopper _Megalorchestia californiana_ (red) and _Alloniscus perconvexus_ (blue )— from surveys of eight beaches on Santa Rosa Island from 1994–2015. Curved lines represent statistically smoothed means. 
+Mean density of two important members of the upper beach macrofaunal community — California beach hopper (*Megalorchestia californiana*) (red) and (*Alloniscus perconvexus*) (blue ) — from surveys of eight beaches on Santa Rosa Island from 1994 to 2015. Curved lines represent statistically smoothed means. 
 
 ## Figure App.F.13.9.
 
-A figure showing the average density of red abalone across the Northern Channel Islands from 2003 - 2016. Data source: PISCO; Figure: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html)
+A figure showing the average density of red abalone across the Northern Channel Islands from 2003 to 2016. Data source: PISCO; Figure credit: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html).
 
 ### Details
 
-Average density (+/- standard error) of red abalone _Haliotis rufescens_ at 14 sites across four islands in Channel Islands National Marine Sanctuary monitored by the [PISCO](http://www.piscoweb.org/kelp-forest-sampling-protocols) kelp forest monitoring program from 2003–2016. Abalone are counted by SCUBA divers swimming along transect lines. Observed density was averaged across all monitoring sites at each island, including sites located inside and outside of marine reserves and conservation areas, to examine course-scale trends by island. Observed density was higher at San Miguel Island (blue). 
+Average density (+/- standard error) of red abalone (*Haliotis rufescens*) at 14 sites across four islands in Channel Islands National Marine Sanctuary monitored by the [PISCO](http://www.piscoweb.org/kelp-forest-sampling-protocols) kelp forest monitoring program from 2003–2016. Abalone are counted by SCUBA divers swimming along transect lines. Observed density was averaged across all monitoring sites at each island, including sites located inside and outside of marine reserves and conservation areas, to examine course-scale trends by island. Observed density was higher at San Miguel Island (blue). 
 
 ## Figure App.F.13.10a.
 
-A figure showing the average density of red abalone across the Northern Channel Islands from 1984 - 2016. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+A figure showing the average density of red abalone across the Northern Channel Islands from 1984 to 2016. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 ### Details
 
-Average density of red abalone _Haliotis rufescens_ at Channel Islands National Park kelp forest monitoring sites at the five islands in Channel Islands National Marine Sanctuary. Abundance of both species was greatly reduced by harvest at all islands prior to the fishery closure in 1997. A gradual increasing trend in abundance of red abalone has been observed since the fishery closure at San Miguel (blue) and more recently at Santa Rosa (red) islands. Abalone are counted by SCUBA divers and observed density was averaged across all monitoring sites at each island, including sites located inside and outside of marine reserves and conservation areas, to examine course-scale trends by island. 
+Average density of red abalone (*Haliotis rufescens*) at Channel Islands National Park kelp forest monitoring sites at the five islands in Channel Islands National Marine Sanctuary. Abundance of both species was greatly reduced by harvest at all islands prior to the fishery closure in 1997. A gradual increasing trend in abundance of red abalone has been observed since the fishery closure at San Miguel (blue) and more recently at Santa Rosa (red) islands. Abalone are counted by SCUBA divers and observed density was averaged across all monitoring sites at each island, including sites located inside and outside of marine reserves and conservation areas, to examine course-scale trends by island. 
 
 ## Figure App.F.13.10b.
 
-A figure showing the average density of pink abalone across the Northern Channel Islands from 1984 - 2016. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+A figure showing the average density of pink abalone across the Northern Channel Islands from 1984 to 2016. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 ### Details
 
-Average density of pink abalone _H. corrugata_ at Channel Islands National Park kelp forest monitoring sites at the five islands in Channel Islands National Marine Sanctuary. Abundance of both species was greatly reduced by harvest at all islands prior to the fishery closure in 1997. A gradual increasing trend in abundance of red abalone has been observed since the fishery closure at San Miguel (blue) and more recently at Santa Rosa (red) islands. Abalone are counted by SCUBA divers and observed density was averaged across all monitoring sites at each island, including sites located inside and outside of marine reserves and conservation areas, to examine course-scale trends by island. 
+Average density of pink abalone (*H. corrugata*) at Channel Islands National Park kelp forest monitoring sites at the five islands in Channel Islands National Marine Sanctuary. Abundance of both species was greatly reduced by harvest at all islands prior to the fishery closure in 1997. A gradual increasing trend in abundance of red abalone has been observed since the fishery closure at San Miguel (blue) and more recently at Santa Rosa (red) islands. Abalone are counted by SCUBA divers and observed density was averaged across all monitoring sites at each island, including sites located inside and outside of marine reserves and conservation areas, to examine course-scale trends by island. 
 
 ## Figure App.F.13.12.
 
-A figure showing the average density of warty sea cucumbers across the Northern Channel Islands from 2005 - 2016. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+A figure showing the average density of warty sea cucumbers across the Northern Channel Islands from 2005 to 2016. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 ### Details
 
-Figure App.F.13.12. Average density of warty sea cucumber _Parastichopus parvimensis_ at Channel Islands National Park kelp forest monitoring sites at the five islands in Channel Islands National Marine Sanctuary. Densities are lower, but stable at San Miguel (blue) and Santa Rosa (red) islands, while densities have declined recently at the other islands. For this graph, sea cucumber density was averaged across all monitoring sites at each island, including sites located inside and outside of marine reserves and conservation areas, to examine course-scale trends by island. At a finer scale, sea cucumber density is responding differently inside and outside of some marine protected areas (MPAs) in CINMS. 
+Average density of warty sea cucumber (*Parastichopus parvimensis*) at Channel Islands National Park kelp forest monitoring sites at the five islands in Channel Islands National Marine Sanctuary. Densities are lower, but stable at San Miguel (blue) and Santa Rosa (red) islands, while densities have declined recently at the other islands. For this graph, sea cucumber density was averaged across all monitoring sites at each island, including sites located inside and outside of marine reserves and conservation areas, to examine course-scale trends by island. At a finer scale, sea cucumber density is responding differently inside and outside of some marine protected areas (MPAs) in CINMS. 
 
 ## Figure App.F.13.13.
 
-A figure showing a comparison of the average density of sea cucumbers from two of the Northern Channel Islands to mainland sites from 2000 - 2015. Data source: SBC LTER; Figure: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html) 
+A figure showing a comparison of the average density of sea cucumbers from two of the Northern Channel Islands to mainland sites from 2000 to 2015. Data source: SBC LTER; Figure credit: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html).
 
 ### Details
 
-Average density (+/- standard error) of sea cucumber (_Parastichopus spp._) at 2 island (dark blue) and 9 mainland (light blue) kelp forest sites monitored by the Santa Barbara Channel Long-term Ecological Research (SBC LTER) program. 
+Average density (+/- standard error) of sea cucumber (*Parastichopus spp.*) at 2 island (dark blue) and 9 mainland (light blue) kelp forest sites monitored by the Santa Barbara Channel Long-term Ecological Research (SBC LTER) program. 
 
 ## Figure App.F.13.14.
 
-A figure showing the number of times giant sea bass were present at sampling sites across the Channel Islands from 2003 - 2016. Data source: PISCO; Figure: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html)
+A figure showing the number of times giant sea bass were present at sampling sites across the Channel Islands from 2003 to 2016. Data source: PISCO; Figure credit: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html).
 
 ### Details
 
-Frequency of occurrence of giant sea bass _Stereolepis gigas_ at 14 [PISCO](http://www.piscoweb.org/) monitoring sites in Channel Islands National Marine Sanctuary from 2003—2016. Note that this species is so rare that there are too few observations to detect a trend, if one exists, but it is notable that this species has not been sighted during surveys since 2011. 
+Frequency of occurrence of giant sea bass (*Stereolepis gigas*) at 14 [PISCO](http://www.piscoweb.org/) monitoring sites in Channel Islands National Marine Sanctuary from 2003—2016. Note that this species is so rare that there are too few observations to detect a trend, if one exists, but it is notable that this species has not been sighted during surveys since 2011. 
 
 ## Figure App.F.13.15.
 
-A figure showing the average mass of five kelp-forest fish species found in kelp forests, from four of the Northern Channel Islands from 2003 - 2016. Data source: [PISCO](http://www.piscoweb.org/); Figure: NOAA
+A figure showing the average mass of five kelp-forest fish species found in kelp forests, from four of the Northern Channel Islands from 2003 to 2016. Data source: [PISCO](http://www.piscoweb.org/); Figure credit: NOAA.
 
 ### Details
 
@@ -883,7 +880,7 @@ Average biomass of five kelp forest fish species at 14 [PISCO](http://www.piscow
 
 ## Figure App.F.13.16.
 
-A figure showing the average density of five kelp-forest fish species across the Northern Channel Islands from 2003 - 2016. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+A figure showing the average density of five kelp-forest fish species across the Northern Channel Islands from 2003 to 2016. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 ### Details
 
@@ -891,7 +888,7 @@ Average density of five kelp forest fish species at Channel Islands National Par
 
 ## Figure App.F.13.17.
 
-A figure showing a comparison of the average density of five kelp-forest fish species from two of the Northern Channel Islands to mainland sites from 2000 - 2015. Data source: SBC LTER; Figure: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html)
+A figure showing a comparison of the average density of five kelp-forest fish species from two of the Northern Channel Islands to mainland sites from 2000 to 2015. Data source: SBC LTER; Figure credit: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html).
 
 ### Details
 
@@ -899,8 +896,7 @@ Mean (+/- SE) density of five kelp forest fish species at two island (dark blue)
 
 ## Figure App.F.13.18.
 
-A figure showing the abundance of near-bottom dwelling fishes observed from a remotely operated vehicle from 2005 - 2014. Figure: [MARE](https://www.maregroup.org/)
-
+A figure showing the abundance of near-bottom dwelling fishes observed from a remotely operated vehicle from 2005 to 2014. Figure credit: [MARE](https://www.maregroup.org/).
 
 ### Details
 
@@ -908,7 +904,7 @@ A figure showing the abundance of near-bottom dwelling fishes observed from a re
 
 ## Figure App.F.13.19.
 
-A figure showing the abundance of near-bottom dwelling fishes (lingcod, sheephead, gopher rockfish, copper rockfish, and vermillion rockfish), observed from a remotely operated vehicle from 2005 - 2014. Figure: [MARE](https://www.maregroup.org/)
+A figure showing the abundance of near-bottom dwelling fishes (lingcod, sheephead, gopher rockfish, copper rockfish, and vermillion rockfish), observed from a remotely operated vehicle from 2005 to 2014. Figure credit: [MARE](https://www.maregroup.org/).
 
 ### Details
 
@@ -916,7 +912,7 @@ A figure showing the abundance of near-bottom dwelling fishes (lingcod, sheephea
 
 ## Figure App.F.13.20.
 
-A map showing the location of annual Southern California Shelf Rockfish Hook and Line Surveys in the Southern California Bight. Data source: NMFS NWFSC; Map: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
+A map showing the location of annual Southern California Shelf Rockfish Hook and Line Surveys in the Southern California Bight. Data source: NMFS NWFSC; Map credit: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html).
 
 ### Details
 
@@ -924,7 +920,7 @@ Location of Southern California Shelf Rockfish Hook and Line Surveys. Annual sur
 
 ## Figure App.F.13.21.
 
-A map showing the locations of West Coast Groundfish Bottom Trawl surveys in the Southern California Bight and around point conception from ~2003-2014. Data source: NMFS NWFSC; Map: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
+A map showing the locations of West Coast Groundfish Bottom Trawl surveys in the Southern California Bight and around point conception from ~2003 to 2014. Data source: NMFS NWFSC; Map credit: [M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html).
 
 ### Details
 
@@ -932,7 +928,7 @@ Locations sampled by the West Coast Groundfish Bottom Trawl Surveys for demersal
 
 ## Figure App.F.13.22.
 
-A figure showing trends in seabird abundance and the relative abundace of krill and forage fish from 1987-2011. Figure: Sydeman et al. 2015
+A figure showing trends in seabird abundance and the relative abundace of krill and forage fish from 1987 to 2011. Figure credit: Sydeman et al. 2015.
 
 ### Details
 
@@ -940,55 +936,55 @@ Trends in seabird abundance and the relative abundance of krill and forage fish,
 
 ## Figure App.F.13.23.
 
-A figure showing counts of California sea lion pups from 1975-2011. Figure: Carretta et al. 2016
+A figure showing counts of California sea lion pups from 1975 to 2011. Figure credit: Carretta et al. 2016.
 
 ### Details
 
-U.S. pup count index for California sea lions _Zalophus californianus_ (1975–2011). Trends in pup counts from 1975–2011 are shown for four rookeries in southern California and for haulouts in central and northern California. 
+U.S. pup count index for California sea lions (*Zalophus californianus*) from 1975 to 2011. Trends in pup counts from 1975–2011 are shown for four rookeries in southern California and for haulouts in central and northern California. 
 
 ## Figure App.F.13.24_new.
 
-A figure showing live pup counts (top) and female sea lion pup growth (bottom) for California sea lion pups on San Miguel Island from 1997 - 2019. Figure: [NOAA](https://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.html?time,live_pup_count)
+A figure showing live pup counts (top) and female sea lion pup growth (bottom) for California sea lion pups on San Miguel Island from 1997 to 2019. Figure credit: [NOAA](https://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_MM_pup_count.html?time,live_pup_count).
 
 ### Details
 
-Live pup count (top) and female pup growth index for California sea lions _Zalophus californianus_ (1997–2019). Recent trends in pup counts have been stable, but declining for pup growth likely due to low availability of prey resources in central and southern California, which is the foraging range of nursing females. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (–), or within 1 standard deviation (●) of the mean of the full time series.
+Live pup count (top) and female pup growth index for California sea lions (*Zalophus californianus*) from 1997 to 2019. Recent trends in pup counts have been stable, but declining for pup growth likely due to low availability of prey resources in central and southern California, which is the foraging range of nursing females. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (–), or within 1 standard deviation (●) of the mean of the full time series.
 
 ## Figure App.F.13.25.
 
-A figure showing the population size of harbor seals in California from 1984 to 2014 on the Channel Islands and on the mainland coast. Figure: Carretta et al. 2016
+A figure showing the population size of harbor seals in California from 1984 to 2014 on the Channel Islands and on the mainland coast. Figure credit: Carretta et al. 2016.
 
 ### Details
 
-Population size of harbor seals _Phoca vitulina_ in California is estimated by counting the number of seals ashore during the peak haulout period (May to July) and by multiplying this count by a correction factor. The population on Channel Islands beaches (triangle) appears to be stable. 
+Population size of harbor seals (*Phoca vitulina*) in California is estimated by counting the number of seals ashore during the peak haulout period (May to July) and by multiplying this count by a correction factor. The population on Channel Islands beaches (triangle) appears to be stable. 
 
 ## Figure App.F.13.26.
 
-A figure showing the estimated number of northern elephant seal births from 1958 - 2010 on the Channel Islands and in Central California. Figure: Carretta et al. 2016
+A figure showing the estimated number of northern elephant seal births from 1958 to 2010 on the Channel Islands and in Central California. Figure credit: Carretta et al. 2016.
 
 ### Details
 
-Estimated number of northern elephant seal _Mirounga angustirostris_ births in California from 1958–2010. There has been an increasing trend over the entire time series for Channel Islands (circles). Elephant seals have increased in abundance and taken up residence at locations on Santa Rosa Island that have historically not been inhabited (S. Whitaker, CINP, pers. comm.). 
+Estimated number of northern elephant seal (*Mirounga angustirostris*) births in California from 1958 to 2010. There has been an increasing trend over the entire time series for Channel Islands (circles). Elephant seals have increased in abundance and taken up residence at locations on Santa Rosa Island that have historically not been inhabited (S. Whitaker, CINP, pers. comm.). 
 
 ## Figure App.F.13.27.
 
-A figure showing the number of Northern fur seal pups counted at two locations on San Miguel Island from 1972 - 2014. Figure: Carretta et al. 2016
+A figure showing the number of Northern fur seal pups counted at two locations on San Miguel Island from 1972 to 2014. Figure credit: Carretta et al. 2016.
 
 ### Details
 
-Total production of Northern fur seal _Callorhinus ursinus_ pups counted on San Miguel Island, including the mainland (Adam’s Cove) and the offshore islet (Castle Rock), from 1972–2014. The total production of northern fur seals exceeded the 1997 levels during 2010, 2012, and 2013. The island’s population has recovered from the 1997–1998 El Niño event. 
+Total production of Northern fur seal (*Callorhinus ursinus*) pups counted on San Miguel Island, including the mainland (Adam’s Cove) and the offshore islet (Castle Rock), from 1972–2014. The total production of northern fur seals exceeded the 1997 levels during 2010, 2012, and 2013. The island’s population has recovered from the 1997–1998 El Niño event. 
 
 ## Figure App.F.13.28.
 
-A figure showing the density of the six most frequently seen whales and dolphins in Southern California from 2004 - 2013. Figure: Campbell et al. 2015
+A figure showing the density of the six most frequently seen whales and dolphins in Southern California from 2004 to 2013. Figure credit: Campbell et al. 2015.
 
 ### Details
 
-Trend in density from 2004–2013, based on sightings from [CalCOFI](https://calcofi.org/) cruises, for the six most frequently sighted species of cetaceans off southern California. Blue and humpback whales, short-beaked common dolphins, and Dall’s porpoises appear to be stable. Fin whale sightings have decreased while Pacific white-sided dolphin sightings have increased. 
+Trend in density from 2004–2013, based on sightings from [CalCOFI](https://calcofi.org/) cruises, for the six most frequently sighted species of cetaceans off southern California. Blue and humpback whales, short-beaked common dolphins, and Dall's porpoises appear to be stable. Fin whale sightings have decreased while Pacific white-sided dolphin sightings have increased. 
 
 ## Figure App.F.15.5.
 
-A figure showing the relative abundance (how common or rare a species is) of cool-water associated (top) and warm-water associated (bottom) fish larvae around the Channel Islands and the Southern California Shelf from 1974 to 2015. Data source: [CalCOFI](https://calcofi.org/); Figure: A. Thompson/NOAA
+A figure showing the relative abundance (how common or rare a species is) of cool-water associated (top) and warm-water associated (bottom) fish larvae around the Channel Islands and the Southern California Shelf from 1974 to 2015. Data source: [CalCOFI](https://calcofi.org/); Figure credit: A. Thompson/NOAA.
 
 ### Details
 
@@ -996,7 +992,7 @@ Relative abundance of cool-water and warm-water associated ichthyoplankton (fish
 
 ## Figure App.F.15.6.a-b.
 
-A figure showing the average number of different species of fish larvae collected in around the Channel Islands and the Southern California Shelf from 1978 - 2015. Data source: [CalCOFI](https://calcofi.org/); Figure: A. Thompson/NOAA
+A figure showing the average number of different species of fish larvae collected in around the Channel Islands and the Southern California Shelf from 1978 to 2015. Data source: [CalCOFI](https://calcofi.org/); Figure credit: A. Thompson/NOAA.
 
 ### Details
 
@@ -1004,7 +1000,7 @@ Mean species richness of fish larvae (ichthyoplankton) collected in net samples 
 
 ## Figure App.F.15.6.c-d. 
 
-A figure showing the relative abundance (how common or rare a species is) of cool-water associated (top) and warm-water associated (bottom) fish larve around the Channel Islands and the Southern California Shelf from 1974 to 2015. Data source: [CalCOFI](https://calcofi.org/); Figure: A. Thompson/NOAA
+A figure showing the relative abundance (how common or rare a species is) of cool-water associated (top) and warm-water associated (bottom) fish larve around the Channel Islands and the Southern California Shelf from 1974 to 2015. Data source: [CalCOFI](https://calcofi.org/); Figure credit: A. Thompson/NOAA.
 
 ### Details
 
@@ -1012,7 +1008,7 @@ Relative abundance of cool-water (top panels) and warm-water (bottom panels) ass
 
 ## Figure App.F.15.7.
 
-A series of maps showing some unexpected trends in seabird species presence (A,C) and persistnce of unepxected presence (B,D) around the Southern California Bight. Figure: Santora and Sydeman 2015
+A series of maps showing some unexpected trends in seabird species presence (A,C) and persistence of unexpected presence (B,D) around the Southern California Bight. Figure credit: Santora and Sydeman 2015.
 
 ### Details
 
@@ -1020,7 +1016,7 @@ Seabird species richness spatial anomalies (A,C) and persistence of hotspots (B,
 
 ## Figure App.F.15.8.
 
-A graph showing the change of seabird species presnce in spring (bring) and summer (red) from 1987 - 2015. Figure: Leising et al. 2015
+A graph showing the change of seabird species presence in spring (bring) and summer (red) from 1987 to 2015. Figure credit: Leising et al. 2015.
 
 ### Details
 
@@ -1028,7 +1024,7 @@ Change over time in seabird species richness anomaly (i.e., number of species ob
 
 ## Figure App.F.14.1.
 
-A figure showing the amount of non-native invertebrates and algae found in rocky intertidal sites in Southern California; the eight sites in Channel Islands National Marine Sanctuary are highlighted by the black box. Figure: Blanchette et al. 2015.
+A figure showing the amount of non-native invertebrates and algae found in rocky intertidal sites in Southern California; the eight sites in Channel Islands National Marine Sanctuary are highlighted by the black box. Figure credit: Blanchette et al. 2015.
 
 ### Details
 
@@ -1036,7 +1032,7 @@ Percent cover of non-indigenous taxa in [PISCO](http://www.piscoweb.org/) biodiv
 
 ## Figure App.F.14.2. 
 
-A map showing the expansion of the non-native alga *Sargassum horneri* in the Southern California Bight from 2003 - 2015. Figure: Modified from Marks et al. 2015
+A map showing the expansion of the non-native seaweed *Sargassum horneri* in the Southern California Bight from 2003 to 2015. Figure credit: Modified from Marks et al. 2015.
 
 ### Details
 
@@ -1044,7 +1040,7 @@ First seen in Long Beach Harbor in 2003, _Sargassum horneri_ had spread to many 
 
 ## Figure App.F.14.3.
 
-A map showing the locations where the non-native alga *Sargassum horneri* has been observed in the Southern California Bight. Data source: [CINP](https://www.nps.gov/chis/index.htm),[PISCO](http://www.piscoweb.org/), and [SBC LTER](https://sbclter.msi.ucsb.edu/) data courtesy of L. Marks/ UCSB; Map: M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
+A map showing the locations where the non-native seaweed *Sargassum horneri* has been observed in the Southern California Bight. Data source: [CINP](https://www.nps.gov/chis/index.htm),[PISCO](http://www.piscoweb.org/), and [SBC LTER](https://sbclter.msi.ucsb.edu/) data courtesy of L. Marks/ UCSB; Map credit: M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html).
 
 ### Details
 
@@ -1052,7 +1048,7 @@ Locations where the invasive alga _Sargassum horneri_ has been observed in the S
 
 ## Figure App.F.14.4.
 
-A figure showing the average amount of *Sargassum horneri* across three of the Nothern Channel Islands from 2010 - 2015. Figure: [Channel Islands National Park](https://www.nps.gov/chis/index.htm)
+A figure showing the average amount of a species of non-native seaweed (*Sargassum horneri*) across three of the Nothern Channel Islands from 2010 to 2015. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 ### Details
 
@@ -1060,7 +1056,7 @@ Mean (+/- SE) percent cover of _Sargassum horneri_ at sites monitored by Channel
 
 ## Figure App.F.14.5.
 
-A map showing the presence (red) and absence (green) of a non-native encrusting invertebrate on oil platforms in the Santa Barbara Channel and around the Northern Channel Islands. Figure: Page et al. 2016
+A map showing the presence (red) and absence (green) of a non-native encrusting invertebrate on oil platforms in the Santa Barbara Channel and around the Northern Channel Islands. Figure credit: Page et al. 2016.
 
 ### Details
 
@@ -1068,7 +1064,7 @@ Presence (red) and absence (green) of _Watersipora spp._ on recently surveyed oi
 
 ## Figure App.F.15.1.
 
-A series of figures showing the equally-common species for kelp forest fishes (top), mobile bottom-associated invetebrates (middle) and deep water fishes (bottom) around the four Northern Channel Islands from 2005 - 2014. Data source: Amalgamated dataset of [SBC LTER](https://sbclter.msi.ucsb.edu/), [CINP Kelp Forest Monitoring Program](https://www.nps.gov/im/medn/kelp-forest-communities.htm), and [PISCO](http://www.piscoweb.org/); Figure: [SBC MBON](http://sbc.marinebon.org/)
+A series of figures showing the equally-common species for kelp forest fishes (top), mobile bottom-associated invetebrates (middle) and deep water fishes (bottom) around the four Northern Channel Islands from 2005 to 2014. Data source: Amalgamated dataset of [SBC LTER](https://sbclter.msi.ucsb.edu/), [CINP Kelp Forest Monitoring Program](https://www.nps.gov/im/medn/kelp-forest-communities.htm), and [PISCO](http://www.piscoweb.org/); Figure credit: [SBC MBON](http://sbc.marinebon.org/).
 
 ### Details
 
@@ -1076,7 +1072,7 @@ Mean annual effective number of species for three taxonomic groups: kelp forest 
 
 ## Figure App.F.15.2.
 
-A figure showing the temperature preferences for kelp-forest fish species across the four Northern Channel Islands. Anacapa and Santa Cruz Islands show a more southern (warmer) collection of fish species while Santa Rosa and San Miguel Islands have a more northern (cooler) collection of fish species. Data source: [CINP Kelp Forest Monitoring Program](https://www.nps.gov/im/medn/kelp-forest-communities.htm), and [PISCO](http://www.piscoweb.org/); Figure: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html)
+A figure showing the temperature preferences for kelp-forest fish species across the four Northern Channel Islands. Anacapa and Santa Cruz Islands show a more southern (warmer) collection of fish species while Santa Rosa and San Miguel Islands have a more northern (cooler) collection of fish species. Data source: [CINP Kelp Forest Monitoring Program](https://www.nps.gov/im/medn/kelp-forest-communities.htm), and [PISCO](http://www.piscoweb.org/); Figure credit: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html).
 
 ### Details
 
@@ -1084,7 +1080,7 @@ The thermal ratio of the kelp forest fish assemblage shows the relative proporti
 
 ## Figure App.F.15.3.
 
-A figure showing the diversity of deep-sea corals across study sites in the Southern California Bight. Figure: Etnoyer et al. 2015
+A figure showing the diversity of deep-sea corals across study sites in the Southern California Bight. Figure credit: Etnoyer et al. 2015.
 
 ### Details
 
@@ -1092,7 +1088,7 @@ Diversity of deep-sea corals at the eight study sites in southern California wit
 
 ## Figure App.F.15.4.
 
-Left: a map showing the results of sediment contamination on invertebrate communities that live within the sediment. Right: a map showing a shift in sediment-dwelling invetebrate communites towards being more tolerant of sediment impacts based on a 2013 study. Figure: K. Schiff/[SCCWRP](https://www.sccwrp.org/)
+Left: a map showing the results of sediment contamination on invertebrate communities that live within the sediment. Right: a map showing a shift in sediment-dwelling invetebrate communites towards being more tolerant of sediment impacts based on a 2013 study. Figure credit: K. Schiff/[SCCWRP](https://www.sccwrp.org/).
 
 ### Details
 
@@ -1100,7 +1096,7 @@ Left: a map showing the results of sediment contamination on invertebrate commun
 
 ## Table App.F.13.2.
 
-A table displaying the common and scientific names of species used to identify trends in fishing effort (with one type of fishing, known as fixed gear fishing) in the Southern California Bight from 2009 - 2016. Data source: [NMFS NWFSC](https://www.nwfsc.noaa.gov/); Table: NOAA
+A table displaying the common and scientific names of species used to identify trends in fishing effort (with one type of fishing, known as fixed gear fishing) in the Southern California Bight from 2009 to 2016. Data source: [NMFS NWFSC](https://www.nwfsc.noaa.gov/); Table credit: NOAA.
 
 ### Details
 
@@ -1108,7 +1104,7 @@ Common and scientific names of species selected for calculation of recent trends
 
 ## Table App.F.13.3.
 
-A table displaying the common and scientific names of species used to identify trends in fishing effort (with one type of fishing, known as trawl fishing) in the Southern California Bight from 2009 - 2016. Data source: [NMFS NWFSC](https://www.nwfsc.noaa.gov/); Table: NOAA
+A table displaying the common and scientific names of species used to identify trends in fishing effort (with one type of fishing, known as trawl fishing) in the Southern California Bight from 2009 to 2016. Data source: [NMFS NWFSC](https://www.nwfsc.noaa.gov/); Table credit: NOAA.
 
 ### Details
 
@@ -1116,7 +1112,7 @@ Common and scientific names of species selected for calculation of recent trends
 
 ## Table App.F.15.2.
 
-A table showing trends in four indicators of [biodiversity](https://marinebon.org/cinms/glossary) as they relate to the Southern California Bight, the area around Channel Islands National Marine Sanctuary, and in the Sanctuary itself. Data source: [NMFS NWFSC](https://www.nwfsc.noaa.gov/); Table: NOAA
+A table showing trends in four indicators of [biodiversity](https://marinebon.org/cinms/glossary) as they relate to the Southern California Bight, the area around Channel Islands National Marine Sanctuary, and in the Sanctuary itself. Data source: [NMFS NWFSC](https://www.nwfsc.noaa.gov/); Table credit: NOAA.
 
 ### Details
 
@@ -1128,5 +1124,4 @@ A map of sites across the five Northern Channel Islands where rocky intertidal d
 
 ## Interactive figure of mussels in the intertidal
 
-A figure showing the percent cover of mussels on rocks in the rocky intertidal across all five Northen Channel Islands from 2002 - 2015. Data collection was done by a consortium of partners through the [Multi-Agency Rocky Intertidal Network](https://marine.ucsc.edu/overview/index.html) (MARINe). 
-
+A figure showing the percent cover of mussels on rocks in the rocky intertidal across all five Northen Channel Islands from 2002 to 2015. Data collection was done by a consortium of partners through the [Multi-Agency Rocky Intertidal Network](https://marine.ucsc.edu/overview/index.html) (MARINe). 
