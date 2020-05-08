@@ -1016,7 +1016,7 @@ Seabird species richness spatial anomalies (A,C) and persistence of hotspots (B,
 
 ## Figure App.F.15.8.
 
-A graph showing the change of seabird species presence in spring (bring) and summer (red) from 1987 to 2015. Figure credit: Leising et al. 2015.
+A graph showing the change of seabird species presence in spring (green) and summer (red) from 1987 to 2015. Figure credit: Leising et al. 2015.
 
 ### Details
 

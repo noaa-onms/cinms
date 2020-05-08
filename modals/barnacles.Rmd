@@ -17,25 +17,25 @@ get_modal_info()
 map_nms_sites("cinms")
 ```
 
-### Acorn Barnacles (_Chthamalus dalli / fissus / Balanus glandula_) {.active}
+### Acorn barnacles (barnacle plots only)
 
 ```{r}
 plot_intertidal_nms(d_csv, "CINMS", "CHTBAL", "Acorn Barnacles")
 ```
 
-### Acorn Barnacles (_Chthamalus dalli/fissus/Balanus glandula_)
+### Acorn barnacles (all plots)
 
 ```{r}
 plot_intertidal_nms(d_csv, "CINMS", "CHTBAL", "Acorn Barnacles [target = balanus | chthamalus_balanus]", c("balanus", "chthamalus_balanus"))
 ```
 
-### Goose Barnacle (_Pollicipes polymerus_)
+### Gooseneck barnacles (all plots)
 
 ```{r}
 plot_intertidal_nms(d_csv, "CINMS", "POLPOL", "Goose Barnacle")
 ```
 
-### Pink Barnacle (_Tetraclita rubescens_)
+### Pink barnacles (all plots)
 
 ```{r}
 plot_intertidal_nms(d_csv, "CINMS", "TETRUB", "Pink Barnacle")
