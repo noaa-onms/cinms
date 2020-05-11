@@ -733,7 +733,7 @@ Average density (per 100 m2 +/- SE) of California sheephead (*Semicossyphus pulc
 
 A map showing the locations of spring season net samples by [CalCOFI](https://calcofi.org/) for use in analyses of abundance and trends in pelagic resources. Channel Islands National Marine Sanctuary region (red) includes CalCOFI stations inside and adjacent to CINMS; and Southern California Shelf (yellow) includes all CalCOFI stations over the shelf. Figure credit: A. Thompson/NOAA, [Ben Best/EcoQuants](https://ecoquants.com/).
 
-## Figure App.F.12.18
+## Figure App.F.12.18.
 
 A figure showing the trends in the average volume of small plankton (tiny, often microscopic creatures floating in the water) collected in the ocean off of Southern California from 1978 to 2015. Data source: CalCOFI; Figure credit: A. Thompson/NOAA.
 
