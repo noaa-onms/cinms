@@ -607,11 +607,19 @@ Percent area of impacted sediments by stratum and survey year in varying categor
 
 ## Figure App.F.12.2.
 
-A figure showing how the size of ochre stars differs across across several of the Channel Islands. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
+A figure showing the average number of ochre stars (*Pisaster ochraceus*) counted each year during 30-minute searches at monitoring sites at each of the five islands monitored by the Channel Islands National Park (CHIS) rocky intertidal community monitoring program which is part of the  Multi-agency Rocky Intertidal Network (MARINe).
 
 ### Details
 
-Box plots for annual size frequency distributions of ochre star _P. ochraceus_ at each island. Black lines represent mean sizes of ochre stars at each island pooled across sites. Red lines represent the mean of all years. Note that data for 2014 are not presented due to insufficient numbers of ochre stars encountered to estimate population size frequency. 
+Use the map tab above to see the location of sites on the five islands in Channel Islands National Marine Sanctuary. In the past decade, most locations had more than 100 sea stars counted during 30-minute searches. In 2014, abundances ranged from 0–23 individuals per site with the majority of sites having less than ten.
+
+### Figure App.F.12.3.
+
+A figure showing how the sizes of ochre stars (*Pisaster ochraceus*) compare over time and across the five islands monitored by the Channel Islands National Park (CHIS) rocky intertidal community monitoring program which is part of the  Multi-agency Rocky Intertidal Network (MARINe).
+
+### Details
+
+Box plots show annual size frequency distributions of ochre star P. ochraceus at each island. Black lines represent mean sizes of ochre stars at each island pooled across sites. Red lines represent the mean of all years. Note that data for 2014 are not presented due to insufficient numbers of ochre stars encountered to estimate population size frequency. Use the map tab above to see the location of sites on the five islands in Channel Islands National Marine Sanctuary. 
 
 ## Figure App.F.12.4.
 
