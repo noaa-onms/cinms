@@ -112,6 +112,8 @@ get_modal_info <- function(
   row <- read_csv(info_modal_links_csv) %>% 
     filter(modal == modal_id)
 
+  if (nrow(row) == 0) stop("Need link in cinms_content:info_modal_links Google Sheet!")
+  
   icons_html = NULL
   if (!is.na(row$url_info)){
     icons_html = 
