@@ -112,6 +112,41 @@ get_modal_info <- function(
   row <- read_csv(info_modal_links_csv) %>% 
     filter(modal == modal_id)
 
+  if (nrow(row) == 0) stop("Need link in cinms_content:info_modal_links Google Sheet!")
+  
+  icons_html = NULL
+  if (!is.na(row$url_info)){
+    icons_html = 
+      a(icon("info-circle"), href=row$url_info, target='_blank')
+  }
+  if (!is.na(row$url_photo)){
+    icons_html = tagList(
+      icons_html, 
+      a(icon("camera"), href=row$url_photo, target='_blank'))
+  }
+  
+  div(
+    ifelse(!is.na(row$tagline), row$tagline, ""), 
+    style="font-style: italic",
+    div(tagList(icons_html), align = "right"))
+}
+
+get_figure_info <- function(
+  md_caption,
+  info_figure_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=1"){
+  
+  rmd = knitr::current_input()
+  # rmd = "abalone.Rmd"
+  # rmd = "key-human-activities.Rmd"
+  modal_id <- fs::path_ext_remove(rmd)
+  
+  #  title_monitoring url_monitoring title_data url_data
+  
+  row <- read_csv(info_figure_links_csv) %>% 
+    filter(caption == md_caption)
+  
+  if (nrow(row) == 0) stop("Need link in cinms_content:info_modal_links Google Sheet!")
+  
   icons_html = NULL
   if (!is.na(row$url_info)){
     icons_html = 

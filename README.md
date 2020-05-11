@@ -17,6 +17,12 @@ These two files are at the core of the infographic construction:
 
 Each `link` in the table per element identified (`id`) is the page of content displayed in the modal popup window when the given element is clicked. The `title` determines the name on hover and title of the modal window.
 
+### editing the svg
+
+Open the `*.ai` file in Adobe Illustrator. Ensure the layer is given the `svg_id`. File > Export... as SVG using these parameters:
+
+![](img/adobe-illustrator_export-as-svg_settings.png)
+
 ### html and js/css dependencies
 
 The illustration (`.svg`) and table (`.csv`) get rendered with the `link_svg()` function (defined in `infographiq.js`) with the following HTML:
@@ -84,7 +90,7 @@ Because of [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) restri
 # build website
 source("render_site.R")
 
-# serve website
+# serve website locally
 servr::httd(".")
 ```
 

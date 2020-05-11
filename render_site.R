@@ -13,7 +13,8 @@ redo_modals <- T
 
 # skip modals that Ben has to process independently
 skip_modals <- c(
-  "key-climate-ocean.Rmd",
+  "key-climate-ocean.Rmd", 
+  "deep-seafloor_key-climate-ocean.Rmd","kelp-forest_key-climate-ocean.Rmd","pelagic_key-climate-ocean.Rmd","rocky-shore_key-climate-ocean.Rmd","sandy-seafloor_key-climate-ocean","sandy-beach_key-climate-ocean.Rmd",
   "barnacles.Rmd","mussels.Rmd","ochre-stars.Rmd",
   # BB TODO: 
   # Quitting from lines 28-29 (forage-assemblage.Rmd) 
@@ -107,7 +108,7 @@ for (i in 1:nrow(d_modals)){ # i=1
 #   list.files(".", "*\\.html$"), 
 #   function(x) file.copy(x, file.path("docs", x)))
 
-#rmarkdown::render_site()
+rmarkdown::render_site()
 
 #fs::file_touch("docs/.nojekyll")
 
