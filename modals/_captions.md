@@ -792,12 +792,11 @@ A figure showing the average abundance of market squid collected around the Nort
 Mean abundance of market squid (*Doryteuthis opalescens*) collected in net samples during CalCOFI cruises at only sites in the Channel Islands National Marine Sanctuary region (top) and all sites over the Southern California Shelf (bottom) from 1997 to 2015 (sampling locations shown in Figure App.F12.17). Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (-), or within 1 standard deviation (●) of the mean of the full time series.
 
 ## Figure App.F.13.1.
-
-A figure showing the density of of black abalone across the Channel Islands from 1985 to 2014 in fixed plots in the rocky intertidal. The inset figure shows actual counts from site-wide searches (1995 to 2014). Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
+A figure showing the average abundance of black abalone (*Haliotis cracherodii*) across the Channel Islands from 1985 to 2014 in fixed plots in the rocky intertidal. The inset figure shows actual counts from site-wide searches (1995 to 2014). Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 ### Details
 
-Black abalone (*Haliotis cracherodii*) mean density from fixed plots from 1985-2014 (left) and mean counts from site-wide searches from 1995-2014 (inset) at four islands in Channel Islands National Marine Sanctuary. Site wide search counts began in 1995 due to the severe declines in abundance that occurred from 1985-1995. Generally, increasing abundances began approximately in the 2007-2009 timeframe. Error bars were constructed using one standard error from the mean. 
+Black abalone (*Haliotis cracherodii*) mean density from fixed plots from 1985-2014 (left) and mean counts from site-wide searches from 1995-2014 (inset) at four islands in Channel Islands National Marine Sanctuary. Site wide search counts began in 1995 due to the severe declines in abundance that occurred from 1985-1995. Generally, increasing abundances began approximately in the 2007-2009 timeframe. Error bars were constructed using one standard error from the mean. For more information, consult Figure App.F.13.1 in the CINMS 2016 Condition Report. 
 
 ## Figure App.F.13.2. 
 
@@ -817,7 +816,7 @@ Left: a figure showing the average numer of owl limpets across the Northern Chan
 
 ## Figure App.F.13.4.
 
-A map showing a 2011 survey of suitable black oystercatcher habitat (orange) along the coast of the Channel Islands and Southern to Central California. Figure credit: Modified from Weinstein et al. 2014.
+A map showing the location of suitable habitat (orange) for black oystercatchers (*Haematopus bachmani*) along the coast of the Channel Islands and the mainland from Southern to Central  California. The density of oystercatchers at different locations in 2011 is shown by the diameter of the purple circles. Figure credit: Modified from Weinstein et al. 2014.
 
 ### Details
 
