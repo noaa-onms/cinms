@@ -7,6 +7,41 @@ library(dplyr)
 library(tidyr)
 library(stringr)
 
+monitoring_info <- function (title){
+  input_file = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_figure_links"
+  google_row <- read_csv(input_file)  %>% 
+  filter(md_caption == title)
+  
+  if (nrow(google_row) == 0) stop("Need link in cinms_content:info_modal_links Google Sheet!")
+
+    if(!is.na(google_row$url_monitoring) & substr(google_row$url_monitoring,0,4) == "http"){
+      if (is.na(google_row$title_monitoring)){
+        monitoring_title = "Monitoring Program"
+      }
+      else {
+        monitoring_title = str_trim(google_row$title_monitoring)
+        if (nchar(monitoring_title) > 20) {
+          monitoring_title = substr(monitoring_title, 0, 19) 
+        }
+        
+        url_monitoring = google_row$url_monitoring
+        output_monitoring = paste('<<div class = "data_bar">[<i class="fas fa-clipboard-list"></i>', monitoring_title, '](', url_monitoring, ') </div>')
+        
+      }
+    
+    }
+
+  
+
+    if(!is.na(google_row$url_data) & substr(google_row$url_data,0,4) == "http"){
+      x = x + 3
+      
+    }
+  
+  return(output_monitoring)
+}
+
+
 md_caption <- function(title, md = here::here("modals/_captions.md"), get_details = F){
 
   stopifnot(file.exists(md))
