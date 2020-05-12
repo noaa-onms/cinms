@@ -518,7 +518,7 @@ Mean Total Extractables (TE) for individual Polycyclic Aromatic Hydrocarbons or 
 
 ## Figure App.E.11.7.
 
-A figure showing  the deposition of tar (green) at Fraser Cove, Santa Cruz Island, compared to bare rock (red) and barnacle cover (grey) from 1994 to 2014. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
+A figure showing the deposition of tar (green) at Fraser Cove, Santa Cruz Island, compared to bare rock (red) and barnacle cover (grey) from 1994 to 2014. Monitoring data provided by [Channel Islands National Park Rocky Intertidal Monitoring program](https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100508)
 
 ### Details
 
@@ -526,7 +526,7 @@ Tar deposition percent cover (green) at Fraser Cove, Santa Cruz Island is compar
 
 ## Figure App.E.11.8.
 
-A figure showing tar deposition at Fraser Cove, Santa Cruz Island from 1994 to 2014. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
+A figure showing tar deposition at Fraser Cove, Santa Cruz Island from 2002 to 2019.  Monitoring data provided by [Channel Islands National Park Rocky Intertidal Monitoring program](https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100508)
 
 
 ### Details
@@ -814,13 +814,21 @@ A figure  showing the sizes of black abalone across the Channel Islands from 198
 
 Box plots for annual size frequency distributions of black abalone (*Haliotis cracherodii*) at each island. Blue lines represent mean sizes of H. cracherodii at each island pooled across and sites. Red lines represent the cumulative mean. 
 
-## Figure App.F.13.3.
+## Figure App.F.13.3a.
 
-Left: a figure showing the average numer of owl limpets across the Northern Channel Islands from 2000 to 2014. Right: a figure showing the annunal size distribution of owl limpets across the Northern Channel Islands from 2000 to 2014. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
+A figure showing the average number of owl limpets (*Lottia gigantea*) across four islands in Channel Islands National Marine Sanctuary from 2000 to 2014. Monitoring data from [Channel Islands National Park Rocky Intertidal Community Monitoring program](https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100508)
 
 ### Details
 
-(left) Mean number of owl limpets (*Lottia gigantea*) at each island from 2000-2014. Blue lines represent mean number at each island pooled across fixed plots and error bars were constructed using one standard error from the mean. (right) Box plots for annual size frequency distributions of owl limpets at each island. Black lines represent mean sizes at each island pooled across fixed plots and sites. Red lines represent the cumulative mean. 
+Blue lines represent mean number at each island pooled across fixed plots and error bars were constructed using one standard error from the mean. Red lines represent the cumulative mean.
+
+## Figure App.F.13.3b.
+
+A figure showing the annual size distribution of owl limpets (*Lottia gigantea*) across four islands in Channel Islands National Marine Sanctuary from 2000 to 2014. Monitoring data from [Channel Islands National Park Rocky Intertidal Community Monitoring program](https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100508)
+
+### Details
+
+Box plots for annual size frequency distributions of *L. gigantea* at each island. Black lines represent mean sizes at each island pooled across fixed plots and sites. Red lines represent the cumulative mean.
 
 ## Figure App.F.13.4.
 
@@ -1088,7 +1096,7 @@ First seen in Long Beach Harbor in 2003, _Sargassum horneri_ had spread to many 
 
 ## Figure App.F.14.3.
 
-A map showing the locations where the non-native seaweed *Sargassum horneri* has been observed in the Southern California Bight. Data source: [CINP](https://www.nps.gov/chis/index.htm),[PISCO](http://www.piscoweb.org/), and [SBC LTER](https://sbclter.msi.ucsb.edu/) data courtesy of L. Marks/ UCSB; Map credit: M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html).
+A map showing the locations where the non-native seaweed *Sargassum horneri* has been observed in the Southern California Bight. Data source: [CINP](https://www.nps.gov/chis/index.htm),[PISCO](http://www.piscoweb.org/), and [SBC LTER](https://sbclter.msi.ucsb.edu/) data courtesy of L. Marks/ UCSB; Map credit: M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
 
 ### Details
 
