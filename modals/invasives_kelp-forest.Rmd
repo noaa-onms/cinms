@@ -9,7 +9,8 @@ get_modal_info()
 
 ## {.tabset}
 
-### _Sargassum horneri_ occurrence - southern California
+
+### _Sargassum horneri_ occurrence - Southern California
 
 ![`r md_caption("Figure App.F.14.2.")`](../img/cinms_cr/App.F.14.2.Sargassum_expansion.jpg)
 
