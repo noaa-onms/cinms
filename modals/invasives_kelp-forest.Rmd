@@ -17,7 +17,7 @@ get_modal_info()
 
 ### _Sargassum horneri_ occurrence - CINMS
 
-![](../img/cinms_cr/App.F.14.3_S.horneri_PresenceAbsence.jpg)
+![`r md_caption("Figure App.F.14.3.")`](../img/cinms_cr/App.F.14.3.jpg)
 
 `r md_caption("Figure App.F.14.3.", get_details=T)`
 

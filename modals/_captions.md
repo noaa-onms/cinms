@@ -1096,7 +1096,7 @@ First seen in Long Beach Harbor in 2003, _Sargassum horneri_ had spread to many 
 
 ## Figure App.F.14.3.
 
-A map showing the locations where the non-native seaweed *Sargassum horneri* has been observed in the Southern California Bight. Data source: [CINP](https://www.nps.gov/chis/index.htm),[PISCO](http://www.piscoweb.org/), and [SBC LTER](https://sbclter.msi.ucsb.edu/) data courtesy of L. Marks/ UCSB; Map credit: M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
+A map showing the locations where the non-native seaweed *Sargassum horneri* has been observed in the Southern California Bight.Data source: [CINP](https://www.nps.gov/chis/index.htm),[PISCO](http://www.piscoweb.org/), and [SBC LTER](https://sbclter.msi.ucsb.edu/) data courtesy of L. Marks/ UCSB; Map credit: M. Cajandig/NOAA](https://channelislands.noaa.gov/contact/cajandig.html)
 
 ### Details
 
