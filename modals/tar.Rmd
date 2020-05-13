@@ -10,11 +10,6 @@ get_modal_info()
 ##  {.tabset} 
 
 ### Trend: Tar
-![`r md_caption("Figure App.E.11.7.")`](../img/cinms_cr/App.E.11.7_TarColorgraph.jpg)
-
-`r md_caption("Figure App.E.11.7.", get_details=T)`
-
-### Trend: Tar
 ![`r md_caption("Figure App.E.11.8.")`](../img/cinms_cr/App.E.11.8.png)
 
 `r md_caption("Figure App.E.11.8.", get_details=T)`

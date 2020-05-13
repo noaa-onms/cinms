@@ -14,7 +14,7 @@ get_modal_info()
 
 #### Fishing {.tabset}
 
-###### Trends: Commercial Landings
+##### Trends: Commercial Landings
 
 ![`r md_caption("Figure App.C.4.4.")`](../img/cinms_cr/App.C.4.4.Leeworthy_landings.jpg)
 
