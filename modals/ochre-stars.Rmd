@@ -36,22 +36,12 @@ plot_intertidal_nms(nms_spp_sscount_csv, "CINMS", "PISOCH", "Ochre Seastar", fld
 
 `r md_caption("Figure Ux.Rocky.MARINe.Ochre-Stars.", get_details=T)`
 
-### NPS: Sanctuary
+### CHIS: Sanctuary
 
-[More information about Channel Islands National Park can be found here](https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100505)
+`r render_figure("Figure App.F.12.2.", "../img/cinms_cr/App.F.12.2.Pochraceus_abundance.jpg")`
 
-[CINP data can be requested here](https://www.nps.gov/chis/index.htm)
 
-![`r md_caption("Figure App.F.12.2.")`](../img/cinms_cr/App.F.12.2.Pochraceus_abundance.jpg)
+### CHIS: Individual Islands
 
-`r md_caption("Figure App.F.12.2.", get_details=T)`
+`r render_figure("Figure App.F.12.3.", "../img/cinms_cr/App.F.12.3.Pochraceus_size.jpg")`
 
-### NPS: Individual Islands
-
-[More information about Channel Islands National Park can be found here](https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100505)
-
-[CINP data can be requested here](https://www.nps.gov/chis/index.htm)
-
-![`r md_caption("Figure App.F.12.3.")`](../img/cinms_cr/App.F.12.3.Pochraceus_size.jpg)
-
-`r md_caption("Figure App.F.12.3.", get_details=T)`
