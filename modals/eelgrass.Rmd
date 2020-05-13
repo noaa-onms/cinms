@@ -10,16 +10,21 @@ get_modal_info()
 ## {.tabset}
 
 ### Map of eelgrass beds
-```{r}
+
+```{r, eval=F}
 figure_name = "Figure App.E.10.22."
 figure_location = "../img/cinms_cr/App.E.10.22.jpg"
+
+# `r monitoring_info(figure_name)`
+# 
+# ![`r md_caption(figure_name)`](`r figure_location`)
+# 
+# `r md_caption(figure_name, get_details=T)`
 ```
 
-`r monitoring_info(figure_name)`
+<!-- test -->
 
-![`r md_caption(figure_name)`](`r figure_location`)
-
-`r md_caption(figure_name, get_details=T)`
+`r render_figure("Figure App.E.10.22.", "../img/cinms_cr/App.E.10.22.jpg")`
 
 ### Eelgrass extent Anacapa Island
 ```{r}
@@ -27,7 +32,7 @@ figure_name = "Figure App.E.10.24."
 figure_location = "../img/cinms_cr/App.E.10.24.jpg"
 ```
 
-`r monitoring_info(figure_name)`
+`r get_figure_info(figure_name)`
 
 ![`r md_caption(figure_name)`](`r figure_location`)
 
@@ -39,7 +44,7 @@ figure_name = "Figure App.E.10.25."
 figure_location = "../img/cinms_cr/App.E.10.25.jpg"
 ```
 
-`r monitoring_info(figure_name)`
+`r get_figure_info(figure_name)`
 
 ![`r md_caption(figure_name)`](`r figure_location`)
 
@@ -51,7 +56,7 @@ figure_name = "Figure S.Hab.10.3."
 figure_location = "../img/cinms_cr/S.Hab.10.3.jpg"
 ```
 
-`r monitoring_info(figure_name)`
+`r get_figure_info(figure_name)`
 
 ![`r md_caption(figure_name)`](`r figure_location`)
 
