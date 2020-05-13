@@ -23,9 +23,6 @@ monitoring_info <- function (figure_name){
 
   # let's initialize a string variable that we'll use to keep track of the links going in the gray bar.
   output_string = ""
-
-  # The following variable is used to keep track if there is no monitoring or data links for a figure
-  nothing_here = TRUE
     
   # Here are parameters used in the function, set up as a data frame. The first row of the data frame contains the parameters
   # used when we are evaluating the monitoring program hyperlink. The second row contains the parameters used when we
@@ -40,9 +37,6 @@ monitoring_info <- function (figure_name){
     # as opposed to notes, and that is what the following if statement looks for.
     the_url = google_row[2*i + 1]
     if(!is.na(the_url) & substr(the_url,0,4) == "http"){
-  
-      #We now know there is something to include so let's switch the following flag to false
-      nothing_here = FALSE
       
       #If there isn't a name given for the url, let's give it a default
       url_description = google_row[2*i]
@@ -59,8 +53,9 @@ monitoring_info <- function (figure_name){
       }
   }
 
-  # If there are no monitor program or data links for the figure, have the function return nothing
-  if (nothing_here == TRUE){
+  # If there are no monitor program or data links for the figure, have the function return nothing. If output_string
+  # still has nothing in it (which we set to nothing at the beginning of the function), then we know that there are no relevant links
+  if (output_string == ""){
     return("")  
   }
   
