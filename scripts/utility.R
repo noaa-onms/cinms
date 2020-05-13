@@ -135,7 +135,7 @@ get_figure_info <- function (figure_id){
   # The purpose of this function is to generate the hyperlinks for the monitoring program and data 
   # associated with a figure and then to insert them into a gray bar above the figure in the modal window.
   
-  figure_id = "Figure App.E.10.22."
+  #figure_id = "Figure App.E.10.22."
   
   # The data for this function are pulled from a google spreadsheet which is below
   input_file = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_figure_links"
