@@ -135,6 +135,8 @@ get_figure_info <- function (figure_id){
   # The purpose of this function is to generate the hyperlinks for the monitoring program and data 
   # associated with a figure and then to insert them into a gray bar above the figure in the modal window.
   
+  figure_id = "Figure App.E.10.22."
+  
   # The data for this function are pulled from a google spreadsheet which is below
   input_file = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_figure_links"
   
@@ -155,7 +157,7 @@ get_figure_info <- function (figure_id){
   
   #The following for loop is here because we want to go through this process twice. The first time (i = 1), we're looking 
   #for the monitoring program hyperlink. The second time (i = 2), we're looking for the data hyperlink
-  for (i in 1:2){  
+  for (i in 1:2){  # i=1
     
     # The data in the spreadsheet is a mess so this function has to account for that. We only want to include records where there is an actual link, 
     # as opposed to notes, and that is what the following if statement looks for.
@@ -173,7 +175,7 @@ get_figure_info <- function (figure_id){
       }   
       
       #let's glue  together html plus css stuff with the link and name of the link
-      output_string = paste0(output_string, '<div style = "text-align:', params$css[i] ,'; display:table-cell;"><a href="', the_url,'"><i class="fas ', params$icon[i] ,'"></i> ', url_description, '</a></div>')
+      output_string = paste0(output_string, '<div style = "text-align:', params$css[i] ,'; display:table-cell;"><a href="', the_url,'" target="_blank"><i class="fas ', params$icon[i] ,'"></i> ', url_description, '</a></div>')
     }
   }
   
