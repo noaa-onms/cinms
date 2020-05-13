@@ -14,3 +14,9 @@ get_modal_info()
 ![`r md_caption("Figure App.F.12.18.")`](../img/cinms_cr/App.F.12.18_CalCOFI_SPV.jpg)
 
 `r md_caption("Figure App.F.12.18.", get_details=T)`
+
+### Map of sampling stations
+
+![`r md_caption("Figure App.F.12.17.")`](../img/cinms_cr/App.F.12.17.png)
+
+`r md_caption("Figure App.F.12.17.", get_details=T)`

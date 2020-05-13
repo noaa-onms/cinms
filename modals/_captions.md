@@ -729,17 +729,17 @@ A figure showing the density of California sheephead inside fished (blue) and un
 
 Average density (per 100 m2 +/- SE) of California sheephead (*Semicossyphus pulcher*) at fished (blue) and unfished marine reserves (red) surveyed annually in two time periods 2005-2009 and 2014-2015. Density has increased since the baseline period, and the increase was more pronounced inside reserves as compared to fished sites. 
 
-## Figure App.F.12.17.new
+## Figure App.F.12.17.
 
 A map showing the locations of spring season net samples by [CalCOFI](https://calcofi.org/) for use in analyses of abundance and trends in pelagic resources. Channel Islands National Marine Sanctuary region (red) includes CalCOFI stations inside and adjacent to CINMS; and Southern California Shelf (yellow) includes all CalCOFI stations over the shelf. Figure credit: A. Thompson/NOAA, [Ben Best/EcoQuants](https://ecoquants.com/).
 
 ## Figure App.F.12.18.
 
-A figure showing the trends in the average volume of small plankton (tiny, often microscopic creatures floating in the water) collected in the ocean off of Southern California from 1978 to 2015. Data source: CalCOFI; Figure credit: A. Thompson/NOAA.
+Two figures showing the trends in the average volume of small plankton (tiny, often microscopic creatures floating in the water) collected in the ocean in [CalCOFI](https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100476) net samples taken only at sites in the Channel Islands National Marine Sanctuary region (top) and all sites over the Southern California Shelf (bottom) each spring from 1978-2015. Click the map tab to compare the two sampling regions. Figure credit: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/).
 
 ### Details
 
-Mean volume of small plankton collected in net samples during CalCOFI cruises at only sites in the Channel Islands National Marine Sanctuary region (top) and all sites over the Southern California Shelf (bottom) from 1978 to 2015 (sampling locations shown in Figure App.F.12.17). Horizontal lines show the mean (dashed line) ± 1.0 standard deviation (solid lines) over the full time series. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (-), or within 1 standard deviation (●) of the mean of the full time series.
+Horizontal lines show the mean (dashed line) ± 1.0 standard deviation (solid lines) over the full time series. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend (up arrow), a negative trend (down arrow), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (-), or within 1 standard deviation (●) of the mean of the full time series. For more information, consult Figure App.F.12.18 in the CINMS 2016 Condition Report.
 
 ## Figure App.F.12.19.anchovy
 
