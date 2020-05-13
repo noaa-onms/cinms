@@ -22,6 +22,8 @@ figure_location = "../img/cinms_cr/App.E.10.22.jpg"
 # `r md_caption(figure_name, get_details=T)`
 ```
 
+<!-- test -->
+
 `r render_figure("Figure App.E.10.22.", "../img/cinms_cr/App.E.10.22.jpg")`
 
 ### Eelgrass extent Anacapa Island
