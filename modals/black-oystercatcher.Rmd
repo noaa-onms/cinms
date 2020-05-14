@@ -3,9 +3,7 @@ knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 source(here::here("scripts/utility.R"))
 ```
 
-```{r modal_info}
-get_modal_info()
-```
+`r get_modal_info()`
 
 ## Black Oystercatchers (_Haematopus bachmani_)
 
@@ -13,18 +11,12 @@ get_modal_info()
 
 ### Map of observations
 
-![`r md_caption("Figure App.F.13.4.")`](../img/cinms_cr/App.F.13.4.jpg)
-
-`r md_caption("Figure App.F.13.4.", get_details=T)`
+`r render_figure("Figure App.F.13.4.", "../img/cinms_cr/App.F.13.4.jpg")`
 
 ### Abundance by site (CINP data)
 
-![`r md_caption("Figure App.F.13.5.")`](../img/cinms_cr/App.F.13.5.jpg)
-
-`r md_caption("Figure App.F.13.5.", get_details=T)`
+`r render_figure("Figure App.F.13.5.", "../img/cinms_cr/App.F.13.5.jpg")`
 
 ### Abundance on Santa Cruz Island (Audubon data)
 
-![`r md_caption("Figure App.F.13.6.")`](../img/cinms_cr/App.F.13.6.jpg)
-
-`r md_caption("Figure App.F.13.6.", get_details=T)`
+`r render_figure("Figure App.F.13.6.", "../img/cinms_cr/App.F.13.6.jpg")`

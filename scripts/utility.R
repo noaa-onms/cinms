@@ -171,7 +171,7 @@ get_figure_info <- function (figure_id){
       }
       #If a url name is given, let's make sure it isn't too long and also let's get rid of spaces
       else {
-        url_description = substr(str_trim(url_description), 0, 39) 
+        url_description = substr(str_trim(url_description), 0, 45) 
       }   
       
       #let's glue  together html plus css stuff with the link and name of the link

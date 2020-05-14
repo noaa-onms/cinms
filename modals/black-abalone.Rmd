@@ -3,20 +3,14 @@ knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 source(here::here("scripts/utility.R"))
 ```
 
-```{r modal_info}
-get_modal_info()
-```
+`r get_modal_info()`
 
 ## {.tabset}
 
 ### Size frequency on islands
 
-![`r md_caption("Figure App.F.13.2.")`](../img/cinms_cr/App.F.13.2_blackabs_size.jpg)
-
-`r md_caption("Figure App.F.13.2.", get_details=T)`
+`r render_figure("Figure App.F.13.2.", "../img/cinms_cr/App.F.13.2_blackabs_size.jpg")`
 
 ### Density & counts on islands
 
-![`r md_caption("Figure App.F.13.1")`](../img/cinms_cr/App.F.13.1_BlackAbalone_CINP.jpg)
-
-`r md_caption("Figure App.F.13.1.", get_details=T)`
+`r render_figure("Figure App.F.13.1.", "../img/cinms_cr/App.F.13.1_BlackAbalone_CINP.jpg")`

@@ -16,9 +16,7 @@ source(here::here("scripts/utility.R"))
 
 ## Human Activities
 
-```{r modal_info}
-get_modal_info()
-```
+`r get_modal_info()`
 
 ### {.tabset}
 
@@ -27,77 +25,48 @@ get_modal_info()
 ##### Commercial {.tabset}
 ###### Trends: Commercial Landings
 
-![`r md_caption("Figure App.C.4.4.")`](../img/cinms_cr/App.C.4.4.Leeworthy_landings.jpg)
-
-`r md_caption("Figure App.C.4.4.", get_details=T)`
+`r render_figure("Figure App.C.4.4.", "../img/cinms_cr/App.C.4.4.Leeworthy_landings.jpg")`
 
 ###### Trends: Halibut Fishery
 
-![`r md_caption("Figure App.C.4.5a.")`](../img/cinms_cr/App.C.4.5a.Halibut_landings_CDFW.jpg)
+`r render_figure("Figure App.C.4.5a.", "../img/cinms_cr/App.C.4.5a.Halibut_landings_CDFW.jpg")`
 
-`r md_caption("Figure App.C.4.5a.", get_details=T)`
-
-![`r md_caption("Figure App.C.4.5b.")`](../img/cinms_cr/App.C.4.5b.CDFW_halibut_vessels.jpg)
-
-`r md_caption("Figure App.C.4.5b.", get_details=T)`
-
+`r render_figure("Figure App.C.4.5b.", "../img/cinms_cr/App.C.4.5b.CDFW_halibut_vessels.jpg")`
 
 ###### Trends: Rock Crab Fishery
 
-![`r md_caption("Figure App.C.4.6a.")`](../img/cinms_cr/App.C.4.6a.crab_landings_CDFW.jpg)
+`r render_figure("Figure App.C.4.6a.", "../img/cinms_cr/App.C.4.6a.crab_landings_CDFW.jpg")`
 
-`r md_caption("Figure App.C.4.6a.", get_details=T)`
-
-![`r md_caption("Figure App.C.4.6b.")`](../img/cinms_cr/App.C.4.6b.crab_fishers_CDFW.jpg)
-
-`r md_caption("Figure App.C.4.6b.", get_details=T)`
-
-
-
+`r render_figure("Figure App.C.4.6b.", "../img/cinms_cr/App.C.4.6b.crab_fishers_CDFW.jpg")`
 
 ###### Trends: By Gear Type
 
-![`r md_caption("Figure App.C.3.2.")`](../img/cinms_cr/App.C.3.2_CINMSLandings.jpg)
+`r render_figure("Figure App.C.3.2.", "../img/cinms_cr/App.C.3.2_CINMSLandings.jpg")`
 
-`r md_caption("Figure App.C.3.2.", get_details=T)`
 ###### Map: Trawling and Deep Sea Corals
 
-![`r md_caption("Figure App.C.3.3.")`](../img/cinms_cr/App.C.3.3_SWFSC_Trawls2007-2011_HBCoralsRS.jpg)
-
-`r md_caption("Figure App.C.3.3.", get_details=T)`
+`r render_figure("Figure App.C.3.3.", "../img/cinms_cr/App.C.3.3_SWFSC_Trawls2007-2011_HBCoralsRS.jpg")`
 
 ###### Map: Fixed Gear and Deep Sea Corals
 
-![`r md_caption("Figure App.C.3.4.")`](../img/cinms_cr/App.C.3.4_SWFSC_Fixed2007-2011_Gorgonians.jpg)
-
-`r md_caption("Figure App.C.3.4.", get_details=T)`
+`r render_figure("Figure App.C.3.4.", "../img/cinms_cr/App.C.3.4_SWFSC_Fixed2007-2011_Gorgonians.jpg")`
 
 ###### Map: Trawl & Fixed Gear with MPAs 
 
-![`r md_caption("Figure App.C.3.5.")`](../img/cinms_cr/App.C.3.5_SoCalDeepBotFishingMPAs_Etnoyer.jpg)
-
-`r md_caption("Figure App.C.3.5.", get_details=T)`
-
-
+`r render_figure("Figure App.C.3.5.", "../img/cinms_cr/App.C.3.5_SoCalDeepBotFishingMPAs_Etnoyer.jpg")`
 
 ##### Recreational 
-![`r md_caption("Figure App.C.4.2a.")`](../img/cinms_cr/App.C.4.2a.CPFV_trips.jpg)
 
-![`r md_caption("Figure App.C.4.2b.")`](../img/cinms_cr/App.C.4.2b.CPFV_landings.jpg)
+`r render_figure("Figure App.C.4.2a.", "../img/cinms_cr/App.C.4.2a.CPFV_trips.jpg")`
 
-`r md_caption("Figure App.C.4.2b.", get_details=T)`
-
-
+`r render_figure("Figure App.C.4.2b.", "../img/cinms_cr/App.C.4.2b.CPFV_landings.jpg")`
 
 #### Research
 ###### Trends: Active Permits
 
-![`r md_caption("Figure App.C.4.18a.")`](../img/cinms_cr/App.C.4.18a.Projects_Permits.png) 
+`r render_figure("Figure App.C.4.18a.", "../img/cinms_cr/App.C.4.18a.Projects_Permits.png")`
 
-![`r md_caption("Figure App.C.4.18b.")`](../img/cinms_cr/App.C.4.18b.CDFW_Permits.png) 
-
-
-
+`r render_figure("Figure App.C.4.18b.", "../img/cinms_cr/App.C.4.18b.CDFW_Permits.png")`
 
 ## Human Impacts
 
@@ -106,61 +75,42 @@ get_modal_info()
 #### Contaminants {.tabset}
 ##### Benthic Response Index 
 ###### Trends: Condition by region
-![`r md_caption("Figure App.E.11.10.")`](../img/cinms_cr/App.E.11.10.jpg)
 
-`r md_caption("Figure App.E.11.10.", get_details=T)`
+`r render_figure("Figure App.E.11.10.", "../img/cinms_cr/App.E.11.10.jpg")`
 
 ###### Map: 2013 Trends at sites
 
-![`r md_caption("Figure App.E.11.9.")`](../img/cinms_cr/App.E.11.9.jpg)
-
-`r md_caption("Figure App.E.11.9.", get_details=T)`
+`r render_figure("Figure App.E.11.9.", "../img/cinms_cr/App.E.11.9.jpg")`
 
 ###### Map: 2013 Conditions at sites
 
-![`r md_caption("Figure App.E.11.11.")`](../img/cinms_cr/App.E.11.11.jpg)
-
-`r md_caption("Figure App.E.11.11.", get_details=T)`
+`r render_figure("Figure App.E.11.11.", "../img/cinms_cr/App.E.11.11.jpg")`
 
 ##### Contaminants in Sediments
 
 ###### Map: 2008 DDT 
 
-![`r md_caption("Figure App.E.11.12.")`](../img/cinms_cr/App.E.11.12.jpg)
-
-`r md_caption("Figure App.E.11.12.", get_details=T)`
+`r render_figure("Figure App.E.11.12.", "../img/cinms_cr/App.E.11.12.jpg")`
 
 ###### Map: 2008 Copper
 
-![`r md_caption("Figure App.E.11.13.")`](../img/cinms_cr/App.E.11.13.jpg)
-
-`r md_caption("Figure App.E.11.13.", get_details=T)`
+`r render_figure("Figure App.E.11.13.", "../img/cinms_cr/App.E.11.13.jpg")`
 
 ###### Map: 2008 Silver
 
-![`r md_caption("Figure App.E.11.14.")`](../img/cinms_cr/App.E.11.14.jpg)
-
-`r md_caption("Figure App.E.11.14.", get_details=T)`
+`r render_figure("Figure App.E.11.14.", "../img/cinms_cr/App.E.11.14.jpg")`
 
 ###### Map: 2008 PBDEs
 
-![`r md_caption("Figure App.E.11.15.")`](../img/cinms_cr/App.E.11.15.jpg)
-
-`r md_caption("Figure App.E.11.15.", get_details=T)`
+`r render_figure("Figure App.E.11.15.", "../img/cinms_cr/App.E.11.15.jpg")`
 
 ###### Map: 2008 Pyrethroids
 
-![`r md_caption("Figure App.E.11.16.")`](../img/cinms_cr/App.E.11.16.jpg)
-
-`r md_caption("Figure App.E.11.16.", get_details=T)`
+`r render_figure("Figure App.E.11.16.", "../img/cinms_cr/App.E.11.16.jpg")`
 
 ###### Trends: Exposure levels by region
 
-![`r md_caption("Figure App.E.11.17.")`](../img/cinms_cr/App.E.11.17.jpg)
-
-`r md_caption("Figure App.E.11.17.", get_details=T)`
-
-
+`r render_figure("Figure App.E.11.17.", "../img/cinms_cr/App.E.11.17.jpg")`
 
 #### Noise
 
@@ -168,14 +118,8 @@ get_modal_info()
 
 ###### Listening Stations
 
-![`r md_caption("Figure App.C.2.8.")`](../img/cinms_cr/App.C.2.8.jpg)
-
-`r md_caption("Figure App.C.2.8.", get_details=T)`
-
+`r render_figure("Figure App.C.2.8.", "../img/cinms_cr/App.C.2.8.jpg")`
 
 ###### Trends: Sound Levels
 
-![`r md_caption("Figure App.C.4.13.")`](../img/cinms_cr/App.C.4.13.CINMS_Noise.jpg)
-
-`r md_caption("Figure App.C.4.13.", get_details=T)`
-
+`r render_figure("Figure App.C.4.13.", "../img/cinms_cr/App.C.4.13.CINMS_Noise.jpg")`
