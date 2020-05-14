@@ -16,9 +16,8 @@ source(here::here("scripts/utility.R"))
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 source(here::here("scripts/utility.R"))
 ```
-```{r modal_info}
-get_modal_info()
-```
+
+`r get_modal_info()`
 
 ## {.tabset}
 
@@ -84,11 +83,6 @@ csv   <- glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/mast
 calcofi_plot(csv = csv, title = title)
 ```
 
-
-
-
-
-
 ####
 
 `r md_caption("Figure App.F.15.5")`
@@ -97,27 +91,19 @@ calcofi_plot(csv = csv, title = title)
 
 #### CINMS Region
 
-![`r md_caption("Figure App.F.15.6.a-b.")`](../img/cinms_cr/App.F.15.6.a.CalCOFI_diversity_richness-cinms.jpg)
-
-`r md_caption("Figure App.F.15.6.a-b.", get_details=T)`
-
+`r render_figure("Figure App.F.15.6.a-b.", "../img/cinms_cr/App.F.15.6.a.CalCOFI_diversity_richness-cinms.jpg")`
 
 #### SoCal Shelf Region
 
-![`r md_caption("Figure App.F.15.6.a-b.")`](../img/cinms_cr/App.F.15.6.b.CalCOFI_diversity_richness-socal.jpg)
-
-`r md_caption("Figure App.F.15.6.a-b", get_details=T)`
+`r render_figure("Figure App.F.15.6.a-b.", "../img/cinms_cr/App.F.15.6.b.CalCOFI_diversity_richness-socal.jpg")`
 
 ### Larval fish - Mean Simpson Diversity
 
 #### CINMS Region
 
-![`r md_caption("Figure App.F.15.6.c-d.")`](../img/cinms_cr/App.F.15.6.c.CalCOFI_diversity_diversity-cinms.jpg)
-
-`r md_caption("Figure App.F.15.6.c-d.", get_details=T)`
+`r render_figure("Figure App.F.15.6.c-d.", "../img/cinms_cr/App.F.15.6.c.CalCOFI_diversity_diversity-cinms.jpg")`
 
 #### SoCal Shelf Region
 
-![`r md_caption("Figure App.F.15.6.c-d.")`](../img/cinms_cr/App.F.15.6.d.CalCOFI_diversity_diversity-socal.jpg)
+`r render_figure("Figure App.F.15.6.c-d.", "../img/cinms_cr/App.F.15.6.d.CalCOFI_diversity_diversity-socal.jpg")`
 
-`r md_caption("Figure App.F.15.6.c-d", get_details=T)`

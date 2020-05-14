@@ -3,26 +3,18 @@ knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 source(here::here("scripts/utility.R"))
 ```
 
-```{r}
-get_modal_info()
-```
+`r get_modal_info()`
 
 ## {.tabset}
 
 ### Trends in seabird abundance
 
-![`r md_caption("Figure App.F.13.22.")`](../img/cinms_cr/App.F.13.22.jpg)
-
-`r md_caption("Figure App.F.13.22.", get_details=T)`
+`r render_figure("Figure App.F.13.22.", "../img/cinms_cr/App.F.13.22.jpg")`
 
 ### Seabirds - species richness map
 
-![`r md_caption("Figure App.F.15.7.")`](../img/cinms_cr/App.F.15.7.Seabird_anomoly_map.jpg)
-
-`r md_caption("Figure App.F.15.7.", get_details=T)`
+`r render_figure("Figure App.F.15.7.", "../img/cinms_cr/App.F.15.7.Seabird_anomoly_map.jpg")`
 
 ### Seabirds - species richness trends
 
-![`r md_caption("Figure App.F.15.8.")`](../img/cinms_cr/App.F.15.8.Seabird_richness.jpg)
-
-`r md_caption("Figure App.F.15.8.", get_details=T)`
+`r render_figure("Figure App.F.15.8.", "../img/cinms_cr/App.F.15.8.Seabird_richness.jpg")`

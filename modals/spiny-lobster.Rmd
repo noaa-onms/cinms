@@ -3,20 +3,14 @@ knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 source(here::here("scripts/utility.R"))
 ```
 
-```{r}
-get_modal_info()
-```
+`r get_modal_info()`
 
 ##  {.tabset} 
 
 ### PISCO: Islands
 
-![`r md_caption("Figure App.F.12.10.")`](../img/cinms_cr/App.F.12.10.SpinyLobster_PISCO.jpg)
-
-`r md_caption("Figure App.F.12.10.", get_details=T)`
+`r render_figure("Figure App F.12.10.", "../img/cinms_cr/App.F.12.10.SpinyLobster_PISCO.jpg")`
 
 ### NPS: Islands
 
-![`r md_caption("Figure App.F.12.11.")`](../img/cinms_cr/App.F.12.11.Panulirus_interruptus_CINP.jpg)
-
-`r md_caption("Figure App.F.12.11.", get_details=T)`
+`r render_figure("Figure App F.12.11.", "../img/cinms_cr/App.F.12.11.Panulirus_interruptus_CINP.jpg")`

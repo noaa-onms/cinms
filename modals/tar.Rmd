@@ -3,13 +3,10 @@ knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 source(here::here("scripts/utility.R"))
 ```
 
-```{r}
-get_modal_info()
-```
+`r get_modal_info()`
 
 ##  {.tabset} 
 
 ### Trend: Tar
-![`r md_caption("Figure App.E.11.8.")`](../img/cinms_cr/App.E.11.8.png)
 
-`r md_caption("Figure App.E.11.8.", get_details=T)`
+`r render_figure("Figure App.E.11.8.", "../img/cinms_cr/App.E.11.8.png")`

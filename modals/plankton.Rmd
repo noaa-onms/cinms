@@ -3,20 +3,14 @@ knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 source(here::here("scripts/utility.R"))
 ```
 
-```{r}
-get_modal_info()
-```
+`r get_modal_info()`
 
 ## {.tabset}
 
 ### Small plankton volume
 
-![`r md_caption("Figure App.F.12.18.")`](../img/cinms_cr/App.F.12.18_CalCOFI_SPV.jpg)
-
-`r md_caption("Figure App.F.12.18.", get_details=T)`
+`r render_figure("Figure App.F.12.18.", "../img/cinms_cr/App.F.12.18_CalCOFI_SPV.jpg")`
 
 ### Map of sampling stations
 
-![`r md_caption("Figure App.F.12.17.")`](../img/cinms_cr/App.F.12.17.png)
-
-`r md_caption("Figure App.F.12.17.", get_details=T)`
+`r render_figure("Figure App.F.12.17.", "../img/cinms_cr/App.F.12.17.png")`

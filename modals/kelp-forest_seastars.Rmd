@@ -2,32 +2,22 @@
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 source(here::here("scripts/utility.R"))
 ```
-```{r modal_info}
-get_modal_info()
-```
+`r get_modal_info()`
 
 ##  {.tabset} 
 
 ### PISCO: Sea Stars on Islands
 
-![`r md_caption("Figure App.F.12.7.")`](../img/cinms_cr/App.F.12.7.seastars_PISCO.jpg)
-
-`r md_caption("Figure App.F.12.7.", get_details=T)`
+`r render_figure("Figure App.F.12.7.", "../img/cinms_cr/App.F.12.7.seastars_PISCO.jpg")`
 
 ### NPS: Giant-spined star
 
-![`r md_caption("Figure App.F.12.8a.")`](../img/cinms_cr/App.F.12.8a.Pisaster_giganteus_CINP.jpg)
-
-`r md_caption("Figure App.F.12.8a.", get_details=T)`
+`r render_figure("Figure App.F.12.8a.", "../img/cinms_cr/App.F.12.8a.Pisaster_giganteus_CINP.jpg")`
 
 ### LTER: Sea stars
 
-![`r md_caption("Figure App.F.12.9.")`](../img/cinms_cr/App.F.12.9.seastar_LTER.jpg)
-
-`r md_caption("Figure App.F.12.9.", get_details=T)`
+`r render_figure("Figure App.F.12.9.", "../img/cinms_cr/App.F.12.9.seastar_LTER.jpg")`
 
 ### NPS: Sunflower star
 
-![`r md_caption("Figure App.F.12.8b.")`](../img/cinms_cr/App.F.12.8b.Pycnopodia_helianthoides_CINP.jpg)
-
-`r md_caption("Figure App.F.12.8b.", get_details=T)`
+`r render_figure("Figure App.F.12.8b.", "../img/cinms_cr/App.F.12.8b.Pycnopodia_helianthoides_CINP.jpg")`

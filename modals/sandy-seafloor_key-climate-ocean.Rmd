@@ -70,18 +70,12 @@ Download timeseries data for sanctuary: `r html`
 
 ### Trend: Nitrate profile (PnB)
 
-![`r md_caption("Figure App.D.6.5.")`](../img/cinms_cr/App.D.6.5.png)
-
-`r md_caption("Figure App.D.6.5.", get_details=T)`
+`r render_figure("Figure App.D.6.5.", "../img/cinms_cr/App.D.6.5.png")`
 
 ### Trend: Phosphate profile (PnB)
-![`r md_caption("Figure App.D.6.6.")`](../img/cinms_cr/App.D.6.6.png)
 
-`r md_caption("Figure App.D.6.6.", get_details=T)`
+`r render_figure("Figure App.D.6.6.", "../img/cinms_cr/App.D.6.6.png")`
 
 ### Trend: Nitrate anomaly
 
-![`r md_caption("Figure App.D.6.7.")`](../img/cinms_cr/App.D.6.7_SST and nitrate anomalies 2001-2015_Reed et al._2016.jpg)
-
-`r md_caption("Figure App.D.6.7.", get_details=T)`
-
+`r render_figure("Figure App.D.6.7.", "../img/cinms_cr/App.D.6.7_SST and nitrate anomalies 2001-2015_Reed et al._2016.jpg")`
