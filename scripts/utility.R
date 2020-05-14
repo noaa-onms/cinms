@@ -209,6 +209,6 @@ render_figure <- function(figure_id, figure_img){
   
   ![{md_caption(figure_id)}]({figure_img})
   
-  {md_caption(figure_id, get_details=T)}`
+  {md_caption(figure_id, get_details=T)}
   ")
 }

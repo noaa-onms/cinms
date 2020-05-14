@@ -11,11 +11,13 @@ source(here::here("scripts/utility.R"))
 
 `r render_figure("Figure App.F.13.18.", "../img/cinms_cr/App.F.13.18.jpg")`
 
+
 `r render_figure("Figure App.F.13.19.", "../img/cinms_cr/App.F.13.19.jpg")`
 
 ### Demersal fishes recent trends (NMFS hook & line survey data)
 
 `r render_figure("Table App.F.13.2.", "../img/cinms_cr/tbl.App.F.13.2.jpg")`
+
 
 `r render_figure("Figure App.F.13.20.", "../img/cinms_cr/App.F.13.20.jpg")`
 

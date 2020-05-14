@@ -17,8 +17,6 @@ source(here::here("scripts/utility.R"))
 
 ### Infaunal invertebrates - community composition
 
-![](../img/cinms_cr/App.F.15.4a.SCCWRP_status.jpg)
-
 `r render_figure("Figure App.F.15.4.", "../img/cinms_cr/App.F.15.4b.SCCWRP_trend.jpg")`
 
 ### Demersal fishes - biodiversity trends

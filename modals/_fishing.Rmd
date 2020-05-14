@@ -3,7 +3,7 @@ knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 source(here::here("scripts/utility.R"))
 ```
 
-#### Fishing
+### Fishing {.tabset}
 
 `r get_modal_info()`
 
@@ -15,7 +15,7 @@ source(here::here("scripts/utility.R"))
 
 ###### Recreational
 
-`r render_figure("Figure App.C.4.2b.", "../img/cinms_cr/App.C.4.2b.CPFV_landings.jpg)")`
+`r render_figure("Figure App.C.4.2b.", "../img/cinms_cr/App.C.4.2b.CPFV_landings.jpg")`
 
 ###### Deep-water
 
