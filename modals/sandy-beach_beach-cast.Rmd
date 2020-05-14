@@ -1,0 +1,14 @@
+```{r, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("scripts/utility.R"))
+```
+
+## {.tabset}
+
+### Trend: beachcast seabirds
+
+`r render_figure("BeachCombers_CCIEA_Strandings_South", "../img/cinms_cr/BeachCombers_CCIEA_Strandings_South.png")`
+
+### Trend: oiled beachcast seabirds
+
+`r render_figure("BeachCombers_seabird_deposition_oiling", "../img/cinms_cr/BeachCombers_seabird_deposition_oiling.png")`

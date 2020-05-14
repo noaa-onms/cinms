@@ -8,24 +8,12 @@ source(here::here("scripts/utility.R"))
 ## {.tabset}
 
 ### Red abalone (PISCO)
-[More information about PISCO can be found here](https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100465)
-
-[PISCO data can be accessed here](http://www.piscoweb.org/access-data)
-
 `r render_figure("Figure App.F.13.9.", "../img/cinms_cr/App.F.13.9.jpg")`
 
-### Red abalone (CINP)
-[More information about Channel Islands National Park can be found here](https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100505)
-
-[CINP data can be requested here](https://www.nps.gov/chis/index.htm)
+### Red abalone (CHIS)
 
 `r render_figure("Figure App.F.13.10a.", "../img/cinms_cr/App.F.13.10a.Haliotis_rufescens_CINP.jpg")`
 
-### Pink abalone (CINP)
-[More information about Channel Islands National Park can be found here](https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100505)
+### Pink abalone (CHIS)
 
-[CINP data can be requested here](https://www.nps.gov/chis/index.htm)
-
-![`r md_caption("Figure App.F.13.10b.")`](../img/cinms_cr/App.F.13.10b.Haliotis_corrugata_CINP.jpg)
-
-`r md_caption("Figure App.F.13.10b.", get_details=T)`
+`r render_figure("Figure App.F.13.10b.", "../img/cinms_cr/App.F.13.10b.Haliotis_corrugata_CINP.jpg")`

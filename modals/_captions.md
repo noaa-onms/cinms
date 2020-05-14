@@ -4,6 +4,14 @@ output:
   pdf_document: default
 ---
 
+## BeachCombers_seabird_deposition_oiling
+
+Text from Jenn
+
+## BeachCombers_CCIEA_Strandings_South
+
+Text from Jenn
+
 ## Figure Ux.Ocean.Chl.ERD.map.
 
 Map of the most recent Chlorophyll-a that indicates productivity by phytoplankton, the plant base of the food chain in the ocean.
