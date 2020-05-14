@@ -3,10 +3,6 @@ knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 source(here::here("scripts/utility.R"))
 ```
 
-```{r modal_info}
-get_modal_info()
-```
+`r get_modal_info()`
 
-![`r md_caption("Figure App.F.14.1.")`](../img/cinms_cr/App.F.14.1.NIS_PISCO.png)
-
-`r md_caption("Figure App.F.14.1.", get_details=T)`
+`r render_figure("Figure App.F.14.1.", "../img/cinms_cr/App.F.14.1.NIS_PISCO.png")`

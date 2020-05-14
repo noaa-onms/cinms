@@ -154,6 +154,10 @@ Overlay of trawl and fixed gear fishing activity from 2007 to 2011 and protected
 
 Fishing activity (number of trip and number of anglers per trip) for Commercial Passenger Fishing Vessels (CPFVs) operating out of ports in Santa Barbara and Ventura from 2000 to 2012. Figure credit: Chen et al. 2015b.
 
+### Details
+
+Fishing activity (number of trip and number of anglers per trip) for Commercial Passenger Fishing Vessels (CPFVs) operating out of ports in Santa Barbara and Ventura from 2000 to 2012. Figure credit: Chen et al. 2015b.
+
 ## Figure App.C.4.2b.
 
 A figure of Commercial Passenger Fishing Vessel (CPFV) trips and anglers per trip accross years (2000 to 2012). Figure credit: Chen et al. 2015b.
