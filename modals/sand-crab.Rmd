@@ -3,14 +3,10 @@ knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 source(here::here("scripts/utility.R"))
 ```
 
-```{r}
-get_modal_info()
-```
+`r get_modal_info()`
 
 ##  {.tabset} 
 
 ### NPS: Sand Crabs on Santa Rosa Island
 
-![`r md_caption("Figure App.F.12.4.")`](../img/cinms_cr/App.F.12.4.Emerita_CINP.jpg)
-
-`r md_caption("Figure App.F.12.4.", get_details=T)`
+`r render_figure("Figure App.F.12.4.", "../img/cinms_cr/App.F.12.4.Emerita_CINP.jpg")`

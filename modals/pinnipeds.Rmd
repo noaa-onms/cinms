@@ -2,38 +2,27 @@
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 source(here::here("scripts/utility.R"))
 ```
-```{r}
-get_modal_info()
-```
+
+`r get_modal_info()`
 
 ## {.tabset}
 
 ### California sea lion pup indicators 
 
-![`r md_caption("Figure App.F.13.24_new.")`](../img/cinms_cr/App.F.13.24_new.png)
-
-`r md_caption("Figure App.F.13.24_new.", get_details=T)`
+`r render_figure("Figure App.F.13.24_new.", "../img/cinms_cr/App.F.13.24_new.png")`
 
 ### California sea lion (_Zalophus californianus_)
 
-![`r md_caption("Figure App.F.13.23.")`](../img/cinms_cr/App.F.13.23.jpg)
-
-`r md_caption("Figure App.F.13.23.", get_details=T)`
+`r render_figure("Figure App.F.13.23.", "../img/cinms_cr/App.F.13.23.jpg")`
 
 ### Harbor seals (_Phoca vitulina_)
 
-![`r md_caption("Figure App.F.13.25.")`](../img/cinms_cr/App.F.13.25.jpg)
-
-`r md_caption("Figure App.F.13.25.", get_details=T)`
+`r render_figure("Figure App.F.13.25.", "../img/cinms_cr/App.F.13.25.jpg")`
 
 ### Northern elephant seals (_Mirounga angustirostris_)
 
-![`r md_caption("Figure App.F.13.26.")`](../img/cinms_cr/App.F.13.26.jpg)
-
-`r md_caption("Figure App.F.13.26.", get_details=T)`
+`r render_figure("Figure App.F.13.26.", "../img/cinms_cr/App.F.13.26.jpg")`
 
 ### Northern fur seals (_Callorhinus ursinus_)
 
-![`r md_caption("Figure App.F.13.27.")`](../img/cinms_cr/App.F.13.27.jpg)
-
-`r md_caption("Figure App.F.13.27.", get_details=T)`
+`r render_figure("Figure App.F.13.27.", "../img/cinms_cr/App.F.13.27.jpg")`

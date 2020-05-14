@@ -2,9 +2,8 @@
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 source(here::here("scripts/utility.R"))
 ```
-```{r}
-get_modal_info()
-```
+
+`r get_modal_info()`
 
 ## Owl limpets (_Lottia gigantea_)
 
@@ -12,12 +11,8 @@ get_modal_info()
 
 ### Mean number by island
 
-![`r md_caption("Figure App.F.13.3a.")`](../img/cinms_cr/App.F.13.3a.jpg)
-
-`r md_caption("Figure App.F.13.3a.", get_details=T)`
+`r render_figure("Figure App.F.13.3a.", "../img/cinms_cr/App.F.13.3a.jpg")`
 
 ### Size frequency by island
 
-![`r md_caption("Figure App.F.13.3b.")`](../img/cinms_cr/App.F.13.3b.jpg)
-
-`r md_caption("Figure App.F.13.3b.", get_details=T)`
+`r render_figure("Figure App.F.13.3b.", "../img/cinms_cr/App.F.13.3b.jpg")`
