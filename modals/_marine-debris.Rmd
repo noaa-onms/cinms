@@ -5,19 +5,11 @@ source(here::here("scripts/utility.R"))
 
 #### Marine Debris
 
-```{r modal_info}
-get_modal_info()
-```
+`r get_modal_info()`
 
-![`r md_caption("Figure App.C.4.14.")`](../img/cinms_cr/App.C.4.14.Marine debris_CCIEA.jpg)
+`r render_figure("Figure App.C.4.14.", "../img/cinms_cr/App.C.4.14.Marine debris_CCIEA.jpg")`
 
-`r md_caption("Figure App.C.4.14.", get_details=T)`
+`r render_figure("Figure App.C.4.15.", "../img/cinms_cr/App.C.4.15.Gilfillan_graph.png")`
 
-![`r md_caption("Figure App.C.4.15.")`](../img/cinms_cr/App.C.4.15.Gilfillan_graph.png)
-
-`r md_caption("Figure App.C.4.15.", get_details=T)`
-
-![`r md_caption("Figure App.C.4.16.")`](../img/cinms_cr/App.C.4.16.Gilfillan_map.png)
-
-`r md_caption("Figure App.C.4.16.", get_details=T)`
+`r render_figure("Figure App.C.4.16.", "../img/cinms_cr/App.C.4.16.Gilfillan_map.png")`
 

@@ -5,14 +5,9 @@ source(here::here("scripts/utility.R"))
 
 #### Visitors
 
-```{r modal_info}
-get_modal_info()
-```
+`r get_modal_info()`
 
-![`r md_caption("Figure App.C.4.8.")`](../img/cinms_cr/App.C.4.8.Visitation_Frenchys.jpg)
+`r render_figure("Figure App.C.4.8.", "../img/cinms_cr/App.C.4.8.Visitation_Frenchys.jpg")`
 
-`r md_caption("Figure App.C.4.8.", get_details=T)`
+`r render_figure("Figure App.C.4.7.", "../img/cinms_cr/App.C.4.7_chen_recreation.jpg")`
 
-![`r md_caption("Figure App.C.4.7.")`](../img/cinms_cr/App.C.4.7_chen_recreation.jpg)
-
-`r md_caption("Figure App.C.4.7.", get_details=T)`

@@ -145,7 +145,7 @@ get_figure_info <- function (figure_id){
   google_row <- read_csv(input_file)  %>% 
     filter(md_caption == figure_id)
   
-  if (nrow(google_row) == 0) stop("Need link in cinms_content:info_figure_links Google Sheet!")
+  if (nrow(google_row) == 0) stop(paste("Need link in cinms_content:info_figure_links Google Sheet for", figure_id))
   
   # let's initialize a string variable that we'll use to keep track of the links going in the gray bar.
   output_string = ""

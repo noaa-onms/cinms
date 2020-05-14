@@ -67,7 +67,7 @@ A figure showing the amount of eelgrass in Frenchy's Cove, Anacapa Island, from 
 
 ### Details
 
-Eelgrass cover at Frenchy’s Cove from 2004 to 2016 after 2003 transplant. Data are collected from diver surveys along a 30 meter fixed transect with points scored every 10 centimeters. The transect lies within the transplant area at Frenchy's Cove are at approximately 24 feet in depth. Declines in eelgrass cover are thought to be potentially due to seafloor disturbance from anchoring and trap fishing.
+Eelgrass cover at Frenchy's Cove from 2004 to 2016 after 2003 transplant. Data are collected from diver surveys along a 30 meter fixed transect with points scored every 10 centimeters. The transect lies within the transplant area at Frenchy's Cove are at approximately 24 feet in depth. Declines in eelgrass cover are thought to be potentially due to seafloor disturbance from anchoring and trap fishing.
 
 ## Figure App.C.1.4. 
 
@@ -216,7 +216,7 @@ A graph showing the number of visitors brought to Frenchy's Cove on Anacapa Isla
 
 ### Details
 
-Annual number of visitors brought to Frenchy’s Cove, Anacapa Island, by the Island Packers Company. At south Frenchy’s Cove and adjacent reefs, Island Packers Company conducts classroom programs for school groups typically during winter and spring months. No records are available for the number of private boaters that went ashore at any of the Channel Islands in the park. 
+Annual number of visitors brought to Frenchy's Cove, Anacapa Island, by the Island Packers Company. At south Frenchy's Cove and adjacent reefs, Island Packers Company conducts classroom programs for school groups typically during winter and spring months. No records are available for the number of private boaters that went ashore at any of the Channel Islands in the park. 
 
 ## Figure App.C.4.9.
 
@@ -224,7 +224,7 @@ A figure showing rates of human-caused distubance to seabird breeding and nestin
 
 ### Details
 
-Rates of human-caused disturbance to seabird breeding and roosting sites were low on Santa Cruz Island (SC) compared to other sites across the south coast (SCSR), central coast (CCSR), and north central coast (NCCSR) study regions. Activities noted as causing disturbance at SC in 2012 to 2013 were human power boats, recreational fishing boats, recreational power boats, commercial fishing boats, airplanes, and helicopters. SD = San Diego, PV = Palos Verdes Peninsula, SB = Shell Beach, MD = Montaña de Oro, EB = Estero Bluffs, MO = Montara, PR = Point Reyes, BO = Bodega.
+Rates of human-caused disturbance to seabird breeding and roosting sites were low on Santa Cruz Island (SC) compared to other sites across the south coast (SCSR), central coast (CCSR), and north central coast (NCCSR) study regions. Activities noted as causing disturbance at SC in 2012 to 2013 were human power boats, recreational fishing boats, recreational power boats, commercial fishing boats, airplanes, and helicopters. SD = San Diego, PV = Palos Verdes Peninsula, SB = Shell Beach, MD = Montana de Oro, EB = Estero Bluffs, MO = Montara, PR = Point Reyes, BO = Bodega.
 
 ## Figure App.C.4.10b. 
 
@@ -302,7 +302,7 @@ Spatial distribution, concentration, and characteristics of plastic micro-debris
 
 ## Figure App.C.4.17.
 
-A figure showing trends in offshore oil and gas activity in Southern California from 1975 to 2014. Data source: Annual reports of the California State Department of Conservation’s Division of Oil, Gas, and Geothermal Resources; Figure credit: K. Andrews/NOAA.
+A figure showing trends in offshore oil and gas activity in Southern California from 1975 to 2014. Data source: Annual reports of the California State Department of Conservation's Division of Oil, Gas, and Geothermal Resources; Figure credit: K. Andrews/NOAA.
 
 ### Details
 
@@ -322,7 +322,7 @@ A figure showing nitrate concentrations (a form of organic nitrogen) at a Plumes
 
 ### Details
 
-Nitrate concentrations (NO3 μmol/L) at Plumes and Blooms sampling station #4 (34°15.01’N, 119°54.38’W, see Figure D6.2) for (a) 1997-2015; and (b) 2009-2015, a subset of Figure D6.6a of the years since the last condition report. While station #4 is outside the sanctuary boundary and there are other sampling sites within the sanctuary, it is the only sampling site that collects measurements throughout the water column, versus from just surface waters. This time-depth contour plot was generated via ordinary krigging with a generalized exponential-Bessel fitting model (GLOBEC Kriging Software Package v3.0), with interpolation length scales of 30 days (time axis) and ten meters (depth axis). The time and location of each actual sample are shown as black dots, allowing the observation of periods where data gaps exist.
+Nitrate concentrations (NO3 μmol/L) at Plumes and Blooms sampling station #4 (34°15.01'N, 119°54.38'W, see Figure D6.2) for (a) 1997-2015; and (b) 2009-2015, a subset of Figure D6.6a of the years since the last condition report. While station #4 is outside the sanctuary boundary and there are other sampling sites within the sanctuary, it is the only sampling site that collects measurements throughout the water column, versus from just surface waters. This time-depth contour plot was generated via ordinary krigging with a generalized exponential-Bessel fitting model (GLOBEC Kriging Software Package v3.0), with interpolation length scales of 30 days (time axis) and ten meters (depth axis). The time and location of each actual sample are shown as black dots, allowing the observation of periods where data gaps exist.
 
 ## Figure App.D.6.6.
 
@@ -330,7 +330,7 @@ A figure showing phosphate concentrations (a form of organic phosophorous) at a 
 
 ### Details
 
-Phosphate concentration (PO4 μg/L) at Plumes and Blooms sampling station #4 (34°15.01’N, 119°54.38’W, see Figure D6.2) for (a) 1997-2015; and (b) 2009-2015 a subset of Figure D6.7a of the years since the last condition report. While station #4 is outside the sanctuary boundary and there are other sampling sites within the sanctuary, it is the only sampling site that collects measurements throughout the water column, versus from just surface waters. This time-depth contour plot was generated via ordinary krigging with a generalized exponential-Bessel fitting model (GLOBEC Kriging Software Package v3.0), with interpolation length scales of 30 days (time axis) and ten meters (depth axis). The time and location of each actual sample are shown as black dots, allowing the observation of periods where data gaps exist. Figure: Siegel et al. submitted. Plumes and Blooms: http://www.oceancolor.ucsb.edu/plumes_and_blooms
+Phosphate concentration (PO4 μg/L) at Plumes and Blooms sampling station #4 (34°15.01'N, 119°54.38'W, see Figure D6.2) for (a) 1997-2015; and (b) 2009-2015 a subset of Figure D6.7a of the years since the last condition report. While station #4 is outside the sanctuary boundary and there are other sampling sites within the sanctuary, it is the only sampling site that collects measurements throughout the water column, versus from just surface waters. This time-depth contour plot was generated via ordinary krigging with a generalized exponential-Bessel fitting model (GLOBEC Kriging Software Package v3.0), with interpolation length scales of 30 days (time axis) and ten meters (depth axis). The time and location of each actual sample are shown as black dots, allowing the observation of periods where data gaps exist. Figure: Siegel et al. submitted. Plumes and Blooms: http://www.oceancolor.ucsb.edu/plumes_and_blooms
 Note: This is variant of a similar figure shown during the expert workshop.
 
 ## Figure App.D.6.7.
@@ -371,7 +371,7 @@ A figure showing a time-series of temperature profiles (ºC) sampled in the Chan
 
 ### Details
 
-Time-series of temperature (°C) profiles at Plumes and Blooms sampling station #4 (34°15.01’N, 119°54.38’W, see Figure D6.2) for (a) 1997-2015 and (b) 2009-2015. While station #4 is outside the sanctuary boundary and there are other sampling sites within the sanctuary, it is the only sampling site that collects measurements throughout the water column, versus from just surface waters. This time-depth contour plot was generated via ordinary krigging with a generalized exponential-Bessel fitting model (GLOBEC Kriging Software Package v3.0), with interpolation length scales of 30 days (time axis) and ten meters (depth axis). The time and location of each actual sample are shown as black dots, allowing the observation of periods where data gaps exist. Note: This is variant of a similar figure shown during the expert workshop.
+Time-series of temperature (°C) profiles at Plumes and Blooms sampling station #4 (34°15.01'N, 119°54.38'W, see Figure D6.2) for (a) 1997-2015 and (b) 2009-2015. While station #4 is outside the sanctuary boundary and there are other sampling sites within the sanctuary, it is the only sampling site that collects measurements throughout the water column, versus from just surface waters. This time-depth contour plot was generated via ordinary krigging with a generalized exponential-Bessel fitting model (GLOBEC Kriging Software Package v3.0), with interpolation length scales of 30 days (time axis) and ten meters (depth axis). The time and location of each actual sample are shown as black dots, allowing the observation of periods where data gaps exist. Note: This is variant of a similar figure shown during the expert workshop.
 
 ## Figure App.E.10.11.
 
@@ -474,7 +474,7 @@ A map showing contaminant monitoring sites for mussels in Southern California (t
 
 ### Details
 
-Mussel tissue contaminant monitoring sites from NOAA’s Mussel Watch Program are shown in southern California (top) and around CINMS (bottom). Only one site within CINMS has been monitored consistently over time: Fraser Point, SCI (1986-2010), Other monitoring sites include: Anacapa (2008 only); Tyler Bight, south SMI (1988 only); and Otter Harbor, north SMI (2008-2010). 
+Mussel tissue contaminant monitoring sites from NOAA's Mussel Watch Program are shown in southern California (top) and around CINMS (bottom). Only one site within CINMS has been monitored consistently over time: Fraser Point, SCI (1986-2010), Other monitoring sites include: Anacapa (2008 only); Tyler Bight, south SMI (1988 only); and Otter Harbor, north SMI (2008-2010). 
 
 ## Figure App.E.11.2.
 
@@ -482,7 +482,7 @@ A figure showing a time series of arsenic found in mussel tissue from Santa Cruz
 
 ### Details
 
-Time series of arsenic (as μg/g dry weight) in _Mytilus_ spp. at Fraser Point, Santa Cruz Island is shown above. Data is from NOAA’s Mussel Watch Program (monitored 1986-2010). Arsenic values have been slowly declining in _Mytilus_ spp tissue. Arsenic can impact a number of enzymes and has a widespread effects on a number of organ systems. There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more through research and data collection is required to confirm this trend. 
+Time series of arsenic (as μg/g dry weight) in _Mytilus_ spp. at Fraser Point, Santa Cruz Island is shown above. Data is from NOAA's Mussel Watch Program (monitored 1986-2010). Arsenic values have been slowly declining in _Mytilus_ spp tissue. Arsenic can impact a number of enzymes and has a widespread effects on a number of organ systems. There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more through research and data collection is required to confirm this trend. 
 
 ## Figure App.E.11.3.
 
@@ -490,7 +490,7 @@ A figure showing the trends over time of iron found in mussel tissue from Santa 
 
 ### Details
 
-Time series of iron (as μg/g dry weight) in _Mytilus_ spp. at Fraser Point, Santa Cruz Island is shown above. Data is from NOAA’s Mussel Watch Program (monitored 1986-2010). Iron values have been slowly declining in _Mytilus_ spp. tissue. There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more through research and data collection is required to confirm this trend. 
+Time series of iron (as μg/g dry weight) in _Mytilus_ spp. at Fraser Point, Santa Cruz Island is shown above. Data is from NOAA's Mussel Watch Program (monitored 1986-2010). Iron values have been slowly declining in _Mytilus_ spp. tissue. There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more through research and data collection is required to confirm this trend. 
 
 ## Figure App.E.11.4.
 
@@ -498,7 +498,7 @@ A figure showing the trends over time of silver found in mussel tissue from Sant
 
 ### Details
 
-Time series of silver (as μg/g dry weight) in _Mytilus_ spp. at Fraser Point, Santa Cruz Island is shown above. Data is from NOAA’s Mussel Watch Program (monitored 1986-2010). Silver values have been slowly declining in _Mytilus_ spp. tissue. There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more through research and data collection is required to confirm this trend. 
+Time series of silver (as μg/g dry weight) in _Mytilus_ spp. at Fraser Point, Santa Cruz Island is shown above. Data is from NOAA's Mussel Watch Program (monitored 1986-2010). Silver values have been slowly declining in _Mytilus_ spp. tissue. There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more through research and data collection is required to confirm this trend. 
 
 ## Figure App.E.11.5.
 
@@ -506,7 +506,7 @@ A figure showing a coastwide comparison of heavy metals found in mussel tissue f
 
 ### Details
 
-This graph is a California coastwide comparison of total extractables (TE) from _Mytilus_ spp. tissue for heavy metals. Data is from NOAA’s Mussel Watch Program (monitored 1986-2010). The horizontal lines of the red box illustrate the 25th, median, and 75th percentiles, while the top and bottom whiskers represent the 10th and 90th percentiles. Black dots are data points from collection sites and the green ellipsoids represent mean concentration values for metals from sites within CINMS (n = 3). There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more through research and data collection is required to confirm this trend. 
+This graph is a California coastwide comparison of total extractables (TE) from _Mytilus_ spp. tissue for heavy metals. Data is from NOAA's Mussel Watch Program (monitored 1986-2010). The horizontal lines of the red box illustrate the 25th, median, and 75th percentiles, while the top and bottom whiskers represent the 10th and 90th percentiles. Black dots are data points from collection sites and the green ellipsoids represent mean concentration values for metals from sites within CINMS (n = 3). There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more through research and data collection is required to confirm this trend. 
 
 ## Figure App.E.11.6.
 
@@ -563,7 +563,7 @@ A map showing DDT contaminant levels in sediments collected across the Southern 
 
 ### Details
 
-Dichlorodiphenyltrichloroethane (DDT) contaminant levels in sediment sampling locations during SCCRWP’s 2008 bight-wide survey are shown in the map. DDT is most prominent around the Ports of Long Beach, Los Angeles, and Santa Monica Bay. DDT is a legacy contaminant, which means it persists in the environment long after introduction. A large amount of DDT in the bight came from the dumping of the contaminant by the Montrose Chemical Company off Palos Verdes until the early 1980s, which is why the surrounding areas have high DDT levels. CINMS is relatively far from the spill site and thus, has limited DDT concentrations in sediments. 
+Dichlorodiphenyltrichloroethane (DDT) contaminant levels in sediment sampling locations during SCCRWP's 2008 bight-wide survey are shown in the map. DDT is most prominent around the Ports of Long Beach, Los Angeles, and Santa Monica Bay. DDT is a legacy contaminant, which means it persists in the environment long after introduction. A large amount of DDT in the bight came from the dumping of the contaminant by the Montrose Chemical Company off Palos Verdes until the early 1980s, which is why the surrounding areas have high DDT levels. CINMS is relatively far from the spill site and thus, has limited DDT concentrations in sediments. 
 
 ## Figure App.E.11.13.
 
@@ -571,7 +571,7 @@ A map showing copper contaminant levels in sediments collected across the Southe
 
 ### Details
 
-Copper contaminant levels at sediment sampling locations during SCCRWP’s 2008 Bight wide survey are shown in the map. Copper is a heavy metal contaminant that in high concentrations can be toxic to living marine resources. Concentrations in CINMS are consistently low compared with other regions in the southern California Bight. 
+Copper contaminant levels at sediment sampling locations during SCCRWP's 2008 Bight wide survey are shown in the map. Copper is a heavy metal contaminant that in high concentrations can be toxic to living marine resources. Concentrations in CINMS are consistently low compared with other regions in the southern California Bight. 
 
 ## Figure App.E.11.14.
 
@@ -579,7 +579,7 @@ A map showing silver contaminant levels in sediments collected across the Southe
 
 ### Details
 
-Silver contaminant levels in sediment sampling locations during SCCRWP’s 2008 bight-wide survey are shown in the map. Silver is a heavy metal contaminant that in high concentrations can be toxic to living marine resources. Concentrations in CINMS and the Santa Barbara Channel are consistently low compared other regions in the Southern California Bight. High concentrations of silver appear to be clustered off the two largest population centers: Los Angeles and San Diego. 
+Silver contaminant levels in sediment sampling locations during SCCRWP's 2008 bight-wide survey are shown in the map. Silver is a heavy metal contaminant that in high concentrations can be toxic to living marine resources. Concentrations in CINMS and the Santa Barbara Channel are consistently low compared other regions in the Southern California Bight. High concentrations of silver appear to be clustered off the two largest population centers: Los Angeles and San Diego. 
 
 ## Figure App.E.11.15.
 
@@ -595,7 +595,7 @@ A map showing pyrethroid (insecticide) contaminant levels in sediments collected
 
 ### Details
 
-Pyrethroids contaminant levels in sediment sampling locations during SCCRWP’s 2008 bight-wide survey are shown in the map. Pyrethroids are typically pollutants coming from insecticide use. In recent years, there has been no agriculture on the islands and thus, pyrethroids are absent from CINMS sediments. Sediments adjacent to CINMS off Ventura have low levels of pyrethroids likely due to agriculture in that area. 
+Pyrethroids contaminant levels in sediment sampling locations during SCCRWP's 2008 bight-wide survey are shown in the map. Pyrethroids are typically pollutants coming from insecticide use. In recent years, there has been no agriculture on the islands and thus, pyrethroids are absent from CINMS sediments. Sediments adjacent to CINMS off Ventura have low levels of pyrethroids likely due to agriculture in that area. 
 
 ## Figure App.E.11.17.
 
@@ -1028,7 +1028,7 @@ A figure showing the number of Northern fur seal pups counted at two locations o
 
 ### Details
 
-Total production of Northern fur seal (*Callorhinus ursinus*) pups counted on San Miguel Island, including the mainland (Adam’s Cove) and the offshore islet (Castle Rock), from 1972-2014. The total production of northern fur seals exceeded the 1997 levels during 2010, 2012, and 2013. The island’s population has recovered from the 1997-1998 El Niño event. 
+Total production of Northern fur seal (*Callorhinus ursinus*) pups counted on San Miguel Island, including the mainland (Adam's Cove) and the offshore islet (Castle Rock), from 1972-2014. The total production of northern fur seals exceeded the 1997 levels during 2010, 2012, and 2013. The island's population has recovered from the 1997-1998 El Niño event. 
 
 ## Figure App.F.13.28.
 

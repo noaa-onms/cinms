@@ -5,10 +5,6 @@ source(here::here("scripts/utility.R"))
 
 #### Seabird disturbance
 
-```{r modal_info}
-get_modal_info()
-```
+`r get_modal_info()`
 
-![`r md_caption("Figure App.C.4.9.")`](../img/cinms_cr/App.C.4.9.Seabird_disturbance_rates_Robinette.jpg)
-
-`r md_caption("Figure App.C.4.9.", get_details=T)`
+`r render_figure("Figure App.C.4.9.", "../img/cinms_cr/App.C.4.9.Seabird_disturbance_rates_Robinette.jpg")`

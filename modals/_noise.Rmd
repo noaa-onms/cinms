@@ -5,20 +5,14 @@ source(here::here("scripts/utility.R"))
 
 #### Noise
 
-```{r modal_info}
-get_modal_info()
-```
+`r get_modal_info()`
 
 ##### {.tabset}
 
 ###### Ambient Levels
 
-![`r md_caption("Figure App.C.4.13.")`](../img/cinms_cr/App.C.4.13.CINMS_Noise.jpg)
-
-`r md_caption("Figure App.C.4.13.", get_details=T)`
+`r render_figure("Figure App.C.4.13.", "../img/cinms_cr/App.C.4.13.CINMS_Noise.jpg")`
 
 ###### Monitoring Stations
 
-![`r md_caption("Figure App.C.2.8.")`](../img/cinms_cr/App.C.2.8.jpg)
-
-`r md_caption("Figure App.C.2.8.", get_details=T)`
+`r render_figure("Figure App.C.2.8.", "../img/cinms_cr/App.C.2.8.jpg")`

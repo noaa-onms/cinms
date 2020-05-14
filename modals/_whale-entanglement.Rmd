@@ -10,31 +10,21 @@ source(here::here("../cinms/scripts/utility.R"))
 
 #### Whale entanglement
 
-```{r modal_info}
-get_modal_info()
-```
+`r get_modal_info()`
 
-![`r md_caption("Figure App.C.4.10b.")`](../img/cinms_cr/App.C.4.10b.Whale_entanglements.png)
- 
-`r md_caption("Figure App.C.4.10b.", get_details=T)`
+`r render_figure("Figure App.C.4.10b.", "../img/cinms_cr/App.C.4.10b.Whale_entanglements.png")`
 
 ##### Overlap with Fishing {.tabset}
 
 ###### Blue
 
-![`r md_caption("Figure App.C.4.11a.")`](../img/cinms_cr/App.C.4.11a.blue_risk.jpg)
-
-`r md_caption("Figure App.C.4.11a.", get_details=T)`
+`r render_figure("Figure App.C.4.11a.", "../img/cinms_cr/App.C.4.11a.blue_risk.jpg")`
 
 ###### Fin
 
-![`r md_caption("Figure App.C.4.11b.")`](../img/cinms_cr/App.C.4.11b.fin_risk.jpg)
-
-`r md_caption("Figure App.C.4.11b.", get_details=T)`
+`r render_figure("Figure App.C.4.11b.", "../img/cinms_cr/App.C.4.11b.fin_risk.jpg")`
 
 ###### Humpback
 
-![`r md_caption("Figure App.C.4.11c.")`](../img/cinms_cr/App.C.4.11c.humpback_risk.jpg)
-
-`r md_caption("Figure App.C.4.11c.", get_details=T)`
+`r render_figure("Figure App.C.4.11c.", "../img/cinms_cr/App.C.4.11c.humpback_risk.jpg")`
 
