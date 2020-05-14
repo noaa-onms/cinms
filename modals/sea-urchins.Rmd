@@ -3,20 +3,14 @@ knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 source(here::here("scripts/utility.R"))
 ```
 
-```{r}
-get_modal_info()
-```
+`r get_modal_info()`
 
 ## {.tabset} 
 
 ### Islands
 
-![`r md_caption("Figure App.F.12.5.")`](../img/cinms_cr/App.F.12.5.urchins_PISCO.jpg)
-
-`r md_caption("Figure App.F.12.5.", get_details=T)`
+`r render_figure("Figure App F.12.5.", "../img/cinms_cr/App.F.12.5.urchins_PISCO.jpg")`
 
 ### Island vs Mainland
 
-![`r md_caption("Figure App.F.12.6.")`](../img/cinms_cr/App.F.12.6_urchins_LTER.jpg)
-
-`r md_caption("Figure App.F.12.6.", get_details=T)`
+`r render_figure("Figure App F.12.6.", "../img/cinms_cr/App.F.12.6_urchins_LTER.jpg")`
