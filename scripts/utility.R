@@ -196,6 +196,19 @@ get_figure_info <- function (figure_id){
   }
 }
 
+
+render_caption <- function(figure_id){
+  info <- get_figure_info(figure_id)
+  
+  glue(
+  "
+  {md_caption(figure_id)}
+  
+  {md_caption(figure_id, get_details=T)}
+  ")
+  
+}
+
 render_figure <- function(figure_id, figure_img){
   
   # figure_id = "Figure App.E.10.22."
