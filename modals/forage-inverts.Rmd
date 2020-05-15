@@ -12,7 +12,7 @@ source(here::here("scripts/utility.R"))
 
 ### Map of Regions
 
-```{r, fig.cap=md_caption("Figure App.F.12.17.new")}
+```{r, fig.cap=md_caption("Figure App.F.12.17.")}
 calcofi_map()
 ```
 

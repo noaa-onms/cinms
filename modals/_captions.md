@@ -811,7 +811,7 @@ A figure showing the relative abundance of Pacific sardine (*Sardinops sagax*) c
 
 Relative abundance of key forage fish groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) and Southern California Shelf regions from 1978 to 2015. High energy taxa are Pacific sardines, northern anchovies, and  Myctophids. Medium-energy taxa are Pacific hake, shortbelly rockfish, and sanddabs. Although sardine were completely absent in net samples from 2011 to 2014 in the CINMS region, comparison with samples collected in the larger Southern California Shelf region reveal that sardine were at very low abundance but not completely absent from the region. 
 
-## Figure App.F.12.20.squid
+## Figure App.F.12.20.squid.
 
 A figure showing the average abundance of market squid collected around the Northern Channel Islands (top) and the Southern California Shelf (bottom) from 1997 to 2015. Data source: CalCOFI; Figure credit: A. Thompson/NOAA.
 
