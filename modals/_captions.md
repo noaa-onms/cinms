@@ -6,11 +6,19 @@ output:
 
 ## BeachCombers_seabird_deposition_oiling
 
-Text from Jenn
+Monthly average seabird deposition (seabirds/km) and percent oiled observed on mainland beach segments in the Southern California Bight by coastal ocean mammal and bird education and research surveys (BeachCOMBERS) program volunteers. 
+
+### Details 
+
+Significant oiling events were identified when the percent oiled birds exceeded 9% percent mortality.
 
 ## BeachCombers_CCIEA_Strandings_South
 
-Text from Jenn
+Encounter rate (birds/km) of carcasses of five commonly encountered species on mainland beach segments in the Southern California Bight by coastal ocean mammal and bird education and research surveys (BeachCOMBERS) program volunteers. 
+
+### Details 
+
+The mean and trend of the last five years is evaluated. The dotted line box indicates the evaluation period and upper and lower standard deviation of the full time series. Annual data for Cassin’s auklet and northern fulmar are calculated through February of the following year.
 
 ## Figure Ux.Ocean.Chl.ERD.map.
 
