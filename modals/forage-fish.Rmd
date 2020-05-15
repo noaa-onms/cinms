@@ -73,6 +73,8 @@ calcofi_plot(csv = csv, title = title)
 
 #### SoCal Shelf Region
 
+`r get_figure_info("Figure App.F.12.19.myctophids")`
+
 ```{r}
 grp   <- "Myctophids"
 rgn   <- "SoCal Shelf"
@@ -83,7 +85,7 @@ csv   <- glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/mast
 calcofi_plot(csv = csv, title = title)
 ```
 
-`r render_figure("Figure App.F.12.19.myctophids", "../img/cinms_cr/Figure App.F.12.19.myctophids")`
+`r render_caption("Figure App.F.12.19.myctophids")`
 
 
 ### Rockfish
@@ -102,6 +104,8 @@ calcofi_plot(csv = csv, title = title)
 
 #### SoCal Shelf Region
 
+`r get_figure_info("Figure App.F.12.19.rockfish")`
+
 ```{r}
 grp   <- "Rockfish"
 rgn   <- "SoCal Shelf"
@@ -112,7 +116,7 @@ csv   <- glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/mast
 calcofi_plot(csv = csv, title = title)
 ```
 
-`r render_figure("Figure App.F.12.19.rockfish", "../img/cinms_cr/Figure App.F.12.19.rockfish")`
+`r render_caption("Figure App.F.12.19.rockfish")`
 
 
 ### Sanddab
@@ -131,6 +135,8 @@ calcofi_plot(csv = csv, title = title)
 
 #### SoCal Shelf Region
 
+`r get_figure_info("Figure App.F.12.19.sanddab")`
+
 ```{r}
 grp   <- "Sanddab"
 rgn   <- "SoCal Shelf"
@@ -141,7 +147,7 @@ csv   <- glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/mast
 calcofi_plot(csv = csv, title = title)
 ```
 
-`r render_figure("Figure App.F.12.19.sanddab", "../img/cinms_cr/App.F.12.19.sanddab")`
+`r render_caption("Figure App.F.12.19.sanddab")`
 
 
 ### Sardines
@@ -160,6 +166,8 @@ calcofi_plot(csv = csv, title = title)
 
 #### SoCal Shelf Region
 
+`r get_figure_info("Figure App.F.12.19.sardine")`
+
 ```{r}
 grp   <- "Sardine"
 rgn   <- "SoCal Shelf"
@@ -171,5 +179,5 @@ calcofi_plot(csv = csv, title = title)
 ```
 
 
-`r render_figure("Figure App.F.12.19.sardine", "../img/cinms_cr/App.F.12.19.sardine")`
+`r render_caption("Figure App.F.12.19.sardine")`
 
