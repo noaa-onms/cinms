@@ -813,11 +813,11 @@ Relative abundance of key forage fish groups collected in net samples during spr
 
 ## Figure App.F.12.20.squid.
 
-A figure showing the average abundance of market squid collected around the Northern Channel Islands (top) and the Southern California Shelf (bottom) from 1997 to 2015. Data source: CalCOFI; Figure credit: A. Thompson/NOAA.
+Figures showing the average abundance of market squid (*Doryteuthis opalescens*) collected in [CalCOFI](https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100476) net samples taken only at sites in the Channel Islands National Marine Sanctuary region (top) and all sites over the Southern California Shelf (bottom) from 1997 to 2015. Click the map tab to compare the two sampling regions. Figure credit: A. Thompson/NOAA
 
 ### Details
 
-Mean abundance of market squid (*Doryteuthis opalescens*) collected in net samples during CalCOFI cruises at only sites in the Channel Islands National Marine Sanctuary region (top) and all sites over the Southern California Shelf (bottom) from 1997 to 2015 (sampling locations shown in Figure App.F12.17). Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (-), or within 1 standard deviation (●) of the mean of the full time series.
+Horizontal lines show the mean (dashed line) ± 1.0 standard deviation (solid lines) over the full time series. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend (up arrow), a negative trend (down arrow), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (–), or within 1 standard deviation (●) of the mean of the full time series. Data source: CalCOFI; Figure: A. Thompson/NOAA
 
 ## Figure App.F.13.1.
 A figure showing the average abundance of black abalone (*Haliotis cracherodii*) across the Channel Islands from 1985 to 2014 in fixed plots in the rocky intertidal. The inset figure shows actual counts from site-wide searches (1995 to 2014). Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
