@@ -70,3 +70,7 @@ source(here::here("scripts/utility.R"))
 ##### Comparison: By Region
 
 `r render_figure("Figure App.C.4.9.", "../img/cinms_cr/App.C.4.9.Seabird_disturbance_rates_Robinette.jpg")`
+
+#### Trend: oiled beachcast seabirds
+
+`r render_figure("BeachCombers_seabird_deposition_oiling", "../img/cinms_cr/BeachCombers_seabird_deposition_oiling.png")`
