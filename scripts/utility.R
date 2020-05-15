@@ -145,7 +145,10 @@ get_figure_info <- function (figure_id){
   google_row <- read_csv(input_file)  %>% 
     filter(md_caption == figure_id)
   
-  if (nrow(google_row) == 0) stop(paste("Need link in cinms_content:info_figure_links Google Sheet for", figure_id))
+  if (nrow(google_row) == 0){
+    warning(paste("Need link in cinms_content:info_figure_links Google Sheet for", figure_id))
+    return("")
+  }
   
   # let's initialize a string variable that we'll use to keep track of the links going in the gray bar.
   output_string = ""
@@ -196,9 +199,7 @@ get_figure_info <- function (figure_id){
   }
 }
 
-
 render_caption <- function(figure_id){
-  info <- get_figure_info(figure_id)
   
   glue(
   "
@@ -211,10 +212,8 @@ render_caption <- function(figure_id){
 
 render_figure <- function(figure_id, figure_img){
   
-  # figure_id = "Figure App.E.10.22."
+  # figure_id = "Figure App.F.12.2."
   # figure_img = "../img/cinms_cr/App.E.10.22.jpg"
-
-  info <- get_figure_info(figure_id)
   
   glue(
   "

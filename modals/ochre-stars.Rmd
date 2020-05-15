@@ -10,36 +10,33 @@ source(here::here("../cinms/scripts/rocky.R"))
 source(here::here("../cinms/scripts/utility.R"))
 ```
 
-```{r}
-get_modal_info()
-```
+`r get_modal_info()`
 
 ##  {.tabset} 
 
 ### MARINe: Map of Sites
 
+`r get_figure_info("Figure App F.12.2.")`
+
 ```{r}
 map_nms_sites("cinms")
 ```
 
-`r md_caption("Figure Ux.Rocky.MARINe.map.")`
-
-`r md_caption("Figure Ux.Rocky.MARINe.map.", get_details=T)`
+`r render_caption("Figure Ux.Rocky.MARINe.map.")`
 
 ### MARINe: Ochre Seastar (_Pisaster ochraceus_) {.active}
+
+`r get_figure_info("Figure App F.12.2.")`
 
 ```{r}
 plot_intertidal_nms(nms_spp_sscount_csv, "CINMS", "PISOCH", "Ochre Seastar", fld_val = "count", label_y = "Count (annual avg)")
 ```
 
-`r md_caption("Figure Ux.Rocky.MARINe.Ochre-Stars.")`
-
-`r md_caption("Figure Ux.Rocky.MARINe.Ochre-Stars.", get_details=T)`
+`r render_caption("Figure Ux.Rocky.MARINe.Ochre-Stars.")`
 
 ### CHIS: Sanctuary
 
-`r render_figure("Figure App.F.12.2.", "../img/cinms_cr/App.F.12.2.Pochraceus_abundance.jpg")`
-
+`r render_figure("Figure App F.12.2.", "../img/cinms_cr/App.F.12.2.Pochraceus_abundance.jpg")`
 
 ### CHIS: Individual Islands
 
