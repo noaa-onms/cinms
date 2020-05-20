@@ -52,17 +52,17 @@ source(here::here("scripts/utility.R"))
 
 `r render_figure("Figure App.C.4.2b.", "../img/cinms_cr/App.C.4.2b.CPFV_landings.jpg")`
 
-#### Oil & Gas
+#### Oil & Gas {.tabset}
 
-`r render_figure("Figure App.C.4.17.", "../img/cinms_cr/App.C.4.17.Oil_gas_activity_CCIEA.jpg")`
+`r render_figure("Figure App.C.4.17.", "../img/cinms_cr/App.C.4.17.Oil_gas_activity_CCIEA.png")`
 
-##### Oil & Gas Maps {.tabset}
+##### Oil & Gas Maps 
 
-###### Offshore Oil Platforms
+##### Map: Offshore Oil Platforms
 
 `r render_figure("Figure App.C.2.1.", "../img/cinms_cr/App.C.2.1 Oil platforms_Mari Cajandig.jpg")`
 
-###### 2015 Refugio Oil Spill
+##### Map: 2015 Refugio Oil Spill
 
 `r render_figure("Figure App.C.2.3.", "../img/cinms_cr/App.C.2.3 Refugio Spill_Mari Cajandig.jpg")`
 
@@ -70,17 +70,13 @@ source(here::here("scripts/utility.R"))
 
 `r render_figure("Figure App.C.2.5.", "../img/cinms_cr/App.C.2.5.jpg")`
 
-#### Vessel Traffic
+#### Vessel Traffic 
 
 ##### {.tabset}
 
 ###### Map: Vessel Traffic Patterns
 
 `r render_figure("Figure App.C.4.12.", "../img/cinms_cr/App.C.4.12.MSWGSS_2016.jpg")`
-
-###### Map: Vessel Groundings
-
-`r render_figure("Figure App.C.3.1.", "../img/cinms_cr/App.C.3.1_VesselGroundingsMap.jpg")`
 
 #### Visitors
 
@@ -187,6 +183,15 @@ source(here::here("scripts/utility.R"))
 ###### Trends: debris in CalCOFI trawls (historical)
 
 `r render_figure("Figure App.C.4.16.", "../img/cinms_cr/App.C.4.16.Gilfillan_map.png")`
+
+
+#### Vessel Groundings
+
+
+##### Map: Vessel Groundings
+
+`r render_figure("Figure App.C.3.1.", "../img/cinms_cr/App.C.3.1_VesselGroundingsMap.jpg")`
+
 
 #### Noise
 
