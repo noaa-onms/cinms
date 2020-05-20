@@ -9,16 +9,18 @@ here = here::here
 
 # parameters
 csv         <- here("svg/svg_links_cinms.csv")
-redo_modals <- T
+redo_modals <- F
 
 # skip modals that Ben has to process independently
 skip_modals <- c(
   "key-climate-ocean.Rmd", 
   "deep-seafloor_key-climate-ocean.Rmd","kelp-forest_key-climate-ocean.Rmd","pelagic_key-climate-ocean.Rmd","rocky-shore_key-climate-ocean.Rmd","sandy-seafloor_key-climate-ocean","sandy-beach_key-climate-ocean.Rmd",
+  
+  # BB TODO:
+  #   Quitting from lines 28-29 (barnacles.Rmd) 
+  #   Error in sp_target %in% spp_targets : object 'sp_target' not found
   "barnacles.Rmd","mussels.Rmd","ochre-stars.Rmd",
-  # BB TODO: 
-  # Quitting from lines 28-29 (forage-assemblage.Rmd) 
-  # Error in get(".xts_chob", .plotxtsEnv) : object '.xts_chob' not found
+  
   "forage-assemblage.Rmd", "forage-fish.Rmd", "forage-inverts.Rmd")
 
 # read in links for svg
@@ -32,9 +34,9 @@ d_modals <- d %>%
   ungroup()
 
 # quick hack to move beyond problem forage-assemblage.Rmd
-idx_next <- which(d_modals$link ==  "modals/forage-inverts.html") + 1
-d_modals %>% 
-  slice(idx_next:nrow(d_modals))
+# idx_next <- which(d_modals$link ==  "modals/forage-inverts.html") + 1
+# d_modals %>% 
+#   slice(idx_next:nrow(d_modals))
 
 render_page <- function(rmd){
   render(rmd, html_document(
@@ -103,10 +105,6 @@ for (i in 1:nrow(d_modals)){ # i=1
 
 # render website, ie Rmds in root ----
 #walk(list.files(".", "*\\.md$"), render_page)
-
-# walk(
-#   list.files(".", "*\\.html$"), 
-#   function(x) file.copy(x, file.path("docs", x)))
 
 rmarkdown::render_site()
 

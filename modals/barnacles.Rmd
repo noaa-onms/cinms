@@ -2,6 +2,7 @@
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 source(here::here("../cinms/scripts/rocky.R"))
+source(here::here("scripts/utility.R"))
 # Error in sp_target %in% spp_targets : object 'sp_target' not found
 ```
 
@@ -38,18 +39,3 @@ plot_intertidal_nms(d_csv, "CINMS", "POLPOL", "Goose Barnacle")
 ```{r}
 plot_intertidal_nms(d_csv, "CINMS", "TETRUB", "Pink Barnacle")
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
