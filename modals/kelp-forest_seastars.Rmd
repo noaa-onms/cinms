@@ -10,7 +10,7 @@ source(here::here("scripts/utility.R"))
 
 `r render_figure("Figure App.F.12.7.", "../img/cinms_cr/App.F.12.7.seastars_PISCO.jpg")`
 
-### NPS: Giant-spined star
+### CHIS: Giant-spined star
 
 `r render_figure("Figure App.F.12.8a.", "../img/cinms_cr/App.F.12.8a.Pisaster_giganteus_CINP.jpg")`
 
@@ -18,6 +18,6 @@ source(here::here("scripts/utility.R"))
 
 `r render_figure("Figure App.F.12.9.", "../img/cinms_cr/App.F.12.9.seastar_LTER.jpg")`
 
-### NPS: Sunflower star
+### CHIS: Sunflower star
 
 `r render_figure("Figure App.F.12.8b.", "../img/cinms_cr/App.F.12.8b.Pycnopodia_helianthoides_CINP.jpg")`
