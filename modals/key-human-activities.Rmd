@@ -54,15 +54,17 @@ source(here::here("scripts/utility.R"))
 
 #### Oil & Gas {.tabset}
 
+##### Trends: Offshore Oil and Gas Activity 
+
 `r render_figure("Figure App.C.4.17.", "../img/cinms_cr/App.C.4.17.Oil_gas_activity_CCIEA.png")`
 
-##### Oil & Gas Maps 
+##### Oil & Gas Maps {.tabset}
 
-##### Map: Offshore Oil Platforms
+###### Offshore Oil Platforms
 
 `r render_figure("Figure App.C.2.1.", "../img/cinms_cr/App.C.2.1 Oil platforms_Mari Cajandig.jpg")`
 
-##### Map: 2015 Refugio Oil Spill
+###### 2015 Refugio Oil Spill
 
 `r render_figure("Figure App.C.2.3.", "../img/cinms_cr/App.C.2.3 Refugio Spill_Mari Cajandig.jpg")`
 

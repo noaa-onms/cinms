@@ -23,9 +23,11 @@ source(here::here("scripts/utility.R"))
 
 `r render_figure("Figure App.C.4.2b.", "../img/cinms_cr/App.C.4.2b.CPFV_landings.jpg")`
 
-#### Oil & Gas
+#### Oil & Gas {.tabset}
 
-`r render_figure("Figure App.C.4.17.", "../img/cinms_cr/App.C.4.17.Oil_gas_activity_CCIEA.jpg")`
+##### Trends: Offshore Oil and Gas Activity 
+
+`r render_figure("Figure App.C.4.17.", "../img/cinms_cr/App.C.4.17.Oil_gas_activity_CCIEA.png")`
 
 ##### Oil & Gas Maps {.tabset}
 
