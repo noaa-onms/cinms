@@ -13,9 +13,11 @@ get_modal_info()
 
 ### {.tabset}
 
-#### Oil & Gas
+#### Oil & Gas {.tabset}
 
-`r render_figure("Figure App.C.4.17.", "../img/cinms_cr/App.C.4.17.Oil_gas_activity_CCIEA.jpg")`
+##### Trends: Offshore Oil and Gas Activity 
+
+`r render_figure("Figure App.C.4.17.", "../img/cinms_cr/App.C.4.17.Oil_gas_activity_CCIEA.png")`
 
 ##### Oil & Gas Maps {.tabset}
 

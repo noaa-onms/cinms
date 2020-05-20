@@ -11,7 +11,7 @@ source(here::here("scripts/utility.R"))
 
 `r render_figure("Figure App.F.12.12.", "../img/cinms_cr/App.F.12.12.sheephead_PISCO.jpg")`
 
-### NPS: Density on Islands
+### CHIS: Density on Islands
 
 `r render_figure("Figure App.F.12.13.", "../img/cinms_cr/App.F.12.13.Semicossyphus_pulcher_CINP.jpg")`
 
