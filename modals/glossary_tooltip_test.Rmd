@@ -1,0 +1,12 @@
+---
+title: "glossary tooltip test"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tippy)
+```
+
+## R Markdown
+
+And then `r tippy("Hover me!", tooltip = "Hi, I'm the tooltip!")`.
