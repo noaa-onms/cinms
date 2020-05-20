@@ -7,19 +7,19 @@ source(here::here("scripts/utility.R"))
 
 ## {.tabset}
 
-### _Sargassum horneri_ occurrence - Southern California
+### Map: _Sargassum horneri_ - Southern California
 
 `r render_figure("Figure App.F.14.2.", "../img/cinms_cr/App.F.14.2.Sargassum_expansion.jpg")`
 
-### _Sargassum horneri_ occurrence - CINMS
+### Map: _Sargassum horneri_ - CINMS
 
 `r render_figure("Figure App.F.14.3.", "../img/cinms_cr/App.F.14.3.jpg")`
 
-### _Sargassum horneri_ percent cover by island
+### Trend: _Sargassum horneri_
 
 `r render_figure("Figure App.F.14.4.", "../img/cinms_cr/App.F.14.4.Sargassum_graph.jpg")`
 
-### _Watersipora_ occurrence - Southern California Bight
+### Map: _Watersipora_ - Southern California Bight
 
 `r render_figure("Figure App.F.14.5.", "../img/cinms_cr/App.F.14.5.Watersipora_map_Page.jpg")`
 
