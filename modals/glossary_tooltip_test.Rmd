@@ -7,6 +7,55 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tippy)
 ```
 
-## R Markdown
+<!--script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script-->
+<script src="tooltip/tooltip.js"></script>
+<script src="glossarize.js"></script>
+
+## Tooltip, vanilla
 
 And then `r tippy("Hover me!", tooltip = "Hi, I'm the tooltip!")`.
+
+
+## Issues with indentation
+
+4 spaces = code block
+
+<div>
+  <div>
+    Testing
+    <a href="http://google.com">google</a>
+  </div>
+</div>
+
+
+## Issues with indentation, fixed without indentation
+
+<div>
+  <div>
+  Testing
+  <a href="http://google.com">google</a>
+  </div>
+</div>
+
+Looking for whales and creatures.
+
+
+<script>
+$(function(){
+
+  console.log('test');
+  
+  $('.content').glossarizer({
+    sourceURL: 'glossary.json',
+    callback: function(){
+      
+      // Callback fired after glossarizer finishes its job
+      
+      new tooltip();
+
+    }
+  });
+
+
+});
+</script>
