@@ -184,10 +184,67 @@ summary {
 </div>
 
 
-<div id="r-markdown" class="section level2">
-<h2>R Markdown</h2>
-<p>And then <span id="htmlwidget-3743414028d1c6f87176" class="tippy html-widget" width="960" height="500"></span>
-<script type="application/json" data-for="htmlwidget-3743414028d1c6f87176">{"x":{"opts":[],"tooltip":"Hi, I'm the tooltip!","text":"Hover me!"},"evals":[],"jsHooks":[]}</script>.</p>
+<!--script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script-->
+<script src="tooltip/tooltip.js"></script>
+<script src="glossarize.js"></script>
+<div id="tooltip-vanilla" class="section level2">
+<h2>Tooltip, vanilla</h2>
+<p>And then <span id="htmlwidget-e6840439b46e155e3235" class="tippy html-widget" width="960" height="500"></span>
+<script type="application/json" data-for="htmlwidget-e6840439b46e155e3235">{"x":{"opts":[],"tooltip":"Hi, I'm the tooltip!","text":"Hover me!"},"evals":[],"jsHooks":[]}</script>.</p>
+</div>
+<div id="issues-with-indentation" class="section level2">
+<h2>Issues with indentation</h2>
+<p>4 spaces = code block</p>
+<div>
+<div>
+<pre><code>Testing
+&lt;a href=&quot;http://google.com&quot;&gt;google&lt;/a&gt;</code></pre>
+</div>
+</div>
+</div>
+<div id="issues-with-indentation-fixed-without-indentation" class="section level2">
+<h2>Issues with indentation, fixed without indentation</h2>
+<div>
+<div>
+Testing <a href="http://google.com">google</a>
+</div>
+</div>
+</div>
+<div id="glossarize-attempt" class="section level2">
+<h2>Glossarize attempt</h2>
+<p>Looking for whales and creatures.</p>
+<script>
+$(function(){
+
+  console.log('test');
+  
+  $('.content').glossarizer({
+    sourceURL: 'glossary.json',
+    callback: function(){
+      
+      // Callback fired after glossarizer finishes its job
+      
+      new tooltip();
+
+    }
+  });
+
+
+});
+</script>
+</div>
+<div id="js-glossary-resources" class="section level2">
+<h2>JS Glossary Resources</h2>
+<ul>
+<li><a href="https://github.com/PebbleRoad/glossarizer">PebbleRoad/glossarizer: A jquery plugin to automatically markup glossary terms on a page and display definitions as a tooltip.</a>
+<ul>
+<li>demo: <a href="http://pebbleroad.github.io/glossarizer/">Glossarize jQuery Plugin</a></li>
+</ul></li>
+<li><a href="https://stackoverflow.com/questions/10017684/how-can-i-add-pop-up-tooltip-definitions-to-words-on-a-webpage-when-hovered">javascript - How can I add pop-up (tooltip) definitions to words on a webpage when hovered? - Stack Overflow</a></li>
+<li><a href="https://github.com/gregallensworth/jquery-glossary">gregallensworth/jquery-glossary: A “glossary” plugin forJQuery. Applty $.glossary() to an element, to have words tagged; they will have tooltips showing the definition of that word.</a></li>
+<li><a href="https://www.jqueryscript.net/tooltip/instant-glossary-definitions.html">Shows Glossary Definitions For Terms On Mouse Hover - Instant Definitions | Free jQuery Plugins</a></li>
+<li><a href="https://www.jqueryscript.net/demo/instant-glossary-definitions/">Instant Definitions Plugin Examples</a></li>
+</ul>
 </div>
 
 
