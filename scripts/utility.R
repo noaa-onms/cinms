@@ -102,7 +102,7 @@ add_icons <- function(info_url = NULL, photo_url = NULL){
 
 get_modal_info <- function(
   rmd = knitr::current_input(),
-  info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=0"){
+  info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=ecosystem_tagline"){
   
   # rmd = "abalone.Rmd"
   # rmd = "key-human-activities.Rmd"
@@ -172,7 +172,7 @@ get_figure_info <- function (figure_id){
         html, 
         div(
           .noWS = no_ws,
-          style = glue("text-align:'{h$css}'; display:table-cell;"),
+          style = glue("text-align:{h$css}; display:table-cell;"),
           a(
             .noWS = no_ws,
             href = url, target = '_blank',
