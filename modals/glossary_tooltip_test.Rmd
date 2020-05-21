@@ -37,6 +37,8 @@ And then `r tippy("Hover me!", tooltip = "Hi, I'm the tooltip!")`.
   </div>
 </div>
 
+## Glossarize attempt
+
 Looking for whales and creatures.
 
 
@@ -59,3 +61,13 @@ $(function(){
 
 });
 </script>
+
+## JS Glossary Resources
+
+
+* [PebbleRoad/glossarizer: A jquery plugin to automatically markup glossary terms on a page and display definitions as a tooltip.](https://github.com/PebbleRoad/glossarizer)
+  * demo: [Glossarize jQuery Plugin](http://pebbleroad.github.io/glossarizer/)
+* [javascript - How can I add pop-up (tooltip) definitions to words on a webpage when hovered? - Stack Overflow](https://stackoverflow.com/questions/10017684/how-can-i-add-pop-up-tooltip-definitions-to-words-on-a-webpage-when-hovered)
+* [gregallensworth/jquery-glossary: A "glossary" plugin forJQuery. Applty $.glossary() to an element, to have words tagged; they will have tooltips showing the definition of that word.](https://github.com/gregallensworth/jquery-glossary)
+* [Shows Glossary Definitions For Terms On Mouse Hover - Instant Definitions | Free jQuery Plugins](https://www.jqueryscript.net/tooltip/instant-glossary-definitions.html)
+* [Instant Definitions Plugin Examples](https://www.jqueryscript.net/demo/instant-glossary-definitions/)
