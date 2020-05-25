@@ -102,11 +102,14 @@ add_icons <- function(info_url = NULL, photo_url = NULL){
 
 get_modal_info <- function(
   rmd = knitr::current_input(),
-  info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=ecosystems"){
+  #info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=ecosystems"){
+  info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_modal_links"){
   
-  # rmd = "abalone.Rmd"
+  # rmd = "infauna.Rmd"
   # rmd = "key-human-activities.Rmd"
-  modal_id <- fs::path_ext_remove(rmd)
+  modal_id <- basename(fs::path_ext_remove(rmd))
+  
+  #message(glue("modal_id: {modal_id}"))
   
   # modal_id = "ochre-stars"
   row <- read_csv(info_modal_links_csv) %>% 
