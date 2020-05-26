@@ -148,7 +148,7 @@ A map showing landings of fish caught by trawling (a method of commercial fishin
 
 ### Details
 
-[Trawling](https://marinebon.org/cinms/glossary) landings across the Southern California Bight, as illustrated by CDFW 10 square kilometer blocks and shown along with known locations of stony deep-water corals. Trawling is known to disturb bottom habitats and deep-sea corals. Even though trawling effort has decreased in recent years, the impacts of this gear type can be long lived.
+Trawling landings across the Southern California Bight, as illustrated by CDFW 10 square kilometer blocks and shown along with known locations of stony deep-water corals. Trawling is known to disturb bottom habitats and deep-sea corals. Even though trawling effort has decreased in recent years, the impacts of this gear type can be long lived.
 
 ## Figure App.C.3.4.
 
@@ -156,11 +156,11 @@ A map showing landings of fish caught by fixed gear (a method of commercial fish
 
 ### Details
 
-Historical landings of [fixed gear](https://marinebon.org/cinms/glossary) that could impact benthic habitats are shown along with the locations of deep-sea gorgonians in the map above. Fixed gear usage is moderate around the Channel Islands and likely impacts gorgonians in CINMS habitats. Data is from 2007 to 2011. 
+Historical landings of fixed gear that could impact benthic habitats are shown along with the locations of deep-sea gorgonians in the map above. Fixed gear usage is moderate around the Channel Islands and likely impacts gorgonians in CINMS habitats. Data is from 2007 to 2011. 
 
 ## Figure App.C.3.5.
 
-A map showing the locations of both trawling and fixed gear fishing in relation to protected areas (2007-2011) within the [Southern California Bight](https://marinebon.org/cinms/glossary). Data source: CDFW; Map credit: [P. Etnoyer/NOAA](https://oceanexplorer.noaa.gov/edu/oceanage/03etnoyer/welcome.html)
+A map showing the locations of both trawling and fixed gear fishing in relation to protected areas (2007-2011) within the Southern California Bight. Data source: CDFW; Map credit: [P. Etnoyer/NOAA](https://oceanexplorer.noaa.gov/edu/oceanage/03etnoyer/welcome.html)
 
 ### Details
 
@@ -363,7 +363,7 @@ Monthly anomalies in (top panel) observed bottom temperature (°C) at 7-10 meter
 
 ## Figure App.D.7.1.
 
-A figure showing [domoic acid](https://marinebon.org/cinms/glossary) levels in commercially-important crustaceans (triangles) and bivalves (circles) collected from the Santa Barbara Channel (2012 - 2013). Red coloration indiciates that the domic acid levels measured above the California Department of Public Health and U.S. Food and Drug Administration action limits. Figure credit: [C. Culver/CA Sea Grant](https://caseagrant.ucsd.edu/profile/carolynn-culver), unpublished data.
+A figure showing domoic acid levels in commercially-important crustaceans (triangles) and bivalves (circles) collected from the Santa Barbara Channel (2012 - 2013). Red coloration indiciates that the domic acid levels measured above the California Department of Public Health and U.S. Food and Drug Administration action limits. Figure credit: [C. Culver/CA Sea Grant](https://caseagrant.ucsd.edu/profile/carolynn-culver), unpublished data.
 
 ### Details
 
@@ -371,7 +371,7 @@ Domoic acid levels in parts per million (ppm) in commercially-important crustace
 
 ## Figure App.D.7.3.
 
-A map showing an unprecedented West Coast-wide [harmful algal bloom (HAB)](https://marinebon.org/cinms/glossary) that extended from the Gulf of Alaska to southern California. March 2015 (left, before the HAB) as compared to May (right, during the HAB). Data source: Satellite data were obtained from the National Aeronautics and Space Administration Ocean Biology Processing Group (OBPG) using a combination of the MODerate resolution Imaging Spectroradiometer (MODIS) on Aqua and Visible Infrared Imaging Radiometer Suite (VIIRS) chlorophyll products. Data were processed using standard OBPG processing with 4 kilometer imagery. Figure credit: McCabe et al. 2016.
+A map showing an unprecedented West Coast-wide harmful algal bloom (HAB) that extended from the Gulf of Alaska to southern California. March 2015 (left, before the HAB) as compared to May (right, during the HAB). Data source: Satellite data were obtained from the National Aeronautics and Space Administration Ocean Biology Processing Group (OBPG) using a combination of the MODerate resolution Imaging Spectroradiometer (MODIS) on Aqua and Visible Infrared Imaging Radiometer Suite (VIIRS) chlorophyll products. Data were processed using standard OBPG processing with 4 kilometer imagery. Figure credit: McCabe et al. 2016.
 
 ### Details
 
@@ -399,7 +399,7 @@ A figure showing the composition of "beach wrack" (decaying large seaweed washed
 
 ### Details
 
-[Macrophyte](https://marinebon.org/cinms/glossary) beach wrack percent cover at Santa Rosa Island is shown by species. Wrack primarily consists of _Macrocystis_ (Giant kelp) or _Phyllospadix_ (surf grass); however these two key types of wrack show recent decreases in percent cover.
+Macrophyte beach wrack percent cover at Santa Rosa Island is shown by species. Wrack primarily consists of _Macrocystis_ (Giant kelp) or _Phyllospadix_ (surf grass); however these two key types of wrack show recent decreases in percent cover.
 
 ## Figure App.E.10.12.
 
@@ -482,11 +482,11 @@ Percent of gorgonians showing different levels damage at Anacapa Island during R
 
 ## Figure App.E.10.29.
 
-A figure showing the concentration of the mineral [aragonite](https://marinebon.org/cinms/glossary) (a form of calcium carbonate) at different depths at Anacapa Island from 2007 to 2014. Figure credit: Etnoyer et al. 2015.
+A figure showing the concentration of the mineral aragonite (a form of calcium carbonate) at different depths at Anacapa Island from 2007 to 2014. Figure credit: Etnoyer et al. 2015.
 
 ### Details
 
-[Aragonite saturations](https://marinebon.org/cinms/glossary) are shown at 75 meters (m) (green), 150 m (blue) and 300 m (red) at Anacapa Island. As pH of seawater decreases (e.g., from the deposition of atmospheric CO2), the saturation state of aragonite (Ωarg) decreases. Aragonite undersaturation (Ωarg < 1) favors dissolution over calcification, making it harder for organisms to make and maintain their shells or skeletons in the case of corals. In coastal upwelling zones, such as the California Current, the aragonite saturation state and depth are variable and shallow, respectively. With ocean acidification, aragonite saturation depths have shoaled over the past three decades and are now typically around 200 m in the California Current (Turi et al. 2016). At the local scale at Anacapa Island, the aragonite saturation depth has hovered around 130 m over the past eight years. As strong of a shoaling trend as at the California Current scale has not been seen. Instead, the usual seasonal variation but relatively stable aragonite saturation states over time (no trend), particularly in deep water, have been seen. 
+Aragonite saturations are shown at 75 meters (m) (green), 150 m (blue) and 300 m (red) at Anacapa Island. As pH of seawater decreases (e.g., from the deposition of atmospheric CO2), the saturation state of aragonite (Ωarg) decreases. Aragonite undersaturation (Ωarg < 1) favors dissolution over calcification, making it harder for organisms to make and maintain their shells or skeletons in the case of corals. In coastal upwelling zones, such as the California Current, the aragonite saturation state and depth are variable and shallow, respectively. With ocean acidification, aragonite saturation depths have shoaled over the past three decades and are now typically around 200 m in the California Current (Turi et al. 2016). At the local scale at Anacapa Island, the aragonite saturation depth has hovered around 130 m over the past eight years. As strong of a shoaling trend as at the California Current scale has not been seen. Instead, the usual seasonal variation but relatively stable aragonite saturation states over time (no trend), particularly in deep water, have been seen. 
 
 ## Figure App.E.11.1.
 
@@ -534,7 +534,7 @@ A figure showing levels of cancer-causing petroleum-linked chemicals found in th
 
 ### Details
 
-Mean Total Extractables (TE) for individual Polycyclic Aromatic Hydrocarbons or PAHs are compared between Channel Islands (blue) and other offshore sites (red). PAHs are organic contaminants that are carcinogenic. [Invertebrate](https://marinebon.org/cinms/glossary) species typically have limited ability to metabolize PAHs; however, they typically do not biomagnify because vertebrates can metabolize them more easily. Concentrations of PAHs are variable, but concentrations at CINMS are usually equivalent, if not lower than other offshore locations. There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more through research and data collection is required to confirm this trend. 
+Mean Total Extractables (TE) for individual Polycyclic Aromatic Hydrocarbons or PAHs are compared between Channel Islands (blue) and other offshore sites (red). PAHs are organic contaminants that are carcinogenic. Invertebrate species typically have limited ability to metabolize PAHs; however, they typically do not biomagnify because vertebrates can metabolize them more easily. Concentrations of PAHs are variable, but concentrations at CINMS are usually equivalent, if not lower than other offshore locations. There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more through research and data collection is required to confirm this trend. 
 
 ## Figure App.E.11.7.
 
@@ -559,7 +559,7 @@ A map showing the relative impact of human activity on the seafloor across diffe
 
 ### Details
 
-The Southern California Water Research Project uses a diversity index of tolerant and sensitive [infauna](https://marinebon.org/cinms/glossary), also known as the Benthic Response Index (BRI), to gauge the ecosystem impact from anthropogenic contamination. The map above shows the 2013 locations of samples and the BRI trends at each location. Previously, island sites were all considered 100 percent pristine (reference), but now roughly 70 percent of samples are considered degraded from that status. Decline in BRI was particularly prevalent around Santa Cruz Island. This decline in BRI was not mirrored in other regions in southern California. The most recent samples, collected in 2013, found that ten of the 15 sites in Channel Island National Marine Sanctuary had infaunal community compositions that were shifting towards species more tolerant of degraded conditions (red) compared to the samples collected previously. 
+The Southern California Water Research Project uses a diversity index of tolerant and sensitive infauna, also known as the Benthic Response Index (BRI), to gauge the ecosystem impact from anthropogenic contamination. The map above shows the 2013 locations of samples and the BRI trends at each location. Previously, island sites were all considered 100 percent pristine (reference), but now roughly 70 percent of samples are considered degraded from that status. Decline in BRI was particularly prevalent around Santa Cruz Island. This decline in BRI was not mirrored in other regions in southern California. The most recent samples, collected in 2013, found that ten of the 15 sites in Channel Island National Marine Sanctuary had infaunal community compositions that were shifting towards species more tolerant of degraded conditions (red) compared to the samples collected previously. 
 
 ## Figure App.E.11.10.
 
@@ -894,7 +894,7 @@ Counts of western snowy plover (*Charadrius nivosus nivosus*) chicks at 11 beach
 
 ## Figure App.F.13.8.
 
-A figure showing the averaage density of two important sandy beach-dwelling [invertebrates](https://marinebon.org/cinms/glossary) (shown in red and blue) from eight surveyed beaches on Santa Rosa Island from 1994 to 2015. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
+A figure showing the averaage density of two important sandy beach-dwelling invertebrates (shown in red and blue) from eight surveyed beaches on Santa Rosa Island from 1994 to 2015. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 ### Details
 
@@ -1190,7 +1190,7 @@ Common and scientific names of species selected for calculation of recent trends
 
 ## Table App.F.15.2.
 
-A table showing trends in four indicators of [biodiversity](https://marinebon.org/cinms/glossary) as they relate to the Southern California Bight, the area around Channel Islands National Marine Sanctuary, and in the Sanctuary itself. Data source: [NMFS NWFSC](https://www.nwfsc.noaa.gov/); Table credit: NOAA.
+A table showing trends in four indicators of biodiversity as they relate to the Southern California Bight, the area around Channel Islands National Marine Sanctuary, and in the Sanctuary itself. Data source: [NMFS NWFSC](https://www.nwfsc.noaa.gov/); Table credit: NOAA.
 
 ### Details
 
