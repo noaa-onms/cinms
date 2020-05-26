@@ -1,21 +1,21 @@
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-source(here::here("scripts/utility_new.R"))
+source(here::here("scripts/utility.R"))
 ```
 
 `r get_modal_info()`
 
 ## {.tabset}
 
-### PISCO: Biomass on Islands 
+### Trend: PISCO
 
 `r render_figure("Figure App.F.12.12.", "../img/cinms_cr/App.F.12.12.sheephead_PISCO.jpg")`
 
-### CHIS: Density on Islands
+### Trend: CHIS
 
 `r render_figure("Figure App.F.12.13.", "../img/cinms_cr/App.F.12.13.Semicossyphus_pulcher_CINP.jpg")`
 
-### LTER: Island vs Mainland
+### Trend: LTER
 
 `r render_figure("Figure App.F.12.14.", "../img/cinms_cr/App.F.12.14.Sheephead_LTER.jpg")`
 

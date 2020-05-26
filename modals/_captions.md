@@ -322,11 +322,11 @@ Spatial distribution, concentration, and characteristics of plastic micro-debris
 
 ## Figure App.C.4.17.
 
-A figure showing trends in offshore oil and gas activity in Southern California from 1975 to 2014. Data source: Annual reports of the California State Department of Conservation's Division of Oil, Gas, and Geothermal Resources; Figure credit: K. Andrews/NOAA.
+A figure showing trends in offshore oil and gas activity in Southern California from 1975 to 2018. Data source: Annual reports of the California State Department of Conservation’s Division of Oil, Gas, and Geothermal Resources. Graph from [California Curren Integrated Ecosystem Assessment](https://www.integratedecosystemassessment.noaa.gov/regions/california-current/cc-indicator-status-trends)
 
 ### Details
 
-The status and trends of offshore oil and gas activity in southern California was measured using a normalized index of oil and gas production from offshore wells in state and federal waters in California. Activity has been stable over the last five years, but the short-term average was well below the long-term average (dashed green line). A rather steady decrease in oil and gas production has occurred since the mid-1990s. Data source: B. Owens/CDFW; Figure credit: NOAA.
+The status and trends of offshore oil and gas activity in southern California was measured using a normalized index of oil and gas production from offshore wells in state and federal waters in California. A rather steady decrease in oil and gas production has occurred since the mid-1990s.
 
 ## Figure App.C.4.18a.
 
@@ -715,7 +715,8 @@ Average density (+/- standard error) of California spiny lobster _Panulirus inte
 
 ## Figure App.F.12.12.
 
-A figure showing the density of California sheephead around the four Northern Channel Islands from 2003 to 2016. Data source: PISCO; Figure credit: [R. Freedman/NOAA](https://channelislands.noaa.gov/contact/freedman.html).
+A figure showing the density of California sheephead (*Semicossyphys pulcher*) around the four Northern Channel Islands from 2003 to 2016. Monitoring data provided by the [PISCO kelp forest monitoring program](https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100465).
+
 
 ### Details
 
@@ -723,7 +724,8 @@ Average density (+/- standard error) of California sheephead _Semicossyphus pulc
 
 ## Figure App.F.12.13.
 
-A figure showing the average density of California Sheephead across the five Northern Channel Islands from 2005 to 2016. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
+A figure showing the average density of California Sheephead across the five Northern Channel Islands from 2005 to 2016. Monitoring data provided by the [Channel Island National Park kelp forest monitoring program](https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100505).
+
 
 ### Details
 
