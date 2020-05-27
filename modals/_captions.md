@@ -144,7 +144,7 @@ Landings (in pounds) and the relative contribution of gear types has changed ove
 
 ## Figure App.C.3.3.
 
-A map showing landings of fish caught by trawling (a method of commercial fishing) across the Southern California Bight (2007-2011). Locations of known deep-water corals, which are very vulnerable to trawling, are indicated on the map. Data source: CDFW, Perry et al 2010; Map credit: [P. Etnoyer/NOAA](https://oceanexplorer.noaa.gov/edu/oceanage/03etnoyer/welcome.html), Etnoyer et al. 2015.
+A map showing landings of fish caught by trawling across the Southern California Bight (2007-2011). Locations of known deep-water corals, which are very vulnerable to trawling, are indicated on the map. Data source: CDFW, Perry et al 2010; Map credit: [P. Etnoyer/NOAA](https://oceanexplorer.noaa.gov/edu/oceanage/03etnoyer/welcome.html), Etnoyer et al. 2015.
 
 ### Details
 
@@ -152,7 +152,7 @@ Trawling landings across the Southern California Bight, as illustrated by CDFW 1
 
 ## Figure App.C.3.4.
 
-A map showing landings of fish caught by fixed gear (a method of commercial fishing) across the Southern California Bight (2007-2011). Locations of known deep-water gorgonians, which are very vulnerable to trawling, are indicated on the map. Data source: CDFW, Perry et al 2010; Map credit: [P. Etnoyer/NOAA](https://oceanexplorer.noaa.gov/edu/oceanage/03etnoyer/welcome.html), Etnoyer et al. 2015.
+A map showing landings of fish caught by fixed gear across the Southern California Bight (2007-2011). Locations of known deep-water gorgonians, which are very vulnerable to trawling, are indicated on the map. Data source: CDFW, Perry et al 2010; Map credit: [P. Etnoyer/NOAA](https://oceanexplorer.noaa.gov/edu/oceanage/03etnoyer/welcome.html), Etnoyer et al. 2015.
 
 ### Details
 
@@ -188,7 +188,7 @@ A figure showing trends in fishing catch (pounds, left y-axis) and economic valu
 
 ### Details
 
-Trends over time in commercial fishing activity in Channel Islands National Marine Sanctuary (CINMS) based on landings pounds (blue bars) and value (dark blue line) for seven fisheries from 2000 to 2012. Landings were combined for twenty-two blocks that overlap substantially with the sanctuary (see Figure App.C4.3. for map). Landings for market squid, sardine, and anchovy declined recently while landings of crabs increased. Landings of sea urchin, spiny lobster, and prawn and shrimp were relatively stable.
+Trends over time in commercial fishing activity in Channel Islands National Marine Sanctuary (CINMS) based on landings pounds (blue bars) and value (dark blue line) for seven fisheries from 2000 to 2012. Landings were combined for twenty-two blocks that overlap substantially with the sanctuary (see CINMS Conidition Report Figure App.C.4.3. for map). Landings for market squid, sardine, and anchovy declined recently while landings of crabs increased. Landings of sea urchin, spiny lobster, and prawn and shrimp were relatively stable.
 
 ## Figure App.C.4.5a. 
 
@@ -248,9 +248,7 @@ Rates of human-caused disturbance to seabird breeding and roosting sites were lo
 
 ## Figure App.C.4.10b. 
 
-Number of confirmed reports of large whales, including humpback, gray, and blue whales entangled in fishing gear, ropes and other sources along the U.S. West Coast from 2000 to 2019. Graph from NOAA Fisheries 2019 West Coast Whale Entanglement Summary Report. Last updated April 2020.
-
-In the legend, color represents the different species of whales and “n” represents the total number of that species confirmed entangled in the study period. Of the 46 confirmed whale entanglements, 30 were reported off California, 6 of which originated from southern California (Santa Barbara, Los Angeles, Orange, and San Diego counties). However, the location where entangled animals are observed and reported does not necessarily reflect where and when the entanglement originated. Figure credit: D. Lawson/NMFS WCRO PRD.
+Number of confirmed reports of large whales, including humpback, gray, and blue whales entangled in fishing gear, ropes and other sources along the U.S. West Coast from 2000 to 2019. Graph from NOAA Fisheries 2019 West Coast Whale Entanglement Summary Report. Last updated April 2020. In the legend, color represents the different species of whales and “n” represents the total number of that species confirmed entangled in the study period. Of the 46 confirmed whale entanglements, 30 were reported off California, 6 of which originated from southern California (Santa Barbara, Los Angeles, Orange, and San Diego counties). However, the location where entangled animals are observed and reported does not necessarily reflect where and when the entanglement originated. Figure credit: D. Lawson/NMFS WCRO PRD.
 
 ### Details
 
@@ -258,7 +256,7 @@ Annual number of large whale entanglements reported along the U.S. West Coast. R
 
 ## Figure App.C.4.11a.
 
-A map showing the risk posed to blue whales from 11 fixed gear fisheries (a type of commercial fishing) in the Southern California Bight. Figure credit: Saez et al. 2013.
+A map showing the risk posed to blue whales from 11 fixed gear fisheries in the Southern California Bight. Figure credit: Saez et al. 2013.
 
 ### Details
 
@@ -266,7 +264,7 @@ Co-occurrence score (risk) based on multi-year average whale density and fishing
 
 ## Figure App.C.4.11b.
 
-A map showing the risk posed to fin whales from 11 fixed gear fisheries (a type of commercial fishing) in the Southern California Bight. Figure credit: Saez et al. 2013.
+A map showing the risk posed to fin whales from 11 fixed gear fisheries in the Southern California Bight. Figure credit: Saez et al. 2013.
 
 ### Details
 
@@ -274,7 +272,7 @@ Co-occurrence score (risk) based on multi-year average whale density and fishing
 
 ## Figure App.C.4.11c.
 
-A map showing the risk posed to humpback whales from 11 fixed gear fisheries (a type of commercial fishing) in the Southern California Bight. Figure credit: Saez et al. 2013.
+A map showing the risk posed to humpback whales from 11 fixed gear fisheries in the Southern California Bight. Figure credit: Saez et al. 2013.
 
 ### Details
 
@@ -314,7 +312,7 @@ Variation over time in percentage of stations from winter CalCOFI cruises with p
 
 ## Figure App.C.4.16.
 
-A map showing the  distribution, concentration, and characteristics of plastic micro-debris in net samples from the CalCOFI region from winter cruises across three sampling years. Figure credit: Gilfillan et al. 2009.
+A map showing the distribution, concentration, and characteristics of plastic micro-debris in net samples from the CalCOFI region from winter cruises across three sampling years. Figure credit: Gilfillan et al. 2009.
 
 ### Details
 
@@ -395,7 +393,7 @@ Time-series of temperature (°C) profiles at Plumes and Blooms sampling station 
 
 ## Figure App.E.10.11.
 
-A figure showing the composition of "beach wrack" (decaying large seaweed washed up on shore) on Santa Rosa Island from 1995 to 2015. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
+A figure showing the composition of beach wrack on Santa Rosa Island from 1995 to 2015. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 ### Details
 
@@ -403,7 +401,7 @@ Macrophyte beach wrack percent cover at Santa Rosa Island is shown by species. W
 
 ## Figure App.E.10.12.
 
-A figure showing the composition of "beach wrack" (decaying large marine plants washed up on shore) across nine beaches on Santa Rosa Island from 1995 to 2015. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
+A figure showing the composition of beach wrack across nine beaches on Santa Rosa Island from 1995 to 2015. Figure credit: [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 ### Details
 
@@ -415,7 +413,7 @@ A figure showing trends in the total mass of giant kelp from 1984 - 2015, using 
 
 ### Details
 
-1984 to 2015 giant kelp biomass aerial extent varies seasonally and annually, with data showing high variation over three decades; however, recent data suggests kelp biomass as is near an all time low. 
+1984 to 2015 giant kelp biomass aerial extent varies seasonally and annually, with data showing high variation over three decades; recent data suggests kelp biomass as is near an all time low. 
 
 ## Figure App.E.10.14.
 
@@ -446,7 +444,7 @@ A map showing eelgrass bed locations around the Northern Channel Islands. Data s
 
 ### Details
 
-CINMS eelgrass bed locations in the map above are a compilation from UCSB, NMFS, and CINMS data. Surveys for eelgrass occurred at different times and the bed persistence is unknown at many locations. UCSB data comes from transects performed by UCSB researchers while the NMFS data comes from sidescan sonar surveys along the coastline. 
+CINMS eelgrass bed locations in the map above are a compilation from UCSB, NMFS, and CINMS data. Surveys for eelgrass occurred at different times and the bed persistence is unknown at many locations. UCSB data come from transects performed by UCSB researchers while the NMFS data comes from sidescan sonar surveys along the coastline. 
 
 ## Figure App.E.10.24.
 
@@ -470,7 +468,7 @@ A pie chart showing the number of deep-water soft corals observed in the Souther
 
 ### Details
 
-The breakdown for the number of deep-water soft corals colonies observed in each genus for the Southern California Bight. Among the 34,792 images collected by the SWFSC Sebastes ROV between 2003 and 2011 throughout the entire Southern California Bight, researchers observed a total of 5,419 colonies. Adelogorgia was most common with 1,832 colonies in 535 observations. _Eugorgia_ was second most common with 792 colonies in 436 observations. 
+The breakdown for the number of deep-water soft corals colonies observed in each genus for the Southern California Bight. Among the 34,792 images collected by the SWFSC Sebastes ROV between 2003 and 2011 throughout the entire Southern California Bight, researchers observed a total of 5,419 colonies. *Adelogorgia* was most common with 1,832 colonies in 535 observations. _Eugorgia_ was second most common with 792 colonies in 436 observations. 
 
 ## Figure App.E.10.28.
 
@@ -482,7 +480,7 @@ Percent of gorgonians showing different levels damage at Anacapa Island during R
 
 ## Figure App.E.10.29.
 
-A figure showing the concentration of the mineral aragonite (a form of calcium carbonate) at different depths at Anacapa Island from 2007 to 2014. Figure credit: Etnoyer et al. 2015.
+A figure showing the concentration of the mineral aragonite at different depths at Anacapa Island from 2007 to 2014. Figure credit: Etnoyer et al. 2015.
 
 ### Details
 
