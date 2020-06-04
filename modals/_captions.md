@@ -528,11 +528,11 @@ This graph is a California coastwide comparison of total extractables (TE) from 
 
 ## Figure App.E.11.6.
 
-A figure showing levels of cancer-causing petroleum-linked chemicals found in the Channel Islands (blue) and offshore sites (red). Figure credit: D. Apeti/[NOAA, Mussel Watch](https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html).
+A figure showing levels of carcinogenic (cancer-causing) petroleum-linked chemicals found in the Channel Islands (blue) and offshore sites (red). Figure credit: D. Apeti/[NOAA, Mussel Watch](https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html).
 
 ### Details
 
-Mean Total Extractables (TE) for individual Polycyclic Aromatic Hydrocarbons or PAHs are compared between Channel Islands (blue) and other offshore sites (red). PAHs are organic contaminants that are carcinogenic. Invertebrate species typically have limited ability to metabolize PAHs; however, they typically do not biomagnify because vertebrates can metabolize them more easily. Concentrations of PAHs are variable, but concentrations at CINMS are usually equivalent, if not lower than other offshore locations. There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more through research and data collection is required to confirm this trend. 
+Mean Total Extractables (TE) for individual Polycyclic Aromatic Hydrocarbons or PAHs are compared between Channel Islands (blue) and other offshore sites (red). PAHs are organic contaminants that are carcinogenic. Invertebrate species typically have limited ability to metabolize PAHs; however, they typically do not biomagnify because vertebrates can metabolize them more easily. Concentrations of PAHs are variable, but concentrations at CINMS are usually equivalent, if not lower than other offshore locations. There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more thorough research and data collection is required to confirm this trend. 
 
 ## Figure App.E.11.7.
 
@@ -755,7 +755,7 @@ A map showing the locations of spring season net samples by [CalCOFI](https://ca
 
 ## Figure App.F.12.18.
 
-Two figures showing the trends in the average volume of small plankton (tiny, often microscopic creatures floating in the water) collected in the ocean in [CalCOFI](https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100476) net samples taken only at sites in the Channel Islands National Marine Sanctuary region (top) and all sites over the Southern California Shelf (bottom) each spring from 1978-2015. Click the map tab to compare the two sampling regions. Figure credit: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/).
+Two figures showing the trends in the average volume of small plankton collected in the ocean in [CalCOFI](https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100476) net samples taken only at sites in the Channel Islands National Marine Sanctuary region (top) and all sites over the Southern California Shelf (bottom) each spring from 1978-2015. Click the map tab to compare the two sampling regions. Figure credit: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/).
 
 ### Details
 
@@ -1172,7 +1172,7 @@ Left: a map showing the results of sediment contamination on invertebrate commun
 
 ## Table App.F.13.2.
 
-A table displaying the common and scientific names of species used to identify trends in fishing effort (with one type of fishing, known as fixed gear fishing) in the Southern California Bight from 2009 to 2016. Data source: [NMFS NWFSC](https://www.nwfsc.noaa.gov/); Table credit: NOAA.
+A table displaying the common and scientific names of species used to identify trends in fishing effort (fixed gear fishing) in the Southern California Bight from 2009 to 2016. Data source: [NMFS NWFSC](https://www.nwfsc.noaa.gov/); Table credit: NOAA.
 
 ### Details
 
@@ -1180,7 +1180,7 @@ Common and scientific names of species selected for calculation of recent trends
 
 ## Table App.F.13.3.
 
-A table displaying the common and scientific names of species used to identify trends in fishing effort (with one type of fishing, known as trawl fishing) in the Southern California Bight from 2009 to 2016. Data source: [NMFS NWFSC](https://www.nwfsc.noaa.gov/); Table credit: NOAA.
+A table displaying the common and scientific names of species used to identify trends in fishing effort (trawling) in the Southern California Bight from 2009 to 2016. Data source: [NMFS NWFSC](https://www.nwfsc.noaa.gov/); Table credit: NOAA.
 
 ### Details
 
