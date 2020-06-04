@@ -9,6 +9,7 @@ library(tidyverse)
 
 # set the modal window
 modal = "infauna"
+modal = "_acidification"
 
 # set the path 
 modal_path = paste0(here::here("modals"),"/")
@@ -19,9 +20,10 @@ render(paste0(modal_path, modal, ".Rmd"), output_dir = modal_path, output_format
 # read the markdown file 
 tx  <- readLines(paste0(modal_path, modal, ".knit.md"))
 
-# load in the glossary that will be used to create the tooltips
+# load in the glossary that will be used to create the tooltips.  Reverse alphabetize the glossary, which will come in handy later
 glossary_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=glossary"
 glossary <- read_csv(glossary_csv)
+glossary <- glossary[order(glossary$term, decreasing = TRUE),]
 
 # initialize the string variable that will hold the javascrip tooltip
 
@@ -35,7 +37,7 @@ for (q in 1:nrow(glossary)) {
   
   # load in a specific glossary term
   search_term = glossary$term[q]
-  
+
   # there is probably a better way to do this with the use of regular expressions, but let's keep track of three 
   # versions of the search terms with various capitalizations, This is done this way in order to preserve the 
   # original capitalization pattern of the modal window when words are replaced in the markdown file
@@ -52,6 +54,16 @@ for (q in 1:nrow(glossary)) {
   replacement_text_capital = paste0(span_definition, search_text_capital, '</span>')
   replacement_text_sentence = paste0(span_definition, search_text_sentence, '</span>')
 
+  
+  # let's look to see if the glossary term is a subset of a longer glossary term (that is: "aragonite" and "aragonite saturation")
+  # if it is a subset, we want to identify the longer term (so that we don't put the tooltip for the
+  # shorter term with the longer term). Here is why the prior alphabetizing of the glossary matters
+#  glossary_match = glossary$term[startsWith (glossary$term, search_term)]
+ # if (length(glossary_match)>1){
+  #  glossary_subset = TRUE
+   # longer_term = glossary_match[2]
+ # }
+  
   # let's go through every line of the markdown file looking for glossary words. We are skipping the first several
   # lines in order to avoid putting any tooltips in the modal window description
   for (i in 12:length(tx)) {
@@ -87,7 +99,7 @@ for (q in 1:nrow(glossary)) {
         line_content  <- gsub(pattern = search_text_sentence, replace = replacement_text_sentence, ignore.case = FALSE, x = line_content)
       }
 
-      # if we separated the image path, let's paste it back on      
+      # if we separated the image path, let's paste it back on    
       if (image_start > 1) {
         tx[i] = paste0(line_content, image_link)
       }
@@ -120,4 +132,4 @@ if (script_tooltip != ""){
 render(paste0(modal_path, modal, ".knit.md"), output_dir = modal_path, output_file=paste0(modal, ".html") )
 
 
-file.remove(paste0(modal_path, modal, ".knit.md"))  
+#file.remove(paste0(modal_path, modal, ".knit.md"))  
