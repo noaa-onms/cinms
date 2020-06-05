@@ -157,35 +157,36 @@ Download timeseries data for sanctuary: `r html`
 
 `r render_figure("Figure App.D.8.3.", "../img/cinms_cr/App.D.8.3.png")`
 
-## Seafloor Temperature
+## Metrics under construction (coming soon)
+### Seafloor Temperature
 
 No data are available at this time, please check back soon!
 
-## Upwelling Index
+### Upwelling Index
 
 No data are available at this time, please check back soon!
 
-## Wave Height & Direction
+### Wave Height & Direction
 
 No data are available at this time, please check back soon!
 
-## Sea Level Height
+### Sea Level Height
 
 No data are available at this time, please check back soon!
 
-## Air Temperature
+### Air Temperature
 
 No data are available at this time, please check back soon!
 
-## pH
+### pH
 
 No data are available at this time, please check back soon!
 
-## Dissolved Oxygen
+### Dissolved Oxygen
 
 No data are available at this time, please check back soon!
 
-## Depth of Anoxic Layer
+### Depth of Anoxic Layer
 
 No data are available at this time, please check back soon!
 
