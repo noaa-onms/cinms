@@ -7,7 +7,7 @@ library(tidyverse)
 # specific tippy tooltip. We then generate a html file for the modal window from the modified markdown file and then
 # delete the markdown file
 
-# set the modal window
+# set the modal windows
 modal = "infauna"
 modal = "_acidification"
 
