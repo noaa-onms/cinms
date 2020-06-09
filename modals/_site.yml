@@ -6,3 +6,4 @@ output:
     self_contained: false
     lib_dir: modal_libs
     mathjax: null
+    css: _modal_styles.css

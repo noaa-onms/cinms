@@ -1,0 +1,30 @@
+---
+title: "test"
+output: html_document
+---
+
+# {.tabset}
+
+## Temperature
+
+### Map: Satellite-based SST (CoastWatch) {.tabset}
+
+### Trend: Satellite-based SST (CoastWatch)
+
+### Trend: SST anomaly (SBC LTER)
+
+### Trend: Temperature profile (PnB)
+
+## Acidification {.tabset}
+
+#### Aragonite saturation
+
+## Harmful Algal Blooms {.tabset}
+
+#### Trends: Domoic Acid Levels (2012-13)
+
+#### Map: Harmful Algal Bloom (2015)
+
+## Chlorophyll {.tabset}
+
+### Map: Satellite-based (CoastWatch)
