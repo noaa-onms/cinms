@@ -224,7 +224,7 @@ Commercial fishing activity for rock crabs has increased recently in blocks arou
 
 ## Figure App.C.4.7. 
 
-A map of the Santa Barbar Channel showing patterns in coastal recreational activity. Figure credit: Chen et al. 2015c.
+A map of the Santa Barbara Channel showing patterns in coastal recreational activity. Figure credit: Chen et al. 2015c.
 
 ### Details
 
@@ -1100,11 +1100,11 @@ Change over time in seabird species richness anomaly (i.e., number of species ob
 
 ## Figure App.F.14.1.
 
-A figure showing the amount of non-native invertebrates and algae foundin rocky intertidal sites in Southern California; the two sites in Channel Islands National Marine Sanctuary are highlighted by the black box. Figure credit: Blanchette et al. 2015.
+A figure showing the amount of non-native invertebrates and algae found in rocky intertidal sites in Southern California; the two sites in Channel Islands National Marine Sanctuary are highlighted by the black box. Figure credit: Blanchette et al. 2015.
 
 ### Details
 
-Percent cover of non-indigenous taxa in [PISCO](http://www.piscoweb.org/) biodiversity surveys at rocky intertidal sites in southern California; the two sites in Channel Islands National Marine Sanctuary are highlighted by the black box. PISCO found the turfy red alga *Caulacanthus okamurae* (formerly *C. ustulatus*), *Lomentaria hakodatensis*, and the brown algae *Sargassum muticum* at Middle West on Anacapa Island. The mussel *Mytilus galloprovincialis* was found at two sites on Anacapa Island. Additionally, the report noted that *Annalipus japonicus*, a brown alga, was found at Crook Point (San Miguel Island) south of its published southern range limit of Point Conception. Shallow subtidal *Sargassum muticum* was densely abundant in many areas in 1970s and 1980s, but has become relatively less common and more interspersed with native species in recent years (J. Engle, pers. comm.). For more information, consult Figure App.F.14.1 in the CINMS 2016 Condition Report.
+Percent cover of non-indigenous taxa in [PISCO](http://www.piscoweb.org/) biodiversity surveys at rocky intertidal sites in southern California; the two sites in Channel Islands National Marine Sanctuary are highlighted by the black box. PISCO found the turfy red alga *Caulacanthus okamurae* (formerly *C. ustulatus*), *Lomentaria hakodatensis*, and the brown algae *Sargassum muticum* at Middle West on Anacapa Island. The mussel *Mytilus galloprovincialis* was found at two sites on Anacapa Island. Additionally, the report noted that *Annalipus japonicus*, a brown alga, was found at Crook Point (San Miguel Island) south of its published southern range limit of Point Conception. Shallow subtidal *Sargassum muticum* was densely abundant in many areas in 1970s and 1980s, but has become relatively less common and more interspersed with native species in recent years (J. Engle, pers. comm.).
 
 ## Figure App.F.14.2. 
 
