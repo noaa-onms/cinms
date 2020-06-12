@@ -12,3 +12,7 @@ source(here::here("scripts/utility.R"))
 ### Trend: oiled beachcast seabirds
 
 `r render_figure("BeachCombers_seabird_deposition_oiling", "../img/cinms_cr/BeachCombers_seabird_deposition_oiling.png")`
+
+### Marine Mammals
+
+No data are currently available, please check back soon!

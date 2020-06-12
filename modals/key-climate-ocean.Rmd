@@ -153,7 +153,7 @@ Download timeseries data for sanctuary: `r html`
 
 `r render_figure("Figure App.D.6.7.", "../img/cinms_cr/App.D.6.7_SST and nitrate anomalies 2001-2015_Reed et al._2016.jpg")`
 
-## Basin Scale Indicies
+## Basin Scale Indices
 ### Trend: ONI, PDO, NPGO
 
 `r render_figure("Figure App.D.8.3.", "../img/cinms_cr/App.D.8.3.png")`

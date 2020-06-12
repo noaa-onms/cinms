@@ -14,7 +14,7 @@ source(here::here("scripts/utility.R"))
 
 # {.tabset}
 
-## <span style="color:Blue">Human Activites</span>
+## <span style="color:Blue">Human Activities</span>
 
 ### {.tabset}
 
