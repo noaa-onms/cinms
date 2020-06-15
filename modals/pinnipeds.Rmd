@@ -11,7 +11,7 @@ source(here::here("scripts/utility.R"))
 
 `r render_figure("Figure App.F.13.24_new.", "../img/cinms_cr/App.F.13.24_new.png")`
 
-### California sea lion (_Zalophus californianus_)
+### California sea lion pups (_Zalophus californianus_)
 
 `r render_figure("Figure App.F.13.23.", "../img/cinms_cr/App.F.13.23.jpg")`
 

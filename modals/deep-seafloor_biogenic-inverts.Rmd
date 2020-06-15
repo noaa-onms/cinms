@@ -7,14 +7,15 @@ source(here::here("scripts/utility.R"))
 
 ## {.tabset}
 
-### Gorgonian Corals
-
-`r render_figure("Figure App.C.3.4.", "../img/cinms_cr/App.C.3.4_SWFSC_Fixed2007-2011_Gorgonians.jpg")`
-
-### Relative abundance Deep-water Corals
+### Relative Abundance of Deep-Water Corals 
 
 `r render_figure("Figure App.E.10.26.", "../img/cinms_cr/App.E.10.26.jpg")`
 
 ### Condition of Gorgonian Corals
 
 `r render_figure("Figure App.E.10.28.", "../img/cinms_cr/App.E.10.28.jpg")`
+
+### Map of Known Gorgonian Coral Locations
+
+`r render_figure("Figure App.C.3.4.", "../img/cinms_cr/App.C.3.4_SWFSC_Fixed2007-2011_Gorgonians.jpg")`
+

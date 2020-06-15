@@ -1,14 +1,11 @@
 
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-```
-
-```{r svg, child = '_key-climate-ocean.Rmd'}
+source(here::here("scripts/utility.R"))
 ```
 
 # {.tabset}
 
-## Key Climate and Ocean Drivers 
 ### Acidification {.tabset}
 #### Aragonite saturation
 

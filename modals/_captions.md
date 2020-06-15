@@ -768,7 +768,7 @@ A figure showing the relative abundance of northern anchovy (*Engraulis mordax*)
 
 ### Details
 
-Relative abundance of key forage fish groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) and Southern California Shelf regions from 1978 to 2015. High energy taxa are Pacific sardines, northern anchovies, and  Myctophids. Medium-energy taxa are Pacific hake, shortbelly rockfish, and sanddabs. Although sardine were completely absent in net samples from 2011 to 2014 in the CINMS region, comparison with samples collected in the larger Southern California Shelf region reveal that sardine were at very low abundance but not completely absent from the region. 
+Relative abundance of key forage fish groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) and Southern California Shelf regions from 1978 to 2015. High energy taxa (e.g. those with a high lipid content) are Pacific sardines, northern anchovies, and  Myctophids. Medium-energy taxa are Pacific hake, shortbelly rockfish, and sanddabs. Although sardine were completely absent in net samples from 2011 to 2014 in the CINMS region, comparison with samples collected in the larger Southern California Shelf region reveal that sardine were at very low abundance but not completely absent from the region. 
 
 ## Figure App.F.12.19.hake
 
@@ -776,7 +776,7 @@ A figure showing the relative abundance of Pacific hake (*Merluccius productus*)
 
 ### Details
 
-Relative abundance of key forage fish groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) and Southern California Shelf regions from 1978 to 2015. High energy taxa are Pacific sardines, northern anchovies, and  Myctophids. Medium-energy taxa are Pacific hake, shortbelly rockfish, and sanddabs. Although sardine were completely absent in net samples from 2011 to 2014 in the CINMS region, comparison with samples collected in the larger Southern California Shelf region reveal that sardine were at very low abundance but not completely absent from the region. 
+Relative abundance of key forage fish groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) and Southern California Shelf regions from 1978 to 2015. High energy taxa (e.g. those with a high lipid content) are Pacific sardines, northern anchovies, and  Myctophids. Medium-energy taxa are Pacific hake, shortbelly rockfish, and sanddabs. Although sardine were completely absent in net samples from 2011 to 2014 in the CINMS region, comparison with samples collected in the larger Southern California Shelf region reveal that sardine were at very low abundance but not completely absent from the region. 
 
 ## Figure App.F.12.19.myctophids
 
@@ -784,7 +784,7 @@ A figure showing the relative abundance of myctophids (Myctophidae) collected du
 
 ### Details
 
-Relative abundance of key forage fish groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) and Southern California Shelf regions from 1978 to 2015. High energy taxa are Pacific sardines, northern anchovies, and  Myctophids. Medium-energy taxa are Pacific hake, shortbelly rockfish, and sanddabs. Although sardine were completely absent in net samples from 2011 to 2014 in the CINMS region, comparison with samples collected in the larger Southern California Shelf region reveal that sardine were at very low abundance but not completely absent from the region. 
+Relative abundance of key forage fish groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) and Southern California Shelf regions from 1978 to 2015. High energy taxa (e.g. those with a high lipid content) are Pacific sardines, northern anchovies, and  Myctophids. Medium-energy taxa are Pacific hake, shortbelly rockfish, and sanddabs. Although sardine were completely absent in net samples from 2011 to 2014 in the CINMS region, comparison with samples collected in the larger Southern California Shelf region reveal that sardine were at very low abundance but not completely absent from the region. 
 
 ## Figure App.F.12.19.rockfish
 
@@ -792,7 +792,7 @@ A figure showing the relative abundance of shortbelly rockfish (*Sebastes jordan
 
 ### Details
 
-Relative abundance of key forage fish groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) and Southern California Shelf regions from 1978 to 2015. High energy taxa are Pacific sardines, northern anchovies, and  Myctophids. Medium-energy taxa are Pacific hake, shortbelly rockfish, and sanddabs. Although sardine were completely absent in net samples from 2011 to 2014 in the CINMS region, comparison with samples collected in the larger Southern California Shelf region reveal that sardine were at very low abundance but not completely absent from the region. 
+Relative abundance of key forage fish groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) and Southern California Shelf regions from 1978 to 2015. High energy taxa (e.g. those with a high lipid content) taxa are Pacific sardines, northern anchovies, and  Myctophids. Medium-energy taxa are Pacific hake, shortbelly rockfish, and sanddabs. Although sardine were completely absent in net samples from 2011 to 2014 in the CINMS region, comparison with samples collected in the larger Southern California Shelf region reveal that sardine were at very low abundance but not completely absent from the region. 
 
 
 ## Figure App.F.12.19.sanddab
@@ -801,7 +801,7 @@ A figure showing the relative abundance of Pacific sanddab (*Citharichthys sordi
 
 ### Details
 
-Relative abundance of key forage fish groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) and Southern California Shelf regions from 1978 to 2015. High energy taxa are Pacific sardines, northern anchovies, and  Myctophids. Medium-energy taxa are Pacific hake, shortbelly rockfish, and sanddabs. Although sardine were completely absent in net samples from 2011 to 2014 in the CINMS region, comparison with samples collected in the larger Southern California Shelf region reveal that sardine were at very low abundance but not completely absent from the region. 
+Relative abundance of key forage fish groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) and Southern California Shelf regions from 1978 to 2015. High energy taxa (e.g. those with a high lipid content) are Pacific sardines, northern anchovies, and  Myctophids. Medium-energy taxa are Pacific hake, shortbelly rockfish, and sanddabs. Although sardine were completely absent in net samples from 2011 to 2014 in the CINMS region, comparison with samples collected in the larger Southern California Shelf region reveal that sardine were at very low abundance but not completely absent from the region. 
 
 ## Figure App.F.12.19.sardine
 
@@ -809,7 +809,7 @@ A figure showing the relative abundance of Pacific sardine (*Sardinops sagax*) c
 
 ### Details
 
-Relative abundance of key forage fish groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) and Southern California Shelf regions from 1978 to 2015. High energy taxa are Pacific sardines, northern anchovies, and  Myctophids. Medium-energy taxa are Pacific hake, shortbelly rockfish, and sanddabs. Although sardine were completely absent in net samples from 2011 to 2014 in the CINMS region, comparison with samples collected in the larger Southern California Shelf region reveal that sardine were at very low abundance but not completely absent from the region. 
+Relative abundance of key forage fish groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) and Southern California Shelf regions from 1978 to 2015. High energy taxa (e.g. those with a high lipid content) are Pacific sardines, northern anchovies, and  Myctophids. Medium-energy taxa are Pacific hake, shortbelly rockfish, and sanddabs. Although sardine were completely absent in net samples from 2011 to 2014 in the CINMS region, comparison with samples collected in the larger Southern California Shelf region reveal that sardine were at very low abundance but not completely absent from the region. 
 
 ## Figure App.F.12.20.squid.
 
@@ -1024,7 +1024,7 @@ A figure showing live pup counts (top) and female sea lion pup growth (bottom) f
 
 ### Details
 
-Live pup count (top) and female pup growth index for California sea lions (*Zalophus californianus*) from 1997 to 2019. Recent trends in pup counts have been stable, but declining for pup growth likely due to low availability of prey resources in central and southern California, which is the foraging range of nursing females. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (-), or within 1 standard deviation (●) of the mean of the full time series.
+Live pup count (top) and female pup growth index for California sea lions (*Zalophus californianus*) from 1997 to 2019. Recent trends in pup counts have been stable, but declining for pup growth likely due to low availability of prey resources in central and southern California, which is the foraging range of nursing females. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend (up arrow), a negative trend (down arrow), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (-), or within 1 standard deviation (●) of the mean of the full time series.
 
 ## Figure App.F.13.25.
 
@@ -1064,23 +1064,23 @@ A figure showing the relative abundance (how common or rare a species is) of coo
 
 ### Details
 
-Relative abundance of cool-water and warm-water associated ichthyoplankton (fish larvae) groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS)  and over the Southern California Shelf from 1978 to 2015. Sampling sites are shown on Figure App.F.12.17. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (-), or within 1 standard deviation (●) of the mean of the full time series. 
+Relative abundance of cool-water and warm-water associated ichthyoplankton (fish larvae) groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS)  and over the Southern California Shelf from 1978 to 2015. Sampling sites are shown on Figure App.F.12.17. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend (upward arrow), a negative trend (downward arrow), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (-), or within 1 standard deviation (●) of the mean of the full time series. 
 
 ## Figure App.F.15.6.a-b.
 
-A figure showing the average number of different species of fish larvae collected in around the Channel Islands and the Southern California Shelf from 1978 to 2015. Data source: [CalCOFI](https://calcofi.org/); Figure credit: A. Thompson/NOAA.
+A figure showing the average number of different species of fish larvae collected around the Channel Islands (top) and the Southern California Shelf (bottom) from 1978 to 2015. Data source: [CalCOFI](https://calcofi.org/); Figure credit: A. Thompson/NOAA.
 
 ### Details
 
-Mean species richness of fish larvae (ichthyoplankton) collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) region and over the Southern California Shelf from 1978 to 2015. Species richness is the number of species present in a net sample. Species richness tends to increase in El Niño years due to influx of central Pacific species to the shelf. Sampling sites are shown on Figure App.F.12.17. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (-), or within 1 standard deviation (●) of the mean of the full time series.
+Mean species richness of fish larvae (ichthyoplankton) collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) region and over the Southern California Shelf from 1978 to 2015. Species richness is the number of species present in a net sample. Species richness tends to increase in El Niño years due to influx of central Pacific species to the shelf. Sampling sites are shown on Figure App.F.12.17. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend (upward arrow), a negative trend (downward arrow), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (-), or within 1 standard deviation (●) of the mean of the full time series.
 
 ## Figure App.F.15.6.c-d. 
 
-A figure showing the relative abundance (how common or rare a species is) of cool-water associated (top) and warm-water associated (bottom) fish larve around the Channel Islands and the Southern California Shelf from 1974 to 2015. Data source: [CalCOFI](https://calcofi.org/); Figure credit: A. Thompson/NOAA.
+A figure showing the average diversity of larval fish collected around the Channel Islands (top) and the Southern California Shelf (bottom) from 1978 to 2015. Data source: [CalCOFI](https://calcofi.org/); Figure credit: A. Thompson/NOAA.
 
 ### Details
 
-Relative abundance of cool-water (top panels) and warm-water (bottom panels) associated ichthyoplankton (fish larvae) groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) region (left panels) and over the Southern California Shelf (right panels) from 1978 to 2015. Sampling sites are shown on Figure App.F.12.17. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend ( ), a negative trend (), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (-), or within 1 standard deviation (●) of the mean of the full time series. 
+Mean Simpon Diversity of larval fish in the CINMS region (top) and the Southern California Shelf (bottom) of associated ichthyoplankton (fish larvae) groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) region and over the Southern California Shelf from 1978 to 2015. Sampling sites are shown on Figure App.F.12.17. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend (upward arrorow), a negative trend (downward arrow), or no trend (↔). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (-), or within 1 standard deviation (●) of the mean of the full time series. 
 
 ## Figure App.F.15.7.
 
