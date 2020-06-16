@@ -5,6 +5,7 @@ knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 source(here::here("scripts/calcofi.R"))
 source(here::here("scripts/utility.R"))
 ```
+
 ```{r modal_info}
 get_modal_info()
 ```
@@ -33,6 +34,8 @@ calcofi_plot(csv = csv, title = title)
 
 `r render_figure("Figure App.F.12.19c.", "../img/cinms_cr/App.F.12.19c.Anchovy_CalCOFI.jpg")`
 
+`r render_caption("Figure App.F.12.19.anchovy")`
+
 #### SoCal Shelf Region
 
 ```{r}
@@ -45,9 +48,6 @@ csv   <- glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/mast
 #download.file(csv, "_tmp.csv")
 calcofi_plot(csv = csv, title = title)
 ```
-`r render_figure("Figure App.F.12.19c.Anchovy_CalCOFI.", "../img/cinms_cr/App.F.12.19c.Anchovy_CalCOFI.jpg")`
-
-`r render_caption("Figure App.F.12.19.anchovy.")`
 
 ### Hake
 
