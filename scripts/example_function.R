@@ -1,9 +1,24 @@
-example_function <- function(modal_window){
+library(rmarkdown)
 
-  # set the path 
-  modal_path = paste0(here::here("modals"),"/")
+rmd2md <- function(rmd){
   
-  # create the intermediary markdown file
-  rmarkdown::render(paste0(modal_path, modal_window, ".Rmd"), output_dir = modal_path, output_format = "md_document", clean = F)
-
+  md   <- fs::path_ext_set(rmd, "md")
+  html <- fs::path_ext_set(rmd, "html")
+  
+  rmarkdown::render(
+    rmd, output_file = html, 
+    output_format    = "html_document", 
+    output_options   = list(self_contained = F, keep_md = T),
+    # output_yaml = here::here("modals/_md_output.yml"), 
+    clean = T)
+  rmarkdown::render(
+    md , output_file = html, output_format = "html_document", clean = T)
 }
+
+# ---
+#   always_allow_html: true
+# ---
+
+rmd <- here::here("modals/abalone.Rmd")
+file.exists(rmd)
+rmd2md(rmd)

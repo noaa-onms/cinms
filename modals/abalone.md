@@ -1,8 +1,10 @@
 ---
 output:
-  html_document:
-    keep_md: yes
+   html_document:
+      self_contained: false
+      keep_md: true
 ---
+
 
 
 
@@ -22,8 +24,8 @@ Once readily abundant in kelp forest on rocky reefs, these snail-like marine gra
 
 ### Red abalone (PISCO)
 
-<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:&#39;left&#39;; display:table-cell;"><a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100465" target="_blank"><i class="fa fa-clipboard-list"></i>
-        PISCO Kelp Forest Monitoring</a></div><div style="text-align:&#39;right&#39;; display:table-cell;"><a href="http://www.piscoweb.org/access-data" target="_blank"><i class="fa fa-database"></i>
+<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100465" target="_blank"><i class="fa fa-clipboard-list"></i>
+        PISCO Kelp Forest Monitoring</a></div><div style="text-align:right; display:table-cell;"><a href="http://www.piscoweb.org/access-data" target="_blank"><i class="fa fa-database"></i>
         PISCO data</a></div></div></div>
 
 ![A figure showing the average density of red abalone across the Northern Channel Islands from 2003 to 2016. Data source: PISCO; Figure credit: <a href='https://channelislands.noaa.gov/contact/freedman.html' target='_blank'>R. Freedman/NOAA</a>.](../img/cinms_cr/App.F.13.9.jpg)
@@ -34,8 +36,8 @@ Average density (+/- standard error) of red abalone (*Haliotis rufescens*) at 14
 
 ### Red abalone (CHIS)
 
-<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:&#39;left&#39;; display:table-cell;"><a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100505" target="_blank"><i class="fa fa-clipboard-list"></i>
-        CHIS Kelp Forest Monitoring</a></div><div style="text-align:&#39;right&#39;; display:table-cell;"><a href="https://www.nps.gov/im/medn/kelp-forest-communities.htm" target="_blank"><i class="fa fa-database"></i>
+<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100505" target="_blank"><i class="fa fa-clipboard-list"></i>
+        CINP Kelp Forest Monitoring</a></div><div style="text-align:right; display:table-cell;"><a href="https://www.nps.gov/im/medn/kelp-forest-communities.htm" target="_blank"><i class="fa fa-database"></i>
         CHIS data</a></div></div></div>
 
 ![A figure showing the average density of red abalone across the Northern Channel Islands from 1984 to 2016. Figure credit: <a href='https://www.nps.gov/chis/index.htm' target='_blank'>Channel Islands National Park</a>.](../img/cinms_cr/App.F.13.10a.Haliotis_rufescens_CINP.jpg)
@@ -46,8 +48,8 @@ Average density of red abalone (*Haliotis rufescens*) at Channel Islands Nationa
 
 ### Pink abalone (CHIS)
 
-<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:&#39;left&#39;; display:table-cell;"><a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100505" target="_blank"><i class="fa fa-clipboard-list"></i>
-        CHIS Kelp Forest Monitoring</a></div><div style="text-align:&#39;right&#39;; display:table-cell;"><a href="https://www.nps.gov/im/medn/kelp-forest-communities.htm" target="_blank"><i class="fa fa-database"></i>
+<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100505" target="_blank"><i class="fa fa-clipboard-list"></i>
+        CINP Kelp Forest Monitoring</a></div><div style="text-align:right; display:table-cell;"><a href="https://www.nps.gov/im/medn/kelp-forest-communities.htm" target="_blank"><i class="fa fa-database"></i>
         CHIS data</a></div></div></div>
 
 ![A figure showing the average density of pink abalone across the Northern Channel Islands from 1984 to 2016. Figure credit: <a href='https://www.nps.gov/chis/index.htm' target='_blank'>Channel Islands National Park</a>.](../img/cinms_cr/App.F.13.10b.Haliotis_corrugata_CINP.jpg)
