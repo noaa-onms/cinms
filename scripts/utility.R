@@ -129,9 +129,10 @@ get_modal_info <- function(
   }
   
   div(
-    ifelse(!is.na(row$tagline), row$tagline, ""), 
-    style="font-style: italic",
-    div(tagList(icons_html), align = "right"))
+    div(tagList(icons_html), style = "margin-top: 10px;margin-bottom: 10px; margin-right: 10px;"), div(
+    ifelse(!is.na(row$tagline), row$tagline, ""), style = "margin: 10px; font-style: italic;"), style="display: flex"
+    
+    )
 }
 
 get_figure_info <- function (figure_id){
