@@ -6,4 +6,4 @@ output:
     self_contained: false
     lib_dir: modal_libs
     mathjax: null
-    css: _modal_styles.css
+    css: [_modal_styles.css, modal_libs/font-awesome-5.3.1/css/all.min.css, modal_libs/font-awesome-5.3.1/css/v4-shims.min.css]
