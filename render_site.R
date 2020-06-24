@@ -7,6 +7,8 @@ library(purrr)
 library(dplyr)
 here = here::here
 
+source(here("scripts/utility.R"))
+
 # parameters
 csv         <- here("svg/svg_links_cinms.csv")
 redo_modals <- T
