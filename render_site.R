@@ -33,11 +33,6 @@ d_modals <- d %>%
   summarize(n_habitats = n()) %>% 
   ungroup()
 
-# quick hack to move beyond problem forage-assemblage.Rmd
-# idx_next <- which(d_modals$link ==  "modals/forage-inverts.html") + 1
-# d_modals %>% 
-#   slice(idx_next:nrow(d_modals))
-
 render_page <- function(rmd){
   render(rmd, html_document(
     theme = site_config()$output$html_document$theme, 
@@ -59,20 +54,8 @@ render_modal <- function(rmd){
     # toc=T, toc_depth=3, toc_float=T,
     mathjax = NULL))
   
-  # htm <- fs::path_ext_set(rmd, "html")
-  # docs_htm <- glue("docs/{htm}")
-  # docs_rmd <- glue("docs/{rmd}")
-  # file.copy(rmd, docs_rmd, overwrite = T)
-  # file.copy(htm, docs_htm, overwrite = T)
 }
 
-# render_modal("modals/deep-seafloor_human-activities.Rmd")
-# render_modal("modals/key-human-activities.Rmd")
-# render_modal("modals/rocky-map.Rmd")
-# render_modal("modals/barnacles.Rmd")
-# render_modal("modals/mussels.Rmd")
-# render_modal("modals/halibut.Rmd")
-# render_modal("modals/key-climate-ocean.Rmd")
 
 # create/render modals by iterating over svg links in csv ----
 for (i in 1:nrow(d_modals)){ # i=1
@@ -97,10 +80,25 @@ for (i in 1:nrow(d_modals)){ # i=1
   } else {
     rmd_newer <- T
   }
-  if (rmd_newer | redo_modals){
-    message(glue("KNITTING: {basename(rmd)}"))
-    render_modal(rmd)
-  }
+  
+  # The following commented out if statement generates the modal windows only for Rmd files that
+  # have been recently modified. The trouble with this code though is that we want the modal
+  # windows to be regenerated if the glossary has been recently modified (which occurs on the 
+  # cinms google spreadsheet), which wouldn't show up as a modification for the Rmd file. So, 
+  # we actually need to run all modal windows to catch any changes that have been made to the 
+  # glossary. This obviously makes render site slower to run - oh well
+  
+ # if (rmd_newer | redo_modals){
+  #  message(glue("KNITTING: {basename(rmd)}"))
+ #   render_modal(rmd)
+  
+#  }
+  
+  # let's replace the function render_modal(), used in the commented out if statement above,
+  # with the function below which renders the html files from the rmd files, while
+  # generating the tooltips for the html files
+  rmd2html(rmd)
+  
 }
 
 # render website, ie Rmds in root ----
