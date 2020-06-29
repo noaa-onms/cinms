@@ -7,6 +7,7 @@ library(purrr)
 library(dplyr)
 here = here::here
 
+#load glossary generating functions
 source(here("scripts/utility.R"))
 
 # parameters
@@ -15,7 +16,7 @@ redo_modals <- T
 
 # skip modals that Ben has to process independently
 skip_modals <- c(
-  "key-climate-ocean.Rmd", 
+  "key-climate-ocean.Rmd", "algal-groups.Rmd", "rocky-map.Rmd",
   "deep-seafloor_key-climate-ocean.Rmd","kelp-forest_key-climate-ocean.Rmd","pelagic_key-climate-ocean.Rmd","rocky-shore_key-climate-ocean.Rmd","sandy-seafloor_key-climate-ocean","sandy-beach_key-climate-ocean.Rmd",
   
   # BB TODO:

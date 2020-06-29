@@ -11,7 +11,7 @@
 
 
 
-<title>plankton.utf8</title>
+<title>plankton.glossarized.utf8</title>
 
 <script src="modal_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,8 +22,6 @@
 <script src="modal_libs/navigation-1.1/tabsets.js"></script>
 <link href="modal_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="modal_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="modal_libs/font-awesome-5.3.1/css/all.min.css" rel="stylesheet" />
-<link href="modal_libs/font-awesome-5.3.1/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -70,6 +68,9 @@ h6 {
 }
 </style>
 
+<link rel="stylesheet" href="_modal_styles.css" type="text/css" />
+<link rel="stylesheet" href="modal_libs/font-awesome-5.3.1/css/all.min.css" type="text/css" />
+<link rel="stylesheet" href="modal_libs/font-awesome-5.3.1/css/v4-shims.min.css" type="text/css" />
 
 
 
@@ -182,13 +183,13 @@ summary {
 </div>
 
 
-<div style="font-style: italic">
-Plankton are small, often microscopic, creatures that largely just drift with the ocean current (as opposed to animals like fish that can swim through the current). Despite being small, they pack a big punch in marine ecosystems because a wide variety of marine life survives only by eating plankton.
-<div align="right">
+<div style="display: flex">
+<div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;">
 <a href="https://photolib.noaa.gov/Portals/0//GravityImages/23854/ProportionalFixedWidth/fish554659439x800x800.jpg" target="_blank">
 <i class="fa fa-camera"></i>
 </a>
 </div>
+<div style="margin: 10px; font-style: italic; flex: 20; ">Plankton are small, often microscopic, creatures that largely just drift with the ocean current (as opposed to animals like fish that can swim through the current). Despite being small, they pack a big punch in marine ecosystems because a wide variety of marine life survives only by eating plankton.</div>
 </div>
 <div id="section" class="section level2 tabset">
 <h2></h2>
@@ -206,18 +207,22 @@ Plankton are small, often microscopic, creatures that largely just drift with th
 </div>
 <div class="figure">
 <img src="../img/cinms_cr/App.F.12.18_CalCOFI_SPV.jpg" alt="" />
-<p class="caption">Two figures showing the trends in the average volume of small plankton collected in the ocean in <a href='https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100476' target='_blank'>CalCOFI</a> net samples taken only at sites in the Channel Islands National Marine Sanctuary region (top) and all sites over the Southern California Shelf (bottom) each spring from 1978-2015. Click the map tab to compare the two sampling regions. Figure credit: A. Thompson/NOAA; <a href='https://ecoquants.com/' target='_blank'>Ben Best/EcoQuants</a>.</p>
+<p class="caption">Two figures showing the trends in the average volume of small <span id="tooltip5" aria-describedby="tooltip5" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">plankton</span> collected in the ocean in <a href='https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100476' target='_blank'>CalCOFI</a> net samples taken only at sites in the Channel Islands National Marine Sanctuary region (top) and all sites over the Southern California Shelf (bottom) each spring from 1978-2015. Click the map tab to compare the two sampling regions. Figure credit: A. Thompson/NOAA; <a href='https://ecoquants.com/' target='_blank'>Ben Best/EcoQuants</a>.</p>
 </div>
 <details>
-<summary>Click for Details</summary> Horizontal lines show the mean (dashed line) ± 1.0 standard deviation (solid lines) over the full time series. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend (up arrow), a negative trend (down arrow), or no trend (↔︎). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (-), or within 1 standard deviation (●) of the mean of the full time series. For more information, consult Figure App.F.12.18 in the CINMS 2016 Condition Report. For more information, consult Figure App.F.12.18 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank">CINMS 2016 Condition Report</a>.
+<summary>Click for Details</summary> Horizontal lines show the mean (dashed line) ± 1.0 standard deviation (solid lines) over the full time series. Symbol at upper right indicates whether data over the last five years (green shaded areas) had a positive trend (up arrow), a negative trend (down arrow), or no trend (↔︎). Symbol at lower right indicates whether the mean over the past five years was greater than (+), less than (-), or within 1 standard deviation (●) of the mean of the full time series. For more information, consult Figure App.F.12.18 in the <span id="tooltip26" aria-describedby="tooltip26" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report. For more information, consult Figure App.F.12.18 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip26" aria-describedby="tooltip26" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 <div id="map-of-sampling-stations" class="section level3">
 <h3>Map of sampling stations</h3>
 <div class="figure">
 <img src="../img/cinms_cr/App.F.12.17.png" alt="" />
-<p class="caption">A map showing the locations of spring season net samples by <a href='https://calcofi.org/' target='_blank'>CalCOFI</a> for use in analyses of abundance and trends in pelagic resources. Channel Islands National Marine Sanctuary region (red) includes CalCOFI stations inside and adjacent to CINMS; and Southern California Shelf (yellow) includes all CalCOFI stations over the shelf. Figure credit: A. Thompson/NOAA, <a href='https://ecoquants.com/' target='_blank'>Ben Best/EcoQuants</a>.</p>
+<p class="caption">A map showing the locations of spring season net samples by <a href='https://calcofi.org/' target='_blank'>CalCOFI</a> for use in analyses of abundance and trends in pelagic resources. Channel Islands National Marine Sanctuary region (red) includes CalCOFI stations inside and adjacent to <span id="tooltip26" aria-describedby="tooltip26" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span>; and Southern California Shelf (yellow) includes all CalCOFI stations over the shelf. Figure credit: A. Thompson/NOAA, <a href='https://ecoquants.com/' target='_blank'>Ben Best/EcoQuants</a>.</p>
 </div>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script>tippy ("#tooltip5",{content: "the word “plankton” comes from the Greek for “drifter” or “wanderer.” An organism is considered plankton if it is carried by tides and currents, and cannot swim well enough to move against these forces."});</script>
+<script>tippy ("#tooltip26",{content: "Channel Islands National Marine Sanctuary"});</script>
 </div>
 </div>
 
