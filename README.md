@@ -84,7 +84,7 @@ To use html directly set `redo_modals <- T`, but you will need to clear `.html` 
 
 ### testing
 
-Because of [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) restrictions, need local web server to debug:
+Because of [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) restrictions, need local web server to debug and view the SVG scene in the rendered HTML:
 
 ```r
 # build website

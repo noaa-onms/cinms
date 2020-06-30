@@ -129,8 +129,8 @@ get_modal_info <- function(
   }
   
   div(
-    div(tagList(icons_html), style = "margin-top: 10px;margin-bottom: 10px; margin-right: 10px;"), div(
-    ifelse(!is.na(row$tagline), row$tagline, ""), style = "margin: 10px; font-style: italic;"), style="display: flex"
+    div(tagList(icons_html), style = "margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;"), div(
+    ifelse(!is.na(row$tagline), row$tagline, ""), style = "margin: 10px; font-style: italic; flex: 20; "), style="display: flex"
     
     )
 }
@@ -366,6 +366,7 @@ glossarize_md <- function(md, md_out = md){
 }
 
 rmd2html <- function(rmd){
+  rmd<- here(rmd)
   md1   <- fs::path_ext_set(rmd, "md")
   md2  <- paste0(fs::path_ext_remove(rmd), ".glossarized.md")
   htm1  <- paste0(fs::path_ext_remove(rmd), ".glossarized.html")
