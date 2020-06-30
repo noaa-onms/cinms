@@ -11,7 +11,7 @@
 
 
 
-<title>understory-algae.utf8</title>
+<title>understory-algae.glossarized.utf8</title>
 
 <script src="modal_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,8 +22,6 @@
 <script src="modal_libs/navigation-1.1/tabsets.js"></script>
 <link href="modal_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="modal_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="modal_libs/font-awesome-5.3.1/css/all.min.css" rel="stylesheet" />
-<link href="modal_libs/font-awesome-5.3.1/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -70,6 +68,9 @@ h6 {
 }
 </style>
 
+<link rel="stylesheet" href="_modal_styles.css" type="text/css" />
+<link rel="stylesheet" href="modal_libs/font-awesome-5.3.1/css/all.min.css" type="text/css" />
+<link rel="stylesheet" href="modal_libs/font-awesome-5.3.1/css/v4-shims.min.css" type="text/css" />
 
 
 
@@ -182,13 +183,13 @@ summary {
 </div>
 
 
-<div style="font-style: italic">
-Underwater kelp forests contain flora that reach to different heights - just like forests on land. One key part of these kelp forests is the understory, which consists of algal species that cover the rocky reefs in a rich mosaic of greens, reds, and browns.
-<div align="right">
+<div style="display: flex">
+<div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;">
 <a href="https://sanctuarysimon.org/dbtools/photo-library/id/6450" target="_blank">
 <i class="fa fa-camera"></i>
 </a>
 </div>
+<div style="margin: 10px; font-style: italic; flex: 20; ">Underwater kelp forests contain flora that reach to different heights - just like forests on land. One key part of these kelp forests is the understory, which consists of algal species that cover the rocky reefs in a rich mosaic of greens, reds, and browns.</div>
 </div>
 <div id="section" class="section level2 tabset">
 <h2></h2>
@@ -209,7 +210,7 @@ Underwater kelp forests contain flora that reach to different heights - just lik
 <p class="caption">A figure showing the area covered by brown algae at two sites on Santa Cruz Island from 2000 to 2015. Data source: SBC LTER; Figure credit: <a href='https://channelislands.noaa.gov/contact/freedman.html' target='_blank'>R. Freedman/NOAA</a>.</p>
 </div>
 <details>
-<summary>Click for Details</summary> Brown algae percent cover from <a href='https://sbclter.msi.ucsb.edu/' target='_blank'>LTER</a> subtidal surveys at Santa Cruz Island (two sites, dark blue) and the mainland (nine sites, light blue) are shown in the trendlines above. Brown algae has been in decline since 2010 and is near record lows in the Santa Barbara Channel both at the mainland and in the Sanctuary. For more information, consult Figure App.E.10.20 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank">CINMS 2016 Condition Report</a>.
+<summary>Click for Details</summary> Brown algae percent cover from <a href='https://sbclter.msi.ucsb.edu/' target='_blank'>LTER</a> subtidal surveys at Santa Cruz Island (two sites, dark blue) and the mainland (nine sites, light blue) are shown in the trendlines above. Brown algae has been in decline since 2010 and is near record lows in the Santa Barbara Channel both at the mainland and in the Sanctuary. For more information, consult Figure App.E.10.20 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip26" aria-describedby="tooltip26" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 <div id="mainland-vs.-island-foliose-red-algae-density" class="section level3">
@@ -229,8 +230,11 @@ Underwater kelp forests contain flora that reach to different heights - just lik
 <p class="caption">A figure showing the area covered by foliose red algae on Santa Cruz Island (dark line) and from the mainland coast (light line) from 2000 to 2015. Data source: SBC LTER; Figure credit: <a href='https://channelislands.noaa.gov/contact/freedman.html' target='_blank'>R. Freedman/NOAA</a>.</p>
 </div>
 <details>
-<summary>Click for Details</summary> Foliose red algae percent cover from LTER subtidal surveys at Santa Cruz Island (two sites, dark blue) and the mainland (nine sites, light blue) are shown. Red algae cover has been slowly increasing from the start of the dataset, but has remained stable at about 30 percent cover at both Santa Cruz Island and the mainland since 2010. For more information, consult Figure App.E.10.21 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank">CINMS 2016 Condition Report</a>.
+<summary>Click for Details</summary> Foliose red algae percent cover from LTER subtidal surveys at Santa Cruz Island (two sites, dark blue) and the mainland (nine sites, light blue) are shown. Red algae cover has been slowly increasing from the start of the dataset, but has remained stable at about 30 percent cover at both Santa Cruz Island and the mainland since 2010. For more information, consult Figure App.E.10.21 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip26" aria-describedby="tooltip26" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script>tippy ("#tooltip26",{content: "Channel Islands National Marine Sanctuary"});</script>
 </div>
 </div>
 
