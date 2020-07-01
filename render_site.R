@@ -5,6 +5,8 @@ library(fs)
 library(glue)
 library(purrr)
 library(dplyr)
+library(tools)
+
 here = here::here
 
 #load glossary generating functions
@@ -59,6 +61,38 @@ render_modal <- function(rmd){
   
 }
 
+# The following section of code checks to see if there has been any change to
+# the google spreadsheet cinms_content. If there has, we'll want to render all of the modal
+# windows to account for changes to cinms_content
+
+# The sheets of the google spreadsheet 
+sheet_names <- c("info_modal_links", "info_figure_links", "glossary")
+
+#The url of the google spreadsheet
+cinms_content_url = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet="
+
+# Let's set a flag for whether the spreadsheet has changed
+cinms_content_changed = FALSE
+
+# Let's go through all three sheets
+for (i in 1:3){
+  
+  # Save the new version of the sheet
+  sheet_url = paste0(cinms_content_url, sheet_names[i])
+  new_sheet <- read.csv(sheet_url)
+  new_filename <- paste0(here("data/saved_cinms_content/new_"),sheet_names[i], ".csv")
+  write.csv(new_sheet, file = new_filename)
+  
+  # Check to see if the new version of the sheet matches the saved version, if it doesn't 
+  # change cinms_content_changed to TRUE 
+  saved_filename <- paste0(here("data/saved_cinms_content/saved_"),sheet_names[i], ".csv")
+  
+  if (md5sum(new_filename) != md5sum(saved_filename)){
+    cinms_content_changed = TRUE
+    file.copy(new_filename, saved_filename, overwrite = TRUE)
+  }
+  file.remove (new_filename)
+}
 
 # create/render modals by iterating over svg links in csv ----
 for (i in 1:nrow(d_modals)){ # i=1
@@ -84,23 +118,14 @@ for (i in 1:nrow(d_modals)){ # i=1
     rmd_newer <- T
   }
   
-  # The following commented out if statement generates the modal windows only for Rmd files that
-  # have been recently modified. The trouble with this code though is that we want the modal
-  # windows to be regenerated if the glossary has been recently modified (which occurs on the 
-  # cinms google spreadsheet), which wouldn't show up as a modification for the Rmd file. So, 
-  # we actually need to run all modal windows to catch any changes that have been made to the 
-  # glossary. This obviously makes render site slower to run - oh well
+  # Render all modal windows if the associated google spreadsheet has changed or
+  # if redo_modals is set to true. Re-render specific Rmd files that have been recently modified 
   
- # if (rmd_newer | redo_modals){
-  #  message(glue("KNITTING: {basename(rmd)}"))
+  if (rmd_newer | redo_modals | cinms_content_changed){
+    message(glue("KNITTING: {basename(rmd)}"))
  #   render_modal(rmd)
-  
-#  }
-  
-  # let's replace the function render_modal(), used in the commented out if statement above,
-  # with the function below which renders the html files from the rmd files, while
-  # generating the tooltips for the html files
-  rmd2html(rmd)
+    rmd2html(rmd)
+  }
   
 }
 
