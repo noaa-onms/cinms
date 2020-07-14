@@ -45,7 +45,7 @@ leaflet(
 ### Trend: Satellite-based SST (CoastWatch)
 
 ```{r}
-csv  <- here(glue("data/oceano/sst_{nms}.csv"))
+csv  <- here(glue("data/oceano/avg-sst_{nms}.csv"))
 url  <- glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv)}")
 html <- a(basename(csv), href=url, target='_blank')
 
