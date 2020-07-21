@@ -4,7 +4,9 @@ library(raster)
 library(rerddap)
 library(glue)
 library(sf)
+library(fs)
 library(tidyverse)
+library(lubridate)
 
 # This function gets the polygons for a National Marine Sanctuary
 get_nms_polygons <- function(nms){
@@ -32,30 +34,48 @@ get_nms_polygons <- function(nms){
 # four digits, month being two digits, and sanctuary being four digits (e.g "cinms" for Channel Islands 
 # National Marine Sanctuary) 
 
-mean_SST <- function (sanctuary, year, month) {
+#mean_SST <- function (sanctuary, year, month) {
+ply2erddap <- function (sanctuary_code, erddap_id, erddap_fld, year, month, stats = c("mean", "sd")) {
+  # sanctuary_code = "cinms"; erddap_id = "jplMURSST41mday"; erddap_fld = "sst"; year = 2020; month = 5; stats = c("mean", "sd")
   
-  # Get the polygons for the sanctuary.
-  sanctuary_area <- get_nms_polygons(sanctuary)
+  # check inputs
+  stopifnot(all(is.numeric(year), is.numeric(month)))
+  
+  # Get the polygons for the sanctuary
+  sanctuary_ply <- get_nms_polygons(sanctuary_code) %>% 
+    st_union(sanctuary_ply) %>% 
+    as_Spatial()
+  
+  # TODO: deal with wrapping around dateline
+  # https://github.com/rstudio/leaflet/issues/225#issuecomment-347721709
   
   # The date range to be considered
-  date_slice<-c(paste0(year,"-",month,'-01'), paste0(year,"-",month,'-28'))
-  
+  m_beg   <- ymd(glue("{year}-{month}-01"))
+  m_end   <- beg + days(days_in_month(beg)) - days(1)
+  m_dates <- c(m_beg, m_end)
+    
   # set the x and y limits of the raster to be pulled based upon the sanctuary polygons
-  bounds<- st_bbox(sanctuary_area)
+  bb <- st_bbox(sanctuary_ply)
   
-  # pull the SST raster data
-  raw_erddap <- griddap(info('jplMURSST41'), time = date_slice, latitude = c(bounds$ymin, bounds$ymax), longitude = c(bounds$xmax, bounds$xmin), fields = 'analysed_sst', fmt = 'csv')
+  # pull the raster data
+  nc <- griddap(
+    info(erddap_id), 
+    time = m_dates, 
+    latitude = c(bb$ymin, bb$ymax), longitude = c(bb$xmax, bb$xmin), 
+    fields = erddap_fld, fmt = 'nc')
   
-  # manipulate the raster data so that it fits into a format that can be understood by the function rasterFromXYZ
-  data_frame_erddap <- data.frame(longitude = round(raw_erddap$longitude, 2), latitude = round(raw_erddap$latitude, 2),sst = raw_erddap$analysed_sst)
+  r <- raster(nc$summary$filename)
+
+  stat <- stats[1]
   
-  # generate the SST raster, overlay the sanctuary polygons over that, and extract the resulting SST values
-  SST_map <- rasterFromXYZ(data_frame_erddap, res = c(0.01, 0.01), crs= "+init=epsg:4326")
-  extracted_SST<- raster::extract(SST_map, sanctuary_area, method='simple')
+  get_stat <- function(stat){
+    fxn <- get(stat)
+    raster::extract(
+      r, sanctuary_ply_1, layer = 1, 
+      method = "simple", fun = fxn)
+  }
   
-  # take the average temperature and then return that as the function value
-  all_temps <- unlist(extracted_SST)
-  return(round(mean(all_temps),3))
+  sapply(stats, get_stat)
 }
 
 # a quick function to generate a table of SST values for the Channel Island NMS from 2002-June 2020
