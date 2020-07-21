@@ -37,9 +37,9 @@
 "36","Figure App.C.4.18b.","","","","","CDFW permits","",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "37","Figure App.D.6.5.","","","","","","",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "38","Figure App.D.6.6.","","","","","","",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"39","Figure App.D.6.7.","","https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100467","","","","",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"40","Figure App.D.7.1.","","https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100429","","N/A","Data referenced from C. Culver unpublished data","",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"41","Figure App.D.7.3.","","https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100429","","https://doi.org/10.1002/2016GL070023","Data referenced from McCabe et al. 2016","",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"39","Figure App.D.6.7.","Santa Barbara Coastal LTER Program","https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100467","Reed et al. 2016","https://doi.org/10.1038/ncomms13757","","",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"40","Figure App.D.7.1.","Plumes and Blooms Monitoring Program","https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100429","","N/A","Data referenced from C. Culver unpublished data","",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"41","Figure App.D.7.3.","","","McCabe et al. 2016","https://doi.org/10.1002/2016GL070023","Data referenced from McCabe et al. 2016","",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "42","Figure App.D.8.3.","","","","","","",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "43","Figure App.D.8.4.","","","","","","",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "44","Figure App.E.10.11.","CINP Sandy Beach Monitoring","https://www.nps.gov/im/medn/sandy-beaches-lagoons.htm","","","Graphs provided by Steve Whitaker, data not publically available","",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -53,7 +53,7 @@
 "52","Figure App.E.10.25.","","","","","National Marine Fisheries Service eelgrass surveys in 2015 Santa Cruz Island","",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "53","Figure App.E.10.26.","","https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100462","","http://doi.org/10.13140/RG.2.1.3430.4085","Figured referenced to Etnoyer et al. 2015","",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "54","Figure App.E.10.28.","","https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100462","","http://doi.org/10.13140/RG.2.1.3430.4085","Figured referenced to MARE (surveys in 2005, 2009, 2015)","",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"55","Figure App.E.10.29.","","https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100462","","http://doi.org/10.13140/RG.2.1.3430.4085","Figured referenced to Etnoyer et al. 2015","",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"55","Figure App.E.10.29.","","https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100462","Etnoyer et al. 2015","http://doi.org/10.13140/RG.2.1.3430.4085","Figured referenced to Etnoyer et al. 2015","",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "56","Figure App.E.11.1.","Mussel Watch Program","https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html","","","Data sourced to D. Whitall/NOS NCCOS Mussel Watch","",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "57","Figure App.E.11.2.","Mussel Watch Program","https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html","","","Data sourced to D. Whitall/NOS NCCOS Mussel Watch","",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "58","Figure App.E.11.3.","Mussel Watch Program","https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html","","","Data sourced to D. Whitall/NOS NCCOS Mussel Watch","",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
