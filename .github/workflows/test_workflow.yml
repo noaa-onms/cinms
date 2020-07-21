@@ -28,6 +28,7 @@ jobs:
         # as I wrote it for my own repo (it didn't work there by the way, with the error message "fatal: invalid refspec 'HEAD:'). Since 
         # the second statement can't possibly work, I have commented it out
        run: | 
+        git config --global user.email "${{secrets.GH_EMAIL}}"; git config --global user.name "${{github.actor}}"
         git add -A; git commit -a -m 'Create deletethis.txt' || echo "No changes to commit"
         git push https://${{github.actor}}:${{secrets.GH_PAT}}@github.com/${{github.repository}}.git HEAD:${{ github.ref }} || echo "No changes to commit"
        # git push https://${superjai}:${TEST_ACTION}@github.com/${stunning-carnival}.git HEAD:${refs/heads/master} || echo "No changes to commit"
