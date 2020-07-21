@@ -23,11 +23,11 @@ jobs:
        # run the r script which generates the file with the current day/time
      - name: Run test R script
        run: Rscript -e 'source("test_script.r")'
-     - name: Commit file
-        # Neither of the following two git statements work. The second statement can't possibly work because I set it up in my own
+     - name: Commit file        # Neither of the following two git statements work. The second statement can't possibly work because I set it up in my own
         # github repo where I could set up Secrets. I don't have such access with the cinms repo, so I just left the second statement as-is
         # as I wrote it for my own repo (it didn't work there by the way, with the error message "fatal: invalid refspec 'HEAD:'). Since 
         # the second statement can't possibly work, I have commented it out
        run: | 
-        git commit -a deletethis.txt -m 'Create deletethis.txt' || echo "No changes to commit"
+        git commit -a -m 'Create deletethis.txt' || echo "No changes to commit"
+        git push https://${{github.actor}}:${{secrets.GH_PAT}}@github.com/${{github.repository}}.git HEAD:${{ github.ref }} || echo "No changes to commit"
        # git push https://${superjai}:${TEST_ACTION}@github.com/${stunning-carnival}.git HEAD:${refs/heads/master} || echo "No changes to commit"
