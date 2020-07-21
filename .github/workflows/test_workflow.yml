@@ -29,5 +29,5 @@ jobs:
         # as I wrote it for my own repo (it didn't work there by the way, with the error message "fatal: invalid refspec 'HEAD:'). Since 
         # the second statement can't possibly work, I have commented it out
        run: | 
-        git commit deletethis.txt -m 'Create deletethis.txt' || echo "No changes to commit"
+        git commit -a deletethis.txt -m 'Create deletethis.txt' || echo "No changes to commit"
        # git push https://${superjai}:${TEST_ACTION}@github.com/${stunning-carnival}.git HEAD:${refs/heads/master} || echo "No changes to commit"
