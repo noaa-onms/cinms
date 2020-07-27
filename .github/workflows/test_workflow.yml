@@ -2,7 +2,6 @@
 # It is based upon the following example: https://ropenscilabs.github.io/actions_sandbox/understanding-yaml.html#r-syntax-options
 name: test workflow
 on:
-  push:
   schedule:
     # * is a special character in YAML so you have to quote this string
     - cron:  '*/5 * * * *'
