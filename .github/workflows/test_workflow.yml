@@ -1,12 +1,11 @@
 # This test workflow is supposed to run a simple r script that writes a file (deletethis.txt) that contains the current day/time
 # It is based upon the following example: https://ropenscilabs.github.io/actions_sandbox/understanding-yaml.html#r-syntax-options
+name: test workflow
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
     - cron:  '*/5 * * * *'
-
-name: test workflow
-
+      
 jobs:
   render:
     name: Run r script
