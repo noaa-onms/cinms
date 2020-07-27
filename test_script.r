@@ -1,3 +1,3 @@
-fileConn<-file("deletethis.txt")
-writeLines(as.character(Sys.time()), fileConn)
-close(fileConn)
+output_test = paste("\r\n", as.character(Sys.time()))
+write(output_test, file = "deletethis.txt", append = T)
+
