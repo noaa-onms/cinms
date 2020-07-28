@@ -15,7 +15,7 @@ jobs:
      - uses: r-lib/actions/setup-r@v1
      - name: install R packages
        # I am adding a random package (it isn't needed by the script) just to make sure that I can add a package at all
-       run: Rscript -e 'install.packages("here")'
+       run: Rscript -e 'install.packages(c("here", "rgdal", "raster", "rerddap", "glue", "sf", "fs", "tidyverse", "lubridate"))'
        # double checking for myself what the current directory is
      - name: Run a one-line script
        run: echo $PWD
