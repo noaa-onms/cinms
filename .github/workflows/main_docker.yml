@@ -6,14 +6,13 @@ jobs:
     name: A job to say hello
     steps:
     - name: Hello world action step
-      uses: marinebon/cinms@v3
+      uses: marinebon/cinms@docker-v01
       id: hello
       with:
         who-to-greet: 'Mintz the Octocat'
-
     # Use the output from the `hello` step
-    - name: install R packages
-       # Add packages needed by R functions for calculating average SST 
-      run: Rscript -e 'install.packages(c("here", "rerddap", "glue", "fs", "tidyverse", "lubridate"))'
+    # - name: install R packages
+    #   Add packages needed by R functions for calculating average SST 
+    #   run: Rscript -e 'install.packages(c("here", "rerddap", "glue", "fs", "tidyverse", "lubridate"))'
     - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"
