@@ -38,7 +38,11 @@ plot_intertidal_nms(nms_spp_sscount_csv, "CINMS", "PISOCH", "Ochre Seastar", fld
 
 `r render_figure("Figure App F.12.2.", "../img/cinms_cr/App.F.12.2.Pochraceus_abundance.jpg")`
 
+`r render_caption("Figure App F.12.2.")`
+
 ### CHIS: Individual Islands
 
 `r render_figure("Figure App.F.12.3.", "../img/cinms_cr/App.F.12.3.Pochraceus_size.jpg")`
+
+`r render_caption("Figure App F.12.3.")`
 

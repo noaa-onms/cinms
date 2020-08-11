@@ -2,10 +2,9 @@
 # It is based upon the following example: https://ropenscilabs.github.io/actions_sandbox/understanding-yaml.html#r-syntax-options
 name: test workflow
 on:
-  push:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '*/5 * * * *'
+    - cron:  '0 * * * *'
       
 jobs:
   render:
@@ -15,20 +14,13 @@ jobs:
      - uses: actions/checkout@v1
      - uses: r-lib/actions/setup-r@v1
      - name: install R packages
-       # I am adding a random package (it isn't needed by the script) just to make sure that I can add a package at all
-       run: Rscript -e 'install.packages("here")'
-       # double checking for myself what the current directory is
-     - name: Run a one-line script
-       run: echo $PWD
+       # Add packages needed by R functions for calculating average SST 
+       run: Rscript -e 'install.packages(c("here", "rgdal", "raster", "rerddap", "glue", "sf", "fs", "tidyverse", "lubridate"))'
        # run the r script which generates the file with the current day/time
      - name: Run test R script
        run: Rscript -e 'source("scripts/test_script2.r")'
-     - name: Commit file        # Neither of the following two git statements work. The second statement can't possibly work because I set it up in my own
-        # github repo where I could set up Secrets. I don't have such access with the cinms repo, so I just left the second statement as-is
-        # as I wrote it for my own repo (it didn't work there by the way, with the error message "fatal: invalid refspec 'HEAD:'). Since 
-        # the second statement can't possibly work, I have commented it out
+     - name: Commit file      
        run: | 
         git config --global user.email "${{secrets.GH_EMAIL}}"; git config --global user.name "${{github.actor}}"
         git add -A; git commit -a -m 'Create deletethis.txt' || echo "No changes to commit"
         git push https://${{github.actor}}:${{secrets.GH_PAT}}@github.com/${{github.repository}}.git HEAD:${{ github.ref }} || echo "No changes to commit"
-       # git push https://${superjai}:${TEST_ACTION}@github.com/${stunning-carnival}.git HEAD:${refs/heads/master} || echo "No changes to commit"
