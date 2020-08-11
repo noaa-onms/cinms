@@ -29,29 +29,36 @@ get_nms_polygons <- function(nms){
     st_transform(4326)
 }
 
-# The following  function generates the mean SST for a national marine sanctuary for a given
-# month. All parameters going into mean_SST have to be given as characters, with year being 
-# four digits, month being two digits, and sanctuary being four digits (e.g "cinms" for Channel Islands 
-# National Marine Sanctuary) 
+# The following  function generates statistics for the SST for a national marine sanctuary for a given
+# month. For the moment, when we say "statistics", we mean the average SST and standard deviation.  
+# Parameters going into the function: 1) sanctuary_code: a string that describes a specific national marine sanctuary,
+# ("cinms" for Channel Islands Marine Sanctuary), 2) erddap_id: the name of the satellite data set to be pulled 
+# from erddap servers ("jplMURSST41mday" for Multi-scale Ultra-high Resolution SST Analysis), 3) erddap_fld: the parameter 
+# to be pulled from the data set ("sst" for sea surface temperature), 4) year: in integer form, 5) month: in integer form,
+# 6) stats: the statistics to be generated for the data set (c("mean", "sd"), to calculate mean and standard deviation).
 
-#mean_SST <- function (sanctuary, year, month) {
-ply2erddap <- function (sanctuary_code, erddap_id, erddap_fld, year, month, stats = c("mean", "sd")) {
-  # sanctuary_code = "cinms"; erddap_id = "jplMURSST41mday"; erddap_fld = "sst"; year = 2020; month = 5; stats = c("mean", "sd")
+ply2erddap <- function (sanctuary_code, erddap_id, erddap_fld, year, month, stats) {
   
   # check inputs
   stopifnot(all(is.numeric(year), is.numeric(month)))
   
-  # Get the polygons for the sanctuary
-  sanctuary_ply <- get_nms_polygons(sanctuary_code) %>% 
-    st_union(sanctuary_ply) %>% 
-    as_Spatial()
+  # Get the polygons for the sanctuary. The first version of this, which is commented out below, is written in tidyverse 
+  # form, but doesn't work. The following error is produced when the tidyverse version is run: 
+  # Error in UseMethod("st_geometry") : no applicable method for 'st_geometry' applied to an object of class "c('SpatialPolygonsDataFrame', 'SpatialPolygons', 'Spatial', 'SpatialVector')"
   
+  # sanctuary_ply <- get_nms_polygons(sanctuary_code) %>% 
+  # st_union(sanctuary_ply) %>% 
+  # as_Spatial()
+  
+  # Get the polygons for the sanctuary, written in the more traditional fashion (and does work)
+  sanctuary_ply <-   as_Spatial(st_union(get_nms_polygons(sanctuary_code)))
+
   # TODO: deal with wrapping around dateline
   # https://github.com/rstudio/leaflet/issues/225#issuecomment-347721709
   
   # The date range to be considered
   m_beg   <- ymd(glue("{year}-{month}-01"))
-  m_end   <- beg + days(days_in_month(beg)) - days(1)
+  m_end   <- m_beg + days(days_in_month(m_beg)) - days(1)
   m_dates <- c(m_beg, m_end)
     
   # set the x and y limits of the raster to be pulled based upon the sanctuary polygons
@@ -63,34 +70,40 @@ ply2erddap <- function (sanctuary_code, erddap_id, erddap_fld, year, month, stat
     time = m_dates, 
     latitude = c(bb$ymin, bb$ymax), longitude = c(bb$xmax, bb$xmin), 
     fields = erddap_fld, fmt = 'nc')
+
+  # Extract the raster from the data object. Confusingly, running the following line generates
+  # the following error, but the code still runs and produces output:
+  # Error in as.Date(time, origin = startDate) : object 'startDate' not found
   
   r <- raster(nc$summary$filename)
 
-  stat <- stats[1]
+  # The following get_stat function extracts a statistical value (eg. mean or standard deviation) from the raster
+  # cells remaining after being overlaid with the sanctuary polygons
   
   get_stat <- function(stat){
     fxn <- get(stat)
     raster::extract(
-      r, sanctuary_ply_1, layer = 1, 
+      r, sanctuary_ply, layer = 1, 
       method = "simple", fun = fxn)
   }
   
+  # Let's run the function get_stat for every statistic asked for by the parameter value stats - this is the overall function output
   sapply(stats, get_stat)
 }
 
-# a quick function to generate a table of SST values for the Channel Island NMS from 2002-June 2020
+# a quick function to generate a table of SST values for the Channel Island NMS from 2002-July 2020
 generate_all_SST<- function(){
-  date_SST <- data.frame(Date = seq(as.Date("2002-06-06"), by = "month", length.out = 216), Avg_SST = 0) # 216
+  date_SST <- seq(as.Date("2002-06-06"), by = "month", length.out = 218) 
   SST_file <- paste0(here("data/oceano/"),"avg-sst_cinms.csv")
   file.create(SST_file, showWarnings = TRUE)
-  write("Date,Average_SST", file = SST_file, append = TRUE)
+  write("Date,Average_SST,Standard_Deviation_SST", file = SST_file, append = TRUE)
   
-  for (i in 1:nrow(date_SST)){
-    year <- substr(date_SST$Date[i], 1, 4)
-    month <- substr(date_SST$Date[i], 6, 7)
-    print (date_SST$Date[i])
-    date_SST$Avg_SST[i] = mean_SST("cinms", year, month)
-    write(paste0(date_SST$Date[i],",",date_SST$Avg_SST[i]), file = SST_file, append = TRUE)
+  for (i in 1:length(date_SST)){
+    year <- as.numeric(substr(date_SST[i], 1, 4))
+    month <- as.numeric(substr(date_SST[i], 6, 7))
+    print (date_SST[i])
+    write_out = ply2erddap(sanctuary_code = "cinms", erddap_id = "jplMURSST41mday", erddap_fld = "sst", year = year, month = month, stats = c("mean", "sd"))
+    write(paste0(date_SST[i], "," , round(write_out[1], 5), "," , round(write_out[2], 5)), file = SST_file, append = TRUE)
   }
   return(invisible())
 }
