@@ -24,26 +24,26 @@ sanctuaries <- c("cinms", "mbnms", "ocnms")
 dir_gdrive <- "/Volumes/GoogleDrive/Shared drives/NMS/data"
 dir_pfx     <- file.path(dir_gdrive, "github_info-intertidal_data")
 
-dir_shp     <- file.path(dir_pfx, "data/shp")
-#raw1_csv   <- file.path(dir_pfx, "data/MARINe_raw_4c1e_9218_7d13.csv")
-#raw2_csv   <- file.path(dir_pfx, "data/MARINe_raw_1c3b_9486_c22d.csv")
-raw_csv     <- file.path(dir_pfx, "data/MARINe_raw_84af_263b_1183.csv")
-sscount_csv <- file.path(dir_pfx, "data/MARINe_sscount_32ad_18f5_c37e.csv")
-sssize_csv  <- file.path(dir_pfx, "data/MARINe_sssize_f3df_630e_2c43.csv")
+dir_shp     <- file.path(dir_pfx, "shp")
+#raw1_csv   <- file.path(dir_pfx, "MARINe_raw_4c1e_9218_7d13.csv")
+#raw2_csv   <- file.path(dir_pfx, "MARINe_raw_1c3b_9486_c22d.csv")
+raw_csv     <- file.path(dir_pfx, "MARINe_raw_84af_263b_1183.csv")
+sscount_csv <- file.path(dir_pfx, "MARINe_sscount_32ad_18f5_c37e.csv")
+sssize_csv  <- file.path(dir_pfx, "MARINe_sssize_f3df_630e_2c43.csv")
 raw_fmt     <- "csv" # or "csvp"
-sites_csv   <- file.path(dir_pfx, "data/MARINe_sites.csv")
-d_csv       <- file.path(dir_pfx, "data/sanctuary_species_percentcover.csv")
-nms_spp_sscount_csv     <- file.path(dir_pfx, "data/sanctuary_species_sscount.csv")
-sscount_spp_csv         <- file.path(dir_pfx, "data/sscount_spp.csv")
-sscount_spp_methods_csv <- file.path(dir_pfx, "data/sscount_spp_methods.csv")
-raw_n_csv <- file.path(dir_pfx, "data/raw_summary_n.csv")
-spp_csv   <- file.path(dir_pfx, "data/spp_targets.csv")
-#nms_spp_csv <- file.path(dir_pfx, "data/nms_spp_targets.csv")
-nms_spp_csv     <- file.path(dir_pfx, "data/nms_spp.csv")
-nms_spp_rgn_csv <- file.path(dir_pfx, "data/nms_spp_rgn.csv")
+sites_csv   <- file.path(dir_pfx, "MARINe_sites.csv")
+d_csv       <- file.path(dir_pfx, "Sanctuary_species_percentcover.csv")
+nms_spp_sscount_csv     <- file.path(dir_pfx, "sanctuary_species_sscount.csv")
+sscount_spp_csv         <- file.path(dir_pfx, "sscount_spp.csv")
+sscount_spp_methods_csv <- file.path(dir_pfx, "sscount_spp_methods.csv")
+raw_n_csv <- file.path(dir_pfx, "raw_summary_n.csv")
+spp_csv   <- file.path(dir_pfx, "spp_targets.csv")
+#nms_spp_csv <- file.path(dir_pfx, "nms_spp_targets.csv")
+nms_spp_csv     <- file.path(dir_pfx, "nms_spp.csv")
+nms_spp_rgn_csv <- file.path(dir_pfx, "nms_spp_rgn.csv")
 #nms_rgns_csv    <- "https://docs.google.com/spreadsheets/d/1Prm_NxhnRvGTIG7bqw4st8tt0NYnQWZ3/export?format=csv&gid=178828096"
-#nms_rgns_cache_csv <- file.path(dir_pfx, "data/MARINe_graphs.xlsx - sites in regions.csv")
-nms_rgns_csv    <- file.path(dir_pfx, "data/MARINe_graphs.xlsx - sites in regions.csv")
+#nms_rgns_cache_csv <- file.path(dir_pfx, "MARINe_graphs.xlsx - sites in regions.csv")
+nms_rgns_csv    <- file.path(dir_pfx, "MARINe_graphs.xlsx - sites in regions.csv")
 
 redo <- F # redo <- T
 
@@ -82,10 +82,10 @@ nms_rgns <- read_csv(nms_rgns_csv) %>%
 # range(raw0$time) # "2002-10-18 UTC" "2017-08-21 UTC"
 # range(raw$time)  # "2019-08-30 UTC" "2019-08-31 UTC"
 # 
-# sscount1_csv <- file.path(dir_pfx, "data/MARINe_sscount_2c08_916b_1ec6.csv")
-# sscount2_csv <- file.path(dir_pfx, "data/MARINe_sscount_1147_c85f_673a.csv")
-# sssize1_csv  <- file.path(dir_pfx, "data/MARINe_sssize_438a_fbe9_efa6.csv")
-# sssize2_csv  <- file.path(dir_pfx, "data/MARINe_sssize_18aa_9665_ac05.csv")
+# sscount1_csv <- file.path(dir_pfx, "MARINe_sscount_2c08_916b_1ec6.csv")
+# sscount2_csv <- file.path(dir_pfx, "MARINe_sscount_1147_c85f_673a.csv")
+# sssize1_csv  <- file.path(dir_pfx, "MARINe_sssize_438a_fbe9_efa6.csv")
+# sssize2_csv  <- file.path(dir_pfx, "MARINe_sssize_18aa_9665_ac05.csv")
 # 
 # sscount1 <- read_csv(sscount1_csv)
 # names(sscount1) <- names(sscount1) %>% str_replace(" \\(.*\\)", "")
@@ -109,8 +109,8 @@ nms_rgns <- read_csv(nms_rgns_csv) %>%
 # range(sssize1$time) # 2017-01-01 to 2017-01-01
 # range(sssize2$time) # 2019-01-01 to 2019-01-01
 # 
-# sum1_csv <- file.path(dir_pfx, "data/MARINe_sum_dc16_720d_a67b.csv")
-# sum2_csv <- file.path(dir_pfx, "data/MARINe_sum_4395_f3d7_4b15.csv")
+# sum1_csv <- file.path(dir_pfx, "MARINe_sum_dc16_720d_a67b.csv")
+# sum2_csv <- file.path(dir_pfx, "MARINe_sum_4395_f3d7_4b15.csv")
 # 
 # sum1 <- read_csv(sum1_csv)
 # names(sum1) <- names(sum1) %>% str_replace(" \\(.*\\)", "")
@@ -129,15 +129,15 @@ nms_rgns <- read_csv(nms_rgns_csv) %>%
 get_nms_ply <- function(nms){
   # get polygon for National Marine Sanctuary
   
-  nms_shp <- glue("{dir_pfx}/data/shp/{nms}_py.shp")
+  nms_shp <- glue("{dir_pfx}/shp/{nms}_py.shp")
   
   if (!file.exists(nms_shp)){
     # download if needed
     
     # https://sanctuaries.noaa.gov/library/imast_gis.html
     nms_url <- glue("https://sanctuaries.noaa.gov/library/imast/{nms}_py2.zip")
-    nms_zip <- here(glue("data/{nms}.zip"))
-    shp_dir <- here("data/shp")
+    nms_zip <- here(glue("{nms}.zip"))
+    shp_dir <- here("shp")
     
     download.file(nms_url, nms_zip)
     unzip(nms_zip, exdir = shp_dir)
@@ -374,7 +374,7 @@ make_nms_spp_pctcover <- function(sanctuaries, raw_csv, d_csv, redo = F){
     message(glue("{i} of {length(sanctuaries)} nms: {NMS}"))
     
     # get sites in nms
-    sites_nms_shp <- file.path(dir_pfx, glue("data/shp/{NMS}_sites.shp"))
+    sites_nms_shp <- file.path(dir_pfx, glue("shp/{NMS}_sites.shp"))
     if (!file.exists(sites_nms_shp)){
       nms_ply <- get_nms_ply(nms)
       sites_nms_pts <- sites_pts %>%
@@ -390,7 +390,7 @@ make_nms_spp_pctcover <- function(sanctuaries, raw_csv, d_csv, redo = F){
     # m <- mapview(nms_ply) + sites_nms_pts
     # print(m)
     
-    nms_spp_csv <- file.path(dir_pfx, glue("data/{NMS}_species.csv"))
+    nms_spp_csv <- file.path(dir_pfx, glue("{NMS}_species.csv"))
     if (!file.exists(nms_spp_csv) | redo){
       
       #browser()
@@ -505,7 +505,7 @@ make_nms_spp_sscount <- function(sanctuaries, sscount_csv, nms_spp_sscount_csv, 
     message(glue("{i} of {length(sanctuaries)} nms: {NMS}"))
     
     # get sites in nms
-    sites_nms_shp <- file.path(dir_pfx, glue("data/shp/{NMS}_sites.shp"))
+    sites_nms_shp <- file.path(dir_pfx, glue("shp/{NMS}_sites.shp"))
     if (!file.exists(sites_nms_shp)){
       nms_ply <- get_nms_ply(nms)
       sites_nms_pts <- sites_pts %>%
@@ -521,7 +521,7 @@ make_nms_spp_sscount <- function(sanctuaries, sscount_csv, nms_spp_sscount_csv, 
     # m <- mapview(nms_ply) + sites_nms_pts
     # print(m)
     
-    nms_spp_csv <- file.path(dir_pfx, glue("data/{NMS}_sscount_species.csv"))
+    nms_spp_csv <- file.path(dir_pfx, glue("{NMS}_sscount_species.csv"))
     if (!file.exists(nms_spp_csv) | redo){
       
       #browser()
@@ -623,7 +623,7 @@ if (!file.exists(nms_spp_csv) | redo){
   if (file.exists(nms_spp_csv)) file.remove(nms_spp_csv)
   
   nms_spp <- map(sanctuaries, function(nms){
-    nms_spp_csv <- glue("{dir_pfx}/data/{toupper(nms)}_species.csv")
+    nms_spp_csv <- glue("{dir_pfx}/{toupper(nms)}_species.csv")
     read_csv(nms_spp_csv) %>% 
       mutate(nms = !!nms)}) %>% 
     bind_rows() %>% 
