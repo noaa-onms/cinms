@@ -102,7 +102,6 @@ add_icons <- function(info_url = NULL, photo_url = NULL){
 
 get_modal_info <- function(
   rmd = knitr::current_input(),
-  #info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=ecosystems"){
   info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_modal_links"){
   
   # rmd = "infauna.Rmd"
@@ -223,16 +222,18 @@ render_figure <- function(figure_id, figure_img){
   ")
 }
 
-# Draft version of code to render modal windows with tooltips. The overall idea is to generate a markdown file from a 
-# given modal rmd file. Within that markdown file, we then insert the javascript package tippy as well as inserting the
-# specific tippy tooltip. We then generate a html file for the modal window from the modified markdown file and then
-# delete the markdown file
-
-# The purpose of the following function is, for a provided section of text, to insert the required tooltip css around a 
-# provided glossary term. The function preserves the pattern of capitalization of the glossary term that already exists. 
-# The function requires three parameters: 1) text: the section of text where we are looking to add tooltips, 2) 
-# glossary_term: the glossary term that we are looking for, 3) span_css: the css tags to add before the glossary term
 insert_tooltip<- function(text, glossary_term, span_css){
+  # Draft version of code to render modal windows with tooltips. The overall idea is to generate a markdown file from a 
+  # given modal rmd file. Within that markdown file, we then insert the javascript package tippy as well as inserting the
+  # specific tippy tooltip. We then generate a html file for the modal window from the modified markdown file and then
+  # delete the markdown file
+  
+  # The purpose of the following function is, for a provided section of text, to insert the required tooltip css around a 
+  # provided glossary term. The function preserves the pattern of capitalization of the glossary term that already exists. 
+  # The function requires three parameters: 1) text: the section of text where we are looking to add tooltips, 2) 
+  # glossary_term: the glossary term that we are looking for, 3) span_css: the css tags to add before the glossary term
+  
+  
   
   # We start by splitting the text by the glossary term and then separately saving the glossary terms. This is done
   # so that we can preserve the pattern of capitalization of the glossary term

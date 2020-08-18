@@ -20,7 +20,10 @@ sanctuaries <- c("cinms", "mbnms", "ocnms")
 #   logged in as ben@ecoquants.com,
 #   search for "MARINe_ -cciea"
 
-dir_pfx     <- here("../info-intertidal")
+#dir_pfx     <- here("../info-intertidal")
+dir_gdrive <- "/Volumes/GoogleDrive/Shared drives/NMS/data"
+dir_pfx     <- file.path(dir_gdrive, "github_info-intertidal_data")
+
 dir_shp     <- file.path(dir_pfx, "data/shp")
 #raw1_csv   <- file.path(dir_pfx, "data/MARINe_raw_4c1e_9218_7d13.csv")
 #raw2_csv   <- file.path(dir_pfx, "data/MARINe_raw_1c3b_9486_c22d.csv")
@@ -476,18 +479,10 @@ make_nms_spp_pctcover <- function(sanctuaries, raw_csv, d_csv, redo = F){
   }
 }
 
-#ocnms <- get_nms_ply("ocnms")
-#map_nms_sites("ocnms")
-
-if (!file.exists(d_csv) | redo){
-  # NOTE: remake d_csv if adding a sanctuary or species
-  make_nms_spp_pctcover(sanctuaries, raw_csv, d_csv, redo = redo)
-}
-
 make_nms_spp_sscount <- function(sanctuaries, sscount_csv, nms_spp_sscount_csv, redo = F){
   
   sscount <- read_csv_fmt(sscount_csv)
-
+  
   if (!file.exists(sscount_spp_csv) | redo){
     
     sscount %>% 
@@ -552,9 +547,9 @@ make_nms_spp_sscount <- function(sanctuaries, sscount_csv, nms_spp_sscount_csv, 
       # set species variables
       sp        <- nms_spp$sp[j]
       sp_method <- nms_spp$sp_method[j]
-
+      
       message(glue("  {j} of {nrow(nms_spp)} sp: {sp}, method = {sp_method}"))
-    
+      
       # filter for nms-sp-method
       d_sites <- sscount %>%
         rename(site = marine_site_name) %>%
@@ -611,6 +606,11 @@ make_nms_spp_sscount <- function(sanctuaries, sscount_csv, nms_spp_sscount_csv, 
 
 #ocnms <- get_nms_ply("ocnms")
 #map_nms_sites("ocnms")
+
+if (!file.exists(d_csv) | redo){
+  # NOTE: remake d_csv if adding a sanctuary or species
+  make_nms_spp_pctcover(sanctuaries, raw_csv, d_csv, redo = redo)
+}
 
 if (!file.exists(nms_spp_sscount_csv) | redo){
   # NOTE: remake d_csv if adding a sanctuary or species
