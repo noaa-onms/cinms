@@ -178,7 +178,7 @@ plot_SST_timeseries <- function(csv){
   # Read in the csv file
   SST_history <- read.csv(csv, header = TRUE)
   
-  # create a data frame which lines up the data in which dygraph needs it
+  # create a data frame which lines up the data in the way that dygraph needs it
   SST_history <- data.frame(date = as.Date(SST_history$date, "%Y-%m-%d"), SST = SST_history$average_SST, lower = SST_history$average_SST-SST_history$standard_deviation_SST, upper = SST_history$average_SST+SST_history$standard_deviation_SST)
   SST_history <- xts(x = SST_history[,-1], order.by = SST_history$date)
   
