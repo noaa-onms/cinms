@@ -108,3 +108,32 @@ generate_all_SST<- function(){
   return(invisible())
 }
 
+
+generate_latest_SST<- function(){
+  # this function generates the SST statistics for the latest month of available data. It (hopefully) is
+  # run near the beginning of the month and generates the SST statistics for the month before that.
+  
+  # a function to generate first day of current month
+  som <- function(x) {
+    as.Date(format(x, "%Y-%m-01"))
+  }
+
+  # calculate the month and year of last month  
+  last_month <- som(som(Sys.Date()) - 1)
+  year <- as.numeric(substr(last_month, 1, 4))
+  month <- as.numeric(substr(last_month, 6, 7))
+  
+  # The date range to be considered
+  m_beg   <- ymd(glue("{year}-{month}-01"))
+  m_end   <- m_beg + days(days_in_month(m_beg)) - days(1)
+  m_dates <- c(m_beg, m_end)
+  
+  # write to this file
+  SST_file <- paste0(here("data/oceano/"),"avg-sst_cinms.csv")
+
+  # generate requested statistics using the ply2erddap function and then append the requested data to 
+  # the csv file that has the data
+  write_out = ply2erddap(sanctuary_code = "cinms", erddap_id = "jplMURSST41mday", erddap_fld = "sst", year = year, month = month, stats = c("mean", "sd"))
+  write(paste0(year, "," , month, "," , round(write_out[1], 5), "," , round(write_out[2], 5)), file = SST_file, append = TRUE)
+  return(invisible())
+}

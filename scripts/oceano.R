@@ -119,7 +119,7 @@ map_raster_2 <- function(r, site_lon, site_lat, site_label, title){
 }
 
 get_timeseries <- function(info, lon, lat, csv, field="sst"){
-
+ 
   dates  <- get_dates(info)
 
   if (file.exists(csv)){
@@ -168,4 +168,22 @@ plot_timeseries <- function(d, title="SST", color="red", dyRangeSelector=T, ...)
       dyRangeSelector()
   }
   p
+}
+
+plot_SST_timeseries <- function(csv){
+  # The purpose of this function is to generate the figure showing the sea surface temperature time series 
+  # for a Sanctuary (displaying both avg and standard deviation of temp). The function has one parameter
+  # (csv) which is the path name for the csv data file to be plotted
+  
+  # Read in the csv file
+  SST_history <- read.csv(csv, header = TRUE)
+  
+  # create a data frame which lines up the data in which dygraph needs it
+  SST_history <- data.frame(date = as.Date(SST_history$date, "%Y-%m-%d"), SST = SST_history$average_SST, lower = SST_history$average_SST-SST_history$standard_deviation_SST, upper = SST_history$average_SST+SST_history$standard_deviation_SST)
+  SST_history <- xts(x = SST_history[,-1], order.by = SST_history$date)
+  
+  # create the figure
+  dygraph(SST_history, main = "Sea Surface Temperature", xlab = "Date", ylab = "Temperature (°C)")%>%
+    dySeries(c("lower", "SST", "upper"), label = "Temperature (°C)", color = "Red")%>%
+    dyRangeSelector()
 }

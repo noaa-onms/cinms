@@ -55,7 +55,7 @@ The sea-surface temperature dataset collected via satellite is the [Multi-scale 
 
 ## Figure Ux.Ocean.SST.ERD.timeseries.
 
-Plot of sea-surface temperature values over time within the Sanctuary.
+The average sea-surface temperature over time across the Sanctuary. The gray bar at the bottom of the figure can be used to zoom in to specific dates, using the small slider buttons on either edge of the gray bar. In the figure, the dark red line is the average temperature, while the lighter pink area indicates the standard deviation of that temperature across the Sanctuary. 
 
 ### Details
 
