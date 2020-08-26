@@ -2,7 +2,7 @@
 output:
    html_document:
       self_contained: false
-      keep_md: true
+      keep_md: false
 ---
 
 

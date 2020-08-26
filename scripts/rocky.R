@@ -32,7 +32,7 @@ sscount_csv <- file.path(dir_pfx, "MARINe_sscount_32ad_18f5_c37e.csv")
 sssize_csv  <- file.path(dir_pfx, "MARINe_sssize_f3df_630e_2c43.csv")
 raw_fmt     <- "csv" # or "csvp"
 sites_csv   <- file.path(dir_pfx, "MARINe_sites.csv")
-d_csv       <- file.path(dir_pfx, "Sanctuary_species_percentcover.csv")
+d_csv       <- file.path(dir_pfx, "sanctuary_species_percentcover.csv")
 nms_spp_sscount_csv     <- file.path(dir_pfx, "sanctuary_species_sscount.csv")
 sscount_spp_csv         <- file.path(dir_pfx, "sscount_spp.csv")
 sscount_spp_methods_csv <- file.path(dir_pfx, "sscount_spp_methods.csv")
@@ -149,7 +149,7 @@ get_nms_ply <- function(nms){
 }
 
 plot_intertidal_nms <- function(
-  d_csv, NMS, spp, sp_name, spp_targets = NA,
+  d_csv, NMS, spp, sp_name, spp_targets = NULL,
   fld_val = "pct_cover", label_y = "Annual Mean Percent Cover (%)",
   label_x = "Year", nms_skip_regions = c("OCNMS","MBNMS")){
   # NMS = "OCNMS"; spp = "CHTBAL"; sp_name = "Acorn Barnacles"
@@ -157,6 +157,9 @@ plot_intertidal_nms <- function(
   # NMS="OCNMS"; spp = "PELLIM"; sp_name = "Dwarf Rockweed"; nms_skip_regions = c("MBNMS")
   # NMS="CINMS"; spp="CHTBAL"; sp_name="Acorn Barnacles"
   # NMS="MBNMS"; "PELLIM"; "Dwarf Rockweed"
+  # NMS="CINMS"; spp="CHTBAL"; sp_name="Acorn Barnacles [target = balanus | chthamalus_balanus]"; spp_targets=c("balanus", "chthamalus_balanus")
+  # fld_val = "pct_cover"; label_y = "Annual Mean Percent Cover (%)"; label_x = "Year"; nms_skip_regions = c("OCNMS","MBNMS")
+  
   
   #plot_intertidal_nms(nms_spp_sscount_csv, "CINMS", "PISOCH", "Ochre Seastar")
   # d_csv = nms_spp_sscount_csv; NMS = "CINMS"; spp = "PISOCH"; sp_name = "Ochre Seastar"
@@ -167,14 +170,13 @@ plot_intertidal_nms <- function(
   #d_csv; NMS="CINMS"; spp="MYTCAL"; sp_name="California Mussels [target = mytilus]"; spp_targets="mytilus"
 
   # read in csv with fields site, date, pct_cover|count
-  flds_rename <- list(v = sym(fld_val))
-  d <- read_csv(d_csv) %>% # table(d$nms)
-  #d <- read_csv(nms_spp_sscount_csv) %>% # table(d$nms)
+  # read_csv(d_csv) %>% names()
+  # read_csv(d_csv) %>% select(nms, sp) %>% table()
+  d <- read_csv(d_csv) %>% #head() # table(d$nms)
     filter(nms == NMS, sp %in% spp) %>% 
-    #rename(!!!flds_rename)
     rename(v = !!fld_val)
   
-  if (!is.na(spp_targets)){
+  if (!is.null(spp_targets)){
     #browser()
     d <- d %>%
       filter(sp_target %in% spp_targets)
