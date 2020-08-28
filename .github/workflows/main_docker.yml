@@ -11,10 +11,9 @@ jobs:
       with:
         who-to-greet: 'Mintz the Octocat'
     # Use the output from the `hello` step
-    # - name: install R packages
+    - name: install R packages
     #   Add packages needed by R functions for calculating average SST 
-       run: Rscript -e 'install.packages("devtools")'
-            - name: Run test R script
+      run: Rscript -e 'install.packages("devtools")'
     - name: run test script
       run: Rscript -e 'source("scripts/test_script3.R")'
     - name: Get the output time
