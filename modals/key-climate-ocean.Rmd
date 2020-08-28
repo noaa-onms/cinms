@@ -37,8 +37,7 @@ leaflet(
     options = WMSTileOptions(
       version = "1.3.0", format = "image/png", transparent = T, opacity = 0.7,
       time = format(date_end,"%Y-%m-%dT00:00:00Z")))  %>%
-  addPolygons() %>% 
-  addMarkers(lng = ~lon, lat = ~lat, label = ~id, data=site) %>%
+  addPolygons() %>%
   addMouseCoordinates() %>%
   addLegend(
     position="bottomright",
