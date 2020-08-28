@@ -15,7 +15,9 @@ jobs:
      - uses: r-lib/actions/setup-r@v1
      - name: install R packages
        # Add packages needed by R functions for calculating average SST 
-       run: Rscript -e 'install.packages(c("here", "rgdal", "raster", "rerddap", "glue", "sf", "fs", "tidyverse", "lubridate"))'
+       # run: Rscript -e 'install.packages(c("here", "rgdal", "raster", "rerddap", "glue", "sf", "fs", "tidyverse", "lubridate"))'
+       run: Rscript -e 'install.packages("devtools")'
+
        # run the r script which generates the file with the current day/time
      - name: Run test R script
        run: Rscript -e 'source("scripts/test_script2.r")'
