@@ -4,7 +4,7 @@ name: test workflow
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string - change cron string to '0 * 7 * *' to run once on the 7th day of the month
-    - cron:  '0 * * * *'
+    - cron:  '0 * 7 * *'
       
 jobs:
   render:
