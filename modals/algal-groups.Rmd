@@ -1,3 +1,10 @@
+---
+output:
+   html_document:
+      self_contained: false
+      keep_md: false
+---
+
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 source(here::here("../cinms/scripts/rocky.R"))
