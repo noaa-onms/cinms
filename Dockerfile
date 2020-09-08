@@ -8,13 +8,13 @@ RUN install2.r --error \
   here \
   lubridate \
   rerddap \
-  tidyverse \
-  devtools
+  tidyverse 
   
 RUN installGithub.r marinebon/nms4r
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
-COPY entrypoint.sh /entrypoint.sh
+COPY entrypoint.r /entrypoint.r
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
-ENTRYPOINT ["/entrypoint.sh"]
+CMD R -e "source('/entrypoint.r')"
+#ENTRYPOINT ["/entrypoint.r"]
