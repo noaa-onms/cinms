@@ -16,5 +16,4 @@ RUN installGithub.r marinebon/nms4r
 COPY entrypoint.r /entrypoint.r
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
-CMD R -e "source('/entrypoint.r')"
-#ENTRYPOINT ["/entrypoint.r"]
+RUN R -e "source('/entrypoint.r')"
