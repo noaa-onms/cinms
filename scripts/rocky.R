@@ -159,7 +159,7 @@ plot_intertidal_nms <- function(
   # NMS="MBNMS"; "PELLIM"; "Dwarf Rockweed"
   # NMS="CINMS"; spp="CHTBAL"; sp_name="Acorn Barnacles [target = balanus | chthamalus_balanus]"; spp_targets=c("balanus", "chthamalus_balanus")
   # fld_val = "pct_cover"; label_y = "Annual Mean Percent Cover (%)"; label_x = "Year"; nms_skip_regions = c("OCNMS","MBNMS")
-  
+  # d_csv; NMS = "CINMS"; spp ="SILCOM"; sp_name = "Golden Rockweed" ; spp_targets = NULL
   
   #plot_intertidal_nms(nms_spp_sscount_csv, "CINMS", "PISOCH", "Ochre Seastar")
   # d_csv = nms_spp_sscount_csv; NMS = "CINMS"; spp = "PISOCH"; sp_name = "Ochre Seastar"

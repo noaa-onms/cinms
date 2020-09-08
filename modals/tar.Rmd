@@ -1,5 +1,13 @@
+---
+output:
+   html_document:
+      self_contained: false
+      keep_md: false
+---
+
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("../cinms/scripts/rocky.R"))
 source(here::here("scripts/utility.R"))
 ```
 
@@ -8,5 +16,9 @@ source(here::here("scripts/utility.R"))
 ##  {.tabset} 
 
 ### Trend: Tar
+`r get_figure_info("Figure App.E.11.8.")`
+```{r}
+plot_intertidal_nms(d_csv, "CINMS", "TAR", "Tar")
+```
+`r render_caption("Figure App.E.11.8.")`
 
-`r render_figure("Figure App.E.11.8.", "../img/cinms_cr/App.E.11.8.png")`
