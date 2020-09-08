@@ -40,8 +40,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2    
       - name: Load docker image
-#         uses: docker://bdbest/cinms:1.0
-        uses: marinebon/cinms@docker-v02
+        uses: docker://bdbest/cinms:1.0
+#         uses: marinebon/cinms@docker-v02
         # uses: marinebon/cinms@docker-v01
   #    - name: install R packages
    #     run: Rscript -e 'install.packages("devtools")'
