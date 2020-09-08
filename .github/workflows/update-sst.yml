@@ -41,6 +41,8 @@ jobs:
       - uses: actions/checkout@v2    
       - name: Load docker image
         uses: docker://bdbest/cinms:1.0
+        env:
+          PASSWORD: t3mporarY
 #         uses: marinebon/cinms@docker-v02
         # uses: marinebon/cinms@docker-v01
   #    - name: install R packages
