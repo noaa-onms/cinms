@@ -7,36 +7,25 @@ on:
 jobs:    
   build:
     runs-on: ubuntu-latest
-    container: bdbest/nms:0.1 # docker image
+    if: "!contains(github.event.head_commit.message, 'ci skip')"
+    container: bdbest/cinms:1.0 # docker image
     env:
       PASSWORD: t3mporarY
     steps:
       - uses: actions/checkout@v2 
         with:
-          fetch-depth: 0
-      - name: check git 1
-        run: cd $GITHUB_WORKSPACE; ls .git
-      - name: generate SST
+          fetch-depth: 1
+      - name: update SST
         run: Rscript -e 'source("entrypoint.r")'
-      - name: check git 2
-        run: cd $GITHUB_WORKSPACE; ls .git
-      - name: workspace
-        run: |
-          echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE"
-      - name: random number
-        run: |
-          echo $RANDOM > _test_random.txt
-          cat _test_random.txt            
-      - name: check git 3
-        run: cd $GITHUB_WORKSPACE; ls .git
+#       - name: random number
+#         run: |
+#           echo $RANDOM > _test_random.txt
+#           cat _test_random.txt            
       - name: Commit files
         run: |
-          cd $GITHUB_WORKSPACE
-          echo $GITHUB_WORKSPACE
-          pwd
-          ls .git
           git config --local user.email "ben@ecoquants.com"
           git config --local user.name "GitHub Action"
+#          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git add -A
           git commit -a -m "updates from Action: update-sst.yml"
           git push 
