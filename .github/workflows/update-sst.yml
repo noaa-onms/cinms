@@ -61,6 +61,7 @@ jobs:
         # run: Rscript -e 'source("scripts/test_script3.R")'
         run: Rscript -e 'source("entrypoint.r")'
       - name: Commit files
+        shell: bash
         run: |
           git config --local user.email "ben@ecoquants.com"
           git config --local user.name "GitHub Action"
