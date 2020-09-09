@@ -16,10 +16,13 @@ jobs:
           ls
           pwd
           git --version
-      - name: copy repository
-        run: |
-          git clone --depth 1 https://github.com/${{ github.repository }}.git .
+#       - name: copy repository
+#         run: |
+#           git clone --depth 1 https://github.com/${{ github.repository }}.git .
 #          git remote set-url origin https://bbest:${GH_PAT}@github.com/${GITHUB_REPOSITORY}.git
+      - uses: actions/checkout@v2 
+        with:
+          fetch-depth: 1
       - name: random number
         run: |
           echo $RANDOM > _test_random.txt
@@ -32,9 +35,9 @@ jobs:
           cat .git/config
       - name: commit changes
         run: |
-          git config --local user.email "ben@ecoquants.com"
-          git config --local user.name "Ben Best"
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+#          git config --local user.email "ben@ecoquants.com"
+#          git config --local user.name "Ben Best"
+#          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git add -A
           git commit -a -m "changes from workflow ${GITHUB_WORKFLOW} [ci skip]"
           git push
