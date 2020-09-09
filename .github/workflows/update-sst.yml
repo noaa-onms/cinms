@@ -56,3 +56,12 @@ jobs:
       - name: generate SST
         # run: Rscript -e 'source("scripts/test_script3.R")'
         run: Rscript -e 'source("entrypoint.r")'
+      - name: Commit files
+        run: |
+          git config --local user.email "ben@ecoquants.com"
+          git config --local user.name "GitHub Action"
+          git commit -m "Add changes" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GH_PAT }}
