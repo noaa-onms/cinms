@@ -77,3 +77,10 @@ git clone https://github.com/marinebon/cinms.git
 cd cinms
 Rscript -e 'source("entrypoint.r")'
 ```
+
+## git tag
+
+```bash
+git tag docker-v02
+git push origin --tags
+```
