@@ -63,6 +63,7 @@ jobs:
       - name: Commit files
         shell: bash
         run: |
+          cd ${{ GITHUB_WORKSPACE }}
           git config --local user.email "ben@ecoquants.com"
           git config --local user.name "GitHub Action"
           git add -A
