@@ -5,9 +5,13 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to run nms4r functions
     steps:
-    - name: Load docker image
-      uses: marinebon/cinms@docker-v01
-#    - name: install R packages
- #     run: Rscript -e 'install.packages("devtools")'
-    - name: run test script
-      run: Rscript -e 'source("scripts/test_script3.R")'
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2    
+      - name: Load docker image
+        uses: docker://bdbest/cinms:1.0
+        # uses: marinebon/cinms@docker-v01
+  #    - name: install R packages
+   #     run: Rscript -e 'install.packages("devtools")'
+      - name: generate SST
+        # run: Rscript -e 'source("scripts/test_script3.R")'
+        run: Rscript -e 'source("entrypoint.r")'
