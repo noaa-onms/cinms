@@ -17,7 +17,6 @@ jobs:
           git --version
       - name: copy repository
         run: |
-#          git clone --depth 1 https://bbest:${GH_PAT}@github.com/${GITHUB_REPOSITORY}.git .
           git clone --depth 1 https://github.com/${GITHUB_REPOSITORY}.git .
           git remote set-url origin https://bbest:${GH_PAT}@github.com/${GITHUB_REPOSITORY}.git
       - name: random number
