@@ -8,6 +8,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     container: alpine/git
+    env:
+      PASSWORD: t3mporarY
     steps:
       - uses: actions/checkout@v2 
         with:
