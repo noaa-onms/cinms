@@ -13,9 +13,9 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
     
-
 # This workflow contains a single job called "build"
   build:
+    runs-on: ubuntu-latest
     container: bdbest/cinms:1.0 # your docker image
     env:
       PASSWORD: t3mporarY
