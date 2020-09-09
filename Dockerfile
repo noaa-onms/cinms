@@ -1,9 +1,6 @@
 # Container image that runs your code  
 FROM rocker/geospatial:latest
 
-# update git
-RUN apt-get update; apt-get install git
-
 # install extra R packages 
 RUN install2.r --error \
   dygraphs \
@@ -11,7 +8,6 @@ RUN install2.r --error \
   glue \
   here \
   lubridate \
-  rerddap \
-  tidyverse
-
+  rerddap
+  
 RUN installGithub.r marinebon/nms4r
