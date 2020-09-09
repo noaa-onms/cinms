@@ -10,7 +10,7 @@ jobs:
     container: alpine/git
     steps:
       - name: copy repository
-        run: "git clone  git clone https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git ."
+        run: "git clone https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git ."
       - name: random number
         run: |
           echo $RANDOM > _test_random.txt
