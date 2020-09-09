@@ -12,21 +12,22 @@ jobs:
     env:
       PASSWORD: t3mporarY
     steps:
-      - uses: actions/checkout@v2 
-        with:
-          fetch-depth: 1
+      - name: copy repository
+        run: |
+          git clone --depth 1 https://github.com/${{ github.repository }}.git .
       - name: update SST
         run: Rscript -e 'source("entrypoint.r")'
-#       - name: random number
-#         run: |
-#           echo $RANDOM > _test_random.txt
-#           cat _test_random.txt            
+      - name: random number
+        run: |
+          echo $RANDOM > _test_random.txt
+          cat _test_random.txt            
       - name: Commit files
         run: |
-          git config --local user.email "ben@ecoquants.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}          
           git add -A
-          git commit -a -m "updates from Action: update-sst.yml"
+          git commit -a -m "changes from workflow ${GITHUB_WORKFLOW} [ci skip]"
           git push 
 
 #          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
