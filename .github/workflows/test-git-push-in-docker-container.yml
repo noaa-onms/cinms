@@ -17,8 +17,8 @@ jobs:
           git --version
       - name: copy repository
         run: |
-          git clone --depth 1 https://github.com/${GITHUB_REPOSITORY}.git .
-          git remote set-url origin https://bbest:${GH_PAT}@github.com/${GITHUB_REPOSITORY}.git
+          git clone --depth 1 https://github.com/${{ github.repository }}.git .
+#          git remote set-url origin https://bbest:${GH_PAT}@github.com/${GITHUB_REPOSITORY}.git
       - name: random number
         run: |
           echo $RANDOM > _test_random.txt
@@ -33,9 +33,11 @@ jobs:
         run: |
           git config --local user.email "ben@ecoquants.com"
           git config --local user.name "Ben Best"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git add -A
           git commit -a -m "changes from workflow ${GITHUB_WORKFLOW}"
           git push
+          
 #          git push "https://bbest:${GH_PAT}@github.com/${GITHUB_REPOSITORY}.git" HEAD:master
 #       - name: Push changes
 #         uses: ad-m/github-push-action@master      
