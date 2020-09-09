@@ -60,13 +60,15 @@ jobs:
       - name: generate SST
         # run: Rscript -e 'source("scripts/test_script3.R")'
         run: Rscript -e 'source("entrypoint.r")'
-      - name: Commit files
-        shell: bash
-        run: |
-          cd $GITHUB_WORKSPACE
-          git config --local user.email "ben@ecoquants.com"
-          git config --local user.name "GitHub Action"
-          git add -A
-          git commit -a -m "Add changes"
-          git push https://${{ secrets.GH_PAT }}@github.com/marinebon.git HEAD:master
-          
+#       - name: Commit files
+#         shell: bash
+#         run: |
+#           cd $GITHUB_WORKSPACE
+#           git config --local user.email "ben@ecoquants.com"
+#           git config --local user.name "GitHub Action"
+#           git add -A
+#           git commit -a -m "Add changes"
+#           git push https://${{ secrets.GH_PAT }}@github.com/marinebon.git HEAD:master
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "commit changes from 'generate SST'"
