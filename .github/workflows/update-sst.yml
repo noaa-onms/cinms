@@ -16,15 +16,17 @@ jobs:
       PASSWORD: t3mporarY
     steps:
       - name: clone repo
-        run: |
-          git clone --depth 1 https://github.com/${{ github.repository }}.git .
-      - name: update SST
+        run: git clone --depth 1 https://github.com/${{ github.repository }}.git .
+      - name: update nms4r
+        run: installGithub.r marinebon/nms4r
+      - name: update sst
         run: Rscript -e 'source("entrypoint.r")'
-#       - name: random number # uncomment to always have a change to commit
+# uncomment below to test commit & push (since always creates a modification)
+#       - name: random number
 #         run: |
 #           echo $RANDOM > _test_random.txt
 #           cat _test_random.txt            
-      - name: Commit files
+      - name: commit changes
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
