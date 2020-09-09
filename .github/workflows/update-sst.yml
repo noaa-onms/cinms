@@ -7,7 +7,7 @@ on:
 jobs:    
   build:
     runs-on: ubuntu-latest
-    container: bdbest/cinms:1.0 # docker image
+    container: bdbest/nms:0.1 # docker image
     env:
       PASSWORD: t3mporarY
     steps:
