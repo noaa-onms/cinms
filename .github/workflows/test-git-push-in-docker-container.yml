@@ -10,15 +10,21 @@ jobs:
     container: alpine/git
     steps:
       - name: workspace 1
-        run: "echo GITHUB_WORKSPACE: ${GITHUB_WORKSPACE}; ls; pwd"
+        run: |
+          echo GITHUB_WORKSPACE: ${GITHUB_WORKSPACE}
+          ls
+          pwd
       - name: copy repository
-        run: git clone https://github.com/${GITHUB_REPOSITORY}.git .
+        run: git clone --depth 1 https://github.com/${GITHUB_REPOSITORY}.git .
       - name: random number
         run: |
           echo $RANDOM > _test_random.txt
           cat _test_random.txt        
       - name: workspace 2
-        run: "echo GITHUB_WORKSPACE: ${GITHUB_WORKSPACE}; ls; pwd"
+        run: |
+          echo GITHUB_WORKSPACE: ${GITHUB_WORKSPACE}
+          ls
+          pwd
       - name: commit changes
         run: |
           git config --local user.email "ben@ecoquants.com"
