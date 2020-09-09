@@ -35,13 +35,15 @@ jobs:
           cat .git/config
       - name: commit changes
         run: |
-#          git config --local user.email "ben@ecoquants.com"
-#          git config --local user.name "Ben Best"
-#          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git add -A
           git commit -a -m "changes from workflow ${GITHUB_WORKFLOW} [ci skip]"
           git push
-          
+
+#          git config --local user.email "ben@ecoquants.com"
+#          git config --local user.name "Ben Best"
+#          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+
+
 #          git push "https://bbest:${GH_PAT}@github.com/${GITHUB_REPOSITORY}.git" HEAD:master
 #       - name: Push changes
 #         uses: ad-m/github-push-action@master      
