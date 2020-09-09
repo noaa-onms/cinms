@@ -1,0 +1,30 @@
+name: test-git-push-in-docker-container
+
+on:
+  push:
+    branches: [ master ]
+jobs:
+    
+  test:
+    runs-on: ubuntu-latest
+    container: alpine # your docker image    
+    steps:
+      - uses: actions/checkout@v2 
+        with:
+          fetch-depth: 0 # otherwise, you will failed to push refs to dest repo   
+      - name: random number
+        run: |
+          echo $RANDOM > _test_random.txt
+          cat _test_random.txt        
+      - name: workspace
+        run: |
+          echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE"
+      - name: Commit files
+        run: |
+          cd $GITHUB_WORKSPACE
+          echo $GITHUB_WORKSPACE
+          git config --local user.email "ben@ecoquants.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -a -m "Add changes"
+          git push 
