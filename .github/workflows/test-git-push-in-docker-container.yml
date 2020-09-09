@@ -15,7 +15,7 @@ jobs:
           ls
           pwd
       - name: copy repository
-        run: git clone --depth 1 https://github.com/${GITHUB_REPOSITORY}.git .
+        run: git clone --depth 1 https://bbest:${GH_PAT}@github.com/${GITHUB_REPOSITORY}.git .
       - name: random number
         run: |
           echo $RANDOM > _test_random.txt
@@ -30,8 +30,9 @@ jobs:
           git config --local user.email "ben@ecoquants.com"
           git config --local user.name "GitHub Action"
           git add -A
-          git commit -a -m "changes from Action: test-git-push-in-docker-container.yml"
-          git push "https://bbest:${GH_PAT}@github.com/${GITHUB_REPOSITORY}.git" HEAD:master
+          git commit -a -m "changes from workflow ${GITHUB_WORKFLOW}"
+          git push
+#          git push "https://bbest:${GH_PAT}@github.com/${GITHUB_REPOSITORY}.git" HEAD:master
 #       - name: Push changes
 #         uses: ad-m/github-push-action@master      
 #         with:
