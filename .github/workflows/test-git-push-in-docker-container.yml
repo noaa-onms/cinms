@@ -10,7 +10,7 @@ jobs:
     container: alpine/git
     steps:
       - name: workspace 1
-        run: "echo GITHUB_WORKSPACE: ${GITHUB_WORKSPACE}.git; ls; pwd"
+        run: "echo GITHUB_WORKSPACE: ${GITHUB_WORKSPACE}; ls; pwd"
       - name: copy repository
         run: git clone https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git .
       - name: random number
@@ -18,11 +18,15 @@ jobs:
           echo $RANDOM > _test_random.txt
           cat _test_random.txt        
       - name: workspace 2
-        run: "echo GITHUB_WORKSPACE: ${GITHUB_WORKSPACE}.git; ls; pwd"
+        run: "echo GITHUB_WORKSPACE: ${GITHUB_WORKSPACE}; ls; pwd"
       - name: commit changes
         run: |
-          git config --local user.email "ben@ecoquants.com"
+          git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
-          git commit -a -m "Add changes"
-          git push https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git HEAD:master
+          git commit -a -m "changes from Action: test-git-push-in-docker-container.yml"
+#           git push https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git HEAD:master
+    - name: Push changes
+      uses: ad-m/github-push-action@master      
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
