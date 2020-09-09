@@ -25,8 +25,8 @@ jobs:
           git config --local user.name "GitHub Action"
           git add -A
           git commit -a -m "changes from Action: test-git-push-in-docker-container.yml"
-#           git push https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git HEAD:master
-    - name: Push changes
-      uses: ad-m/github-push-action@master      
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+#          git push https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git HEAD:master
+      - name: Push changes
+        uses: ad-m/github-push-action@master      
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
