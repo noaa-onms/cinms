@@ -44,10 +44,10 @@ jobs:
 #     name: A job to run nms4r functions
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-#       - uses: actions/checkout@v2 
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2 
+#       - uses: actions/checkout@master
         with:
-          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+#           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo   
 #       - name: Load docker image
 #         uses: docker://bdbest/cinms:1.0
@@ -60,15 +60,22 @@ jobs:
       - name: generate SST
         # run: Rscript -e 'source("scripts/test_script3.R")'
         run: Rscript -e 'source("entrypoint.r")'
-#       - name: Commit files
+      - name: workspace
 #         shell: bash
-#         run: |
-#           cd $GITHUB_WORKSPACE
-#           git config --local user.email "ben@ecoquants.com"
-#           git config --local user.name "GitHub Action"
-#           git add -A
-#           git commit -a -m "Add changes"
-#           git push https://${{ secrets.GH_PAT }}@github.com/marinebon.git HEAD:master
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: "commit changes from 'generate SST'"
+        run: |
+          echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE"
+      - name: Commit files
+#         shell: bash
+        run: |
+          cd $GITHUB_WORKSPACE
+          echo $GITHUB_WORKSPACE
+          git config --local user.email "ben@ecoquants.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -a -m "Add changes"
+          git push 
+#          git push https://${{ secrets.GH_PAT }}@github.com/marinebon.git HEAD:master
+#       - uses: stefanzweifel/git-auto-commit-action@v4
+#         with:
+#           commit_message: "commit changes from 'generate SST'"
+
