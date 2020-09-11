@@ -3,10 +3,12 @@ output:
    html_document:
       self_contained: false
       keep_md: false
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r, include=F}
-knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F, eval = T)
 source(here::here("../cinms/scripts/rocky.R"))
 source(here::here("scripts/utility.R"))
 ```
@@ -22,9 +24,17 @@ map_nms_sites("cinms")
 ```
 
 ### Golden Rockweed (_Silvetia compressa_) {.active}
+
 `r get_figure_info("Golden rockweed")`
+
 ```{r}
-plot_intertidal_nms(d_csv, "CINMS", "SILCOM", "Golden Rockweed")
+p <- plot_intertidal_nms(d_csv, "CINMS", "SILCOM", "Golden Rockweed", download=T)
+# TODO: LATER consider alternate ways
+# p <- plot_intertidal_nms(d_csv, "CINMS", "SILCOM", "Golden Rockweed", download="img/Golden_rockweed.png")
+```
+`r download_plot_btn(p)`
+```{r}
+p
 ```
 `r render_caption("Golden Rockweed")`
 
