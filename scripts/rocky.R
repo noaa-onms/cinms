@@ -261,7 +261,7 @@ plot_intertidal_nms <- function(
       colors = ln_colors) %>%
     dySeries(NMS, strokeWidth = 3) %>%
     dyHighlight(highlightSeriesOpts = list(strokeWidth = 2)) %>%
-    dyRangeSelector()
+    dyRangeSelector(fillColor = " #FFFFFF", strokeColor = "#FFFFFF")
 }
 
 map_nms_sites <- function(nms){
