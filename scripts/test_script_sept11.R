@@ -61,5 +61,13 @@ month = 7
   # [1] "file name: /Users/jai/Library/Caches/R/rerddap/e93f320f7d59040b4824d520e998c936.nc"
   
   r <- raster(nc$summary$filename)
-  
 
+  get_stat <- function(stat){
+    fxn <- get(stat)
+    raster::extract(
+      r, sanctuary_ply, layer = 1, 
+      method = "simple", fun = fxn)
+  }
+  
+  # error message:  Error in .readCells(x, cells, 1) : no data on disk or in memory 
+  sapply(stats, get_stat)
