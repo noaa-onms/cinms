@@ -55,13 +55,16 @@ month = 7
     latitude = c(bb$ymin, bb$ymax), longitude = c(bb$xmax, bb$xmin), 
     fields = erddap_fld, fmt = 'nc')
   
-  # Extract the raster from the data object. This produces the following error for me:
+  # Extract the raster from the data object. Something is funny about the filename This produces the following error for me:
   # [1] "vobjtovarid4: error #F: I could not find the requsted var (or dimvar) in the file!"
   # [1] "var (or dimvar) name: coord_ref"
   # [1] "file name: /Users/jai/Library/Caches/R/rerddap/e93f320f7d59040b4824d520e998c936.nc"
   
   r <- raster(nc$summary$filename)
 
+  # but the raster exists!
+  plot(raster(nc$summary$filename))
+  
   get_stat <- function(stat){
     fxn <- get(stat)
     raster::extract(
