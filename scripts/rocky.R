@@ -151,8 +151,7 @@ get_nms_ply <- function(nms){
 plot_intertidal_nms <- function(
   d_csv, NMS, spp, sp_name, spp_targets = NULL,
   fld_val = "pct_cover", label_y = "Annual Mean Percent Cover (%)",
-  label_x = "Year", nms_skip_regions = c("OCNMS","MBNMS"),
-  download = F, redo_download = F){
+  label_x = "Year", nms_skip_regions = c("OCNMS","MBNMS")){
   # NMS = "OCNMS"; spp = "CHTBAL"; sp_name = "Acorn Barnacles"
   # NMS="OCNMS"; spp = c("BARNAC","CHTBAL"); sp_name = "Acorn Barnacles"
   # NMS="OCNMS"; spp = "PELLIM"; sp_name = "Dwarf Rockweed"; nms_skip_regions = c("MBNMS")
@@ -251,7 +250,7 @@ plot_intertidal_nms <- function(
   #   as.xts(order.by = ymd(glue("{d$yr}-06-15")))
   
   # plot dygraph
-  p <- dygraph(
+  dygraph(
     #x,
     d, 
     main = glue("{sp_name} in {NMS}"),
@@ -262,37 +261,7 @@ plot_intertidal_nms <- function(
       colors = ln_colors) %>%
     dySeries(NMS, strokeWidth = 3) %>%
     dyHighlight(highlightSeriesOpts = list(strokeWidth = 2)) %>%
-    dyRangeSelector()
-  
-  if (download){
-    fname = glue(
-      "plot_intertidal_nms_{NMS}_{spp}_{sp_name}_{
-      ifelse(is.null(spp_targets), 'null', 'spp_targets')}.png")
-    path_abs <- here(glue("modals/img/{fname}"))
-    path_rel <- glue("./img/{fname}")
-              
-    if (!file.exists(path_abs) | redo_download){
-      library(dygraphs)
-      library(htmlwidgets)
-      library(webshot)
-      
-      #browser()
-      
-      # save html to png
-      saveWidget(p, "temp.html", selfcontained = F)
-      width  <- 800
-      height <- 600
-      res <- webshot(
-        "temp.html", file = path_abs,
-        cliprect = c(10,30, width+50, height+50),
-        vwidth = width, vheight = height )
-      unlink("temp.html")
-      unlink("temp_files")
-    }      
-
-    attr(p, "download_path") <- path_rel 
-  }
-  p
+    dyRangeSelector(fillColor = " #FFFFFF", strokeColor = "#FFFFFF")
 }
 
 map_nms_sites <- function(nms){
@@ -670,12 +639,3 @@ if (!file.exists(nms_spp_csv) | redo){
   write_csv(nms_spp, nms_spp_csv)  
 }
 
-download_plot_btn <- function(p){
-  path <- attr(p, "download_path")
-  glue('
-    <a href="{path}" download ="{path}">
-      <button type="submit" class="btn btn-default">
-      <i class="fa fa-download"></i> Download Plot
-      </button>
-    </a>')
-}
