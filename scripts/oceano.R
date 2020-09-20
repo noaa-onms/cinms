@@ -170,20 +170,32 @@ plot_timeseries <- function(d, title="SST", color="red", dyRangeSelector=T, ...)
   p
 }
 
-plot_SST_timeseries <- function(csv){
-  # The purpose of this function is to generate the figure showing the sea surface temperature time series 
-  # for a Sanctuary (displaying both avg and standard deviation of temp). The function has one parameter
-  # (csv) which is the path name for the csv data file to be plotted
+plot_metric_timeseries <- function(csv, metric){
+  # The purpose of this function is to generate figures showing the sea surface temperature time series 
+  # for a Sanctuary (displaying both avg and standard deviation of temp). The function has two parameters: 1)
+  # csv: which is the path name for the csv data file to be plotted and 2) metric: which is the type of data
+  # to be plotted; currently only "sst" (for sea surface temperature) and "chl" (for chlorophyll) are recognized
   
   # Read in the csv file
-  SST_history <- read.csv(csv, header = TRUE)
+  data_history <- read.csv(csv, header = TRUE)
+  dates<- data_history[,1]
+  average_value <- data_history[,2]
+  standard_deviation <- data_history[,3]
   
   # create a data frame which lines up the data in the way that dygraph needs it
-  SST_history <- data.frame(date = as.Date(SST_history$date, "%Y-%m-%d"), SST = SST_history$average_SST, lower = SST_history$average_SST-SST_history$standard_deviation_SST, upper = SST_history$average_SST+SST_history$standard_deviation_SST)
-  SST_history <- xts(x = SST_history[,-1], order.by = SST_history$date)
+  history <- data.frame(date = as.Date(dates, "%Y-%m-%d"), avg_value = average_value, lower = average_value - standard_deviation, upper = average_value + standard_deviation)
+  history <- xts(x = history[,-1], order.by = history$date)
   
   # create the figure
-  dygraph(SST_history, main = "Sea Surface Temperature", xlab = "Date", ylab = "Temperature (°C)")%>%
-    dySeries(c("lower", "SST", "upper"), label = "Temperature (°C)", color = "Red")%>%
-    dyRangeSelector()
+  if (metric == "sst"){ # plotting sea surface temperature
+    dygraph(history, main = "Sea Surface Temperature", xlab = "Date", ylab = "Temperature (°C)")%>%
+      dySeries(c("lower", "avg_value", "upper"), label = "Temperature (°C)", color = "Red")%>%
+      dyRangeSelector()
+  } else if (metric == "chl") { # plotting chlorophyll
+    dygraph(history, main = "Chlorophyll Concentration", xlab = "Date", ylab = "Chlorophyll Concentration, OC3 Algorithm (mg/m<sup>3</sup>)")%>%
+      dySeries(c("lower", "avg_value", "upper"), label = "Temperature (°C)", color = "Green")%>%
+      dyRangeSelector()
+  } else { # if any other metric is called, stop everything
+      stop("Error in metric: the function plot_metric_timeseries only currently knows how to handle the metrics sst and chl")
+  }
 }

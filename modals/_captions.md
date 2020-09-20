@@ -31,7 +31,7 @@ The Chlorophyll-a dataset collected via satellite is the [Chlorophyll, NOAA VIIR
 
 ## Figure Ux.Ocean.Chl.ERD.timeseries.
 
-Plot of Chlorophyll values over time within the Sanctuary. Chlorophyll-a indicates productivity by phytoplankton, the plant base of the food chain in the ocean.
+The average chlorophyll concentration over time across the Sanctuary. Chlorophyll concentration is a measure of productivity by phytoplankton, the plant base of the food chain in the ocean. The gray bar at the bottom of the figure can be used to zoom in to specific dates, using the small slider buttons on either edge of the gray bar. In the figure, the dark green line is the average chlorophyll concentration, while the lighter green area indicates the standard deviation of that chlorophyll concentration across the Sanctuary.
 
 ### Details
 
