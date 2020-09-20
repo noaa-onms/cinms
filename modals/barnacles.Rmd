@@ -16,16 +16,16 @@ source(here::here("scripts/utility.R"))
 map_nms_sites("cinms")
 ```
 
-### Acorn barnacles (barnacle plots only)
+### Acorn barnacles (all plots)
 
 ```{r}
 plot_intertidal_nms(d_csv, "CINMS", "CHTBAL", "Acorn Barnacles")
 ```
 
-### Acorn barnacles (all plots)
+### Acorn barnacles (barnacle plots only)
 
 ```{r}
-plot_intertidal_nms(d_csv, "CINMS", "CHTBAL", "Acorn Barnacles [target = balanus | chthamalus_balanus]", c("balanus", "chthamalus_balanus"))
+plot_intertidal_nms(d_csv, "CINMS", "CHTBAL", "Acorn Barnacles", c("balanus", "chthamalus_balanus"))
 ```
 
 ### Gooseneck barnacles (all plots)
