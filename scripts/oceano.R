@@ -193,7 +193,7 @@ plot_metric_timeseries <- function(csv, metric){
       dyRangeSelector()
   } else if (metric == "chl") { # plotting chlorophyll
     dygraph(history, main = "Chlorophyll Concentration", xlab = "Date", ylab = "Chlorophyll Concentration, OC3 Algorithm (mg/m<sup>3</sup>)")%>%
-      dySeries(c("lower", "avg_value", "upper"), label = "Temperature (°C)", color = "Green")%>%
+      dySeries(c("lower", "avg_value", "upper"), label = "Chlorophyll concentration", color = "Green")%>%
       dyRangeSelector()
   } else { # if any other metric is called, stop everything
       stop("Error in metric: the function plot_metric_timeseries only currently knows how to handle the metrics sst and chl")
