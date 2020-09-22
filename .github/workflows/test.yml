@@ -1,0 +1,36 @@
+name: update-sst
+
+on:
+#  schedule:
+    # * is a special character in YAML so you have to quote this string - change cron string to '0 * 7 * *' to run once on the 7th day of the month
+ #   - cron:  '0 * 7 * *'
+  push:
+#    branches: [ master ]
+
+jobs:    
+  build:
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'ci skip')"
+    container: bdbest/cinms:1.0 # docker image
+    env:
+      PASSWORD: t3mporarY
+    steps:
+      - name: clone repo
+        run: git clone --depth 1 https://github.com/${{ github.repository }}.git .
+      - name: update nms4r
+        run: installGithub.r marinebon/nms4r
+      - name: update sst
+        run: Rscript -e 'source("entrypoint.r")'
+# uncomment below to test commit & push (since always creates a modification)
+#       - name: random number
+#         run: |
+#           echo $RANDOM > _test_random.txt
+#           cat _test_random.txt            
+      - name: commit changes
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}          
+          git add -A
+          git commit -a -m "changes from workflow **${{ github.workflow }}** [ci skip]"
+          git push 
