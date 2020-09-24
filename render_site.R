@@ -40,29 +40,6 @@ d_modals <- d %>%
   summarize(n_habitats = n()) %>% 
   ungroup()
 
-render_page <- function(rmd){
-  render(rmd, html_document(
-    theme = site_config()$output$html_document$theme, 
-    self_contained=F, lib_dir = here("modals/modal_libs"), 
-    mathjax = NULL))
-}
-
-render_modal <- function(rmd){
-  rmds_theme_white <- c(
-    "modals/barnacles.Rmd",
-    "modals/mussels.Rmd")
-  
-  site_theme <- site_config()$output$html_document$theme
-  rmd_theme  <- ifelse(rmd %in% rmds_theme_white, "cosmo", site_theme)
-  
-  render(rmd, html_document(
-    theme = rmd_theme, 
-    self_contained=F, lib_dir = here("modals/modal_libs"), 
-    # toc=T, toc_depth=3, toc_float=T,
-    mathjax = NULL))
-  
-}
-
 # The following section of code checks to see if there has been any change to
 # the google spreadsheet cinms_content. If there has, we'll want to render all of the modal
 # windows to account for changes to cinms_content

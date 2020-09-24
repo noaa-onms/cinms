@@ -1,11 +1,9 @@
-library(shiny)
-library(readr)
-library(dplyr)
-library(htmltools)
-library(glue)
-library(dplyr)
-library(tidyr)
-library(stringr)
+if (!require(librarian)){
+  install.packages("librarian")
+  library(librarian)
+}
+shelf(
+  dplyr, glue, here, htmltools, purrr, readr, rmarkdown, shiny, stringr, tidyr)
 
 md_caption <- function(title, md = here::here("modals/_captions.md"), get_details = F){
 
@@ -222,6 +220,29 @@ render_figure <- function(figure_id, figure_img){
   ")
 }
 
+render_page <- function(rmd){
+  render(rmd, html_document(
+    theme = site_config()$output$html_document$theme, 
+    self_contained=F, lib_dir = here("modals/modal_libs"), 
+    mathjax = NULL))
+}
+
+render_modal <- function(rmd){
+  rmds_theme_white <- c(
+    "modals/barnacles.Rmd",
+    "modals/mussels.Rmd")
+  
+  site_theme <- site_config()$output$html_document$theme
+  rmd_theme  <- ifelse(rmd %in% rmds_theme_white, "cosmo", site_theme)
+  
+  render(rmd, html_document(
+    theme = rmd_theme, 
+    self_contained=F, lib_dir = here("modals/modal_libs"), 
+    # toc=T, toc_depth=3, toc_float=T,
+    mathjax = NULL))
+  
+}
+
 insert_tooltip<- function(text, glossary_term, span_css){
   # Draft version of code to render modal windows with tooltips. The overall idea is to generate a markdown file from a 
   # given modal rmd file. Within that markdown file, we then insert the javascript package tippy as well as inserting the
@@ -371,10 +392,10 @@ glossarize_md <- function(md, md_out = md){
 }
 
 rmd2html <- function(rmd){
-  rmd<- here(rmd)
-  md1   <- fs::path_ext_set(rmd, "md")
+  #rmd  <- here(rmd)
+  md1  <- fs::path_ext_set(rmd, "md")
   md2  <- paste0(fs::path_ext_remove(rmd), ".glossarized.md")
-  htm1  <- paste0(fs::path_ext_remove(rmd), ".glossarized.html")
+  htm1 <- paste0(fs::path_ext_remove(rmd), ".glossarized.html")
   htm2 <- fs::path_ext_set(rmd, "html")
   
   # create the intermediary markdown file (with disposable html)

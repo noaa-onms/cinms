@@ -66,6 +66,9 @@ docker login --username=bdbest
 docker images
 docker tag 3b0dd068147d bdbest/cinms:1.0
 docker push bdbest/cinms:1.0
+
+docker tag 415896bca0ec bdbest/nms:0.1
+docker push bdbest/nms:0.1
 ```
 
 ## interactively work inside container
@@ -84,3 +87,24 @@ Rscript -e 'source("entrypoint.r")'
 git tag docker-v02
 git push origin --tags
 ```
+
+
+git clone https://scuzzlebuzzle:<MYTOKEN>@github.com/scuzzlebuzzle/ol3-1.git --branch=gh-pages gh-pages
+That will add your credentials to the remote created when cloning the repository. Unfortunately, however, you have no control over how Travis clones your repository, so you have to edit the remote like so.
+
+# After cloning
+cd gh-pages
+git remote set-url origin https://scuzzlebuzzle:<MYTOKEN>@github.com/scuzzlebuzzle/
+
+
+Syncing repository: marinebon/cinms
+Getting Git version info
+  Working directory is '/__w/cinms/cinms'
+  /usr/bin/git version
+  git version 2.11.0
+Deleting the contents of '/__w/cinms/cinms'
+The repository will be downloaded using the GitHub REST API
+To create a local Git repository instead, add Git 2.18 or higher to the PATH
+Downloading the archive
+Writing archive to disk
+Extracting the archive
