@@ -3,7 +3,7 @@ if (!require(librarian)){
   library(librarian)
 }
 shelf(
-  dplyr, glue, here, htmltools, purrr, readr, rmarkdown, shiny, stringr, tidyr)
+  dplyr, dygraphs, glue, here, htmltools, purrr, readr, rmarkdown, shiny, stringr, tidyr)
 
 md_caption <- function(title, md = here::here("modals/_captions.md"), get_details = F){
 

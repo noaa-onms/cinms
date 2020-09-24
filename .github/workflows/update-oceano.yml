@@ -25,7 +25,7 @@ jobs:
 #          Error in curl::curl_fetch_disk(x$url$url, x$disk, handle = x$url$handle) : 
 #            Timeout was reached: [coastwatch.pfeg.noaa.gov] Operation timed out after 10589 milliseconds with 0 out of 0 bytes received
       - name: render_oceano-modals
-        run: F="`pwd`/scripts/render_oceano-modals.R"; [[ -f $F ]] || printf '%s does not exist!\n' "$F"; Rscript --verbose $F
+        run: Rscript scripts/render_oceano-modals.R
 #       TODO: get other habitat *-key-climate-oceano.Rmd's to work in above script
 # uncomment below to test commit & push (since always creates a modification)
 #       - name: random number

@@ -7,6 +7,7 @@ RUN install2.r --error \
   fs \
   glue \
   here \
+  librarian \
   lubridate \
   rerddap
   
