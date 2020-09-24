@@ -19,10 +19,14 @@ jobs:
         run: git clone --depth 1 https://github.com/${{ github.repository }}.git .; ls
       - name: update nms4r
         run: installGithub.r marinebon/nms4r
-      - name: update_oceano-data
-        run: Rscript -e 'source("scripts/update_oceano-data.r")'
+#      - name: update_oceano-data
+#        run: Rscript -e 'source("scripts/update_oceano-data.r")'
+#        TODO: wrap in result = try(), then if (class(result) == "try-error") then move on
+#          Error in curl::curl_fetch_disk(x$url$url, x$disk, handle = x$url$handle) : 
+#            Timeout was reached: [coastwatch.pfeg.noaa.gov] Operation timed out after 10589 milliseconds with 0 out of 0 bytes received
       - name: render_oceano-modals
         run: Rscript -e 'source("scripts/render_oceano-modals.r")'
+#       TODO: get other habitat *-key-climate-oceano.Rmd's to work in above script
 # uncomment below to test commit & push (since always creates a modification)
 #       - name: random number
 #         run: |
