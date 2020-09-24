@@ -126,28 +126,6 @@ nms_rgns <- read_csv(nms_rgns_csv) %>%
 
 # functions ----
 
-get_nms_ply <- function(nms){
-  # get polygon for National Marine Sanctuary
-  
-  nms_shp <- glue("{dir_pfx}/shp/{nms}_py.shp")
-  
-  if (!file.exists(nms_shp)){
-    # download if needed
-    
-    # https://sanctuaries.noaa.gov/library/imast_gis.html
-    nms_url <- glue("https://sanctuaries.noaa.gov/library/imast/{nms}_py2.zip")
-    nms_zip <- here(glue("{nms}.zip"))
-    shp_dir <- here("shp")
-    
-    download.file(nms_url, nms_zip)
-    unzip(nms_zip, exdir = shp_dir)
-    file_delete(nms_zip)
-  }
-  # read and convert to standard geographic projection
-  read_sf(nms_shp) %>%
-    st_transform(4326)
-}
-
 plot_intertidal_nms <- function(
   d_csv, NMS, spp, sp_name, spp_targets = NULL,
   fld_val = "pct_cover", label_y = "Annual Mean Percent Cover (%)",

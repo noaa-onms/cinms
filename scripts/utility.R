@@ -3,7 +3,15 @@ if (!require(librarian)){
   library(librarian)
 }
 shelf(
-  dplyr, dygraphs, glue, here, htmltools, purrr, readr, rmarkdown, shiny, stringr, tidyr)
+  dplyr, dygraphs, glue, here, htmltools, leafem, leaflet, marinebon/nms4r, purrr, readr, rerddap, rmarkdown, shiny, stringr, tidyr, xts)
+
+# DEBUG
+#devtools::load_all("~/github/nms4r")
+
+addMouseCoordinates <- leafem::addMouseCoordinates
+here                <- here::here
+select              <- dplyr::select
+addLegend           <- leaflet::addLegend
 
 md_caption <- function(title, md = here::here("modals/_captions.md"), get_details = F){
 

@@ -1,11 +1,11 @@
 ```{r}
-source(here::here("scripts/oceano.R"))
+#source(here::here("scripts/oceano.R"))
 source(here::here("scripts/utility.R"))
 
 nms       <- "cinms"
 sites_csv <- here("data/nms_sites.csv")
 
-nms_ply <- get_nms_ply(nms)
+nms_ply <- get_nms_polygons(nms)
 
 if (F){
   st_centroid(nms_ply$geometry) %>% st_coordinates() %>% as_tibble() %>% 
@@ -19,6 +19,7 @@ site <- read_csv(sites_csv) %>%
   filter(id == nms)
 
 sst   <- info('jplMURSST41mday')
-chl   <- info("nesdisVHNSQchlaMonthly")
+#chl   <- info("nesdisVHNSQchlaMonthly") # unknown datasetID
+chl   <- info("erdMWchlamday")
 scape <- info("noaa_aoml_4729_9ee6_ab54", url = "https://cwcgom.aoml.noaa.gov/erddap/")
 ```
