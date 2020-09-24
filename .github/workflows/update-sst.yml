@@ -16,13 +16,13 @@ jobs:
       PASSWORD: t3mporarY
     steps:
       - name: clone repo
-        run: git clone --depth 1 https://github.com/${{ github.repository }}.git .
+        run: git clone --depth 1 https://github.com/${{ github.repository }}.git .; ls
       - name: update nms4r
         run: installGithub.r marinebon/nms4r
       - name: update_oceano-data
-        run: cd cinms; Rscript -e 'source("scripts/update_oceano-data.r")'
+        run: Rscript -e 'source("scripts/update_oceano-data.r")'
       - name: render_oceano-modals
-        run: cd cinms; Rscript -e 'source("scripts/render_oceano-modals.r")'
+        run: Rscript -e 'source("scripts/render_oceano-modals.r")'
 # uncomment below to test commit & push (since always creates a modification)
 #       - name: random number
 #         run: |
