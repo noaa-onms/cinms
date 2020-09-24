@@ -1,4 +1,4 @@
-name: update-sst
+name: update-oceano
 
 on:
   schedule:
