@@ -6,7 +6,8 @@ shelf(
   dplyr, dygraphs, glue, here, htmltools, leafem, leaflet, marinebon/nms4r, purrr, readr, rerddap, rmarkdown, shiny, stringr, tidyr, xts)
 
 # DEBUG
-#devtools::load_all("~/github/nms4r")
+# remotes::install_github("marinebon/nms4r")
+# devtools::load_all("~/github/nms4r")
 
 addMouseCoordinates <- leafem::addMouseCoordinates
 here                <- here::here
