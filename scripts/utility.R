@@ -423,7 +423,7 @@ rmd2html <- function(rmd){
     output_options   = list(self_contained = F), clean = F)
   
   # final cleanup
-  file.remove(htm1)  
-  file.remove(md2)  
-  file.remove(paste0(substring(md2,1,str_length(md2)-3),".utf8.md"))  
+  #file.remove(htm1)  
+  #file.remove(md2)  
+  #file.remove(paste0(substring(md2,1,str_length(md2)-3),".utf8.md"))  
 }
