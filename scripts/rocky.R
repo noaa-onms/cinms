@@ -22,7 +22,7 @@ sanctuaries <- c("cinms", "mbnms", "ocnms")
 
 #dir_pfx     <- here("../info-intertidal")
 dir_gdrive <- "/Volumes/GoogleDrive/Shared drives/NMS/data"
-dir_pfx     <- file.path(dir_gdrive, "github_info-intertidal_data")
+dir_pfx     <- file.path(dir_gdrive, "github_info-intertidal_data_0")
 
 dir_shp     <- file.path(dir_pfx, "shp")
 #raw1_csv   <- file.path(dir_pfx, "MARINe_raw_4c1e_9218_7d13.csv")

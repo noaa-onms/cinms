@@ -1204,22 +1204,45 @@ A figure showing the percent cover of mussels on rocks in the rocky intertidal a
 
 ## Golden Rockweed
 
-An interactive figure showing the percent cover of the golden rockweed (*Silvetia compressa*) over time across all five Northern CHannel Islands from 2002 - 2019. Data were collected by a consortium of partners through the [Multi-Agency Rocky Intertidal Network](https://marine.ucsc.edu/overview/index.html) (MARINe). 
+An interactive figure showing the percent cover of the golden rockweed (*Silvetia compressa*) over time across all five Northern Channel Islands from 2002 - 2019. Data were collected by a consortium of partners through the [Multi-Agency Rocky Intertidal Network](https://marine.ucsc.edu/overview/index.html) (MARINe). 
 
 ### Details 
 *Silvetia* is a dominant perennial alga that allows algae and many animals to live higher up on the shore by creating a moist microhabitat. Like other rockweeds, reproductive structures are produced in swollen branch termini called receptacles.  In spite of being a tough and long-lived species, *Silvetia* is slow-growing, experiences irregular recruitment and has low survivorship. *Silvetia* is susceptible to trampling and oiling because of its midtidal height and recovery from disturbance is believed to be long. A recent study has shown that *Silvetia* can be transplanted and reestablished for restorative purposes. [Source](https://marine.ucsc.edu/target/target-species-silvetia.html). 
 
 
 ## Olive Rockweed
-An interactive figure showing the percent cover of the olive rockweed (*Hesperophycus californicus*) over time across all five Northern CHannel Islands from 2002 - 2019. Data were collected by a consortium of partners through the [Multi-Agency Rocky Intertidal Network](https://marine.ucsc.edu/overview/index.html) (MARINe). 
+An interactive figure showing the percent cover of the olive rockweed (*Hesperophycus californicus*) over time across all five Northern Channel Islands from 2002 - 2019. Data were collected by a consortium of partners through the [Multi-Agency Rocky Intertidal Network](https://marine.ucsc.edu/overview/index.html) (MARINe). 
 
 ### Details
 *Hesperophycus* is a fairly common fucoid alga along the central coast of California, found in the upper-mid tidal regions, and is sometimes mixed with *Silvetia* or *Fucus*. A study on Santa Cruz Island found that *H. californicus* size is reduced by increased wave strength due to tattering; this reduction in thallus size may then increase survivorship by reducing drag without damaging the alga’s staying power. *Hesperophycus* is particularly susceptible to oiling, and is believed to have declined in abundance along the southern California mainland. [Source](https://marine.ucsc.edu/target/target-species-hesperophycus.html). 
 
 
 ## Turfweed
-An interactive figure showing the percent cover of the turfweed (*Endocladia muricata*) over time across all five Northern CHannel Islands from 2002 - 2019. Data were collected by a consortium of partners through the [Multi-Agency Rocky Intertidal Network](https://marine.ucsc.edu/overview/index.html) (MARINe).
+An interactive figure showing the percent cover of the turfweed (*Endocladia muricata*) over time across all five Northern Channel Islands from 2002 - 2019. Data were collected by a consortium of partners through the [Multi-Agency Rocky Intertidal Network](https://marine.ucsc.edu/overview/index.html) (MARINe).
 
 ### Details 
 *Endocladia* is common north of Point Conception and one of the most common algae in central California, forming distinctive dark bands along the upper shoreline. *Endocladia* abundance fades in warmer waters to the south, being largely replaced in lower portions of its zone by other small red algae. *Endocladia* often grows with other small reds (e.g. *Mastocarpus papillatus*, *Gelidium* spp.) to form a low, tight turf that traps sediment and moisture, and provides a sheltered microhabitat for a host of small organisms. *Endocladia* has been shown to facilitate recruitment of *Silvetia compressa*, possibly by providing propagules protection from dislodgement, grazing, and/or desiccation. *Endocladia* is hardy and quite resistant to desiccation, yet vulnerable to oiling from spills due to its location in the high intertidal. Recovery from natural or human disturbances may vary from 1 to more than 6 years. [Source](https://marine.ucsc.edu/target/target-species-endocladia.html). 
 
+## Acorn barnacles (all plots)
+An interactive figure showing the percent cover of acorn barnacles (*Chthamalus and/Balanus*) over time across all five Northern Channel Islands from 2002 - 2019. Data were collected by a consortium of partners through the [Multi-Agency Rocky Intertidal Network](https://marine.ucsc.edu/overview/index.html) (MARINe).
+
+### Details
+Following MARINe sampling protocols, this figure was generated using percent cover data of barnacles found in *all* sampled plots. The barnacles species included in this figure are *Chthamalus fissus*, *C, dalli*, *Balanus glandula*. Acorn barnacles typically dominate the high intertidal zone along the western coast of North America due to their prolific post-settlement larval densities. These crustaceans provide vital habitat for many intertidal organsims, as well as being an important prey item for highly mobile predators such as the ochre seastar (*Pisaster ochraceus*).[Source](https://marine.ucsc.edu/target/target-species-chthamalus-balanus.html)
+
+## Acorn barnacles (barnacle plots only)
+An interactive figure showing the percent cover of acorn barnacles (*Chthamalus and/or Balanus*) over time across all five Northern Channel Islands from 2002 - 2019. Data were collected by a consortium of partners through the [Multi-Agency Rocky Intertidal Network](https://marine.ucsc.edu/overview/index.html) (MARINe).
+
+### Details
+Following MARINe sampling protocols, this figure was generated using percent cover data of barnacles found in barnacle-specific plots. The barnacles species included in this figure are *Chthamalus fissus*, *C, dalli*, *Balanus glandula*. Acorn barnacles typically dominate the high intertidal zone along the western coast of North America due to their prolific post-settlement larval densities. These crustaceans provide vital habitat for many intertidal organsims, as well as being an important prey item for highly mobile predators such as the ochre seastar (*Pisaster ochraceus*).[Source](https://marine.ucsc.edu/target/target-species-chthamalus-balanus.html)
+
+## Gooseneck barnacles (all plots)
+An interactive figure showing the percent cover of gooseneck barnacles (*Pollicipes polymerus*) over time across all five Northern Channel Islands from 2002 - 2019. Data were collected by a consortium of partners through the [Multi-Agency Rocky Intertidal Network](https://marine.ucsc.edu/overview/index.html) (MARINe).
+
+### Details
+Following MARINe sampling protocols, this figure was generated using percent cover data of barnacles found in all sampled plots. Gooseneck (or simpley goose) are stalked and can grow to 8 cm tall. These hardy crustaceans are resistant to desiccation and can withstand all but the highest waves. However, their populations have been reduced in accessible areas where goose barnacles are collected for food. [Source](https://marine.ucsc.edu/target/target-species-pollicipes.html)
+
+## Pink barnacles (all plots)
+An interactive figure showing the percent cover of pink barnacles (*Tetraclita rubescens*) over time across all five Northern Channel Islands from 2002 - 2019. Data were collected by a consortium of partners through the [Multi-Agency Rocky Intertidal Network](https://marine.ucsc.edu/overview/index.html) (MARINe).
+
+### Details 
+Following MARINe sampling protocols, this figure was generated using percent cover data of barnacles found in all sampled plots. Pink, or thatched barnacles are usually found growing as solitary individuals rather than in aggregations, like acorn barnacles (*Chthamalus and/or Balanus*). Thatched barnacles are long-lived (~15 years), are brooders, and do not become reproductive until they are about 2 years old. These barnacles are effective competitors for space, and may influence the distribution of mussels and other species. However, they might be sensitive to sewage pollution and recovery from disturbance may take more than 2 years. [Source](https://marine.ucsc.edu/target/target-species-pollicipes.html)
