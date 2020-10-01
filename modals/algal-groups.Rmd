@@ -29,13 +29,9 @@ map_nms_sites("cinms")
 `r get_figure_info("Golden rockweed")`
 
 ```{r}
-p <- plot_intertidal_nms(d_csv, "CINMS", "SILCOM", "Golden Rockweed", download=T)
+plot_intertidal_nms(d_csv, "CINMS", "SILCOM", "Golden Rockweed")
 # TODO: LATER consider alternate ways
 # p <- plot_intertidal_nms(d_csv, "CINMS", "SILCOM", "Golden Rockweed", download="img/Golden_rockweed.png")
-```
-`r download_plot_btn(p)`
-```{r}
-p
 ```
 `r render_caption("Golden Rockweed")`
 

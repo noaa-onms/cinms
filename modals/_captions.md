@@ -1223,25 +1223,25 @@ An interactive figure showing the percent cover of the turfweed (*Endocladia mur
 ### Details 
 *Endocladia* is common north of Point Conception and one of the most common algae in central California, forming distinctive dark bands along the upper shoreline. *Endocladia* abundance fades in warmer waters to the south, being largely replaced in lower portions of its zone by other small red algae. *Endocladia* often grows with other small reds (e.g. *Mastocarpus papillatus*, *Gelidium* spp.) to form a low, tight turf that traps sediment and moisture, and provides a sheltered microhabitat for a host of small organisms. *Endocladia* has been shown to facilitate recruitment of *Silvetia compressa*, possibly by providing propagules protection from dislodgement, grazing, and/or desiccation. *Endocladia* is hardy and quite resistant to desiccation, yet vulnerable to oiling from spills due to its location in the high intertidal. Recovery from natural or human disturbances may vary from 1 to more than 6 years. [Source](https://marine.ucsc.edu/target/target-species-endocladia.html). 
 
-## Acorn barnacles (all plots)
+## Acorn barnacles_all
 An interactive figure showing the percent cover of acorn barnacles (*Chthamalus and/Balanus*) over time across all five Northern Channel Islands from 2002 - 2019. Data were collected by a consortium of partners through the [Multi-Agency Rocky Intertidal Network](https://marine.ucsc.edu/overview/index.html) (MARINe).
 
 ### Details
 Following MARINe sampling protocols, this figure was generated using percent cover data of barnacles found in *all* sampled plots. The barnacles species included in this figure are *Chthamalus fissus*, *C, dalli*, *Balanus glandula*. Acorn barnacles typically dominate the high intertidal zone along the western coast of North America due to their prolific post-settlement larval densities. These crustaceans provide vital habitat for many intertidal organsims, as well as being an important prey item for highly mobile predators such as the ochre seastar (*Pisaster ochraceus*).[Source](https://marine.ucsc.edu/target/target-species-chthamalus-balanus.html)
 
-## Acorn barnacles (barnacle plots only)
+## Acorn barnacles
 An interactive figure showing the percent cover of acorn barnacles (*Chthamalus and/or Balanus*) over time across all five Northern Channel Islands from 2002 - 2019. Data were collected by a consortium of partners through the [Multi-Agency Rocky Intertidal Network](https://marine.ucsc.edu/overview/index.html) (MARINe).
 
 ### Details
-Following MARINe sampling protocols, this figure was generated using percent cover data of barnacles found in barnacle-specific plots. The barnacles species included in this figure are *Chthamalus fissus*, *C, dalli*, *Balanus glandula*. Acorn barnacles typically dominate the high intertidal zone along the western coast of North America due to their prolific post-settlement larval densities. These crustaceans provide vital habitat for many intertidal organsims, as well as being an important prey item for highly mobile predators such as the ochre seastar (*Pisaster ochraceus*).[Source](https://marine.ucsc.edu/target/target-species-chthamalus-balanus.html)
+Following MARINe sampling protocols, this figure was generated using percent cover data of barnacles found in barnacle-specific plots. The barnacles species included in this figure are *Chthamalus fissus*, *C, dalli*, *Balanus glandula*. Acorn barnacles typically dominate the high intertidal zone along the western coast of North America due to their prolific post-settlement larval densities. These crustaceans provide vital habitat for many intertidal organsims, as well as being an important prey item for highly mobile predators such as the ochre seastar (*Pisaster ochraceus*). [Source](https://marine.ucsc.edu/target/target-species-chthamalus-balanus.html)
 
-## Gooseneck barnacles (all plots)
+## Gooseneck barnacles
 An interactive figure showing the percent cover of gooseneck barnacles (*Pollicipes polymerus*) over time across all five Northern Channel Islands from 2002 - 2019. Data were collected by a consortium of partners through the [Multi-Agency Rocky Intertidal Network](https://marine.ucsc.edu/overview/index.html) (MARINe).
 
 ### Details
 Following MARINe sampling protocols, this figure was generated using percent cover data of barnacles found in all sampled plots. Gooseneck (or simpley goose) are stalked and can grow to 8 cm tall. These hardy crustaceans are resistant to desiccation and can withstand all but the highest waves. However, their populations have been reduced in accessible areas where goose barnacles are collected for food. [Source](https://marine.ucsc.edu/target/target-species-pollicipes.html)
 
-## Pink barnacles (all plots)
+## Pink barnacles
 An interactive figure showing the percent cover of pink barnacles (*Tetraclita rubescens*) over time across all five Northern Channel Islands from 2002 - 2019. Data were collected by a consortium of partners through the [Multi-Agency Rocky Intertidal Network](https://marine.ucsc.edu/overview/index.html) (MARINe).
 
 ### Details 

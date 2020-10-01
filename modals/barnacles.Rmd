@@ -22,25 +22,26 @@ map_nms_sites("cinms")
 ```{r}
 plot_intertidal_nms(d_csv, "CINMS", "CHTBAL", "Acorn Barnacles")
 ```
-`r render_caption("Acorn barnacles (all plots)")`
+`r render_caption("Acorn barnacles_all")`
+
 
 ### Acorn barnacles (barnacle plots only)
 `r get_figure_info("Acorn barnacles (barnacle plots only)")`
 ```{r}
 plot_intertidal_nms(d_csv, "CINMS", "CHTBAL", "Acorn Barnacles", c("balanus", "chthamalus_balanus"))
 ```
-`r render_caption("Acorn barnacles (barnacle plots only)")`
+`r render_caption("Acorn barnacles")`
 
 ### Gooseneck barnacles (all plots)
 `r get_figure_info("Gooseneck barnacles (all plots)")`
 ```{r}
 plot_intertidal_nms(d_csv, "CINMS", "POLPOL", "Goose Barnacle")
 ```
-`r render_caption("Gooseneck barnacles (all plots)")`
+`r render_caption("Gooseneck barnacles")`
 
 ### Pink barnacles (all plots)
 `r get_figure_info("Pink barnacles (all plots)")`
 ```{r}
 plot_intertidal_nms(d_csv, "CINMS", "TETRUB", "Pink Barnacle")
 ```
-`r render_caption("Pink barnacles (all plots)")`
+`r render_caption("Pink barnacles")`

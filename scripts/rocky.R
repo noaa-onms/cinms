@@ -248,7 +248,7 @@ map_nms_sites <- function(nms){
   
   # get sites in nms
   sites_nms_shp <- glue("{dir_shp}/{NMS}_sites.shp")
-  nms_ply <- get_nms_ply(nms)
+  nms_ply <- get_nms_polygons(nms)
   
   if (!file.exists(sites_nms_shp)){
     if (!file.exists(sites_csv)) make_sites_csv(raw_csv, sites_csv)
@@ -356,7 +356,7 @@ make_nms_spp_pctcover <- function(sanctuaries, raw_csv, d_csv, redo = F){
     # get sites in nms
     sites_nms_shp <- file.path(dir_pfx, glue("shp/{NMS}_sites.shp"))
     if (!file.exists(sites_nms_shp)){
-      nms_ply <- get_nms_ply(nms)
+      nms_ply <- get_nms_polygons(nms)
       sites_nms_pts <- sites_pts %>%
         st_intersection(
           nms_ply %>% 
@@ -366,7 +366,7 @@ make_nms_spp_pctcover <- function(sanctuaries, raw_csv, d_csv, redo = F){
     sites_nms_pts <- read_sf(sites_nms_shp)
     
     # plot map of sanctuary and sites
-    # nms_ply <- get_nms_ply(nms)
+    # nms_ply <- get_nms_polygons(nms)
     # m <- mapview(nms_ply) + sites_nms_pts
     # print(m)
     
@@ -487,7 +487,7 @@ make_nms_spp_sscount <- function(sanctuaries, sscount_csv, nms_spp_sscount_csv, 
     # get sites in nms
     sites_nms_shp <- file.path(dir_pfx, glue("shp/{NMS}_sites.shp"))
     if (!file.exists(sites_nms_shp)){
-      nms_ply <- get_nms_ply(nms)
+      nms_ply <- get_nms_polygons(nms)
       sites_nms_pts <- sites_pts %>%
         st_intersection(
           nms_ply %>% 
@@ -497,7 +497,7 @@ make_nms_spp_sscount <- function(sanctuaries, sscount_csv, nms_spp_sscount_csv, 
     sites_nms_pts <- read_sf(sites_nms_shp)
     
     # plot map of sanctuary and sites
-    # nms_ply <- get_nms_ply(nms)
+    # nms_ply <- get_nms_polygons(nms)
     # m <- mapview(nms_ply) + sites_nms_pts
     # print(m)
     
@@ -584,7 +584,7 @@ make_nms_spp_sscount <- function(sanctuaries, sscount_csv, nms_spp_sscount_csv, 
   }
 }
 
-#ocnms <- get_nms_ply("ocnms")
+#ocnms <- get_nms_polygons("ocnms")
 #map_nms_sites("ocnms")
 
 if (!file.exists(d_csv) | redo){
