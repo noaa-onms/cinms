@@ -1197,10 +1197,12 @@ Short-term trend in annual mean species richness, species density, Simpson diver
 
 A map of sites across the five Northern Channel Islands where rocky intertidal data were collected. Data collection was done by a consortium of partners through the [Multi-Agency Rocky Intertidal Network](https://marine.ucsc.edu/overview/index.html) (MARINe).
 
-## Interactive figure of mussels in the intertidal
+## California Mussels
 
-A figure showing the percent cover of mussels on rocks in the rocky intertidal across all five Northen Channel Islands from 2002 to 2015. Data were collected by a consortium of partners through the [Multi-Agency Rocky Intertidal Network](https://marine.ucsc.edu/overview/index.html) (MARINe). 
+An interactive figure showing the percent cover of California Mussel (*Mytilus californianus*) over time across all five Northern Channel Islands from 2002 - 2019. Data were collected by a consortium of partners through the [Multi-Agency Rocky Intertidal Network](https://marine.ucsc.edu/overview/index.html) (MARINe).
 
+### Details 
+*Mytilus californianus* can be found in high densities on surf-exposed rocks and pier pillings, generally in the middle/upper intertidal zone and down to 24 meters depth. California mussel form extensive beds on hard surfaces, and attach themselves by secreting "byssal threads"" at the base of their muscular foot. These mollusks often compete for space with sessile crustaceans, especially barnacles (e.g. *Balanus*). These filter feeders  provide shelter and habitat for many intertidal organisms, and are predated upon by sea stars (e.g. *Pisaster*). Suspectible to trampling by humans and smothering by oil spills, recovrey times very greatly depending on location. [Source](https://marine.ucsc.edu/target/target-species-mytilus.html)
 
 ## Golden Rockweed
 
