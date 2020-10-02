@@ -27,8 +27,7 @@ leaflet(
     options = WMSTileOptions(
       version = "1.3.0", format = "image/png", transparent = T, opacity = 0.7,
       time = format(date_end,"%Y-%m-%dT00:00:00Z")))  %>%
-  addPolygons() %>% 
-  addMarkers(lng = ~lon, lat = ~lat, label = ~id, data=site) %>%
+  addPolygons() %>%
   addMouseCoordinates() %>%
   addLegend(
     position="bottomright",
@@ -45,19 +44,27 @@ leaflet(
 ### Trend: Satellite-based SST (CoastWatch)
 
 ```{r}
-csv  <- here(glue("data/oceano/avg-sst_{nms}.csv"))
-url  <- glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv)}")
-html <- a(basename(csv), href=url, target='_blank')
+# Note: I wrote a simple new function to plot the new SST time series, since I couldn't figure out
+# how the functions get_timeseries or plot_timeseries worked (since I couldn't figure them out, I couldn't
+# modify them). The original code is kept below, but commented out
 
-d   <- get_timeseries(sst, lon=site$lon, lat=site$lat, csv=csv, field="sst")
-plot_timeseries(d, title="SST", color="red")
+# csv  <- here(glue("data/oceano/sst_{nms}.csv"))
+# url  <- glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv)}")
+# html <- a(basename(csv), href=url, target='_blank')
+# d   <- get_timeseries(sst, lon=site$lon, lat=site$lat, csv=csv, field="sst")
+# plot_timeseries(d, title="SST", color="red")
+
+csv_SST <-here(glue("data/oceano/avg-sst_{nms}.csv"))
+url_SST  <- glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv_SST)}")
+html_SST <- a(basename(csv_SST), href=url_SST, target='_blank')
+plot_metric_timeseries(csv_SST, "sst")
 ```
 
 `r md_caption("Figure Ux.Ocean.SST.ERD.timeseries.")`
 
 `r md_caption("Figure Ux.Ocean.SST.ERD.timeseries.", get_details = T)`
 
-Download timeseries data for sanctuary: `r html`
+Download timeseries data for sanctuary: `r html_SST`
 
 
 ## Acidification {.tabset}
@@ -96,7 +103,6 @@ leaflet(
       version = "1.3.0", format = "image/png", transparent = T, opacity = 0.7,
       time = format(d_2,"%Y-%m-%dT00:00:00Z")))  %>%
   addPolygons() %>% 
-  addMarkers(lng = ~lon, lat = ~lat, label = ~id, data=site) %>%
   addMouseCoordinates() %>%
   addLegend(
     position="bottomright",
@@ -110,19 +116,27 @@ leaflet(
 ### Trend: Satellite-based (CoastWatch)
 
 ```{r}
-csv  <- here(glue("data/oceano/chl_{nms}.csv"))
-url  <- glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv)}")
-html <- a(basename(csv), href=url, target='_blank')
+# Note: I wrote a simple new function to plot the new chlorophyll time series, since I couldn't figure out
+# how the functions get_timeseries or plot_timeseries worked (since I couldn't figure them out, I couldn't
+# modify them). The original code is kept below, but commented out
 
-d_2   <- get_timeseries(chl, lon=site$lon, lat=site$lat, csv=csv, field="chlor_a")
-plot_timeseries(d_2, title="CHL", color="green")
+# csv  <- here(glue("data/oceano/chl_{nms}.csv"))
+# url  <- glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv)}")
+# html <- a(basename(csv), href=url, target='_blank')
+# d_2   <- get_timeseries(chl, lon=site$lon, lat=site$lat, csv=csv, field="chlor_a")
+# plot_timeseries(d_2, title="CHL", color="green")
+
+csv_chl <-here(glue("data/oceano/avg-chl_{nms}.csv"))
+url_chl  <- glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv_chl)}")
+html_chl <- a(basename(csv_chl), href=url_chl, target='_blank')
+plot_metric_timeseries(csv_chl, "chl")
 ```
 
 `r md_caption("Figure Ux.Ocean.Chl.ERD.timeseries.")`
 
 `r md_caption("Figure Ux.Ocean.Chl.ERD.timeseries.", get_details = T)`
 
-Download timeseries data for sanctuary: `r html`
+Download timeseries data for sanctuary: `r html_chl`
 
 
 
