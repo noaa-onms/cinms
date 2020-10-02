@@ -625,15 +625,15 @@ Percent area of impacted sediments by stratum and survey year in varying categor
 
 ## Figure App.F.12.2.
 
-A figure showing the average number of ochre stars (*Pisaster ochraceus*) counted each year during 30-minute searches at monitoring sites at each of the five islands monitored by the Channel Islands National Park (CHIS) rocky intertidal community monitoring program which is part of the  Multi-agency Rocky Intertidal Network (MARINe).
+A figure showing the average number of ochre stars (*Pisaster ochraceus*) counted each year during 30-minute searches at monitoring sites at each of the five islands monitored by the Channel Islands National Park (CHIS) rocky intertidal community monitoring program which is part of the [Multi-Agency Rocky Intertidal Network](https://marine.ucsc.edu/overview/index.html) (MARINe). 
 
 ### Details
 
 Use the map tab above to see the location of sites on the five islands in Channel Islands National Marine Sanctuary. In the past decade, most locations had more than 100 sea stars counted during 30-minute searches. In 2014, abundances ranged from 0–23 individuals per site with the majority of sites having less than ten.
 
-### Figure App.F.12.3.
+## Figure App.F.12.3.
 
-A figure showing how the sizes of ochre stars (*Pisaster ochraceus*) compare over time and across the five islands monitored by the Channel Islands National Park (CHIS) rocky intertidal community monitoring program which is part of the  Multi-agency Rocky Intertidal Network (MARINe).
+A figure showing how the sizes of ochre stars (*Pisaster ochraceus*) compare over time and across the five islands monitored by the Channel Islands National Park (CHIS) rocky intertidal community monitoring program which is part of the [Multi-Agency Rocky Intertidal Network](https://marine.ucsc.edu/overview/index.html) (MARINe). 
 
 ### Details
 
