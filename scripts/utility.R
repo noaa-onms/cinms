@@ -53,7 +53,7 @@ generate_html <- function (nms){
   oceano_Rmds<-paste0(modal_dir,oceano_Rmds)
 
   # let's go through every rmd file to be worked on
-  for (i in length(oceano_Rmds)){
+  for (i in 1:length(oceano_Rmds)){
     # for a given rmd file, let's generate the html for it in two ways. Way 1 is via
     # rmd2html which gives us the glossary tooltip working right (but where the interactive
     # figures don't work). Way 2 is via render which gives us the interactive figures working 
