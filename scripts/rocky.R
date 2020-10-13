@@ -19,6 +19,7 @@ sanctuaries <- c("cinms", "mbnms", "ocnms")
 # data from [ERDDAP](https://oceanview.pfeg.noaa.gov/erddap/login.html),
 #   logged in as ben@ecoquants.com,
 #   search for "MARINe_ -cciea"
+# https://oceanview.pfeg.noaa.gov/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=MARINe_+-cciea
 
 #dir_pfx     <- here("../info-intertidal")
 dir_gdrive <- "/Volumes/GoogleDrive/Shared drives/NMS/data"
@@ -32,6 +33,7 @@ sscount_csv <- file.path(dir_pfx, "MARINe_sscount_32ad_18f5_c37e.csv") #   1.4 M
 sssize_csv  <- file.path(dir_pfx, "MARINe_sssize_f3df_630e_2c43.csv")  #   3.8 MB
 raw_fmt     <- "csv" # or "csvp"
 sites_csv   <- file.path(dir_pfx, "MARINe_sites.csv")
+mregions_csv <- file.path(dir_pfx, "MARINe_regions.csv")
 d_csv       <- file.path(dir_pfx, "sanctuary_species_percentcover.csv")
 nms_spp_sscount_csv     <- file.path(dir_pfx, "sanctuary_species_sscount.csv")
 sscount_spp_csv         <- file.path(dir_pfx, "sscount_spp.csv")
@@ -313,6 +315,25 @@ get_sites <- function(raw_csv, sites_csv){
   read_csv(sites_csv)
 }
 
+make_mregions_csv <- function(raw_csv, mregions_csv){
+  # [Sites by Region | MARINe](https://marine.ucsc.edu/sites/sites-region/index.html)
+  
+  raw <- read_csv_fmt(raw_csv, raw_fmt)
+  
+  # metadata: https://oceanview.pfeg.noaa.gov/erddap/info/MARINe_raw/index.html
+  mregions <- raw %>% 
+    group_by(bioregion, georegion) %>% 
+    #group_by(site_code, marine_site_name, marine_sort_order, state_province, georegion, bioregion) %>% 
+    # mpa_region, mpa_designation
+    summarize(
+      marine_sort_order_min = min(marine_sort_order, na.rm = T),
+      marine_sort_order_max = max(marine_sort_order, na.rm = T),
+      n_rows = n()) %>% 
+    arrange(marine_sort_order_min, bioregion, georegion) 
+  
+  write_csv(mregions, mregions_csv)
+    View(mregions)
+}
 make_sites_csv <- function(raw_csv, sites_csv){
   raw <- read_csv_fmt(raw_csv, raw_fmt)
   
