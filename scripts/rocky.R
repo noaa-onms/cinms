@@ -16,7 +16,7 @@ here = here::here
 
 sanctuaries <- c("cinms", "mbnms", "ocnms")
 
-# data from [ERDDAP](https://coastwatch.pfeg.noaa.gov/erddap/login.html),
+# data from [ERDDAP](https://oceanview.pfeg.noaa.gov/erddap/login.html),
 #   logged in as ben@ecoquants.com,
 #   search for "MARINe_ -cciea"
 
@@ -27,9 +27,9 @@ dir_pfx     <- file.path(dir_gdrive, "github_info-intertidal_data")
 dir_shp     <- file.path(dir_pfx, "shp")
 #raw1_csv   <- file.path(dir_pfx, "MARINe_raw_4c1e_9218_7d13.csv")
 #raw2_csv   <- file.path(dir_pfx, "MARINe_raw_1c3b_9486_c22d.csv")
-raw_csv     <- file.path(dir_pfx, "MARINe_raw_84af_263b_1183.csv")
-sscount_csv <- file.path(dir_pfx, "MARINe_sscount_32ad_18f5_c37e.csv")
-sssize_csv  <- file.path(dir_pfx, "MARINe_sssize_f3df_630e_2c43.csv")
+raw_csv     <- file.path(dir_pfx, "MARINe_raw_84af_263b_1183.csv")     # 550.2 MB
+sscount_csv <- file.path(dir_pfx, "MARINe_sscount_32ad_18f5_c37e.csv") #   1.4 MB
+sssize_csv  <- file.path(dir_pfx, "MARINe_sssize_f3df_630e_2c43.csv")  #   3.8 MB
 raw_fmt     <- "csv" # or "csvp"
 sites_csv   <- file.path(dir_pfx, "MARINe_sites.csv")
 d_csv       <- file.path(dir_pfx, "sanctuary_species_percentcover.csv")

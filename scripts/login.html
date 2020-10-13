@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>ERDDAP - Log In</title>
+<link rel="shortcut icon" href="https://oceanview.pfeg.noaa.gov/erddap/images/favicon.ico">
+<link href="https://oceanview.pfeg.noaa.gov/erddap/images/erddap2.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-signin-client_id" content="250403933053-9h28hunmkcqf95nbd708v7t9i8mq133d.apps.googleusercontent.com">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+</head>
+<body>
+<table class="compact nowrap" style="width:100%; background-color:#128CB5;"> 
+  <tr> 
+    <td style="text-align:center; width:80px;"><a rel="bookmark"
+      href="http://www.noaa.gov/"><img 
+      title="National Oceanic and Atmospheric Administration" 
+      src="https://oceanview.pfeg.noaa.gov/erddap/images/noaab.png" alt="NOAA"
+      style="vertical-align:middle;"></a></td> 
+    <td style="text-align:left; font-size:x-large; color:#FFFFFF; ">
+      <strong>ERDDAP: ERD Projects</strong>
+      <br><small><small><small>Easier access to scientific data</small></small></small>
+      </td> 
+    <td style="text-align:right; font-size:small;"> 
+      <a href="https://oceanview.pfeg.noaa.gov/erddap/login.html">log in</a> &nbsp; &nbsp;
+      <br>Brought to you by 
+      <a title="National Oceanic and Atmospheric Administration" rel="bookmark"
+      href="http://www.noaa.gov">NOAA</a>  
+      <a title="National Marine Fisheries Service" rel="bookmark"
+      href="http://www.nmfs.noaa.gov">NMFS</a>  
+      <a title="Southwest Fisheries Science Center" rel="bookmark"
+      href="https://swfsc.noaa.gov">SWFSC</a> 
+      <a title="Environmental Research Division" rel="bookmark"
+      href="https://swfsc.noaa.gov/textblock.aspx?Division=ERD&amp;id=1315&amp;ParentMenuId=200">ERD</a>  
+      &nbsp; &nbsp;
+      </td> 
+  </tr> 
+</table>
+<!-- Big HTML tooltips are generated with wz_tooltip from 
+    http://wztip.info/index.php/Main_Page (LGPL license) -->
+<script src="https://oceanview.pfeg.noaa.gov/erddap/images/wz_tooltip.js"></script>
+
+<div class="standard_width">
+
+<h1 class="nowrap"><a title="Click here to return to the ERDDAP home page." 
+rel="start" href="https://oceanview.pfeg.noaa.gov/erddap/index.html">ERDDAP</a> &gt; Log In</h1>
+<p>This ERDDAP is configured to let you log in by signing in to your Google email account,
+including Google-managed accounts such as @noaa.gov accounts.
+This allows ERDDAP to verify your identity (name and email address) 
+  and access your profile image, 
+but does not give ERDDAP access to your emails, your Google Drive, 
+  or any other private information.
+Anyone can log in but the administrator of this ERDDAP determines who gets 
+  access to additional datasets.<script>
+  function onSignIn(googleUser) {
+    var id_token = googleUser.getAuthResponse().id_token;
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'https://oceanview.pfeg.noaa.gov/erddap/loginGoogle.html');
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.onload = function() {
+      console.log('Signed in as: ' + xhr.responseText);
+    };
+    xhr.send('idtoken=' + id_token);
+  }
+</script>
+
+<p><strong>You are not logged in.</strong>
+(You don't have to be logged in to access ERDDAP's publicly available datasets.)
+<p>To log in:
+<ol>
+<li>Sign into your Google account. (The button's label will change from "Sign in" to Signed in".)
+  <div id="gSignInButton" class="g-signin2" data-onsuccess="onSignIn"></div>
+  <br>&nbsp;
+<li>Then
+<button type="button" name="loginToERDDAP" onclick='window.location.assign("https://oceanview.pfeg.noaa.gov/erddap/login.html")' >Log into ERDDAP</button>
+</ol>
+<p>&nbsp;<hr><p><strong>Problems?</strong>
+<p>If you have problems logging in:
+<ul>
+<li>If the Google button says you are "Signed in", 
+  but clicking "Log into ERDDAP" doesn't log you into ERDDAP,
+  wait 10 seconds and click "Log into ERDDAP" again. 
+  If that doesn't work, wait another 10 seconds and try again.
+  <br>&nbsp;
+<li>Make sure your browser is set to allow
+  <a rel="help" href="https://en.wikipedia.org/wiki/HTTP_cookie">cookies<img 
+    src="https://oceanview.pfeg.noaa.gov/erddap/images/external.png" alt=" (external link)" 
+    title="This link to an external web site does not constitute an endorsement."></a>:
+  <ul>
+  <li>In Chrome, use "Settings : Show advanced settings : Privacy/Content Settings : Cookies/Allow local data to be set"
+  <li>In Firefox, use "Options : Privacy : History/Accept cookies from sites"
+  <li>In Internet Explorer, use "Tools : Internet Options : Privacy : Settings : Advanced : First Party Cookies/Accept"
+  <li>In Opera, use "Menu : Settings : Privacy and Security : Cookies/Allow local data to be set"
+  <li>In Safari, use "Safari : Preferences : Security : Cookies and website data : Allow"
+  </ul>
+  If you are making ERDDAP requests from a computer program (other than a browser),
+  cookies are hard to work with. Sorry.
+  <br>&nbsp;
+<li>Contact the administrator of this ERDDAP: Lynn deWitt (email: lynn dot dewitt at noaa dot gov).
+</ul>
+
+
+<p><strong><a class="selfLink" id="scripts" href="#scripts" rel="bookmark">Accessing Private Datasets via Scripts</a></strong>
+<p>For instructions on logging into ERDDAP and accessing private datasets via scripts, see
+<br><a rel="help" href="https://coastwatch.pfeg.noaa.gov/erddap/download/AccessToPrivateDatasets.html">Access to Private Datasets in ERDDAP</a>.
+
+</div>
+<div class="standard_width"> 
+<br>&nbsp;
+<hr>
+ERDDAP, Version 1.82
+<br><a rel="license" href="https://oceanview.pfeg.noaa.gov/erddap/legal.html">Disclaimers</a> | 
+    <a rel="bookmark" href="https://oceanview.pfeg.noaa.gov/erddap/legal.html#privacyPolicy">Privacy Policy</a> |
+    <a rel="bookmark" href="https://oceanview.pfeg.noaa.gov/erddap/legal.html#contact">Contact</a>
+<p>&nbsp;
+<p>&nbsp;
+<p>&nbsp;
+<p>&nbsp;
+<p>&nbsp;
+<p>&nbsp;
+<p>&nbsp;
+<p>&nbsp;
+<p>&nbsp;
+<p>&nbsp;
+<p>&nbsp;
+</div> 
+</body>
+</html>

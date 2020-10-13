@@ -1,0 +1,28 @@
+
+[Google Login Via Script](https://coastwatch.pfeg.noaa.gov/erddap/download/AccessToPrivateDatasets.html)
+
+* [How to get your own API credentials • gargle](https://gargle.r-lib.org/articles/get-api-credentials.html#service-account-token-1)s
+
+
+```{r}
+library(gargle)
+gargle::credentials_service_account(path = "/Users/bbest/private/google-service-token_nms4gargle-92cac0d2687e.json")
+
+```
+
+
+Log in (authenticate) and save the certificate cookie in a cookie-jar file:
+  
+```bash
+curl -v --data 'user=ben@ecoquants.com&password=Ah1984b!' -c cookies.txt -b cookies.txt -k https://oceanview.pfeg.noaa.gov/erddap/login.html
+```
+
+Repeatedly make data requests using the saved cookie:
+
+```bash
+curl -v --data 'user=ben@ecoquants.com&password=Ah1984b!' -c cookies.txt -b cookies.txt -k https://oceanview.pfeg.noaa.gov/erddap/login.html
+curl -v -c cookies.txt -b cookies.txt -k https://oceanview.pfeg.noaa.gov/erddap/login.html -o login.html
+
+curl --compressed -v -c cookies.txt -b cookies.txt -k https://oceanview.pfeg.noaa.gov/erddap/tabledap/MARINe_sscount.csv?time%2Clatitude%2Clongitude%2Cgroup_code%2Csite_code%2Cmarine_site_name%2Cmarine_sort_order%2Cmarine_common_season%2Cmarine_season_code%2Cseason_sequence%2Cseason_name%2Ctarget_assemblage%2Cmethod_code%2Cspecies_code%2Ctotal%2Cmpa_designation%2Cmpa_region%2Cgeoregion%2Cbioregion%2Cstate_province%2Cisland%2Clast_updated&time%3E=2018-12-25T00%3A00%3A00Z&time%3C=2019-01-01T00%3A00%3A00Z -o MARINe_sscount.csv
+```
+
