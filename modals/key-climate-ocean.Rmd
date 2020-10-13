@@ -101,7 +101,14 @@ Download timeseries data for sanctuary: `r html_SST`
 ### Map: Satellite-based (CoastWatch)
 ```{r}
 # get most recent date
-d_2 <- get_dates(chl)[2]
+if ("try-error" %in% class(chl)){
+  d_2 <- read_csv(here("data/oceano/avg-chl_cinms.csv")) %>% 
+    arrange(date) %>% 
+    tail(1) %>% 
+    pull(date)
+} else {
+  d_2 <- get_dates(chl)[2]
+}
 
 leaflet(
   nms_ply,

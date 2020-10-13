@@ -19,7 +19,10 @@ site <- read_csv(sites_csv) %>%
   filter(id == nms)
 
 sst   <- info('jplMURSST41mday')
-chl   <- info("nesdisVHNSQchlaMonthly")
+chl   <- try(info("nesdisVHNSQchlaMonthly"), silent = T)
+if ("try-error" %in% class(chl)){
+  warning(glue("chl ERROR with rerddap::info(): {attr(chl, 'condition')}"))
+}
 # chl   <- info("erdMWchlamday") # TODO: consider this backup chl since above seems to drop off server sometimes
 scape <- info("noaa_aoml_4729_9ee6_ab54", url = "https://cwcgom.aoml.noaa.gov/erddap/")
 ```
