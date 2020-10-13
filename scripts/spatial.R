@@ -137,3 +137,21 @@ generate_latest_SST<- function(){
   write(paste0(year, "," , month, "," , round(write_out[1], 5), "," , round(write_out[2], 5)), file = SST_file, append = TRUE)
   return(invisible())
 }
+
+
+
+generate_all_chl<- function(){
+  date_SST <- seq(as.Date("2002-06-06"), by = "month", length.out = 218) 
+  SST_file <- paste0(here("data/oceano/"),"avg-sst_cinms.csv")
+  file.create(SST_file, showWarnings = TRUE)
+  write("Year,Month,Average_SST,Standard_Deviation_SST", file = SST_file, append = TRUE)
+  
+  for (i in 1:length(date_SST)){
+    year <- as.numeric(substr(date_SST[i], 1, 4))
+    month <- as.numeric(substr(date_SST[i], 6, 7))
+    print (date_SST[i])
+    write_out = ply2erddap(sanctuary_code = "cinms", erddap_id = "jplMURSST41mday", erddap_fld = "sst", year = year, month = month, stats = c("mean", "sd"))
+    write(paste0(year, "," , month, "," , round(write_out[1], 5), "," , round(write_out[2], 5)), file = SST_file, append = TRUE)
+  }
+  return(invisible())
+}

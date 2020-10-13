@@ -12,7 +12,7 @@ modal_dir<- paste0(here::here(),"/modals/")
 modal_list<-list.files(path = modal_dir)
 
 # find Rmd files that have _key-climate-ocean.Rmd in them
-keep_modals<-grep("_key-climate-ocean.Rmd",modal_list, ignore.case = TRUE)
+keep_modals<-grep("key-climate-ocean.Rmd",modal_list, ignore.case = TRUE)
 
 # find Rmd files that are ONLY _key-climate-ocean.Rmd (which we don't want to render)
 throw_out_modal<-grep("^_key-climate-ocean.Rmd$",modal_list, ignore.case = TRUE)
