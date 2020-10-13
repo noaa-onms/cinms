@@ -14,6 +14,71 @@ here                <- here::here
 select              <- dplyr::select
 addLegend           <- leaflet::addLegend
 
+generate_html <- function (nms, ){
+  
+  # the following mini-function has two simple purposes. When fed in a html file, which has already been brought in
+  # to R via readLines, the function will tell you the line number of the html file that contains "</html>" and
+  # the total number of lines in the file
+  where_is_head <-function(input_lines){
+    i<-1  
+    while (!(input_lines[i]=="</head>")){
+      i <-i + 1
+    }
+    output_list <- list("total_lines" = length(input_lines), "head_line" = i)
+    return(output_list)
+  }
+  
+  nms <- "cinms"
+  
+  location <- here::here()
+  start_point <- nchar(location) - nchar(nms) +1
+  
+  if (!(substr(location, start_point, nchar(location)) == nms)){
+    location <- paste(location, nms, sep = "/")
+  }
+  
+  modal_dir<- paste0(location,"/modals/")
+  modal_list<-list.files(path = modal_dir)
+  
+  # find Rmd files that have _key-climate-ocean.Rmd in them
+  keep_modals<-grep("key-climate-ocean.Rmd",modal_list, ignore.case = TRUE)
+  
+  # find Rmd files that are ONLY _key-climate-ocean.Rmd (which we don't want to render)
+  throw_out_modal<-grep("^_key-climate-ocean.Rmd$",modal_list, ignore.case = TRUE)
+  
+  # create list of Rmds that we want to render and append full path to those file names
+  oceano_Rmds<-modal_list[keep_modals[!(keep_modals==throw_out_modal)]]
+  oceano_Rmds<-paste0(modal_dir,oceano_Rmds)
+  
+  # "/Users/jai/Documents/cinms/modals/key-climate-ocean.Rmd"
+  target_rmd<- oceano_Rmds[3] #  "/Users/jai/Documents/cinms/modals/key-climate-ocean.Rmd"    
+  
+  rmd2html(target_rmd)
+  
+  rmarkdown::render(target_rmd, output_file = paste(modal_dir, "temp_file.html", sep ="/"))
+  
+  target_html <- gsub("Rmd", "html", target_rmd)
+  
+  target_lines  <- readLines(target_html)
+  
+  replacement_path <- paste0(modal_dir,"temp_file.html")
+  replacement_lines <- readLines(replacement_path)
+  
+  target_location <- where_is_head(target_lines)
+  replacement_location <-where_is_head(replacement_lines)
+  
+  target_rmd <- "/Users/jai/Documents/cinms/modals/kelp-forest_key-climate-ocean.Rmd"  
+  rmd2html(target_rmd)
+  render(target_rmd, output_file = "temp_file.html")
+  
+  output_file = c(replacement_lines[1:replacement_location$head_line],target_lines[(target_location$head_line+1):target_location$total_lines])
+  
+  write_path <- paste0(modal_dir, "deletethis34.html")
+  write(output_file, file = write_path)
+  
+}
+
+
 md_caption <- function(title, md = here::here("modals/_captions.md"), get_details = F){
 
   stopifnot(file.exists(md))
@@ -423,7 +488,7 @@ rmd2html <- function(rmd){
     output_options   = list(self_contained = F), clean = F)
   
   # final cleanup
-  #file.remove(htm1)  
-  #file.remove(md2)  
-  #file.remove(paste0(substring(md2,1,str_length(md2)-3),".utf8.md"))  
+  file.remove(htm1)  
+  file.remove(md2)  
+  file.remove(paste0(substring(md2,1,str_length(md2)-3),".utf8.md"))  
 }
