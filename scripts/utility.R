@@ -14,9 +14,10 @@ here                <- here::here
 select              <- dplyr::select
 addLegend           <- leaflet::addLegend
 
-generate_html <- function (nms, ){
+generate_html <- function (nms){
+  # The purpose of generate_html is to create the html for rmd files with interactive figures.
   
-  # the following mini-function has two simple purposes. When fed in a html file, which has already been brought in
+  # the following mini-function where_is_head has two simple purposes. When fed in a html file, which has already been brought in
   # to R via readLines, the function will tell you the line number of the html file that contains "</html>" and
   # the total number of lines in the file
   where_is_head <-function(input_lines){
@@ -28,54 +29,59 @@ generate_html <- function (nms, ){
     return(output_list)
   }
   
-  nms <- "cinms"
-  
+  # Let's figure out where we are. In my local environment, I am in the directory for 
+  # the sanctuary. In a docker container though, I won't be. So the following section of 
+  # code attempts to put us in the right directory if we aren't there already.
   location <- here::here()
   start_point <- nchar(location) - nchar(nms) +1
-  
   if (!(substr(location, start_point, nchar(location)) == nms)){
     location <- paste(location, nms, sep = "/")
   }
-  
   modal_dir<- paste0(location,"/modals/")
   modal_list<-list.files(path = modal_dir)
   
-  # find Rmd files that have _key-climate-ocean.Rmd in them
+  # Now, let's generate a list of rmd files that need to be worked on. 
+  
+  # Step 1. find Rmd files that have _key-climate-ocean.Rmd in them
   keep_modals<-grep("key-climate-ocean.Rmd",modal_list, ignore.case = TRUE)
   
-  # find Rmd files that are ONLY _key-climate-ocean.Rmd (which we don't want to render)
+  # Step 2.  find the Rmd files that is ONLY _key-climate-ocean.Rmd (which we want to ignore)
   throw_out_modal<-grep("^_key-climate-ocean.Rmd$",modal_list, ignore.case = TRUE)
   
-  # create list of Rmds that we want to render and append full path to those file names
+  # Step 3. create list of Rmds that we want to render and append full path to those file names
   oceano_Rmds<-modal_list[keep_modals[!(keep_modals==throw_out_modal)]]
   oceano_Rmds<-paste0(modal_dir,oceano_Rmds)
-  
-  # "/Users/jai/Documents/cinms/modals/key-climate-ocean.Rmd"
-  target_rmd<- oceano_Rmds[3] #  "/Users/jai/Documents/cinms/modals/key-climate-ocean.Rmd"    
-  
-  rmd2html(target_rmd)
-  
-  rmarkdown::render(target_rmd, output_file = paste(modal_dir, "temp_file.html", sep ="/"))
-  
-  target_html <- gsub("Rmd", "html", target_rmd)
-  
-  target_lines  <- readLines(target_html)
-  
-  replacement_path <- paste0(modal_dir,"temp_file.html")
-  replacement_lines <- readLines(replacement_path)
-  
-  target_location <- where_is_head(target_lines)
-  replacement_location <-where_is_head(replacement_lines)
-  
-  target_rmd <- "/Users/jai/Documents/cinms/modals/kelp-forest_key-climate-ocean.Rmd"  
-  rmd2html(target_rmd)
-  render(target_rmd, output_file = "temp_file.html")
-  
-  output_file = c(replacement_lines[1:replacement_location$head_line],target_lines[(target_location$head_line+1):target_location$total_lines])
-  
-  write_path <- paste0(modal_dir, "deletethis34.html")
-  write(output_file, file = write_path)
-  
+
+  # let's go through every rmd file to be worked on
+  for (i in length(oceano_Rmds)){
+    # for a given rmd file, let's generate the html for it in two ways. Way 1 is via
+    # rmd2html which gives us the glossary tooltip working right (but where the interactive
+    # figures don't work). Way 2 is via render which gives us the interactive figures working 
+    # right (but where the glossary tooltip doesn't work)
+    target_rmd<- oceano_Rmds[i] #  "/Users/jai/Documents/cinms/modals/key-climate-ocean.Rmd"    
+    rmd2html(target_rmd)
+    rmarkdown::render(target_rmd, output_file = paste(modal_dir, "temp_file.html", sep ="/"))
+    
+    # We want both the interactive figures and the glossary tooltip working in the html. The way to do
+    # that is to grab everything in the <head> section of the html produced by render and then 
+    # to replace the <head> section of the html produced by rmd2html with that. The first step
+    # here is to read in the two html files
+    target_html <- gsub("Rmd", "html", target_rmd)
+    target_lines  <- readLines(target_html)
+    replacement_path <- paste0(modal_dir,"temp_file.html")
+    replacement_lines <- readLines(replacement_path)
+
+    # Next, let's figure out where the <head> section ends in each html file    
+    target_location <- where_is_head(target_lines)
+    replacement_location <-where_is_head(replacement_lines)
+    
+    # Now, let's replace the <head> section and save the new version of the html
+    output_file = c(replacement_lines[1:replacement_location$head_line],target_lines[(target_location$head_line+1):target_location$total_lines])
+    write(output_file, file = target_html)
+    
+    # let's delete the temp html file that we created
+    file.remove(paste(modal_dir, "temp_file.html", sep ="/"))
+  }
 }
 
 
