@@ -84,7 +84,6 @@ generate_html <- function (nms){
   }
 }
 
-
 md_caption <- function(title, md = here::here("modals/_captions.md"), get_details = F){
 
   stopifnot(file.exists(md))
@@ -357,7 +356,9 @@ insert_tooltip<- function(text, glossary_term, span_css){
 }
 
 glossarize_md <- function(md, md_out = md){
-  
+  # The purpose of this function is to inject the html tags required for  glossary tooltip functionality into
+  # a given md file 
+
   # read the markdown file 
   tx  <- readLines(md)
   
@@ -401,7 +402,8 @@ glossarize_md <- function(md, md_out = md){
         # 1. No tooltips on tabs (that is what the searching for "#" takes care of)
         # 2. No tooltips in the gray bar above the image (that is what the searching for the "</i>" and "</div> tags 
         # take care of)
-        if (substr(tx[i],1,1) != "#" && str_sub(tx[i],-4) != "</i>" && str_sub(tx[i],-5) != "</div>"){
+        # 3. No tooltips on lines where there is a link for a data download
+        if (substr(tx[i],1,1) != "#" && str_sub(tx[i],-4) != "</i>" && str_sub(tx[i],-5) != "</div>" && substr(tx[i], 1, 24) != "Download timeseries data"){
           
           # We also want to avoid inserting tooltips into the path of the image file, which is what the following
           # image_start is looking for. If a line does contain an image path, we want to separate that from the rest of
@@ -472,7 +474,8 @@ glossarize_md <- function(md, md_out = md){
 }
 
 rmd2html <- function(rmd){
-  #rmd  <- here(rmd)
+  # The purpose of rmd2html is to create the html for a rmd file - adding in the
+  # glossary tooltip for glossary words in the rmd file
   md1  <- fs::path_ext_set(rmd, "md")
   md2  <- paste0(fs::path_ext_remove(rmd), ".glossarized.md")
   htm1 <- paste0(fs::path_ext_remove(rmd), ".glossarized.html")
