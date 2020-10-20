@@ -14,7 +14,7 @@ here                <- here::here
 select              <- dplyr::select
 addLegend           <- leaflet::addLegend
 
-generate_html <- function (nms){
+generate_html_4_interactive_rmd <- function (nms){
   # The purpose of generate_html is to create the html for rmd files with interactive figures.
   
   # the following mini-function where_is_head has two simple purposes. When fed in a html file, which has already been brought in
