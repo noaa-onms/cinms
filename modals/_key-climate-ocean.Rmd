@@ -1,6 +1,7 @@
 ```{r}
 #source(here::here("scripts/oceano.R"))
 source(here::here("scripts/utility.R"))
+devtools::install_github("marinebon/nms4r")
 
 nms       <- "cinms"
 sites_csv <- here("data/nms_sites.csv")

@@ -64,10 +64,10 @@ leaflet(
 # d   <- get_timeseries(sst, lon=site$lon, lat=site$lat, csv=csv, field="sst")
 # plot_timeseries(d, title="SST", color="red")
 
-csv_SST <-here(glue("data/oceano/avg-sst_{nms}.csv"))
+csv_SST <-here(glue("data/oceano/statistics_sst_{nms}.csv"))
 url_SST  <- glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv_SST)}")
 html_SST <- a(basename(csv_SST), href=url_SST, target='_blank')
-plot_metric_timeseries(csv_SST, "sst")
+nms4r::plot_metric_timeseries(csv_SST, "sst")
 ```
 
 `r md_caption("Figure Ux.Ocean.SST.ERD.timeseries.")`
@@ -147,10 +147,10 @@ leaflet(
 # d_2   <- get_timeseries(chl, lon=site$lon, lat=site$lat, csv=csv, field="chlor_a")
 # plot_timeseries(d_2, title="CHL", color="green")
 
-csv_chl <-here(glue("data/oceano/avg-chl_{nms}.csv"))
+csv_chl <-here(glue("data/oceano/statistics_chl_{nms}.csv"))
 url_chl  <- glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv_chl)}")
 html_chl <- a(basename(csv_chl), href=url_chl, target='_blank')
-plot_metric_timeseries(csv_chl, "chl")
+nms4r::plot_metric_timeseries(csv_chl, "chl")
 ```
 
 `r md_caption("Figure Ux.Ocean.Chl.ERD.timeseries.")`
