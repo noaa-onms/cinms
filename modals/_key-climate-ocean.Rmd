@@ -1,8 +1,4 @@
 ```{r}
-#source(here::here("scripts/oceano.R"))
-#source(here::here("scripts/utility.R"))
-#devtools::install_github("marinebon/nms4r")
-
 if (!require(librarian)){
   install.packages("librarian")
   library(librarian)
@@ -16,20 +12,20 @@ sites_csv <- here::here("data/nms_sites.csv")
 nms_ply <- nms4r::get_nms_polygons(nms)
 
 if (F){
-  st_centroid(nms_ply$geometry) %>% st_coordinates() %>% as_tibble() %>% 
+  sf::st_centroid(nms_ply$geometry) %>% sf::st_coordinates() %>% tibble::as_tibble() %>% 
     tail(1) %>% 
-    mutate(id = !!nms) %>% 
-    select(id, lon = X, lat = Y) %>% 
-    write_csv(sites_csv)
+    dplyr::mutate(id = !!nms) %>% 
+    dplyr::select(id, lon = X, lat = Y) %>% 
+    readr::write_csv(sites_csv)
 }
 
 site <- readr::read_csv(sites_csv) %>%
-  filter(id == nms)
+  dplyr::filter(id == nms)
 
 sst   <- rerddap::info('jplMURSST41mday')
 chl   <- try(rerddap::info("nesdisVHNSQchlaMonthly"), silent = T)
 if ("try-error" %in% class(chl)){
-  warning(glue("chl ERROR with rerddap::info(): {attr(chl, 'condition')}"))
+  warning(glue::glue("chl ERROR with rerddap::info(): {attr(chl, 'condition')}"))
 }
 # chl   <- info("erdMWchlamday") # TODO: consider this backup chl since above seems to drop off server sometimes
 scape <- rerddap::info("noaa_aoml_4729_9ee6_ab54", url = "https://cwcgom.aoml.noaa.gov/erddap/")

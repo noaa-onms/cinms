@@ -11,7 +11,6 @@ knitr::opts_chunk$set(
 	message = FALSE,
 	warning = FALSE
 )
-#source(here::here("scripts/utility.R"))
 ```
 
 ```{r svg, child = '_key-climate-ocean.Rmd'}
@@ -53,21 +52,9 @@ leaflet(
 
 `r nms4r::md_caption("Figure Ux.Ocean.SST.ERD.map.", get_details = T)`
 
-
-
 ### Trend: Satellite-based SST (CoastWatch)
 
-```{r}
-# Note: I wrote a simple new function to plot the new SST time series, since I couldn't figure out
-# how the functions get_timeseries or plot_timeseries worked (since I couldn't figure them out, I couldn't
-# modify them). The original code is kept below, but commented out
-
-# csv  <- here(glue("data/oceano/sst_{nms}.csv"))
-# url  <- glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv)}")
-# html <- a(basename(csv), href=url, target='_blank')
-# d   <- get_timeseries(sst, lon=site$lon, lat=site$lat, csv=csv, field="sst")
-# plot_timeseries(d, title="SST", color="red")
-
+```{r sst_time_series}
 csv_SST <-here(glue("data/oceano/statistics_sst_{nms}.csv"))
 url_SST  <- glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv_SST)}")
 html_SST <- a(basename(csv_SST), href=url_SST, target='_blank')
@@ -140,17 +127,7 @@ leaflet(
 `r nms4r::md_caption("Figure Ux.Ocean.Chl.ERD.map.", get_details = T)`
 ### Trend: Satellite-based (CoastWatch)
 
-```{r}
-# Note: I wrote a simple new function to plot the new chlorophyll time series, since I couldn't figure out
-# how the functions get_timeseries or plot_timeseries worked (since I couldn't figure them out, I couldn't
-# modify them). The original code is kept below, but commented out
-
-# csv  <- here(glue("data/oceano/chl_{nms}.csv"))
-# url  <- glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv)}")
-# html <- a(basename(csv), href=url, target='_blank')
-# d_2   <- get_timeseries(chl, lon=site$lon, lat=site$lat, csv=csv, field="chlor_a")
-# plot_timeseries(d_2, title="CHL", color="green")
-
+```{r chlorophyll_time_series}
 csv_chl <-here(glue("data/oceano/statistics_chl_{nms}.csv"))
 url_chl  <- glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv_chl)}")
 html_chl <- a(basename(csv_chl), href=url_chl, target='_blank')
@@ -162,7 +139,6 @@ nms4r::plot_metric_timeseries(csv_chl, "chl")
 `r nms4r::md_caption("Figure Ux.Ocean.Chl.ERD.timeseries.", get_details = T)`
 
 Download timeseries data for sanctuary: `r html_chl`
-
 
 ## Nutrients {.tabset}
 

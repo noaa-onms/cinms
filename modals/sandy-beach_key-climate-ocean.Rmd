@@ -1,5 +1,5 @@
 
-```{r, include=F}
+```{r setup, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 ```
 
@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 ## Temperature {.tabset}
 ### Map: Satellite-based SST (CoastWatch)
 
-```{r}
+```{r sst_map}
 # get most recent date
 date_end <- get_dates(sst)[2]
 
@@ -29,40 +29,30 @@ leaflet(
       time = format(date_end,"%Y-%m-%dT00:00:00Z")))  %>%
   addPolygons() %>% 
   addMouseCoordinates() %>%
-  addLegend(
+  leaflet::addLegend(
     position="bottomright",
     title = paste0("SST (°C)<br>", format(date_end,"%Y-%m-%d")),
     colorNumeric("Spectral", c(0,32), reverse=T), seq(0,32))
 ```
 
-`r md_caption("Figure Ux.Ocean.SST.ERD.map.")`
+`r nms4r::md_caption("Figure Ux.Ocean.SST.ERD.map.")`
 
-`r md_caption("Figure Ux.Ocean.SST.ERD.map.", get_details = T)`
+`r nms4r::md_caption("Figure Ux.Ocean.SST.ERD.map.", get_details = T)`
 
 
 
 ### Trend: Satellite-based SST (CoastWatch)
 
-```{r}
-# Note: I wrote a simple new function to plot the new SST time series, since I couldn't figure out
-# how the functions get_timeseries or plot_timeseries worked (since I couldn't figure them out, I couldn't
-# modify them). The original code is kept below, but commented out
-
-# csv  <- here(glue("data/oceano/sst_{nms}.csv"))
-# url  <- glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv)}")
-# html <- a(basename(csv), href=url, target='_blank')
-# d   <- get_timeseries(sst, lon=site$lon, lat=site$lat, csv=csv, field="sst")
-# plot_timeseries(d, title="SST", color="red")
-
+```{r sst_time_series}
 csv_SST <-here(glue("data/oceano/statistics_sst_{nms}.csv"))
 url_SST  <- glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv_SST)}")
 html_SST <- a(basename(csv_SST), href=url_SST, target='_blank')
 nms4r::plot_metric_timeseries(csv_SST, "sst")
 ```
 
-`r md_caption("Figure Ux.Ocean.SST.ERD.timeseries.")`
+`r nms4r::md_caption("Figure Ux.Ocean.SST.ERD.timeseries.")`
 
-`r md_caption("Figure Ux.Ocean.SST.ERD.timeseries.", get_details = T)`
+`r nms4r::md_caption("Figure Ux.Ocean.SST.ERD.timeseries.", get_details = T)`
 
 Download timeseries data for sanctuary: `r html_SST`
 

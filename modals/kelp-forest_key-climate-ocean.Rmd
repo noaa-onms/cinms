@@ -1,6 +1,5 @@
 ```{r setup, include=F}
 knitr::opts_chunk$set(echo = F, message = F, warning = F)
-source(here::here("scripts/utility.R"))
 ```
 
 ```{r svg, child = '_key-climate-ocean.Rmd'}
@@ -10,7 +9,7 @@ source(here::here("scripts/utility.R"))
 ## Temperature {.tabset}
 ### Map: Satellite-based SST (CoastWatch)
 
-```{r}
+```{r SST_map}
 # get most recent date
 date_end <- get_dates(sst)[2]
 
@@ -29,28 +28,19 @@ leaflet(
       time = format(date_end,"%Y-%m-%dT00:00:00Z")))  %>%
   addPolygons() %>%
   addMouseCoordinates() %>%
-  addLegend(
+  leaflet::addLegend(
     position="bottomright",
     title = paste0("SST (°C)<br>", format(date_end,"%Y-%m-%d")),
     colorNumeric("Spectral", c(0,32), reverse=T), seq(0,32))
 ```
 
-`r md_caption("Figure Ux.Ocean.SST.ERD.map.")`
+`r nms4r::md_caption("Figure Ux.Ocean.SST.ERD.map.")`
 
-`r md_caption("Figure Ux.Ocean.SST.ERD.map.", get_details = T)`
-
-
+`r nms4r::md_caption("Figure Ux.Ocean.SST.ERD.map.", get_details = T)`
 
 ### Trend: Satellite-based SST (CoastWatch)
 
-```{r}
-# csv  <- here(glue("data/oceano/avg-sst_{nms}.csv"))
-# url  <- glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv)}")
-# html <- a(basename(csv), href=url, target='_blank')
-
-# d   <- get_timeseries(sst, lon=site$lon, lat=site$lat, csv=csv, field="sst")
-# plot_timeseries(d, title="SST", color="red")
-
+```{r SST_time_series}
 csv_SST <-here(glue("data/oceano/statistics_sst_{nms}.csv"))
 url_SST  <- glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv_SST)}")
 html_SST <- a(basename(csv_SST), href=url_SST, target='_blank')
@@ -63,18 +53,17 @@ nms4r::plot_metric_timeseries(csv_SST, "sst")
 
 Download timeseries data for sanctuary: `r html_SST`
 
-
 ## Nutrients {.tabset}
 
 ### Trend: Nitrate profile (PnB)
 
-`r render_figure("Figure App.D.6.5.", "../img/cinms_cr/App.D.6.5.png")`
+`r nms4r::render_figure("Figure App.D.6.5.", "../img/cinms_cr/App.D.6.5.png")`
 
 ### Trend: Phosphate profile (PnB)
 
-`r render_figure("Figure App.D.6.6.", "../img/cinms_cr/App.D.6.6.png")`
+`r nms4r::render_figure("Figure App.D.6.6.", "../img/cinms_cr/App.D.6.6.png")`
 
 ### Trend: Nitrate anomaly
 
-`r render_figure("Figure App.D.6.7.", "../img/cinms_cr/App.D.6.7_SST and nitrate anomalies 2001-2015_Reed et al._2016.jpg")`
+`r nms4r::render_figure("Figure App.D.6.7.", "../img/cinms_cr/App.D.6.7_SST and nitrate anomalies 2001-2015_Reed et al._2016.jpg")`
 
