@@ -7,10 +7,11 @@ params:
 
 ```{r setup, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-source(here::here("scripts/utility.R"))
+library(devtools)
+devtools::install_github("marinebon/nms4r")
 ```
 
-`r get_modal_info()`
+`r nms4r::get_modal_info()`
 
 ```{r svg, child = '_svg-html_child.Rmd'}
 ```

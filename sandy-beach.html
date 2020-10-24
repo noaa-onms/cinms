@@ -13,17 +13,26 @@
 
 <title>Sandy Beach</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="sandy-beach_files/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.3.1/css/all.min.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.3.1/css/v4-shims.min.css" rel="stylesheet" />
+<link href="sandy-beach_files/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="sandy-beach_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="sandy-beach_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="sandy-beach_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="sandy-beach_files/navigation-1.1/tabsets.js"></script>
+<link href="sandy-beach_files/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="sandy-beach_files/highlightjs-9.12.0/highlight.js"></script>
+<link href="sandy-beach_files/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="sandy-beach_files/anchor-sections-1.0/anchor-sections.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -340,7 +349,7 @@ Text: <input id="toggle-text" type="checkbox" data-toggle="toggle" data-size="mi
 </ul>
 </div>
 <script>
-link_svg(svg = "svg/cinms_sandy-beach.svg", csv = "svg/svg_links_cinms.csv", debug = true);
+link_svg(svg = "svg/<span aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%" id="tooltip27">cinms</span>_sandy-beach.svg", csv = "svg/svg_links_<span aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%" id="tooltip27">cinms</span>.csv", debug = true);
 </script>
 <script>
 $(function() {
@@ -350,6 +359,9 @@ $('#toggle-text').change(function() {
 })
 })
 </script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script>tippy ("#tooltip27",{content: "Channel Islands National Marine Sanctuary"});</script>
 
 
 
@@ -360,7 +372,7 @@ $('#toggle-text').change(function() {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
