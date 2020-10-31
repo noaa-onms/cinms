@@ -8,21 +8,27 @@ output:
 
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-source(here::here("scripts/utility.R"))
+# Let's pull the nms4r package from github, but only if it isn't already installed. We don't want to
+# pull the package unnecessarily as github allows a max of 60 unauthenticated requests per hour.
+ip = installed.packages()[,1]
+if (all(ip!="nms4r")){
+  library(devtools)
+  devtools::install_github("marinebon/nms4r")
+}
 ```
 
-`r get_modal_info()`
+`r nms4r::get_modal_info()`
 
 ## {.tabset}
 
 ### Red abalone (PISCO)
 
-`r render_figure("Figure App.F.13.9.", "../img/cinms_cr/App.F.13.9.jpg")`
+`r nms4r::render_figure("Figure App.F.13.9.", "../img/cinms_cr/App.F.13.9.jpg")`
 
 ### Red abalone (CHIS)
 
-`r render_figure("Figure App.F.13.10a.", "../img/cinms_cr/App.F.13.10a.Haliotis_rufescens_CINP.jpg")`
+`r nms4r::render_figure("Figure App.F.13.10a.", "../img/cinms_cr/App.F.13.10a.Haliotis_rufescens_CINP.jpg")`
 
 ### Pink abalone (CHIS)
 
-`r render_figure("Figure App.F.13.10b.", "../img/cinms_cr/App.F.13.10b.Haliotis_corrugata_CINP.jpg")`
+`r nms4r::render_figure("Figure App.F.13.10b.", "../img/cinms_cr/App.F.13.10b.Haliotis_corrugata_CINP.jpg")`

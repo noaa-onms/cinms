@@ -4,42 +4,66 @@ editor_options:
   chunk_output_type: console
 ---
 
-```{r, include=F}
+```{r setup, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-source(here::here("../cinms/scripts/rocky.R"))
-source(here::here("../cinms/scripts/utility.R"))
+library(magrittr)
+
+# Let's pull the nms4r package from github, but only if it isn't already installed. We don't want to
+# pull the package unnecessarily as github allows a max of 60 unauthenticated requests per hour.
+ip = installed.packages()[,1]
+if (all(ip!="nms4r")){
+  library(devtools)
+  devtools::install_github("marinebon/nms4r")
+}
+
+# The following is used by the plot_intertidal_nms function called later
+dir_gdrive <- "/Volumes/GoogleDrive/Shared drives/NMS/data"
+dir_pfx     <- file.path(dir_gdrive, "github_info-intertidal_data")
+d_csv       <- file.path(dir_pfx, "sanctuary_species_percentcover.csv")
+nms_rgns_csv    <- file.path(dir_pfx, "MARINe_graphs.xlsx - sites in regions.csv")
+nms_rgns1 <- readr::read_csv(nms_rgns_csv) %>% 
+  tidyr::fill(nms) %>% 
+  dplyr::group_by(nms) %>% 
+  tidyr::fill(region) %>% 
+  dplyr::mutate(
+    rgn = region) # View(nms_rgns)
 ```
 
-`r get_modal_info()`
+`r nms4r::get_modal_info()`
 
 ##  {.tabset} 
 
 ### MARINe: Map of Sites
 
-`r get_figure_info("Figure App.F.12.2.")`
+`r nms4r::get_figure_info("Figure App.F.12.2.")`
 
-```{r}
-map_nms_sites("cinms")
+```{r map sites}
+nms4r::map_nms_sites("cinms")
 ```
 
-`r render_caption("Figure Ux.Rocky.MARINe.map.")`
+`r nms4r::md_caption("Figure Ux.Rocky.MARINe.map.")`
+
+`r nms4r::md_caption("Figure Ux.Rocky.MARINe.map.", get_details = T)`
 
 ### MARINe: Ochre Seastar (_Pisaster ochraceus_) {.active}
 
-`r get_figure_info("Figure App.F.12.2.")`
+`r nms4r::get_figure_info("Figure App.F.12.2.")`
 
-```{r}
-plot_intertidal_nms(nms_spp_sscount_csv, "CINMS", "PISOCH", "Ochre Seastar", fld_val = "count", label_y = "Count (annual avg)")
+```{r plot seastar}
+nms_spp_sscount_csv     <- file.path(dir_pfx, "sanctuary_species_sscount.csv")
+nms4r::plot_intertidal_nms(nms_spp_sscount_csv, "CINMS", "PISOCH", "Ochre Seastar", nms_rgns1, fld_val = "count", label_y = "Count (annual avg)")
 ```
 
-`r render_caption("Figure Ux.Rocky.MARINe.Ochre-Stars.")`
+`r nms4r::md_caption("Figure Ux.Rocky.MARINe.Ochre-Stars.")`
 
-### CHIS: Ochre Seastars arcoss the sanctuary
+`r nms4r::md_caption("Figure Ux.Rocky.MARINe.Ochre-Stars.", get_details = T)`
 
-`r render_figure("Figure App.F.12.2.", "../img/cinms_cr/App.F.12.2.Pochraceus_abundance.jpg")`
+### CHIS: Ochre Seastars across the sanctuary
+
+`r nms4r::render_figure("Figure App.F.12.2.", "../img/cinms_cr/App.F.12.2.Pochraceus_abundance.jpg")`
 
 ### CHIS: Ochre Seastars at Individual Islands
 
-`r render_figure("Figure App.F.12.3.", "../img/cinms_cr/App.F.12.3.Pochraceus_size.jpg")`
+`r nms4r::render_figure("Figure App.F.12.3.", "../img/cinms_cr/App.F.12.3.Pochraceus_size.jpg")`
 
-`r get_figure_info("Figure App.F.12.3.")`
+`r nms4r::get_figure_info("Figure App.F.12.3.")`

@@ -11,7 +11,7 @@
 
 
 
-<title>beach-cast.utf8</title>
+<title>beach-cast.glossarized.utf8</title>
 
 <script src="modal_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,6 +22,17 @@
 <script src="modal_libs/navigation-1.1/tabsets.js"></script>
 <link href="modal_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="modal_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="modal_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="modal_libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -69,6 +80,8 @@ h6 {
 </style>
 
 <link rel="stylesheet" href="_modal_styles.css" type="text/css" />
+<link rel="stylesheet" href="modal_libs/font-awesome-5.3.1/css/all.min.css" type="text/css" />
+<link rel="stylesheet" href="modal_libs/font-awesome-5.3.1/css/v4-shims.min.css" type="text/css" />
 
 
 
@@ -196,11 +209,11 @@ summary {
 </div>
 </div>
 <div class="figure">
-<img src="../img/cinms_cr/BeachCombers_CCIEA_Strandings_South.png" alt="Encounter rate (birds/km) of carcasses of five commonly encountered species on mainland beach segments in the Southern California Bight by coastal ocean mammal and bird education and research surveys (BeachCOMBERS) program volunteers." />
+<img src="../img/cinms_cr/BeachCombers_CCIEA_Strandings_South.png" alt="" />
 <p class="caption">Encounter rate (birds/km) of carcasses of five commonly encountered species on mainland beach segments in the Southern California Bight by coastal ocean mammal and bird education and research surveys (BeachCOMBERS) program volunteers.</p>
 </div>
 <details>
-<summary>Click for Details</summary> The mean and trend of the last five years is evaluated. The dotted line box indicates the evaluation period and upper and lower standard deviation of the full time series. Annual data for Cassin’s auklet and northern fulmar are calculated through February of the following year. For more information, consult BeachCombers_CCIEA_Strandings_South in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank">CINMS 2016 Condition Report</a>.
+<summary>Click for Details</summary> The mean and trend of the last five years is evaluated. The dotted line box indicates the evaluation period and upper and lower <span id="tooltip3" aria-describedby="tooltip3" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">standard deviation</span> of the full time series. Annual data for Cassin’s auklet and northern fulmar are calculated through February of the following year. For more information, consult BeachCombers_CCIEA_Strandings_South in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 <div id="trend-oiled-beachcast-seabirds" class="section level3">
@@ -216,16 +229,21 @@ summary {
 </div>
 </div>
 <div class="figure">
-<img src="../img/cinms_cr/BeachCombers_seabird_deposition_oiling.png" alt="Monthly average seabird deposition (seabirds/km) and percent oiled observed on mainland beach segments in the Southern California Bight by coastal ocean mammal and bird education and research surveys (BeachCOMBERS) program volunteers." />
-<p class="caption">Monthly average seabird deposition (seabirds/km) and percent oiled observed on mainland beach segments in the Southern California Bight by coastal ocean mammal and bird education and research surveys (BeachCOMBERS) program volunteers.</p>
+<img src="../img/cinms_cr/BeachCombers_seabird_deposition_oiling.png" alt="" />
+<p class="caption">Monthly average seabird deposition (seabirds/km) and percent oiled observed on mainland beach segments in the <span id="tooltip4" aria-describedby="tooltip4" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Southern California Bight</span> by coastal ocean mammal and bird education and research surveys (BeachCOMBERS) program volunteers.</p>
 </div>
 <details>
-<summary>Click for Details</summary> Significant oiling events were identified when the percent oiled birds exceeded 9% percent mortality. For more information, consult BeachCombers_seabird_deposition_oiling in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank">CINMS 2016 Condition Report</a>.
+<summary>Click for Details</summary> Significant oiling events were identified when the percent oiled birds exceeded 9% percent mortality. For more information, consult BeachCombers_seabird_deposition_oiling in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 <div id="marine-mammals" class="section level3">
 <h3>Marine Mammals</h3>
-<p>No data are currently available, please check back soon!</p>
+No data are currently available, please check back soon!
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script>tippy ("#tooltip3",{content: "a statistical measure of spread within a group of numbers. With a low standard deviation, the numbers tend to cluster around the average. With a high standard deviation, the numbers are scattered far from the average."});</script>
+<script>tippy ("#tooltip4",{content: "the curved coastline of Southern California from Point Conception to San Diego. The area includes the Channel Islands and part of the Pacific Ocean"});</script>
+<script>tippy ("#tooltip27",{content: "Channel Islands National Marine Sanctuary"});</script>
 </div>
 </div>
 
@@ -238,7 +256,7 @@ summary {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();

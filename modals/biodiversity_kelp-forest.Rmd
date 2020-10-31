@@ -1,30 +1,31 @@
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-source(here::here("scripts/utility.R"))
+# Let's pull the nms4r package from github, but only if it isn't already installed. We don't want to
+# pull the package unnecessarily as github allows a max of 60 unauthenticated requests per hour.
+ip = installed.packages()[,1]
+if (all(ip!="nms4r")){
+  library(devtools)
+  devtools::install_github("marinebon/nms4r")
+}
 ```
-
-`r get_modal_info()`
-
-[More information about the Santa Barbara Channel Marine Biodiversity Network can be found here](https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100466)
-
-[SBC MBON data can be accessed here](http://sbc.marinebon.org/data/catalog/)
+`r nms4r::get_modal_info()`
 
 ## {.tabset}
 
 ### Kelp forest fish - effective number of species
 
-`r render_figure("Figure App.F.15.1.", "../img/cinms_cr/App.F.15.1a.MBON_kelp_forest_fish.jpg")`
+`r nms4r::render_figure("Figure App.F.15.1.", "../img/cinms_cr/App.F.15.1a.MBON_kelp_forest_fish.jpg")`
 
 ### Bottom mobile invertebrates - effective number of species
 
-`r render_figure("Figure App.F.15.1.", "../img/cinms_cr/App.F.15.1b.MBON_mobile_invertebrate.jpg")`
+`r nms4r::render_figure("Figure App.F.15.1.", "../img/cinms_cr/App.F.15.1b.MBON_mobile_invertebrate.jpg")`
 
 ### Deeper water fish - effective number of species
 
-`r render_figure("Figure App.F.15.1.", "../img/cinms_cr/App.F.15.1c.MBON_deep_water_fish.jpg")`
+`r nms4r::render_figure("Figure App.F.15.1.", "../img/cinms_cr/App.F.15.1c.MBON_deep_water_fish.jpg")`
 
 ### Kelp forest fish - thermal affinity ratio
 
-`r render_figure("Figure App.F.15.2.", "../img/cinms_cr/App.F.15.2.Thermal_LogRatio.jpg")`
+`r nms4r::render_figure("Figure App.F.15.2.", "../img/cinms_cr/App.F.15.2.Thermal_LogRatio.jpg")`
 
 

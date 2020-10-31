@@ -1,24 +1,27 @@
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-
-library(glue)
-source(here::here("scripts/calcofi.R"))
-source(here::here("scripts/utility.R"))
+# Let's pull the nms4r package from github, but only if it isn't already installed. We don't want to
+# pull the package unnecessarily as github allows a max of 60 unauthenticated requests per hour.
+ip = installed.packages()[,1]
+if (all(ip!="nms4r")){
+  library(devtools)
+  devtools::install_github("marinebon/nms4r")
+}
 ```
 
-`r get_modal_info()`
+`r nms4r::get_modal_info()`
 
 ## {.tabset}
 
 ### Map of Regions
 
-```{r, fig.cap=md_caption("Figure App.F.12.17.")}
-calcofi_map()
+```{r, fig.cap=nms4r::md_caption("Figure App.F.12.17.")}
+nms4r::calcofi_map()
 ```
 
 ### Market Squid {.active}
 
-`r render_figure("Figure App.F.12.20.squid.", "../img/cinms_cr/App.F.12.20.CalCOFI_squid.jpg")`
+`r nms4r::render_figure("Figure App.F.12.20.squid.", "../img/cinms_cr/App.F.12.20.CalCOFI_squid.jpg")`
 
 ### Krill
 

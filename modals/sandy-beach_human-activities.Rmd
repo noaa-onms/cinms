@@ -1,9 +1,15 @@
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-source(here::here("scripts/utility.R"))
+# Let's pull the nms4r package from github, but only if it isn't already installed. We don't want to
+# pull the package unnecessarily as github allows a max of 60 unauthenticated requests per hour.
+ip = installed.packages()[,1]
+if (all(ip!="nms4r")){
+  library(devtools)
+  devtools::install_github("marinebon/nms4r")
+}
 ```
 
-`r get_modal_info()`
+`r nms4r::get_modal_info()`
 
 # {.tabset}
 
@@ -15,21 +21,21 @@ source(here::here("scripts/utility.R"))
 
 ##### Trends: Offshore Oil and Gas Activity 
 
-`r render_figure("Figure App.C.4.17.", "../img/cinms_cr/App.C.4.17.Oil_gas_activity_CCIEA.png")`
+`r nms4r::render_figure("Figure App.C.4.17.", "../img/cinms_cr/App.C.4.17.Oil_gas_activity_CCIEA.png")`
 
 ##### Oil & Gas Maps {.tabset}
 
 ###### Offshore Oil Platforms
 
-`r render_figure("Figure App.C.2.1.", "../img/cinms_cr/App.C.2.1 Oil platforms_Mari Cajandig.jpg")`
+`r nms4r::render_figure("Figure App.C.2.1.", "../img/cinms_cr/App.C.2.1 Oil platforms_Mari Cajandig.jpg")`
 
 ###### 2015 Refugio Oil Spill
 
-`r render_figure("Figure App.C.2.3.", "../img/cinms_cr/App.C.2.3 Refugio Spill_Mari Cajandig.jpg")`
+`r nms4r::render_figure("Figure App.C.2.3.", "../img/cinms_cr/App.C.2.3 Refugio Spill_Mari Cajandig.jpg")`
 
-`r render_figure("Figure App.C.2.4.", "../img/cinms_cr/App.C.2.4.jpg")`
+`r nms4r::render_figure("Figure App.C.2.4.", "../img/cinms_cr/App.C.2.4.jpg")`
 
-`r render_figure("Figure App.C.2.5.", "../img/cinms_cr/App.C.2.5.jpg")`
+`r nms4r::render_figure("Figure App.C.2.5.", "../img/cinms_cr/App.C.2.5.jpg")`
 
 #### Visitors
 
@@ -37,15 +43,15 @@ source(here::here("scripts/utility.R"))
 
 ###### Trends: Visitors at Frenchy's Cove
 
-`r render_figure("Figure App.C.4.8.", "../img/cinms_cr/App.C.4.8.Visitation_Frenchys.jpg")`
+`r nms4r::render_figure("Figure App.C.4.8.", "../img/cinms_cr/App.C.4.8.Visitation_Frenchys.jpg")`
 
 ###### Map: Location Recreational Activity
 
-`r render_figure("Figure App.C.4.7.", "../img/cinms_cr/App.C.4.7_chen_recreation.jpg")`
+`r nms4r::render_figure("Figure App.C.4.7.", "../img/cinms_cr/App.C.4.7_chen_recreation.jpg")`
 
 ###### Trends: Visitors (CHIS)
 
-`r render_figure("Figure App.C.1.4.", "../img/cinms_cr/App.C.1.4.Vistors_CINP.png")`
+`r nms4r::render_figure("Figure App.C.1.4.", "../img/cinms_cr/App.C.1.4.Vistors_CINP.png")`
 
 ## Human Impacts
 
@@ -57,7 +63,7 @@ source(here::here("scripts/utility.R"))
 
 ###### Trends: Southern California Beaches 
 
-`r render_figure("Figure App.C.4.14.", "../img/cinms_cr/App.C.4.14.Marine debris_CCIEA.jpg")`
+`r nms4r::render_figure("Figure App.C.4.14.", "../img/cinms_cr/App.C.4.14.Marine debris_CCIEA.jpg")`
 
 
 #### Vessel Groundings
@@ -66,7 +72,7 @@ source(here::here("scripts/utility.R"))
 
 ###### Map: Vessel Groundings
 
-`r render_figure("Figure App.C.3.1.", "../img/cinms_cr/App.C.3.1_VesselGroundingsMap.jpg")`
+`r nms4r::render_figure("Figure App.C.3.1.", "../img/cinms_cr/App.C.3.1_VesselGroundingsMap.jpg")`
 
 
 
@@ -74,8 +80,8 @@ source(here::here("scripts/utility.R"))
 
 ##### Comparison: By Region
 
-`r render_figure("Figure App.C.4.9.", "../img/cinms_cr/App.C.4.9.Seabird_disturbance_rates_Robinette.jpg")`
+`r nms4r::render_figure("Figure App.C.4.9.", "../img/cinms_cr/App.C.4.9.Seabird_disturbance_rates_Robinette.jpg")`
 
 #### Trend: oiled beachcast seabirds
 
-`r render_figure("BeachCombers_seabird_deposition_oiling", "../img/cinms_cr/BeachCombers_seabird_deposition_oiling.png")`
+`r nms4r::render_figure("BeachCombers_seabird_deposition_oiling", "../img/cinms_cr/BeachCombers_seabird_deposition_oiling.png")`

@@ -4,101 +4,104 @@ editor_options:
   chunk_output_type: console
 ---
 
-```{r, include=F}
+```{r setup, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-
 library(glue)
-source(here::here("scripts/calcofi.R"))
-source(here::here("scripts/utility.R"))
+# Let's pull the nms4r package from github, but only if it isn't already installed. We don't want to
+# pull the package unnecessarily as github allows a max of 60 unauthenticated requests per hour.
+ip = installed.packages()[,1]
+if (all(ip!="nms4r")){
+  library(devtools)
+  devtools::install_github("marinebon/nms4r")
+}
 ```
 
-`r get_modal_info()`
+`r nms4r::get_modal_info()`
 
 ## {.tabset}
 
 ### Map of Regions
 
-```{r, fig.cap=md_caption("Figure App.F.12.17.new")}
-calcofi_map()
+```{r calcofi map, fig.cap=nms4r::md_caption("Figure App.F.12.17.new")}
+nms4r::calcofi_map()
 ```
 
 ### Larval fish, cool-water species {.active}
 
 ##### CINMS Region
 
-```{r}
+```{r calcofi plot 1}
 grp   <- "Cool-water associated ichthyoplankton"
 rgn   <- "CINMS"
 
-title <- glue("{grp} - {rgn} Region")
-csv   <- glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/{grp}_{rgn}.csv")
+title <- glue::glue("{grp} - {rgn} Region")
+csv   <- glue::glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/{grp}_{rgn}.csv")
 
-calcofi_plot(csv = csv, title = title)
+nms4r::calcofi_plot(csv = csv, title = title)
 ```
 
 ##### SoCal Shelf Region
 
-```{r}
+```{r calcofi plot 2}
 grp   <- "Cool-water associated ichthyoplankton"
 rgn   <- "SoCal Shelf"
 
-title <- glue("{grp} - {rgn} Region")
-csv   <- glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/{grp}_{rgn}.csv")
+title <- glue::glue("{grp} - {rgn} Region")
+csv   <- glue::glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/{grp}_{rgn}.csv")
 
 #download.file(csv, "_tmp.csv")
-calcofi_plot(csv = csv, title = title)
+nms4r::calcofi_plot(csv = csv, title = title)
 ```
 
-`r md_caption("Figure App.F.15.5")`
+`r nms4r::md_caption("Figure App.F.15.5")`
 
 ### Larval fish, warm-water species
 
 ##### CINMS Region
 
-```{r}
+```{r calcofi plot 3}
 grp   <- "Warm-water associated ichthyoplankton"
 rgn   <- "CINMS"
 
-title <- glue("{grp} - {rgn} Region")
-csv   <- glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/{grp}_{rgn}.csv")
+title <- glue::glue("{grp} - {rgn} Region")
+csv   <- glue::glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/{grp}_{rgn}.csv")
 
-calcofi_plot(csv = csv, title = title)
+nms4r::calcofi_plot(csv = csv, title = title)
 ```
 
 ##### SoCal Shelf Region
 
-```{r}
+```{r calcofi plot 4}
 grp   <- "Warm-water associated ichthyoplankton"
 rgn   <- "SoCal Shelf"
 
-title <- glue("{grp} - {rgn} Region")
-csv   <- glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/{grp}_{rgn}.csv")
+title <- glue::glue("{grp} - {rgn} Region")
+csv   <- glue::glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/{grp}_{rgn}.csv")
 
-#download.file(csv, "_tmp.csv")
-calcofi_plot(csv = csv, title = title)
+nms4r::calcofi_plot(csv = csv, title = title)
 ```
 
 ####
 
-`r md_caption("Figure App.F.15.5")`
+`r nms4r::md_caption("Figure App.F.15.5")`
 
 ### Larval fish - Mean Species Richness
 
 #### CINMS Region
 
-`r render_figure("Figure App.F.15.6.a-b.", "../img/cinms_cr/App.F.15.6.a.CalCOFI_diversity_richness-cinms.jpg")`
+`r nms4r::render_figure("Figure App.F.15.6.a-b.", "../img/cinms_cr/App.F.15.6.a.CalCOFI_diversity_richness-cinms.jpg")`
 
 #### SoCal Shelf Region
 
-`r render_figure("Figure App.F.15.6.a-b.", "../img/cinms_cr/App.F.15.6.b.CalCOFI_diversity_richness-socal.jpg")`
+`r nms4r::render_figure("Figure App.F.15.6.a-b.", "../img/cinms_cr/App.F.15.6.b.CalCOFI_diversity_richness-socal.jpg")`
 
 ### Larval fish - Mean Simpson Diversity
 
 #### CINMS Region
 
-`r render_figure("Figure App.F.15.6.c-d.", "../img/cinms_cr/App.F.15.6.c.CalCOFI_diversity_diversity-cinms.jpg")`
+`r nms4r::render_figure("Figure App.F.15.6.c-d.", "../img/cinms_cr/App.F.15.6.c.CalCOFI_diversity_diversity-cinms.jpg")`
 
 #### SoCal Shelf Region
 
-`r render_figure("Figure App.F.15.6.c-d.", "../img/cinms_cr/App.F.15.6.d.CalCOFI_diversity_diversity-socal.jpg")`
+`r nms4r::render_figure("Figure App.F.15.6.c-d.", "../img/cinms_cr/App.F.15.6.d.CalCOFI_diversity_diversity-socal.jpg")`
 

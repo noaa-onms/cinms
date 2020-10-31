@@ -1,20 +1,26 @@
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-source(here::here("scripts/utility.R"))
+# Let's pull the nms4r package from github, but only if it isn't already installed. We don't want to
+# pull the package unnecessarily as github allows a max of 60 unauthenticated requests per hour.
+ip = installed.packages()[,1]
+if (all(ip!="nms4r")){
+  library(devtools)
+  devtools::install_github("marinebon/nms4r")
+}
 ```
 
-`r get_modal_info()`
+`r nms4r::get_modal_info()`
 
 ## {.tabset}
 
 ### Trends in seabird abundance
 
-`r render_figure("Figure App.F.13.22.", "../img/cinms_cr/App.F.13.22.jpg")`
+`r nms4r::render_figure("Figure App.F.13.22.", "../img/cinms_cr/App.F.13.22.jpg")`
 
 ### Seabirds - species richness map
 
-`r render_figure("Figure App.F.15.7.", "../img/cinms_cr/App.F.15.7.Seabird_anomoly_map.jpg")`
+`r nms4r::render_figure("Figure App.F.15.7.", "../img/cinms_cr/App.F.15.7.Seabird_anomoly_map.jpg")`
 
 ### Seabirds - species richness trends
 
-`r render_figure("Figure App.F.15.8.", "../img/cinms_cr/App.F.15.8.Seabird_richness.jpg")`
+`r nms4r::render_figure("Figure App.F.15.8.", "../img/cinms_cr/App.F.15.8.Seabird_richness.jpg")`

@@ -1,9 +1,15 @@
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-source(here::here("scripts/utility.R"))
+# Let's pull the nms4r package from github, but only if it isn't already installed. We don't want to
+# pull the package unnecessarily as github allows a max of 60 unauthenticated requests per hour.
+ip = installed.packages()[,1]
+if (all(ip!="nms4r")){
+  library(devtools)
+  devtools::install_github("marinebon/nms4r")
+}
 ```
 
-`r get_modal_info()`
+`r nms4r::get_modal_info()`
 
 # {.tabset}
 
@@ -16,25 +22,25 @@ source(here::here("scripts/utility.R"))
 
 ###### Trends: Commercial Landings
 
-`r render_figure("Figure App.C.4.4.", "../img/cinms_cr/App.C.4.4.Leeworthy_landings.jpg")`
+`r nms4r::render_figure("Figure App.C.4.4.", "../img/cinms_cr/App.C.4.4.Leeworthy_landings.jpg")`
 
 ###### Trends: Halibut Fishery
 
-`r render_figure("Figure App.C.4.5a.", "../img/cinms_cr/App.C.4.5a.Halibut_landings_CDFW.jpg")`
+`r nms4r::render_figure("Figure App.C.4.5a.", "../img/cinms_cr/App.C.4.5a.Halibut_landings_CDFW.jpg")`
 
-`r render_figure("Figure App.C.4.5b.", "../img/cinms_cr/App.C.4.5b.CDFW_halibut_vessels.jpg")`
+`r nms4r::render_figure("Figure App.C.4.5b.", "../img/cinms_cr/App.C.4.5b.CDFW_halibut_vessels.jpg")`
 
 ###### Trends: Rock Crab Fishery
 
-`r render_figure("Figure App.C.4.6a.", "../img/cinms_cr/App.C.4.6a.crab_landings_CDFW.jpg")`
+`r nms4r::render_figure("Figure App.C.4.6a.", "../img/cinms_cr/App.C.4.6a.crab_landings_CDFW.jpg")`
 
-`r render_figure("Figure App.C.4.6b.", "../img/cinms_cr/App.C.4.6b.crab_fishers_CDFW.jpg")`
+`r nms4r::render_figure("Figure App.C.4.6b.", "../img/cinms_cr/App.C.4.6b.crab_fishers_CDFW.jpg")`
 
 ##### Recreational 
 
-`r render_figure("Figure App.C.4.2a.", "../img/cinms_cr/App.C.4.2a.CPFV_trips.jpg")`
+`r nms4r::render_figure("Figure App.C.4.2a.", "../img/cinms_cr/App.C.4.2a.CPFV_trips.jpg")`
 
-`r render_figure("Figure App.C.4.2b.", "../img/cinms_cr/App.C.4.2b.CPFV_landings.jpg")`
+`r nms4r::render_figure("Figure App.C.4.2b.", "../img/cinms_cr/App.C.4.2b.CPFV_landings.jpg")`
 
 ## Human Impacts
 
@@ -46,9 +52,9 @@ source(here::here("scripts/utility.R"))
 
 ###### Listening Stations
 
-`r render_figure("Figure App.C.2.8.", "../img/cinms_cr/App.C.2.8.jpg")`
+`r nms4r::render_figure("Figure App.C.2.8.", "../img/cinms_cr/App.C.2.8.jpg")`
 
 ###### Trends: Sound Levels
 
-`r render_figure("Figure App.C.4.13.", "../img/cinms_cr/App.C.4.13.CINMS_Noise.jpg")`
+`r nms4r::render_figure("Figure App.C.4.13.", "../img/cinms_cr/App.C.4.13.CINMS_Noise.jpg")`
 

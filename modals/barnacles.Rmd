@@ -1,47 +1,71 @@
 
-```{r, include=F}
+```{r setup, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-source(here::here("../cinms/scripts/rocky.R"))
-source(here::here("scripts/utility.R"))
-# Error in sp_target %in% spp_targets : object 'sp_target' not found
+library(magrittr)
+
+# Let's pull the nms4r package from github, but only if it isn't already installed. We don't want to
+# pull the package unnecessarily as github allows a max of 60 unauthenticated requests per hour.
+ip = installed.packages()[,1]
+if (all(ip!="nms4r")){
+  library(devtools)
+  devtools::install_github("marinebon/nms4r")
+}
+
+# The following is used by the plot_intertidal_nms function called later
+dir_gdrive <- "/Volumes/GoogleDrive/Shared drives/NMS/data"
+dir_pfx     <- file.path(dir_gdrive, "github_info-intertidal_data")
+d_csv       <- file.path(dir_pfx, "sanctuary_species_percentcover.csv")
+nms_rgns_csv    <- file.path(dir_pfx, "MARINe_graphs.xlsx - sites in regions.csv")
+nms_rgns1 <- readr::read_csv(nms_rgns_csv) %>% 
+  tidyr::fill(nms) %>% 
+  dplyr::group_by(nms) %>% 
+  tidyr::fill(region) %>% 
+  dplyr::mutate(
+    rgn = region) # View(nms_rgns)
 ```
 
-`r get_modal_info()`
+`r nms4r::get_modal_info()`
 
 ## {.tabset}
 
 ### Map of Sites
 
-```{r}
-map_nms_sites("cinms")
+```{r map sites}
+nms4r::map_nms_sites("cinms")
 ```
-`r render_caption("Interactive map of field sites across the Channel Islands")`
+`r nms4r::md_caption("Interactive map of field sites across the Channel Islands")`
 
+`r nms4r::md_caption("Interactive map of field sites across the Channel Islands", get_details = T)`
 ### Acorn barnacles (all plots)
-`r get_figure_info("Acorn barnacles (all plots)")`
-```{r}
-plot_intertidal_nms(d_csv, "CINMS", "CHTBAL", "Acorn Barnacles")
+`r nms4r::get_figure_info("Acorn barnacles (all plots)")`
+```{r Acorn Barnacles all}
+nms4r::plot_intertidal_nms(d_csv, "CINMS", "CHTBAL", "Acorn Barnacles", nms_rgns1)
 ```
-`r render_caption("Acorn barnacles_all")`
+`r nms4r::md_caption("Acorn barnacles_all")`
 
+`r nms4r::md_caption("Acorn barnacles_all", get_details = T)`
 
 ### Acorn barnacles (barnacle plots only)
-`r get_figure_info("Acorn barnacles (barnacle plots only)")`
-```{r}
-plot_intertidal_nms(d_csv, "CINMS", "CHTBAL", "Acorn Barnacles", c("balanus", "chthamalus_balanus"))
+`r nms4r::get_figure_info("Acorn barnacles (barnacle plots only)")`
+```{r Acorn barnacles}
+ nms4r::plot_intertidal_nms(d_csv, "CINMS", "CHTBAL", "Acorn Barnacles",  nms_rgns1, c("balanus", "chthamalus_balanus"))
 ```
-`r render_caption("Acorn barnacles")`
+`r nms4r::md_caption("Acorn barnacles")`
 
+`r nms4r::md_caption("Acorn barnacles", get_details = T)`
 ### Gooseneck barnacles (all plots)
-`r get_figure_info("Gooseneck barnacles (all plots)")`
-```{r}
-plot_intertidal_nms(d_csv, "CINMS", "POLPOL", "Goose Barnacle")
+`r nms4r::get_figure_info("Gooseneck barnacles (all plots)")`
+```{r Goose Barnacle}
+nms4r::plot_intertidal_nms(d_csv, "CINMS", "POLPOL", "Goose Barnacle", nms_rgns1)
 ```
-`r render_caption("Gooseneck barnacles")`
+`r nms4r::md_caption("Gooseneck barnacles")`
 
+`r nms4r::md_caption("Gooseneck barnacles", get_details = T)`
 ### Pink barnacles (all plots)
-`r get_figure_info("Pink barnacles (all plots)")`
-```{r}
-plot_intertidal_nms(d_csv, "CINMS", "TETRUB", "Pink Barnacle")
+`r nms4r::get_figure_info("Pink barnacles (all plots)")`
+```{r Pink Barnacle}
+nms4r::plot_intertidal_nms(d_csv, "CINMS", "TETRUB", "Pink Barnacle", nms_rgns1)
 ```
-`r render_caption("Pink barnacles")`
+`r nms4r::md_caption("Pink barnacles")`
+
+`r nms4r::md_caption("Pink barnacles", get_details = T)`

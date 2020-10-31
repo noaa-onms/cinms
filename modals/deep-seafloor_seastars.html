@@ -22,6 +22,17 @@
 <script src="modal_libs/navigation-1.1/tabsets.js"></script>
 <link href="modal_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="modal_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="modal_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="modal_libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -192,14 +203,14 @@ summary {
 <i class="fa fa-camera"></i>
 </a>
 </div>
-<div style="margin: 10px; font-style: italic; flex: 20; "></div>
+<div style="margin: 10px; font-style: italic; flex: 20; ">Just like in the intertidal and the shallow subtidal, sea stars can also be found in the deep ocean. These slow moving echinoderms are important detritivores and predators, making use of any organic matter their tubefeet can find on the deep seafloor.</div>
 </div>
 <div id="section" class="section level2 tabset">
 <h2></h2>
 <div id="mare-sunflower-star" class="section level3">
 <h3>MARE: Sunflower star</h3>
 <div class="figure">
-<img src="../img/cinms_cr/App.F.12.15.Pycnopodia_MARE.jpg" alt="An image from Marine Applied Research and Exploration (MARE) about the abundance of sunflower star Pycnopodia helianthoides along seafloor transects. Source: MARE." />
+<img src="../img/cinms_cr/App.F.12.15.Pycnopodia_MARE.jpg" alt="" />
 <p class="caption">An image from Marine Applied Research and Exploration (<a href='https://www.maregroup.org/' target='_blank'>MARE</a>) about the abundance of sunflower star Pycnopodia helianthoides along seafloor transects. Source: <a href='https://www.maregroup.org/' target='_blank'>MARE</a>.</p>
 </div>
 </div>
@@ -214,7 +225,7 @@ summary {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();

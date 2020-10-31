@@ -22,6 +22,17 @@
 <script src="modal_libs/navigation-1.1/tabsets.js"></script>
 <link href="modal_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="modal_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="modal_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="modal_libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -200,7 +211,7 @@ summary {
 </div>
 </div>
 <div class="figure">
-<img src="../img/cinms_cr/App.E.10.29.jpg" alt="A figure showing the concentration of the mineral aragonite at different depths at Anacapa Island from 2007 to 2014. Figure credit: Etnoyer et al. 2015." />
+<img src="../img/cinms_cr/App.E.10.29.jpg" alt="" />
 <p class="caption">A figure showing the concentration of the mineral <span id="tooltip34" aria-describedby="tooltip34" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">aragonite</span> at different depths at Anacapa Island from 2007 to 2014. Figure credit: Etnoyer et al. 2015.</p>
 </div>
 <details>
@@ -225,7 +236,7 @@ summary {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();

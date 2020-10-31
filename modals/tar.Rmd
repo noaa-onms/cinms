@@ -7,18 +7,39 @@ output:
 
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-source(here::here("../cinms/scripts/rocky.R"))
-source(here::here("scripts/utility.R"))
+library(magrittr)
+
+# Let's pull the nms4r package from github, but only if it isn't already installed. We don't want to
+# pull the package unnecessarily as github allows a max of 60 unauthenticated requests per hour.
+ip = installed.packages()[,1]
+if (all(ip!="nms4r")){
+  library(devtools)
+  devtools::install_github("marinebon/nms4r")
+}
+
+# The following is used by the plot_intertidal_nms function called later
+dir_gdrive <- "/Volumes/GoogleDrive/Shared drives/NMS/data"
+dir_pfx     <- file.path(dir_gdrive, "github_info-intertidal_data")
+d_csv       <- file.path(dir_pfx, "sanctuary_species_percentcover.csv")
+nms_rgns_csv    <- file.path(dir_pfx, "MARINe_graphs.xlsx - sites in regions.csv")
+nms_rgns1 <- readr::read_csv(nms_rgns_csv) %>% 
+  tidyr::fill(nms) %>% 
+  dplyr::group_by(nms) %>% 
+  tidyr::fill(region) %>% 
+  dplyr::mutate(
+    rgn = region) # View(nms_rgns)
 ```
 
-`r get_modal_info()`
+`r nms4r::get_modal_info()`
 
 ##  {.tabset} 
 
 ### Trend: Tar
-`r get_figure_info("Figure App.E.11.8.")`
+`r nms4r::get_figure_info("Figure App.E.11.8.")`
 ```{r}
-plot_intertidal_nms(d_csv, "CINMS", "TAR", "Tar")
+nms4r::plot_intertidal_nms(d_csv, "CINMS", "TAR", "Tar", nms_rgns1)
 ```
-`r render_caption("Figure App.E.11.8.")`
+`r nms4r::md_caption("Figure App.E.11.8.")`
+
+`r nms4r::md_caption("Figure App.E.11.8.", get_details = T)`
 
