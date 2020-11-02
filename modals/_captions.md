@@ -771,11 +771,19 @@ Horizontal lines show the mean (dashed line) ± 1.0 standard deviation (solid li
 
 ## Figure App.F.12.19.anchovy
 
-A figure showing the relative abundance of northern anchovy (*Engraulis mordax*) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 to 2018. Data source: CalCOFI; Figure credit: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/).
+A figure showing the relative abundance of northern anchovy (*Engraulis mordax*) collected during the spring around the Northern Channel Islands from 1978 to 2018. Data source: CalCOFI; Figure credit: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/).
 
 ### Details
 
-Relative abundance of key forage fish groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) and Southern California Shelf regions from 1978 to 2015. High energy taxa (e.g. those with a high lipid content) are Pacific sardines, northern anchovies, and  Myctophids. Medium-energy taxa are Pacific hake, shortbelly rockfish, and sanddabs. Although sardine were completely absent in net samples from 2011 to 2014 in the CINMS region, comparison with samples collected in the larger Southern California Shelf region reveal that sardine were at very low abundance but not completely absent from the region. 
+Relative abundance of key forage fish groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Channel Islands National Marine Sanctuary (CINMS) from 1978 to 2015. High energy taxa (e.g. those with a high lipid content) are Pacific sardines, northern anchovies, and  Myctophids. Medium-energy taxa are Pacific hake, shortbelly rockfish, and sanddabs. Although sardine were completely absent in net samples from 2011 to 2014 in the CINMS region, comparison with samples collected in the larger Southern California Shelf region reveal that sardine were at very low abundance but not completely absent from the region. 
+
+## Figure App.F.12.19.anchovy_SoCal
+
+A figure showing the relative abundance of northern anchovy (*Engraulis mordax*) collected during the spring around the Southern California Shelf from 1978 to 2018. Data source: CalCOFI; Figure credit: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/).
+
+### Details
+
+Relative abundance of key forage fish groups collected in net samples during spring [CalCOFI](https://calcofi.org/) cruises at sites in the Southern California Shelf region from 1978 to 2015. High energy taxa (e.g. those with a high lipid content) are Pacific sardines, northern anchovies, and  Myctophids. Medium-energy taxa are Pacific hake, shortbelly rockfish, and sanddabs. Although sardine were completely absent in net samples from 2011 to 2014 in the CINMS region, comparison with samples collected in the larger Southern California Shelf region reveal that sardine were at very low abundance but not completely absent from the region.
 
 ## Figure App.F.12.19.hake
 

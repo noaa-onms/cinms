@@ -52,7 +52,9 @@ csv   <- glue::glue("https://raw.githubusercontent.com/marinebon/calcofi-analysi
 #download.file(csv, "_tmp.csv")
 nms4r::calcofi_plot(csv = csv, title = title)
 ```
+`r nms4r::md_caption("Figure App.F.12.19.anchovy_SoCal")`
 
+`r nms4r::md_caption("Figure App.F.12.19.anchovy_SoCal", get_details = T)`
 ### Hake
 
 #### CINMS Region
