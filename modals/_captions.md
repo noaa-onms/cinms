@@ -31,7 +31,7 @@ The Chlorophyll-a dataset collected via satellite is the [Chlorophyll, NOAA VIIR
 
 ## Figure Ux.Ocean.Chl.ERD.timeseries.
 
-The average chlorophyll concentration over time across the Sanctuary. Chlorophyll concentration is a measure of productivity by phytoplankton, the plant base of the food chain in the ocean. The gray bar at the bottom of the figure can be used to zoom in to specific dates, using the small slider buttons on either edge of the gray bar. In the figure, the dark green line is the average chlorophyll concentration. The lighter green area indicates the range of that chlorophyll concentration across the Sanctuary (with the area showing everything but the lowest 5% and the highest 5% of the data).
+The average chlorophyll concentration over time across the Sanctuary. Chlorophyll concentration is a measure of productivity by phytoplankton, the plant base of the food chain in the ocean. The bar at the bottom of the figure can be used to zoom in to specific dates, using the small slider buttons on either edge of the bar. In the figure, the dark green line is the average chlorophyll concentration. The lighter green area indicates the range of that chlorophyll concentration across the Sanctuary (with the area showing everything but the lowest 5% and the highest 5% of the data).
 
 ### Details
 
@@ -63,7 +63,7 @@ The sea-surface temperature dataset collected via satellite is the [Multi-scale 
 
 ## Figure Ux.Ocean.SST.ERD.timeseries.
 
-The average sea-surface temperature over time across the Sanctuary. The gray bar at the bottom of the figure can be used to zoom in to specific dates, using the small slider buttons on either edge of the gray bar. In the figure, the dark red line is the average temperature, while the lighter pink area indicates the range of that temperature across the Sanctuary (with the area showing everything but the lowest 5% and the highest 5% of the data). 
+The average sea-surface temperature over time across the Sanctuary. The bar at the bottom of the figure can be used to zoom in to specific dates, using the small slider buttons on either edge of the bar. In the figure, the dark red line is the average temperature, while the lighter pink area indicates the range of that temperature across the Sanctuary (with the area showing everything but the lowest 5% and the highest 5% of the data). 
 
 ### Details
 
