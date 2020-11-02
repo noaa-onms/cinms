@@ -52,7 +52,7 @@ nms4r::plot_intertidal_nms(d_csv, "CINMS", "MYTCAL", "California Mussels", nms_r
 ### California Mussels (_Mytilus californianus_), target = mytilus
 
 ```{r, eval =F}
-#BB TODO: fix plot_intertidal_nms() in rocky.r to accomodate target species
+#BB TODO: fix nms4r::plot_intertidal_nms() to accommodate target species
 nms4r::plot_intertidal_nms(d_csv, "CINMS", "MYTCAL", "California Mussels [target = mytilus]", "mytilus", nms_rgns1)
 ```
 -->
