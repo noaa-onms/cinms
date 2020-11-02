@@ -45,6 +45,14 @@ Map of the most recent seascapes around the Sanctuary. Seascapes are dynamic cat
 
 The sea-surface temperature dataset collected via satellite is the [Monthly Global Seascapes](https://cwcgom.aoml.noaa.gov/erddap/info/noaa_aoml_4729_9ee6_ab54/index.html) and served by NOAA's [Caribbean/Gulf of Mexico Node Physical Oceanography Division Ocean Chemistry and Ecosystems Division](https://cwcgom.aoml.noaa.gov/) (CWCGOM) and served to this website live as a web map service (WMS) via their ERDDAP server. For more on this product, please see Kavanaugh et al. (2016) [Seascapes as a new vernacular for pelagic ocean monitoring, management and conservation](https://doi.org/10.1093/icesjms/fsw086) _ICES Journal of Marine Science_.
 
+## Figure Ux.Ocean.SST.Anomaly.timeseries.
+
+The anomaly in sea-surface temperature over time across the Sanctuary. The gray bar at the bottom of the figure can be used to zoom in to specific dates, using the small slider buttons on either edge of the gray bar. 
+
+### Details
+
+Sea-surface temperature (SST) anomalies were calculated based upon the method in [Reed et al. 2016. Nature Communications 7, 13757](https://doi.org/10.1038/ncomms13757). Using the 15-year period of 2003-2017, an average SST was calculated for every month for the Sanctuary. Then, the average SST value for the appropriate month was subtracted from every value in the SST dataset. The resulting numbers are the SST anomalies. The sea-surface temperature dataset collected via satellite is the [Multi-scale Ultra-high Resolution (MUR) SST Analysis fv04.1, Global, 0.01°, 2002-present, Monthly](https://coastwatch.pfeg.noaa.gov/erddap/info/jplMURSST41mday/index.html) curated by NOAA's [Environmental Research Division](https://oceanview.pfeg.noaa.gov/projects) (ERD) and served to this website live as a web map service (WMS) from the [CoastWatch ERDDAP](https://coastwatch.pfeg.noaa.gov/erddap/index.html) server.
+
 ## Figure Ux.Ocean.SST.ERD.map.
 
 Map of the most recent sea-surface temperature around the Sanctuary. 
