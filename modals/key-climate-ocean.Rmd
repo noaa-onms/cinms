@@ -21,7 +21,7 @@ knitr::opts_chunk$set(
 # {.tabset}
 
 ## Temperature {.tabset}
-### Map: Satellite-based SST (CoastWatch)
+### Map: Satellite-based SST 
 
 ```{r sst_map}
 # get most recent date
@@ -52,7 +52,7 @@ leaflet(
 
 `r nms4r::md_caption("Figure Ux.Ocean.SST.ERD.map.", get_details = T)`
 
-### Trend: Satellite-based SST (CoastWatch)
+### Trend: Satellite-based SST 
 
 ```{r sst_time_series}
 csv_SST <-here(glue("data/oceano/statistics_sst_{nms}.csv"))
@@ -67,7 +67,7 @@ nms4r::plot_metric_timeseries(csv_SST, "sst")
 
 Download timeseries data for sanctuary: `r html_SST`
 
-### Trend: SST anomaly (SBC LTER)
+### Trend: SST anomaly
 
 ```{r sst anomaly time series}
 csv_SST <-here(glue("data/oceano/sst_anomaly_{nms}.csv"))
@@ -78,7 +78,7 @@ history <- data.frame(date = as.Date(SST_data$date, "%Y-%m-%d"), anomaly = SST_d
 history <- xts::xts(x = history[,-1], order.by = history$date)
 dygraph(history, main = "Sea Surface Temperature Anomaly", xlab = "Date", ylab = "Sea Surface Temperature Anomaly (°C)") %>%
   dySeries("V1", label = "Temperature (°C)", color = "Red") %>% 
-  dyRangeSelector()
+  dyRangeSelector(fillColor = " #FFFFFF", strokeColor = "#FFFFFF")
 ```
 
 `r nms4r::md_caption("Figure Ux.Ocean.SST.Anomaly.timeseries.")`
