@@ -70,15 +70,15 @@ Download timeseries data for sanctuary: `r html_SST`
 ### Trend: SST anomaly
 
 ```{r sst anomaly time series}
-csv_SST <-here(glue("data/oceano/sst_anomaly_{nms}.csv"))
-url_SST  <- glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv_SST)}")
-html_SST <- a(basename(csv_SST), href=url_SST, target='_blank')
+csv_SST <-here::here(glue::glue("data/oceano/sst_anomaly_{nms}.csv"))
+url_SST  <- glue::glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv_SST)}")
+html_SST <- htmltools::a(basename(csv_SST), href=url_SST, target='_blank')
 SST_data<-read.csv(csv_SST, header = T)
 history <- data.frame(date = as.Date(SST_data$date, "%Y-%m-%d"), anomaly = SST_data$sst_anomaly)
 history <- xts::xts(x = history[,-1], order.by = history$date)
-dygraph(history, main = "Sea Surface Temperature Anomaly", xlab = "Date", ylab = "Sea Surface Temperature Anomaly (°C)") %>%
-  dySeries("V1", label = "Temperature (°C)", color = "Red") %>% 
-  dyRangeSelector(fillColor = " #FFFFFF", strokeColor = "#FFFFFF")
+dygraphs::dygraph(history, main = "Sea Surface Temperature Anomaly", xlab = "Date", ylab = "Sea Surface Temperature Anomaly (°C)") %>%
+  dygraphs::dySeries("V1", label = "Temperature (°C)", color = "Red") %>% 
+  dygraphs::dyRangeSelector(fillColor = " #FFFFFF", strokeColor = "#FFFFFF")
 ```
 
 `r nms4r::md_caption("Figure Ux.Ocean.SST.Anomaly.timeseries.")`
