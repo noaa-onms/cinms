@@ -117,7 +117,7 @@ if ("try-error" %in% class(chl)){
     tail(1) %>% 
     pull(date)
 } else {
-  d_2 <- get_dates(chl)[2]
+  d_2 <- nms4r::get_dates(chl)[2]
 }
 
 leaflet(

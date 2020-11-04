@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 
 ```{r sst_map}
 # get most recent date
-date_end <- get_dates(sst)[2]
+date_end <- nms4r::get_dates(sst)[2]
 
 leaflet(
   nms_ply,
@@ -77,7 +77,7 @@ Download timeseries data for sanctuary: `r html_SST`
 ### Map: Satellite-based (CoastWatch)
 ```{r chlorophyll_map}
 # get most recent date
-d_2 <- get_dates(chl)[2]
+d_2 <- nms4r::get_dates(chl)[2]
 
 leaflet(
   nms_ply,

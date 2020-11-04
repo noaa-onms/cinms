@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = F, message = F, warning = F)
 
 ```{r SST_map}
 # get most recent date
-date_end <- get_dates(sst)[2]
+date_end <- nms4r::get_dates(sst)[2]
 
 leaflet(
   nms_ply,
