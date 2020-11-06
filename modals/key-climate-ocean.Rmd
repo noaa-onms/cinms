@@ -73,11 +73,70 @@ Download timeseries data for sanctuary: `r html_SST`
 csv_SST <-here::here(glue::glue("data/oceano/sst_anomaly_{nms}.csv"))
 url_SST  <- glue::glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv_SST)}")
 html_SST <- htmltools::a(basename(csv_SST), href=url_SST, target='_blank')
-SST_data<-read.csv(csv_SST, header = T)
-history <- data.frame(date = as.Date(SST_data$date, "%Y-%m-%d"), anomaly = SST_data$sst_anomaly)
+
+# We want to plot the SST anomaly data with values below zero colored differently
+# than those above zero. The strategy here is to split the SST anomaly data (which 
+# is 1 column of data) into 2 columns of data: values below zero and values above 
+# zero. Each of those lines will be plotted separately as a different filled-in 
+# color. We also need to interpolate some points. Every time the anomaly time 
+# series data crosses the zero anomaly line (0 on the y axis), that "zero day" 
+# needs to be inserted into the 2 columns of data. This is necessary to have a 
+# figure that doesn't have gaps in the color fill.
+
+# load in the SST anomaly data
+# csv_SST <-here::here("data/oceano/sst_anomaly_cinms.csv")
+SST_data<-read.csv(csv_SST, header = T, colClasses = c("Date", "numeric"))
+
+# create an output data frame and initialize the row of the data frame to write
+# on to 1
+output_data<-data.frame(date= SST_data$date,below=NA,above=NA )
+write_line <-1
+
+# Let's go through every row of the anomaly data
+for (i in 1:nrow(SST_data)){
+  
+  # first let's write the row of data to the output data frame, putting below 
+  # zero and above zero values in different columns
+  if (SST_data$sst_anomaly[i] <= 0){
+    output_data[write_line,]<- c(as.character(SST_data$date[i]), 
+                                 as.numeric(SST_data$sst_anomaly[i]), NA)
+  }
+  else {
+    output_data[write_line,]<- c(as.character(SST_data$date[i]), NA, 
+                                 as.numeric(SST_data$sst_anomaly[i]))
+  }
+  write_line <- write_line +1
+  
+  # Next, let's see if the anomaly value AFTER the current one changes sign.
+  # If it does, we need to calculate the date at which the anomaly was zero and 
+  # insert that "zero day" into the output file after the current anomaly value. 
+  # We want to skip this whole procedure if we are at the last record of the file. 
+  if ((i < nrow(SST_data)) && (sign(SST_data$sst_anomaly[i]) != 
+                               sign(SST_data$sst_anomaly[i+1])) ){
+    first_SST <- SST_data$sst_anomaly[i]
+    second_SST <- SST_data$sst_anomaly[i+1]
+    first_date <- SST_data$date[i]
+    second_date <- SST_data$date[i+1]
+    day_num <- as.numeric(second_date - first_date)
+    daily_increment <- (second_SST - first_SST)/day_num
+    days_more <- round(abs(first_SST/daily_increment),0)
+    output_data[write_line, ] <- c(as.character(first_date + days_more), 0, 0)
+    write_line <- write_line +1
+  }
+}
+
+# create the data frame to be read by dygraphs and then produce the dygraph figure
+history <- data.frame(date = as.Date(output_data$date, "%Y-%m-%d"), 
+                      below = as.numeric(output_data$below), 
+                      above = as.numeric(output_data$above))
 history <- xts::xts(x = history[,-1], order.by = history$date)
+
 dygraphs::dygraph(history, main = "Sea Surface Temperature Anomaly", xlab = "Date", ylab = "Sea Surface Temperature Anomaly (°C)") %>%
-  dygraphs::dySeries("V1", label = "Temperature (°C)", color = "Red") %>% 
+  dygraphs::dyOptions(fillGraph = TRUE, fillAlpha = 0.4) %>%
+  dygraphs::dySeries("below", label = "°C Below Average", color = "Blue") %>% 
+  dygraphs::dySeries("above", label = "°C Above Average", color = "Red") %>% 
+  dygraphs::dyLegend(show = "auto", showZeroValues = FALSE) %>% 
+  dyLimit(0, strokePattern = "solid", color = "black") %>% 
   dygraphs::dyRangeSelector(fillColor = " #FFFFFF", strokeColor = "#FFFFFF")
 ```
 

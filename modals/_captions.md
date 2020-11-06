@@ -47,7 +47,7 @@ The sea-surface temperature dataset collected via satellite is the [Monthly Glob
 
 ## Figure Ux.Ocean.SST.Anomaly.timeseries.
 
-The anomaly in sea-surface temperature over time across the Sanctuary. The bar at the bottom of the figure can be used to zoom in to specific dates, using the small slider buttons on either edge of the bar. 
+The anomaly in sea-surface temperature over time across the Sanctuary. Values in red are above the average sea-surface temperature and values in blue are below the average sea-surface temperature. The bar at the bottom of the figure can be used to zoom in to specific dates, using the small slider buttons on either edge of the bar. 
 
 ### Details
 
