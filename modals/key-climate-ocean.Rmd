@@ -136,7 +136,7 @@ dygraphs::dygraph(history, main = "Sea Surface Temperature Anomaly", xlab = "Dat
   dygraphs::dySeries("below", label = "°C Below Average", color = "Blue") %>% 
   dygraphs::dySeries("above", label = "°C Above Average", color = "Red") %>% 
   dygraphs::dyLegend(show = "auto", showZeroValues = FALSE) %>% 
-  dyLimit(0, strokePattern = "solid", color = "black") %>% 
+  dygraphs::dyLimit(0, strokePattern = "solid", color = "black") %>% 
   dygraphs::dyRangeSelector(fillColor = " #FFFFFF", strokeColor = "#FFFFFF")
 ```
 
