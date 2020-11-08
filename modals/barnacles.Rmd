@@ -43,7 +43,7 @@ nms4r::plot_intertidal_nms(d_csv, "CINMS", "CHTBAL", "Acorn Barnacles", nms_rgns
 ```
 `r nms4r::md_caption("Acorn barnacles_all")`
 
-`r nms4r::md_caption("Acorn barnacles_all", get_details = T)`
+`r nms4r::md_caption("Acorn barnacles_all", get_details = T, fig_in_report = F)`
 
 ### Acorn barnacles (barnacle plots only)
 `r nms4r::get_figure_info("Acorn barnacles (barnacle plots only)")`
@@ -52,7 +52,7 @@ nms4r::plot_intertidal_nms(d_csv, "CINMS", "CHTBAL", "Acorn Barnacles", nms_rgns
 ```
 `r nms4r::md_caption("Acorn barnacles")`
 
-`r nms4r::md_caption("Acorn barnacles", get_details = T)`
+`r nms4r::md_caption("Acorn barnacles", get_details = T, fig_in_report = F)`
 ### Gooseneck barnacles (all plots)
 `r nms4r::get_figure_info("Gooseneck barnacles (all plots)")`
 ```{r Goose Barnacle}
@@ -60,7 +60,7 @@ nms4r::plot_intertidal_nms(d_csv, "CINMS", "POLPOL", "Goose Barnacle", nms_rgns1
 ```
 `r nms4r::md_caption("Gooseneck barnacles")`
 
-`r nms4r::md_caption("Gooseneck barnacles", get_details = T)`
+`r nms4r::md_caption("Gooseneck barnacles", get_details = T, fig_in_report = F)`
 ### Pink barnacles (all plots)
 `r nms4r::get_figure_info("Pink barnacles (all plots)")`
 ```{r Pink Barnacle}
@@ -68,4 +68,4 @@ nms4r::plot_intertidal_nms(d_csv, "CINMS", "TETRUB", "Pink Barnacle", nms_rgns1)
 ```
 `r nms4r::md_caption("Pink barnacles")`
 
-`r nms4r::md_caption("Pink barnacles", get_details = T)`
+`r nms4r::md_caption("Pink barnacles", get_details = T, fig_in_report = F)`

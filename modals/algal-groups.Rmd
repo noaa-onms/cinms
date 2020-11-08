@@ -55,7 +55,7 @@ nms4r::plot_intertidal_nms(d_csv, "CINMS", "SILCOM", "Golden Rockweed", nms_rgns
 ```
 `r nms4r::md_caption("Golden Rockweed")`
 
-`r nms4r::md_caption("Golden Rockweed", get_details = T)`
+`r nms4r::md_caption("Golden Rockweed", get_details = T, fig_in_report = F)`
 
 ### Olive Rockweed (_Hesperophycus californicus_)
 `r nms4r::get_figure_info("Olive rockweed")`
@@ -64,7 +64,7 @@ nms4r::plot_intertidal_nms(d_csv, "CINMS", "HESCAL", "Olive Rockweed", nms_rgns1
 ```
 `r nms4r::md_caption("Olive Rockweed")`
 
-`r nms4r::md_caption("Olive Rockweed", get_details = T)`
+`r nms4r::md_caption("Olive Rockweed", get_details = T, fig_in_report = F)`
 
 ### Turfweed (_Endocladia muricata_)
 `r nms4r::get_figure_info("Turfweed")`
@@ -76,7 +76,7 @@ nms4r::plot_intertidal_nms(d_csv, "CINMS", "ENDMUR", "Turfweed", nms_rgns1)
 ```
 `r nms4r::md_caption("Turfweed")`
 
-`r nms4r::md_caption("Turfweed", get_details = T)`
+`r nms4r::md_caption("Turfweed", get_details = T, fig_in_report = F)`
 
 
 

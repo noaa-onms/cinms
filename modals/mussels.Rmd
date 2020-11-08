@@ -36,7 +36,7 @@ nms4r::map_nms_sites("cinms")
 
 `r nms4r::md_caption("Interactive map of field sites across the Channel Islands")`
 
-`r nms4r::md_caption("Interactive map of field sites across the Channel Islands", get_details = T)`
+`r nms4r::md_caption("Interactive map of field sites across the Channel Islands", get_details = T, fig_in_report = F)`
 
 ### California Mussels (_Mytilus californianus_){.active}
 `r nms4r::get_figure_info("California Mussels")`
@@ -46,7 +46,7 @@ nms4r::plot_intertidal_nms(d_csv, "CINMS", "MYTCAL", "California Mussels", nms_r
 ```
 `r nms4r::md_caption("California Mussels")`
 
-`r nms4r::md_caption("California Mussels", get_details = T)`
+`r nms4r::md_caption("California Mussels", get_details = T, fig_in_report = F)`
 
 <!--
 ### California Mussels (_Mytilus californianus_), target = mytilus

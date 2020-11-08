@@ -36,7 +36,7 @@ leaflet(
 
 `r nms4r::md_caption("Figure Ux.Ocean.SST.ERD.map.")`
 
-`r nms4r::md_caption("Figure Ux.Ocean.SST.ERD.map.", get_details = T)`
+`r nms4r::md_caption("Figure Ux.Ocean.SST.ERD.map.", get_details = T, fig_in_report = F)`
 
 ### Trend: Satellite-based SST (CoastWatch)
 
@@ -49,7 +49,7 @@ nms4r::plot_metric_timeseries(csv_SST, "sst")
 
 `r md_caption("Figure Ux.Ocean.SST.ERD.timeseries.")`
 
-`r md_caption("Figure Ux.Ocean.SST.ERD.timeseries.", get_details = T)`
+`r md_caption("Figure Ux.Ocean.SST.ERD.timeseries.", get_details = T, fig_in_report = F)`
 
 Download timeseries data for sanctuary: `r html_SST`
 

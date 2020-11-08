@@ -43,7 +43,7 @@ nms4r::map_nms_sites("cinms")
 
 `r nms4r::md_caption("Figure Ux.Rocky.MARINe.map.")`
 
-`r nms4r::md_caption("Figure Ux.Rocky.MARINe.map.", get_details = T)`
+`r nms4r::md_caption("Figure Ux.Rocky.MARINe.map.", get_details = T, fig_in_report = F)`
 
 ### MARINe: Ochre Seastar (_Pisaster ochraceus_) {.active}
 
@@ -56,7 +56,7 @@ nms4r::plot_intertidal_nms(nms_spp_sscount_csv, "CINMS", "PISOCH", "Ochre Seasta
 
 `r nms4r::md_caption("Figure Ux.Rocky.MARINe.Ochre-Stars.")`
 
-`r nms4r::md_caption("Figure Ux.Rocky.MARINe.Ochre-Stars.", get_details = T)`
+`r nms4r::md_caption("Figure Ux.Rocky.MARINe.Ochre-Stars.", get_details = T, fig_in_report = F)`
 
 ### CHIS: Ochre Seastars across the sanctuary
 

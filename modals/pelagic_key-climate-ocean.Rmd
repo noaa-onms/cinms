@@ -37,7 +37,7 @@ leaflet(
 
 `r nms4r::md_caption("Figure Ux.Ocean.SST.ERD.map.")`
 
-`r nms4r::md_caption("Figure Ux.Ocean.SST.ERD.map.", get_details = T)`
+`r nms4r::md_caption("Figure Ux.Ocean.SST.ERD.map.", get_details = T, fig_in_report = F)`
 
 
 
@@ -52,7 +52,7 @@ nms4r::plot_metric_timeseries(csv_SST, "sst")
 
 `r nms4r::md_caption("Figure Ux.Ocean.SST.ERD.timeseries.")`
 
-`r nms4r::md_caption("Figure Ux.Ocean.SST.ERD.timeseries.", get_details = T)`
+`r nms4r::md_caption("Figure Ux.Ocean.SST.ERD.timeseries.", get_details = T, fig_in_report = F)`
 
 Download timeseries data for sanctuary: `r html_SST`
 
@@ -102,7 +102,7 @@ leaflet(
 
 `r nms4r::md_caption("Figure Ux.Ocean.Chl.ERD.map.")`
 
-`r nms4r::md_caption("Figure Ux.Ocean.Chl.ERD.map.", get_details = T)`
+`r nms4r::md_caption("Figure Ux.Ocean.Chl.ERD.map.", get_details = T, fig_in_report = F)`
 ### Trend: Satellite-based (CoastWatch)
 
 ```{r chlorophyll_time_series}
@@ -114,7 +114,7 @@ nms4r::plot_metric_timeseries(csv_chl, "chl")
 
 `r nms4r::md_caption("Figure Ux.Ocean.Chl.ERD.timeseries.")`
 
-`r nms4r::md_caption("Figure Ux.Ocean.Chl.ERD.timeseries.", get_details = T)`
+`r nms4r::md_caption("Figure Ux.Ocean.Chl.ERD.timeseries.", get_details = T, fig_in_report = F)`
 
 Download timeseries data for sanctuary: `r html_chl`
 
