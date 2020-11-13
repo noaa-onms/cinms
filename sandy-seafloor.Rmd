@@ -6,9 +6,7 @@ params:
 ---
 
 ```{r setup, include=F}
-knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-library(devtools)
-devtools::install_github("marinebon/nms4r")
+library(nms4r)
 ```
 
 `r nms4r::get_modal_info()`

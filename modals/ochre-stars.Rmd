@@ -7,14 +7,7 @@ editor_options:
 ```{r setup, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 library(magrittr)
-
-# Let's pull the nms4r package from github, but only if it isn't already installed. We don't want to
-# pull the package unnecessarily as github allows a max of 60 unauthenticated requests per hour.
-ip = installed.packages()[,1]
-if (all(ip!="nms4r")){
-  library(devtools)
-  devtools::install_github("marinebon/nms4r")
-}
+library(nms4r)
 
 # The following is used by the plot_intertidal_nms function called later
 dir_gdrive <- "/Volumes/GoogleDrive/Shared drives/NMS/data"
