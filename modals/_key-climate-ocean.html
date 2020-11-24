@@ -22,8 +22,6 @@
 <script src="modal_libs/navigation-1.1/tabsets.js"></script>
 <link href="modal_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="modal_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="modal_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
-<script src="modal_libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -197,12 +195,11 @@ summary {
 <pre class="r"><code>if (!require(librarian)){
   install.packages(&quot;librarian&quot;)
   library(librarian)
-}</code></pre>
-<pre><code>## Loading required package: librarian</code></pre>
-<pre class="r"><code>shelf(
+}
+shelf(
   dplyr, dygraphs, glue, here, htmltools, leafem, leaflet, marinebon/nms4r, purrr, readr, rerddap, rmarkdown, shiny, stringr, tidyr, xts)
 
-nms       &lt;- &quot;&lt;span aria-describedby=&quot;tooltip27&quot; tabindex=&quot;0&quot; style=&quot;border-bottom: 1px dashed #000000; font-size:100%&quot; id=&quot;tooltip27&quot;&gt;cinms&lt;/span&gt;&quot;
+nms       &lt;- &quot;cinms&quot;
 sites_csv &lt;- here::here(&quot;data/nms_sites.csv&quot;)
 
 nms_ply &lt;- nms4r::get_nms_polygons(nms)
@@ -218,7 +215,7 @@ if (F){
 site &lt;- readr::read_csv(sites_csv) %&gt;%
   dplyr::filter(id == nms)</code></pre>
 <pre><code>## 
-## ── Column specification ────────────────────────────────────────────────────────────────────────────────────────────────
+## ── Column specification ───────────────────────────────────────────────────────────────────────────────────────────────────
 ## cols(
 ##   id = col_character(),
 ##   lon = col_double(),
@@ -231,9 +228,6 @@ if (&quot;try-error&quot; %in% class(chl)){
 }
 # chl   &lt;- info(&quot;erdMWchlamday&quot;) # TODO: consider this backup chl since above seems to drop off server sometimes
 scape &lt;- rerddap::info(&quot;noaa_aoml_4729_9ee6_ab54&quot;, url = &quot;https://cwcgom.aoml.noaa.gov/erddap/&quot;)</code></pre>
-<script src="https://unpkg.com/@popperjs/core@2"></script>
-<script src="https://unpkg.com/tippy.js@6"></script>
-<script>tippy ("#tooltip27",{content: "Channel Islands National Marine Sanctuary"});</script>
 
 
 
