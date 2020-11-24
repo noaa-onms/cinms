@@ -27,4 +27,5 @@ output:
     self_contained: no
     css: libs/styles.css
     mathjax: null
+    anchor_sections: FALSE
     
