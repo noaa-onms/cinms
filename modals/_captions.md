@@ -79,7 +79,7 @@ These sites are where a consortium of contributors collected rocky intertidal da
 
 ## Figure Ux.Rocky.MARINe.Ochre-Stars.
 
-The average number of ochre stars counted each year during 30-minute searches at monitoring sites at each of the five islands in Channel Islands National Marine Sanctuary by the [Multi-Agency Rocky Intertidal Network](http://pacificrockyintertidal.org) (MARINe).
+Average number of ochre stars (*Pisaster ochraceus*) counted during 30-minute searches at monitoring sites at each of the five islands in Channel Islands National Marine Sanctuary from 1999–2014. The bar at the bottom of the figure can be used to zoom in to specific dates, using the small slider buttons on either edge of the bar. Sea star wasting syndrome caused a massive die off of ochre stars in later 2013-2014. Prior to 2014, most locations had more than 100 sea stars counted during 30-minute searches. After 2014, the majority of sites have had less than ten per search. Surveys conducted by [Channel Islands National Park](https://www.nps.gov/chis/index.htm).
 
 ### Details
 
