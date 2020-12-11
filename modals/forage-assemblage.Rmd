@@ -16,13 +16,14 @@ library(nms4r)
 
 ### Map of Regions
 
-```{r calcofi map, fig.cap=nms4r::md_caption("Figure App.F.12.17.new")}
+```{r calcofi map, fig.cap=nms4r::md_caption("Figure App.F.12.17.")}
 nms4r::calcofi_map()
 ```
 
 ### Larval fish, cool-water species {.active}
 
 ##### CINMS Region
+`r nms4r::get_figure_info("Figure App.F.12.19.rockfish")`
 
 ```{r calcofi plot 1}
 grp   <- "Cool-water associated ichthyoplankton"
@@ -34,7 +35,12 @@ csv   <- glue::glue("https://raw.githubusercontent.com/marinebon/calcofi-analysi
 nms4r::calcofi_plot(csv = csv, title = title)
 ```
 
+`r nms4r::md_caption("Figure App.F.15.5")`
+
+`r nms4r::md_caption("Figure App.F.15.5", get_details = T)`
+
 ##### SoCal Shelf Region
+`r nms4r::get_figure_info("Figure App.F.12.19.rockfish")`
 
 ```{r calcofi plot 2}
 grp   <- "Cool-water associated ichthyoplankton"
@@ -49,9 +55,12 @@ nms4r::calcofi_plot(csv = csv, title = title)
 
 `r nms4r::md_caption("Figure App.F.15.5")`
 
+`r nms4r::md_caption("Figure App.F.15.5", get_details = T)`
+
 ### Larval fish, warm-water species
 
 ##### CINMS Region
+`r nms4r::get_figure_info("Figure App.F.12.19.rockfish")`
 
 ```{r calcofi plot 3}
 grp   <- "Warm-water associated ichthyoplankton"
@@ -63,7 +72,13 @@ csv   <- glue::glue("https://raw.githubusercontent.com/marinebon/calcofi-analysi
 nms4r::calcofi_plot(csv = csv, title = title)
 ```
 
+`r nms4r::md_caption("Figure App.F.15.5")`
+
+`r nms4r::md_caption("Figure App.F.15.5", get_details = T)`
+
+
 ##### SoCal Shelf Region
+`r nms4r::get_figure_info("Figure App.F.12.19.rockfish")`
 
 ```{r calcofi plot 4}
 grp   <- "Warm-water associated ichthyoplankton"
@@ -75,9 +90,9 @@ csv   <- glue::glue("https://raw.githubusercontent.com/marinebon/calcofi-analysi
 nms4r::calcofi_plot(csv = csv, title = title)
 ```
 
-####
-
 `r nms4r::md_caption("Figure App.F.15.5")`
+
+`r nms4r::md_caption("Figure App.F.15.5", get_details = T)`
 
 ### Larval fish - Mean Species Richness
 

@@ -22,6 +22,7 @@ nms4r::calcofi_map()
 #### CINMS Region
 
 ```{r}
+nms4r::get_figure_info("Figure App.F.12.19.hake")
 grp   <- "Anchovy"
 rgn   <- "CINMS"
 
@@ -37,6 +38,8 @@ nms4r::calcofi_plot(csv = csv, title = title)
 #### SoCal Shelf Region
 
 ```{r}
+nms4r::get_figure_info("Figure App.F.12.19.hake")
+
 grp   <- "Anchovy"
 rgn   <- "SoCal Shelf"
 
@@ -64,6 +67,8 @@ nms4r::calcofi_plot(csv = csv, title = title)
 #### CINMS Region
 
 ```{r}
+nms4r::get_figure_info("Figure App.F.12.19.hake")
+
 grp   <- "Myctophids"
 rgn   <- "CINMS"
 
@@ -94,6 +99,8 @@ nms4r::calcofi_plot(csv = csv, title = title)
 ### Rockfish
 
 #### CINMS Region
+
+`r nms4r::get_figure_info("Figure App.F.12.19.rockfish")`
 
 ```{r}
 grp   <- "Rockfish"
@@ -128,6 +135,8 @@ nms4r::calcofi_plot(csv = csv, title = title)
 #### CINMS Region
 
 ```{r}
+nms4r::get_figure_info("Figure App.F.12.19.hake")
+
 grp   <- "Sanddab"
 rgn   <- "CINMS"
 
@@ -160,6 +169,8 @@ nms4r::calcofi_plot(csv = csv, title = title)
 #### CINMS Region
 
 ```{r}
+nms4r::get_figure_info("Figure App.F.12.19.hake")
+
 grp   <- "Sardine"
 rgn   <- "CINMS"
 

@@ -771,7 +771,7 @@ Horizontal lines show the mean (dashed line) ± 1.0 standard deviation (solid li
 
 ## Figure App.F.12.19.anchovy
 
-A figure showing the relative abundance of northern anchovy (*Engraulis mordax*) collected during the spring around the Northern Channel Islands from 1978 to 2018. Data source: CalCOFI; Figure credit: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/).
+A figure showing the relative abundance of northern anchovy (*Engraulis mordax*) collected during the spring around the Northern Channel Islands from 1978 to 2018. The bar at the bottom of the figure can be used to zoom in to specific dates, using the small slider buttons on either edge of the bar. The blue horizontal line indicates the mean value for the time series. The horizontal gray bar shows one standard deviation above and below the mean. Data source: CalCOFI; Figure credit: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/).
 
 ### Details
 
@@ -779,7 +779,7 @@ Relative abundance of key forage fish groups collected in net samples during spr
 
 ## Figure App.F.12.19.anchovy_SoCal
 
-A figure showing the relative abundance of northern anchovy (*Engraulis mordax*) collected during the spring around the Southern California Shelf from 1978 to 2018. Data source: CalCOFI; Figure credit: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/).
+A figure showing the relative abundance of northern anchovy (*Engraulis mordax*) collected during the spring around the Southern California Shelf from 1978 to 2018. The bar at the bottom of the figure can be used to zoom in to specific dates, using the small slider buttons on either edge of the bar. The blue horizontal line indicates the mean value for the time series. The horizontal gray bar shows one standard deviation above and below the mean. Data source: CalCOFI; Figure credit: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/).
 
 ### Details
 
@@ -795,7 +795,7 @@ Relative abundance of key forage fish groups collected in net samples during spr
 
 ## Figure App.F.12.19.myctophids
 
-A figure showing the relative abundance of myctophids (Myctophidae) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 to 2018. Data source: CalCOFI; Figure credit: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/).
+A figure showing the relative abundance of myctophids (Myctophidae) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 to 2018.The bar at the bottom of the figure can be used to zoom in to specific dates, using the small slider buttons on either edge of the bar. The blue horizontal line indicates the mean value for the time series. The horizontal gray bar shows one standard deviation above and below the mean. Data source: CalCOFI; Figure credit: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/).
 
 ### Details
 
@@ -803,7 +803,7 @@ Relative abundance of key forage fish groups collected in net samples during spr
 
 ## Figure App.F.12.19.rockfish
 
-A figure showing the relative abundance of shortbelly rockfish (*Sebastes jordani*) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 to 2018. Data source: CalCOFI; Figure credit: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/).
+A figure showing the relative abundance of shortbelly rockfish (*Sebastes jordani*) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 to 2018. The bar at the bottom of the figure can be used to zoom in to specific dates, using the small slider buttons on either edge of the bar. The blue horizontal line indicates the mean value for the time series. The horizontal gray bar shows one standard deviation above and below the mean. Data source: CalCOFI; Figure credit: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/).
 
 ### Details
 
@@ -812,7 +812,7 @@ Relative abundance of key forage fish groups collected in net samples during spr
 
 ## Figure App.F.12.19.sanddab
 
-A figure showing the relative abundance of Pacific sanddab (*Citharichthys sordidus*) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 - 2018. Data source: CalCOFI; Figure credit: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/).
+A figure showing the relative abundance of Pacific sanddab (*Citharichthys sordidus*) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 - 2018. The bar at the bottom of the figure can be used to zoom in to specific dates, using the small slider buttons on either edge of the bar. The blue horizontal line indicates the mean value for the time series. The horizontal gray bar shows one standard deviation above and below the mean. Data source: CalCOFI; Figure credit: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/).
 
 ### Details
 
@@ -820,7 +820,7 @@ Relative abundance of key forage fish groups collected in net samples during spr
 
 ## Figure App.F.12.19.sardine
 
-A figure showing the relative abundance of Pacific sardine (*Sardinops sagax*) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 to 2018. Data source: CalCOFI; Figure credit: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/).
+A figure showing the relative abundance of Pacific sardine (*Sardinops sagax*) collected during the spring around the Northern Channel Islands and the Southern California Shelf from 1978 to 2018. The bar at the bottom of the figure can be used to zoom in to specific dates, using the small slider buttons on either edge of the bar. The blue horizontal line indicates the mean value for the time series. The horizontal gray bar shows one standard deviation above and below the mean. Data source: CalCOFI; Figure credit: A. Thompson/NOAA; [Ben Best/EcoQuants](https://ecoquants.com/).
 
 ### Details
 
@@ -1075,7 +1075,7 @@ Trend in density from 2004-2013, based on sightings from [CalCOFI](https://calco
 
 ## Figure App.F.15.5.
 
-A figure showing the relative abundance (how common or rare a species is) of cool-water associated (top) and warm-water associated (bottom) fish larvae around the Channel Islands and the Southern California Shelf from 1974 to 2015. Data source: [CalCOFI](https://calcofi.org/); Figure credit: A. Thompson/NOAA.
+A figure showing the relative abundance (how common or rare a species is) of cool-water associated (top) and warm-water associated (bottom) fish larvae around the Channel Islands and the Southern California Shelf from 1974 to 2015. The bar at the bottom of the figure can be used to zoom in to specific dates, using the small slider buttons on either edge of the bar. The blue horizontal line indicates the mean value for the time series. The horizontal gray bar shows one standard deviation above and below the mean. Data source: [CalCOFI](https://calcofi.org/); Figure credit: A. Thompson/NOAA.
 
 ### Details
 
