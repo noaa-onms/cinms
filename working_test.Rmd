@@ -1,0 +1,11 @@
+---
+title: "Overview"
+params:
+  csv: "svg/svg_links_cinms.csv"
+  svg: "svg/cinms_overview.svg"
+---
+
+My text.
+
+```{r svg, child = '_svg-html_child.Rmd'}
+```
