@@ -28,5 +28,5 @@ if ("try-error" %in% class(chl)){
   warning(glue::glue("chl ERROR with rerddap::info(): {attr(chl, 'condition')}"))
 }
 # chl   <- info("erdMWchlamday") # TODO: consider this backup chl since above seems to drop off server sometimes
-scape <- rerddap::info("noaa_aoml_4729_9ee6_ab54", url = "https://cwcgom.aoml.noaa.gov/erddap/")
+#scape <- rerddap::info("noaa_aoml_4729_9ee6_ab54", url = "https://cwcgom.aoml.noaa.gov/erddap/")
 ```
