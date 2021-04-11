@@ -76,11 +76,28 @@ This website is constructed using [Rmarkdown website](https://bookdown.org/yihui
 
 ### content editing workflow
 
-1. edit .Rmd files in `./docs/modals/`
-2. run `Rscript render_site.R`
+1. Get the latest [`nms4r`](https://marinebon.org/nms4r/) library. Run once or if library gets updated.
+
+```r
+remotes::install_github("marinebon/nms4r")
+```
+
+2. Edit .Rmd files in `./docs/modals/`
 
 NOTE: The `.html` files *can* be edited but by default `.html` files are overwritten by content knit from the `Rmd` files of the same name.
+
 To use html directly set `redo_modals <- T`, but you will need to clear `.html` files manually with this setting.
+
+
+3. Render the Rmarkdown files in the site and under modals/.
+
+```r
+# render only changed Rmds
+nms4r::render_all_rmd()
+
+# render all Rmds
+render_all_rmd(render_all = T)
+```
 
 ### testing
 
@@ -88,7 +105,7 @@ Because of [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) restri
 
 ```r
 # build website
-source("render_site.R")
+nms4r::render_all_rmd()
 
 # serve website locally
 servr::httd(".")
@@ -99,7 +116,3 @@ or using Python:
 ```bash
 cd ~/github/cinms/docs; python -m SimpleHTTPServer
 ```
-
-The [`render_site.R`](https://github.com/marinebon/iea-ak-info/blob/master/render_site.R) script renders the modal and website pages.
-
-Note the actual html content served at [marinebon.github.io/cinms](https://marinebon.github.io/cinms) via [Github Pages](https://pages.github.com/) is all the html/jss/csss files copied into the `docs/` folder of this repository.
