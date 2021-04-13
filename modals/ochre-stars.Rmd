@@ -32,7 +32,7 @@ nms_rgns1 <- readr::read_csv(nms_rgns_csv) %>%
 `r nms4r::get_figure_info("Figure App.F.12.2.")`
 
 ```{r map sites}
-nms4r::map_nms_sites("cinms", dir_gdrive=dir_gdrive)
+nms4r::map_nms_sites("cinms", dir_gdrive)
 ```
 
 `r nms4r::md_caption("Figure Ux.Rocky.MARINe.map.")`

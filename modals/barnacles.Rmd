@@ -25,7 +25,7 @@ nms_rgns1 <- readr::read_csv(nms_rgns_csv) %>%
 ### Map of Sites
 
 ```{r map sites}
-nms4r::map_nms_sites("cinms", dir_gdrive=dir_gdrive)
+nms4r::map_nms_sites("cinms", dir_gdrive)
 ```
 `r nms4r::md_caption("Interactive map of field sites across the Channel Islands")`
 
