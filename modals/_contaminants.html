@@ -13,17 +13,38 @@
 
 <title>_contaminants.utf8</title>
 
+<script src="modal_libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="modal_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="modal_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
 <script src="modal_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="modal_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="modal_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="modal_libs/navigation-1.1/tabsets.js"></script>
 <link href="modal_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="modal_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="modal_libs/font-awesome-5.13.0/css/all.min.css" rel="stylesheet" />
 <link href="modal_libs/font-awesome-5.13.0/css/v4-shims.min.css" rel="stylesheet" />
+<!--html_preserve-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JB0WCCY7ZR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JB0WCCY7ZR');
+</script>
+<!--/html_preserve-->
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -32,14 +53,10 @@
   div.column{display: inline-block; vertical-align: top; width: 50%;}
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   ul.task-list{list-style: none;}
-    </style>
+      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -52,32 +69,7 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
 
 <link rel="stylesheet" href="_modal_styles.css" type="text/css" />
 <link rel="stylesheet" href="modal_libs/font-awesome-5.3.1/css/all.min.css" type="text/css" />
@@ -90,10 +82,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -110,6 +98,9 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
@@ -122,7 +113,6 @@ summary {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -186,7 +176,7 @@ summary {
 
 
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -199,22 +189,22 @@ summary {
 <div style="display: flex">
 <div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;">
 <a href="https://sanctuaries.noaa.gov/science/sentinel-site-program/channel-islands/water-quality.html" target="_blank">
-<i class="fa fa-info-circle"></i>
+<i class="fa fa-info-circle" role="presentation" aria-label="info-circle icon"></i>
 </a>
 <a href="https://sanctuarysimon.org/dbtools/photo-library/id/750" target="_blank">
-<i class="fa fa-camera"></i>
+<i class="fa fa-camera" role="presentation" aria-label="camera icon"></i>
 </a>
 </div>
 <div style="margin: 10px; font-style: italic; flex: 20; ">Human-derived pollutants, including pesticides, hydrocarbons and heavy metals, can affect organisms across all levels of food webs, from <span aria-describedby="tooltip6" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%" id="tooltip6">plankton</span> to whales.  Contaminants can interfere with fishing and recreational activities due to beach closures and swimming advisories.</div>
 </div>
 <div id="section" class="section level5 tabset">
-<h5></h5>
+<h5 class="tabset"></h5>
 <div id="domoic-acid" class="section level6">
 <h6>Domoic Acid</h6>
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100429" target="_blank"><i class="fa fa-clipboard-list"></i> Plumes and Blooms Monitoring Program</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100429" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Plumes and Blooms Monitoring Program</a>
 </div>
 </div>
 </div>
@@ -223,7 +213,10 @@ summary {
 <p class="caption">A figure showing <span id="tooltip23" aria-describedby="tooltip23" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">domoic acid</span> levels in commercially-important <span id="tooltip26" aria-describedby="tooltip26" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">crustacean</span>s (triangles) and <span id="tooltip29" aria-describedby="tooltip29" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">bivalve</span>s (circles) collected from the Santa Barbara Channel (2012 - 2013). Red coloration indiciates that the domic acid levels measured above the California Department of Public Health and U.S. Food and Drug Administration action limits. Figure credit: <a href='https://caseagrant.ucsd.edu/profile/carolynn-culver' target='_blank'>C. Culver/CA Sea Grant</a>, unpublished data.</p>
 </div>
 <details>
-<summary>Click for Details</summary> <span id="tooltip23" aria-describedby="tooltip23" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Domoic acid</span> levels in parts per million (ppm) in commercially-important <span id="tooltip26" aria-describedby="tooltip26" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">crustacean</span>s (triangles) and <span id="tooltip29" aria-describedby="tooltip29" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">bivalve</span>s (circles) collected from the Santa Barbara Channel between 2012 and 2013 are shown on the y-axis for (A) animals collected near the shore of the mainland coast, and (B) animals collected offshore the mainland coast or near the northern Channel Islands. In the cases that are colored red, <span id="tooltip23" aria-describedby="tooltip23" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">domoic acid</span> levels measured above the California Department of Public Health and U.S. Food and Drug Administration action limits: 20 ppm for meat and 30 ppm for viscera. For more information, consult Figure App.D.7.1 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+<span id="tooltip23" aria-describedby="tooltip23" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Domoic acid</span> levels in parts per million (ppm) in commercially-important <span id="tooltip26" aria-describedby="tooltip26" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">crustacean</span>s (triangles) and <span id="tooltip29" aria-describedby="tooltip29" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">bivalve</span>s (circles) collected from the Santa Barbara Channel between 2012 and 2013 are shown on the y-axis for (A) animals collected near the shore of the mainland coast, and (B) animals collected offshore the mainland coast or near the northern Channel Islands. In the cases that are colored red, <span id="tooltip23" aria-describedby="tooltip23" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">domoic acid</span> levels measured above the California Department of Public Health and U.S. Food and Drug Administration action limits: 20 ppm for meat and 30 ppm for viscera. For more information, consult Figure App.D.7.1 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 <div id="harmful-algal-bloom-may-2015" class="section level6">
@@ -231,7 +224,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:right; display:table-cell;">
-<a href="https://doi.org/10.1002/2016GL070023" target="_blank"><i class="fa fa-database"></i> McCabe et al. 2016</a>
+<a href="https://doi.org/10.1002/2016GL070023" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> McCabe et al. 2016</a>
 </div>
 </div>
 </div>
@@ -240,7 +233,10 @@ summary {
 <p class="caption">A map showing an unprecedented West Coast-wide <span id="tooltip18" aria-describedby="tooltip18" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">harmful algal bloom</span> (HAB) that extended from the Gulf of Alaska to southern California. March 2015 (left, before the HAB) as compared to May (right, during the HAB). Data source: Satellite data were obtained from the National Aeronautics and Space Administration Ocean Biology Processing Group (OBPG) using a combination of the MODerate resolution Imaging Spectroradiometer (MODIS) on Aqua and Visible Infrared Imaging Radiometer Suite (VIIRS) chlorophyll products. Data were processed using standard OBPG processing with 4 kilometer imagery. Figure credit: McCabe et al. 2016.</p>
 </div>
 <details>
-<summary>Click for Details</summary> In May 2015, an unprecedented West Coast-wide <span id="tooltip18" aria-describedby="tooltip18" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">harmful algal bloom</span> (HAB) extended from the Gulf of Alaska to southern California. The bloom was composed of <em>Pseudo-nitzschia</em>, a toxigenic diatom that has the ability to produce <span id="tooltip23" aria-describedby="tooltip23" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">domoic acid</span>, a potent neurotoxin that can cause amnesic shellfish poisoning (ASP) and threaten human health if affected shellfish are consumed. These satellite images show <span id="tooltip28" aria-describedby="tooltip28" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">chlorophyll-a</span> estimates averaged over the periods of March 27-31, 2015 (left panel), and May, 6-8, 2015 (right panel). For more information, consult Figure App.D.7.3 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+In May 2015, an unprecedented West Coast-wide <span id="tooltip18" aria-describedby="tooltip18" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">harmful algal bloom</span> (HAB) extended from the Gulf of Alaska to southern California. The bloom was composed of <em>Pseudo-nitzschia</em>, a toxigenic diatom that has the ability to produce <span id="tooltip23" aria-describedby="tooltip23" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">domoic acid</span>, a potent neurotoxin that can cause amnesic shellfish poisoning (ASP) and threaten human health if affected shellfish are consumed. These satellite images show <span id="tooltip28" aria-describedby="tooltip28" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">chlorophyll-a</span> estimates averaged over the periods of March 27-31, 2015 (left panel), and May, 6-8, 2015 (right panel). For more information, consult Figure App.D.7.3 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 <div id="benthic-response-index---trend-by-region" class="section level6">
@@ -248,10 +244,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list"></i> SCCWRP Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> SCCWRP Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="https://www.sccwrp.org/about/research-areas/data-portal/" target="_blank"><i class="fa fa-database"></i> SCCWRP data portal</a>
+<a href="https://www.sccwrp.org/about/research-areas/data-portal/" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> SCCWRP data portal</a>
 </div>
 </div>
 </div>
@@ -260,7 +256,10 @@ summary {
 <p class="caption">A figure showing the relative impact of human activity on the seafloor across different regions of the <span id="tooltip4" aria-describedby="tooltip4" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Southern California Bight</span>, using the <span id="tooltip31" aria-describedby="tooltip31" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Benthic</span> Response Index as an indicator. Figure credit: K. Schiff/<a href='https://www.sccwrp.org/' target='_blank'>SCCWRP</a></p>
 </div>
 <details>
-<summary>Click for Details</summary> Comparisons of the <span id="tooltip31" aria-describedby="tooltip31" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Benthic</span> Response Index (BRI), a diversity index of contaminant tolerant and sensitive <span id="tooltip17" aria-describedby="tooltip17" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">infauna</span>, among different regions of the <span id="tooltip4" aria-describedby="tooltip4" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Southern California Bight</span> is shown. Island shelf sites (upper right) had been at reference levels (highest ranking) until 2013, when approximately 30 percent of sites were reclassified as low impact. Other regions in the bight did not experience such a large BRI decline as the island shelf, which indicates potential new impacts to sediments around southern California Islands. For more information, consult Figure App.E.11.10 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+Comparisons of the <span id="tooltip31" aria-describedby="tooltip31" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Benthic</span> Response Index (BRI), a diversity index of contaminant tolerant and sensitive <span id="tooltip17" aria-describedby="tooltip17" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">infauna</span>, among different regions of the <span id="tooltip4" aria-describedby="tooltip4" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Southern California Bight</span> is shown. Island shelf sites (upper right) had been at reference levels (highest ranking) until 2013, when approximately 30 percent of sites were reclassified as low impact. Other regions in the bight did not experience such a large BRI decline as the island shelf, which indicates potential new impacts to sediments around southern California Islands. For more information, consult Figure App.E.11.10 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 <div id="benthic-response-index---trend-by-site" class="section level6">
@@ -268,10 +267,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list"></i> SCCWRP Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> SCCWRP Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="https://www.sccwrp.org/about/research-areas/data-portal/" target="_blank"><i class="fa fa-database"></i> SCCWRP data portal</a>
+<a href="https://www.sccwrp.org/about/research-areas/data-portal/" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> SCCWRP data portal</a>
 </div>
 </div>
 </div>
@@ -280,7 +279,10 @@ summary {
 <p class="caption">A map showing the relative impact of human activity on the seafloor across different regions of the <span id="tooltip4" aria-describedby="tooltip4" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Southern California Bight</span>, using the <span id="tooltip31" aria-describedby="tooltip31" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Benthic</span> Response Index as an indicator. Data Source: K. Schiff/ <a href='https://www.sccwrp.org/' target='_blank'>SCCWRP</a>; Map credit: <a href='https://channelislands.noaa.gov/contact/cajandig.html' target='_blank'>M. Cajandig/NOAA</a>.</p>
 </div>
 <details>
-<summary>Click for Details</summary> The Southern California Water Research Project uses a diversity index of tolerant and sensitive <span id="tooltip17" aria-describedby="tooltip17" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">infauna</span>, also known as the <span id="tooltip31" aria-describedby="tooltip31" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Benthic</span> Response Index (BRI), to gauge the ecosystem impact from anthropogenic contamination. The map above shows the 2013 locations of samples and the BRI trends at each location. Previously, island sites were all considered 100 percent pristine (reference), but now roughly 70 percent of samples are considered degraded from that status. Decline in BRI was particularly prevalent around Santa Cruz Island. This decline in BRI was not mirrored in other regions in southern California. The most recent samples, collected in 2013, found that ten of the 15 sites in Channel Island National Marine Sanctuary had <span id="tooltip17" aria-describedby="tooltip17" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">infauna</span>l community compositions that were shifting towards species more tolerant of degraded conditions (red) compared to the samples collected previously. For more information, consult Figure App.E.11.9 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+The Southern California Water Research Project uses a diversity index of tolerant and sensitive <span id="tooltip17" aria-describedby="tooltip17" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">infauna</span>, also known as the <span id="tooltip31" aria-describedby="tooltip31" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Benthic</span> Response Index (BRI), to gauge the ecosystem impact from anthropogenic contamination. The map above shows the 2013 locations of samples and the BRI trends at each location. Previously, island sites were all considered 100 percent pristine (reference), but now roughly 70 percent of samples are considered degraded from that status. Decline in BRI was particularly prevalent around Santa Cruz Island. This decline in BRI was not mirrored in other regions in southern California. The most recent samples, collected in 2013, found that ten of the 15 sites in Channel Island National Marine Sanctuary had <span id="tooltip17" aria-describedby="tooltip17" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">infauna</span>l community compositions that were shifting towards species more tolerant of degraded conditions (red) compared to the samples collected previously. For more information, consult Figure App.E.11.9 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 <div id="benthic-response-index---condition-by-site" class="section level6">
@@ -288,10 +290,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list"></i> SCCWRP Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> SCCWRP Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="https://www.sccwrp.org/about/research-areas/data-portal/" target="_blank"><i class="fa fa-database"></i> SCCWRP data portal</a>
+<a href="https://www.sccwrp.org/about/research-areas/data-portal/" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> SCCWRP data portal</a>
 </div>
 </div>
 </div>
@@ -300,7 +302,10 @@ summary {
 <p class="caption">A map showing sediment sample locations and their respective <span id="tooltip31" aria-describedby="tooltip31" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Benthic</span> Reponse Index sites from a 2013 <span id="tooltip4" aria-describedby="tooltip4" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Southern California Bight</span>-wide survey. The <span id="tooltip31" aria-describedby="tooltip31" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Benthic</span> Response Index is a measure of the impact of humans on the seafloor. Figure credit: K. Schiff/<a href='https://www.sccwrp.org/' target='_blank'>SCCWRP</a>.</p>
 </div>
 <details>
-<summary>Click for Details</summary> SCCWRP sediment sample locations and their respective <span id="tooltip31" aria-describedby="tooltip31" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Benthic</span> Response Index (BRI) from the 2013 bight-wide survey are shown in the map. In order to create the BRI, <span id="tooltip17" aria-describedby="tooltip17" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">infauna</span>l <span id="tooltip15" aria-describedby="tooltip15" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">invertebrate</span> communities are characterized based on the proportion of taxa present in a sample that are sensitive to as opposed to tolerant of contaminant levels. Using a composite score of the <span id="tooltip17" aria-describedby="tooltip17" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">infauna</span> community, SCCRWP labels sample sites as reference, low impact, moderate impact, or high impact. For more information, consult Figure App.E.11.11 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+SCCWRP sediment sample locations and their respective <span id="tooltip31" aria-describedby="tooltip31" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Benthic</span> Response Index (BRI) from the 2013 bight-wide survey are shown in the map. In order to create the BRI, <span id="tooltip17" aria-describedby="tooltip17" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">infauna</span>l <span id="tooltip15" aria-describedby="tooltip15" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">invertebrate</span> communities are characterized based on the proportion of taxa present in a sample that are sensitive to as opposed to tolerant of contaminant levels. Using a composite score of the <span id="tooltip17" aria-describedby="tooltip17" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">infauna</span> community, SCCRWP labels sample sites as reference, low impact, moderate impact, or high impact. For more information, consult Figure App.E.11.11 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 <div id="ddt-in-sediments" class="section level6">
@@ -308,10 +313,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list"></i> SCCWRP Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> SCCWRP Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database"></i> Schiff et al. 2011</a>
+<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Schiff et al. 2011</a>
 </div>
 </div>
 </div>
@@ -320,7 +325,10 @@ summary {
 <p class="caption">A map showing DDT contaminant levels in sediments collected across the <span id="tooltip4" aria-describedby="tooltip4" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Southern California Bight</span> in 2008. Figure credit: Schiff et al. 2011.</p>
 </div>
 <details>
-<summary>Click for Details</summary> Dichlorodiphenyltrichloroethane (DDT) contaminant levels in sediment sampling locations during SCCRWP’s 2008 bight-wide survey are shown in the map. DDT is most prominent around the Ports of Long Beach, Los Angeles, and Santa Monica Bay. DDT is a legacy contaminant, which means it persists in the environment long after introduction. A large amount of DDT in the bight came from the dumping of the contaminant by the Montrose Chemical Company off Palos Verdes until the early 1980s, which is why the surrounding areas have high DDT levels. <span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> is relatively far from the spill site and thus, has limited DDT concentrations in sediments. For more information, consult Figure App.E.11.12 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+Dichlorodiphenyltrichloroethane (DDT) contaminant levels in sediment sampling locations during SCCRWP’s 2008 bight-wide survey are shown in the map. DDT is most prominent around the Ports of Long Beach, Los Angeles, and Santa Monica Bay. DDT is a legacy contaminant, which means it persists in the environment long after introduction. A large amount of DDT in the bight came from the dumping of the contaminant by the Montrose Chemical Company off Palos Verdes until the early 1980s, which is why the surrounding areas have high DDT levels. <span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> is relatively far from the spill site and thus, has limited DDT concentrations in sediments. For more information, consult Figure App.E.11.12 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 <div id="copper-in-sediments" class="section level6">
@@ -328,10 +336,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list"></i> SCCWRP Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> SCCWRP Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database"></i> Schiff et al. 2011</a>
+<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Schiff et al. 2011</a>
 </div>
 </div>
 </div>
@@ -340,7 +348,10 @@ summary {
 <p class="caption">A map showing copper contaminant levels in sediments collected across the <span id="tooltip4" aria-describedby="tooltip4" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Southern California Bight</span> in 2008. Figure credit: Schiff et al. 2011.</p>
 </div>
 <details>
-<summary>Click for Details</summary> Copper contaminant levels at sediment sampling locations during SCCRWP’s 2008 Bight wide survey are shown in the map. Copper is a heavy metal contaminant that in high concentrations can be toxic to living marine resources. Concentrations in <span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> are consistently low compared with other regions in the <span id="tooltip4" aria-describedby="tooltip4" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">southern California Bight</span>. For more information, consult Figure App.E.11.13 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+Copper contaminant levels at sediment sampling locations during SCCRWP’s 2008 Bight wide survey are shown in the map. Copper is a heavy metal contaminant that in high concentrations can be toxic to living marine resources. Concentrations in <span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> are consistently low compared with other regions in the <span id="tooltip4" aria-describedby="tooltip4" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">southern California Bight</span>. For more information, consult Figure App.E.11.13 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 <div id="silver-in-sediments" class="section level6">
@@ -348,10 +359,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list"></i> SCCWRP Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> SCCWRP Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database"></i> Schiff et al. 2011</a>
+<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Schiff et al. 2011</a>
 </div>
 </div>
 </div>
@@ -360,7 +371,10 @@ summary {
 <p class="caption">A map showing silver contaminant levels in sediments collected across the <span id="tooltip4" aria-describedby="tooltip4" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Southern California Bight</span> in 2008. Figure credit: Schiff et al. 2011.</p>
 </div>
 <details>
-<summary>Click for Details</summary> Silver contaminant levels in sediment sampling locations during SCCRWP’s 2008 bight-wide survey are shown in the map. Silver is a heavy metal contaminant that in high concentrations can be toxic to living marine resources. Concentrations in <span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> and the Santa Barbara Channel are consistently low compared other regions in the <span id="tooltip4" aria-describedby="tooltip4" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Southern California Bight</span>. High concentrations of silver appear to be clustered off the two largest population centers: Los Angeles and San Diego. For more information, consult Figure App.E.11.14 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+Silver contaminant levels in sediment sampling locations during SCCRWP’s 2008 bight-wide survey are shown in the map. Silver is a heavy metal contaminant that in high concentrations can be toxic to living marine resources. Concentrations in <span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> and the Santa Barbara Channel are consistently low compared other regions in the <span id="tooltip4" aria-describedby="tooltip4" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Southern California Bight</span>. High concentrations of silver appear to be clustered off the two largest population centers: Los Angeles and San Diego. For more information, consult Figure App.E.11.14 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 <div id="pbdes-in-sediments" class="section level6">
@@ -368,10 +382,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list"></i> SCCWRP Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> SCCWRP Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database"></i> Schiff et al. 2011</a>
+<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Schiff et al. 2011</a>
 </div>
 </div>
 </div>
@@ -380,7 +394,10 @@ summary {
 <p class="caption">A map showing the contaminent levels of Polybrominated diphenyl ethers (which are used as flame retardants) in sediments collected across the <span id="tooltip4" aria-describedby="tooltip4" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Southern California Bight</span> in 2008. Figure credit: Schiff et al. 2011.</p>
 </div>
 <details>
-<summary>Click for Details</summary> Sediment contaminant levels for Polybrominated diphenyl ethers (PBDEs) in the <span id="tooltip4" aria-describedby="tooltip4" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Southern California Bight</span> are shown in the map above. These products are typically added to manufactured products as flame retardants. Concentrations of PBDEs are low at the islands compared to mainland areas. For more information, consult Figure App.E.11.15 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+Sediment contaminant levels for Polybrominated diphenyl ethers (PBDEs) in the <span id="tooltip4" aria-describedby="tooltip4" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Southern California Bight</span> are shown in the map above. These products are typically added to manufactured products as flame retardants. Concentrations of PBDEs are low at the islands compared to mainland areas. For more information, consult Figure App.E.11.15 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 <div id="pyrethroids-in-sediments" class="section level6">
@@ -388,10 +405,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list"></i> SCCWRP Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> SCCWRP Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database"></i> Schiff et al. 2011</a>
+<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Schiff et al. 2011</a>
 </div>
 </div>
 </div>
@@ -400,7 +417,10 @@ summary {
 <p class="caption">A map showing pyrethroid (insecticide) contaminant levels in sediments collected across the <span id="tooltip4" aria-describedby="tooltip4" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Southern California Bight</span> in 2008. Figure credit: Schiff et al. 2011.</p>
 </div>
 <details>
-<summary>Click for Details</summary> Pyrethroids contaminant levels in sediment sampling locations during SCCRWP’s 2008 bight-wide survey are shown in the map. Pyrethroids are typically pollutants coming from insecticide use. In recent years, there has been no agriculture on the islands and thus, pyrethroids are absent from <span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> sediments. Sediments adjacent to <span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> off Ventura have low levels of pyrethroids likely due to agriculture in that area. For more information, consult Figure App.E.11.16 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+Pyrethroids contaminant levels in sediment sampling locations during SCCRWP’s 2008 bight-wide survey are shown in the map. Pyrethroids are typically pollutants coming from insecticide use. In recent years, there has been no agriculture on the islands and thus, pyrethroids are absent from <span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> sediments. Sediments adjacent to <span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> off Ventura have low levels of pyrethroids likely due to agriculture in that area. For more information, consult Figure App.E.11.16 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 <div id="contaminants-in-sediments---trends-by-region" class="section level6">
@@ -408,10 +428,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list"></i> SCCWRP Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> SCCWRP Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database"></i> Schiff et al. 2011</a>
+<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Schiff et al. 2011</a>
 </div>
 </div>
 </div>
@@ -420,7 +440,10 @@ summary {
 <p class="caption">A figure showing the amount of impacted sediment in varying categories of exposure to sediment contamination (“Cat”) across five sites and three years. Figure credit: Schiff et al. 2011.</p>
 </div>
 <details>
-<summary>Click for Details</summary> Percent area of impacted sediments by stratum and survey year in varying categories of exposure to sediment contamination are shown in the bar plot. Category 1 is minimal exposure; Category 2 is low exposure; Category 3 is moderate exposure; and Category 4 is high exposure. Categories are determined by two prominent chemistry indices determined by analyzing a suite of chemical concentrations present in sediment samples. Missing bars represent no data. In minimal exposure, sediment-associated contamination may be present, but exposure is unlikely to result in effects. In low exposure, small increase in contaminant exposure may be associated with increased effects, but magnitude or frequency of occurrence of biological impacts is low. In moderate exposure, there is clear evidence of sediment contaminant exposure at concentrations that are likely to result in biological effects. For high exposure, contaminant exposure is highly likely to result in substantial biological effects. The Channel Islands have no sediments in Category 4 and the large majority of sediments are in Category 1 or 2, thus indicating limited contamination impact in sanctuary sediments. At this time, the suites of chemical indices have not yet been completed for the 2008 bight-wide survey. For more information, consult Figure App.E.11.17 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+Percent area of impacted sediments by stratum and survey year in varying categories of exposure to sediment contamination are shown in the bar plot. Category 1 is minimal exposure; Category 2 is low exposure; Category 3 is moderate exposure; and Category 4 is high exposure. Categories are determined by two prominent chemistry indices determined by analyzing a suite of chemical concentrations present in sediment samples. Missing bars represent no data. In minimal exposure, sediment-associated contamination may be present, but exposure is unlikely to result in effects. In low exposure, small increase in contaminant exposure may be associated with increased effects, but magnitude or frequency of occurrence of biological impacts is low. In moderate exposure, there is clear evidence of sediment contaminant exposure at concentrations that are likely to result in biological effects. For high exposure, contaminant exposure is highly likely to result in substantial biological effects. The Channel Islands have no sediments in Category 4 and the large majority of sediments are in Category 1 or 2, thus indicating limited contamination impact in sanctuary sediments. At this time, the suites of chemical indices have not yet been completed for the 2008 bight-wide survey. For more information, consult Figure App.E.11.17 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 <div id="arsenic-in-mussels" class="section level6">
@@ -428,7 +451,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list"></i> Mussel Watch Program</a>
+<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Mussel Watch Program</a>
 </div>
 </div>
 </div>
@@ -437,7 +460,10 @@ summary {
 <p class="caption">A figure showing a time series of arsenic found in mussel tissue from Santa Cruz Island from 1986 to 2010. Figure credit: D. Whitall/<a href='https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html' target='_blank'>NOAA, Mussel Watch</a>.</p>
 </div>
 <details>
-<summary>Click for Details</summary> Time series of arsenic (as μg/g dry weight) in <em>Mytilus</em> spp. at Fraser Point, Santa Cruz Island is shown above. Data is from NOAA’s Mussel Watch Program (monitored 1986-2010). Arsenic values have been slowly declining in <em>Mytilus</em> spp tissue. Arsenic can impact a number of enzymes and has a widespread effects on a number of organ systems. There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more through research and data collection is required to confirm this trend. For more information, consult Figure App.E.11.2 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+Time series of arsenic (as Î¼g/g dry weight) in <em>Mytilus</em> spp. at Fraser Point, Santa Cruz Island is shown above. Data is from NOAA’s Mussel Watch Program (monitored 1986-2010). Arsenic values have been slowly declining in <em>Mytilus</em> spp tissue. Arsenic can impact a number of enzymes and has a widespread effects on a number of organ systems. There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more through research and data collection is required to confirm this trend. For more information, consult Figure App.E.11.2 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 <div id="iron-in-mussels" class="section level6">
@@ -445,7 +471,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list"></i> Mussel Watch Program</a>
+<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Mussel Watch Program</a>
 </div>
 </div>
 </div>
@@ -454,7 +480,10 @@ summary {
 <p class="caption">A figure showing the trends over time of iron found in mussel tissue from Santa Cruz Island from 1986 to 2010. Figure credit: D. Whitall/<a href='https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html' target='_blank'>NOAA, Mussel Watch</a>.</p>
 </div>
 <details>
-<summary>Click for Details</summary> Time series of iron (as μg/g dry weight) in <em>Mytilus</em> spp. at Fraser Point, Santa Cruz Island is shown above. Data is from NOAA’s Mussel Watch Program (monitored 1986-2010). Iron values have been slowly declining in <em>Mytilus</em> spp. tissue. There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more through research and data collection is required to confirm this trend. For more information, consult Figure App.E.11.3 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+Time series of iron (as Î¼g/g dry weight) in <em>Mytilus</em> spp. at Fraser Point, Santa Cruz Island is shown above. Data is from NOAA’s Mussel Watch Program (monitored 1986-2010). Iron values have been slowly declining in <em>Mytilus</em> spp. tissue. There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more through research and data collection is required to confirm this trend. For more information, consult Figure App.E.11.3 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 <div id="silver-in-mussels" class="section level6">
@@ -462,7 +491,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list"></i> Mussel Watch Program</a>
+<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Mussel Watch Program</a>
 </div>
 </div>
 </div>
@@ -471,7 +500,10 @@ summary {
 <p class="caption">A figure showing the trends over time of silver found in mussel tissue from Santa Cruz Island from 1986 to 2010. Figure credit: D. Whitall/<a href='https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html' target='_blank'>NOAA, Mussel Watch</a>.</p>
 </div>
 <details>
-<summary>Click for Details</summary> Time series of silver (as μg/g dry weight) in <em>Mytilus</em> spp. at Fraser Point, Santa Cruz Island is shown above. Data is from NOAA’s Mussel Watch Program (monitored 1986-2010). Silver values have been slowly declining in <em>Mytilus</em> spp. tissue. There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more through research and data collection is required to confirm this trend. For more information, consult Figure App.E.11.4 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+Time series of silver (as Î¼g/g dry weight) in <em>Mytilus</em> spp. at Fraser Point, Santa Cruz Island is shown above. Data is from NOAA’s Mussel Watch Program (monitored 1986-2010). Silver values have been slowly declining in <em>Mytilus</em> spp. tissue. There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more through research and data collection is required to confirm this trend. For more information, consult Figure App.E.11.4 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 <div id="heavy-metals-in-mussels" class="section level6">
@@ -479,7 +511,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list"></i> Mussel Watch Program</a>
+<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Mussel Watch Program</a>
 </div>
 </div>
 </div>
@@ -488,7 +520,10 @@ summary {
 <p class="caption">A figure showing a coastwide comparison of heavy metals found in mussel tissue from 1986 to 2010. Figure credit: D. Apeti/<a href='https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html' target='_blank'>NOAA, Mussel Watch</a>.</p>
 </div>
 <details>
-<summary>Click for Details</summary> This graph is a California coastwide comparison of total extractables (TE) from <em>Mytilus</em> spp. tissue for heavy metals. Data is from NOAA’s Mussel Watch Program (monitored 1986-2010). The horizontal lines of the red box illustrate the 25th, median, and 75th percentiles, while the top and bottom whiskers represent the 10th and 90th percentiles. Black dots are data points from collection sites and the green ellipsoids represent mean concentration values for metals from sites within <span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> (n = 3). There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more through research and data collection is required to confirm this trend. For more information, consult Figure App.E.11.5 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+This graph is a California coastwide comparison of total extractables (TE) from <em>Mytilus</em> spp. tissue for heavy metals. Data is from NOAA’s Mussel Watch Program (monitored 1986-2010). The horizontal lines of the red box illustrate the 25th, median, and 75th percentiles, while the top and bottom whiskers represent the 10th and 90th percentiles. Black dots are data points from collection sites and the green ellipsoids represent mean concentration values for metals from sites within <span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> (n = 3). There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more through research and data collection is required to confirm this trend. For more information, consult Figure App.E.11.5 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 <div id="pahs-in-mussels" class="section level6">
@@ -496,7 +531,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list"></i> Mussel Watch Program</a>
+<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Mussel Watch Program</a>
 </div>
 </div>
 </div>
@@ -505,21 +540,16 @@ summary {
 <p class="caption">A figure showing levels of carcinogenic (cancer-causing) petroleum-linked chemicals found in the Channel Islands (blue) and offshore sites (red). Figure credit: D. Apeti/<a href='https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html' target='_blank'>NOAA, Mussel Watch</a>.</p>
 </div>
 <details>
-<summary>Click for Details</summary> Mean Total Extractables (TE) for individual Polycyclic Aromatic Hydrocarbons or PAHs are compared between Channel Islands (blue) and other offshore sites (red). PAHs are organic contaminants that are carcinogenic. <span id="tooltip15" aria-describedby="tooltip15" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Invertebrate</span> species typically have limited ability to metabolize PAHs; however, they typically do not biomagnify because vertebrates can metabolize them more easily. Concentrations of PAHs are variable, but concentrations at <span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> are usually equivalent, if not lower than other offshore locations. There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more thorough research and data collection is required to confirm this trend. For more information, consult Figure App.E.11.6 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+Mean Total Extractables (TE) for individual Polycyclic Aromatic Hydrocarbons or PAHs are compared between Channel Islands (blue) and other offshore sites (red). PAHs are organic contaminants that are carcinogenic. <span id="tooltip15" aria-describedby="tooltip15" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Invertebrate</span> species typically have limited ability to metabolize PAHs; however, they typically do not biomagnify because vertebrates can metabolize them more easily. Concentrations of PAHs are variable, but concentrations at <span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> are usually equivalent, if not lower than other offshore locations. There are multiple potential explanations for this finding, including limited spatial resolution, limited recent data, possible return to background levels consistent with the southern California mainland after remediation, or improved instrumentation and analytics that have been developed since data collection began. Due to this, more thorough research and data collection is required to confirm this trend. For more information, consult Figure App.E.11.6 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
 <script>tippy ("#tooltip4",{content: "the curved coastline of Southern California from Point Conception to San Diego. The area includes the Channel Islands and part of the Pacific Ocean"});</script>
-<script>tippy ("#tooltip6",{content: "the word “plankton” comes from the Greek for “drifter” or “wanderer.” An organism is considered plankton if it is carried by tides and currents, and cannot swim well enough to move against these forces."});</script>
-<script>tippy ("#tooltip15",{content: "an animal lacking a backbone, such as an arthropod, mollusk, annelid, coelenterate, etc. The invertebrates constitute an artificial division of the animal kingdom, comprising 95 percent of all animal species"});</script>
-<script>tippy ("#tooltip17",{content: "the animals living in the sediments of the ocean floor or river or lake beds"});</script>
-<script>tippy ("#tooltip18",{content: "(HAB) occurs when colonies of micro-algae grow out of control and produce toxic or harmful effects on people, fish, shellfish, marine mammals and birds"});</script>
-<script>tippy ("#tooltip23",{content: "neurotoxin that causes amnesic shellfish poisoning (ASP). It is produced by algae and accumulates in shellfish, sardines, and anchovies"});</script>
-<script>tippy ("#tooltip26",{content: "a large category of animal species that includes crabs, lobsters, and shrimp"});</script>
-<script>tippy ("#tooltip27",{content: "Channel Islands National Marine Sanctuary"});</script>
-<script>tippy ("#tooltip28",{content: "a specific form of chlorophyll used in oxygenic photosynthesis"});</script>
-<script>tippy ("#tooltip29",{content: "a large group of aquatic animal species that have two shells (like clams, for example)"});</script>
-<script>tippy ("#tooltip31",{content: "of, relating to, or occurring at the bottom of a body of water (e.g. the bottom of the sea floor)"});</script>
+<script>
+<p>tippy (“#tooltip6”,{content: "the word</p>
 </div>
 </div>
 </div>
@@ -551,7 +581,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>

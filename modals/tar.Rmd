@@ -11,7 +11,8 @@ library(magrittr)
 library(nms4r)
 
 # The following is used by the plot_intertidal_nms function called later
-dir_gdrive <- "/Volumes/GoogleDrive/Shared drives/NMS/data"
+dir_gdrive <- "G:/Shared drives/NMS/data"
+# dir_gdrive <- "/Volumes/GoogleDrive/Shared drives/NMS/data"
 dir_pfx     <- file.path(dir_gdrive, "github_info-intertidal_data")
 d_csv       <- file.path(dir_pfx, "sanctuary_species_percentcover.csv")
 nms_rgns_csv    <- file.path(dir_pfx, "MARINe_graphs.xlsx - sites in regions.csv")

@@ -13,17 +13,38 @@
 
 <title>_whale-entanglement.utf8</title>
 
+<script src="modal_libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="modal_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="modal_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
 <script src="modal_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="modal_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="modal_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="modal_libs/navigation-1.1/tabsets.js"></script>
 <link href="modal_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="modal_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="modal_libs/font-awesome-5.13.0/css/all.min.css" rel="stylesheet" />
 <link href="modal_libs/font-awesome-5.13.0/css/v4-shims.min.css" rel="stylesheet" />
+<!--html_preserve-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JB0WCCY7ZR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JB0WCCY7ZR');
+</script>
+<!--/html_preserve-->
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -32,14 +53,10 @@
   div.column{display: inline-block; vertical-align: top; width: 50%;}
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   ul.task-list{list-style: none;}
-    </style>
+      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -52,32 +69,7 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
 
 <link rel="stylesheet" href="_modal_styles.css" type="text/css" />
 <link rel="stylesheet" href="modal_libs/font-awesome-5.3.1/css/all.min.css" type="text/css" />
@@ -90,10 +82,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -110,6 +98,9 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
@@ -122,7 +113,6 @@ summary {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -186,7 +176,7 @@ summary {
 
 
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -199,10 +189,10 @@ summary {
 <div style="display: flex">
 <div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;">
 <a href="https://www.fisheries.noaa.gov/west-coast/marine-mammal-protection/west-coast-large-whale-entanglement-response-program" target="_blank">
-<i class="fa fa-info-circle"></i>
+<i class="fa fa-info-circle" role="presentation" aria-label="info-circle icon"></i>
 </a>
 <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/archive/science/sentinel-site-program/hawaiihumpbackwhale/Whale-entangled-in-marine-debris-450.jpg" target="_blank">
-<i class="fa fa-camera"></i>
+<i class="fa fa-camera" role="presentation" aria-label="camera icon"></i>
 </a>
 </div>
 <div style="margin: 10px; font-style: italic; flex: 20; ">The Santa Barbara Channel is a critical stop-over for migrating whales. Unfortunately, whales can become entangled in fishing gear and <span aria-describedby="tooltip11" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%" id="tooltip11">marine debris</span>, often resulting in added stress, and in some cases mortality.</div>
@@ -210,28 +200,31 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://www.fisheries.noaa.gov/west-coast/marine-mammal-protection/west-coast-large-whale-entanglement-response-program" target="_blank"><i class="fa fa-clipboard-list"></i> NOAA Entanglement Response Program</a>
+<a href="https://www.fisheries.noaa.gov/west-coast/marine-mammal-protection/west-coast-large-whale-entanglement-response-program" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> NOAA Entanglement Response Program</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="https://www.fisheries.noaa.gov/west-coast/marine-mammal-protection/west-coast-large-whale-entanglement-response-program#resources" target="_blank"><i class="fa fa-database"></i> Entanglement Data/Summary Reports</a>
+<a href="https://www.fisheries.noaa.gov/west-coast/marine-mammal-protection/west-coast-large-whale-entanglement-response-program#resources" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Entanglement Data/Summary Reports</a>
 </div>
 </div>
 </div>
 <div class="figure">
 <img src="../img/cinms_cr/App.C.4.10b.Whale_entanglements.png" alt="" />
-<p class="caption">Number of confirmed reports of large whales, including humpback, gray, and blue whales entangled in fishing gear, ropes and other sources along the U.S. West Coast from 2000 to 2019. Graph from NOAA Fisheries 2019 West Coast Whale Entanglement Summary Report. Last updated April 2020. In the legend, color represents the different species of whales and “n” represents the total number of that species confirmed entangled in the study period. Of the 46 confirmed whale entanglements, 30 were reported off California, 6 of which originated from southern California (Santa Barbara, Los Angeles, Orange, and San Diego counties). However, the location where entangled animals are observed and reported does not necessarily reflect where and when the entanglement originated. Figure credit: D. Lawson/NMFS WCRO PRD.</p>
+<p class="caption">Number of confirmed reports of large whales, including humpback, gray, and blue whales entangled in fishing gear, ropes and other sources along the U.S. West Coast from 2000 to 2019. Graph from NOAA Fisheries 2019 West Coast Whale Entanglement Summary Report. Last updated April 2020. In the legend, color represents the different species of whales and â€œnâ€ represents the total number of that species confirmed entangled in the study period. Of the 46 confirmed whale entanglements, 30 were reported off California, 6 of which originated from southern California (Santa Barbara, Los Angeles, Orange, and San Diego counties). However, the location where entangled animals are observed and reported does not necessarily reflect where and when the entanglement originated. Figure credit: D. Lawson/NMFS WCRO PRD.</p>
 </div>
 <details>
-<summary>Click for Details</summary> Annual number of large whale entanglements reported along the U.S. West Coast. Reports of entanglements have increased in recent years. Factors contributing to this trend likely include an increasing overlap of whale activities (e.g., migrating, feeding) with human activities that have the potential to entangle whales (e.g., fishing, buoy installation) and an increase in on-the-water observers likely to report entangled individuals (e.g., whale watching, recreational boating). Confirmed entanglements from 2000 to 2019 of gray and humpback whales include 11 from Santa Barbara and two from Ventura counties. For more information, consult Figure App.C.4.10b in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+Annual number of large whale entanglements reported along the U.S. West Coast. Reports of entanglements have increased in recent years. Factors contributing to this trend likely include an increasing overlap of whale activities (e.g., migrating, feeding) with human activities that have the potential to entangle whales (e.g., fishing, buoy installation) and an increase in on-the-water observers likely to report entangled individuals (e.g., whale watching, recreational boating). Confirmed entanglements from 2000 to 2019 of gray and humpback whales include 11 from Santa Barbara and two from Ventura counties. For more information, consult Figure App.C.4.10b in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 <div id="overlap-with-fishing" class="section level5 tabset">
-<h5>Overlap with Fishing</h5>
+<h5 class="tabset">Overlap with Fishing</h5>
 <div id="blue" class="section level6">
 <h6>Blue</h6>
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:right; display:table-cell;">
-<a href="http://www.westcoast.fisheries.noaa.gov/publications/protected_species/marine_mammals/noaa-%20tm-nmfs-swr-044_final.pdf" target="_blank"><i class="fa fa-database"></i> Data</a>
+<a href="http://www.westcoast.fisheries.noaa.gov/publications/protected_species/marine_mammals/noaa-%20tm-nmfs-swr-044_final.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Data</a>
 </div>
 </div>
 </div>
@@ -240,7 +233,10 @@ summary {
 <p class="caption">A map showing the risk posed to blue whales from 11 <span id="tooltip21" aria-describedby="tooltip21" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">fixed gear</span> fisheries in the <span id="tooltip4" aria-describedby="tooltip4" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Southern California Bight</span>. Figure credit: Saez et al. 2013.</p>
 </div>
 <details>
-<summary>Click for Details</summary> Co-occurrence score (risk) based on multi-year average whale density and fishing effort for 11 fisheries is shown for quarters three (Q3) and four (Q4) for blue whales (<em>Balaenoptera musculus</em>). In Santa Barbara from July to December, there is an elevated risk area for multiple whale species with the California halibut/white seabass set gillnet, hagfish trap, rock crab trap, sablefish, spiny lobster trap, and spot prawn trap fisheries. For more information, consult Figure App.C.4.11a in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+Co-occurrence score (risk) based on multi-year average whale density and fishing effort for 11 fisheries is shown for quarters three (Q3) and four (Q4) for blue whales (<em>Balaenoptera musculus</em>). In Santa Barbara from July to December, there is an elevated risk area for multiple whale species with the California halibut/white seabass set gillnet, hagfish trap, rock crab trap, sablefish, spiny lobster trap, and spot prawn trap fisheries. For more information, consult Figure App.C.4.11a in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 <div id="fin" class="section level6">
@@ -248,7 +244,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:right; display:table-cell;">
-<a href="http://www.westcoast.fisheries.noaa.gov/publications/protected_species/marine_mammals/noaa-%20tm-nmfs-swr-044_final.pdf" target="_blank"><i class="fa fa-database"></i> Data</a>
+<a href="http://www.westcoast.fisheries.noaa.gov/publications/protected_species/marine_mammals/noaa-%20tm-nmfs-swr-044_final.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Data</a>
 </div>
 </div>
 </div>
@@ -257,7 +253,10 @@ summary {
 <p class="caption">A map showing the risk posed to fin whales from 11 <span id="tooltip21" aria-describedby="tooltip21" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">fixed gear</span> fisheries in the <span id="tooltip4" aria-describedby="tooltip4" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Southern California Bight</span>. Figure credit: Saez et al. 2013.</p>
 </div>
 <details>
-<summary>Click for Details</summary> Co-occurrence score (risk) based on multi-year average whale density and fishing effort for 11 fisheries is shown for quarters three (Q3) and four (Q4) fin whales (<em>Balaenoptera physalus</em>). In Santa Barbara from July to December, there is an elevated risk area for multiple whale species with the California halibut/white seabass set gillnet, hagfish trap, rock crab trap, sablefish, spiny lobster trap, and spot prawn trap fisheries. For more information, consult Figure App.C.4.11b in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+Co-occurrence score (risk) based on multi-year average whale density and fishing effort for 11 fisheries is shown for quarters three (Q3) and four (Q4) fin whales (<em>Balaenoptera physalus</em>). In Santa Barbara from July to December, there is an elevated risk area for multiple whale species with the California halibut/white seabass set gillnet, hagfish trap, rock crab trap, sablefish, spiny lobster trap, and spot prawn trap fisheries. For more information, consult Figure App.C.4.11b in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 <div id="humpback" class="section level6">
@@ -265,7 +264,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:right; display:table-cell;">
-<a href="http://www.westcoast.fisheries.noaa.gov/publications/protected_species/marine_mammals/noaa-%20tm-nmfs-swr-044_final.pdf" target="_blank"><i class="fa fa-database"></i> Data</a>
+<a href="http://www.westcoast.fisheries.noaa.gov/publications/protected_species/marine_mammals/noaa-%20tm-nmfs-swr-044_final.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Data</a>
 </div>
 </div>
 </div>
@@ -274,7 +273,10 @@ summary {
 <p class="caption">A map showing the risk posed to humpback whales from 11 <span id="tooltip21" aria-describedby="tooltip21" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">fixed gear</span> fisheries in the <span id="tooltip4" aria-describedby="tooltip4" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Southern California Bight</span>. Figure credit: Saez et al. 2013.</p>
 </div>
 <details>
-<summary>Click for Details</summary> Co-occurrence score (risk) based on multi-year average whale density and fishing effort for 11 fisheries is shown for quarters three (Q3) and four (Q4) and humpback whales (<em>Megaptera novaeangliae</em>). In Santa Barbara from July to December, there is an elevated risk area for multiple whale species with the California halibut/white seabass set gillnet, hagfish trap, rock crab trap, sablefish, spiny lobster trap, and spot prawn trap fisheries. For more information, consult Figure App.C.4.11c in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+Co-occurrence score (risk) based on multi-year average whale density and fishing effort for 11 fisheries is shown for quarters three (Q3) and four (Q4) and humpback whales (<em>Megaptera novaeangliae</em>). In Santa Barbara from July to December, there is an elevated risk area for multiple whale species with the California halibut/white seabass set gillnet, hagfish trap, rock crab trap, sablefish, spiny lobster trap, and spot prawn trap fisheries. For more information, consult Figure App.C.4.11c in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
@@ -313,7 +315,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>

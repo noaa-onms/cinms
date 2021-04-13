@@ -13,17 +13,38 @@
 
 <title>_fishing.utf8</title>
 
+<script src="modal_libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="modal_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="modal_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
 <script src="modal_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="modal_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="modal_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="modal_libs/navigation-1.1/tabsets.js"></script>
 <link href="modal_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="modal_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="modal_libs/font-awesome-5.13.0/css/all.min.css" rel="stylesheet" />
 <link href="modal_libs/font-awesome-5.13.0/css/v4-shims.min.css" rel="stylesheet" />
+<!--html_preserve-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JB0WCCY7ZR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JB0WCCY7ZR');
+</script>
+<!--/html_preserve-->
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -32,14 +53,10 @@
   div.column{display: inline-block; vertical-align: top; width: 50%;}
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   ul.task-list{list-style: none;}
-    </style>
+      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -52,32 +69,7 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
 
 <link rel="stylesheet" href="_modal_styles.css" type="text/css" />
 <link rel="stylesheet" href="modal_libs/font-awesome-5.3.1/css/all.min.css" type="text/css" />
@@ -90,10 +82,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -110,6 +98,9 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
@@ -122,7 +113,6 @@ summary {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -186,7 +176,7 @@ summary {
 
 
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -195,29 +185,29 @@ summary {
 
 
 <div id="fishing" class="section level3 tabset">
-<h3>Fishing</h3>
+<h3 class="tabset">Fishing</h3>
 <div style="display: flex">
 <div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;">
 <a href="https://sanctuaries.noaa.gov/science/sentinel-site-program/channel-islands/fishing-impacts.html" target="_blank">
-<i class="fa fa-info-circle"></i>
+<i class="fa fa-info-circle" role="presentation" aria-label="info-circle icon"></i>
 </a>
 <a href="https://sanctuarysimon.org/dbtools/photo-library/id/684" target="_blank">
-<i class="fa fa-camera"></i>
+<i class="fa fa-camera" role="presentation" aria-label="camera icon"></i>
 </a>
 </div>
 <div style="margin: 10px; font-style: italic; flex: 20; ">Globally, humans derive most of their protein from the ocean. The Santa Barbara Channel is known for its rich and productive fisheries, supporting local economies.</div>
 </div>
 <div id="landings" class="section level5 tabset">
-<h5>Landings</h5>
+<h5 class="tabset">Landings</h5>
 <div id="commercial" class="section level6">
 <h6>Commercial</h6>
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://wildlife.ca.gov/Fishing/Commercial/Landings" target="_blank"><i class="fa fa-clipboard-list"></i> CDFW Commercial Fishery Landings</a>
+<a href="https://wildlife.ca.gov/Fishing/Commercial/Landings" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> CDFW Commercial Fishery Landings</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="https://sanctuaries.noaa.gov/science/conservation/cinms_fishing_report.html" target="_blank"><i class="fa fa-database"></i> Leeworthy et al. 2014</a>
+<a href="https://sanctuaries.noaa.gov/science/conservation/cinms_fishing_report.html" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Leeworthy et al. 2014</a>
 </div>
 </div>
 </div>
@@ -226,7 +216,10 @@ summary {
 <p class="caption">A figure showing trends in fishing catch (pounds, left y-axis) and economic value (dollars, right y-axis) for seven major fisheries around the Channel Islands (2000 to 2012). Figure credit: Leeworthy et al. 2014a.</p>
 </div>
 <details>
-<summary>Click for Details</summary> Trends over time in commercial fishing activity in Channel Islands National Marine Sanctuary (<span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span>) based on landings pounds (blue bars) and value (dark blue line) for seven fisheries from 2000 to 2012. Landings were combined for twenty-two blocks that overlap substantially with the sanctuary (see <span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> Conidition Report Figure App.C.4.3. for map). Landings for market squid, sardine, and anchovy declined recently while landings of crabs increased. Landings of sea urchin, spiny lobster, and prawn and shrimp were relatively stable. For more information, consult Figure App.C.4.4 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+Trends over time in commercial fishing activity in Channel Islands National Marine Sanctuary (<span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span>) based on landings pounds (blue bars) and value (dark blue line) for seven fisheries from 2000 to 2012. Landings were combined for twenty-two blocks that overlap substantially with the sanctuary (see <span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> Conidition Report Figure App.C.4.3. for map). Landings for market squid, sardine, and anchovy declined recently while landings of crabs increased. Landings of sea urchin, spiny lobster, and prawn and shrimp were relatively stable. For more information, consult Figure App.C.4.4 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 <div id="recreational" class="section level6">
@@ -234,10 +227,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://wildlife.ca.gov/Conservation/Marine/MFSU" target="_blank"><i class="fa fa-clipboard-list"></i> CDFW Marine Fisheries Statistical Unit</a>
+<a href="https://wildlife.ca.gov/Conservation/Marine/MFSU" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> CDFW Marine Fisheries Statistical Unit</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="https://caseagrant.ucsd.edu/sites/default/files/SCMPA-29-CPFV-Final-Report.pdf" target="_blank"><i class="fa fa-database"></i> Chen et al. 2015</a>
+<a href="https://caseagrant.ucsd.edu/sites/default/files/SCMPA-29-CPFV-Final-Report.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Chen et al. 2015</a>
 </div>
 </div>
 </div>
@@ -246,7 +239,10 @@ summary {
 <p class="caption">A figure of Commercial Passenger Fishing Vessel (CPFV) trips and anglers per trip accross years (2000 to 2012). Figure credit: Chen et al. 2015b.</p>
 </div>
 <details>
-<summary>Click for Details</summary> Fishing activity landings for Commercial Passenger Fishing Vessels (CPFVs) operating out of ports in Santa Barbara and Ventura from 2000 to 2012. Activity landings in 2011 and 2012 returned to levels seen in the early 2000s. For more information, consult Figure App.C.4.2b in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+Fishing activity landings for Commercial Passenger Fishing Vessels (CPFVs) operating out of ports in Santa Barbara and Ventura from 2000 to 2012. Activity landings in 2011 and 2012 returned to levels seen in the early 2000s. For more information, consult Figure App.C.4.2b in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 <div id="deep-water" class="section level6">
@@ -254,7 +250,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://wildlife.ca.gov/Conservation/Marine/Groundfish/Commercial-Fishery-Data" target="_blank"><i class="fa fa-clipboard-list"></i> CDFW Commercial Fishery Data</a>
+<a href="https://wildlife.ca.gov/Conservation/Marine/Groundfish/Commercial-Fishery-Data" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> CDFW Commercial Fishery Data</a>
 </div>
 </div>
 </div>
@@ -263,21 +259,24 @@ summary {
 <p class="caption">A figure showing fish catch of bottom-dwelling fish, reported from within the Sanctuary from 1985 - 2015. Data source: CDFW; Figure: <a href='https://oceanexplorer.noaa.gov/edu/oceanage/03etnoyer/welcome.html' target='_blank'>P. Etnoyer/NOAA</a>.</p>
 </div>
 <details>
-<summary>Click for Details</summary> Landings (in pounds) and the relative contribution of gear types has changed over time due to changing regulations, economics, and consumer demand. Since 2002, there is zero to minimal set net and trawl landings, and reduced landings for bottom longlines and traps until 2008, followed by a dramatic increase in bottom longline and trap landings to peak levels. For more information, consult Figure App.C.3.2 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+Landings (in pounds) and the relative contribution of gear types has changed over time due to changing regulations, economics, and consumer demand. Since 2002, there is zero to minimal set net and trawl landings, and reduced landings for bottom longlines and traps until 2008, followed by a dramatic increase in bottom longline and trap landings to peak levels. For more information, consult Figure App.C.3.2 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 </div>
 <div id="maps-of-fishing" class="section level5 tabset">
-<h5>Maps of Fishing</h5>
+<h5 class="tabset">Maps of Fishing</h5>
 <div id="trawling" class="section level6">
 <h6>Trawling</h6>
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://wildlife.ca.gov/Conservation/Marine/Groundfish/Commercial-Fishery-Data" target="_blank"><i class="fa fa-clipboard-list"></i> CDFW Commercial Fishery Data</a>
+<a href="https://wildlife.ca.gov/Conservation/Marine/Groundfish/Commercial-Fishery-Data" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> CDFW Commercial Fishery Data</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="http://doi.org/10.13140/RG.2.1.3430.4085" target="_blank"><i class="fa fa-database"></i> Etnoyer et al. 2015</a>
+<a href="http://doi.org/10.13140/RG.2.1.3430.4085" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Etnoyer et al. 2015</a>
 </div>
 </div>
 </div>
@@ -286,7 +285,10 @@ summary {
 <p class="caption">A map showing landings of fish caught by <span id="tooltip2" aria-describedby="tooltip2" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">trawling</span> across the <span id="tooltip4" aria-describedby="tooltip4" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Southern California Bight</span> (2007-2011). Locations of known deep-water corals, which are very vulnerable to <span id="tooltip2" aria-describedby="tooltip2" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">trawling</span>, are indicated on the map. Data source: CDFW, Perry et al 2010; Map credit: <a href='https://oceanexplorer.noaa.gov/edu/oceanage/03etnoyer/welcome.html' target='_blank'>P. Etnoyer/NOAA</a>, Etnoyer et al. 2015.</p>
 </div>
 <details>
-<summary>Click for Details</summary> <span id="tooltip2" aria-describedby="tooltip2" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Trawling</span> landings across the <span id="tooltip4" aria-describedby="tooltip4" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Southern California Bight</span>, as illustrated by CDFW 10 square kilometer blocks and shown along with known locations of stony deep-water corals. <span id="tooltip2" aria-describedby="tooltip2" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Trawling</span> is known to disturb bottom habitats and deep-sea corals. Even though <span id="tooltip2" aria-describedby="tooltip2" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">trawling</span> effort has decreased in recent years, the impacts of this gear type can be long lived. For more information, consult Figure App.C.3.3 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+<span id="tooltip2" aria-describedby="tooltip2" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Trawling</span> landings across the <span id="tooltip4" aria-describedby="tooltip4" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Southern California Bight</span>, as illustrated by CDFW 10 square kilometer blocks and shown along with known locations of stony deep-water corals. <span id="tooltip2" aria-describedby="tooltip2" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Trawling</span> is known to disturb bottom habitats and deep-sea corals. Even though <span id="tooltip2" aria-describedby="tooltip2" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">trawling</span> effort has decreased in recent years, the impacts of this gear type can be long lived. For more information, consult Figure App.C.3.3 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 <div id="fixed-gear" class="section level6">
@@ -294,10 +296,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://wildlife.ca.gov/Conservation/Marine/Groundfish/Commercial-Fishery-Data" target="_blank"><i class="fa fa-clipboard-list"></i> CDFW Commercial Fishery Data</a>
+<a href="https://wildlife.ca.gov/Conservation/Marine/Groundfish/Commercial-Fishery-Data" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> CDFW Commercial Fishery Data</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="http://doi.org/10.13140/RG.2.1.3430.4085" target="_blank"><i class="fa fa-database"></i> Etnoyer et al. 2015</a>
+<a href="http://doi.org/10.13140/RG.2.1.3430.4085" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Etnoyer et al. 2015</a>
 </div>
 </div>
 </div>
@@ -306,7 +308,10 @@ summary {
 <p class="caption">A map showing landings of fish caught by <span id="tooltip21" aria-describedby="tooltip21" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">fixed gear</span> across the <span id="tooltip4" aria-describedby="tooltip4" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Southern California Bight</span> (2007-2011). Locations of known deep-water gorgonians, which are very vulnerable to <span id="tooltip2" aria-describedby="tooltip2" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">trawling</span>, are indicated on the map. Data source: CDFW, Perry et al 2010; Map credit: <a href='https://oceanexplorer.noaa.gov/edu/oceanage/03etnoyer/welcome.html' target='_blank'>P. Etnoyer/NOAA</a>, Etnoyer et al. 2015.</p>
 </div>
 <details>
-<summary>Click for Details</summary> Historical landings of <span id="tooltip21" aria-describedby="tooltip21" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">fixed gear</span> that could impact <span id="tooltip31" aria-describedby="tooltip31" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">benthic</span> habitats are shown along with the locations of deep-sea gorgonians in the map above. <span id="tooltip21" aria-describedby="tooltip21" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Fixed gear</span> usage is moderate around the Channel Islands and likely impacts gorgonians in <span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> habitats. Data is from 2007 to 2011. For more information, consult Figure App.C.3.4 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+Historical landings of <span id="tooltip21" aria-describedby="tooltip21" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">fixed gear</span> that could impact <span id="tooltip31" aria-describedby="tooltip31" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">benthic</span> habitats are shown along with the locations of deep-sea gorgonians in the map above. <span id="tooltip21" aria-describedby="tooltip21" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Fixed gear</span> usage is moderate around the Channel Islands and likely impacts gorgonians in <span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> habitats. Data is from 2007 to 2011. For more information, consult Figure App.C.3.4 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 <div id="trawl-fixed-gear-with-mpas" class="section level6">
@@ -314,10 +319,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100462" target="_blank"><i class="fa fa-clipboard-list"></i> Monitoring Program</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100462" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Monitoring Program</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="http://doi.org/10.13140/RG.2.1.3430.4085" target="_blank"><i class="fa fa-database"></i> Etnoyer et al. 2015</a>
+<a href="http://doi.org/10.13140/RG.2.1.3430.4085" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Etnoyer et al. 2015</a>
 </div>
 </div>
 </div>
@@ -326,7 +331,10 @@ summary {
 <p class="caption">A map showing the locations of both <span id="tooltip2" aria-describedby="tooltip2" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">trawling</span> and <span id="tooltip21" aria-describedby="tooltip21" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">fixed gear</span> fishing in relation to protected areas (2007-2011) within the <span id="tooltip4" aria-describedby="tooltip4" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">Southern California Bight</span>. Data source: CDFW; Map credit: <a href='https://oceanexplorer.noaa.gov/edu/oceanage/03etnoyer/welcome.html' target='_blank'>P. Etnoyer/NOAA</a></p>
 </div>
 <details>
-<summary>Click for Details</summary> Overlay of trawl and <span id="tooltip21" aria-describedby="tooltip21" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">fixed gear</span> fishing activity from 2007 to 2011 and protected areas is shown in the map above. Much of the landings is off the Santa Barbara mainland coast; however, <span id="tooltip21" aria-describedby="tooltip21" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">fixed gear</span> usage regularly occurs in Sanctuary waters. For more information, consult Figure App.C.3.5 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+Overlay of trawl and <span id="tooltip21" aria-describedby="tooltip21" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">fixed gear</span> fishing activity from 2007 to 2011 and protected areas is shown in the map above. Much of the landings is off the Santa Barbara mainland coast; however, <span id="tooltip21" aria-describedby="tooltip21" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">fixed gear</span> usage regularly occurs in Sanctuary waters. For more information, consult Figure App.C.3.5 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
@@ -366,7 +374,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>

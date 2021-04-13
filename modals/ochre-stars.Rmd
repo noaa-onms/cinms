@@ -10,7 +10,8 @@ library(magrittr)
 library(nms4r)
 
 # The following is used by the plot_intertidal_nms function called later
-dir_gdrive <- "/Volumes/GoogleDrive/Shared drives/NMS/data"
+dir_gdrive <- "G:/Shared drives/NMS/data"
+# dir_gdrive <- "/Volumes/GoogleDrive/Shared drives/NMS/data"
 dir_pfx     <- file.path(dir_gdrive, "github_info-intertidal_data")
 d_csv       <- file.path(dir_pfx, "sanctuary_species_percentcover.csv")
 nms_rgns_csv    <- file.path(dir_pfx, "MARINe_graphs.xlsx - sites in regions.csv")
@@ -31,7 +32,7 @@ nms_rgns1 <- readr::read_csv(nms_rgns_csv) %>%
 `r nms4r::get_figure_info("Figure App.F.12.2.")`
 
 ```{r map sites}
-nms4r::map_nms_sites("cinms")
+nms4r::map_nms_sites("cinms", dir_gdrive=dir_gdrive)
 ```
 
 `r nms4r::md_caption("Figure Ux.Rocky.MARINe.map.")`

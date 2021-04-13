@@ -13,15 +13,36 @@
 
 <title>kelp-forest_human-activities.utf8</title>
 
+<script src="modal_libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="modal_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="modal_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
 <script src="modal_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="modal_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="modal_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="modal_libs/navigation-1.1/tabsets.js"></script>
 <link href="modal_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="modal_libs/highlightjs-9.12.0/highlight.js"></script>
+<!--html_preserve-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JB0WCCY7ZR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JB0WCCY7ZR');
+</script>
+<!--/html_preserve-->
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -30,14 +51,10 @@
   div.column{display: inline-block; vertical-align: top; width: 50%;}
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   ul.task-list{list-style: none;}
-    </style>
+      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -50,32 +67,7 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
 
 <link rel="stylesheet" href="_modal_styles.css" type="text/css" />
 <link rel="stylesheet" href="modal_libs/font-awesome-5.3.1/css/all.min.css" type="text/css" />
@@ -88,10 +80,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -108,6 +96,9 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
@@ -120,7 +111,6 @@ summary {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -184,7 +174,7 @@ summary {
 
 
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -197,22 +187,22 @@ summary {
 <div style="margin: 10px; font-style: italic; flex: 20; "></div>
 </div>
 <div id="section" class="section level1 tabset">
-<h1></h1>
+<h1 class="tabset"></h1>
 <div id="human-activities" class="section level2">
 <h2>Human Activities</h2>
 <div id="section-1" class="section level3 tabset">
-<h3></h3>
+<h3 class="tabset"></h3>
 <div id="fishing" class="section level4 tabset">
-<h4>Fishing</h4>
+<h4 class="tabset">Fishing</h4>
 <div id="trends-commercial-landings" class="section level5">
 <h5>Trends: Commercial Landings</h5>
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://wildlife.ca.gov/Fishing/Commercial/Landings" target="_blank"><i class="fa fa-clipboard-list"></i> CDFW Commercial Fishery Landings</a>
+<a href="https://wildlife.ca.gov/Fishing/Commercial/Landings" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> CDFW Commercial Fishery Landings</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="https://sanctuaries.noaa.gov/science/conservation/cinms_fishing_report.html" target="_blank"><i class="fa fa-database"></i> Leeworthy et al. 2014</a>
+<a href="https://sanctuaries.noaa.gov/science/conservation/cinms_fishing_report.html" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Leeworthy et al. 2014</a>
 </div>
 </div>
 </div>
@@ -221,7 +211,10 @@ summary {
 <p class="caption">A figure showing trends in fishing catch (pounds, left y-axis) and economic value (dollars, right y-axis) for seven major fisheries around the Channel Islands (2000 to 2012). Figure credit: Leeworthy et al. 2014a.</p>
 </div>
 <details>
-<summary>Click for Details</summary> Trends over time in commercial fishing activity in Channel Islands National Marine Sanctuary (<span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span>) based on landings pounds (blue bars) and value (dark blue line) for seven fisheries from 2000 to 2012. Landings were combined for twenty-two blocks that overlap substantially with the sanctuary (see <span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> Conidition Report Figure App.C.4.3. for map). Landings for market squid, sardine, and anchovy declined recently while landings of crabs increased. Landings of sea urchin, spiny lobster, and prawn and shrimp were relatively stable. For more information, consult Figure App.C.4.4 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+Trends over time in commercial fishing activity in Channel Islands National Marine Sanctuary (<span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span>) based on landings pounds (blue bars) and value (dark blue line) for seven fisheries from 2000 to 2012. Landings were combined for twenty-two blocks that overlap substantially with the sanctuary (see <span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> Conidition Report Figure App.C.4.3. for map). Landings for market squid, sardine, and anchovy declined recently while landings of crabs increased. Landings of sea urchin, spiny lobster, and prawn and shrimp were relatively stable. For more information, consult Figure App.C.4.4 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 <div id="recreational" class="section level5">
@@ -229,10 +222,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://wildlife.ca.gov/Conservation/Marine/MFSU" target="_blank"><i class="fa fa-clipboard-list"></i> CDFW Marine Fisheries Statistical Unit</a>
+<a href="https://wildlife.ca.gov/Conservation/Marine/MFSU" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> CDFW Marine Fisheries Statistical Unit</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="https://caseagrant.ucsd.edu/sites/default/files/SCMPA-29-CPFV-Final-Report.pdf" target="_blank"><i class="fa fa-database"></i> Chen et al. 2015</a>
+<a href="https://caseagrant.ucsd.edu/sites/default/files/SCMPA-29-CPFV-Final-Report.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Chen et al. 2015</a>
 </div>
 </div>
 </div>
@@ -241,15 +234,18 @@ summary {
 <p class="caption">Fishing activity (number of trip and number of anglers per trip) for Commercial Passenger Fishing Vessels (CPFVs) operating out of ports in Santa Barbara and Ventura from 2000 to 2012. Figure credit: Chen et al. 2015b.</p>
 </div>
 <details>
-<summary>Click for Details</summary> Fishing activity (number of trip and number of anglers per trip) for Commercial Passenger Fishing Vessels (CPFVs) operating out of ports in Santa Barbara and Ventura from 2000 to 2012. Figure credit: Chen et al. 2015b. For more information, consult Figure App.C.4.2a in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+Fishing activity (number of trip and number of anglers per trip) for Commercial Passenger Fishing Vessels (CPFVs) operating out of ports in Santa Barbara and Ventura from 2000 to 2012. Figure credit: Chen et al. 2015b. For more information, consult Figure App.C.4.2a in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://wildlife.ca.gov/Conservation/Marine/MFSU" target="_blank"><i class="fa fa-clipboard-list"></i> CDFW Marine Fisheries Statistical Unit</a>
+<a href="https://wildlife.ca.gov/Conservation/Marine/MFSU" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> CDFW Marine Fisheries Statistical Unit</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="https://caseagrant.ucsd.edu/sites/default/files/SCMPA-29-CPFV-Final-Report.pdf" target="_blank"><i class="fa fa-database"></i> Chen et al. 2015</a>
+<a href="https://caseagrant.ucsd.edu/sites/default/files/SCMPA-29-CPFV-Final-Report.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Chen et al. 2015</a>
 </div>
 </div>
 </div>
@@ -258,18 +254,21 @@ summary {
 <p class="caption">A figure of Commercial Passenger Fishing Vessel (CPFV) trips and anglers per trip accross years (2000 to 2012). Figure credit: Chen et al. 2015b.</p>
 </div>
 <details>
-<summary>Click for Details</summary> Fishing activity landings for Commercial Passenger Fishing Vessels (CPFVs) operating out of ports in Santa Barbara and Ventura from 2000 to 2012. Activity landings in 2011 and 2012 returned to levels seen in the early 2000s. For more information, consult Figure App.C.4.2b in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+Fishing activity landings for Commercial Passenger Fishing Vessels (CPFVs) operating out of ports in Santa Barbara and Ventura from 2000 to 2012. Activity landings in 2011 and 2012 returned to levels seen in the early 2000s. For more information, consult Figure App.C.4.2b in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 </div>
 <div id="visitors" class="section level4 tabset">
-<h4>Visitors</h4>
+<h4 class="tabset">Visitors</h4>
 <div id="map-location-recreational-activity" class="section level5">
 <h5>Map: Location Recreational Activity</h5>
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:right; display:table-cell;">
-<a href="https://caseagrant.ucsd.edu/sites/default/files/SCMPA-29-CoastalRecreation-Final-Report_0.pdf" target="_blank"><i class="fa fa-database"></i> Data</a>
+<a href="https://caseagrant.ucsd.edu/sites/default/files/SCMPA-29-CoastalRecreation-Final-Report_0.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Data</a>
 </div>
 </div>
 </div>
@@ -278,7 +277,10 @@ summary {
 <p class="caption">A map of the Santa Barbara Channel showing patterns in coastal recreational activity. Figure credit: Chen et al. 2015c.</p>
 </div>
 <details>
-<summary>Click for Details</summary> Spatial patterns in coastal recreational activity levels in southern California (all activity types combined). Based on a standing internet panel designed to be demographically representative and surveyed 4,492 individuals in select south coast region counties. Activities at Channel Islands National Marine Sanctuary (<span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span>) included: beach-going (SRI), scenic enjoyment (SRI, SCI, Anacapa, SBI), photography (SRI, SCI, Anacapa), birdwatching (SRI, SCI, SBI), and hiking (SRI, SCI). For more information, consult Figure App.C.4.7 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+Spatial patterns in coastal recreational activity levels in southern California (all activity types combined). Based on a standing internet panel designed to be demographically representative and surveyed 4,492 individuals in select south coast region counties. Activities at Channel Islands National Marine Sanctuary (<span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span>) included: beach-going (SRI), scenic enjoyment (SRI, SCI, Anacapa, SBI), photography (SRI, SCI, Anacapa), birdwatching (SRI, SCI, SBI), and hiking (SRI, SCI). For more information, consult Figure App.C.4.7 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 <div id="trends-visitors-chis" class="section level5">
@@ -310,13 +312,13 @@ summary {
 <div id="noise" class="section level4">
 <h4>Noise</h4>
 <div id="section-2" class="section level5 tabset">
-<h5></h5>
+<h5 class="tabset"></h5>
 <div id="listening-stations" class="section level6">
 <h6>Listening Stations</h6>
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100506" target="_blank"><i class="fa fa-clipboard-list"></i> Monitoring Program</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100506" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Monitoring Program</a>
 </div>
 </div>
 </div>
@@ -325,7 +327,10 @@ summary {
 <p class="caption">A map showing the location of historic (green dots) and current (yellow dots) passive acoustic monitoring stations around the Sanctuary and Santa Barbara Channel. Map credit: <a href='https://channelislands.noaa.gov/contact/cajandig.html' target='_blank'>M. Cajandig/NOAA</a>.</p>
 </div>
 <details>
-<summary>Click for Details</summary> Previous (green dots) and current (yellow dots) passive acoustic monitoring stations in and around <span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> are shown along with several sources of anthropogenic noise: ports and harbors, oil platforms, shipping lanes, and military testing zones. SIO = Scripps Institution of Oceanography; NOAA NRS = Noise Reference Station. For more information, consult Figure App.C.2.8 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+Previous (green dots) and current (yellow dots) passive acoustic monitoring stations in and around <span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> are shown along with several sources of anthropogenic noise: ports and harbors, oil platforms, shipping lanes, and military testing zones. SIO = Scripps Institution of Oceanography; NOAA NRS = Noise Reference Station. For more information, consult Figure App.C.2.8 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 </div>
 <div id="trends-sound-levels" class="section level6">
@@ -333,10 +338,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100426" target="_blank"><i class="fa fa-clipboard-list"></i> Shipping Noise Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100426" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Shipping Noise Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="http://dx.doi.org/10.1121/1.4740225" target="_blank"><i class="fa fa-database"></i> McKenna et al. 2012</a>
+<a href="http://dx.doi.org/10.1121/1.4740225" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> McKenna et al. 2012</a>
 </div>
 </div>
 </div>
@@ -345,7 +350,10 @@ summary {
 <p class="caption">A graph showing noise levels in the Santa Barbara Channel from 2007 to 2016. 40Hz bands are shown in red, 90Hz bands are shown in blue. Data sources: McKenna et al. 2012, J. Hildebrand/ UCSD unpub. data; Figure credit: <a href='http://cetus.ucsd.edu/profile_JohnHildebrand.html' target='_blank'>J. Hildebrand/SIO UCSD</a>.</p>
 </div>
 <details>
-<summary>Click for Details</summary> Ambient noise levels in the Santa Barbara Channel represented as monthly averages for 40 Hz (red) and 90 Hz (blue) bands. The decline in ambient noise levels observed between 2007 and 2010 reflects decreased regional shipping activity during that time. While ambient noise has increased since 2010, it has not returned to the higher levels observed in 2007 to 2008. For more information, consult Figure App.C.4.13 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
+<summary>
+Click for Details
+</summary>
+Ambient noise levels in the Santa Barbara Channel represented as monthly averages for 40 Hz (red) and 90 Hz (blue) bands. The decline in ambient noise levels observed between 2007 and 2010 reflects decreased regional shipping activity during that time. While ambient noise has increased since 2010, it has not returned to the higher levels observed in 2007 to 2008. For more information, consult Figure App.C.4.13 in the <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/2016-condition-report-channel-islands-nms.pdf" target="_blank"><span id="tooltip27" aria-describedby="tooltip27" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">CINMS</span> 2016 Condition Report</a>.
 </details>
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
@@ -383,7 +391,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
