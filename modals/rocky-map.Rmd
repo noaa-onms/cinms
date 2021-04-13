@@ -1,5 +1,5 @@
 
 ```{r, echo=F, message=F, warning=F, error=F}
 library(nms4r)
-nms4r::map_nms_sites("cinms", "G:/Shared drives/NMS/data")
+nms4r::map_nms_sites("cinms")
 ```
