@@ -10,6 +10,8 @@ knitr::opts_chunk$set(echo = F, message = F, warning = F)
 ### Map: Satellite-based SST 
 
 ```{r SST_map}
+message("DEBUG chunk begin: SST_map")
+
 # get most recent date
 date_end <- nms4r::get_dates(sst)[2]
 
@@ -32,6 +34,8 @@ leaflet(
     position="bottomright",
     title = paste0("SST (°C)<br>", format(date_end,"%Y-%m-%d")),
     colorNumeric("Spectral", c(0,32), reverse=T), seq(0,32))
+
+message("DEBUG chunk end: SST_map")
 ```
 
 `r nms4r::md_caption("Figure Ux.Ocean.SST.ERD.map.")`
@@ -41,10 +45,14 @@ leaflet(
 ### Trend: Satellite-based SST 
 
 ```{r SST_time_series}
+message("DEBUG chunk begin: SST_time_series")
+
 csv_SST <-here::here(glue::glue("data/oceano/statistics_sst_{nms}.csv"))
 url_SST  <- glue::glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv_SST)}")
 html_SST <- htmltools::a(basename(csv_SST), href=url_SST, target='_blank')
 nms4r::plot_metric_timeseries(csv_SST, "sst")
+
+message("DEBUG chunk begin: SST_time_series")
 ```
 
 `r md_caption("Figure Ux.Ocean.SST.ERD.timeseries.")`
@@ -56,10 +64,14 @@ Download timeseries data for sanctuary: `r html_SST`
 ### Trend: SST anomaly
 
 ```{r sst anomaly time series}
+message("DEBUG chunk begin: sst anomaly time series")
+
 csv_SST <-here::here(glue::glue("data/oceano/sst_anomaly_{nms}.csv"))
 url_SST  <- glue::glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv_SST)}")
 html_SST <- htmltools::a(basename(csv_SST), href=url_SST, target='_blank')
 nms4r::plot_SST_anomaly(csv_SST)
+
+message("DEBUG chunk end: sst anomaly time series")
 ```
 
 `r nms4r::md_caption("Figure Ux.Ocean.SST.Anomaly.timeseries.")`
