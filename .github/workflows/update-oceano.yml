@@ -20,8 +20,8 @@ jobs:
         run: git clone --depth 1 https://github.com/${{ github.repository }}.git .; ls
       - name: update nms4r
         run: installGithub.r marinebon/nms4r
-      - name: update_oceano-data
-        run: Rscript scripts/update_oceano-data.R
+      #- name: update_oceano-data
+      #  run: Rscript scripts/update_oceano-data.R
       - name: render_oceano-modals
         run: Rscript scripts/render_oceano-modals.R
       - name: commit changes

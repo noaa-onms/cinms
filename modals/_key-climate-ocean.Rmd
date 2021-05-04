@@ -1,4 +1,6 @@
 ```{r}
+message("DEBUG chunk begin: child = _key-climate-ocean.Rmd")
+
 if (!require(librarian)){
   install.packages("librarian")
   library(librarian)
@@ -29,4 +31,6 @@ if ("try-error" %in% class(chl)){
 }
 # chl   <- info("erdMWchlamday") # TODO: consider this backup chl since above seems to drop off server sometimes
 #scape <- rerddap::info("noaa_aoml_4729_9ee6_ab54", url = "https://cwcgom.aoml.noaa.gov/erddap/")
+
+message("DEBUG chunk end: child = _key-climate-ocean.Rmd")
 ```
