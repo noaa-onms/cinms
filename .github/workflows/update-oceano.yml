@@ -19,7 +19,8 @@ jobs:
       - name: clone repo
         run: git clone --depth 1 https://github.com/${{ github.repository }}.git .; ls
       - name: update nms4r
-        run: installGithub.r marinebon/nms4r
+        #run: installGithub.r noaa-onms/nms4r
+        run: Rscript -e 'remotes::install_github("noaa-onms/nms4r")'
       - name: update_oceano-data
         run: Rscript scripts/update_oceano-data.R
       # - name: render_oceano-modals
