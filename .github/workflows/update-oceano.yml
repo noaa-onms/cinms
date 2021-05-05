@@ -22,8 +22,8 @@ jobs:
         run: installGithub.r marinebon/nms4r
       - name: update_oceano-data
         run: Rscript scripts/update_oceano-data.R
-      - name: render_oceano-modals
-        run: Rscript scripts/render_oceano-modals.R
+      # - name: render_oceano-modals
+        # run: Rscript scripts/render_oceano-modals.R
       - name: commit changes
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
