@@ -142,9 +142,9 @@ leaflet(
 ### Trend: Satellite-based (CoastWatch)
 
 ```{r chlorophyll_time_series}
-csv_chl <-here(glue("data/oceano/statistics_chl_{nms}.csv"))
-url_chl  <- glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv_chl)}")
-html_chl <- a(basename(csv_chl), href=url_chl, target='_blank')
+csv_chl <- here::here(glue::glue("data/oceano/statistics_chl_{nms}.csv"))
+url_chl  <- glue::glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv_chl)}")
+html_chl <- htmltools::a(basename(csv_chl), href=url_chl, target='_blank')
 nms4r::plot_metric_timeseries(csv_chl, "chl")
 ```
 
