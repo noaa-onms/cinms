@@ -42,9 +42,9 @@ leaflet(
 ### Trend: Satellite-based SST 
 
 ```{r sst_time_series}
-csv_SST <-here(glue("data/oceano/statistics_sst_{nms}.csv"))
-url_SST  <- glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv_SST)}")
-html_SST <- a(basename(csv_SST), href=url_SST, target='_blank')
+csv_SST <- here::here(glue::glue("data/oceano/statistics_sst_{nms}.csv"))
+url_SST  <- glue::glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv_SST)}")
+html_SST <- htmltools::a(basename(csv_SST), href=url_SST, target='_blank')
 nms4r::plot_metric_timeseries(csv_SST, "sst")
 ```
 
