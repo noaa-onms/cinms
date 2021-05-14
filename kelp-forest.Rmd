@@ -7,10 +7,11 @@ params:
 
 ```{r setup, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-library(nms4r)
+library(onmsR)        # remotes::install_github("noaa-onms/onmsR")
+library(infographiqR) # remotes::install_github("marinebon/infographiqR")
 ```
 
-`r nms4r::get_modal_info()`
+`r infographiqR::get_modal_info()`
 
 ```{r svg, child = '_svg-html_child.Rmd'}
 ```
