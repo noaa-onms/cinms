@@ -2,19 +2,20 @@
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 library(glue)
-library(nms4r)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ```
 
 ```{r modal_info}
-nms4r::get_modal_info()
+infographiqR::get_modal_info()
 ```
 
 ## {.tabset}
 
 ### Map of Regions
 
-```{r, fig.cap=nms4r::md_caption("Figure App.F.12.17.")}
-nms4r::calcofi_map()
+```{r, fig.cap=onmsR::md_caption("Figure App.F.12.17.")}
+onmsR::calcofi_map()
 ```
 
 ### Anchovies {.active}
@@ -22,23 +23,23 @@ nms4r::calcofi_map()
 #### CINMS Region
 
 ```{r}
-nms4r::get_figure_info("Figure App.F.12.19.hake")
+onmsR::get_figure_info("Figure App.F.12.19.hake")
 grp   <- "Anchovy"
 rgn   <- "CINMS"
 
 title <- glue::glue("{grp} - {rgn} Region")
 csv   <- glue::glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/{grp}_{rgn}.csv")
 
-nms4r::calcofi_plot(csv = csv, title = title)
+onmsR::calcofi_plot(csv = csv, title = title)
 ```
 
-`r nms4r::md_caption("Figure App.F.12.19.anchovy")`
+`r onmsR::md_caption("Figure App.F.12.19.anchovy")`
 
-`r nms4r::md_caption("Figure App.F.12.19.anchovy", get_details = T)`
+`r onmsR::md_caption("Figure App.F.12.19.anchovy", get_details = T)`
 #### SoCal Shelf Region
 
 ```{r}
-nms4r::get_figure_info("Figure App.F.12.19.hake")
+onmsR::get_figure_info("Figure App.F.12.19.hake")
 
 grp   <- "Anchovy"
 rgn   <- "SoCal Shelf"
@@ -47,27 +48,27 @@ title <- glue::glue("{grp} - {rgn} Region")
 csv   <- glue::glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/{grp}_{rgn}.csv")
 
 #download.file(csv, "_tmp.csv")
-nms4r::calcofi_plot(csv = csv, title = title)
+onmsR::calcofi_plot(csv = csv, title = title)
 ```
-`r nms4r::md_caption("Figure App.F.12.19.anchovy_SoCal")`
+`r onmsR::md_caption("Figure App.F.12.19.anchovy_SoCal")`
 
-`r nms4r::md_caption("Figure App.F.12.19.anchovy_SoCal", get_details = T)`
+`r onmsR::md_caption("Figure App.F.12.19.anchovy_SoCal", get_details = T)`
 ### Hake
 
 #### CINMS Region
 
-`r nms4r::render_figure("Figure App.F.12.19.hake", "../img/cinms_cr/App.F.12.19hake.CalCOFI_Med_ichthy.jpg")`
+`r onmsR::render_figure("Figure App.F.12.19.hake", "../img/cinms_cr/App.F.12.19hake.CalCOFI_Med_ichthy.jpg")`
 
 #### SoCal Shelf Region
 
-`r nms4r::render_figure("Figure App.F.12.19.hake", "../img/cinms_cr/App.F.12.19hake.CalCOFI_Med_ichthy.jpg")`
+`r onmsR::render_figure("Figure App.F.12.19.hake", "../img/cinms_cr/App.F.12.19hake.CalCOFI_Med_ichthy.jpg")`
 
 ### Myctophids
 
 #### CINMS Region
 
 ```{r}
-nms4r::get_figure_info("Figure App.F.12.19.hake")
+onmsR::get_figure_info("Figure App.F.12.19.hake")
 
 grp   <- "Myctophids"
 rgn   <- "CINMS"
@@ -75,12 +76,12 @@ rgn   <- "CINMS"
 title <- glue::glue("{grp} - {rgn} Region")
 csv   <- glue::glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/{grp}_{rgn}.csv")
 
-nms4r::calcofi_plot(csv = csv, title = title)
+onmsR::calcofi_plot(csv = csv, title = title)
 ```
 
 #### SoCal Shelf Region
 
-`r nms4r::get_figure_info("Figure App.F.12.19.myctophids")`
+`r onmsR::get_figure_info("Figure App.F.12.19.myctophids")`
 
 ```{r}
 grp   <- "Myctophids"
@@ -89,18 +90,18 @@ rgn   <- "SoCal Shelf"
 title <- glue::glue("{grp} - {rgn} Region")
 csv   <- glue::glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/{grp}_{rgn}.csv")
 
-nms4r::calcofi_plot(csv = csv, title = title)
+onmsR::calcofi_plot(csv = csv, title = title)
 ```
 
-`r nms4r::md_caption("Figure App.F.12.19.myctophids")`
+`r onmsR::md_caption("Figure App.F.12.19.myctophids")`
 
-`r nms4r::md_caption("Figure App.F.12.19.myctophids", get_details = T)`
+`r onmsR::md_caption("Figure App.F.12.19.myctophids", get_details = T)`
 
 ### Rockfish
 
 #### CINMS Region
 
-`r nms4r::get_figure_info("Figure App.F.12.19.rockfish")`
+`r onmsR::get_figure_info("Figure App.F.12.19.rockfish")`
 
 ```{r}
 grp   <- "Rockfish"
@@ -109,12 +110,12 @@ rgn   <- "CINMS"
 title <- glue::glue("{grp} - {rgn} Region")
 csv   <- glue::glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/{grp}_{rgn}.csv")
 
-nms4r::calcofi_plot(csv = csv, title = title)
+onmsR::calcofi_plot(csv = csv, title = title)
 ```
 
 #### SoCal Shelf Region
 
-`r nms4r::get_figure_info("Figure App.F.12.19.rockfish")`
+`r onmsR::get_figure_info("Figure App.F.12.19.rockfish")`
 
 ```{r}
 grp   <- "Rockfish"
@@ -123,19 +124,19 @@ rgn   <- "SoCal Shelf"
 title <- glue::glue("{grp} - {rgn} Region")
 csv   <- glue::glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/{grp}_{rgn}.csv")
 
-nms4r::calcofi_plot(csv = csv, title = title)
+onmsR::calcofi_plot(csv = csv, title = title)
 ```
 
-`r nms4r::md_caption("Figure App.F.12.19.rockfish")`
+`r onmsR::md_caption("Figure App.F.12.19.rockfish")`
 
-`r nms4r::md_caption("Figure App.F.12.19.rockfish", get_details = T)`
+`r onmsR::md_caption("Figure App.F.12.19.rockfish", get_details = T)`
 
 ### Sanddab
 
 #### CINMS Region
 
 ```{r}
-nms4r::get_figure_info("Figure App.F.12.19.hake")
+onmsR::get_figure_info("Figure App.F.12.19.hake")
 
 grp   <- "Sanddab"
 rgn   <- "CINMS"
@@ -143,12 +144,12 @@ rgn   <- "CINMS"
 title <- glue::glue("{grp} - {rgn} Region")
 csv   <- glue::glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/{grp}_{rgn}.csv")
 
-nms4r::calcofi_plot(csv = csv, title = title)
+onmsR::calcofi_plot(csv = csv, title = title)
 ```
 
 #### SoCal Shelf Region
 
-`r nms4r::get_figure_info("Figure App.F.12.19.sanddab")`
+`r onmsR::get_figure_info("Figure App.F.12.19.sanddab")`
 
 ```{r}
 grp   <- "Sanddab"
@@ -157,19 +158,19 @@ rgn   <- "SoCal Shelf"
 title <- glue::glue("{grp} - {rgn} Region")
 csv   <- glue::glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/{grp}_{rgn}.csv")
 
-nms4r::calcofi_plot(csv = csv, title = title)
+onmsR::calcofi_plot(csv = csv, title = title)
 ```
 
-`r nms4r::md_caption("Figure App.F.12.19.sanddab")`
+`r onmsR::md_caption("Figure App.F.12.19.sanddab")`
 
-`r nms4r::md_caption("Figure App.F.12.19.sanddab", get_details = T)`
+`r onmsR::md_caption("Figure App.F.12.19.sanddab", get_details = T)`
 
 ### Sardines
 
 #### CINMS Region
 
 ```{r}
-nms4r::get_figure_info("Figure App.F.12.19.hake")
+onmsR::get_figure_info("Figure App.F.12.19.hake")
 
 grp   <- "Sardine"
 rgn   <- "CINMS"
@@ -177,12 +178,12 @@ rgn   <- "CINMS"
 title <- glue::glue("{grp} - {rgn} Region")
 csv   <- glue::glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/{grp}_{rgn}.csv")
 
-nms4r::calcofi_plot(csv = csv, title = title)
+onmsR::calcofi_plot(csv = csv, title = title)
 ```
 
 #### SoCal Shelf Region
 
-`r nms4r::get_figure_info("Figure App.F.12.19.sardine")`
+`r onmsR::get_figure_info("Figure App.F.12.19.sardine")`
 
 ```{r}
 grp   <- "Sardine"
@@ -191,9 +192,9 @@ rgn   <- "SoCal Shelf"
 title <- glue::glue("{grp} - {rgn} Region")
 csv   <- glue::glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/{grp}_{rgn}.csv")
 
-nms4r::calcofi_plot(csv = csv, title = title)
+onmsR::calcofi_plot(csv = csv, title = title)
 ```
 
-`r nms4r::md_caption("Figure App.F.12.19.sardine")`
+`r onmsR::md_caption("Figure App.F.12.19.sardine")`
 
-`r nms4r::md_caption("Figure App.F.12.19.sardine", get_details = T)`
+`r onmsR::md_caption("Figure App.F.12.19.sardine", get_details = T)`

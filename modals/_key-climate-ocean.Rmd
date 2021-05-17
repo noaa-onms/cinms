@@ -6,12 +6,12 @@ if (!require(librarian)){
   library(librarian)
 }
 shelf(
-  dplyr, dygraphs, glue, here, htmltools, leafem, leaflet, marinebon/nms4r, purrr, readr, rerddap, rmarkdown, shiny, stringr, tidyr, xts)
+  dplyr, dygraphs, glue, here, htmltools, leafem, leaflet, marinebon/infographiqR, noaa-onms/onmsR, purrr, readr, rerddap, rmarkdown, shiny, stringr, tidyr, xts)
 
 nms       <- "cinms"
 sites_csv <- here::here("data/nms_sites.csv")
 
-nms_ply <- nms4r::get_nms_polygons(nms)
+nms_ply <- onmsR::get_nms_polygons(nms)
 
 if (F){
   sf::st_centroid(nms_ply$geometry) %>% sf::st_coordinates() %>% tibble::as_tibble() %>% 

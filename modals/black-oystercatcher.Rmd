@@ -1,9 +1,10 @@
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-library(nms4r)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ```
 
-`r nms4r::get_modal_info()`
+`r infographiqR::get_modal_info()`
 
 ## Black Oystercatchers (_Haematopus bachmani_)
 
@@ -11,12 +12,12 @@ library(nms4r)
 
 ### Map of observations
 
-`r nms4r::render_figure("Figure App.F.13.4.", "../img/cinms_cr/App.F.13.4.jpg")`
+`r onmsR::render_figure("Figure App.F.13.4.", "../img/cinms_cr/App.F.13.4.jpg")`
 
 ### Abundance by site (CINP data)
 
-`r nms4r::render_figure("Figure App.F.13.5.", "../img/cinms_cr/App.F.13.5.jpg")`
+`r onmsR::render_figure("Figure App.F.13.5.", "../img/cinms_cr/App.F.13.5.jpg")`
 
 ### Abundance on Santa Cruz Island (Audubon data)
 
-`r nms4r::render_figure("Figure App.F.13.6.", "../img/cinms_cr/App.F.13.6.jpg")`
+`r onmsR::render_figure("Figure App.F.13.6.", "../img/cinms_cr/App.F.13.6.jpg")`

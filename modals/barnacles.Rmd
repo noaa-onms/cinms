@@ -2,7 +2,8 @@
 ```{r setup, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 library(magrittr)
-library(nms4r)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 
 # The following is used by the plot_intertidal_nms function called later
 #dir_gdrive <- "G:/Shared drives/NMS/data"
@@ -18,48 +19,48 @@ nms_rgns1 <- readr::read_csv(nms_rgns_csv) %>%
     rgn = region) # View(nms_rgns)
 ```
 
-`r nms4r::get_modal_info()`
+`r infographiqR::get_modal_info()`
 
 ## {.tabset}
 
 ### Map of Sites
 
 ```{r map sites}
-nms4r::map_nms_sites("cinms", dir_gdrive)
+onmsR::map_nms_sites("cinms", dir_gdrive)
 ```
-`r nms4r::md_caption("Interactive map of field sites across the Channel Islands")`
+`r onmsR::md_caption("Interactive map of field sites across the Channel Islands")`
 
-`r nms4r::md_caption("Interactive map of field sites across the Channel Islands", get_details = T)`
+`r onmsR::md_caption("Interactive map of field sites across the Channel Islands", get_details = T)`
 ### Acorn barnacles (all plots)
-`r nms4r::get_figure_info("Acorn barnacles (all plots)")`
+`r onmsR::get_figure_info("Acorn barnacles (all plots)")`
 ```{r Acorn Barnacles all}
-nms4r::plot_intertidal_nms(d_csv, "CINMS", "CHTBAL", "Acorn Barnacles", nms_rgns1)
+onmsR::plot_intertidal_nms(d_csv, "CINMS", "CHTBAL", "Acorn Barnacles", nms_rgns1)
 ```
-`r nms4r::md_caption("Acorn barnacles_all")`
+`r onmsR::md_caption("Acorn barnacles_all")`
 
-`r nms4r::md_caption("Acorn barnacles_all", get_details = T, fig_in_report = F)`
+`r onmsR::md_caption("Acorn barnacles_all", get_details = T, fig_in_report = F)`
 
 ### Acorn barnacles (barnacle plots only)
-`r nms4r::get_figure_info("Acorn barnacles (barnacle plots only)")`
+`r onmsR::get_figure_info("Acorn barnacles (barnacle plots only)")`
 ```{r Acorn barnacles}
- nms4r::plot_intertidal_nms(d_csv, "CINMS", "CHTBAL", "Acorn Barnacles",  nms_rgns1, c("balanus", "chthamalus_balanus"))
+ onmsR::plot_intertidal_nms(d_csv, "CINMS", "CHTBAL", "Acorn Barnacles",  nms_rgns1, c("balanus", "chthamalus_balanus"))
 ```
-`r nms4r::md_caption("Acorn barnacles")`
+`r onmsR::md_caption("Acorn barnacles")`
 
-`r nms4r::md_caption("Acorn barnacles", get_details = T, fig_in_report = F)`
+`r onmsR::md_caption("Acorn barnacles", get_details = T, fig_in_report = F)`
 ### Gooseneck barnacles (all plots)
-`r nms4r::get_figure_info("Gooseneck barnacles (all plots)")`
+`r onmsR::get_figure_info("Gooseneck barnacles (all plots)")`
 ```{r Goose Barnacle}
-nms4r::plot_intertidal_nms(d_csv, "CINMS", "POLPOL", "Goose Barnacle", nms_rgns1)
+onmsR::plot_intertidal_nms(d_csv, "CINMS", "POLPOL", "Goose Barnacle", nms_rgns1)
 ```
-`r nms4r::md_caption("Gooseneck barnacles")`
+`r onmsR::md_caption("Gooseneck barnacles")`
 
-`r nms4r::md_caption("Gooseneck barnacles", get_details = T, fig_in_report = F)`
+`r onmsR::md_caption("Gooseneck barnacles", get_details = T, fig_in_report = F)`
 ### Pink barnacles (all plots)
-`r nms4r::get_figure_info("Pink barnacles (all plots)")`
+`r onmsR::get_figure_info("Pink barnacles (all plots)")`
 ```{r Pink Barnacle}
-nms4r::plot_intertidal_nms(d_csv, "CINMS", "TETRUB", "Pink Barnacle", nms_rgns1)
+onmsR::plot_intertidal_nms(d_csv, "CINMS", "TETRUB", "Pink Barnacle", nms_rgns1)
 ```
-`r nms4r::md_caption("Pink barnacles")`
+`r onmsR::md_caption("Pink barnacles")`
 
-`r nms4r::md_caption("Pink barnacles", get_details = T, fig_in_report = F)`
+`r onmsR::md_caption("Pink barnacles", get_details = T, fig_in_report = F)`

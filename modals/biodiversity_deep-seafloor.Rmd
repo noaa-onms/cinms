@@ -1,25 +1,26 @@
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-library(nms4r)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ```
 
-`r nms4r::get_modal_info()`
+`r infographiqR::get_modal_info()`
 
 ## {.tabset}
 
 ### Deeper water fish - effective number of species
 
-`r nms4r::render_figure("Figure App.F.15.1.", "../img/cinms_cr/App.F.15.1c.MBON_deep_water_fish.jpg")`
+`r onmsR::render_figure("Figure App.F.15.1.", "../img/cinms_cr/App.F.15.1c.MBON_deep_water_fish.jpg")`
 
 ### Deep-sea corals - estimated species richness
 
-`r nms4r::render_figure("Figure App.F.15.3.", "../img/cinms_cr/App.F.15.3.Diversity_coral_Etnoyer.jpg")`
+`r onmsR::render_figure("Figure App.F.15.3.", "../img/cinms_cr/App.F.15.3.Diversity_coral_Etnoyer.jpg")`
 
 ### Infaunal invertebrates - community composition
 
-`r nms4r::render_figure("Figure App.F.15.4.", "../img/cinms_cr/App.F.15.4b.SCCWRP_trend.jpg")`
+`r onmsR::render_figure("Figure App.F.15.4.", "../img/cinms_cr/App.F.15.4b.SCCWRP_trend.jpg")`
 
 ### Demersal fishes - biodiversity trends
 
-`r nms4r::render_figure("Figure App.F.15.2.", "../img/cinms_cr/tbl.App.F.15.2.jpg")`
+`r onmsR::render_figure("Figure App.F.15.2.", "../img/cinms_cr/tbl.App.F.15.2.jpg")`
 

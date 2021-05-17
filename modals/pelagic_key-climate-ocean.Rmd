@@ -1,6 +1,8 @@
 
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ```
 
 ```{r svg, child = '_key-climate-ocean.Rmd'}
@@ -12,7 +14,7 @@ knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 
 ```{r sst_map}
 # get most recent date
-date_end <- nms4r::get_dates(sst)[2]
+date_end <- onmsR::get_dates(sst)[2]
 
 leaflet(
   nms_ply,
@@ -35,9 +37,9 @@ leaflet(
     colorNumeric("Spectral", c(0,32), reverse=T), seq(0,32))
 ```
 
-`r nms4r::md_caption("Figure Ux.Ocean.SST.ERD.map.")`
+`r onmsR::md_caption("Figure Ux.Ocean.SST.ERD.map.")`
 
-`r nms4r::md_caption("Figure Ux.Ocean.SST.ERD.map.", get_details = T, fig_in_report = F)`
+`r onmsR::md_caption("Figure Ux.Ocean.SST.ERD.map.", get_details = T, fig_in_report = F)`
 
 ### Trend: Satellite-based SST
 
@@ -45,12 +47,12 @@ leaflet(
 csv_SST <-here::here(glue::glue("data/oceano/statistics_sst_{nms}.csv"))
 url_SST  <- glue::glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv_SST)}")
 html_SST <- htmltools::a(basename(csv_SST), href=url_SST, target='_blank')
-nms4r::plot_metric_timeseries(csv_SST, "sst")
+onmsR::plot_metric_timeseries(csv_SST, "sst")
 ```
 
-`r nms4r::md_caption("Figure Ux.Ocean.SST.ERD.timeseries.")`
+`r onmsR::md_caption("Figure Ux.Ocean.SST.ERD.timeseries.")`
 
-`r nms4r::md_caption("Figure Ux.Ocean.SST.ERD.timeseries.", get_details = T, fig_in_report = F)`
+`r onmsR::md_caption("Figure Ux.Ocean.SST.ERD.timeseries.", get_details = T, fig_in_report = F)`
 
 Download timeseries data for sanctuary: `r html_SST`
 
@@ -60,36 +62,36 @@ Download timeseries data for sanctuary: `r html_SST`
 csv_SST <-here::here(glue::glue("data/oceano/sst_anomaly_{nms}.csv"))
 url_SST  <- glue::glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv_SST)}")
 html_SST <- htmltools::a(basename(csv_SST), href=url_SST, target='_blank')
-nms4r::plot_SST_anomaly(csv_SST)
+onmsR::plot_SST_anomaly(csv_SST)
 ```
 
-`r nms4r::md_caption("Figure Ux.Ocean.SST.Anomaly.timeseries.")`
+`r onmsR::md_caption("Figure Ux.Ocean.SST.Anomaly.timeseries.")`
 
-`r nms4r::md_caption("Figure Ux.Ocean.SST.Anomaly.timeseries.", get_details = T, fig_in_report = F)`
+`r onmsR::md_caption("Figure Ux.Ocean.SST.Anomaly.timeseries.", get_details = T, fig_in_report = F)`
 
 Download timeseries data for sanctuary: `r html_SST`
 
 ## Acidification {.tabset}
 #### Aragonite saturation
 
-`r nms4r::render_figure("Figure App.E.10.29.", "../img/cinms_cr/App.E.10.29.jpg")`
+`r onmsR::render_figure("Figure App.E.10.29.", "../img/cinms_cr/App.E.10.29.jpg")`
 
 ## Harmful Algal Blooms {.tabset}
 
 #### Trends: Domoic Acid Levels (2012-13)
 
-`r nms4r::render_figure("Figure App.D.7.1.", "../img/cinms_cr/App.D.7.1_DA levels in crustaceans and bivalves in 2012 and 2013_C. Culver CA Sea Grant copy.jpg")`
+`r onmsR::render_figure("Figure App.D.7.1.", "../img/cinms_cr/App.D.7.1_DA levels in crustaceans and bivalves in 2012 and 2013_C. Culver CA Sea Grant copy.jpg")`
 
 #### Map: Harmful Algal Bloom (2015)
 
-`r nms4r::render_figure("Figure App.D.7.3.", "../img/cinms_cr/App.D.7.3_2015 HAB_McCabe et al. 2016.jpg")`
+`r onmsR::render_figure("Figure App.D.7.3.", "../img/cinms_cr/App.D.7.3_2015 HAB_McCabe et al. 2016.jpg")`
 
 ## Chlorophyll {.tabset}
 
 ### Map: Satellite-based
 ```{r chlorophyll_map}
 # get most recent date
-d_2 <- nms4r::get_dates(chl)[2]
+d_2 <- onmsR::get_dates(chl)[2]
 
 leaflet(
   nms_ply,
@@ -112,21 +114,21 @@ leaflet(
     colorNumeric("Spectral", c(0,4), reverse=T), seq(0,4))
 ```
 
-`r nms4r::md_caption("Figure Ux.Ocean.Chl.ERD.map.")`
+`r onmsR::md_caption("Figure Ux.Ocean.Chl.ERD.map.")`
 
-`r nms4r::md_caption("Figure Ux.Ocean.Chl.ERD.map.", get_details = T, fig_in_report = F)`
+`r onmsR::md_caption("Figure Ux.Ocean.Chl.ERD.map.", get_details = T, fig_in_report = F)`
 ### Trend: Satellite-based
 
 ```{r chlorophyll_time_series}
 csv_chl <-here::here(glue::glue("data/oceano/statistics_chl_{nms}.csv"))
 url_chl  <- glue::glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv_chl)}")
 html_chl <- htmltools::a(basename(csv_chl), href=url_chl, target='_blank')
-nms4r::plot_metric_timeseries(csv_chl, "chl")
+onmsR::plot_metric_timeseries(csv_chl, "chl")
 ```
 
-`r nms4r::md_caption("Figure Ux.Ocean.Chl.ERD.timeseries.")`
+`r onmsR::md_caption("Figure Ux.Ocean.Chl.ERD.timeseries.")`
 
-`r nms4r::md_caption("Figure Ux.Ocean.Chl.ERD.timeseries.", get_details = T, fig_in_report = F)`
+`r onmsR::md_caption("Figure Ux.Ocean.Chl.ERD.timeseries.", get_details = T, fig_in_report = F)`
 
 Download timeseries data for sanctuary: `r html_chl`
 
@@ -136,18 +138,18 @@ Download timeseries data for sanctuary: `r html_chl`
 
 ### Trend: Nitrate profile (PnB)
 
-`r nms4r::render_figure("Figure App.D.6.5.", "../img/cinms_cr/App.D.6.5.png")`
+`r onmsR::render_figure("Figure App.D.6.5.", "../img/cinms_cr/App.D.6.5.png")`
 
 ### Trend: Phosphate profile (PnB)
 
-`r nms4r::render_figure("Figure App.D.6.6.", "../img/cinms_cr/App.D.6.6.png")`
+`r onmsR::render_figure("Figure App.D.6.6.", "../img/cinms_cr/App.D.6.6.png")`
 
 ### Trend: Nitrate anomaly
 
-`r nms4r::render_figure("Figure App.D.6.7.", "../img/cinms_cr/App.D.6.7_SST and nitrate anomalies 2001-2015_Reed et al._2016.jpg")`
+`r onmsR::render_figure("Figure App.D.6.7.", "../img/cinms_cr/App.D.6.7_SST and nitrate anomalies 2001-2015_Reed et al._2016.jpg")`
 
 
 ## Basin Scale Indicies
 ### Trend: ONI, PDO, NPGO
 
-`r nms4r::render_figure("Figure App.D.8.3.", "../img/cinms_cr/App.D.8.3.png")`
+`r onmsR::render_figure("Figure App.D.8.3.", "../img/cinms_cr/App.D.8.3.png")`

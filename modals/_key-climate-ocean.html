@@ -202,7 +202,7 @@ shelf(
 nms       &lt;- &quot;cinms&quot;
 sites_csv &lt;- here::here(&quot;data/nms_sites.csv&quot;)
 
-nms_ply &lt;- nms4r::get_nms_polygons(nms)
+nms_ply &lt;- onmsR::get_nms_polygons(nms)
 
 if (F){
   sf::st_centroid(nms_ply$geometry) %&gt;% sf::st_coordinates() %&gt;% tibble::as_tibble() %&gt;% 

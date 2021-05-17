@@ -1,9 +1,10 @@
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-library(nms4r)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ```
 
-`r nms4r::get_modal_info()`
+`r infographiqR::get_modal_info()`
 
-`r nms4r::render_figure("Figure App.F.13.8.", "../img/cinms_cr/App.F.13.8.jpg")`
+`r onmsR::render_figure("Figure App.F.13.8.", "../img/cinms_cr/App.F.13.8.jpg")`
 

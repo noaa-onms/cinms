@@ -1,26 +1,27 @@
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-library(nms4r)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ```
 
-`r nms4r::get_modal_info()`
+`r infographiqR::get_modal_info()`
 
 ## {.tabset}
 
 ### Map: _Sargassum horneri_ - Southern California
 
-`r nms4r::render_figure("Figure App.F.14.2.", "../img/cinms_cr/App.F.14.2.Sargassum_expansion.jpg")`
+`r onmsR::render_figure("Figure App.F.14.2.", "../img/cinms_cr/App.F.14.2.Sargassum_expansion.jpg")`
 
 ### Map: _Sargassum horneri_ - CINMS
 
-`r nms4r::render_figure("Figure App.F.14.3.", "../img/cinms_cr/App.F.14.3.jpg")`
+`r onmsR::render_figure("Figure App.F.14.3.", "../img/cinms_cr/App.F.14.3.jpg")`
 
 ### Trend: _Sargassum horneri_
 
-`r nms4r::render_figure("Figure App.F.14.4.", "../img/cinms_cr/App.F.14.4.Sargassum_graph.jpg")`
+`r onmsR::render_figure("Figure App.F.14.4.", "../img/cinms_cr/App.F.14.4.Sargassum_graph.jpg")`
 
 ### Map: _Watersipora_ - Southern California Bight
 
-`r nms4r::render_figure("Figure App.F.14.5.", "../img/cinms_cr/App.F.14.5.Watersipora_map_Page.jpg")`
+`r onmsR::render_figure("Figure App.F.14.5.", "../img/cinms_cr/App.F.14.5.Watersipora_map_Page.jpg")`
 
 

@@ -2,7 +2,8 @@
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 library(magrittr)
-library(nms4r)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 
 # The following is used by the plot_intertidal_nms function called later
 # dir_gdrive <- "G:/Shared drives/NMS/data"
@@ -18,35 +19,35 @@ nms_rgns1 <- readr::read_csv(nms_rgns_csv) %>%
     rgn = region) # View(nms_rgns)
 ```
 
-`r nms4r::get_modal_info()`
+`r infographiqR::get_modal_info()`
 
 ## {.tabset}
 
 ### Map of Sites
 
 ```{r}
-nms4r::map_nms_sites("cinms", dir_gdrive)
+onmsR::map_nms_sites("cinms", dir_gdrive)
 ```
 
-`r nms4r::md_caption("Interactive map of field sites across the Channel Islands")`
+`r onmsR::md_caption("Interactive map of field sites across the Channel Islands")`
 
-`r nms4r::md_caption("Interactive map of field sites across the Channel Islands", get_details = T, fig_in_report = F)`
+`r onmsR::md_caption("Interactive map of field sites across the Channel Islands", get_details = T, fig_in_report = F)`
 
 ### California Mussels (_Mytilus californianus_){.active}
-`r nms4r::get_figure_info("California Mussels")`
+`r onmsR::get_figure_info("California Mussels")`
 
 ```{r}
-nms4r::plot_intertidal_nms(d_csv, "CINMS", "MYTCAL", "California Mussels", nms_rgns1)
+onmsR::plot_intertidal_nms(d_csv, "CINMS", "MYTCAL", "California Mussels", nms_rgns1)
 ```
-`r nms4r::md_caption("California Mussels")`
+`r onmsR::md_caption("California Mussels")`
 
-`r nms4r::md_caption("California Mussels", get_details = T, fig_in_report = F)`
+`r onmsR::md_caption("California Mussels", get_details = T, fig_in_report = F)`
 
 <!--
 ### California Mussels (_Mytilus californianus_), target = mytilus
 
 ```{r, eval =F}
-#BB TODO: fix nms4r::plot_intertidal_nms() to accommodate target species
-nms4r::plot_intertidal_nms(d_csv, "CINMS", "MYTCAL", "California Mussels [target = mytilus]", "mytilus", nms_rgns1)
+#BB TODO: fix onmsR::plot_intertidal_nms() to accommodate target species
+onmsR::plot_intertidal_nms(d_csv, "CINMS", "MYTCAL", "California Mussels [target = mytilus]", "mytilus", nms_rgns1)
 ```
 -->

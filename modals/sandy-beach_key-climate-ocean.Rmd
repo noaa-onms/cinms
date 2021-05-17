@@ -1,6 +1,8 @@
 
 ```{r setup, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ```
 
 ```{r svg, child = '_key-climate-ocean.Rmd'}
@@ -12,7 +14,7 @@ knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 
 ```{r sst_map}
 # get most recent date
-date_end <- nms4r::get_dates(sst)[2]
+date_end <- onmsR::get_dates(sst)[2]
 
 leaflet(
   nms_ply,
@@ -35,9 +37,9 @@ leaflet(
     colorNumeric("Spectral", c(0,32), reverse=T), seq(0,32))
 ```
 
-`r nms4r::md_caption("Figure Ux.Ocean.SST.ERD.map.")`
+`r onmsR::md_caption("Figure Ux.Ocean.SST.ERD.map.")`
 
-`r nms4r::md_caption("Figure Ux.Ocean.SST.ERD.map.", get_details = T, fig_in_report = F)`
+`r onmsR::md_caption("Figure Ux.Ocean.SST.ERD.map.", get_details = T, fig_in_report = F)`
 
 ### Trend: Satellite-based SST 
 
@@ -45,12 +47,12 @@ leaflet(
 csv_SST <- here::here(glue::glue("data/oceano/statistics_sst_{nms}.csv"))
 url_SST  <- glue::glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv_SST)}")
 html_SST <- htmltools::a(basename(csv_SST), href=url_SST, target='_blank')
-nms4r::plot_metric_timeseries(csv_SST, "sst")
+onmsR::plot_metric_timeseries(csv_SST, "sst")
 ```
 
-`r nms4r::md_caption("Figure Ux.Ocean.SST.ERD.timeseries.")`
+`r onmsR::md_caption("Figure Ux.Ocean.SST.ERD.timeseries.")`
 
-`r nms4r::md_caption("Figure Ux.Ocean.SST.ERD.timeseries.", get_details = T, fig_in_report = F)`
+`r onmsR::md_caption("Figure Ux.Ocean.SST.ERD.timeseries.", get_details = T, fig_in_report = F)`
 
 Download timeseries data for sanctuary: `r html_SST`
 
@@ -60,11 +62,11 @@ Download timeseries data for sanctuary: `r html_SST`
 csv_SST <-here::here(glue::glue("data/oceano/sst_anomaly_{nms}.csv"))
 url_SST  <- glue::glue("https://github.com/marinebon/{nms}/raw/master/data/oceano/{basename(csv_SST)}")
 html_SST <- htmltools::a(basename(csv_SST), href=url_SST, target='_blank')
-nms4r::plot_SST_anomaly(csv_SST)
+onmsR::plot_SST_anomaly(csv_SST)
 ```
 
-`r nms4r::md_caption("Figure Ux.Ocean.SST.Anomaly.timeseries.")`
+`r onmsR::md_caption("Figure Ux.Ocean.SST.Anomaly.timeseries.")`
 
-`r nms4r::md_caption("Figure Ux.Ocean.SST.Anomaly.timeseries.", get_details = T, fig_in_report = F)`
+`r onmsR::md_caption("Figure Ux.Ocean.SST.Anomaly.timeseries.", get_details = T, fig_in_report = F)`
 
 Download timeseries data for sanctuary: `r html_SST`

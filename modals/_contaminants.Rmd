@@ -1,74 +1,75 @@
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-library(nms4r)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ```
 
 #### Contaminants
 
-`r nms4r::get_modal_info()`
+`r infographiqR::get_modal_info()`
 
 ##### {.tabset}
 
 ###### Domoic Acid
 
-`r nms4r::render_figure("Figure App.D.7.1.", "../img/cinms_cr/App.D.7.1_DA levels in crustaceans and bivalves in 2012 and 2013_C. Culver CA Sea Grant copy.jpg")`
+`r onmsR::render_figure("Figure App.D.7.1.", "../img/cinms_cr/App.D.7.1_DA levels in crustaceans and bivalves in 2012 and 2013_C. Culver CA Sea Grant copy.jpg")`
 
 ###### Harmful Algal Bloom (May 2015)
 
-`r nms4r::render_figure("Figure App.D.7.3.", "../img/cinms_cr/App.D.7.3_2015 HAB_McCabe et al. 2016.jpg")`
+`r onmsR::render_figure("Figure App.D.7.3.", "../img/cinms_cr/App.D.7.3_2015 HAB_McCabe et al. 2016.jpg")`
 
 ###### Benthic Response Index - Trend by region
 
-`r nms4r::render_figure("Figure App.E.11.10.", "../img/cinms_cr/App.E.11.10.jpg")`
+`r onmsR::render_figure("Figure App.E.11.10.", "../img/cinms_cr/App.E.11.10.jpg")`
 
 ###### Benthic Response Index - Trend by site
 
-`r nms4r::render_figure("Figure App.E.11.9.", "../img/cinms_cr/App.E.11.9.jpg")`
+`r onmsR::render_figure("Figure App.E.11.9.", "../img/cinms_cr/App.E.11.9.jpg")`
 
 ###### Benthic Response Index - Condition by site
 
-`r nms4r::render_figure("Figure App.E.11.11.", "../img/cinms_cr/App.E.11.11.jpg")`
+`r onmsR::render_figure("Figure App.E.11.11.", "../img/cinms_cr/App.E.11.11.jpg")`
 
 ###### DDT in sediments
 
-`r nms4r::render_figure("Figure App.E.11.12.", "../img/cinms_cr/App.E.11.12.jpg")`
+`r onmsR::render_figure("Figure App.E.11.12.", "../img/cinms_cr/App.E.11.12.jpg")`
 
 ###### Copper in sediments
 
-`r nms4r::render_figure("Figure App.E.11.13.", "../img/cinms_cr/App.E.11.13.jpg")`
+`r onmsR::render_figure("Figure App.E.11.13.", "../img/cinms_cr/App.E.11.13.jpg")`
 
 ###### Silver in sediments
 
-`r nms4r::render_figure("Figure App.E.11.14.", "../img/cinms_cr/App.E.11.14.jpg")`
+`r onmsR::render_figure("Figure App.E.11.14.", "../img/cinms_cr/App.E.11.14.jpg")`
 
 ###### PBDEs in sediments
 
-`r nms4r::render_figure("Figure App.E.11.15.", "../img/cinms_cr/App.E.11.15.jpg")`
+`r onmsR::render_figure("Figure App.E.11.15.", "../img/cinms_cr/App.E.11.15.jpg")`
 
 ###### Pyrethroids in sediments
 
-`r nms4r::render_figure("Figure App.E.11.16.", "../img/cinms_cr/App.E.11.16.jpg")`
+`r onmsR::render_figure("Figure App.E.11.16.", "../img/cinms_cr/App.E.11.16.jpg")`
 
 ###### Contaminants in sediments - Trends by region
 
-`r nms4r::render_figure("Figure App.E.11.17.", "../img/cinms_cr/App.E.11.17.jpg")`
+`r onmsR::render_figure("Figure App.E.11.17.", "../img/cinms_cr/App.E.11.17.jpg")`
 
 ###### Arsenic in mussels
 
-`r nms4r::render_figure("Figure App.E.11.2.", "../img/cinms_cr/App.E.11.2.jpg")`
+`r onmsR::render_figure("Figure App.E.11.2.", "../img/cinms_cr/App.E.11.2.jpg")`
 
 ###### Iron in mussels
 
-`r nms4r::render_figure("Figure App.E.11.3.", "../img/cinms_cr/App.E.11.3.jpg")`
+`r onmsR::render_figure("Figure App.E.11.3.", "../img/cinms_cr/App.E.11.3.jpg")`
 
 ###### Silver in mussels
 
-`r nms4r::render_figure("Figure App.E.11.4.", "../img/cinms_cr/App.E.11.4.jpg")`
+`r onmsR::render_figure("Figure App.E.11.4.", "../img/cinms_cr/App.E.11.4.jpg")`
 
 ###### Heavy metals in mussels
 
-`r nms4r::render_figure("Figure App.E.11.5.", "../img/cinms_cr/App.E.11.5.jpg")`
+`r onmsR::render_figure("Figure App.E.11.5.", "../img/cinms_cr/App.E.11.5.jpg")`
 
 ###### PAHs in mussels
 
-`r nms4r::render_figure("Figure App.E.11.6.", "../img/cinms_cr/App.E.11.6.jpg")`
+`r onmsR::render_figure("Figure App.E.11.6.", "../img/cinms_cr/App.E.11.6.jpg")`

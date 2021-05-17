@@ -1,16 +1,17 @@
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-library(nms4r)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ```
 
-`r nms4r::get_modal_info()`
+`r infographiqR::get_modal_info()`
 
 ## {.tabset}
 
 ### Santa Rosa Island - total
 
-`r nms4r::render_figure("Figure App.E.10.11.", "../img/cinms_cr/App.E.10.11.jpg")`
+`r onmsR::render_figure("Figure App.E.10.11.", "../img/cinms_cr/App.E.10.11.jpg")`
 
 ### Santa Rosa Island - per site
 
-`r nms4r::render_figure("Figure App.E.10.12.", "../img/cinms_cr/App.E.10.12.jpg")`
+`r onmsR::render_figure("Figure App.E.10.12.", "../img/cinms_cr/App.E.10.12.jpg")`

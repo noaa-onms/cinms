@@ -1,19 +1,20 @@
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-library(nms4r)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ```
 
 ## Western Snowy Plover (_Charadrius nivosus nivosus_)
 
-`r nms4r::get_modal_info()`
+`r infographiqR::get_modal_info()`
 
 ## {.tabset}
 
 ### Abundance adults
 
-`r nms4r::render_figure("Figure App.F.13.7a.", "../img/cinms_cr/App.F.13.7a.jpg")`
+`r onmsR::render_figure("Figure App.F.13.7a.", "../img/cinms_cr/App.F.13.7a.jpg")`
 
 ### Abundance chicks
 
-`r nms4r::render_figure("Figure App.F.13.7b.", "../img/cinms_cr/App.F.13.7b.jpg")`
+`r onmsR::render_figure("Figure App.F.13.7b.", "../img/cinms_cr/App.F.13.7b.jpg")`
 

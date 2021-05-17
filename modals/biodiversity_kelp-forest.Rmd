@@ -1,25 +1,26 @@
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-library(nms4r)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ```
-`r nms4r::get_modal_info()`
+`r infographiqR::get_modal_info()`
 
 ## {.tabset}
 
 ### Kelp forest fish - effective number of species
 
-`r nms4r::render_figure("Figure App.F.15.1.", "../img/cinms_cr/App.F.15.1a.MBON_kelp_forest_fish.jpg")`
+`r onmsR::render_figure("Figure App.F.15.1.", "../img/cinms_cr/App.F.15.1a.MBON_kelp_forest_fish.jpg")`
 
 ### Bottom mobile invertebrates - effective number of species
 
-`r nms4r::render_figure("Figure App.F.15.1.", "../img/cinms_cr/App.F.15.1b.MBON_mobile_invertebrate.jpg")`
+`r onmsR::render_figure("Figure App.F.15.1.", "../img/cinms_cr/App.F.15.1b.MBON_mobile_invertebrate.jpg")`
 
 ### Deeper water fish - effective number of species
 
-`r nms4r::render_figure("Figure App.F.15.1.", "../img/cinms_cr/App.F.15.1c.MBON_deep_water_fish.jpg")`
+`r onmsR::render_figure("Figure App.F.15.1.", "../img/cinms_cr/App.F.15.1c.MBON_deep_water_fish.jpg")`
 
 ### Kelp forest fish - thermal affinity ratio
 
-`r nms4r::render_figure("Figure App.F.15.2.", "../img/cinms_cr/App.F.15.2.Thermal_LogRatio.jpg")`
+`r onmsR::render_figure("Figure App.F.15.2.", "../img/cinms_cr/App.F.15.2.Thermal_LogRatio.jpg")`
 
 

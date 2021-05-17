@@ -1,9 +1,10 @@
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-library(nms4r)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ```
 
-`r nms4r::get_modal_info()`
+`r infographiqR::get_modal_info()`
 
 # {.tabset}
 
@@ -15,29 +16,29 @@ library(nms4r)
 
 ##### Trends: Commercial Landings
 
-`r nms4r::render_figure("Figure App.C.4.4.", "../img/cinms_cr/App.C.4.4.Leeworthy_landings.jpg")`
+`r onmsR::render_figure("Figure App.C.4.4.", "../img/cinms_cr/App.C.4.4.Leeworthy_landings.jpg")`
 
 ##### Recreational 
 
-`r nms4r::render_figure("Figure App.C.4.2a.", "../img/cinms_cr/App.C.4.2a.CPFV_trips.jpg")`
+`r onmsR::render_figure("Figure App.C.4.2a.", "../img/cinms_cr/App.C.4.2a.CPFV_trips.jpg")`
 
-`r nms4r::render_figure("Figure App.C.4.2b.", "../img/cinms_cr/App.C.4.2b.CPFV_landings.jpg")`
+`r onmsR::render_figure("Figure App.C.4.2b.", "../img/cinms_cr/App.C.4.2b.CPFV_landings.jpg")`
 
 #### Visitors {.tabset}
 ##### Map: Location Recreational Activity
 
-`r nms4r::render_figure("Figure App.C.4.7.", "../img/cinms_cr/App.C.4.7_chen_recreation.jpg")`
+`r onmsR::render_figure("Figure App.C.4.7.", "../img/cinms_cr/App.C.4.7_chen_recreation.jpg")`
 
 ##### Trends: Visitors (CHIS)
 
-`r nms4r::render_figure("Figure App.C.1.4.", "../img/cinms_cr/App.C.1.4.Vistors_CINP.png")`
+`r onmsR::render_figure("Figure App.C.1.4.", "../img/cinms_cr/App.C.1.4.Vistors_CINP.png")`
 
 #### Research
 ##### Trends: Active Permits
 
-`r nms4r::render_figure("Figure App.C.4.18a.", "../img/cinms_cr/App.C.4.18a.Projects_Permits.png")`
+`r onmsR::render_figure("Figure App.C.4.18a.", "../img/cinms_cr/App.C.4.18a.Projects_Permits.png")`
 
-`r nms4r::render_figure("Figure App.C.4.18b.", "../img/cinms_cr/App.C.4.18b.CDFW_Permits.png")`
+`r onmsR::render_figure("Figure App.C.4.18b.", "../img/cinms_cr/App.C.4.18b.CDFW_Permits.png")`
 
 ## Human Impacts
 
@@ -47,9 +48,9 @@ library(nms4r)
 
 ###### Listening Stations
 
-`r nms4r::render_figure("Figure App.C.2.8.", "../img/cinms_cr/App.C.2.8.jpg")`
+`r onmsR::render_figure("Figure App.C.2.8.", "../img/cinms_cr/App.C.2.8.jpg")`
 
 ###### Trends: Sound Levels
 
-`r nms4r::render_figure("Figure App.C.4.13.", "../img/cinms_cr/App.C.4.13.CINMS_Noise.jpg")`
+`r onmsR::render_figure("Figure App.C.4.13.", "../img/cinms_cr/App.C.4.13.CINMS_Noise.jpg")`
 

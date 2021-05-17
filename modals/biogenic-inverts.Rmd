@@ -1,16 +1,17 @@
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-library(nms4r)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ```
 
-`r nms4r::get_modal_info()`
+`r infographiqR::get_modal_info()`
 
 ## {.tabset}
 
 ### Relative abundance Deep-water Corals
 
-`r nms4r::render_figure("Figure App.E.10.26.", "../img/cinms_cr/App.E.10.26.jpg")`
+`r onmsR::render_figure("Figure App.E.10.26.", "../img/cinms_cr/App.E.10.26.jpg")`
 
 ### Condition of Gorgonian Corals
 
-`r nms4r::render_figure("Figure App.E.10.28.", "../img/cinms_cr/App.E.10.28.jpg")`
+`r onmsR::render_figure("Figure App.E.10.28.", "../img/cinms_cr/App.E.10.28.jpg")`

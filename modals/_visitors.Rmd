@@ -1,13 +1,14 @@
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-library(nms4r)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ```
 
 #### Visitors
 
-`r nms4r::get_modal_info()`
+`r infographiqR::get_modal_info()`
 
-`r nms4r::render_figure("Figure App.C.4.8.", "../img/cinms_cr/App.C.4.8.Visitation_Frenchys.jpg")`
+`r onmsR::render_figure("Figure App.C.4.8.", "../img/cinms_cr/App.C.4.8.Visitation_Frenchys.jpg")`
 
-`r nms4r::render_figure("Figure App.C.4.7.", "../img/cinms_cr/App.C.4.7_chen_recreation.jpg")`
+`r onmsR::render_figure("Figure App.C.4.7.", "../img/cinms_cr/App.C.4.7_chen_recreation.jpg")`
 

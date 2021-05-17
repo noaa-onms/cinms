@@ -11,4 +11,5 @@ RUN install2.r --error \
   lubridate \
   rerddap
   
-RUN installGithub.r marinebon/nms4r
+RUN installGithub.r marinebon/infographiqR
+RUN installGithub.r noaa-onms/onmsR

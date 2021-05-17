@@ -1,7 +1,6 @@
-library(nms4r)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 
 print('Rendering oceano_Rmds')
-nms4r::render_all_rmd(nms = "cinms", interactive_only = T)
-#print('Rendering modals/kelp-forest_key-climate-ocean.Rmd')
-#nms4r::generate_html_4_rmd(here::here("modals/kelp-forest_key-climate-ocean.Rmd"))
+onmsR::render_all_rmd(nms = "cinms", interactive_only = T)
 print ('Finished rendering oceano_Rmds')

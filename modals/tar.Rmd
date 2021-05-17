@@ -8,7 +8,8 @@ output:
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 library(magrittr)
-library(nms4r)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 
 # The following is used by the plot_intertidal_nms function called later
 # dir_gdrive <- "G:/Shared drives/NMS/data"
@@ -24,16 +25,16 @@ nms_rgns1 <- readr::read_csv(nms_rgns_csv) %>%
     rgn = region) # View(nms_rgns)
 ```
 
-`r nms4r::get_modal_info()`
+`r infographiqR::get_modal_info()`
 
 ##  {.tabset} 
 
 ### Trend: Tar
-`r nms4r::get_figure_info("Figure App.E.11.8.")`
+`r onmsR::get_figure_info("Figure App.E.11.8.")`
 ```{r}
-nms4r::plot_intertidal_nms(d_csv, "CINMS", "TAR", "Tar", nms_rgns1)
+onmsR::plot_intertidal_nms(d_csv, "CINMS", "TAR", "Tar", nms_rgns1)
 ```
-`r nms4r::md_caption("Figure App.E.11.8.")`
+`r onmsR::md_caption("Figure App.E.11.8.")`
 
-`r nms4r::md_caption("Figure App.E.11.8.", get_details = T)`
+`r onmsR::md_caption("Figure App.E.11.8.", get_details = T)`
 
