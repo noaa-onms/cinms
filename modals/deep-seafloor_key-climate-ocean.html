@@ -11,7 +11,7 @@
 
 
 
-<title>deep-seafloor_key-climate-ocean.knit</title>
+<title>deep-seafloor_key-climate-ocean.utf8</title>
 
 <script src="modal_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,15 +19,6 @@
 <script src="modal_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="modal_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="modal_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<style>h1 {font-size: 34px;}
-       h1.title {font-size: 38px;}
-       h2 {font-size: 30px;}
-       h3 {font-size: 24px;}
-       h4 {font-size: 18px;}
-       h5 {font-size: 16px;}
-       h6 {font-size: 12px;}
-       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
-       pre:not([class]) { background-color: white }</style>
 <script src="modal_libs/navigation-1.1/tabsets.js"></script>
 <link href="modal_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="modal_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -43,16 +34,12 @@
 </script>
 <!--/html_preserve-->
 
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
-
 <style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -65,7 +52,32 @@ if (window.hljs) {
 
 
 
-
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
 
 <link rel="stylesheet" href="_modal_styles.css" type="text/css" />
 <link rel="stylesheet" href="modal_libs/font-awesome-5.3.1/css/all.min.css" type="text/css" />
@@ -78,6 +90,10 @@ if (window.hljs) {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -94,9 +110,6 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
-pre code {
-  padding: 0;
-}
 </style>
 
 
@@ -109,6 +122,7 @@ pre code {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
+  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -172,7 +186,7 @@ pre code {
 
 
 
-<div id="header">
+<div class="fluid-row" id="header">
 
 
 
@@ -189,15 +203,15 @@ pre code {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100462" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Monitoring Program</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100462" target="_blank"><i class="fa fa-clipboard-list"></i> Monitoring Program</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="http://doi.org/10.13140/RG.2.1.3430.4085" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Etnoyer et al. 2015</a>
+<a href="http://doi.org/10.13140/RG.2.1.3430.4085" target="_blank"><i class="fa fa-database"></i> Etnoyer et al. 2015</a>
 </div>
 </div>
 </div>
 <div class="figure">
-<img src="../img/cinms_cr/App.E.10.29.jpg" alt="" />
+<img src="../img/cinms_cr/App.E.10.29.jpg" alt="A figure showing the concentration of the mineral aragonite at different depths at Anacapa Island from 2007 to 2014. Figure credit: Etnoyer et al. 2015." />
 <p class="caption">A figure showing the concentration of the mineral <span id="tooltip34" aria-describedby="tooltip34" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%">aragonite</span> at different depths at Anacapa Island from 2007 to 2014. Figure credit: Etnoyer et al. 2015.</p>
 </div>
 <details>
@@ -222,7 +236,7 @@ pre code {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -240,7 +254,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open');
+    $(this).parent().toggleClass('nav-tabs-open')
   });
 });
 </script>
