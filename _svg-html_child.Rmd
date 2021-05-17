@@ -1,4 +1,3 @@
-<!-- <div class="container-fluid"> -->
 <div class="row">
 <div class="col-md-9">
 <div id = "svg"> </div>
@@ -7,22 +6,17 @@
 <div id="toc"></div>
 </div>
 </div>
-<!-- </div> -->
 
-<!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> -->
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
 <script src="https://d3js.org/d3.v5.min.js"></script>
 <script src="https://marinebon.github.io/infographiqJS/libs/infographiq_latest/infographiq.js"></script>
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
-<!-- <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />  -->
-<link  href="https://marinebon.github.io/infographiqJS/libs/infographiq_latest/infographiq.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="https://marinebon.github.io/infographiqJS/libs/infographiq_latest/infographiq.css" />
 <script>
   link_svg({
     svg: "`r params$svg`",
     csv: "`r params$csv`",
+    csv_rows: "`r params$csv_rows`",   
     svg_id: 'svg',
     toc_id: 'toc',
-    modal_url_pfx:  'https://noaa-onms.github.io/cinms/modals/',
     toc_style: 'list',
     text_toggle: true});
 </script>

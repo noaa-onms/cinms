@@ -3,11 +3,11 @@ title: "Kelp Forest"
 params:
   svg: "svg/cinms_kelp-forest.svg"
   csv: "svg/svg_links_cinms.csv"
+  csv_rows: "cinms_kelp-forest.svg"
 ---
 
 ```{r setup, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-library(onmsR)        # remotes::install_github("noaa-onms/onmsR")
 library(infographiqR) # remotes::install_github("marinebon/infographiqR")
 ```
 

@@ -3,14 +3,15 @@ title: "Pelagic"
 params:
   svg: "svg/cinms_pelagic.svg"
   csv: "svg/svg_links_cinms.csv"
+  csv_rows: "cinms_pelagic.svg"
 ---
 
 ```{r setup, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-library(nms4r)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR")
 ```
 
-`r nms4r::get_modal_info()`
+`r infographiqR::get_modal_info()`
 
 ```{r svg, child = '_svg-html_child.Rmd'}
 ```

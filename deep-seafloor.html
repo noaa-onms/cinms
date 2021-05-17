@@ -302,33 +302,30 @@ $(document).ready(function () {
 </div>
 <div style="margin: 10px; font-style: italic; flex: 20; ">The deepest, lowest layer of the ocean, few humans have ever ventured here. However, this alien landscape is home to vital corals and sponges that provide habitat for many economic and ecologicaly important organisms</div>
 </div>
-<script src="libs/d3.v5.min.js"></script>
-<script src="libs/infographiq.js"></script>
-<link href="libs/bootstrap-toggle.min.css" rel="stylesheet">
-<script src="libs/bootstrap-toggle.min.js"></script>
+<div class="row">
 <div class="col-md-9">
 <div id="svg">
 
 </div>
 </div>
 <div class="col-md-3">
-Text: <input id="toggle-text" type="checkbox" data-toggle="toggle" data-size="mini">
-<div id="toggle-text-event">
+<div id="toc">
 
 </div>
-<ul id="svg_list">
-</ul>
 </div>
+</div>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://marinebon.github.io/infographiqJS/libs/infographiq_latest/infographiq.js"></script>
+<link rel="stylesheet" type="text/css" href="https://marinebon.github.io/infographiqJS/libs/infographiq_latest/infographiq.css" />
 <script>
-link_svg(svg = "svg/cinms_deep-seafloor.svg", csv = "svg/svg_links_cinms.csv", debug = true);
-</script>
-<script>
-$(function() {
-$('#toggle-text').change(function() {
-  display = this.checked ? "inline" : "none";
-  d3.select("#text").attr("display", display);
-})
-})
+  link_svg({
+    svg: "svg/cinms_deep-seafloor.svg",
+    csv: "svg/svg_links_cinms.csv",
+    csv_rows: "cinms_deep-seafloor.svg",   
+    svg_id: 'svg',
+    toc_id: 'toc',
+    toc_style: 'list',
+    text_toggle: true});
 </script>
 
 

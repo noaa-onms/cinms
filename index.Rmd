@@ -3,6 +3,7 @@ title: "Overview"
 params:
   csv: "svg/svg_links_cinms.csv"
   svg: "svg/cinms_overview.svg"
+  csv_rows: "cinms_overview.svg"
 ---
 
 Please explore the interactive ecosystem for Channel Islands National Marine Sanctuary. Navigate by clicking on icons representing major habitats, species of interest, major climate and ocean drivers, and key human activities. These interactive icons and silhouettes access status and trend data, images, web stories and other supporting content.

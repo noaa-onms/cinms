@@ -302,7 +302,6 @@ $(document).ready(function () {
 </div>
 <div style="margin: 10px; font-style: italic; flex: 20; ">Like towering forests on land, kelp forests are as a biodiverse as they are productive. The giant kelp can grow to be over 100ft tall, drawing down carbon dioxide and towering over understory algae and providing food and shelter for many thousands of fishes, invertebrates, and algae.</div>
 </div>
-<!-- <div class="container-fluid"> -->
 <div class="row">
 <div class="col-md-9">
 <div id="svg">
@@ -315,21 +314,16 @@ $(document).ready(function () {
 </div>
 </div>
 </div>
-<!-- </div> -->
-<!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> -->
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
 <script src="https://d3js.org/d3.v5.min.js"></script>
 <script src="https://marinebon.github.io/infographiqJS/libs/infographiq_latest/infographiq.js"></script>
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
-<!-- <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />  -->
-<link  href="https://marinebon.github.io/infographiqJS/libs/infographiq_latest/infographiq.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="https://marinebon.github.io/infographiqJS/libs/infographiq_latest/infographiq.css" />
 <script>
   link_svg({
     svg: "svg/cinms_kelp-forest.svg",
     csv: "svg/svg_links_cinms.csv",
+    csv_rows: "cinms_kelp-forest.svg",   
     svg_id: 'svg',
     toc_id: 'toc',
-    modal_url_pfx:  'https://noaa-onms.github.io/cinms/modals/',
     toc_style: 'list',
     text_toggle: true});
 </script>

@@ -290,33 +290,30 @@ $(document).ready(function () {
 
 
 <p>Please explore the interactive ecosystem for Channel Islands National Marine Sanctuary. Navigate by clicking on icons representing major habitats, species of interest, major climate and ocean drivers, and key human activities. These interactive icons and silhouettes access status and trend data, images, web stories and other supporting content.</p>
-<script src="libs/d3.v5.min.js"></script>
-<script src="libs/infographiq.js"></script>
-<link href="libs/bootstrap-toggle.min.css" rel="stylesheet">
-<script src="libs/bootstrap-toggle.min.js"></script>
+<div class="row">
 <div class="col-md-9">
 <div id="svg">
 
 </div>
 </div>
 <div class="col-md-3">
-Text: <input id="toggle-text" type="checkbox" data-toggle="toggle" data-size="mini">
-<div id="toggle-text-event">
+<div id="toc">
 
 </div>
-<ul id="svg_list">
-</ul>
 </div>
+</div>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://marinebon.github.io/infographiqJS/libs/infographiq_latest/infographiq.js"></script>
+<link rel="stylesheet" type="text/css" href="https://marinebon.github.io/infographiqJS/libs/infographiq_latest/infographiq.css" />
 <script>
-link_svg(svg = "svg/cinms_overview.svg", csv = "svg/svg_links_cinms.csv", debug = true);
-</script>
-<script>
-$(function() {
-$('#toggle-text').change(function() {
-  display = this.checked ? "inline" : "none";
-  d3.select("#text").attr("display", display);
-})
-})
+  link_svg({
+    svg: "svg/cinms_overview.svg",
+    csv: "svg/svg_links_cinms.csv",
+    csv_rows: "cinms_overview.svg",   
+    svg_id: 'svg',
+    toc_id: 'toc',
+    toc_style: 'list',
+    text_toggle: true});
 </script>
 
 
