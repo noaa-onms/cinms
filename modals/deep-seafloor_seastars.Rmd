@@ -4,11 +4,11 @@ library(infographiqR) # remotes::install_github("marinebon/infographiqR")
 library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ```
 
-`r infographiqR::get_modal_info()`
+`r infographiqR::get_modal_info(info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_modal_links")`
 
 ##  {.tabset} 
 
 ### MARE: Sunflower star
 
-`r onmsR::render_figure("Figure App.F.12.15.", "../img/cinms_cr/App.F.12.15.Pycnopodia_MARE.jpg")`
+`r infographiqR::render_figure("Figure App.F.12.15.", "../img/cinms_cr/App.F.12.15.Pycnopodia_MARE.jpg")`
 

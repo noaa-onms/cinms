@@ -25,16 +25,16 @@ nms_rgns1 <- readr::read_csv(nms_rgns_csv) %>%
     rgn = region) # View(nms_rgns)
 ```
 
-`r infographiqR::get_modal_info()`
+`r infographiqR::get_modal_info(info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_modal_links")`
 
 ##  {.tabset} 
 
 ### Trend: Tar
-`r onmsR::get_figure_info("Figure App.E.11.8.")`
+`r infographiqR::get_figure_info("Figure App.E.11.8.")`
 ```{r}
 onmsR::plot_intertidal_nms(d_csv, "CINMS", "TAR", "Tar", nms_rgns1)
 ```
-`r onmsR::md_caption("Figure App.E.11.8.")`
+`r infographiqR::md_caption("Figure App.E.11.8.")`
 
-`r onmsR::md_caption("Figure App.E.11.8.", get_details = T)`
+`r infographiqR::md_caption("Figure App.E.11.8.", get_details = T)`
 

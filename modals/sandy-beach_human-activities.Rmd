@@ -4,7 +4,7 @@ library(infographiqR) # remotes::install_github("marinebon/infographiqR")
 library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ```
 
-`r infographiqR::get_modal_info()`
+`r infographiqR::get_modal_info(info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_modal_links")`
 
 # {.tabset}
 
@@ -16,21 +16,21 @@ library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 
 ##### Trends: Offshore Oil and Gas Activity 
 
-`r onmsR::render_figure("Figure App.C.4.17.", "../img/cinms_cr/App.C.4.17.Oil_gas_activity_CCIEA.png")`
+`r infographiqR::render_figure("Figure App.C.4.17.", "../img/cinms_cr/App.C.4.17.Oil_gas_activity_CCIEA.png")`
 
 ##### Oil & Gas Maps {.tabset}
 
 ###### Offshore Oil Platforms
 
-`r onmsR::render_figure("Figure App.C.2.1.", "../img/cinms_cr/App.C.2.1 Oil platforms_Mari Cajandig.jpg")`
+`r infographiqR::render_figure("Figure App.C.2.1.", "../img/cinms_cr/App.C.2.1 Oil platforms_Mari Cajandig.jpg")`
 
 ###### 2015 Refugio Oil Spill
 
-`r onmsR::render_figure("Figure App.C.2.3.", "../img/cinms_cr/App.C.2.3 Refugio Spill_Mari Cajandig.jpg")`
+`r infographiqR::render_figure("Figure App.C.2.3.", "../img/cinms_cr/App.C.2.3 Refugio Spill_Mari Cajandig.jpg")`
 
-`r onmsR::render_figure("Figure App.C.2.4.", "../img/cinms_cr/App.C.2.4.jpg")`
+`r infographiqR::render_figure("Figure App.C.2.4.", "../img/cinms_cr/App.C.2.4.jpg")`
 
-`r onmsR::render_figure("Figure App.C.2.5.", "../img/cinms_cr/App.C.2.5.jpg")`
+`r infographiqR::render_figure("Figure App.C.2.5.", "../img/cinms_cr/App.C.2.5.jpg")`
 
 #### Visitors
 
@@ -38,15 +38,15 @@ library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 
 ###### Trends: Visitors at Frenchy's Cove
 
-`r onmsR::render_figure("Figure App.C.4.8.", "../img/cinms_cr/App.C.4.8.Visitation_Frenchys.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.8.", "../img/cinms_cr/App.C.4.8.Visitation_Frenchys.jpg")`
 
 ###### Map: Location Recreational Activity
 
-`r onmsR::render_figure("Figure App.C.4.7.", "../img/cinms_cr/App.C.4.7_chen_recreation.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.7.", "../img/cinms_cr/App.C.4.7_chen_recreation.jpg")`
 
 ###### Trends: Visitors (CHIS)
 
-`r onmsR::render_figure("Figure App.C.1.4.", "../img/cinms_cr/App.C.1.4.Vistors_CINP.png")`
+`r infographiqR::render_figure("Figure App.C.1.4.", "../img/cinms_cr/App.C.1.4.Vistors_CINP.png")`
 
 ## Human Impacts
 
@@ -58,7 +58,7 @@ library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 
 ###### Trends: Southern California Beaches 
 
-`r onmsR::render_figure("Figure App.C.4.14.", "../img/cinms_cr/App.C.4.14.Marine debris_CCIEA.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.14.", "../img/cinms_cr/App.C.4.14.Marine debris_CCIEA.jpg")`
 
 
 #### Vessel Groundings
@@ -67,7 +67,7 @@ library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 
 ###### Map: Vessel Groundings
 
-`r onmsR::render_figure("Figure App.C.3.1.", "../img/cinms_cr/App.C.3.1_VesselGroundingsMap.jpg")`
+`r infographiqR::render_figure("Figure App.C.3.1.", "../img/cinms_cr/App.C.3.1_VesselGroundingsMap.jpg")`
 
 
 
@@ -75,8 +75,8 @@ library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 
 ##### Comparison: By Region
 
-`r onmsR::render_figure("Figure App.C.4.9.", "../img/cinms_cr/App.C.4.9.Seabird_disturbance_rates_Robinette.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.9.", "../img/cinms_cr/App.C.4.9.Seabird_disturbance_rates_Robinette.jpg")`
 
 #### Trend: oiled beachcast seabirds
 
-`r onmsR::render_figure("BeachCombers_seabird_deposition_oiling", "../img/cinms_cr/BeachCombers_seabird_deposition_oiling.png")`
+`r infographiqR::render_figure("BeachCombers_seabird_deposition_oiling", "../img/cinms_cr/BeachCombers_seabird_deposition_oiling.png")`

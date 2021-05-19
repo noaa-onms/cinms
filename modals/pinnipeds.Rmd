@@ -4,26 +4,26 @@ library(infographiqR) # remotes::install_github("marinebon/infographiqR")
 library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ```
 
-`r infographiqR::get_modal_info()`
+`r infographiqR::get_modal_info(info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_modal_links")`
 
 ## {.tabset}
 
 ### California sea lion pup indicators 
 
-`r onmsR::render_figure("Figure App.F.13.24_new.", "../img/cinms_cr/App.F.13.24_new.png")`
+`r infographiqR::render_figure("Figure App.F.13.24_new.", "../img/cinms_cr/App.F.13.24_new.png")`
 
 ### California sea lion pups (_Zalophus californianus_)
 
-`r onmsR::render_figure("Figure App.F.13.23.", "../img/cinms_cr/App.F.13.23.jpg")`
+`r infographiqR::render_figure("Figure App.F.13.23.", "../img/cinms_cr/App.F.13.23.jpg")`
 
 ### Harbor seals (_Phoca vitulina_)
 
-`r onmsR::render_figure("Figure App.F.13.25.", "../img/cinms_cr/App.F.13.25.jpg")`
+`r infographiqR::render_figure("Figure App.F.13.25.", "../img/cinms_cr/App.F.13.25.jpg")`
 
 ### Northern elephant seals (_Mirounga angustirostris_)
 
-`r onmsR::render_figure("Figure App.F.13.26.", "../img/cinms_cr/App.F.13.26.jpg")`
+`r infographiqR::render_figure("Figure App.F.13.26.", "../img/cinms_cr/App.F.13.26.jpg")`
 
 ### Northern fur seals (_Callorhinus ursinus_)
 
-`r onmsR::render_figure("Figure App.F.13.27.", "../img/cinms_cr/App.F.13.27.jpg")`
+`r infographiqR::render_figure("Figure App.F.13.27.", "../img/cinms_cr/App.F.13.27.jpg")`

@@ -9,7 +9,7 @@ library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 
 ## Human Activities
 
-`r infographiqR::get_modal_info()`
+`r infographiqR::get_modal_info(info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_modal_links")`
 
 ### {.tabset}
 
@@ -18,48 +18,48 @@ library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ##### Commercial {.tabset}
 ###### Trends: Commercial Landings
 
-`r onmsR::render_figure("Figure App.C.4.4.", "../img/cinms_cr/App.C.4.4.Leeworthy_landings.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.4.", "../img/cinms_cr/App.C.4.4.Leeworthy_landings.jpg")`
 
 ###### Trends: Halibut Fishery
 
-`r onmsR::render_figure("Figure App.C.4.5a.", "../img/cinms_cr/App.C.4.5a.Halibut_landings_CDFW.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.5a.", "../img/cinms_cr/App.C.4.5a.Halibut_landings_CDFW.jpg")`
 
-`r onmsR::render_figure("Figure App.C.4.5b.", "../img/cinms_cr/App.C.4.5b.CDFW_halibut_vessels.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.5b.", "../img/cinms_cr/App.C.4.5b.CDFW_halibut_vessels.jpg")`
 
 ###### Trends: Rock Crab Fishery
 
-`r onmsR::render_figure("Figure App.C.4.6a.", "../img/cinms_cr/App.C.4.6a.crab_landings_CDFW.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.6a.", "../img/cinms_cr/App.C.4.6a.crab_landings_CDFW.jpg")`
 
-`r onmsR::render_figure("Figure App.C.4.6b.", "../img/cinms_cr/App.C.4.6b.crab_fishers_CDFW.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.6b.", "../img/cinms_cr/App.C.4.6b.crab_fishers_CDFW.jpg")`
 
 ###### Trends: By Gear Type
 
-`r onmsR::render_figure("Figure App.C.3.2.", "../img/cinms_cr/App.C.3.2_CINMSLandings.jpg")`
+`r infographiqR::render_figure("Figure App.C.3.2.", "../img/cinms_cr/App.C.3.2_CINMSLandings.jpg")`
 
 ###### Map: Trawling and Deep Sea Corals
 
-`r onmsR::render_figure("Figure App.C.3.3.", "../img/cinms_cr/App.C.3.3_SWFSC_Trawls2007-2011_HBCoralsRS.jpg")`
+`r infographiqR::render_figure("Figure App.C.3.3.", "../img/cinms_cr/App.C.3.3_SWFSC_Trawls2007-2011_HBCoralsRS.jpg")`
 
 ###### Map: Fixed Gear and Deep Sea Corals
 
-`r onmsR::render_figure("Figure App.C.3.4.", "../img/cinms_cr/App.C.3.4_SWFSC_Fixed2007-2011_Gorgonians.jpg")`
+`r infographiqR::render_figure("Figure App.C.3.4.", "../img/cinms_cr/App.C.3.4_SWFSC_Fixed2007-2011_Gorgonians.jpg")`
 
 ###### Map: Trawl & Fixed Gear with MPAs 
 
-`r onmsR::render_figure("Figure App.C.3.5.", "../img/cinms_cr/App.C.3.5_SoCalDeepBotFishingMPAs_Etnoyer.jpg")`
+`r infographiqR::render_figure("Figure App.C.3.5.", "../img/cinms_cr/App.C.3.5_SoCalDeepBotFishingMPAs_Etnoyer.jpg")`
 
 ##### Recreational {.active}
 
-`r onmsR::render_figure("Figure App.C.4.2a.", "../img/cinms_cr/App.C.4.2a.CPFV_trips.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.2a.", "../img/cinms_cr/App.C.4.2a.CPFV_trips.jpg")`
 
-`r onmsR::render_figure("Figure App.C.4.2b.", "../img/cinms_cr/App.C.4.2b.CPFV_landings.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.2b.", "../img/cinms_cr/App.C.4.2b.CPFV_landings.jpg")`
 
 #### Research
 ###### Trends: Active Permits
 
-`r onmsR::render_figure("Figure App.C.4.18a.", "../img/cinms_cr/App.C.4.18a.Projects_Permits.png")`
+`r infographiqR::render_figure("Figure App.C.4.18a.", "../img/cinms_cr/App.C.4.18a.Projects_Permits.png")`
 
-`r onmsR::render_figure("Figure App.C.4.18b.", "../img/cinms_cr/App.C.4.18b.CDFW_Permits.png")`
+`r infographiqR::render_figure("Figure App.C.4.18b.", "../img/cinms_cr/App.C.4.18b.CDFW_Permits.png")`
 
 ## Human Impacts
 
@@ -69,41 +69,41 @@ library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ##### Benthic Response Index 
 ###### Trends: Condition by region
 
-`r onmsR::render_figure("Figure App.E.11.10.", "../img/cinms_cr/App.E.11.10.jpg")`
+`r infographiqR::render_figure("Figure App.E.11.10.", "../img/cinms_cr/App.E.11.10.jpg")`
 
 ###### Map: 2013 Trends at sites
 
-`r onmsR::render_figure("Figure App.E.11.9.", "../img/cinms_cr/App.E.11.9.jpg")`
+`r infographiqR::render_figure("Figure App.E.11.9.", "../img/cinms_cr/App.E.11.9.jpg")`
 
 ###### Map: 2013 Conditions at sites
 
-`r onmsR::render_figure("Figure App.E.11.11.", "../img/cinms_cr/App.E.11.11.jpg")`
+`r infographiqR::render_figure("Figure App.E.11.11.", "../img/cinms_cr/App.E.11.11.jpg")`
 
 ##### Contaminants in Sediments
 
 ###### Map: 2008 DDT 
 
-`r onmsR::render_figure("Figure App.E.11.12.", "../img/cinms_cr/App.E.11.12.jpg")`
+`r infographiqR::render_figure("Figure App.E.11.12.", "../img/cinms_cr/App.E.11.12.jpg")`
 
 ###### Map: 2008 Copper
 
-`r onmsR::render_figure("Figure App.E.11.13.", "../img/cinms_cr/App.E.11.13.jpg")`
+`r infographiqR::render_figure("Figure App.E.11.13.", "../img/cinms_cr/App.E.11.13.jpg")`
 
 ###### Map: 2008 Silver
 
-`r onmsR::render_figure("Figure App.E.11.14.", "../img/cinms_cr/App.E.11.14.jpg")`
+`r infographiqR::render_figure("Figure App.E.11.14.", "../img/cinms_cr/App.E.11.14.jpg")`
 
 ###### Map: 2008 PBDEs
 
-`r onmsR::render_figure("Figure App.E.11.15.", "../img/cinms_cr/App.E.11.15.jpg")`
+`r infographiqR::render_figure("Figure App.E.11.15.", "../img/cinms_cr/App.E.11.15.jpg")`
 
 ###### Map: 2008 Pyrethroids
 
-`r onmsR::render_figure("Figure App.E.11.16.", "../img/cinms_cr/App.E.11.16.jpg")`
+`r infographiqR::render_figure("Figure App.E.11.16.", "../img/cinms_cr/App.E.11.16.jpg")`
 
 ###### Trends: Exposure levels by region
 
-`r onmsR::render_figure("Figure App.E.11.17.", "../img/cinms_cr/App.E.11.17.jpg")`
+`r infographiqR::render_figure("Figure App.E.11.17.", "../img/cinms_cr/App.E.11.17.jpg")`
 
 #### Noise
 
@@ -111,8 +111,8 @@ library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 
 ###### Listening Stations
 
-`r onmsR::render_figure("Figure App.C.2.8.", "../img/cinms_cr/App.C.2.8.jpg")`
+`r infographiqR::render_figure("Figure App.C.2.8.", "../img/cinms_cr/App.C.2.8.jpg")`
 
 ###### Trends: Sound Levels
 
-`r onmsR::render_figure("Figure App.C.4.13.", "../img/cinms_cr/App.C.4.13.CINMS_Noise.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.13.", "../img/cinms_cr/App.C.4.13.CINMS_Noise.jpg")`

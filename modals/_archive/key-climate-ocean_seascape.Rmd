@@ -14,7 +14,7 @@ library(magrittr)
 ```{r svg, child = '_key-climate-ocean.Rmd'}
 ```
 
-`r infographiqR::get_modal_info()`
+`r infographiqR::get_modal_info(info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_modal_links")`
 
 # Seascape CHECK, JENN THINKS WE SHOULD CUT
 
@@ -44,9 +44,9 @@ leaflet::leaflet(
     colorNumeric("Spectral", c(1,33), reverse=T), seq(1,33))
 ```
 
-`r onmsR::md_caption("Figure Ux.Ocean.Seascape.ERD.map.")`
+`r infographiqR::md_caption("Figure Ux.Ocean.Seascape.ERD.map.")`
 
-`r onmsR::md_caption("Figure Ux.Ocean.Seascape.ERD.map.", get_details = T)`
+`r infographiqR::md_caption("Figure Ux.Ocean.Seascape.ERD.map.", get_details = T)`
 
 
 

@@ -6,14 +6,14 @@ library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 
 #### Noise
 
-`r infographiqR::get_modal_info()`
+`r infographiqR::get_modal_info(info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_modal_links")`
 
 ##### {.tabset}
 
 ###### Ambient Levels
 
-`r onmsR::render_figure("Figure App.C.4.13.", "../img/cinms_cr/App.C.4.13.CINMS_Noise.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.13.", "../img/cinms_cr/App.C.4.13.CINMS_Noise.jpg")`
 
 ###### Monitoring Stations
 
-`r onmsR::render_figure("Figure App.C.2.8.", "../img/cinms_cr/App.C.2.8.jpg")`
+`r infographiqR::render_figure("Figure App.C.2.8.", "../img/cinms_cr/App.C.2.8.jpg")`

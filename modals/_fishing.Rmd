@@ -6,32 +6,32 @@ library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 
 ### Fishing {.tabset}
 
-`r infographiqR::get_modal_info()`
+`r infographiqR::get_modal_info(info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_modal_links")`
 
 ##### Landings {.tabset}
 
 ###### Commercial
 
-`r onmsR::render_figure("Figure App.C.4.4.", "../img/cinms_cr/App.C.4.4.Leeworthy_landings.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.4.", "../img/cinms_cr/App.C.4.4.Leeworthy_landings.jpg")`
 
 ###### Recreational
 
-`r onmsR::render_figure("Figure App.C.4.2b.", "../img/cinms_cr/App.C.4.2b.CPFV_landings.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.2b.", "../img/cinms_cr/App.C.4.2b.CPFV_landings.jpg")`
 
 ###### Deep-water
 
-`r onmsR::render_figure("Figure App.C.3.2.", "../img/cinms_cr/App.C.3.2_CINMSLandings.jpg")`
+`r infographiqR::render_figure("Figure App.C.3.2.", "../img/cinms_cr/App.C.3.2_CINMSLandings.jpg")`
 
 ##### Maps of Fishing  {.tabset}
 
 ###### Trawling
 
-`r onmsR::render_figure("Figure App.C.3.3.", "../img/cinms_cr/App.C.3.3_SWFSC_Trawls2007-2011_HBCoralsRS.jpg")`
+`r infographiqR::render_figure("Figure App.C.3.3.", "../img/cinms_cr/App.C.3.3_SWFSC_Trawls2007-2011_HBCoralsRS.jpg")`
 
 ###### Fixed Gear
 
-`r onmsR::render_figure("Figure App.C.3.4.", "../img/cinms_cr/App.C.3.4_SWFSC_Fixed2007-2011_Gorgonians.jpg")`
+`r infographiqR::render_figure("Figure App.C.3.4.", "../img/cinms_cr/App.C.3.4_SWFSC_Fixed2007-2011_Gorgonians.jpg")`
 
 ###### Trawl & Fixed Gear with MPAs 
 
-`r onmsR::render_figure("Figure App.C.3.5.", "../img/cinms_cr/App.C.3.5_SoCalDeepBotFishingMPAs_Etnoyer.jpg")`
+`r infographiqR::render_figure("Figure App.C.3.5.", "../img/cinms_cr/App.C.3.5_SoCalDeepBotFishingMPAs_Etnoyer.jpg")`

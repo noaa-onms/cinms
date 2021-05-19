@@ -4,7 +4,7 @@ library(infographiqR) # remotes::install_github("marinebon/infographiqR")
 library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ```
 
-`r infographiqR::get_modal_info()`
+`r infographiqR::get_modal_info(info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_modal_links")`
 
 # {.tabset}
 
@@ -16,29 +16,29 @@ library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 
 ##### Trends: Commercial Landings
 
-`r onmsR::render_figure("Figure App.C.4.4.", "../img/cinms_cr/App.C.4.4.Leeworthy_landings.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.4.", "../img/cinms_cr/App.C.4.4.Leeworthy_landings.jpg")`
 
 ##### Recreational 
 
-`r onmsR::render_figure("Figure App.C.4.2a.", "../img/cinms_cr/App.C.4.2a.CPFV_trips.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.2a.", "../img/cinms_cr/App.C.4.2a.CPFV_trips.jpg")`
 
-`r onmsR::render_figure("Figure App.C.4.2b.", "../img/cinms_cr/App.C.4.2b.CPFV_landings.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.2b.", "../img/cinms_cr/App.C.4.2b.CPFV_landings.jpg")`
 
 #### Visitors {.tabset}
 ##### Map: Location Recreational Activity
 
-`r onmsR::render_figure("Figure App.C.4.7.", "../img/cinms_cr/App.C.4.7_chen_recreation.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.7.", "../img/cinms_cr/App.C.4.7_chen_recreation.jpg")`
 
 ##### Trends: Visitors (CHIS)
 
-`r onmsR::render_figure("Figure App.C.1.4.", "../img/cinms_cr/App.C.1.4.Vistors_CINP.png")`
+`r infographiqR::render_figure("Figure App.C.1.4.", "../img/cinms_cr/App.C.1.4.Vistors_CINP.png")`
 
 #### Research
 ##### Trends: Active Permits
 
-`r onmsR::render_figure("Figure App.C.4.18a.", "../img/cinms_cr/App.C.4.18a.Projects_Permits.png")`
+`r infographiqR::render_figure("Figure App.C.4.18a.", "../img/cinms_cr/App.C.4.18a.Projects_Permits.png")`
 
-`r onmsR::render_figure("Figure App.C.4.18b.", "../img/cinms_cr/App.C.4.18b.CDFW_Permits.png")`
+`r infographiqR::render_figure("Figure App.C.4.18b.", "../img/cinms_cr/App.C.4.18b.CDFW_Permits.png")`
 
 ## Human Impacts
 
@@ -48,9 +48,9 @@ library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 
 ###### Listening Stations
 
-`r onmsR::render_figure("Figure App.C.2.8.", "../img/cinms_cr/App.C.2.8.jpg")`
+`r infographiqR::render_figure("Figure App.C.2.8.", "../img/cinms_cr/App.C.2.8.jpg")`
 
 ###### Trends: Sound Levels
 
-`r onmsR::render_figure("Figure App.C.4.13.", "../img/cinms_cr/App.C.4.13.CINMS_Noise.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.13.", "../img/cinms_cr/App.C.4.13.CINMS_Noise.jpg")`
 

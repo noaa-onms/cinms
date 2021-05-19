@@ -24,41 +24,41 @@ nms_rgns1 <- readr::read_csv(nms_rgns_csv) %>%
     rgn = region) # View(nms_rgns)
 ```
 
-`r infographiqR::get_modal_info()`
+`r infographiqR::get_modal_info(info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_modal_links")`
 
 ##  {.tabset} 
 
 ### MARINe: Map of Sites
 
-`r onmsR::get_figure_info("Figure App.F.12.2.")`
+`r infographiqR::get_figure_info("Figure App.F.12.2.")`
 
 ```{r map sites}
 onmsR::map_nms_sites("cinms", dir_gdrive)
 ```
 
-`r onmsR::md_caption("Figure Ux.Rocky.MARINe.map.")`
+`r infographiqR::md_caption("Figure Ux.Rocky.MARINe.map.")`
 
-`r onmsR::md_caption("Figure Ux.Rocky.MARINe.map.", get_details = T, fig_in_report = F)`
+`r infographiqR::md_caption("Figure Ux.Rocky.MARINe.map.", get_details = T, fig_in_report = F)`
 
 ### MARINe: Ochre Seastar (_Pisaster ochraceus_) {.active}
 
-`r onmsR::get_figure_info("Figure App.F.12.2.")`
+`r infographiqR::get_figure_info("Figure App.F.12.2.")`
 
 ```{r plot seastar}
 nms_spp_sscount_csv     <- file.path(dir_pfx, "sanctuary_species_sscount.csv")
 onmsR::plot_intertidal_nms(nms_spp_sscount_csv, "CINMS", "PISOCH", "Ochre Seastar", nms_rgns1, fld_val = "count", label_y = "Count (annual avg)")
 ```
 
-`r onmsR::md_caption("Figure Ux.Rocky.MARINe.Ochre-Stars.")`
+`r infographiqR::md_caption("Figure Ux.Rocky.MARINe.Ochre-Stars.")`
 
-`r onmsR::md_caption("Figure Ux.Rocky.MARINe.Ochre-Stars.", get_details = T, fig_in_report = F)`
+`r infographiqR::md_caption("Figure Ux.Rocky.MARINe.Ochre-Stars.", get_details = T, fig_in_report = F)`
 
 ### CHIS: Ochre Seastars across the sanctuary
 
-`r onmsR::render_figure("Figure App.F.12.2.", "../img/cinms_cr/App.F.12.2.Pochraceus_abundance.jpg")`
+`r infographiqR::render_figure("Figure App.F.12.2.", "../img/cinms_cr/App.F.12.2.Pochraceus_abundance.jpg")`
 
 ### CHIS: Ochre Seastars at Individual Islands
 
-`r onmsR::render_figure("Figure App.F.12.3.", "../img/cinms_cr/App.F.12.3.Pochraceus_size.jpg")`
+`r infographiqR::render_figure("Figure App.F.12.3.", "../img/cinms_cr/App.F.12.3.Pochraceus_size.jpg")`
 
-`r onmsR::get_figure_info("Figure App.F.12.3.")`
+`r infographiqR::get_figure_info("Figure App.F.12.3.")`

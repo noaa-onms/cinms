@@ -19,7 +19,7 @@ nms_rgns1 <- readr::read_csv(nms_rgns_csv) %>%
     rgn = region) # View(nms_rgns)
 ```
 
-`r infographiqR::get_modal_info()`
+`r infographiqR::get_modal_info(info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_modal_links")`
 
 ## {.tabset}
 
@@ -29,19 +29,19 @@ nms_rgns1 <- readr::read_csv(nms_rgns_csv) %>%
 onmsR::map_nms_sites("cinms", dir_gdrive)
 ```
 
-`r onmsR::md_caption("Interactive map of field sites across the Channel Islands")`
+`r infographiqR::md_caption("Interactive map of field sites across the Channel Islands")`
 
-`r onmsR::md_caption("Interactive map of field sites across the Channel Islands", get_details = T, fig_in_report = F)`
+`r infographiqR::md_caption("Interactive map of field sites across the Channel Islands", get_details = T, fig_in_report = F)`
 
 ### California Mussels (_Mytilus californianus_){.active}
-`r onmsR::get_figure_info("California Mussels")`
+`r infographiqR::get_figure_info("California Mussels")`
 
 ```{r}
 onmsR::plot_intertidal_nms(d_csv, "CINMS", "MYTCAL", "California Mussels", nms_rgns1)
 ```
-`r onmsR::md_caption("California Mussels")`
+`r infographiqR::md_caption("California Mussels")`
 
-`r onmsR::md_caption("California Mussels", get_details = T, fig_in_report = F)`
+`r infographiqR::md_caption("California Mussels", get_details = T, fig_in_report = F)`
 
 <!--
 ### California Mussels (_Mytilus californianus_), target = mytilus

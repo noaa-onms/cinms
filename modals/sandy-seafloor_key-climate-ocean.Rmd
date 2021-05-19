@@ -37,9 +37,9 @@ leaflet(
     colorNumeric("Spectral", c(0,32), reverse=T), seq(0,32))
 ```
 
-`r onmsR::md_caption("Figure Ux.Ocean.SST.ERD.map.")`
+`r infographiqR::md_caption("Figure Ux.Ocean.SST.ERD.map.")`
 
-`r onmsR::md_caption("Figure Ux.Ocean.SST.ERD.map.", get_details = T, fig_in_report = F)`
+`r infographiqR::md_caption("Figure Ux.Ocean.SST.ERD.map.", get_details = T, fig_in_report = F)`
 
 ### Trend: Satellite-based SST 
 
@@ -50,9 +50,9 @@ html_SST <- htmltools::a(basename(csv_SST), href=url_SST, target='_blank')
 onmsR::plot_metric_timeseries(csv_SST, "sst")
 ```
 
-`r onmsR::md_caption("Figure Ux.Ocean.SST.ERD.timeseries.")`
+`r infographiqR::md_caption("Figure Ux.Ocean.SST.ERD.timeseries.")`
 
-`r onmsR::md_caption("Figure Ux.Ocean.SST.ERD.timeseries.", get_details = T, fig_in_report = F)`
+`r infographiqR::md_caption("Figure Ux.Ocean.SST.ERD.timeseries.", get_details = T, fig_in_report = F)`
 
 Download timeseries data for sanctuary: `r html_SST`
 
@@ -65,9 +65,9 @@ html_SST <- htmltools::a(basename(csv_SST), href=url_SST, target='_blank')
 onmsR::plot_SST_anomaly(csv_SST)
 ```
 
-`r onmsR::md_caption("Figure Ux.Ocean.SST.Anomaly.timeseries.")`
+`r infographiqR::md_caption("Figure Ux.Ocean.SST.Anomaly.timeseries.")`
 
-`r onmsR::md_caption("Figure Ux.Ocean.SST.Anomaly.timeseries.", get_details = T, fig_in_report = F)`
+`r infographiqR::md_caption("Figure Ux.Ocean.SST.Anomaly.timeseries.", get_details = T, fig_in_report = F)`
 
 Download timeseries data for sanctuary: `r html_SST`
 
@@ -75,12 +75,12 @@ Download timeseries data for sanctuary: `r html_SST`
 
 ### Trend: Nitrate profile (PnB)
 
-`r onmsR::render_figure("Figure App.D.6.5.", "../img/cinms_cr/App.D.6.5.png")`
+`r infographiqR::render_figure("Figure App.D.6.5.", "../img/cinms_cr/App.D.6.5.png")`
 
 ### Trend: Phosphate profile (PnB)
 
-`r onmsR::render_figure("Figure App.D.6.6.", "../img/cinms_cr/App.D.6.6.png")`
+`r infographiqR::render_figure("Figure App.D.6.6.", "../img/cinms_cr/App.D.6.6.png")`
 
 ### Trend: Nitrate anomaly
 
-`r onmsR::render_figure("Figure App.D.6.7.", "../img/cinms_cr/App.D.6.7_SST and nitrate anomalies 2001-2015_Reed et al._2016.jpg")`
+`r infographiqR::render_figure("Figure App.D.6.7.", "../img/cinms_cr/App.D.6.7_SST and nitrate anomalies 2001-2015_Reed et al._2016.jpg")`

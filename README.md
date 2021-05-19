@@ -93,10 +93,10 @@ To use html directly set `redo_modals <- T`, but you will need to clear `.html` 
 
 ```r
 # render only changed Rmds
-nms4r::render_all_rmd()
+infographiqR::render_all_rmd()
 
 # render all Rmds
-render_all_rmd(render_all = T)
+infographiqR::render_all_rmd(render_all = T)
 ```
 
 ### testing
@@ -105,7 +105,7 @@ Because of [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) restri
 
 ```r
 # build website
-nms4r::render_all_rmd()
+infographiqR::render_all_rmd()
 
 # serve website locally
 servr::httd(".")

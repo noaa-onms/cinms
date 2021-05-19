@@ -14,9 +14,7 @@
   link_svg({
     svg: "`r params$svg`",
     csv: "`r params$csv`",
-    csv_rows: "`r params$csv_rows`",   
-    svg_id: 'svg',
-    toc_id: 'toc',
+    svg_filter: "`r params$svg_filter`",   
     toc_style: 'list',
     text_toggle: true});
 </script>

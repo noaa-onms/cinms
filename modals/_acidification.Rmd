@@ -12,9 +12,9 @@ library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 
 #### Acidification
 
-`r infographiqR::get_modal_info()`
+`r infographiqR::get_modal_info(info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_modal_links")`
 
 ##### Aragonite saturation
 
-`r onmsR::render_figure("Figure App.E.10.29.", "../img/cinms_cr/App.E.10.22.jpg")`
+`r infographiqR::render_figure("Figure App.E.10.29.", "../img/cinms_cr/App.E.10.22.jpg")`
 

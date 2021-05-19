@@ -4,7 +4,7 @@ library(infographiqR) # remotes::install_github("marinebon/infographiqR")
 library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ```
 
-`r infographiqR::get_modal_info()`
+`r infographiqR::get_modal_info(info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_modal_links")`
 
 # {.tabset}
 
@@ -16,33 +16,33 @@ library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ##### Commercial {.tabset}
 ###### Trends: Commercial Landings
 
-`r onmsR::render_figure("Figure App.C.4.4.", "../img/cinms_cr/App.C.4.4.Leeworthy_landings.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.4.", "../img/cinms_cr/App.C.4.4.Leeworthy_landings.jpg")`
 
 ##### Recreational 
 
-`r onmsR::render_figure("Figure App.C.4.2a.", "../img/cinms_cr/App.C.4.2a.CPFV_trips.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.2a.", "../img/cinms_cr/App.C.4.2a.CPFV_trips.jpg")`
 
-`r onmsR::render_figure("Figure App.C.4.2b.", "../img/cinms_cr/App.C.4.2b.CPFV_landings.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.2b.", "../img/cinms_cr/App.C.4.2b.CPFV_landings.jpg")`
 
 #### Oil & Gas {.tabset}
 
 ##### Trends: Offshore Oil and Gas Activity 
 
-`r onmsR::render_figure("Figure App.C.4.17.", "../img/cinms_cr/App.C.4.17.Oil_gas_activity_CCIEA.png")`
+`r infographiqR::render_figure("Figure App.C.4.17.", "../img/cinms_cr/App.C.4.17.Oil_gas_activity_CCIEA.png")`
 
 ##### Oil & Gas Maps {.tabset}
 
 ###### Offshore Oil Platforms
 
-`r onmsR::render_figure("Figure App.C.2.1.", "../img/cinms_cr/App.C.2.1 Oil platforms_Mari Cajandig.jpg")`
+`r infographiqR::render_figure("Figure App.C.2.1.", "../img/cinms_cr/App.C.2.1 Oil platforms_Mari Cajandig.jpg")`
 
 ###### 2015 Refugio Oil Spill
 
-`r onmsR::render_figure("Figure App.C.2.3.", "../img/cinms_cr/App.C.2.3 Refugio Spill_Mari Cajandig.jpg")`
+`r infographiqR::render_figure("Figure App.C.2.3.", "../img/cinms_cr/App.C.2.3 Refugio Spill_Mari Cajandig.jpg")`
 
-`r onmsR::render_figure("Figure App.C.2.4.", "../img/cinms_cr/App.C.2.4.jpg")`
+`r infographiqR::render_figure("Figure App.C.2.4.", "../img/cinms_cr/App.C.2.4.jpg")`
 
-`r onmsR::render_figure("Figure App.C.2.5.", "../img/cinms_cr/App.C.2.5.jpg")`
+`r infographiqR::render_figure("Figure App.C.2.5.", "../img/cinms_cr/App.C.2.5.jpg")`
 
 #### Vessel Traffic
 
@@ -50,18 +50,18 @@ library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 
 ###### Map: Vessel Traffic Patterns
 
-`r onmsR::render_figure("Figure App.C.4.12.", "../img/cinms_cr/App.C.4.12.MSWGSS_2016.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.12.", "../img/cinms_cr/App.C.4.12.MSWGSS_2016.jpg")`
 
 ###### Map: Vessel Groundings
 
-`r onmsR::render_figure("Figure App.C.3.1.", "../img/cinms_cr/App.C.3.1_VesselGroundingsMap.jpg")`
+`r infographiqR::render_figure("Figure App.C.3.1.", "../img/cinms_cr/App.C.3.1_VesselGroundingsMap.jpg")`
 
 #### Research
 ###### Trends: Active Permits
 
-`r onmsR::render_figure("Figure App.C.4.18a.", "../img/cinms_cr/App.C.4.18a.Projects_Permits.png")`
+`r infographiqR::render_figure("Figure App.C.4.18a.", "../img/cinms_cr/App.C.4.18a.Projects_Permits.png")`
 
-`r onmsR::render_figure("Figure App.C.4.18b.", "../img/cinms_cr/App.C.4.18b.CDFW_Permits.png")`
+`r infographiqR::render_figure("Figure App.C.4.18b.", "../img/cinms_cr/App.C.4.18b.CDFW_Permits.png")`
 
 ## Human Impacts
 
@@ -71,23 +71,23 @@ library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 
 ###### Trends: Arsenic
 
-`r onmsR::render_figure("Figure App.E.11.2.", "../img/cinms_cr/App.E.11.2.jpg")`
+`r infographiqR::render_figure("Figure App.E.11.2.", "../img/cinms_cr/App.E.11.2.jpg")`
 
 ###### Trends: Iron
 
-`r onmsR::render_figure("Figure App.E.11.3.", "../img/cinms_cr/App.E.11.3.jpg")`
+`r infographiqR::render_figure("Figure App.E.11.3.", "../img/cinms_cr/App.E.11.3.jpg")`
 
 ###### Trends: Silver
 
-`r onmsR::render_figure("Figure App.E.11.4.", "../img/cinms_cr/App.E.11.4.jpg")`
+`r infographiqR::render_figure("Figure App.E.11.4.", "../img/cinms_cr/App.E.11.4.jpg")`
 
 ###### Trends: Heavy metals
 
-`r onmsR::render_figure("Figure App.E.11.5.", "../img/cinms_cr/App.E.11.5.jpg")`
+`r infographiqR::render_figure("Figure App.E.11.5.", "../img/cinms_cr/App.E.11.5.jpg")`
 
 ###### Trends: PAHs
 
-`r onmsR::render_figure("Figure App.E.11.6.", "../img/cinms_cr/App.E.11.6.jpg")`
+`r infographiqR::render_figure("Figure App.E.11.6.", "../img/cinms_cr/App.E.11.6.jpg")`
 
 #### Marine Debris
 
@@ -95,11 +95,11 @@ library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 
 ###### Map: debris in CalCOFI trawls (historical)
 
-`r onmsR::render_figure("Figure App.C.4.15.", "../img/cinms_cr/App.C.4.15.Gilfillan_graph.png")`
+`r infographiqR::render_figure("Figure App.C.4.15.", "../img/cinms_cr/App.C.4.15.Gilfillan_graph.png")`
 
 ###### Trends: debris in CalCOFI trawls (historical)
 
-`r onmsR::render_figure("Figure App.C.4.16.", "../img/cinms_cr/App.C.4.16.Gilfillan_map.png")`
+`r infographiqR::render_figure("Figure App.C.4.16.", "../img/cinms_cr/App.C.4.16.Gilfillan_map.png")`
 
 #### Noise
 
@@ -107,38 +107,38 @@ library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 
 ###### Listening Stations
 
-`r onmsR::render_figure("Figure App.C.2.8.", "../img/cinms_cr/App.C.2.8.jpg")`
+`r infographiqR::render_figure("Figure App.C.2.8.", "../img/cinms_cr/App.C.2.8.jpg")`
 
 ###### Trends: Sound Levels
 
-`r onmsR::render_figure("Figure App.C.4.13.", "../img/cinms_cr/App.C.4.13.CINMS_Noise.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.13.", "../img/cinms_cr/App.C.4.13.CINMS_Noise.jpg")`
 
 #### Seabird disturbance
 
 ##### Comparison: By Region
 
-`r onmsR::render_figure("Figure App.C.4.9.", "../img/cinms_cr/App.C.4.9.Seabird_disturbance_rates_Robinette.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.9.", "../img/cinms_cr/App.C.4.9.Seabird_disturbance_rates_Robinette.jpg")`
 
 #### Trend: oiled beachcast seabirds
 
-`r onmsR::render_figure("BeachCombers_seabird_deposition_oiling", "../img/cinms_cr/BeachCombers_seabird_deposition_oiling.png")`
+`r infographiqR::render_figure("BeachCombers_seabird_deposition_oiling", "../img/cinms_cr/BeachCombers_seabird_deposition_oiling.png")`
 
 #### Whale entanglement {.tabset}
 
 ##### Trends: By Species
 
-`r onmsR::render_figure("Figure App.C.4.10b.", "../img/cinms_cr/App.C.4.10b.Whale_entanglements.png")`
+`r infographiqR::render_figure("Figure App.C.4.10b.", "../img/cinms_cr/App.C.4.10b.Whale_entanglements.png")`
 
 ##### Map: Whale Overlap with Fishing {.tabset}
 
 ###### Blue
 
-`r onmsR::render_figure("Figure App.C.4.11a.", "../img/cinms_cr/App.C.4.11a.blue_risk.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.11a.", "../img/cinms_cr/App.C.4.11a.blue_risk.jpg")`
 
 ###### Fin
 
-`r onmsR::render_figure("Figure App.C.4.11b.", "../img/cinms_cr/App.C.4.11b.fin_risk.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.11b.", "../img/cinms_cr/App.C.4.11b.fin_risk.jpg")`
 
 ###### Humpback
 
-`r onmsR::render_figure("Figure App.C.4.11c.", "../img/cinms_cr/App.C.4.11c.humpback_risk.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.11c.", "../img/cinms_cr/App.C.4.11c.humpback_risk.jpg")`

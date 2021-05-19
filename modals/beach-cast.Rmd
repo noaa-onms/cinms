@@ -8,11 +8,11 @@ library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 
 ### Trend: beachcast seabirds
 
-`r onmsR::render_figure("BeachCombers_CCIEA_Strandings_South", "../img/cinms_cr/BeachCombers_CCIEA_Strandings_South.png")`
+`r infographiqR::render_figure("BeachCombers_CCIEA_Strandings_South", "../img/cinms_cr/BeachCombers_CCIEA_Strandings_South.png")`
 
 ### Trend: oiled beachcast seabirds
 
-`r onmsR::render_figure("BeachCombers_seabird_deposition_oiling", "../img/cinms_cr/BeachCombers_seabird_deposition_oiling.png")`
+`r infographiqR::render_figure("BeachCombers_seabird_deposition_oiling", "../img/cinms_cr/BeachCombers_seabird_deposition_oiling.png")`
 
 ### Marine Mammals
 
