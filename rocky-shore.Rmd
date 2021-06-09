@@ -8,7 +8,9 @@ params:
 
 ```{r setup, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-library(infographiqR) # remotes::install_github("marinebon/infographiqR")
+library(infographiqR) 
+library(magrittr)
+# remotes::install_github("marinebon/infographiqR")
 ```
 
 `r infographiqR::get_modal_info(info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_modal_links")`
