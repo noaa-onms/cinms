@@ -16,5 +16,5 @@
     csv: "`r params$csv`",
     svg_filter: "`r params$svg_filter`",   
     toc_style: 'list',
-    text_toggle: 'text_toggle_off'});
+    text_toggle: 'toggle_off'});
 </script>
