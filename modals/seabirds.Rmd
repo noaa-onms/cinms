@@ -1,20 +1,21 @@
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-library(nms4r)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ```
 
-`r nms4r::get_modal_info()`
+`r infographiqR::get_modal_info(info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_modal_links")`
 
 ## {.tabset}
 
 ### Trends in seabird abundance
 
-`r nms4r::render_figure("Figure App.F.13.22.", "../img/cinms_cr/App.F.13.22.jpg")`
+`r infographiqR::render_figure("Figure App.F.13.22.", "../img/cinms_cr/App.F.13.22.jpg")`
 
 ### Seabirds - species richness map
 
-`r nms4r::render_figure("Figure App.F.15.7.", "../img/cinms_cr/App.F.15.7.Seabird_anomoly_map.jpg")`
+`r infographiqR::render_figure("Figure App.F.15.7.", "../img/cinms_cr/App.F.15.7.Seabird_anomoly_map.jpg")`
 
 ### Seabirds - species richness trends
 
-`r nms4r::render_figure("Figure App.F.15.8.", "../img/cinms_cr/App.F.15.8.Seabird_richness.jpg")`
+`r infographiqR::render_figure("Figure App.F.15.8.", "../img/cinms_cr/App.F.15.8.Seabird_richness.jpg")`

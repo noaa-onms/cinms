@@ -1,29 +1,30 @@
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-library(nms4r)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ```
 
-`r nms4r::get_modal_info()`
+`r infographiqR::get_modal_info(info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_modal_links")`
 
 ## {.tabset}
 
 ### Density of demersal fishes (MARE data)
 
-`r nms4r::render_figure("Figure App.F.13.18.", "../img/cinms_cr/App.F.13.18.jpg")`
+`r infographiqR::render_figure("Figure App.F.13.18.", "../img/cinms_cr/App.F.13.18.jpg")`
 
 
-`r nms4r::render_figure("Figure App.F.13.19.", "../img/cinms_cr/App.F.13.19.jpg")`
+`r infographiqR::render_figure("Figure App.F.13.19.", "../img/cinms_cr/App.F.13.19.jpg")`
 
 ### Demersal fishes recent trends (NMFS hook & line survey data)
 
-`r nms4r::render_figure("Table App.F.13.2.", "../img/cinms_cr/tbl.App.F.13.2.jpg")`
+`r infographiqR::render_figure("Table App.F.13.2.", "../img/cinms_cr/tbl.App.F.13.2.jpg")`
 
 
-`r nms4r::render_figure("Figure App.F.13.20.", "../img/cinms_cr/App.F.13.20.jpg")`
+`r infographiqR::render_figure("Figure App.F.13.20.", "../img/cinms_cr/App.F.13.20.jpg")`
 
 ### Demersal fishes recent trends (NMFS trawl survey data)
 
-`r nms4r::render_figure("Table App.F.13.3.", "../img/cinms_cr/tbl.App.F.13.3.jpg")`
+`r infographiqR::render_figure("Table App.F.13.3.", "../img/cinms_cr/tbl.App.F.13.3.jpg")`
 
 
-`r nms4r::render_figure("Figure App.F.13.21.", "../img/cinms_cr/App.F.13.21.jpg")`
+`r infographiqR::render_figure("Figure App.F.13.21.", "../img/cinms_cr/App.F.13.21.jpg")`

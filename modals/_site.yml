@@ -8,3 +8,5 @@ output:
     mathjax: null
     css: [_modal_styles.css, modal_libs/font-awesome-5.3.1/css/all.min.css, modal_libs/font-awesome-5.3.1/css/v4-shims.min.css]
     anchor_sections: FALSE
+    includes:
+      in_header: ../libs/Ganalytics.html 

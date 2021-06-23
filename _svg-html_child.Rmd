@@ -1,29 +1,20 @@
-<script src="libs/d3.v5.min.js"></script>
-<script src="libs/infographiq.js"></script>
-<link href="libs/bootstrap-toggle.min.css" rel="stylesheet">
-<script src="libs/bootstrap-toggle.min.js"></script>
-
-
-<div class = "col-md-9">
-  <div id = "svg"></div>
+<div class="row">
+<div class="col-md-9">
+<div id = "svg"> </div>
+</div>
+<div class="col-md-3">
+<div id="toc"></div>
+</div>
 </div>
 
-<div class = "col-md-3">
-
-  Text: <input id="toggle-text" type="checkbox" data-toggle="toggle" data-size="mini">
-  <div id="toggle-text-event"></div>
-  <ul id = "svg_list"></ul>
-</div>
-
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://marinebon.github.io/infographiqJS/libs/infographiq_latest/infographiq.js"></script>
+<link rel="stylesheet" type="text/css" href="https://marinebon.github.io/infographiqJS/libs/infographiq_latest/infographiq.css" />
 <script>
-link_svg(svg = "`r params$svg`", csv = "`r params$csv`", debug = true);
-</script>
-
-<script>
-$(function() {
-$('#toggle-text').change(function() {
-  display = this.checked ? "inline" : "none";
-  d3.select("#text").attr("display", display);
-})
-})
+  link_svg({
+    svg: "`r params$svg`",
+    csv: "`r params$csv`",
+    svg_filter: "`r params$svg_filter`",   
+    toc_style: 'list',
+    text_toggle: 'toggle_off'});
 </script>

@@ -1,15 +1,16 @@
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-library(nms4r)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ```
 
-`r nms4r::get_modal_info()`
+`r infographiqR::get_modal_info(info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_modal_links")`
 
 ## {.tabset}
 
 ### MARE: Density In/Out MPAs
 
-`r nms4r::render_figure("Figure App.F.12.16.", "../img/cinms_cr/App.F.12.16.sheephead_MARE.jpg")`
+`r infographiqR::render_figure("Figure App.F.12.16.", "../img/cinms_cr/App.F.12.16.sheephead_MARE.jpg")`
 
 
  

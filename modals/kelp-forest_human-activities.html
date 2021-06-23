@@ -11,7 +11,7 @@
 
 
 
-<title>kelp-forest_human-activities.utf8</title>
+<title>kelp-forest_human-activities.knit</title>
 
 <script src="modal_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,9 +19,29 @@
 <script src="modal_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="modal_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="modal_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="modal_libs/navigation-1.1/tabsets.js"></script>
 <link href="modal_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="modal_libs/highlightjs-9.12.0/highlight.js"></script>
+<!--html_preserve-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JB0WCCY7ZR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JB0WCCY7ZR');
+</script>
+<!--/html_preserve-->
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -33,11 +53,6 @@
     </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -50,32 +65,7 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
 
 <link rel="stylesheet" href="_modal_styles.css" type="text/css" />
 <link rel="stylesheet" href="modal_libs/font-awesome-5.3.1/css/all.min.css" type="text/css" />
@@ -88,10 +78,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -108,6 +94,9 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
@@ -120,7 +109,6 @@ summary {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -184,7 +172,7 @@ summary {
 
 
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -209,10 +197,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://wildlife.ca.gov/Fishing/Commercial/Landings" target="_blank"><i class="fa fa-clipboard-list"></i> CDFW Commercial Fishery Landings</a>
+<a href="https://wildlife.ca.gov/Fishing/Commercial/Landings" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> CDFW Commercial Fishery Landings</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="https://sanctuaries.noaa.gov/science/conservation/cinms_fishing_report.html" target="_blank"><i class="fa fa-database"></i> Leeworthy et al. 2014</a>
+<a href="https://sanctuaries.noaa.gov/science/conservation/cinms_fishing_report.html" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Leeworthy et al. 2014</a>
 </div>
 </div>
 </div>
@@ -229,10 +217,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://wildlife.ca.gov/Conservation/Marine/MFSU" target="_blank"><i class="fa fa-clipboard-list"></i> CDFW Marine Fisheries Statistical Unit</a>
+<a href="https://wildlife.ca.gov/Conservation/Marine/MFSU" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> CDFW Marine Fisheries Statistical Unit</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="https://caseagrant.ucsd.edu/sites/default/files/SCMPA-29-CPFV-Final-Report.pdf" target="_blank"><i class="fa fa-database"></i> Chen et al. 2015</a>
+<a href="https://caseagrant.ucsd.edu/sites/default/files/SCMPA-29-CPFV-Final-Report.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Chen et al. 2015</a>
 </div>
 </div>
 </div>
@@ -246,10 +234,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://wildlife.ca.gov/Conservation/Marine/MFSU" target="_blank"><i class="fa fa-clipboard-list"></i> CDFW Marine Fisheries Statistical Unit</a>
+<a href="https://wildlife.ca.gov/Conservation/Marine/MFSU" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> CDFW Marine Fisheries Statistical Unit</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="https://caseagrant.ucsd.edu/sites/default/files/SCMPA-29-CPFV-Final-Report.pdf" target="_blank"><i class="fa fa-database"></i> Chen et al. 2015</a>
+<a href="https://caseagrant.ucsd.edu/sites/default/files/SCMPA-29-CPFV-Final-Report.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Chen et al. 2015</a>
 </div>
 </div>
 </div>
@@ -269,7 +257,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:right; display:table-cell;">
-<a href="https://caseagrant.ucsd.edu/sites/default/files/SCMPA-29-CoastalRecreation-Final-Report_0.pdf" target="_blank"><i class="fa fa-database"></i> Data</a>
+<a href="https://caseagrant.ucsd.edu/sites/default/files/SCMPA-29-CoastalRecreation-Final-Report_0.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Data</a>
 </div>
 </div>
 </div>
@@ -316,7 +304,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100506" target="_blank"><i class="fa fa-clipboard-list"></i> Monitoring Program</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100506" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Monitoring Program</a>
 </div>
 </div>
 </div>
@@ -333,10 +321,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100426" target="_blank"><i class="fa fa-clipboard-list"></i> Shipping Noise Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100426" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Shipping Noise Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="http://dx.doi.org/10.1121/1.4740225" target="_blank"><i class="fa fa-database"></i> McKenna et al. 2012</a>
+<a href="http://dx.doi.org/10.1121/1.4740225" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> McKenna et al. 2012</a>
 </div>
 </div>
 </div>
@@ -383,7 +371,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>

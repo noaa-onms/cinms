@@ -5,26 +5,27 @@ editor_options:
 ---
 ```{r setup, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-library(nms4r)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ```
 
 #### Whale entanglement
 
-`r nms4r::get_modal_info()`
+`r infographiqR::get_modal_info(info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_modal_links")`
 
-`r nms4r::render_figure("Figure App.C.4.10b.", "../img/cinms_cr/App.C.4.10b.Whale_entanglements.png")`
+`r infographiqR::render_figure("Figure App.C.4.10b.", "../img/cinms_cr/App.C.4.10b.Whale_entanglements.png")`
 
 ##### Overlap with Fishing {.tabset}
 
 ###### Blue
 
-`r nms4r::render_figure("Figure App.C.4.11a.", "../img/cinms_cr/App.C.4.11a.blue_risk.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.11a.", "../img/cinms_cr/App.C.4.11a.blue_risk.jpg")`
 
 ###### Fin
 
-`r nms4r::render_figure("Figure App.C.4.11b.", "../img/cinms_cr/App.C.4.11b.fin_risk.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.11b.", "../img/cinms_cr/App.C.4.11b.fin_risk.jpg")`
 
 ###### Humpback
 
-`r nms4r::render_figure("Figure App.C.4.11c.", "../img/cinms_cr/App.C.4.11c.humpback_risk.jpg")`
+`r infographiqR::render_figure("Figure App.C.4.11c.", "../img/cinms_cr/App.C.4.11c.humpback_risk.jpg")`
 

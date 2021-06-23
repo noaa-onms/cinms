@@ -28,4 +28,5 @@ output:
     css: libs/styles.css
     mathjax: null
     anchor_sections: FALSE
-    
+    includes:
+       in_header: libs/Ganalytics.html    

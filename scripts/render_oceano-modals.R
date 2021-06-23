@@ -1,5 +1,6 @@
-library(nms4r)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 
 print('Rendering oceano_Rmds')
-nms4r::render_all_rmd(nms = "cinms", interactive_only = T)
+infographiqR::render_all_rmd(nms = "cinms", interactive_only = T)
 print ('Finished rendering oceano_Rmds')

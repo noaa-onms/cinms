@@ -11,7 +11,7 @@
 
 
 
-<title>_contaminants.utf8</title>
+<title>_contaminants.knit</title>
 
 <script src="modal_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,11 +19,31 @@
 <script src="modal_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="modal_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="modal_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="modal_libs/navigation-1.1/tabsets.js"></script>
 <link href="modal_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="modal_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="modal_libs/font-awesome-5.13.0/css/all.min.css" rel="stylesheet" />
 <link href="modal_libs/font-awesome-5.13.0/css/v4-shims.min.css" rel="stylesheet" />
+<!--html_preserve-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JB0WCCY7ZR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JB0WCCY7ZR');
+</script>
+<!--/html_preserve-->
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -35,11 +55,6 @@
     </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -52,32 +67,7 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
 
 <link rel="stylesheet" href="_modal_styles.css" type="text/css" />
 <link rel="stylesheet" href="modal_libs/font-awesome-5.3.1/css/all.min.css" type="text/css" />
@@ -90,10 +80,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -110,6 +96,9 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
@@ -122,7 +111,6 @@ summary {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -186,7 +174,7 @@ summary {
 
 
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -199,10 +187,10 @@ summary {
 <div style="display: flex">
 <div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;">
 <a href="https://sanctuaries.noaa.gov/science/sentinel-site-program/channel-islands/water-quality.html" target="_blank">
-<i class="fa fa-info-circle"></i>
+<i class="fa fa-info-circle" role="presentation" aria-label="info-circle icon"></i>
 </a>
 <a href="https://sanctuarysimon.org/dbtools/photo-library/id/750" target="_blank">
-<i class="fa fa-camera"></i>
+<i class="fa fa-camera" role="presentation" aria-label="camera icon"></i>
 </a>
 </div>
 <div style="margin: 10px; font-style: italic; flex: 20; ">Human-derived pollutants, including pesticides, hydrocarbons and heavy metals, can affect organisms across all levels of food webs, from <span aria-describedby="tooltip6" tabindex="0" style="border-bottom: 1px dashed #000000; font-size:100%" id="tooltip6">plankton</span> to whales.  Contaminants can interfere with fishing and recreational activities due to beach closures and swimming advisories.</div>
@@ -214,7 +202,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100429" target="_blank"><i class="fa fa-clipboard-list"></i> Plumes and Blooms Monitoring Program</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100429" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Plumes and Blooms Monitoring Program</a>
 </div>
 </div>
 </div>
@@ -231,7 +219,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:right; display:table-cell;">
-<a href="https://doi.org/10.1002/2016GL070023" target="_blank"><i class="fa fa-database"></i> McCabe et al. 2016</a>
+<a href="https://doi.org/10.1002/2016GL070023" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> McCabe et al. 2016</a>
 </div>
 </div>
 </div>
@@ -248,10 +236,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list"></i> SCCWRP Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> SCCWRP Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="https://www.sccwrp.org/about/research-areas/data-portal/" target="_blank"><i class="fa fa-database"></i> SCCWRP data portal</a>
+<a href="https://www.sccwrp.org/about/research-areas/data-portal/" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> SCCWRP data portal</a>
 </div>
 </div>
 </div>
@@ -268,10 +256,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list"></i> SCCWRP Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> SCCWRP Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="https://www.sccwrp.org/about/research-areas/data-portal/" target="_blank"><i class="fa fa-database"></i> SCCWRP data portal</a>
+<a href="https://www.sccwrp.org/about/research-areas/data-portal/" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> SCCWRP data portal</a>
 </div>
 </div>
 </div>
@@ -288,10 +276,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list"></i> SCCWRP Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> SCCWRP Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="https://www.sccwrp.org/about/research-areas/data-portal/" target="_blank"><i class="fa fa-database"></i> SCCWRP data portal</a>
+<a href="https://www.sccwrp.org/about/research-areas/data-portal/" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> SCCWRP data portal</a>
 </div>
 </div>
 </div>
@@ -308,10 +296,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list"></i> SCCWRP Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> SCCWRP Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database"></i> Schiff et al. 2011</a>
+<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Schiff et al. 2011</a>
 </div>
 </div>
 </div>
@@ -328,10 +316,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list"></i> SCCWRP Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> SCCWRP Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database"></i> Schiff et al. 2011</a>
+<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Schiff et al. 2011</a>
 </div>
 </div>
 </div>
@@ -348,10 +336,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list"></i> SCCWRP Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> SCCWRP Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database"></i> Schiff et al. 2011</a>
+<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Schiff et al. 2011</a>
 </div>
 </div>
 </div>
@@ -368,10 +356,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list"></i> SCCWRP Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> SCCWRP Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database"></i> Schiff et al. 2011</a>
+<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Schiff et al. 2011</a>
 </div>
 </div>
 </div>
@@ -388,10 +376,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list"></i> SCCWRP Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> SCCWRP Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database"></i> Schiff et al. 2011</a>
+<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Schiff et al. 2011</a>
 </div>
 </div>
 </div>
@@ -408,10 +396,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list"></i> SCCWRP Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> SCCWRP Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database"></i> Schiff et al. 2011</a>
+<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Schiff et al. 2011</a>
 </div>
 </div>
 </div>
@@ -428,7 +416,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list"></i> Mussel Watch Program</a>
+<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Mussel Watch Program</a>
 </div>
 </div>
 </div>
@@ -445,7 +433,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list"></i> Mussel Watch Program</a>
+<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Mussel Watch Program</a>
 </div>
 </div>
 </div>
@@ -462,7 +450,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list"></i> Mussel Watch Program</a>
+<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Mussel Watch Program</a>
 </div>
 </div>
 </div>
@@ -479,7 +467,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list"></i> Mussel Watch Program</a>
+<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Mussel Watch Program</a>
 </div>
 </div>
 </div>
@@ -496,7 +484,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list"></i> Mussel Watch Program</a>
+<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Mussel Watch Program</a>
 </div>
 </div>
 </div>
@@ -551,7 +539,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>

@@ -1,5 +1,6 @@
 
 ```{r, echo=F, message=F, warning=F, error=F}
-library(nms4r)
-nms4r::map_nms_sites("cinms")
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
+onmsR::map_nms_sites("cinms")
 ```

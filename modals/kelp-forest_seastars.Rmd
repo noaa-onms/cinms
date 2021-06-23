@@ -1,23 +1,24 @@
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-library(nms4r)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ```
-`r nms4r::get_modal_info()`
+`r infographiqR::get_modal_info(info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_modal_links")`
 
 ##  {.tabset} 
 
 ### PISCO: Sea Stars on Islands
 
-`r nms4r::render_figure("Figure App.F.12.7.", "../img/cinms_cr/App.F.12.7.seastars_PISCO.jpg")`
+`r infographiqR::render_figure("Figure App.F.12.7.", "../img/cinms_cr/App.F.12.7.seastars_PISCO.jpg")`
 
 ### CHIS: Giant-spined star
 
-`r nms4r::render_figure("Figure App.F.12.8a.", "../img/cinms_cr/App.F.12.8a.Pisaster_giganteus_CINP.jpg")`
+`r infographiqR::render_figure("Figure App.F.12.8a.", "../img/cinms_cr/App.F.12.8a.Pisaster_giganteus_CINP.jpg")`
 
 ### LTER: Sea stars
 
-`r nms4r::render_figure("Figure App.F.12.9.", "../img/cinms_cr/App.F.12.9.seastar_LTER.jpg")`
+`r infographiqR::render_figure("Figure App.F.12.9.", "../img/cinms_cr/App.F.12.9.seastar_LTER.jpg")`
 
 ### CHIS: Sunflower star
 
-`r nms4r::render_figure("Figure App.F.12.8b.", "../img/cinms_cr/App.F.12.8b.Pycnopodia_helianthoides_CINP.jpg")`
+`r infographiqR::render_figure("Figure App.F.12.8b.", "../img/cinms_cr/App.F.12.8b.Pycnopodia_helianthoides_CINP.jpg")`

@@ -1,16 +1,17 @@
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-library(nms4r)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ```
 
-`r nms4r::get_modal_info()`
+`r infographiqR::get_modal_info(info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_modal_links")`
 
 ## {.tabset}
 
 ### Small plankton volume
 
-`r nms4r::render_figure("Figure App.F.12.18.", "../img/cinms_cr/App.F.12.18_CalCOFI_SPV.jpg")`
+`r infographiqR::render_figure("Figure App.F.12.18.", "../img/cinms_cr/App.F.12.18_CalCOFI_SPV.jpg")`
 
 ### Map of sampling stations
 
-`r nms4r::render_figure("Figure App.F.12.17.", "../img/cinms_cr/App.F.12.17.png")`
+`r infographiqR::render_figure("Figure App.F.12.17.", "../img/cinms_cr/App.F.12.17.png")`

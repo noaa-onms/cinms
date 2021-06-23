@@ -1,27 +1,28 @@
 ```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-library(nms4r)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ```
 
-`r nms4r::get_modal_info()`
+`r infographiqR::get_modal_info(info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_modal_links")`
 
 ## {.tabset}
 
 ### Map of eelgrass beds
 
-`r nms4r::render_figure("Figure App.E.10.22.", "../img/cinms_cr/App.E.10.22.jpg")`
+`r infographiqR::render_figure("Figure App.E.10.22.", "../img/cinms_cr/App.E.10.22.jpg")`
 
 ### Eelgrass extent Anacapa Island
 
-`r nms4r::render_figure("Figure App.E.10.24.", "../img/cinms_cr/App.E.10.24.jpg")`
+`r infographiqR::render_figure("Figure App.E.10.24.", "../img/cinms_cr/App.E.10.24.jpg")`
 
 ### Eelgrass extent Santa Cruz Island
 
-`r nms4r::render_figure("Figure App.E.10.25.", "../img/cinms_cr/App.E.10.25.jpg")`
+`r infographiqR::render_figure("Figure App.E.10.25.", "../img/cinms_cr/App.E.10.25.jpg")`
 
 ### Eelgrass cover Frenchy's Cove
 
-`r nms4r::render_figure("Figure S.Hab.10.3.", "../img/cinms_cr/S.Hab.10.3.jpg")`
+`r infographiqR::render_figure("Figure S.Hab.10.3.", "../img/cinms_cr/S.Hab.10.3.jpg")`
 
 
 

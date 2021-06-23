@@ -7,10 +7,12 @@ editor_options:
 ```{r setup, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 library(magrittr)
-library(nms4r)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 
 # The following is used by the plot_intertidal_nms function called later
-dir_gdrive <- "/Volumes/GoogleDrive/Shared drives/NMS/data"
+# dir_gdrive <- "G:/Shared drives/NMS/data"
+ dir_gdrive <- "/Volumes/GoogleDrive/Shared drives/NMS/data"
 dir_pfx     <- file.path(dir_gdrive, "github_info-intertidal_data")
 d_csv       <- file.path(dir_pfx, "sanctuary_species_percentcover.csv")
 nms_rgns_csv    <- file.path(dir_pfx, "MARINe_graphs.xlsx - sites in regions.csv")
@@ -22,41 +24,41 @@ nms_rgns1 <- readr::read_csv(nms_rgns_csv) %>%
     rgn = region) # View(nms_rgns)
 ```
 
-`r nms4r::get_modal_info()`
+`r infographiqR::get_modal_info(info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_modal_links")`
 
 ##  {.tabset} 
 
 ### MARINe: Map of Sites
 
-`r nms4r::get_figure_info("Figure App.F.12.2.")`
+`r infographiqR::get_figure_info("Figure App.F.12.2.")`
 
 ```{r map sites}
-nms4r::map_nms_sites("cinms")
+onmsR::map_nms_sites("cinms", dir_gdrive)
 ```
 
-`r nms4r::md_caption("Figure Ux.Rocky.MARINe.map.")`
+`r infographiqR::md_caption("Figure Ux.Rocky.MARINe.map.")`
 
-`r nms4r::md_caption("Figure Ux.Rocky.MARINe.map.", get_details = T, fig_in_report = F)`
+`r infographiqR::md_caption("Figure Ux.Rocky.MARINe.map.", get_details = T, fig_in_report = F)`
 
 ### MARINe: Ochre Seastar (_Pisaster ochraceus_) {.active}
 
-`r nms4r::get_figure_info("Figure App.F.12.2.")`
+`r infographiqR::get_figure_info("Figure App.F.12.2.")`
 
 ```{r plot seastar}
 nms_spp_sscount_csv     <- file.path(dir_pfx, "sanctuary_species_sscount.csv")
-nms4r::plot_intertidal_nms(nms_spp_sscount_csv, "CINMS", "PISOCH", "Ochre Seastar", nms_rgns1, fld_val = "count", label_y = "Count (annual avg)")
+onmsR::plot_intertidal_nms(nms_spp_sscount_csv, "CINMS", "PISOCH", "Ochre Seastar", nms_rgns1, fld_val = "count", label_y = "Count (annual avg)")
 ```
 
-`r nms4r::md_caption("Figure Ux.Rocky.MARINe.Ochre-Stars.")`
+`r infographiqR::md_caption("Figure Ux.Rocky.MARINe.Ochre-Stars.")`
 
-`r nms4r::md_caption("Figure Ux.Rocky.MARINe.Ochre-Stars.", get_details = T, fig_in_report = F)`
+`r infographiqR::md_caption("Figure Ux.Rocky.MARINe.Ochre-Stars.", get_details = T, fig_in_report = F)`
 
 ### CHIS: Ochre Seastars across the sanctuary
 
-`r nms4r::render_figure("Figure App.F.12.2.", "../img/cinms_cr/App.F.12.2.Pochraceus_abundance.jpg")`
+`r infographiqR::render_figure("Figure App.F.12.2.", "../img/cinms_cr/App.F.12.2.Pochraceus_abundance.jpg")`
 
 ### CHIS: Ochre Seastars at Individual Islands
 
-`r nms4r::render_figure("Figure App.F.12.3.", "../img/cinms_cr/App.F.12.3.Pochraceus_size.jpg")`
+`r infographiqR::render_figure("Figure App.F.12.3.", "../img/cinms_cr/App.F.12.3.Pochraceus_size.jpg")`
 
-`r nms4r::get_figure_info("Figure App.F.12.3.")`
+`r infographiqR::get_figure_info("Figure App.F.12.3.")`

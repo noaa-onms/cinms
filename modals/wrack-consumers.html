@@ -11,7 +11,7 @@
 
 
 
-<title>wrack-consumers.utf8</title>
+<title>wrack-consumers.knit</title>
 
 <script src="modal_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,11 +19,31 @@
 <script src="modal_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="modal_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="modal_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="modal_libs/navigation-1.1/tabsets.js"></script>
 <link href="modal_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="modal_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="modal_libs/font-awesome-5.13.0/css/all.min.css" rel="stylesheet" />
 <link href="modal_libs/font-awesome-5.13.0/css/v4-shims.min.css" rel="stylesheet" />
+<!--html_preserve-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JB0WCCY7ZR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JB0WCCY7ZR');
+</script>
+<!--/html_preserve-->
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -35,11 +55,6 @@
     </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -52,32 +67,7 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
 
 <link rel="stylesheet" href="_modal_styles.css" type="text/css" />
 <link rel="stylesheet" href="modal_libs/font-awesome-5.3.1/css/all.min.css" type="text/css" />
@@ -90,10 +80,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -110,6 +96,9 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
@@ -122,7 +111,6 @@ summary {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -186,7 +174,7 @@ summary {
 
 
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -197,7 +185,7 @@ summary {
 <div style="display: flex">
 <div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;">
 <a href="https://sanctuarysimon.org/regional_images/photo_database/SIL_111402_063.jpg" target="_blank">
-<i class="fa fa-camera"></i>
+<i class="fa fa-camera" role="presentation" aria-label="camera icon"></i>
 </a>
 </div>
 <div style="margin: 10px; font-style: italic; flex: 20; ">Wrack mostly consists of the kelp that washes onto beaches from the ocean. Wrack is an essential part of the ecology of the shoreline, providing food and habitat for everything from insects to birds.</div>
@@ -205,7 +193,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://www.nps.gov/im/medn/sandy-beaches-lagoons.htm" target="_blank"><i class="fa fa-clipboard-list"></i> CINP Sandy Beach Monitoring</a>
+<a href="https://www.nps.gov/im/medn/sandy-beaches-lagoons.htm" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> CINP Sandy Beach Monitoring</a>
 </div>
 </div>
 </div>
@@ -249,7 +237,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>

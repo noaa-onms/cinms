@@ -14,13 +14,13 @@ library(magrittr)
 ```{r svg, child = '_key-climate-ocean.Rmd'}
 ```
 
-`r nms4r::get_modal_info()`
+`r infographiqR::get_modal_info(info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_modal_links")`
 
 # Seascape CHECK, JENN THINKS WE SHOULD CUT
 
 ```{r}
 # get most recent date
-d_2 <- nms4r::get_dates(scape)[2]
+d_2 <- onmsR::get_dates(scape)[2]
 
 leaflet::leaflet(
   nms_ply,
@@ -44,9 +44,9 @@ leaflet::leaflet(
     colorNumeric("Spectral", c(1,33), reverse=T), seq(1,33))
 ```
 
-`r nms4r::md_caption("Figure Ux.Ocean.Seascape.ERD.map.")`
+`r infographiqR::md_caption("Figure Ux.Ocean.Seascape.ERD.map.")`
 
-`r nms4r::md_caption("Figure Ux.Ocean.Seascape.ERD.map.", get_details = T)`
+`r infographiqR::md_caption("Figure Ux.Ocean.Seascape.ERD.map.", get_details = T)`
 
 
 

@@ -19,9 +19,29 @@
 <script src="modal_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="modal_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="modal_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="modal_libs/navigation-1.1/tabsets.js"></script>
 <link href="modal_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="modal_libs/highlightjs-9.12.0/highlight.js"></script>
+<!--html_preserve-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JB0WCCY7ZR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JB0WCCY7ZR');
+</script>
+<!--/html_preserve-->
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -33,11 +53,6 @@
     </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -50,32 +65,7 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
 
 <link rel="stylesheet" href="_modal_styles.css" type="text/css" />
 <link rel="stylesheet" href="modal_libs/font-awesome-5.3.1/css/all.min.css" type="text/css" />
@@ -88,10 +78,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -108,6 +94,9 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
@@ -120,7 +109,6 @@ summary {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -184,7 +172,7 @@ summary {
 
 
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -211,10 +199,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://wildlife.ca.gov/Fishing/Commercial/Landings" target="_blank"><i class="fa fa-clipboard-list"></i> CDFW Commercial Fishery Landings</a>
+<a href="https://wildlife.ca.gov/Fishing/Commercial/Landings" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> CDFW Commercial Fishery Landings</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="https://sanctuaries.noaa.gov/science/conservation/cinms_fishing_report.html" target="_blank"><i class="fa fa-database"></i> Leeworthy et al. 2014</a>
+<a href="https://sanctuaries.noaa.gov/science/conservation/cinms_fishing_report.html" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Leeworthy et al. 2014</a>
 </div>
 </div>
 </div>
@@ -231,7 +219,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://wildlife.ca.gov/Conservation/Marine/SCFRMP/Halibut" target="_blank"><i class="fa fa-clipboard-list"></i> CDFW SCFRMP Halibut Studies</a>
+<a href="https://wildlife.ca.gov/Conservation/Marine/SCFRMP/Halibut" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> CDFW SCFRMP Halibut Studies</a>
 </div>
 </div>
 </div>
@@ -245,7 +233,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://wildlife.ca.gov/Conservation/Marine/SCFRMP/Halibut" target="_blank"><i class="fa fa-clipboard-list"></i> CDFW SCFRMP Halibut Studies</a>
+<a href="https://wildlife.ca.gov/Conservation/Marine/SCFRMP/Halibut" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> CDFW SCFRMP Halibut Studies</a>
 </div>
 </div>
 </div>
@@ -262,7 +250,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://wildlife.ca.gov/Conservation/Marine/Groundfish/Commercial-Fishery-Data" target="_blank"><i class="fa fa-clipboard-list"></i> CDFW Commercial Fishery Data</a>
+<a href="https://wildlife.ca.gov/Conservation/Marine/Groundfish/Commercial-Fishery-Data" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> CDFW Commercial Fishery Data</a>
 </div>
 </div>
 </div>
@@ -276,7 +264,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://wildlife.ca.gov/Conservation/Marine/Groundfish/Commercial-Fishery-Data" target="_blank"><i class="fa fa-clipboard-list"></i> CDFW Commercial Fishery Data</a>
+<a href="https://wildlife.ca.gov/Conservation/Marine/Groundfish/Commercial-Fishery-Data" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> CDFW Commercial Fishery Data</a>
 </div>
 </div>
 </div>
@@ -293,7 +281,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://wildlife.ca.gov/Conservation/Marine/Groundfish/Commercial-Fishery-Data" target="_blank"><i class="fa fa-clipboard-list"></i> CDFW Commercial Fishery Data</a>
+<a href="https://wildlife.ca.gov/Conservation/Marine/Groundfish/Commercial-Fishery-Data" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> CDFW Commercial Fishery Data</a>
 </div>
 </div>
 </div>
@@ -310,10 +298,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://wildlife.ca.gov/Conservation/Marine/Groundfish/Commercial-Fishery-Data" target="_blank"><i class="fa fa-clipboard-list"></i> CDFW Commercial Fishery Data</a>
+<a href="https://wildlife.ca.gov/Conservation/Marine/Groundfish/Commercial-Fishery-Data" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> CDFW Commercial Fishery Data</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="http://doi.org/10.13140/RG.2.1.3430.4085" target="_blank"><i class="fa fa-database"></i> Etnoyer et al. 2015</a>
+<a href="http://doi.org/10.13140/RG.2.1.3430.4085" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Etnoyer et al. 2015</a>
 </div>
 </div>
 </div>
@@ -330,10 +318,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://wildlife.ca.gov/Conservation/Marine/Groundfish/Commercial-Fishery-Data" target="_blank"><i class="fa fa-clipboard-list"></i> CDFW Commercial Fishery Data</a>
+<a href="https://wildlife.ca.gov/Conservation/Marine/Groundfish/Commercial-Fishery-Data" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> CDFW Commercial Fishery Data</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="http://doi.org/10.13140/RG.2.1.3430.4085" target="_blank"><i class="fa fa-database"></i> Etnoyer et al. 2015</a>
+<a href="http://doi.org/10.13140/RG.2.1.3430.4085" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Etnoyer et al. 2015</a>
 </div>
 </div>
 </div>
@@ -350,10 +338,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100462" target="_blank"><i class="fa fa-clipboard-list"></i> Monitoring Program</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100462" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Monitoring Program</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="http://doi.org/10.13140/RG.2.1.3430.4085" target="_blank"><i class="fa fa-database"></i> Etnoyer et al. 2015</a>
+<a href="http://doi.org/10.13140/RG.2.1.3430.4085" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Etnoyer et al. 2015</a>
 </div>
 </div>
 </div>
@@ -371,10 +359,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://wildlife.ca.gov/Conservation/Marine/MFSU" target="_blank"><i class="fa fa-clipboard-list"></i> CDFW Marine Fisheries Statistical Unit</a>
+<a href="https://wildlife.ca.gov/Conservation/Marine/MFSU" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> CDFW Marine Fisheries Statistical Unit</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="https://caseagrant.ucsd.edu/sites/default/files/SCMPA-29-CPFV-Final-Report.pdf" target="_blank"><i class="fa fa-database"></i> Chen et al. 2015</a>
+<a href="https://caseagrant.ucsd.edu/sites/default/files/SCMPA-29-CPFV-Final-Report.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Chen et al. 2015</a>
 </div>
 </div>
 </div>
@@ -388,10 +376,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://wildlife.ca.gov/Conservation/Marine/MFSU" target="_blank"><i class="fa fa-clipboard-list"></i> CDFW Marine Fisheries Statistical Unit</a>
+<a href="https://wildlife.ca.gov/Conservation/Marine/MFSU" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> CDFW Marine Fisheries Statistical Unit</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="https://caseagrant.ucsd.edu/sites/default/files/SCMPA-29-CPFV-Final-Report.pdf" target="_blank"><i class="fa fa-database"></i> Chen et al. 2015</a>
+<a href="https://caseagrant.ucsd.edu/sites/default/files/SCMPA-29-CPFV-Final-Report.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Chen et al. 2015</a>
 </div>
 </div>
 </div>
@@ -411,10 +399,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://www.conservation.ca.gov/calgem/pubs_stats/Pages/pub_index.aspx" target="_blank"><i class="fa fa-clipboard-list"></i> CalGEM Oil &amp; Gas</a>
+<a href="https://www.conservation.ca.gov/calgem/pubs_stats/Pages/pub_index.aspx" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> CalGEM Oil &amp; Gas</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="https://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_AC.html?time,oil_gas_production" target="_blank"><i class="fa fa-database"></i> CCIEA indicator data in ERDDAP</a>
+<a href="https://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_AC.html?time,oil_gas_production" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> CCIEA indicator data in ERDDAP</a>
 </div>
 </div>
 </div>
@@ -433,7 +421,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:right; display:table-cell;">
-<a href="https://gis.data.ca.gov/" target="_blank"><i class="fa fa-database"></i> State of California Geoportal</a>
+<a href="https://gis.data.ca.gov/" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> State of California Geoportal</a>
 </div>
 </div>
 </div>
@@ -447,7 +435,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://response.restoration.noaa.gov/oil-and-chemical-spills/oil-spills/resources/shoreline-cleanup-and-assessment-technique-scat.html" target="_blank"><i class="fa fa-clipboard-list"></i> Office of Restoration SCAT</a>
+<a href="https://response.restoration.noaa.gov/oil-and-chemical-spills/oil-spills/resources/shoreline-cleanup-and-assessment-technique-scat.html" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Office of Restoration SCAT</a>
 </div>
 </div>
 </div>
@@ -461,7 +449,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:right; display:table-cell;">
-<a href="https://ui.adsabs.harvard.edu/abs/2016AGUOSEC44B1246E/abstract" target="_blank"><i class="fa fa-database"></i> Emery et al. 2016</a>
+<a href="https://ui.adsabs.harvard.edu/abs/2016AGUOSEC44B1246E/abstract" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Emery et al. 2016</a>
 </div>
 </div>
 </div>
@@ -475,10 +463,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="http://sccoos.org/about/news/2015-refugio-state-beach-oil-spill/" target="_blank"><i class="fa fa-clipboard-list"></i> 2015 Refugio Oil Spill Simulation</a>
+<a href="http://sccoos.org/about/news/2015-refugio-state-beach-oil-spill/" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> 2015 Refugio Oil Spill Simulation</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="https://sccoos.org/media/filer_public/b7/58/b758c4b8-ce67-48e7-ae17-9b294e0aefa6/refugio_beach_oil_spill_nrda_newsletter_november_2015.pdf" target="_blank"><i class="fa fa-database"></i> Refugio Oil Spill NRDA</a>
+<a href="https://sccoos.org/media/filer_public/b7/58/b758c4b8-ce67-48e7-ae17-9b294e0aefa6/refugio_beach_oil_spill_nrda_newsletter_november_2015.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Refugio Oil Spill NRDA</a>
 </div>
 </div>
 </div>
@@ -501,10 +489,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100426" target="_blank"><i class="fa fa-clipboard-list"></i> Shipping Noise Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100426" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Shipping Noise Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="https://nmschannelislands.blob.core.windows.net/channelislands-prod/media/archive/sac/pdfs/mswg_final_report_may2016.pdf" target="_blank"><i class="fa fa-database"></i> MSWGSS 2016</a>
+<a href="https://nmschannelislands.blob.core.windows.net/channelislands-prod/media/archive/sac/pdfs/mswg_final_report_may2016.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> MSWGSS 2016</a>
 </div>
 </div>
 </div>
@@ -537,7 +525,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:right; display:table-cell;">
-<a href="https://caseagrant.ucsd.edu/sites/default/files/SCMPA-29-CoastalRecreation-Final-Report_0.pdf" target="_blank"><i class="fa fa-database"></i> Data</a>
+<a href="https://caseagrant.ucsd.edu/sites/default/files/SCMPA-29-CoastalRecreation-Final-Report_0.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Data</a>
 </div>
 </div>
 </div>
@@ -587,10 +575,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list"></i> SCCWRP Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> SCCWRP Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="https://www.sccwrp.org/about/research-areas/data-portal/" target="_blank"><i class="fa fa-database"></i> SCCWRP data portal</a>
+<a href="https://www.sccwrp.org/about/research-areas/data-portal/" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> SCCWRP data portal</a>
 </div>
 </div>
 </div>
@@ -607,10 +595,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list"></i> SCCWRP Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> SCCWRP Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="https://www.sccwrp.org/about/research-areas/data-portal/" target="_blank"><i class="fa fa-database"></i> SCCWRP data portal</a>
+<a href="https://www.sccwrp.org/about/research-areas/data-portal/" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> SCCWRP data portal</a>
 </div>
 </div>
 </div>
@@ -627,10 +615,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list"></i> SCCWRP Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> SCCWRP Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="https://www.sccwrp.org/about/research-areas/data-portal/" target="_blank"><i class="fa fa-database"></i> SCCWRP data portal</a>
+<a href="https://www.sccwrp.org/about/research-areas/data-portal/" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> SCCWRP data portal</a>
 </div>
 </div>
 </div>
@@ -650,10 +638,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list"></i> SCCWRP Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> SCCWRP Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database"></i> Schiff et al. 2011</a>
+<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Schiff et al. 2011</a>
 </div>
 </div>
 </div>
@@ -670,10 +658,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list"></i> SCCWRP Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> SCCWRP Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database"></i> Schiff et al. 2011</a>
+<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Schiff et al. 2011</a>
 </div>
 </div>
 </div>
@@ -690,10 +678,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list"></i> SCCWRP Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> SCCWRP Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database"></i> Schiff et al. 2011</a>
+<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Schiff et al. 2011</a>
 </div>
 </div>
 </div>
@@ -710,10 +698,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list"></i> SCCWRP Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> SCCWRP Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database"></i> Schiff et al. 2011</a>
+<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Schiff et al. 2011</a>
 </div>
 </div>
 </div>
@@ -730,10 +718,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list"></i> SCCWRP Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> SCCWRP Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database"></i> Schiff et al. 2011</a>
+<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Schiff et al. 2011</a>
 </div>
 </div>
 </div>
@@ -750,10 +738,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list"></i> SCCWRP Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100428" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> SCCWRP Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database"></i> Schiff et al. 2011</a>
+<a href="http://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/661_B08_SedChem.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Schiff et al. 2011</a>
 </div>
 </div>
 </div>
@@ -773,7 +761,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list"></i> Mussel Watch Program</a>
+<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Mussel Watch Program</a>
 </div>
 </div>
 </div>
@@ -790,7 +778,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list"></i> Mussel Watch Program</a>
+<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Mussel Watch Program</a>
 </div>
 </div>
 </div>
@@ -807,7 +795,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list"></i> Mussel Watch Program</a>
+<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Mussel Watch Program</a>
 </div>
 </div>
 </div>
@@ -824,7 +812,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list"></i> Mussel Watch Program</a>
+<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Mussel Watch Program</a>
 </div>
 </div>
 </div>
@@ -841,7 +829,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list"></i> Mussel Watch Program</a>
+<a href="https://www.waterboards.ca.gov/water_issues/programs/swamp/mussel_watch.html" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Mussel Watch Program</a>
 </div>
 </div>
 </div>
@@ -913,7 +901,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100506" target="_blank"><i class="fa fa-clipboard-list"></i> Monitoring Program</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100506" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Monitoring Program</a>
 </div>
 </div>
 </div>
@@ -930,10 +918,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100426" target="_blank"><i class="fa fa-clipboard-list"></i> Shipping Noise Monitoring</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100426" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Shipping Noise Monitoring</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="http://dx.doi.org/10.1121/1.4740225" target="_blank"><i class="fa fa-database"></i> McKenna et al. 2012</a>
+<a href="http://dx.doi.org/10.1121/1.4740225" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> McKenna et al. 2012</a>
 </div>
 </div>
 </div>
@@ -965,10 +953,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100143" target="_blank"><i class="fa fa-clipboard-list"></i> BeachCOMBER monitoring program</a>
+<a href="https://sanctuarysimon.org/dbtools/project-database/index.php?ID=100143" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> BeachCOMBER monitoring program</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="https://www.mlml.calstate.edu/beachcombers/beachcombers-twenty-year-summary-report-1997-2017/" target="_blank"><i class="fa fa-database"></i> BeachCOMBERS 20 year report</a>
+<a href="https://www.mlml.calstate.edu/beachcombers/beachcombers-twenty-year-summary-report-1997-2017/" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> BeachCOMBERS 20 year report</a>
 </div>
 </div>
 </div>
@@ -987,10 +975,10 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:left; display:table-cell;">
-<a href="https://www.fisheries.noaa.gov/west-coast/marine-mammal-protection/west-coast-large-whale-entanglement-response-program" target="_blank"><i class="fa fa-clipboard-list"></i> NOAA Entanglement Response Program</a>
+<a href="https://www.fisheries.noaa.gov/west-coast/marine-mammal-protection/west-coast-large-whale-entanglement-response-program" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> NOAA Entanglement Response Program</a>
 </div>
 <div style="text-align:right; display:table-cell;">
-<a href="https://www.fisheries.noaa.gov/west-coast/marine-mammal-protection/west-coast-large-whale-entanglement-response-program#resources" target="_blank"><i class="fa fa-database"></i> Entanglement Data/Summary Reports</a>
+<a href="https://www.fisheries.noaa.gov/west-coast/marine-mammal-protection/west-coast-large-whale-entanglement-response-program#resources" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Entanglement Data/Summary Reports</a>
 </div>
 </div>
 </div>
@@ -1009,7 +997,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:right; display:table-cell;">
-<a href="http://www.westcoast.fisheries.noaa.gov/publications/protected_species/marine_mammals/noaa-%20tm-nmfs-swr-044_final.pdf" target="_blank"><i class="fa fa-database"></i> Data</a>
+<a href="http://www.westcoast.fisheries.noaa.gov/publications/protected_species/marine_mammals/noaa-%20tm-nmfs-swr-044_final.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Data</a>
 </div>
 </div>
 </div>
@@ -1026,7 +1014,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:right; display:table-cell;">
-<a href="http://www.westcoast.fisheries.noaa.gov/publications/protected_species/marine_mammals/noaa-%20tm-nmfs-swr-044_final.pdf" target="_blank"><i class="fa fa-database"></i> Data</a>
+<a href="http://www.westcoast.fisheries.noaa.gov/publications/protected_species/marine_mammals/noaa-%20tm-nmfs-swr-044_final.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Data</a>
 </div>
 </div>
 </div>
@@ -1043,7 +1031,7 @@ summary {
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;">
 <div style="display:table-row">
 <div style="text-align:right; display:table-cell;">
-<a href="http://www.westcoast.fisheries.noaa.gov/publications/protected_species/marine_mammals/noaa-%20tm-nmfs-swr-044_final.pdf" target="_blank"><i class="fa fa-database"></i> Data</a>
+<a href="http://www.westcoast.fisheries.noaa.gov/publications/protected_species/marine_mammals/noaa-%20tm-nmfs-swr-044_final.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Data</a>
 </div>
 </div>
 </div>
@@ -1099,7 +1087,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>

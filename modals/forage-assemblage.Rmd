@@ -7,23 +7,24 @@ editor_options:
 ```{r setup, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 library(glue)
-library(nms4r)
+library(infographiqR) # remotes::install_github("marinebon/infographiqR") 
+library(onmsR) # remotes::install_github("noaa-onms/onmsR")
 ```
 
-`r nms4r::get_modal_info()`
+`r infographiqR::get_modal_info(info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_modal_links")`
 
 ## {.tabset}
 
 ### Map of Regions
 
-```{r calcofi map, fig.cap=nms4r::md_caption("Figure App.F.12.17.")}
-nms4r::calcofi_map()
+```{r calcofi map, fig.cap=infographiqR::md_caption("Figure App.F.12.17.")}
+onmsR::calcofi_map()
 ```
 
 ### Larval fish, cool-water species {.active}
 
 ##### CINMS Region
-`r nms4r::get_figure_info("Figure App.F.12.19.rockfish")`
+`r infographiqR::get_figure_info("Figure App.F.12.19.rockfish")`
 
 ```{r calcofi plot 1}
 grp   <- "Cool-water associated ichthyoplankton"
@@ -32,15 +33,15 @@ rgn   <- "CINMS"
 title <- glue::glue("{grp} - {rgn} Region")
 csv   <- glue::glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/{grp}_{rgn}.csv")
 
-nms4r::calcofi_plot(csv = csv, title = title)
+onmsR::calcofi_plot(csv = csv, title = title)
 ```
 
-`r nms4r::md_caption("Figure App.F.15.5")`
+`r infographiqR::md_caption("Figure App.F.15.5")`
 
-`r nms4r::md_caption("Figure App.F.15.5", get_details = T)`
+`r infographiqR::md_caption("Figure App.F.15.5", get_details = T)`
 
 ##### SoCal Shelf Region
-`r nms4r::get_figure_info("Figure App.F.12.19.rockfish")`
+`r infographiqR::get_figure_info("Figure App.F.12.19.rockfish")`
 
 ```{r calcofi plot 2}
 grp   <- "Cool-water associated ichthyoplankton"
@@ -50,17 +51,17 @@ title <- glue::glue("{grp} - {rgn} Region")
 csv   <- glue::glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/{grp}_{rgn}.csv")
 
 #download.file(csv, "_tmp.csv")
-nms4r::calcofi_plot(csv = csv, title = title)
+onmsR::calcofi_plot(csv = csv, title = title)
 ```
 
-`r nms4r::md_caption("Figure App.F.15.5")`
+`r infographiqR::md_caption("Figure App.F.15.5")`
 
-`r nms4r::md_caption("Figure App.F.15.5", get_details = T)`
+`r infographiqR::md_caption("Figure App.F.15.5", get_details = T)`
 
 ### Larval fish, warm-water species
 
 ##### CINMS Region
-`r nms4r::get_figure_info("Figure App.F.12.19.rockfish")`
+`r infographiqR::get_figure_info("Figure App.F.12.19.rockfish")`
 
 ```{r calcofi plot 3}
 grp   <- "Warm-water associated ichthyoplankton"
@@ -69,16 +70,16 @@ rgn   <- "CINMS"
 title <- glue::glue("{grp} - {rgn} Region")
 csv   <- glue::glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/{grp}_{rgn}.csv")
 
-nms4r::calcofi_plot(csv = csv, title = title)
+onmsR::calcofi_plot(csv = csv, title = title)
 ```
 
-`r nms4r::md_caption("Figure App.F.15.5")`
+`r infographiqR::md_caption("Figure App.F.15.5")`
 
-`r nms4r::md_caption("Figure App.F.15.5", get_details = T)`
+`r infographiqR::md_caption("Figure App.F.15.5", get_details = T)`
 
 
 ##### SoCal Shelf Region
-`r nms4r::get_figure_info("Figure App.F.12.19.rockfish")`
+`r infographiqR::get_figure_info("Figure App.F.12.19.rockfish")`
 
 ```{r calcofi plot 4}
 grp   <- "Warm-water associated ichthyoplankton"
@@ -87,30 +88,30 @@ rgn   <- "SoCal Shelf"
 title <- glue::glue("{grp} - {rgn} Region")
 csv   <- glue::glue("https://raw.githubusercontent.com/marinebon/calcofi-analysis/master/data/{grp}_{rgn}.csv")
 
-nms4r::calcofi_plot(csv = csv, title = title)
+onmsR::calcofi_plot(csv = csv, title = title)
 ```
 
-`r nms4r::md_caption("Figure App.F.15.5")`
+`r infographiqR::md_caption("Figure App.F.15.5")`
 
-`r nms4r::md_caption("Figure App.F.15.5", get_details = T)`
+`r infographiqR::md_caption("Figure App.F.15.5", get_details = T)`
 
 ### Larval fish - Mean Species Richness
 
 #### CINMS Region
 
-`r nms4r::render_figure("Figure App.F.15.6.a-b.", "../img/cinms_cr/App.F.15.6.a.CalCOFI_diversity_richness-cinms.jpg")`
+`r infographiqR::render_figure("Figure App.F.15.6.a-b.", "../img/cinms_cr/App.F.15.6.a.CalCOFI_diversity_richness-cinms.jpg")`
 
 #### SoCal Shelf Region
 
-`r nms4r::render_figure("Figure App.F.15.6.a-b.", "../img/cinms_cr/App.F.15.6.b.CalCOFI_diversity_richness-socal.jpg")`
+`r infographiqR::render_figure("Figure App.F.15.6.a-b.", "../img/cinms_cr/App.F.15.6.b.CalCOFI_diversity_richness-socal.jpg")`
 
 ### Larval fish - Mean Simpson Diversity
 
 #### CINMS Region
 
-`r nms4r::render_figure("Figure App.F.15.6.c-d.", "../img/cinms_cr/App.F.15.6.c.CalCOFI_diversity_diversity-cinms.jpg")`
+`r infographiqR::render_figure("Figure App.F.15.6.c-d.", "../img/cinms_cr/App.F.15.6.c.CalCOFI_diversity_diversity-cinms.jpg")`
 
 #### SoCal Shelf Region
 
-`r nms4r::render_figure("Figure App.F.15.6.c-d.", "../img/cinms_cr/App.F.15.6.d.CalCOFI_diversity_diversity-socal.jpg")`
+`r infographiqR::render_figure("Figure App.F.15.6.c-d.", "../img/cinms_cr/App.F.15.6.d.CalCOFI_diversity_diversity-socal.jpg")`
 

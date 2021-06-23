@@ -3,14 +3,17 @@ title: "Deep Seafloor"
 params:
   csv: "svg/svg_links_cinms.csv"
   svg: "svg/cinms_deep-seafloor.svg"
+  svg_filter: "cinms_deep-seafloor.svg"
 ---
 
 ```{r setup, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-library(nms4r)
+library(infographiqR) 
+library(magrittr)
+# remotes::install_github("marinebon/infographiqR")
 ```
 
-`r nms4r::get_modal_info()`
+`r infographiqR::get_modal_info(info_modal_links_csv = "https://docs.google.com/spreadsheets/d/1yEuI7BT9fJEcGAFNPM0mCq16nFsbn0b-bNirYPU5W8c/gviz/tq?tqx=out:csv&sheet=info_modal_links")`
 
 ```{r svg, child = '_svg-html_child.Rmd'}
 ```
