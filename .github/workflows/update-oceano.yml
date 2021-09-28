@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, 'ci skip')"
     container: bdbest/cinms:1.0 # docker image
-    env:
-      PASSWORD: t3mporarY
+    env: 
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: clone repo
         run: git clone --depth 1 https://github.com/${{ github.repository }}.git .; ls
