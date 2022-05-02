@@ -79,6 +79,7 @@ This website is constructed using [Rmarkdown website](https://bookdown.org/yihui
 
 ``` r
 remotes::install_github("noaa-onms/onmsR")
+remotes::install_github("marinebon/infographiqR")
 ```
 
 1.  Edit .Rmd files in `./modals/`
