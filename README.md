@@ -78,10 +78,10 @@ This website is constructed using [Rmarkdown website](https://bookdown.org/yihui
 1.  Get the latest [`nms4r`](https://marinebon.org/nms4r/) library. Run once or if library gets updated.
 
 ``` r
-remotes::install_github("marinebon/nms4r")
+remotes::install_github("noaa-onms/onmsR")
 ```
 
-1.  Edit .Rmd files in `./docs/modals/`
+1.  Edit .Rmd files in `./modals/`
 
 NOTE: The `.html` files *can* be edited but by default `.html` files are overwritten by content knit from the `Rmd` files of the same name.
 
