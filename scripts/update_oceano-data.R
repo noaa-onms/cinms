@@ -1,13 +1,11 @@
-library(here)
-library(rgdal)
-library(raster)
-library(rerddap)
-library(glue)
-library(sf)
-library(fs)
-library(tidyverse)
-library(lubridate)
-library(onmsR) # remotes::install_github("noaa-onms/onmsR")
+if (!require("librarian")){
+  install.packages("librarian")
+  library(librarian)
+}
+librarian::shelf(
+  glue, fs, here, lubridate, 
+  noaa-onms/onmsR,
+  raster, rerddap, rgdal, sf, tidyverse)
 
 print('Starting SST...')
 onmsR::calculate_statistics("cinms", "jplMURSST41mday", "sst", "statistics_sst_cinms.csv")
