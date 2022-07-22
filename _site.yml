@@ -18,15 +18,20 @@ navbar:
       href: sandy-beach.html
     - text: "Sandy Seafloor"
       href: sandy-seafloor.html
-  right:
     - text: "About"
       href: https://marinebon.org/sanctuaries/
 output:
   html_document:
-    theme: lumen # darkly # cosmo # https://bootswatch.com
+    theme:
+      version: 3
+      bootswatch: yeti
+      primary: '#00467f' # sanctuaries.noaa.gov navbar: darkblue=#00467f, teal=#008da8
+      secondary: '#FFF'
     self_contained: no
     css: libs/styles.css
     mathjax: null
     anchor_sections: FALSE
     includes:
-       in_header: libs/Ganalytics.html    
+      in_header: libs/Ganalytics.html    
+      before_body: libs/before_body.html   # IOOS menu
+      after_body: libs/after_body.html  # JavaScript to update menus

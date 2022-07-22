@@ -10,3 +10,203 @@
   pointer-events: none;
   color: gray;
 }
+
+/*
+Section: header breadcrumb 
+*/
+
+header .container-fluid {
+  padding: 0;
+}
+
+header #logo img {
+  height: 35px;
+  margin: 10px;
+}
+
+header #breadcrumb {
+  background-color: #008da8;
+}
+
+header #breadcrumb .container {
+  text-align:left;
+  color: rgba(255,255,255,0.7);
+}
+
+header #breadcrumb .container a {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+}
+
+header #headspace {
+  height: 80px;
+}
+
+/*
+Section: main container
+*/
+
+.main-container {
+  max-width: 80% !important;
+  margin-left: 10% !important;
+  margin-right: 10% !important;
+}
+
+body {
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+}
+
+/*
+Section: footer
+*/
+
+#footer {
+  font-family: Roboto,sans-serif;
+  background-color: #020e38;
+  background-image: url("https://ioos.us/images/bg_footer.png");
+  /* background-image: url("images/bg_footer.png"); */
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#footer p{
+	font-size:14px;
+}
+
+#footer a{
+  color: #55d6f8;
+  display: block;
+  /*padding-bottom: 24px; */
+  transition: all .3s ease
+}
+
+#footer a:hover {
+    text-decoration: none;
+    color: #fff!important
+}
+
+
+#footer-col-3 .txt {
+    line-height: 14px;
+    padding-left: 22px
+}
+
+#footer-col-3 div {
+    display: inline-block
+}
+
+#footer-col-2 h5, #footer-col-3 h5 {
+    color: #fff;
+    margin-top: 0rem;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Roboto Slab',Roboto,Times,serif!important
+}
+
+#footer-col-3 a:hover .ggt-icon-border {
+    background: #fff;
+    opacity: .8
+}
+
+#footer-col-3 .ggt-icon-border {
+    transition: all .15s ease
+}
+
+#footer-col-3 .ggt-icon-border {
+    background: #55d6f8;
+    border-radius: 5px;
+    height: 39px;
+    width: 39px
+}
+
+#footer-col-3 .ggt-icon-border i {
+    color: #122b4d;
+    font-size: 28px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+#footer-col-4 {
+  background-image: url("https://ioos.us/images/logo-ioos-white.png");
+  /*background-position: 0 50px; */
+  background-repeat: no-repeat;
+  background-size: 72px;
+  color: #fff;
+  line-height: 16px;
+  padding-left: 100px
+}
+
+#footer-col-4 a.btn {
+    border: 1px solid #55d6f8;
+    border-radius: 0!important;
+    padding: 8px 23px!important
+}
+
+#footer-col-4 a.btn:hover {
+    border-color: #fff
+}
+
+#footer-col-4>div {
+  /* padding-top: 50px */
+}
+
+#footer path {
+    fill: #003087
+}
+
+.image-center {
+  text-align: center;
+}
+
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
+.logo { 
+  margin: 10px; 
+  max-width: 100%;
+  height:  35px;
+}
+.breadcrumb-ioos {
+  color: white;
+  background-color: #008da8;
+  padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+.breadcrumb-ioos a:link {
+  text-decoration: none;
+  color: white;
+}
+
+.breadcrumb-ioos a:visited {
+  color: white;
+}
+
+.header-margin {
+  margin-left: 30px;
+}
+
+.menu-options {
+  background-color: #00467F;
+}
+
+.navbar-default {
+    background-color: #00467F;
+}
+
+.navbar-default:hover {
+  background-color: #00467F;
+}
