@@ -24,7 +24,7 @@ output:
   html_document:
     theme:
       version: 3
-      bootswatch: yeti
+      bootswatch: cerulean
       primary: '#00467f' # sanctuaries.noaa.gov navbar: darkblue=#00467f, teal=#008da8
       secondary: '#FFF'
     self_contained: no
