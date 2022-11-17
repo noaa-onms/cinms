@@ -1,7 +1,7 @@
 ---
 title: "Sandy Seafloor"
 params:
-  svg: "svg/cinms_sandy-seafloor.svg"
+  svg: "svg/cinms_sandy-seafloor.svg "
   csv: "svg/svg_links_cinms.csv"
   svg_filter: "cinms_sandy-seafloor.svg"
 ---
