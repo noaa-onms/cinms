@@ -362,7 +362,11 @@ function icon_append(d, h, modal_url_pfx, svg_id, hover_color, section_content, 
         .style("opacity", 1.0);
       tooltip_div.html(d.title + "<br/>")
         .style("left", (d3.event.pageX - svg_position.x) + "px")
-        .style("top", (d3.event.pageY - svg_position.y + y_offset) + "px");
+        .style("top", (d3.event.pageY - svg_position.y + y_offset - window.scrollY) + "px")
+        .style("background", hover_color)
+        .style("padding", "2px")
+        .style( "border", 0)
+        .style("border-radius", "8px");
     }
   }
 

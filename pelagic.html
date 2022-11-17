@@ -13,7 +13,7 @@
 
 <title>Pelagic</title>
 
-<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.17/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <link href="site_libs/bootstrap-3.4.1/bootstrap.min.css" rel="stylesheet" />
@@ -22,8 +22,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.15.3/css/all.min.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.15.3/css/v4-shims.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.2.0/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.2.0/css/v4-shims.min.css" rel="stylesheet" />
 <!--html_preserve-->
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JB0WCCY7ZR"></script>
@@ -145,11 +145,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -178,8 +182,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -187,16 +191,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -306,17 +303,7 @@ $(document).ready(function () {
 </div>
 
 
-<div style="display: flex">
-<div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;">
-<a href="https://sanctuarysimon.org/channel-islands-nms/open-ocean/" target="_blank">
-<i class="fa fa-info-circle" role="presentation" aria-label="info-circle icon"></i>
-</a>
-<a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/img/20190709-humpback-lunge-feeding-1000.jpg" target="_blank">
-<i class="fa fa-camera" role="presentation" aria-label="camera icon"></i>
-</a>
-</div>
-<div style="margin: 10px; font-style: italic; flex: 20; ">Also known as the open ocean, the pelagic zone is home to some of the biggest animals on the planet! From blue whales to blue fin tuna, the open ocean is teeming with life</div>
-</div>
+<p><div style="display: flex"> <div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;"> <a href="https://sanctuarysimon.org/channel-islands-nms/open-ocean/" target="_blank"> <i class="fas fa-circle-info" role="presentation" aria-label="circle-info icon"></i> </a> <a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/img/20190709-humpback-lunge-feeding-1000.jpg" target="_blank"> <i class="fas fa-camera" role="presentation" aria-label="camera icon"></i> </a> </div> <div style="margin: 10px; font-style: italic; flex: 20; ">Also known as the open ocean, the pelagic zone is home to some of the biggest animals on the planet! From blue whales to blue fin tuna, the open ocean is teeming with life</div> </div></p>
 <div class="row">
 <div class="col-md-9">
 <div id="svg">
