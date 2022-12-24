@@ -66,13 +66,15 @@ function link_svg({svg, csv, svg_id = 'svg', toc_id = 'toc', hover_color = 'yell
         }
       });
 
-      // Add button for full screen option
-      d3.select("#" + toc_id).append("BUTTON")
-        .text(" " + button_text)
-        .attr("style", "margin-bottom: 5px; font-size: large;")
-        .attr("class", "btn btn-info fa fa-arrows-alt")
-        .on("click", openFullScreen)
-        .attr("id", "top-button");            
+      // Add button for full screen option, but only if full_screen_button is toggled to true
+      if (full_screen_button == true) {
+        d3.select("#" + toc_id).append("BUTTON")
+          .text(" " + button_text)
+          .attr("style", "margin-bottom: 5px; font-size: large;")
+          .attr("class", "btn btn-info fa fa-arrows-alt btn-block")
+          .on("click", openFullScreen)
+          .attr("id", "top-button");            
+      }
 
       // Code to activate full screen upon clicking button
       function openFullScreen(){
@@ -94,8 +96,7 @@ function link_svg({svg, csv, svg_id = 'svg', toc_id = 'toc', hover_color = 'yell
 
     // append div for svg tooltip
     tooltip_div = d3.select('#' + svg_id).append("div")
-      .attr("class", "tooltip")
-      .style("opacity", 0);
+      .attr("class", "tooltip");
 
     // get handle to svg
     var h = d3.select(f_child);
@@ -301,7 +302,10 @@ function element_highlight_add(icon_id, svg_id, hover_color){
   catch {}
 }
 
+// This function attaches event handlers to a clickable icon within the svg 
 function icon_append(d, h, modal_url_pfx, svg_id, hover_color, section_content, text_column = true){
+  
+  //identify hyperlink to which icon should connect to
   if(d.link == null){ // no hyperlink given for modal window
     if(modal_url_pfx != null){ // does value exist for modal_url_pfx 
       if(modal_url_pfx.charAt(modal_url_pfx.length-1) != "/"){ // ensure backslash is last character of variable modal_url_pfx
@@ -327,6 +331,7 @@ function icon_append(d, h, modal_url_pfx, svg_id, hover_color, section_content, 
   }
   d.title = d.title ? d.title : d.icon;  // fall back on id if title not set
 
+  // what do in the event an clickable icon or table of contents entry is clicked
   function handleClick(){
     if (d.not_modal == 'T'){
       window.location = d.link;
@@ -349,48 +354,57 @@ function icon_append(d, h, modal_url_pfx, svg_id, hover_color, section_content, 
     }
   }
 
+// what do in the event an icon is moused over
   function handleMouseOver(){
     // determine x and y position of svg 
     var svg_position = document.getElementById(svg_id).getBoundingClientRect();
-    var y_offset = -28;
+    var y_offset = 20; //-28;
 
     d3.selectAll("#" + svg_id).selectAll("#" + d.icon).style("opacity", "0");
     d3.selectAll("#" + svg_id).selectAll("#" + d.icon + "_highlight").style("opacity", "100");
     if (tooltip_internal == true){
-      tooltip_div.transition()
-        .duration(200)
-        .style("opacity", 1.0);
       tooltip_div.html(d.title + "<br/>")
         .style("left", (d3.event.pageX - svg_position.x) + "px")
         .style("top", (d3.event.pageY - svg_position.y + y_offset - window.scrollY) + "px")
         .style("background", hover_color)
-        .style("padding", "2px")
-        .style( "border", 0)
-        .style("border-radius", "8px");
+        .style("opacity", 1.0);
+
     }
   }
 
+// what do in the event the cursor moves over an icon
+  function handleMouseMove(){
+    // determine x and y position of svg 
+    var svg_position = document.getElementById(svg_id).getBoundingClientRect();
+    var y_offset = 20; //-28;
+
+    if (tooltip_internal == true){
+        tooltip_div.style("left", (d3.event.pageX - svg_position.x) + "px");
+        tooltip_div.style("top", (d3.event.pageY - svg_position.y + y_offset - window.scrollY) + "px");
+    }
+  }
+
+// what do in the event a clickable icon is moused over, if there is not supposed to be a tooltip visible
   function handleMouseOverSansTooltip(){
     d3.selectAll("#" + svg_id).selectAll("#" + d.icon).style("opacity", "0");
     d3.selectAll("#" + svg_id).selectAll("#" + d.icon + "_highlight").style("opacity", "100");
-
   }
 
+// what to do in the event that a clickable icon or table of contents entry is no longer moused over
   function handleMouseOut(){
-
     d3.selectAll("#" + svg_id).selectAll("#" + d.icon).style("opacity", "100");
     d3.selectAll("#" + svg_id).selectAll("#" + d.icon + "_highlight").style("opacity", "0");
     if (tooltip_internal == true){
-      tooltip_div.transition()
-        .duration(500);
       tooltip_div.style("opacity", 0);
     }
   }
 
+  // attach relevant Event Handlers to Events, for each individual clickable icon
   h.select('#' + d.icon)
     .on("click", handleClick)
     .on('mouseover', handleMouseOver)
-    .on('mouseout', handleMouseOut);
+    .on('mouseleave', handleMouseOut)
+    .on('mousemove', handleMouseMove);
 
   // set outline of paths within group to null
   d3.selectAll("#" + svg_id).select('#' + d.icon).selectAll("path")
@@ -403,6 +417,7 @@ function icon_append(d, h, modal_url_pfx, svg_id, hover_color, section_content, 
     section_content.append("li").append("a")
       .text(list_text)
       .on("click", handleClick)
+   //   .addEventListener('mouseover', handleMouseOverSansTooltip(d))
       .on('mouseover', handleMouseOverSansTooltip)
       .on('mouseout', handleMouseOut);
   }
