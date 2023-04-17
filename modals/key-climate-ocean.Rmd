@@ -109,13 +109,16 @@ Download timeseries data for sanctuary: `r html_SST`
 ```{r chlorophyll_map}
 # get most recent date
 if ("try-error" %in% class(chl)){
-  d_2 <- read_csv(here("data/oceano/avg-chl_cinms.csv")) %>% 
+  message('DEBUG: inside `if ("try-error" %in% class(chl)){...}`')
+  
+  d_2 <- read_csv(here("data/oceano/statistics_chl_cinms.csv")) %>% 
     arrange(date) %>% 
     tail(1) %>% 
     pull(date)
 } else {
   d_2 <- onmsR::get_dates(chl)[2]
 }
+message('DEBUG: end `if ("try-error" %in% class(chl)){...}`; leaflet()')
 
 leaflet(
   nms_ply,
