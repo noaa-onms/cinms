@@ -4,7 +4,7 @@ if (!require("librarian")){
 }
 librarian::shelf(
   glue, fs, here, lubridate, 
-  noaa-onms/onmsR,
+  noaa-onms/onmsR, # devtools::install_local("~/Github/noaa-onms/onmsR", force=T)
   raster, rerddap, rgdal, sf, tidyverse)
 
 print('Starting SST...')

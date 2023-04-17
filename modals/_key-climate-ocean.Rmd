@@ -25,7 +25,9 @@ site <- readr::read_csv(sites_csv) %>%
   dplyr::filter(id == nms)
 
 sst   <- rerddap::info('jplMURSST41mday')
-chl   <- try(rerddap::info("nesdisVHNSQchlaMonthly"), silent = T)
+chl   <- try(rerddap::info(
+  "nesdisVHNSQchlaMonthly", 
+  url = "https://coastwatch.pfeg.noaa.gov/erddap/"), silent = T)
 if ("try-error" %in% class(chl)){
   warning(glue::glue("chl ERROR with rerddap::info(): {attr(chl, 'condition')}"))
 }
